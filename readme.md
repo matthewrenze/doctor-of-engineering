@@ -1,5 +1,5 @@
 # JHU D.Eng. Repository
-Artifacts created during my [Doctor of Engineering](https://engineering.jhu.edu/doctor-of-engineering/) program at [Johns Hopkins University](https://www.jhu.edu/).
+A collection of artifacts created during my [Doctor of Engineering](https://engineering.jhu.edu/doctor-of-engineering/) program at [Johns Hopkins University](https://www.jhu.edu/).
 
 ## Program Objectives
 D.Eng. students should have the ability to:

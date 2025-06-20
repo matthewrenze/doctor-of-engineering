@@ -15,13 +15,13 @@
 - [A Practice Guide to Building Agents (OpenAI)](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)
 - [Agent Companion Whitepaper (Google)](https://www.kaggle.com/whitepaper-agent-companion)
 - [Building Effective Agents (Anthropic)](https://www.anthropic.com/engineering/building-effective-agents)
-- [Prompting Guide 101 (Google)](https://services.google.com/fh/files/misc/gemini-for-google-workspace-prompting-guide-101.pdf)
 
 ## Readings (to-do)
 - [Large Language Model-Based Agents for Software Engineering: A Survey](https://arxiv.org/abs/2409.02977)
 - [LLM Agent: A Survey on Methodology, Applications and Challenges](https://arxiv.org/abs/2503.21460)
 - [Agent Design Patterns](https://arxiv.org/abs/2405.10467)
 - [The Prompt Report: A Systematic Survey of Prompting Techniques](https://arxiv.org/abs/2406.06608)
+- [Prompting Guide 101 (Google)](https://services.google.com/fh/files/misc/gemini-for-google-workspace-prompting-guide-101.pdf)
 
 ## Exercises (to-do)
 - Create simple [ReAct](https://arxiv.org/abs/2210.03629) agent
