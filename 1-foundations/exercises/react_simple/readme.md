@@ -3,9 +3,9 @@
 A simple [ReAct](https://arxiv.org/abs/2210.03629) agent evaluated on the [HotpotQA](https://hotpotqa.github.io/) benchmark using [GPT-4.1-mini]().
 
 ## Resources
-- [Code](/code/) - the source code for the agent
-- [Evals](/data/evals/) - the HotpotQA eval set
-- [Results](/data/results/) - the eval results
+- [Code](code/) - the source code for the agent
+- [Evals](data/evals/) - the HotpotQA eval set
+- [Results](data/results/) - the eval results
 
 ## Notes
  - Sentence-level parsing is very fragile  

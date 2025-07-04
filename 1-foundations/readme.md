@@ -21,7 +21,7 @@
 - [The Prompt Report: A Systematic Survey of Prompting Techniques (Schulhoff 2025)](https://arxiv.org/abs/2406.06608)
 
 ## Summaries
-
+Paper summaries can be found in the [summaries folder](summaries/).
 
 ## Notes
  - [Uncertainty Quantification in LLMs](https://github.com/matthewrenze/doctor-of-engineering/tree/main/1-foundations/notes/calibrating-uncertainty-in-llms.md)
@@ -37,11 +37,12 @@
 
  ## Exercises
 - Create a simple [ReAct](https://arxiv.org/abs/2210.03629) agent  
-  - 1A - [Simple ReAct agent](/exercises/react_simple/)
-  - 1B - [Improved ReAct agent](/exercises/react_improved/)
+  - 1A - [Simple ReAct agent](exercises/react_simple/)
+  - 1B - [Improved ReAct agent](exercises/react_improved/)
 - Summarize best practices
-  - 2A - [Prompt Engineering Best Practices](/exercises/best_practices/prompt-engineering-best-practices.md)
+  - 2A - [Prompt Engineering Best Practices](exercises/best_practices/prompt-engineering-best-practices.md)
   - 2B - [LLM Agent Best Practices](/exercises/best_practices/llm-agent-best-practices.md)
-  - 3C - [LLM Agent Design Patterns](/exercises/best_practices/llm-agent-design-patterns.md)
+  - 3C - [LLM Agent Design Patterns](exercises/best_practices/llm-agent-design-patterns.md)
+
 
 
