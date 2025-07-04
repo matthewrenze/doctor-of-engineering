@@ -41,7 +41,7 @@ Paper summaries can be found in the [summaries folder](summaries/).
   - 1B - [Improved ReAct agent](exercises/react_improved/)
 - Summarize best practices
   - 2A - [Prompt Engineering Best Practices](exercises/best_practices/prompt-engineering-best-practices.md)
-  - 2B - [LLM Agent Best Practices](/exercises/best_practices/llm-agent-best-practices.md)
+  - 2B - [LLM Agent Best Practices](exercises/best_practices/llm-agent-best-practices.md)
   - 3C - [LLM Agent Design Patterns](exercises/best_practices/llm-agent-design-patterns.md)
 
 
