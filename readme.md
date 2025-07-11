@@ -9,7 +9,7 @@ D.Eng. students should have the ability to:
 
 ## Curriculum
 1. [Agent Foundations (Jul)](/1-foundations/readme.md)
-2. Agent Benchmarks (Aug)
+2. [Agent Benchmarks (Aug)](/2-evaluations/)
 3. Agent Tool-Use (Sep)
 4. Cognitive Enhancements (Oct)
 5. Self-Improving Agents (Nov)
