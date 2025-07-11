@@ -10,8 +10,8 @@ from summaries.summary_manager import SummaryManager
 
 # Set parameters
 agent_name = "react"
-model_name = "o3-mini"
-eval_name = "aqua-rat-10"
+model_name = "gpt-4.1-mini"
+eval_name = "gsm-8k-10"
 max_steps = 10
 
 # Create components
@@ -28,7 +28,7 @@ model = model_factory.create(model_name)
 agent = agent_factory.create(agent_name, model)
 eval = eval_factory.create(eval_name)
 grader = grader_factory.create()
-env = env_factory.create(eval, grader)
+env = env_factory.create(eval_name, eval, grader)
 task_count = len(eval)
 
 # Set up summaries

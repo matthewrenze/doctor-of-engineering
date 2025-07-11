@@ -24,7 +24,7 @@ Thought: I need to calculate 2 + 2.
 Action: calculate("2 + 2")
 Observation: 4
 Thought: The result is 4, so I can finish now.
-Action: finish(4)
+Action: finish("4")
 """
 
 class ReactAgent:

@@ -20,7 +20,7 @@ Here are some example prompts and responses:
 Task: Answer the following question.
 Question: What is the sum of 2 and 2?
 Thought: 2 + 2 = 4.
-Action: finish(4)
+Action: finish("4")
 """
 
 class BaselineAgent:

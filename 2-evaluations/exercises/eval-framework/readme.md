@@ -10,5 +10,6 @@ An agent evaluation framework for various agents, models, and task domains.
 
 ## Sources
  - [AQUA-RAT](https://arxiv.org/abs/1705.04146v3)
+ - [GSM-8k](https://arxiv.org/abs/2110.14168)
 
  
