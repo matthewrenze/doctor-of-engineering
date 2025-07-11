@@ -20,7 +20,7 @@
 
 ## Exercises (to-do)
 - Summarize [agent eval best practices](exercises/best-practices/eval-best-practices.md)
-- Create a [set of Q&A evals](exercises/create-evals/)
+- Create a [set of Q&A evals](exercises/create-qa-evals/)
 - Create an [agent eval framework](exercises/eval-framework/)
 - Create a TextWorld agent and eval
 - Create an ALFWorld agent and eval

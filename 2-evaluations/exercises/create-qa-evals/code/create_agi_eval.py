@@ -75,19 +75,16 @@ for input_file_name in input_file_names_and_topics:
                 problem.question = row["question"]
 
             # Get the choices
-            choices = {}
             if row.get("options") is not None:
                 options = row["options"]
                 choices = {}
                 for option in options:
-                    letter = option[1:2]
-                    answer = option[3:]
-                    choices[letter] = answer
+                    choices[option[1:2]] = option[3:]
+                problem.choices = choices
 
             # Get the label (i.e. multiple-choice answer)
             if row.get("label") is not None:
-                label = row["label"]
-                problem.answer = choices[label]
+                problem.answer = row["label"]
 
             # Get the answer (i.e. exact text answer)
             if row.get("answer") is not None:
