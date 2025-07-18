@@ -17,15 +17,20 @@
 ## Prototypes
 - [hello-models](prototypes/hello-models/) - simple test of various LLMs
 - [textworld](prototypes/textworld/) - simple test of the text world environment
+- [if-eval](prototypes/if-eval/) - exploration of the instruction-following (IF) benchmark
+
+## Experiments
+- [Effects of instruction strength on instruction following](experiments/instruction-strength/)
 
 ## Exercises (to-do)
 - Summarize [agent eval best practices](exercises/best-practices/eval-best-practices.md)
-- Create a [set of Q&A evals](exercises/create-qa-evals/)
-- Create an [agent eval framework](exercises/eval-framework/)
-- Create a TextWorld agent and eval
+- Create a [set of open Q&A evals](exercises/create-qa-evals/)
+- Create an [open Q&A agent eval](exercises/open-qa-agent/)
+- Create a [TextWorld agent eval](exercises/textworld-agent/)
 - Create an ALFWorld agent and eval
 - Create a GAIA agent and eval
 - Create an HLE agent and eval
+- Create an agent eval framework
 
 
 
