@@ -2,7 +2,7 @@ import re
 import textworld.gym
 
 class TextWorldEnv:
-    def __init__(self, evals, grader):
+    def __init__(self, evals):
         self.env = None
         self.evals = evals
         self.task = None

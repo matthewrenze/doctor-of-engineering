@@ -8,9 +8,9 @@ from results.results_manager import ResultsManager
 from summaries.summary_manager import SummaryManager
 
 # Set parameters
-agent_name = "react"
+agent_name = "human"
 model_name = "gpt-4.1"
-eval_name = "cooking-game-10"
+eval_name = "alfworld-thor-level-1-1"
 max_steps = 50
 
 # Create components
@@ -46,9 +46,6 @@ for task_id in range(task_count):
     result_row.model_name = model_name
     result_row.eval_name = eval_name
     result_row.task_id = task_id
-    # result_row.type = task["topic"]
-    # result_row.question = task["question"]
-    # result_row.correct_answer = task["answer"]
 
 # try:
 
@@ -66,7 +63,9 @@ for task_id in range(task_count):
         time.sleep(1)
 
         if is_done:
-            action = agent.act(state)
+            print(f"Is Done: {is_done}")
+            print(f"Final State: {state.get('text', '')}")
+            print(f"Reward: {reward}")
             break
 
         print()
@@ -86,9 +85,6 @@ for task_id in range(task_count):
     result_row.reward_per_token = (reward / model.total_tokens) if model.total_tokens > 0 else 0.0
     results_manager.add(result_row)
     print("--- END OF TASK ---\n")
-
-    # Sleep for 1 second to avoid API throttling
-    time.sleep(1)
 
 # Save the results
 results_manager.save()

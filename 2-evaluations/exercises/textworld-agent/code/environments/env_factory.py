@@ -2,11 +2,11 @@ from environments.textworld_env import TextWorldEnv
 
 class EnvFactory():
 
-    def create(self, eval_name, evals, grader):
+    def create(self, eval_name, evals):
         if eval_name.startswith("simple-game")\
                 or eval_name.startswith("coin-game")\
                 or eval_name.startswith("cooking-game")\
                 or eval_name.startswith("treasure-game"):
-            return TextWorldEnv(evals, grader)
+            return TextWorldEnv(evals)
         else:
             raise ValueError(f"Unknown eval name: {eval_name}.")
