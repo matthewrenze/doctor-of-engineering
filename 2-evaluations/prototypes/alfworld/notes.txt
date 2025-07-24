@@ -1,0 +1,36 @@
+Notes:
+- Everything is set up for batch training by default
+ - So most return values need to be indexed (e.g. result[0])
+- Need to use hack to load config file via code
+- Can manually select one of three environments:
+  - AlfredTWEnv - pure text-world environment
+  - AlfredThorEnv - text and images environment
+  - AlfredHybrid - mixes TW and Thor environments
+- Can select/filter by six tasks types:
+  1 - Pick & Place
+  2 - Examine in Light
+  3 - Clean & Place
+  4 - Heat & Place
+  5 - Cool & Place
+  6 - Pick Two & Place
+- Images can be retrieved by
+  - env.get_exploration_frames() - returns 15 images
+  - env.get_frames() - returns a single image (per batch instance)
+- Images are presented as BRG not RGB
+ - Need to convert using: frame_rgb = frame[:, :, ::-1]
+- Environment randomly shuffles tasks
+ - However you can retrieve the ordered list of tasks from the environment
+   - env.json_file_list()
+ - You can also override the reset method to specify a task
+ - I seem to be getting thread-lock issues with AlfWorld Thor env
+  - Seems to increase in frequency with image size
+  - This might be a known issue
+ - After 50 steps, the Thor environment seems to get stuck
+  - Agent chooses new actions but environment responds the same every step
+
+ NOTE: It might be best for me to create my own AlfredEnv class that:
+  - eliminates the batch operation
+  - allows me to specify a task
+
+
+
