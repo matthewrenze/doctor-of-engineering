@@ -15,8 +15,10 @@
 - Paper summaries can be found in the [summaries folder](summaries/).
 
 ## Prototypes
+- [alfworld](prototypes/alfworld/) - simple test of the ALFWorld environment
+- [gpt-images](prototypes/gpt-images/) - simple test of sending images in prompts
 - [hello-models](prototypes/hello-models/) - simple test of various LLMs
-- [textworld](prototypes/textworld/) - simple test of the text world environment
+- [textworld](prototypes/textworld/) - simple test of the TextWorld environment
 - [if-eval](prototypes/if-eval/) - exploration of the instruction-following (IF) benchmark
 
 ## Experiments
@@ -27,9 +29,9 @@
 - Create a [set of open Q&A evals](exercises/create-qa-evals/)
 - Create an [open Q&A agent eval](exercises/open-qa-agent/)
 - Create a [TextWorld agent eval](exercises/textworld-agent/)
-- Create an ALFWorld agent and eval
-- Create a GAIA agent and eval
-- Create an HLE agent and eval
+- Create an [ALFWorld agent eval](exercises/alfworld-agent/)
+- Create a GAIA agent eval
+- Create an HLE agent eval
 - Create an agent eval framework
 
 
