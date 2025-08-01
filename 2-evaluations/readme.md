@@ -16,6 +16,8 @@
 
 ## Prototypes
 - [alfworld](prototypes/alfworld/) - simple test of the ALFWorld environment
+- [file-to-md](prototypes/file_to_md/) - simple test of four file-to-markdown packages
+- [gaia](prototypes/gaia/) - simple test of GAIA benchmark
 - [gpt-images](prototypes/gpt-images/) - simple test of sending images in prompts
 - [hello-models](prototypes/hello-models/) - simple test of various LLMs
 - [textworld](prototypes/textworld/) - simple test of the TextWorld environment
@@ -30,7 +32,7 @@
 - Create an [open Q&A agent eval](exercises/open-qa-agent/)
 - Create a [TextWorld agent eval](exercises/textworld-agent/)
 - Create an [ALFWorld agent eval](exercises/alfworld-agent/)
-- Create a GAIA agent eval
+- Create a [GAIA agent eval](exercises/gaia-agent/)
 - Create an HLE agent eval
 - Create an agent eval framework
 
