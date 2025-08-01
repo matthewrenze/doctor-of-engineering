@@ -8,7 +8,7 @@ from results.results_manager import ResultsManager
 from summaries.summary_manager import SummaryManager
 
 # Set parameters
-agent_name = "human"
+agent_name = "react"
 model_name = "gpt-4.1"
 eval_name = "alfworld-thor-level-1-1"
 max_steps = 50

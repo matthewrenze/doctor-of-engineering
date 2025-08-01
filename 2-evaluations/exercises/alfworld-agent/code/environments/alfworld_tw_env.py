@@ -19,7 +19,7 @@ class AlfWorldTwEnv:
 
         # Set the task types
         # Note: 1 - Pick & Place, 2 - Examine in Light, 3 - Clean & Place, 4 - Heat & Place, 5 - Cool & Place, 6 - Pick Two & Place
-        config["env"]["task_types"] = [6]
+        config["env"]["task_types"] = [1]
 
         # Setup the environment
         env = AlfredTWEnv(config, train_eval="train")
