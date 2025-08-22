@@ -13,7 +13,7 @@ from summaries.summary_manager import SummaryManager
 params = Parameters(
     agent_name = "react",
     model_name = "gpt-4.1",
-    eval_name = "gaia-level-3-10",
+    eval_name = "gaia-test-10",
     max_steps = 10
 )
 
