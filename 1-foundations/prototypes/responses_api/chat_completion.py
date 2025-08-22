@@ -4,7 +4,7 @@ from openai import AzureOpenAI
 api_key = os.environ['AZURE_OPENAI_KEY']
 api_url = os.environ['AZURE_OPENAI_URL']
 api_version = "2025-01-01-preview"
-model_name = "gpt-4o-mini"
+model_name = "gpt-5-mini"
 
 client = AzureOpenAI(
     api_key=api_key,

@@ -1,14 +1,12 @@
 import os
 from openai import AzureOpenAI
 
-api_key = os.environ['AZURE_OPENAI_KEY']
-api_url = os.environ['AZURE_OPENAI_URL']
+api_key = os.environ['AZURE_OPENAI_KEY_EASTUS2']
+api_url = os.environ['AZURE_OPENAI_URL_EASTUS2']
 api_version = "2025-01-01-preview"
 
-# model_name = "gpt-4.1"
-# model_name = "gpt-4.1-mini"
-model_name = "o3-mini"
-# model_name = "o3"
+model_name = "gpt-5-chat"
+# model_name = "gpt-5-mini"
 
 client = AzureOpenAI(
     api_key=api_key,
@@ -21,8 +19,8 @@ messages = [{"role": "user", "content": message}]
 
 response = client.chat.completions.create(
     model=model_name,
-    messages=messages,
-    temperature=0.0)
+    messages=messages)
+# Note: temperature is not supported in GPT-5
 
 print(f"Response: {response.choices[0].message.content}")
 print(f"Input tokens: {response.usage.prompt_tokens}")

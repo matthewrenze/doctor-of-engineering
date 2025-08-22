@@ -1,9 +1,11 @@
 from openai import OpenAI
 
-model_name = "gpt-4.1-mini"
+# model_name = "gpt-4.1-mini"
 # model_name = "gpt-4.1"
 # model_name = "o3-mini"  # (temperature not supported)
 # model_name = "o3"  # (temperature not supported)
+# model_name = "gpt-5-mini"
+model_name = "gpt-5"
 
 client = OpenAI()
 
