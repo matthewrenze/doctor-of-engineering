@@ -17,11 +17,15 @@
 ## Prototypes
 - [alfworld](prototypes/alfworld/) - simple test of the ALFWorld environment
 - [file-to-md](prototypes/file_to_md/) - simple test of four file-to-markdown packages
-- [gaia](prototypes/gaia/) - simple test of GAIA benchmark
+- [gaia](prototypes/gaia/) - simple test of General AI Assistant (GAIA) benchmark
+- [gpqa](prototypes/gpqa/) - simple test of Google-Proof Q&A (GPQA) benchmark
 - [gpt-images](prototypes/gpt-images/) - simple test of sending images in prompts
 - [hello-models](prototypes/hello-models/) - simple test of various LLMs
-- [textworld](prototypes/textworld/) - simple test of the TextWorld environment
+- [hle](prototypes/hle/) - simple test of Humanity's Last Exam (HLE)
 - [if-eval](prototypes/if-eval/) - exploration of the instruction-following (IF) benchmark
+- [mmlu-pro](prototypes/mmlu-pro/) - simple test of the Massive Multitask Language Understanding (MMLU-Pro) benchmark
+- [textworld](prototypes/textworld/) - simple test of the TextWorld environment
+- [webshop](prototypes/webshop/) - simple test of the Webshop environment
 
 ## Experiments
 - [Effects of instruction strength on instruction following](experiments/instruction-strength/)
@@ -33,7 +37,7 @@
 - Create a [TextWorld agent eval](exercises/textworld-agent/)
 - Create an [ALFWorld agent eval](exercises/alfworld-agent/)
 - Create a [GAIA agent eval](exercises/gaia-agent/)
-- Create an HLE agent eval
+- Create an [HLE agent eval](exercises/hle-agent/)
 - Create an agent eval framework
 
 
