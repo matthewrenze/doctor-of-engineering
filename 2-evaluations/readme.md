@@ -30,7 +30,7 @@
 ## Experiments
 - [Effects of instruction strength on instruction following](experiments/instruction-strength/)
 
-## Exercises (to-do)
+## Exercises
 - Summarize [agent eval best practices](exercises/best-practices/eval-best-practices.md)
 - Create a [set of open Q&A evals](exercises/create-qa-evals/)
 - Create an [open Q&A agent eval](exercises/open-qa-agent/)
@@ -38,7 +38,7 @@
 - Create an [ALFWorld agent eval](exercises/alfworld-agent/)
 - Create a [GAIA agent eval](exercises/gaia-agent/)
 - Create an [HLE agent eval](exercises/hle-agent/)
-- Create an agent eval framework
 
-
-
+## Projects
+- Create a [set of agents evals](projects/create-evals/)
+- Create an [agent eval framework](projects/agent-eval/)
