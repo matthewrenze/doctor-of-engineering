@@ -5,7 +5,7 @@ import seaborn as sns
 
 # Set parameters
 agent_name = "react"
-model_name = "grok-3-mini"
+model_name = "gpt-4.1-mini"
 input_file_path = "../data/summaries.csv"
 output_folder_path = "../data/plots/accuracy-by-exam"
 output_file_name = f"accuracy-by-exam-for-{agent_name}-with-{model_name}.png"
@@ -30,6 +30,8 @@ sns.barplot(
 plt.title(f"Accuracy by eval for {agent_name} agent with {model_name} model")
 plt.xlabel("Eval")
 plt.ylabel("Accuracy")
+plt.xticks(rotation=10, ha='right')
+plt.subplots_adjust(bottom=0.15)
 plt.ylim(0.0, 1.0)
 plt.savefig(f"{output_folder_path}/{output_file_name}")
 plt.show()

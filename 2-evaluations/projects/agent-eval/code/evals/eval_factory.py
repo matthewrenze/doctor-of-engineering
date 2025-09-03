@@ -12,12 +12,16 @@ class EvalFactory:
             file_path = f"../data/evals/gaia/{params.eval_name}.jsonl"
             eval = pd.read_json(file_path, lines=True)
             return eval
-        elif params.eval_name.startswith("gpqa"):
+        elif params.eval_name.startswith("gpqa-"):
             file_path = f"../data/evals/gpqa/{params.eval_name}.jsonl"
             eval = pd.read_json(file_path, lines=True)
             return eval
-        elif params.eval_name.startswith("mmlu-pro"):
+        elif params.eval_name.startswith("mmlu-pro-"):
             file_path = f"../data/evals/mmlu-pro/{params.eval_name}.jsonl"
+            eval = pd.read_json(file_path, lines=True)
+            return eval
+        elif params.eval_name.startswith("tw-"):
+            file_path = f"../data/evals/textworld/{params.eval_name}.jsonl"
             eval = pd.read_json(file_path, lines=True)
             return eval
         else:

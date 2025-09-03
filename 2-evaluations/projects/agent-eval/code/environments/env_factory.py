@@ -3,10 +3,11 @@ from common.parameters import Parameters
 from environments.action_parser import ActionParser
 from environments.open_qa_env import OpenQAEnv
 from environments.mcqa_env import MCQAEnv
+from environments.textworld_env import TextWorldEnv
 from graders.grader_factory import GraderFactory
 from tools.tool_router import ToolRouter
 
-class EnvFactory():
+class EnvFactory:
 
     def __init__(self):
         self.grader_factory = GraderFactory()
@@ -25,5 +26,8 @@ class EnvFactory():
         elif params.env_name == "open-qa":
             return OpenQAEnv(params, eval, parser, router, grader)
 
+        elif params.env_name == "textworld":
+            return TextWorldEnv(params, eval)
+
         else:
-            raise ValueError(f"Unknown eval name: {params.eval_name}")
+            raise ValueError(f"Unknown eval name: {params.env_name}")

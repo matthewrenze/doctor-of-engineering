@@ -2,7 +2,7 @@ import os
 import json
 from common.parameters import Parameters
 
-class AgentWriter:
+class DialogueWriter:
 
     def write(self, params: Parameters, episode_id: int, messages: list):
 
@@ -30,7 +30,7 @@ if __name__ == "__main__":
         {"role": "user", "content": "user prompt goes here"},
         {"role": "assistant", "content": "assistant response goes here"},
     ]
-    writer = AgentWriter()
+    writer = DialogueWriter()
     writer.write(params, 0, messages)
 
 

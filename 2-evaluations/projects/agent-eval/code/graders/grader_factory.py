@@ -9,4 +9,4 @@ class GraderFactory:
         elif params.env_name == "mcqa":
             return MCQAGrader()
         else:
-            raise ValueError(f"Unknown env name: {params.env_name}")
+            return None

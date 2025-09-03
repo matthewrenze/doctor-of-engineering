@@ -1,4 +1,5 @@
 # Import packages
+import os
 import time
 import pandas as pd
 from common.log import Log
@@ -11,41 +12,46 @@ from models.model_factory import ModelFactory
 from agents.agent_factory import AgentFactory
 from results.results_manager import ResultsManager
 from summaries.summary_manager import SummaryManager
-from agents.agent_writer import AgentWriter
+from agents.dialogue_writer import DialogueWriter
 
 # Set agents
 agent_names = [
-    "baseline",
+    # "baseline",
     "react"
 ]
 
 # Set models
 model_names = [
-    "claude-sonnet-4-0",
-    "claude-opus-4-1",
-    "deepseek-r1",
-    "deepseek-v3",
-    "gemini-2.5-flash",
-    "gemini-2.5-flash-lite",
-    "gemini-2.5-pro",
-    "gpt-4.1",
+    # "claude-sonnet-4-0",
+    # "claude-opus-4-1",
+    # "deepseek-r1",
+    # "deepseek-v3",
+    # "gemini-2.5-flash",
+    # "gemini-2.5-flash-lite",
+    # "gemini-2.5-pro",
+    # "gpt-4.1",
     "gpt-4.1-mini",
-    "gpt-5",
-    "gpt-5-mini",
-    "grok-3",
-    "grok-3-mini"
+    # "gpt-5",
+    # "gpt-5-mini",
+    # "grok-3",
+    # "grok-3-mini"
 ]
 
 # Set evals
+# Note: (eval_name, env_name, max_steps)
 eval_env_names = [
-    ("gaia-100", "open-qa"),
-    ("gpqa-diamond-100", "mcqa"),
-    ("hle-100", "open-qa"),
-    ("mmlu-pro-100", "mcqa")
+    # ("gaia-100", "open-qa", 20),
+    # ("gpqa-diamond-100", "mcqa", 20),
+    # ("hle-100", "open-qa", 20),
+    # ("mmlu-pro-100", "mcqa", 20),
+    ("tw-simple-100", "textworld", 20),
+    ("tw-coin-100", "textworld", 20),
+    ("tw-treasure-100", "textworld", 100),
+    ("tw-cooking-100", "textworld", 50),
 ]
 
 # Set parameters
-max_steps = 10
+# max_steps = 20
 sleep_time = 1
 
 # Create the runs
@@ -53,7 +59,7 @@ runs = []
 for agent_name in agent_names:
     for model_name in model_names:
         for eval_env_name in eval_env_names:
-            eval_name, env_name = eval_env_name
+            eval_name, env_name, max_steps = eval_env_name
             params = Parameters(
                 agent_name = agent_name,
                 model_name = model_name,
@@ -69,10 +75,10 @@ agent_factory = AgentFactory()
 eval_factory = EvalFactory()
 env_factory = EnvFactory()
 cost_calculator = CostCalculator()
-agent_writer = AgentWriter()
+agent_writer = DialogueWriter()
 
 for params in runs:
-    print(f"--- Running {params.agent_name} - {params.model_name} - {params.eval_size} ---")
+    print(f"--- Running {params.agent_name} - {params.model_name} - {params.eval_name} ---")
 
     # Create components
     results_manager = ResultsManager()
@@ -87,13 +93,13 @@ for params in runs:
 
     # Set up summaries
     if summary_manager.exists(params):
-        warn(f"Summary for {params.agent_name} - {params.model_name} - {params.eval_size} already exists.")
+        warn(f"Summary for {params.agent_name} - {params.model_name} - {params.eval_name} already exists.")
         input("Press Enter to continue...")
 
     for episode_id in range(num_episodes):
         log = Log(params, episode_id)
-        log.head(f"--- Starting {params.agent_name} - {params.model_name} - {params.eval_size} - episode {episode_id + 1} / {num_episodes} ---")
-        episode = eval.iloc[episode_id]
+        log.head(f"--- Starting {params.agent_name} - {params.model_name} - {params.eval_name} - episode {episode_id + 1} / {num_episodes} ---")
+        episode = eval.iloc[episode_id].to_dict()
         answer = ""
         reward = 0.0
         step_id = 0
@@ -106,15 +112,15 @@ for params in runs:
             log.info(f"State: {state}")
 
             # Reset the agent
-            agent.reset(task, params.max_steps)
+            agent.reset(task)
             step_id = 0
 
             # Create result row
             result_row = results_manager.create(params)
             result_row.episode_id = episode_id
-            result_row.task = task
+            result_row.episode = task
             result_row.start_time = time.time()
-            if pd.notna(episode["question"]):
+            if "question" in episode:
                 result_row.type = episode["topic"]
                 result_row.question = episode["question"]
                 result_row.correct_answer = episode["answer"]
@@ -135,7 +141,8 @@ for params in runs:
 
                 # Handle end of episode
                 if is_done:
-                    answer = action.split('(')[1].rstrip(')')
+                    if params.env_name in ["mcqa", "open-qa"]:
+                        answer = action.split('(')[1].rstrip(')')
                     break
 
                 # Sleep for n seconds to avoid API throttling

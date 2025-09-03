@@ -1,6 +1,6 @@
 import os
-from azure.ai.inference import ChatCompletionsClient
 from azure.core.credentials import AzureKeyCredential
+from azure.ai.inference import ChatCompletionsClient
 
 class AzureModel:
     def __init__(self, model_name):
