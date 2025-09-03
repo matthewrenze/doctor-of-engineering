@@ -9,15 +9,15 @@ task_sets = [1, 10, 100]
 eval_folder_path = "../data/evals/textworld"
 game_folder_path = "../data/evals/textworld/tw-cooking"
 curriculum = [
-    {"go": 1, "recipe": 1, "take": 0, "open": True, "cut": True, "cook": True, "drop": True},
     {"go": 1, "recipe": 1, "take": 1, "open": True, "cut": True, "cook": True, "drop": True},
-    {"go": 6, "recipe": 2, "take": 1, "open": True, "cut": True, "cook": True, "drop": True},
-    {"go": 6, "recipe": 2, "take": 2, "open": True, "cut": True, "cook": True, "drop": True},
-    {"go": 9, "recipe": 3, "take": 2, "open": True, "cut": True, "cook": True, "drop": True},
-    {"go": 9, "recipe": 3, "take": 3, "open": True, "cut": True, "cook": True, "drop": True},
-    {"go": 12, "recipe": 4, "take": 3, "open": True, "cut": True, "cook": True, "drop": True},
-    {"go": 12, "recipe": 4, "take": 4, "open": True, "cut": True, "cook": True, "drop": True},
-    {"go": 12, "recipe": 5, "take": 4, "open": True, "cut": True, "cook": True, "drop": True},
+    {"go": 1, "recipe": 2, "take": 2, "open": True, "cut": True, "cook": True, "drop": True},
+    {"go": 1, "recipe": 3, "take": 3, "open": True, "cut": True, "cook": True, "drop": True},
+    {"go": 1, "recipe": 4, "take": 4, "open": True, "cut": True, "cook": True, "drop": True},
+    {"go": 6, "recipe": 5, "take": 5, "open": True, "cut": True, "cook": True, "drop": True},
+    {"go": 6, "recipe": 5, "take": 5, "open": True, "cut": True, "cook": True, "drop": True},
+    {"go": 9, "recipe": 5, "take": 5, "open": True, "cut": True, "cook": True, "drop": True},
+    {"go": 9, "recipe": 5, "take": 5, "open": True, "cut": True, "cook": True, "drop": True},
+    {"go": 12, "recipe": 5, "take": 5, "open": True, "cut": True, "cook": True, "drop": True},
     {"go": 12, "recipe": 5, "take": 5, "open": True, "cut": True, "cook": True, "drop": True},
 ]
 
