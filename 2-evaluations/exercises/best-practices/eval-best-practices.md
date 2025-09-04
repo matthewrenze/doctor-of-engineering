@@ -1,7 +1,5 @@
 # Summary of Eval Best Practices
 
----
-
 ## 1. General Evaluation Principles
 
 * Define clear success criteria before evaluating
