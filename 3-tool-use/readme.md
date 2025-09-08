@@ -16,6 +16,8 @@
 - Paper summaries can be found in the [summaries](summaries/) folder.
 
 ## Prototypes
+- [action-parser](prototypes/action-parser/) - a simple test of a multi-argument action parser
+- [cache-hash](prototypes/cache-hash/) - a simple test of file-name hashing for a file cache
 - [search-web](prototypes/search-web/) - a simple test of the search-web tool
 - [simple-qa](prototypes/simple-qa/) - a simple test of the simple-qa benchmark
 

@@ -9,7 +9,7 @@ class ToolRouter(object):
 
         if action_name == "calculate":
             tool = CalculatorTool()
-            return tool.execute(action_args)
+            return tool.execute(action_args[0])
 
         elif action_name == "list_files":
             tool = ListFilesTool(workspace.folder_path)
@@ -17,11 +17,11 @@ class ToolRouter(object):
 
         elif action_name == "read_file":
             tool = ReadFileTool(workspace.folder_path)
-            return tool.execute(action_args)
+            return tool.execute(action_args[0])
 
         elif action_name == "search_web":
             tool = SearchWebTool()
-            return tool.execute(action_args)
+            return tool.execute(action_args[0])
 
         # elif action_name == "read_file_as_image":
         #     tool = ReadFileAsImageTool(workspace.folder_path)

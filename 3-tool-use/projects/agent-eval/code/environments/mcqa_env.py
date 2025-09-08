@@ -45,7 +45,7 @@ class MCQAEnv:
         # Route the action
         if action_name == "finish":
             correct_answer = self.episode["answer"]
-            predicted_answer = action_args
+            predicted_answer = action_args[0]
             is_correct = self.grader.grade(self.task, predicted_answer, correct_answer)
             if is_correct:
                 state = f"Correct answer: {self.episode['answer']}."

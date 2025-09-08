@@ -37,7 +37,7 @@ model_names = [
 
 # Set evals
 # Note: (eval_name, env_name, max_steps)
-eval_size = 100
+eval_size = 10
 eval_env_names = [
     # ("gaia", "open-qa", 20),
     # ("gpqa-diamond", "mcqa", 20),
