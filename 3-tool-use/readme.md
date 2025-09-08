@@ -10,7 +10,7 @@
 - [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085)
 - [Model Context Protocol (MCP): Landscape, Security Threats, and Future …](https://arxiv.org/abs/2503.23278)
 - [A Survey of the Model Context Protocol (MCP) …](https://www.preprints.org/manuscript/202504.0245/v1)
-- [Agent-to-Agent (A2A) Protocol (website)](https://google-a2a.github.io/A2A/)
+- [Agent-to-Agent (A2A) Protocol (website)](https://a2a-protocol.org/)
 
 ## Summaries
 - Paper summaries can be found in the [summaries](summaries/) folder.

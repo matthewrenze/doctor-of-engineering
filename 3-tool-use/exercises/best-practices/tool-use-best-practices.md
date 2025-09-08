@@ -4,21 +4,21 @@
 
 * Define each tool with clear name, purpose, JSON input schema, output schema, and error schema
 * Keep descriptions short, capability-focused, and example-driven
-* Prefer deterministic, schema-validated **function calls** over free-form text
+* Prefer deterministic, schema-validated function calls over free-form text
 * Version tools and document breaking changes with migration notes
 * Provide minimal, targeted outputs to reduce context bloat
 
 ## 2. Planning for tool use
 
-* Use **plan-then-execute** or **ReAct** loops for multi-step tasks
-* Represent plans in **JSON** steps for executability and traceability
+* Use plan-then-execute or ReAct loops for multi-step tasks
+* Represent plans in JSON steps for executability and traceability
 * Include explicit success criteria, stop conditions, and fallback branches
 * Budget cost/latency per plan and enforce call caps per task
 * Prefer multi-step planning with verification feedback for higher pass rates
 
 ## 3. Tool discovery, retrieval, and routing
 
-* Maintain a **tool registry** with searchable metadata and examples
+* Maintain a tool registry with searchable metadata and examples
 * Use hybrid retrieval (sparse+dense) to shortlist tools for the model
 * Re-rank candidates with task-aware signals and prior usage success
 * Add self-checks (e.g., “am I choosing the right tool?”) before invocation
@@ -29,7 +29,7 @@
 * Prefer model-only answers for simple, closed-book queries
 * Call tools when information is out-of-date, unseen, or requires computation
 * Calibrate thresholds to avoid over-calling low-value tools
-* Encourage **think → decide → act** scaffolds with an explicit “no-tool” option
+* Encourage think → decide → act scaffolds with an explicit “no-tool” option
 * Log counterfactuals (what would have happened without the tool) for tuning
 
 ## 5. Parameterization and invocation
@@ -38,12 +38,12 @@
 * Validate and coerce types; default missing but safe fields explicitly
 * Use reverse-chaining: pick end-goal tool first, infer prerequisites backward
 * Retry on transient failures with bounded exponential backoff
-* For long jobs, use **async patterns** with job IDs and status polling
+* For long jobs, use async patterns with job IDs and status polling
 
 ## 6. Response handling and integration
 
 * Summarize or compress verbose tool outputs before reinjection to context
-* Prefer **evidence-first** integration: cite or quote key snippets, then reason
+* Prefer evidence-first integration: cite or quote key snippets, then reason
 * Normalize heterogeneous outputs to a common intermediate schema
 * Distinguish observations from conclusions to prevent premature closure
 * Preserve source provenance for downstream audit and user trust
@@ -59,7 +59,7 @@
 ## 8. Safety, security, and policy compliance
 
 * Sanitize inputs/outputs to defend against prompt injection via tools
-* Enforce **allow-lists** and permission scopes per tool and per user
+* Enforce allow-lists and permission scopes per tool and per user
 * Require user identity verification before sensitive operations
 * Gate irreversible changes behind explicit confirmations and summaries
 * Isolate execution (sandboxes) for code, file, and web tools
@@ -74,7 +74,7 @@
 
 ## 10. Observability and auditing of tool use
 
-* Log every **decision → call → response → integration** step with metadata
+* Log every decision → call → response → integration step with metadata
 * Capture inputs, normalized outputs, latency, cost, and success labels
 * Redact secrets while preserving forensic value and reproducibility
 * Surface live traces for debugging and post-mortems
@@ -82,9 +82,9 @@
 
 ## 11. Evaluation specific to tool use
 
-* Evaluate by stage: planning (awareness, plan accuracy), selection (**tool-F1**, Recall\@K), calling (**argname-F1**, format correctness), execution (**pass rate**)
+* Evaluate by stage: planning (awareness, plan accuracy), selection (tool-F1, Recall\@K), calling (argname-F1, format correctness), execution (pass rate)
 * Score response integration for grounding, coherence, and completeness
-* Run **pass^k** trials to measure reliability under sampling
+* Run pass^k trials to measure reliability under sampling
 * Compare with and without tools to quantify marginal utility
 * Include domain policy compliance checks in task scoring
 
@@ -98,7 +98,7 @@
 
 ## 13. Training and adaptation for tool competence
 
-* Fine-tune or augment with **tool-use exemplars** and filtered self-generated calls
+* Fine-tune or augment with tool-use exemplars and filtered self-generated calls
 * Mix seen and synthetic unseen tools to reduce overfitting to specific APIs
 * Reinforce good behaviors with outcome-conditioned feedback signals
 * Use localized verification feedback to improve argument naming and executability
@@ -116,6 +116,6 @@
 
 * Treat tools as governed assets with owners, SLAs, and access reviews
 * Run pre-deployment checklists: schema validation, sandbox tests, red-team prompts
-* Canary updates and roll back on degraded **pass rate** or latency SLOs
+* Canary updates and roll back on degraded pass rate or latency SLOs
 * Document assumptions, constraints, and known failure modes per tool
 * Align monitoring alerts to business impact, not just technical failures
