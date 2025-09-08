@@ -2,6 +2,8 @@ import os
 import shutil
 
 # Set paths
+cache_folder_path = "../data/cache"
+search_cache_folder_path = "../data/cache/search"
 errors_folder_path = "../data/errors"
 logs_folder_path = "../data/logs"
 messages_folder_path = "../data/messages"
@@ -11,6 +13,9 @@ workspaces_folder_path = "../data/workspaces"
 summaries_file_path = "../data/summaries.csv"
 
 # Delete the files/folders
+print("Deleting cache folder...")
+shutil.rmtree(cache_folder_path)
+
 print("Deleting errors folder...")
 shutil.rmtree(errors_folder_path)
 
@@ -34,6 +39,8 @@ os.remove(summaries_file_path)
 
 # Recreate the folders
 print("Recreating folders...")
+os.makedirs(cache_folder_path, exist_ok=True)
+os.makedirs(search_cache_folder_path, exist_ok=True)
 os.makedirs(errors_folder_path, exist_ok=True)
 os.makedirs(logs_folder_path, exist_ok=True)
 os.makedirs(messages_folder_path, exist_ok=True)
