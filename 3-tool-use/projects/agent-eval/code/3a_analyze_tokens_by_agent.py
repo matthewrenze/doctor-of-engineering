@@ -7,8 +7,8 @@ import seaborn as sns
 model_name = "gpt-4.1-mini"
 eval_size = 10
 summaries_file_path = "../data/summaries.csv"
-output_folder_path = "../data/plots/accuracy-by-agent"
-output_file_name = f"accuracy-by-agent-for-{model_name}-on-all-{eval_size}-episode-evals.png"
+output_folder_path = "../data/plots/tokens-by-agent"
+output_file_name = f"tokens-by-agent-for-{model_name}-on-all-{eval_size}-episode-evals.png"
 
 # Create the output folder
 os.makedirs(output_folder_path, exist_ok=True)
@@ -30,19 +30,19 @@ if len(num_episodes_per_agent.unique()) != 1:
 episodes = num_episodes_per_agent.unique()[0]
 
 # Summarize by agent
-groups = groups["accuracy"].mean().reset_index()
+groups = groups["total_tokens"].mean().reset_index()
 
 # Create the plot
 plt.figure(figsize=(10, 6))
 sns.barplot(
     x="agent_name",
-    y="accuracy",
+    y="total_tokens",
     data=groups)
-plt.title(f"Accuracy by agent for {model_name} model on {episodes} episodes")
+plt.title(f"Tokens by agent for {model_name} model on {episodes} episodes")
 plt.xlabel("Agent")
-plt.ylabel("Accuracy")
+plt.ylabel("Tokens")
 plt.xticks(rotation=10, ha='right')
 plt.subplots_adjust(bottom=0.15)
-plt.ylim(0.0, 1.0)
+# plt.ylim(0.0, 1.0)
 plt.savefig(f"{output_folder_path}/{output_file_name}")
 plt.show()

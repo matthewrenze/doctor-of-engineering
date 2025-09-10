@@ -1,6 +1,8 @@
 import os
 from markitdown import MarkItDown
 
+chunk_size = 10000
+
 class ReadFileTool:
     def __init__(self, folder_path):
         self.folder_path = folder_path
@@ -10,11 +12,11 @@ class ReadFileTool:
             file_path = f"{self.folder_path}/{file_name}"
             if not os.path.exists(file_path):
                 return f"File {file_name} does not exist."
-            markitdown = MarkItDown()
+            markitdown = MarkItDown(enable_plugins=True)
             result = markitdown.convert(file_path)
             text = result.markdown
-            if len(text) > 10000:
-                text = text[:10000] + "\n\n[...truncated...]"
+            if len(text) > chunk_size:
+                text = text[:chunk_size] + "\n\n[...truncated...]"
             return text
         except Exception as e:
             return str(e)

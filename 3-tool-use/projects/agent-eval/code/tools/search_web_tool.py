@@ -15,15 +15,15 @@ class SearchWebTool:
     def execute(self, query: str) -> str:
 
         # Check the cache
-        file_name = re.sub(r"[^a-zA-Z0-9]+", "-", query)
-        file_name = file_name.lower()
+        base_name = re.sub(r"[^a-zA-Z0-9]+", "-", query)
+        base_name = base_name.lower()
         file_hash = hashlib.md5(query.encode()).hexdigest()
-        file_name = f"{file_name[:64]}-{file_hash[:16]}-{max_results}.md"
+        file_name = f"{base_name[:64]}-{file_hash[:16]}-{max_results}.md"
         file_path = f"{cache_folder}/{file_name}"
         if os.path.exists(file_path):
             with open(file_path, "r", encoding="utf-8") as file:
-                search_results = file.read()
-            return search_results
+                cached_results = file.read()
+            return cached_results
 
         # Send search request
         try:
