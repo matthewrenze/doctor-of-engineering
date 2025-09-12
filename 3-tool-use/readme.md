@@ -18,13 +18,14 @@
 ## Prototypes
 - [action-parser](prototypes/action-parser/) - a simple test of a multi-argument action parser
 - [cache-hash](prototypes/cache-hash/) - a simple test of file-name hashing for a file cache
+- [read-html](prototypes/read-html/) - a simple test of an HTML-to-markdown tool
 - [search-web](prototypes/search-web/) - a simple test of the search-web tool
 - [simple-qa](prototypes/simple-qa/) - a simple test of the simple-qa benchmark
 
 ## Exercises
 - Summarize [agent tool-use best practices](exercises/best-practices/tool-use-best-practices.md)
 - Create an agent with a [search engine tool](projects/agent-eval/code/tools/search_web_tool.py)
-- Create an agent with a web browser tool
+- Create an agent with a [web browser tool](projects/agent-eval/code/tools/read_html_tool.py)
 - Create an agent with a python interpreter tool
 - Create an MCP client/server agent
 - Create a simple-qa eval
