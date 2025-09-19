@@ -1,3 +1,5 @@
+# NOTE: This library no longer works as of 2025-09-10
+# NOTE: Google deprecated text-based (headless) search tools
 # Based on https://github.com/Nv7-GitHub/googlesearch
 
 import random
