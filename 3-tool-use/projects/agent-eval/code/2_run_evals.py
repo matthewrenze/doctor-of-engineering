@@ -15,7 +15,7 @@ from agents.dialogue_writer import DialogueWriter
 # Set agents
 agent_names = [
     # "baseline",
-    "react-v0",
+    "react-v1c",
 ]
 
 # Set models
@@ -37,13 +37,13 @@ model_names = [
 
 # Set evals
 # Note: (eval_name, env_name, max_steps)
-eval_size = 10
+eval_size = 100
 eval_env_names = [
-    # ("test", "open-qa", 10),
-    ("gaia", "open-qa", 20),
-    ("gpqa-diamond", "mcqa", 20),
-    ("hle", "open-qa", 20),
-    ("mmlu-pro", "mcqa", 20),
+    # ("debug-search-web", "open-qa", 10),
+    # ("gaia", "open-qa", 20),
+    # ("gpqa-diamond", "mcqa", 20),
+    # ("hle", "open-qa", 20),
+    # ("mmlu-pro", "mcqa", 20),
     ("simple-qa", "open-qa", 20),
     # ("tw-simple", "textworld", 20),
     # ("tw-coin", "textworld", 20),

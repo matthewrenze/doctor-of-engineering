@@ -28,8 +28,8 @@ class EvalFactory:
             file_path = f"../data/evals/textworld/{params.eval_name}.jsonl"
             eval = pd.read_json(file_path, lines=True)
             return eval
-        elif params.eval_name.startswith("test-"):
-            file_path = f"../data/evals/test/{params.eval_name}.jsonl"
+        elif params.eval_name.startswith("debug-"):
+            file_path = f"../data/evals/debug/{params.eval_name}.jsonl"
             eval = pd.read_json(file_path, lines=True)
             return eval
         else:
