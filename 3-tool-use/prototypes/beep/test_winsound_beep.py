@@ -1,0 +1,2 @@
+import winsound
+winsound.MessageBeep()
