@@ -29,6 +29,7 @@ class SummaryManager:
         summary.agent_name = results["agent_name"].iloc[0]
         summary.model_name = results["model_name"].iloc[0]
         summary.eval_name = results["eval_name"].iloc[0]
+        summary.top_k = results["top_k"].iloc[0]
         summary.tasks = len(results)
         summary.successes = results["reward"].sum()
         summary.failures = len(results[results["reward"] == 0])

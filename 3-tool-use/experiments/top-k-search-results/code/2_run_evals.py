@@ -2,6 +2,7 @@
 import time
 from common.log import Log
 from common.console import warn
+from common.console import beep
 from common.parameters import Parameters
 from environments.env_factory import EnvFactory
 from evals.eval_factory import EvalFactory
@@ -14,7 +15,7 @@ from agents.dialogue_writer import DialogueWriter
 
 # Set agents
 agent_names = [
-    "react-k10",
+    "react",
 ]
 
 # Set models
@@ -24,14 +25,15 @@ model_names = [
 
 # Set evals
 # Note: (eval_name, env_name, max_steps)
-eval_size = 100
+eval_size = 10
 eval_env_names = [
     # ("debug-search-web", "open-qa", 10),
     ("simple-qa", "open-qa", 20),
 ]
 
 # Set parameters
-# max_steps = 20
+top_k_min = 1
+top_k_max = 10
 sleep_time = 1
 
 # Create the runs
@@ -39,16 +41,18 @@ runs = []
 for agent_name in agent_names:
     for model_name in model_names:
         for eval_env_name in eval_env_names:
-            eval_name, env_name, max_steps = eval_env_name
-            eval_name = f"{eval_name}-{eval_size}"
-            params = Parameters(
-                agent_name = agent_name,
-                model_name = model_name,
-                env_name = env_name,
-                eval_name = eval_name,
-                max_steps = max_steps
-            )
-            runs.append(params)
+            for top_k in range(top_k_min, top_k_max + 1):
+                eval_name, env_name, max_steps = eval_env_name
+                eval_name = f"{eval_name}-{eval_size}"
+                params = Parameters(
+                    agent_name = f"{agent_name}-k{top_k}",
+                    model_name = model_name,
+                    env_name = env_name,
+                    eval_name = eval_name,
+                    max_steps = max_steps,
+                    top_k = top_k
+                )
+                runs.append(params)
 
 # Create components
 model_factory = ModelFactory()
@@ -181,4 +185,7 @@ for params in runs:
     print(f"Avg Reward per Token: {summary.avg_reward_per_token:.6f}")
     print(" --- END OF EVAL ---" )
     print("")
+
+# Alert that the evals are done
+beep()
 

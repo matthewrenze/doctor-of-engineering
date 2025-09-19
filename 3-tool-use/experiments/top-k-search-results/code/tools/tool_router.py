@@ -6,6 +6,9 @@ from tools.search_web_tool import SearchWebTool
 
 
 class ToolRouter(object):
+    def __init__(self, top_k: int):
+        self.top_k = top_k
+
     def route(self, action_name, action_args, workspace):
 
         # Pad args so we always have at least 3
@@ -25,7 +28,7 @@ class ToolRouter(object):
             return tool.execute(action_args[0])
 
         elif action_name == "search_web":
-            tool = SearchWebTool()
+            tool = SearchWebTool(self.top_k)
             return tool.execute(action_args[0])
 
         elif action_name == "read_html":

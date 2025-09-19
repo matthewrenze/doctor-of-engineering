@@ -16,7 +16,7 @@ class EnvFactory:
         # Create components
         grader = self.grader_factory.create(params)
         parser = ActionParser()
-        router = ToolRouter()
+        router = ToolRouter(params.top_k)
 
         # Create environment
         if params.env_name == "mcqa":

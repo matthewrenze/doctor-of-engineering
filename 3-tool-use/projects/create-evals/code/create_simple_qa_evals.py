@@ -8,7 +8,7 @@ random_seed = 42
 source_file_path = "../data/raw/simple-qa/simple_qa_test_set.csv"
 target_folder_path = "../data/evals/simple-qa"
 target_file_path = "../data/evals/simple-qa/simple-qa.jsonl"
-sizes = [1, 10, 100]
+sizes = [1, 10, 100, 1000]
 
 # Create the target folder
 os.makedirs(target_folder_path, exist_ok=True)

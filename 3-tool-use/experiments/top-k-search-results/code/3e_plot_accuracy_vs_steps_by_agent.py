@@ -5,7 +5,7 @@ import seaborn as sns
 
 # Set parameters
 model_name = "gpt-4.1-mini"
-eval_size = 100
+eval_size = 10
 summaries_file_path = "../data/summaries.csv"
 output_folder_path = "../data/plots/"
 output_file_name = f"accuracy-vs-steps.png"

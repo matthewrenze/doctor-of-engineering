@@ -3,6 +3,7 @@ class SummaryRow:
         self.agent_name = ""
         self.model_name = ""
         self.eval_name = ""
+        self.top_k = 0
         self.tasks = 0
         self.successes = 0
         self.failures = 0

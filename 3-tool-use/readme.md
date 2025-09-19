@@ -32,6 +32,9 @@
 - Create an m&ms eval
 - Create a τ-bench evaluation
 
+## Experiments
+ - Determine optimal [top-k search results](experiments/top-k-search-results/)
+
 ## Projects
 - Create a [set of tool-use evals](projects/create-evals/)
 - Create an [tool-use eval framework](projects/agent-eval/)

@@ -5,12 +5,14 @@ import requests
 from common.console import debug
 from common.console import warn
 
-num_results = 10
+# num_results = 10
 max_results = 10
 cache_folder = "../data/cache/search"
 
 
 class SearchWebTool:
+    def __init__(self, top_k: int):
+        self.num_results = top_k
 
     def execute(self, query: str) -> str:
 
@@ -21,15 +23,14 @@ class SearchWebTool:
         file_name = f"{base_name[:64]}-{file_hash[:16]}.md"
         file_path = f"{cache_folder}/{file_name}"
         if os.path.exists(file_path):
-            debug("Cache hit")
             with open(file_path, "r", encoding="utf-8") as file:
                 cached_results = file.read()
-            top_k_results = self.get_top_k_results(cached_results, num_results)
+            top_k_results = self.get_top_k_results(cached_results, self.num_results)
             return top_k_results
 
         try:
 
-            warn("Cache miss")
+            debug("Cache miss")
 
             # Create the request
             api_key = os.getenv("GOOGLE_API_KEY")
@@ -65,7 +66,7 @@ class SearchWebTool:
             with open(file_path, "w", encoding="utf-8") as file:
                 file.write(cached_output)
 
-            top_k_results = self.get_top_k_results(cached_output, num_results)
+            top_k_results = self.get_top_k_results(cached_output, self.num_results)
             return top_k_results
 
         except Exception as e:
@@ -86,6 +87,6 @@ class SearchWebTool:
 if __name__ == "__main__":
 
     search_query = "Python programming"
-    search_engine = SearchWebTool()
+    search_engine = SearchWebTool(5)
     search_results = search_engine.execute(search_query)
     print(search_results)

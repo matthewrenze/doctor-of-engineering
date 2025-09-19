@@ -7,3 +7,4 @@ class Parameters:
     env_name: str
     eval_name: str
     max_steps: int
+    top_k: int

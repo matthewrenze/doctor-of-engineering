@@ -11,6 +11,7 @@ class ResultsManager:
         row.agent_name = params.agent_name
         row.model_name = params.model_name
         row.eval_name = params.eval_name
+        row.top_k = params.top_k
         return row
 
     def add(self, row):

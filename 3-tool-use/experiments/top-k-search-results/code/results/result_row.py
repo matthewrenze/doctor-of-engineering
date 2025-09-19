@@ -3,6 +3,7 @@ class ResultRow:
         self.agent_name = ""
         self.model_name = ""
         self.eval_name = ""
+        self.top_k = 0
         self.task_id = 0
         self.type = ""
         self.task = ""

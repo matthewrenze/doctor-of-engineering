@@ -1,6 +1,12 @@
-# Agent Eval Framework
+# Top-k Search Results
 
-An agent evaluation framework for multiple LLMs and multiple environments.
+An experiment to determine the optimal top-k search results for simple single-hop Q&A problems.
+
+## Results
+ - Accuracy gradually increases as top-k increases leveling out around k=7
+ - Token efficiency peaks at k=3 and gradually decreases
+ - Step efficiency grows rapidly until k=3, then grows gradually to k=10
+ - Unfortunately, k=9 vs k=10 differs by 100k total tokens
 
 ## Resources
 - [Code](code/) - the source code for the agent
