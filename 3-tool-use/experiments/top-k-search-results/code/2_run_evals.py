@@ -25,14 +25,14 @@ model_names = [
 
 # Set evals
 # Note: (eval_name, env_name, max_steps)
-eval_size = 10
+eval_size = 1000
 eval_env_names = [
     # ("debug-search-web", "open-qa", 10),
     ("simple-qa", "open-qa", 20),
 ]
 
 # Set parameters
-top_k_min = 1
+top_k_min = 8
 top_k_max = 10
 sleep_time = 1
 
