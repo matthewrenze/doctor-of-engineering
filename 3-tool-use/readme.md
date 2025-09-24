@@ -26,7 +26,7 @@
 - Summarize [agent tool-use best practices](exercises/best-practices/tool-use-best-practices.md)
 - Create an agent with a [search engine tool](projects/agent-eval/code/tools/search_web_tool.py)
 - Create an agent with a [web browser tool](projects/agent-eval/code/tools/read_html_tool.py)
-- Create an agent with a python interpreter tool
+- Create an agent with a [python interpreter tool](projects/agent-eval/code/tools/execute_code_tool.py)
 - Create an MCP client/server agent
 - Create a simple-qa eval
 - Create an m&ms eval
@@ -34,6 +34,7 @@
 
 ## Experiments
  - Determine optimal [top-k search results](experiments/top-k-search-results/)
+ - Determine optimal [HTML page chunk size](experiments/read-html-chunk-size/)
 
 ## Projects
 - Create a [set of tool-use evals](projects/create-evals/)
