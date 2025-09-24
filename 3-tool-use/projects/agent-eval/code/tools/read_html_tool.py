@@ -53,9 +53,12 @@ class ReadHtmlTool:
                 converter.ignore_images = False
                 markdown = converter.handle(html_content)
 
+                # Remove all blank lines
+                markdown = re.sub(r"(?m)^\s*\n", "", markdown)
+
                 # Add metadata header
                 header = f"Title: {title}\n" \
-                    + f"URL: {url}\n\n"
+                    + f"URL: {url}\n"
                 markdown = header + markdown
 
                 # Save page to cache
@@ -77,7 +80,7 @@ class ReadHtmlTool:
             start = (chunk - 1) * page_size
             end = min(chunk * page_size, len(markdown))
             chunk_text = markdown[start:end]
-            footer = f"\n\n[End of chunk {chunk} of {total_chunks}]"
+            footer = f"\n[End of chunk {chunk} of {total_chunks}]"
             return chunk_text + footer
 
         except Exception as e:

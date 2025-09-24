@@ -44,7 +44,7 @@ class ReactAgent:
         thought = thought_match.group(1).strip() if thought_match else ""
 
         # Get the action from the response
-        action_match = re.search(r"Action: (.*)", response)
+        action_match = re.search(r"Action: (.*)", response, re.DOTALL)
         action = action_match.group(1).strip() if action_match else ""
 
         # Add the response to the messages

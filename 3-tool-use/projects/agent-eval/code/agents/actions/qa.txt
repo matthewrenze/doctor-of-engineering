@@ -1,17 +1,7 @@
-list_files() – lists files in the current workspace.
-Use when you need to discover filenames before reading.
-
-read_file(file_name) – reads the specified file as UTF-8 text.
-Args: file_name (string).
-Use when you know the exact filename.
-
-search_web(query) – returns top 5 results (title, URL, snippet).
-Args: query (string).
-Use when external information or sources are needed.
-
-calculate(expression) – evaluates a mathematical expression.
-Args: expression (string).
-Use only for arithmetic; do not execute code or strings.
-
-finish(answer) – return the final answer and end the task.
-Args: answer (string).
+ - calculate(expression) - evaluates the mathematical expression using the eval() function in Python with the math module imported
+ - list_files() - lists the files in the current workspace
+ - read_file(file_name) - reads the content of the specified file as text
+ - search_web(query) - performs a web search for the given query and returns the top results
+ - read_html(url, chunk_index) - reads the HTML content from the given URL and returns the specified (1-based integer) chunk of text
+ - execute_code(code) - executes the provided Python code and returns the stdout via print() or stderr
+ - finish(answer) - returns the final answer to the user and ends the task

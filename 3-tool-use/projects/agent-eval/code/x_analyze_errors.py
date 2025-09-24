@@ -4,18 +4,21 @@ import pandas as pd
 from models.gpt_model import GptModel
 
 # Set parameters
-agent_name = "react"
+agent_name = "react-v3"
 model_name = "gpt-4.1-mini"
 
+eval_size = 10
 eval_names = [
-    "gaia-100",
-    "gpqa-diamond-100",
-    "hle-100",
-    "mmlu-pro-100",
-    "tw-simple-100",
-    "tw-coin-100",
-    "tw-treasure-100",
-    "tw-cooking-100"]
+    "gaia",
+    "gpqa-diamond",
+    "hle",
+    "mmlu-pro",
+    "simple-qa",
+    # "tw-simple",
+    # "tw-coin",
+    # "tw-treasure",
+    # "tw-cooking"
+]
 
 # Set paths
 results_folder_path = "../data/results"
@@ -51,14 +54,14 @@ os.makedirs(errors_folder_path, exist_ok=True)
 for eval_name in eval_names:
 
     # Load results
-    results_file_name = f"{agent_name} - {model_name} - {eval_name}.csv"
+    results_file_name = f"{agent_name} - {model_name} - {eval_name}-{eval_size}.csv"
     results_file_path = f"{results_folder_path}/{results_file_name}"
     results = pd.read_csv(results_file_path)
 
     errors = []
     for index, row in results.iterrows():
 
-        print(f"Analyzing {agent_name} - {model_name} - {eval_name} - {index} / {len(results)}")
+        print(f"Analyzing {agent_name} - {model_name} - {eval_name}-{eval_size} - {index} / {len(results)}")
 
         if row["reward"] == 1.0:
             continue
@@ -69,14 +72,14 @@ for eval_name in eval_names:
 
         # Load logs
         logs_file_name = f"{index}.txt"
-        logs_folder_name = f"{agent_name} - {model_name} - {eval_name}"
+        logs_folder_name = f"{agent_name} - {model_name} - {eval_name}-{eval_size}"
         logs_file_path = f"{logs_base_path}/{logs_folder_name}/{logs_file_name}"
         with open(logs_file_path, 'r') as file:
             logs = file.read()
 
         # Load messages
         messages_file_name = f"{index}.txt"
-        messages_folder_name = f"{agent_name} - {model_name} - {eval_name}"
+        messages_folder_name = f"{agent_name} - {model_name} - {eval_name}-{eval_size}"
         messages_file_path = f"{messages_base_path}/{messages_folder_name}/{messages_file_name}"
         with open(messages_file_path, 'r') as file:
             messages = file.read()
@@ -100,7 +103,7 @@ for eval_name in eval_names:
         time.sleep(1)
 
     # Create target file
-    errors_file_path = f"{errors_folder_path}/{agent_name} - {model_name} - {eval_name}.txt"
+    errors_file_path = f"{errors_folder_path}/{agent_name} - {model_name} - {eval_name}-{eval_size}.txt"
     with open(errors_file_path, 'w') as errors_file:
         for error in errors:
             errors_file.write(f"{error}\n")

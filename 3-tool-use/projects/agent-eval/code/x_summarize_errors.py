@@ -4,17 +4,20 @@ import pandas as pd
 from models.gpt_model import GptModel
 
 # Set parameters
-agent_name = "react"
+agent_name = "react-v3"
 model_name = "gpt-4.1-mini"
+eval_size = 10
 eval_names = [
-    "gaia-100",
-    "gpqa-diamond-100",
-    "hle-100",
-    "mmlu-pro-100",
-    "tw-simple-100",
-    "tw-coin-100",
-    "tw-treasure-100",
-    "tw-cooking-100"]
+    "gaia",
+    "gpqa-diamond",
+    "hle",
+    "mmlu-pro",
+    # "simple-qa",
+    # "tw-simple",
+    # "tw-coin",
+    # "tw-treasure",
+    # "tw-cooking"
+]
 
 # Set paths
 details_folder_path = "../data/errors/details"
@@ -41,10 +44,10 @@ os.makedirs(summaries_folder_path, exist_ok=True)
 
 for eval_name in eval_names:
 
-    print(f"Analyzing {agent_name} - {model_name} - {eval_name}")
+    print(f"Analyzing {agent_name} - {model_name} - {eval_name}-{eval_size}")
 
     # Load details
-    file_name = f"{agent_name} - {model_name} - {eval_name}.txt"
+    file_name = f"{agent_name} - {model_name} - {eval_name}-{eval_size}.txt"
     details_file_path = f"{details_folder_path}/{file_name}"
     with open(details_file_path, "r") as f:
         errors = f.read()
