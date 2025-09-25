@@ -1,8 +1,9 @@
 from tools.calculate_tool import CalculateTool
 from tools.list_files_tool import ListFilesTool
 from tools.read_file_tool import ReadFileTool
-from tools.read_html_tool import ReadHtmlTool
 from tools.search_web_tool import SearchWebTool
+from tools.read_html_tool import ReadHtmlTool
+from tools.download_file_tool import DownloadFileTool
 from tools.execute_code_tool import ExecuteCodeTool
 
 class ToolRouter(object):
@@ -36,6 +37,11 @@ class ToolRouter(object):
             url = action_args[0]
             chunk = int(action_args[1]) if action_args[1] is not None else 1
             return tool.execute(url, chunk)
+
+        elif action_name == "download_file":
+            tool = DownloadFileTool(workspace.folder_path)
+            url = action_args[0]
+            return tool.execute(url)
 
         elif action_name == "execute_code":
             tool = ExecuteCodeTool()

@@ -1,20 +1,21 @@
 import os
 import requests
-from common.cache import Cache
+from common.text_cache import TextCache
 
 num_results = 10
 max_results = 10
+file_ext = "md"
 
 class SearchWebTool:
 
     def __init__(self):
-        self.cache = Cache("search", "md")
+        self.cache = TextCache("search")
 
     def execute(self, query: str) -> str:
 
         # Check the cache
-        if self.cache.exists(query):
-            cached_results = self.cache.get(query)
+        if self.cache.exists(query, file_ext):
+            cached_results = self.cache.get(query, file_ext)
             top_k_results = self.get_top_k_results(cached_results, num_results)
             return top_k_results
 
@@ -51,7 +52,7 @@ class SearchWebTool:
                 cached_output += "\n\n"
 
             # Cache the results
-            self.cache.set(query, cached_output)
+            self.cache.set(query, file_ext, cached_output)
 
             # Get the top k results
             top_k_results = self.get_top_k_results(cached_output, num_results)

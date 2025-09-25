@@ -3,13 +3,14 @@ import math
 import requests
 import html2text
 from bs4 import BeautifulSoup
-from common.cache import Cache
+from common.text_cache import TextCache
 
 page_size = 10000
+file_ext = "md"
 
 class ReadHtmlTool:
     def __init__(self):
-        self.cache = Cache("html", "md")
+        self.cache = TextCache("html")
 
     def execute(self, url: str, chunk: int = 1) -> str:
 
@@ -20,8 +21,8 @@ class ReadHtmlTool:
                 chunk = 1
 
             # Check the cache
-            if self.cache.exists(url):
-                markdown = self.cache.get(url)
+            if self.cache.exists(url, file_ext):
+                markdown = self.cache.get(url, file_ext)
 
             else:
 
@@ -55,7 +56,7 @@ class ReadHtmlTool:
                 markdown = header + markdown
 
                 # Save page to cache
-                self.cache.set(url, markdown)
+                self.cache.set(url, file_ext, markdown)
 
             # Calculate total pages
             total_chunks = math.ceil(len(markdown) / page_size)
