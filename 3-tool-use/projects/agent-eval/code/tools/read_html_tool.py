@@ -1,15 +1,16 @@
-import os
 import re
 import math
-import hashlib
 import requests
 import html2text
 from bs4 import BeautifulSoup
+from common.cache import Cache
 
 page_size = 10000
-cache_folder_path = "../data/cache/html"
 
 class ReadHtmlTool:
+    def __init__(self):
+        self.cache = Cache("html", "md")
+
     def execute(self, url: str, chunk: int = 1) -> str:
 
         try:
@@ -18,18 +19,10 @@ class ReadHtmlTool:
             if chunk is None:
                 chunk = 1
 
-            # Create the cache file path
-            base_name = re.sub(r"https?://", "", url)
-            base_name = re.sub(r"[^a-zA-Z0-9]+", "-", base_name)
-            base_name = base_name.lower()
-            url_hash = hashlib.md5(url.encode()).hexdigest()
-            file_name = f"{base_name[:64]}-{url_hash[:16]}.md"
-            file_path = f"{cache_folder_path}/{file_name}"
-
             # Check the cache
-            if os.path.exists(file_path):
-                with open(file_path, "r", encoding="utf-8") as file:
-                    markdown = file.read()
+            if self.cache.exists(url):
+                markdown = self.cache.get(url)
+
             else:
 
                 # Get the HTML
@@ -62,9 +55,7 @@ class ReadHtmlTool:
                 markdown = header + markdown
 
                 # Save page to cache
-                file_name = f"{base_name[:64]}-{url_hash[:16]}.md"
-                with open(f"{cache_folder_path}/{file_name}", "w", encoding="utf-8") as file:
-                    file.write(markdown)
+                self.cache.set(url, markdown)
 
             # Calculate total pages
             total_chunks = math.ceil(len(markdown) / page_size)

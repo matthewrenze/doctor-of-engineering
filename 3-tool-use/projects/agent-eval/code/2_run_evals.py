@@ -37,15 +37,15 @@ model_names = [
 
 # Set evals
 # Note: (eval_name, env_name, max_steps)
-eval_size = 10
+eval_size = 1
 eval_env_names = [
-    ("debug-all-tools", "open-qa", 10),
+    # ("debug-all-tools", "open-qa", 10),
     # ("debug-finish", "open-qa", 10),
     # ("debug-calculate", "open-qa", 10),
     # ("debug-list-files", "open-qa", 10),
     # ("debug-read-file", "open-qa", 10),
     # ("debug-search-web", "open-qa", 10),
-    # ("debug-read-html", "open-qa", 10),
+    ("debug-read-html", "open-qa", 10),
     # ("debug-execute-code", "open-qa", 10),
     # ("gaia", "open-qa", 20),
     # ("gpqa-diamond", "mcqa", 20),
