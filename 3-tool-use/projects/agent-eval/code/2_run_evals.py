@@ -46,7 +46,7 @@ eval_env_names = [
     # ("debug-read-file", "open-qa", 10),
     # ("debug-search-web", "open-qa", 10),
     # ("debug-read-html", "open-qa", 10),
-    ("debug-download-file", "open-qa", 10),
+    # ("debug-download-file", "open-qa", 10),
     # ("debug-execute-code", "open-qa", 10),
     # ("gaia", "open-qa", 20),
     # ("gpqa-diamond", "mcqa", 20),

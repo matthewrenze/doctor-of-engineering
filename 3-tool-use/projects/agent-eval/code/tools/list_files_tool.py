@@ -6,13 +6,17 @@ class ListFilesTool:
 
     def execute(self):
         try:
-            filenames = os.listdir(self.directory)
 
-            if not filenames:
-                return "No files found."
+            # Get the files
+            file_names = os.listdir(self.directory)
+            num_files = len(file_names)
 
-            filenames_text = "\n".join(filenames)
-            return filenames_text
+            # Create the output
+            output = f"Workspace contains {num_files} file(s):\n"
+            output += "\n".join(file_names)
+
+            return output
+
         except Exception as e:
             return str(e)
 
