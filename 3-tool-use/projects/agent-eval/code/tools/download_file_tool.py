@@ -1,13 +1,14 @@
 import os
+import shutil
 import requests
 from urllib.parse import urlparse, unquote
-from common.file_cache import FileCache
+from common.cache import Cache
 
 class DownloadFileTool:
 
     def __init__(self, workspace_folder: str):
         self.workspace_folder = workspace_folder
-        self.cache = FileCache("downloads")
+        self.cache = Cache("downloads")
 
     def execute(self, url: str):
 
@@ -28,20 +29,28 @@ class DownloadFileTool:
 
             # Get the file extension
             _, file_ext = os.path.splitext(file_name)
+            file_ext = file_ext.lower().lstrip(".")
 
-            # Download the file
-            response = requests.get(url)
-            response.raise_for_status()
+            # Get the file paths
+            cache_file_path = self.cache.get_file_path(url, file_ext)
+            workspace_file_path = f"{self.workspace_folder}/{file_name}"
 
-            # Create the file path
-            file_path = f"{self.workspace_folder}/{file_name}"
+            # Download file, if not cached
+            if not self.cache.exists(url, file_ext):
 
-            # Get the number of bytes downloaded
-            num_bytes = len(response.content)
+                # Download the file
+                response = requests.get(url)
+                response.raise_for_status()
 
-            # Save the file
-            with open(file_path, 'wb') as file:
-                file.write(response.content)
+                # Save the file
+                with open(cache_file_path, 'wb') as file:
+                    file.write(response.content)
+
+            # Copy from cache to workspace
+            shutil.copyfile(cache_file_path, workspace_file_path)
+
+            # Get the file size
+            num_bytes = os.path.getsize(workspace_file_path)
 
             return f"Downloaded {num_bytes:,} bytes to {file_name}"
 

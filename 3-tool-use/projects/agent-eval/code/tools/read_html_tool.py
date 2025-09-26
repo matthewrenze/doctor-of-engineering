@@ -3,14 +3,14 @@ import math
 import requests
 import html2text
 from bs4 import BeautifulSoup
-from common.text_cache import TextCache
+from common.cache import Cache
 
 page_size = 10000
 file_ext = "md"
 
 class ReadHtmlTool:
     def __init__(self):
-        self.cache = TextCache("html")
+        self.cache = Cache("html")
 
     def execute(self, url: str, chunk: int = 1) -> str:
 

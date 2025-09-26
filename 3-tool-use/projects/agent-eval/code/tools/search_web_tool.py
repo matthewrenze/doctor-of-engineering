@@ -1,6 +1,6 @@
 import os
 import requests
-from common.text_cache import TextCache
+from common.cache import Cache
 
 num_results = 10
 max_results = 10
@@ -9,7 +9,7 @@ file_ext = "md"
 class SearchWebTool:
 
     def __init__(self):
-        self.cache = TextCache("search")
+        self.cache = Cache("search")
 
     def execute(self, query: str) -> str:
 
