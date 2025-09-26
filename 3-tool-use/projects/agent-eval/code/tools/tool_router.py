@@ -25,7 +25,8 @@ class ToolRouter(object):
         elif action_name == "read_file":
             tool = ReadFileTool(workspace.folder_path)
             file_name = action_args[0]
-            return tool.execute(file_name)
+            chunk = int(action_args[1]) if action_args[1] is not None else 1
+            return tool.execute(file_name, chunk)
 
         elif action_name == "search_web":
             tool = SearchWebTool()

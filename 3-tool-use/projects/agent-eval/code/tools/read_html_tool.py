@@ -69,6 +69,7 @@ class ReadHtmlTool:
             if chunk > total_chunks:
                 return f"Error: Chunk {chunk} is out of range. Total chunks: {total_chunks}."
 
+            # Get the chunk
             start = (chunk - 1) * page_size
             end = min(chunk * page_size, len(markdown))
             chunk_text = markdown[start:end]

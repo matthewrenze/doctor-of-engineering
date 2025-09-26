@@ -39,7 +39,7 @@ model_names = [
 # Note: (eval_name, env_name, max_steps)
 eval_size = 10
 eval_env_names = [
-    ("debug-all-tools", "open-qa", 10),
+    # ("debug-all-tools", "open-qa", 10),
     # ("debug-finish", "open-qa", 10),
     # ("debug-calculate", "open-qa", 10),
     # ("debug-list-files", "open-qa", 10),
