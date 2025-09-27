@@ -44,6 +44,7 @@ eval_env_names = [
     # ("debug-calculate", "open-qa", 10),
     # ("debug-list-files", "open-qa", 10),
     # ("debug-read-file", "open-qa", 10),
+    ("debug-find-in-file", "open-qa", 10),
     # ("debug-search-web", "open-qa", 10),
     # ("debug-read-html", "open-qa", 10),
     # ("debug-download-file", "open-qa", 10),

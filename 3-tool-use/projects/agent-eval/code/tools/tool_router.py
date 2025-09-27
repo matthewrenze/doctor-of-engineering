@@ -28,6 +28,14 @@ class ToolRouter(object):
             chunk = int(action_args[1]) if action_args[1] is not None else 1
             return tool.execute(file_name, chunk)
 
+        elif action_name == "find_in_file":
+            from tools.find_in_file_tool import FindInFileTool
+            tool = FindInFileTool(workspace.folder_path)
+            file_name = action_args[0]
+            text = action_args[1]
+            match = int(action_args[2]) if action_args[2] is not None else 1
+            return tool.execute(file_name, text, match)
+
         elif action_name == "search_web":
             tool = SearchWebTool()
             query = action_args[0]
