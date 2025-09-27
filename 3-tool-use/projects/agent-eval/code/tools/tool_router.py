@@ -47,6 +47,14 @@ class ToolRouter(object):
             chunk = int(action_args[1]) if action_args[1] is not None else 1
             return tool.execute(url, chunk)
 
+        elif action_name == "find_in_html":
+            from tools.find_in_html_tool import FindInHtmlTool
+            tool = FindInHtmlTool()
+            url = action_args[0]
+            text = action_args[1]
+            match = int(action_args[2]) if action_args[2] is not None else 1
+            return tool.execute(url, text, match)
+
         elif action_name == "download_file":
             tool = DownloadFileTool(workspace.folder_path)
             url = action_args[0]
