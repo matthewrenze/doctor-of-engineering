@@ -5,8 +5,8 @@ import textworld.challenges.tw_coin_collector
 # Set parameters
 num_tasks = 100
 task_sets = [1, 10, 100]
-eval_folder_path = "../data/evals/textworld"
-game_folder_path = "../data/evals/textworld/tw-coin"
+eval_folder_path = "../data/evals/tw-coin"
+game_folder_path = "../data/evals/tw-coin/files"
 
 # Create the target files folders
 os.makedirs(eval_folder_path, exist_ok=True)
@@ -28,7 +28,7 @@ for task_id in range(num_tasks):
         os.remove(game_file_path)
 
     # Set the settings
-    level = ((task_id % 10) * 10) + 201
+    level = (task_id % 20) + 201
     print(f"  Level: {level}")
     settings = {"level": level}
 

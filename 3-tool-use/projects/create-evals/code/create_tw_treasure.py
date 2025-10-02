@@ -5,8 +5,8 @@ import textworld.challenges.tw_coin_collector
 # Set parameters
 num_tasks = 100
 task_sets = [1, 10, 100]
-eval_folder_path = "../data/evals/textworld"
-game_folder_path = "../data/evals/textworld/tw-treasure"
+eval_folder_path = "../data/evals/tw-treasure"
+game_folder_path = "../data/evals/tw-treasure/files"
 
 tasks = []
 for task_id in range(num_tasks):

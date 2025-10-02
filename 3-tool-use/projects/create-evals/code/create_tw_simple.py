@@ -5,8 +5,8 @@ import textworld.challenges.tw_simple.simple
 # Set parameters
 num_tasks = 100
 task_sets = [1, 10, 100]
-eval_folder_path = "../data/evals/textworld"
-game_folder_path = "../data/evals/textworld/tw-simple"
+eval_folder_path = "../data/evals/tw-simple"
+game_folder_path = "../data/evals/tw-simple/files"
 
 # Create the target files folders
 os.makedirs(eval_folder_path, exist_ok=True)

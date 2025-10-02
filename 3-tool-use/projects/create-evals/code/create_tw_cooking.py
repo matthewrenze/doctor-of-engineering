@@ -6,8 +6,8 @@ import textworld.render.render
 # Set parameters
 num_tasks = 100
 task_sets = [1, 10, 100]
-eval_folder_path = "../data/evals/textworld"
-game_folder_path = "../data/evals/textworld/tw-cooking"
+eval_folder_path = "../data/evals/tw-cooking"
+game_folder_path = "../data/evals/tw-cooking/files"
 curriculum = [
     {"go": 1, "recipe": 1, "take": 1, "open": True, "cut": True, "cook": True, "drop": True},
     {"go": 1, "recipe": 2, "take": 2, "open": True, "cut": True, "cook": True, "drop": True},
