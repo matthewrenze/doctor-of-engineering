@@ -1,0 +1,56 @@
+- list_files()
+  - description - lists the files in the current workspace
+  - returns: string - an alphabetical list the files contained in the current workspace
+- read_file(file_name, chunk_index)
+  - description - reads the content of a specified file as markdown
+  - arguments:
+    - file_name: string - the name of the file to be read
+    - chunk_index: int (optional) - the 1-based index of the 10,000 character chunk to read the file content
+   - returns: string - the markdown chunk of the file content
+   - notes - supports all plain text files and .pdf, .pptx, .docx, .xlsx, .html, .csv, .json, .zip, etc.
+- find_in_file(file_name, text, match)
+  - description - finds and returns the matching text
+  - arguments:
+    - file_name: string - the name of the file to be searched
+    - text: string - the case-insensitive exact text to search for
+    - match: int - the 1-based index of the match occurrence to return
+  - returns: string - the 1,000-character window surrounding the n-th match
+- search_web(query)
+  - description - searches the web for the given query
+  - arguments:
+    - query: string - the search query
+  - returns: string - a list of the top search results for the given query
+- read_html(url, chunk_index)
+  - description - reads the HTML content as markdown from the specified URL in chunks
+  - arguments:
+    - url: string - the URL pointing to the HTML to be read
+    - chunk_index: int (optional) - the 1-based index of the 10,000 character chunk to read the HTML content
+  - returns: string - the markdown chunk of the HTML content at the specified URL
+- find_in_html(url, text, match)
+  - description - finds and returns the matching HTML
+  - arguments:
+    - url: string - the URL pointing to the HTML to be searched
+    - text: string - the case-insensitive exact text to search for
+    - match: int - the 1-based index of the match occurrence to return
+  - returns: string - the 1,000-character window surrounding the n-th match
+- download_file(url)
+  - description - downloads a file from the specified url to the current workspace
+    - arguments:
+        - url: string - the URL pointing to the file to be downloaded
+    - returns: string - the name of the downloaded file and its size in bytes
+- calculate(expression)
+  - description - evaluates the mathematical expression
+    - arguments:
+        - expression: string - the mathematical expression to be evaluated
+    - returns: string - the result of the evaluated mathematical expression
+    - notes - uses the eval() function in Python with the math module imported
+- execute_code(code)
+  - description - executes the specified Python code in the workspace
+    - arguments:
+        - code: string - the Python code to be executed
+    - returns: string - the stdout via print() or stderr if an error occurs
+- finish(answer)
+  - description - returns the final answer to the user and ends the task
+  - arguments:
+    - answer: string - the final answer to be returned to the user
+  - returns: string - the final score and correct answer
