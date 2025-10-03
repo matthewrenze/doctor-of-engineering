@@ -1,0 +1,65 @@
+C:\Users\Matthew\miniconda3\envs\ai\python.exe C:\Users\Matthew\Dropbox\School\JHU\DEng\Repository\3-tool-use\prototypes\mcp-client-server\client.py
+[10/02/25 10:52:22] INFO     Processing request of type           server.py:624
+                             ListResourcesRequest
+                    INFO     Processing request of type           server.py:624
+                             ListToolsRequest
+# Resources:
+meta=None 
+nextCursor=None 
+resources=[]
+
+# Tools:
+meta = None 
+nextCursor = None 
+tools = [
+	Tool(
+		name = 'get_alerts', 
+		title = None, 
+		description = "Get weather alerts for a specific state.\n\n    
+			Args: state: Two-letter state abbreviation (e.g., 'CA' for California).\n    ", 
+			inputSchema = {
+                'properties': {
+                    'state': {
+                        'title': 'State',
+                        'type': 'string'
+                    }
+                },
+                'required': ['state'],
+                'title': 'get_alertsArguments',
+                'type': 'object'
+            }, outputSchema = {
+                'properties': {
+                    'result': {
+                        'title': 'Result',
+                        'type': 'string'
+                    }
+                },
+                'required': ['result'],
+                'title': 'get_alertsOutput',
+                'type': 'object'
+            }, annotations = None, meta = None), Tool(name = 'get_forecast', title = None, description = 'Get the weather forecast for a specific latitude and longitude.\n\n    Args:\n        latitude: Latitude of the location.\n        longitude: Longitude of the location.\n    ', inputSchema = {
+                'properties': {
+                    'latitude': {
+                        'title': 'Latitude',
+                        'type': 'number'
+                    },
+                    'longitude': {
+                        'title': 'Longitude',
+                        'type': 'number'
+                    }
+                },
+                'required': ['latitude', 'longitude'],
+                'title': 'get_forecastArguments',
+                'type': 'object'
+            }, outputSchema = {
+                'properties': {
+                    'result': {
+                        'title': 'Result',
+                        'type': 'string'
+                    }
+                },
+                'required': ['result'],
+                'title': 'get_forecastOutput',
+                'type': 'object'
+            }, annotations = None, meta = None)]
+Process finished with exit code 0
