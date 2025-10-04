@@ -40,7 +40,10 @@ class MCQAEnv:
         is_done = False
 
         # Parse the action
-        action_name, action_args = self.action_parser.parse(action)
+        try:
+            action_name, action_args = self.parser.parse(action)
+        except ValueError as e:
+            return str(e), 0.0, False
 
         # Route the action
         if action_name == "finish":
