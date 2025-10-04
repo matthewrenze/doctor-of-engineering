@@ -14,9 +14,9 @@ from agents.dialogue_writer import DialogueWriter
 
 # Set agents
 agent_names = [
-    # "baseline",
-    "react-v1",
-    "react-v2",
+    "react-v0",
+    # "react-v1",
+    # "react-v2",
 ]
 
 # Set models
