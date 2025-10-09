@@ -44,5 +44,8 @@ plt.ylabel("Accuracy")
 plt.xticks(rotation=10, ha='right')
 plt.subplots_adjust(bottom=0.15)
 plt.ylim(0.0, 1.0)
+# Add labels
+for index, row in groups.iterrows():
+    plt.text(index, row.accuracy + 0.02, f"{row.accuracy:.2f}", color='black', ha="center")
 plt.savefig(f"{output_folder_path}/{output_file_name}")
 plt.show()

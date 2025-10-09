@@ -44,5 +44,7 @@ plt.ylabel("Steps")
 plt.xticks(rotation=10, ha='right')
 plt.subplots_adjust(bottom=0.15)
 # plt.ylim(0.0, 1.0)
+for index, row in groups.iterrows():
+    plt.text(index, row.total_steps + 20, f"{row.total_steps:,}", color='black', ha="center")
 plt.savefig(f"{output_folder_path}/{output_file_name}")
 plt.show()
