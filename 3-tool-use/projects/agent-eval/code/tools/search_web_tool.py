@@ -2,7 +2,7 @@ import os
 import requests
 from common.cache import Cache
 
-num_results = 10
+num_results = 5
 max_results = 10
 file_ext = "md"
 

@@ -7,8 +7,8 @@ import seaborn as sns
 model_name = "gpt-4.1-mini"
 eval_size = 100
 results_folder_path = "../data/results/"
-results_a_file_name = "react-v1 - gpt-4.1-mini - simple-qa-100.csv"
-results_b_file_name = "react-v1c - gpt-4.1-mini - simple-qa-100.csv"
+results_a_file_name = "react-v0 - gpt-4.1-mini - simple-qa-100.csv"
+results_b_file_name = "react-v1 - gpt-4.1-mini - simple-qa-100.csv"
 results_a_file_path = f"{results_folder_path}/{results_a_file_name}"
 results_b_file_path = f"{results_folder_path}/{results_b_file_name}"
 

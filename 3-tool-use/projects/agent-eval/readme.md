@@ -1,6 +1,15 @@
-# Agent Eval Framework
+# Agent Tool Use
 
-An agent evaluation framework for multiple LLMs and multiple environments.
+An evaluation framework for agent tool use.
+
+# Treatments
+v0 - react agent with no tools
+v1 - react agent with 10 tools
+
+# Results
+Agent with tools (54% accuracy) outperforms agent without tools (32% accuracy).
+Token usage for tool-use agent went up from 105k to 1.5M (10x increase)
+Largest performance gains were in SimpleQA and GAIA (as expected)
 
 ## Resources
 - [Code](code/) - the source code for the agent

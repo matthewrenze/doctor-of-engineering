@@ -1,5 +1,10 @@
- - list_files() - lists the files in the current workspace
- - read_file(file_name) - reads the content of the specified file as text
- - search_web(query) - performs a web search for the given query and returns the top results
- - calculate(expression) - evaluates the mathematical expression using the eval() function in Python
- - finish(answer) - returns the final answer to the user and ends the task
+- list_files() - lists the files in the current workspace
+- read_file(file_name, chunk_index) - reads the specified file as markdown and returns the specified (1-based) chunk of text (supports all plain text, .pdf, .docx, .pptx, .xlsx, .zip, etc.)
+- find_in_file(file_name, text, match) - finds the n-th (1-based) case-insensitive exact match of the text in the specified file and returns the 1,000-character window surrounding it
+- search_web(query) - performs a web search for the given query and returns the top results
+- read_html(url, chunk_index) - reads the HTML content from the given URL and returns the specified (1-based) chunk of text
+- find_in_html(url, text, match) - finds the n-th (1-based) case-insensitive exact match of the text in the HTML at the given URL and returns the 1,000-character window surrounding it
+- download_file(url) - downloads the file from the given URL and saves it to the current workspace
+- calculate(expression) - evaluates the mathematical expression using the eval() function in Python with the math module imported
+- execute_code(code) - executes the provided Python code in the workspace and returns the stdout via print() or stderr
+- finish(answer) - returns the final answer to the user and ends the task

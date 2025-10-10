@@ -7,20 +7,23 @@ import textwrap
 import ast
 
 timeout = 10
-header = """
-import builtins
-def _blocked_import(name, *a, **k):
-    if name in {"os", "subprocess", "sys", "socket", "shutil"}:
-        raise ImportError(f"Import of {name} is disabled")
-    return orig_import(name, *a, **k)
-orig_import = builtins.__import__
-builtins.__import__ = _blocked_import
-open = lambda *a, **k: (_ for _ in ()).throw(PermissionError("open() disabled"))
-exec = lambda *a, **k: (_ for _ in ()).throw(PermissionError("exec() disabled"))
-eval = lambda *a, **k: (_ for _ in ()).throw(PermissionError("eval() disabled"))
-"""
+header = ""
+# header = """
+# import builtins
+# def _blocked_import(name, *a, **k):
+#     if name in {"os", "subprocess", "sys", "socket", "shutil"}:
+#         raise ImportError(f"Import of {name} is disabled")
+#     return orig_import(name, *a, **k)
+# orig_import = builtins.__import__
+# builtins.__import__ = _blocked_import
+# open = lambda *a, **k: (_ for _ in ()).throw(PermissionError("open() disabled"))
+# exec = lambda *a, **k: (_ for _ in ()).throw(PermissionError("exec() disabled"))
+# eval = lambda *a, **k: (_ for _ in ()).throw(PermissionError("eval() disabled"))
+# """
 
 class ExecuteCodeTool:
+    def __init__(self, workspace_path: str):
+        self.workspace_path = workspace_path
 
     def execute(self, code: str) -> str:
 
@@ -52,17 +55,14 @@ class ExecuteCodeTool:
                 # Execute the code
                 process = subprocess.run(
                     args=[python_exe, "-I", file_path],
-                    cwd=temp_folder,
+                    cwd=self.workspace_path,
                     capture_output=True,
                     text=True,
                     timeout=timeout)
 
                 # Handle errors
                 if process.returncode != 0:
-                    return process.stderr
-
-                if process.stdout == "":
-                    return "Error: No output was produced. You must use print() to return results to stdout."
+                    return f"Error: {process.stderr}"
 
                 # Return stdout
                 return process.stdout
@@ -72,7 +72,7 @@ class ExecuteCodeTool:
                 return f"Error: Timeout occurred. Code execution is limited to {timeout} seconds runtime."
 
 if __name__ == "__main__":
-    tool = ExecuteCodeTool()
+    tool = ExecuteCodeTool("../data/workspace/test")
     print("# Normal usage")
     print(tool.execute("result = 1 + 2\nprint(result)"))
     print(tool.execute("from math import sqrt\nresult = sqrt(2)\nprint(result)"))
@@ -93,7 +93,7 @@ if __name__ == "__main__":
 
     print("# Blocked imports")
     print(tool.execute("import os"))  # ImportError: disabled
-    print(tool.execute("from subprocess import Popen"))  # ImportError: disabled
+    print(tool.execute("from subprocess import open"))  # ImportError: disabled
     print(tool.execute("__import__('socket')"))  # ImportError: disabled
     print(tool.execute("import shutil as s"))  # ImportError: disabled
     print(tool.execute("import os.path"))  # ImportError: disabled (ensure dotted names are caught)

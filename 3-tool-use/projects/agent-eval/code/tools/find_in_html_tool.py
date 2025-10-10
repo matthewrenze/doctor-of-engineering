@@ -6,6 +6,7 @@ from common.cache import Cache
 
 window_size = 1000
 file_ext = "md"
+timeout = 10
 
 class FindInHtmlTool:
     def __init__(self):
@@ -31,7 +32,8 @@ class FindInHtmlTool:
 
             else:
                 # Get the HTML
-                response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+                headers = {"User-Agent": "Mozilla/5.0"}
+                response = requests.get(url, headers=headers, timeout=timeout)
                 response.raise_for_status()
                 html_content = response.text
 

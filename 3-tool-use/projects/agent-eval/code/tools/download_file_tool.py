@@ -4,6 +4,8 @@ import requests
 from urllib.parse import urlparse, unquote
 from common.cache import Cache
 
+timeout = 10
+
 class DownloadFileTool:
 
     def __init__(self, workspace_folder: str):
@@ -39,7 +41,8 @@ class DownloadFileTool:
             if not self.cache.exists(url, file_ext):
 
                 # Download the file
-                response = requests.get(url)
+                headers = {"User-Agent": "Mozilla/5.0"}
+                response = requests.get(url, headers=headers, timeout=timeout)
                 response.raise_for_status()
 
                 # Save the file

@@ -31,31 +31,35 @@ class OpenQAEnv:
         return self.task, state
 
     def step(self, action: str) -> (str, float, bool):
-        state = ""
-        reward = 0.0
-        is_done = False
+        try:
+            state = ""
+            reward = 0.0
+            is_done = False
 
-        # Parse the action
-        action_name, action_args = self.parser.parse(action)
+            # Parse the action
+            action_name, action_args = self.parser.parse(action)
 
-        # Route the action
-        if action_name == "finish":
-            correct_answer = self.episode["answer"]
-            predicted_answer = action_args[0]
-            is_correct = self.grader.grade(self.task, correct_answer, predicted_answer)
-            if is_correct:
-                state = f"Correct answer: {self.episode['answer']}."
-                reward = 1.0
+            # Route the action
+            if action_name == "finish":
+                correct_answer = self.episode["answer"]
+                predicted_answer = action_args[0]
+                is_correct = self.grader.grade(self.task, correct_answer, predicted_answer)
+                if is_correct:
+                    state = f"Correct answer: {self.episode['answer']}."
+                    reward = 1.0
+                else:
+                    state = f"Incorrect answer. Expected: {self.episode['answer']}, but got: {action_args}."
+                    reward = 0.0
+                is_done = True
+
             else:
-                state = f"Incorrect answer. Expected: {self.episode['answer']}, but got: {action_args}."
-                reward = 0.0
-            is_done = True
+                state = self.router.route(action_name, action_args, self.workspace)
 
-        else:
-            state = self.router.route(action_name, action_args, self.workspace)
+            self.step_index += 1
+            return state, reward, is_done
 
-        self.step_index += 1
-        return state, reward, is_done
+        except Exception as e:
+            return f"Error: {str(e)}", 0.0, False
 
 
 

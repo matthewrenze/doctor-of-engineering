@@ -7,6 +7,7 @@ from common.cache import Cache
 
 page_size = 10000
 file_ext = "md"
+timeout = 10
 
 class ReadHtmlTool:
     def __init__(self):
@@ -27,7 +28,8 @@ class ReadHtmlTool:
             else:
 
                 # Get the HTML
-                response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+                headers = {"User-Agent": "Mozilla/5.0"}
+                response = requests.get(url, headers=headers, timeout=timeout)
                 response.raise_for_status()
                 html_content = response.text
 

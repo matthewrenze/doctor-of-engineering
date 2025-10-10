@@ -1,28 +1,14 @@
 class ExamplesFactory(object):
-    def create(self, agent_name: str, env_name: str) -> str:
+    def create(self, env_name: str, agent_version) -> str:
         # Select the examples file
-        if agent_name == "baseline":
-            if env_name == "mcqa":
-                file_name = "baseline-mcqa.txt"
-            elif env_name == "open-qa":
-                file_name = "baseline-open-qa.txt"
-            elif env_name == "textworld":
-                file_name = "baseline-textworld.txt"
-            else:
-                raise ValueError(f"Unknown env name: {env_name}")
-
-        elif agent_name.startswith("react"):
-            if env_name == "mcqa":
-                file_name = "react-mcqa.txt"
-            elif env_name == "open-qa":
-                file_name = "react-open-qa.txt"
-            elif env_name.startswith("textworld"):
-                file_name = "react-textworld.txt"
-            else:
-                raise ValueError(f"Unknown env name: {env_name}")
-
+        if env_name == "mcqa":
+            file_name = f"mcqa-v{agent_version}.txt"
+        elif env_name == "open-qa":
+            file_name = f"open-qa-v{agent_version}.txt"
+        elif env_name.startswith("textworld"):
+            file_name = "textworld.txt"
         else:
-            raise ValueError(f"Unknown agent name: {agent_name}")
+            raise ValueError(f"Unknown env name: {env_name}")
 
         # Read the examples from the file
         folder_path = "agents/examples"

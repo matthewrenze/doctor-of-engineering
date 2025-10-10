@@ -61,7 +61,7 @@ class ToolRouter(object):
             return tool.execute(url)
 
         elif action_name == "execute_code":
-            tool = ExecuteCodeTool()
+            tool = ExecuteCodeTool(workspace.folder_path)
             code = action_args[0]
             return tool.execute(code)
 

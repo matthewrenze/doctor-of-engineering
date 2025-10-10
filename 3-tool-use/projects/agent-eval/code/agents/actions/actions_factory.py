@@ -1,11 +1,11 @@
 class ActionsFactory:
-    def create(self, env_name: str) -> str:
+    def create(self, env_name: str, version: int) -> str:
 
         # Select the action file
         if env_name == "mcqa":
-            file_name = "qa.txt"
+            file_name = f"qa-v{version}.txt"
         elif env_name == "open-qa":
-            file_name = "qa.txt"
+            file_name = f"qa-v{version}.txt"
         elif env_name == "textworld":
             file_name = "textworld.txt"
         else:

@@ -14,8 +14,8 @@ from agents.dialogue_writer import DialogueWriter
 
 # Set agents
 agent_names = [
-    # "baseline",
-    "react-v3",
+    "react-v0",
+    "react-v1",
 ]
 
 # Set models
@@ -37,7 +37,7 @@ model_names = [
 
 # Set evals
 # Note: (eval_name, env_name, max_steps)
-eval_size = 10
+eval_size = 100
 eval_env_names = [
     # ("debug-all-tools", "open-qa", 10),
     # ("debug-finish", "open-qa", 10),
@@ -46,19 +46,19 @@ eval_env_names = [
     # ("debug-read-file", "open-qa", 10),
     # ("debug-find-in-file", "open-qa", 10),
     # ("debug-search-web", "open-qa", 10),
-    ("debug-read-html", "open-qa", 10),
+    # ("debug-read-html", "open-qa", 10),
     # ("debug-find-in-html", "open-qa", 10),
     # ("debug-download-file", "open-qa", 10),
     # ("debug-execute-code", "open-qa", 10),
-    # ("gaia", "open-qa", 20),
-    # ("gpqa-diamond", "mcqa", 20),
-    # ("hle", "open-qa", 20),
-    # ("mmlu-pro", "mcqa", 20),
-    # ("simple-qa", "open-qa", 20),
+    ("gaia", "open-qa", 20),
+    ("gpqa-diamond", "mcqa", 20),
+    ("hle", "open-qa", 20),
+    ("mmlu-pro", "mcqa", 20),
+    ("simple-qa", "open-qa", 20),
     # ("tw-simple", "textworld", 20),
     # ("tw-coin", "textworld", 20),
     # ("tw-treasure", "textworld", 100),
-    # ("tw-cooking", "textworld", 50),
+    # ("tw-cooking", "textworld", 75),
 ]
 
 # Set parameters
@@ -74,6 +74,7 @@ for agent_name in agent_names:
             eval_name = f"{eval_name}-{eval_size}"
             params = Parameters(
                 agent_name = agent_name,
+                agent_version = int(agent_name[-1]),
                 model_name = model_name,
                 env_name = env_name,
                 eval_name = eval_name,

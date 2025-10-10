@@ -5,7 +5,7 @@ import seaborn as sns
 
 # Set parameters
 model_name = "gpt-4.1-mini"
-eval_size = 10
+eval_size = 100
 summaries_file_path = "../data/summaries.csv"
 output_folder_path = "../data/plots/tokens-by-agent"
 output_file_name = f"tokens-by-agent-for-{model_name}-on-all-{eval_size}-episode-evals.png"
@@ -43,6 +43,5 @@ plt.xlabel("Agent")
 plt.ylabel("Tokens")
 plt.xticks(rotation=10, ha='right')
 plt.subplots_adjust(bottom=0.15)
-# plt.ylim(0.0, 1.0)
 plt.savefig(f"{output_folder_path}/{output_file_name}")
 plt.show()
