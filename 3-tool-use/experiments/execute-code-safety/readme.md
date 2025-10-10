@@ -3,9 +3,9 @@
 An experiment to determine what safety mechanisms to apply to the execute-code tool.
 
 ## Treatments
-v0 - no code execution capabilities (baseline)
-v1 - full code execution capabilites with no safety header
-v2 - disabled open(), exec(), eval() and importing os, subprocess, sys, socket, and shutil
+v0 - no code execution capabilities (baseline)  
+v1 - full code execution capabilites with no safety header  
+v2 - disabled open(), exec(), eval() and importing os, subprocess, sys, socket, and shutil  
 
 ## Results
 - Both v1 and v2 perform equally well. 
