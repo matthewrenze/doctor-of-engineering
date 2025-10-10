@@ -3,10 +3,10 @@
 An experiment to determine the optimal top-k search results for simple single-hop Q&A problems.
 
 ## Results
- - Accuracy gradually increases as top-k increases leveling out around k=7
- - Token efficiency peaks around k=4 and gradually decreases
- - Step efficiency grows rapidly and until k=5 then gradually to k=10
- - k=5 seems to be a good starting point for most cases
+- Accuracy gradually increases as top-k increases leveling out around k=7
+- Token efficiency peaks around k=4 and gradually decreases
+- Step efficiency grows rapidly and until k=5 then gradually to k=10
+- k=5 seems to be a good starting point for most cases
 
 ## Resources
 - [Code](code/) - the source code for the agent

@@ -3,12 +3,12 @@
 An experiment to determine what safety mechanisms to apply to the execute-code tool.
 
 ## Treatments
-v0 - no code execution capabilities (baseline)  
-v1 - full code execution capabilites with no safety header  
-v2 - disabled open(), exec(), eval() and importing os, subprocess, sys, socket, and shutil  
+- v0 - no code execution capabilities (baseline)
+- v1 - full code execution capabilities with no safety header
+- v2 - disabled open(), exec(), eval() and importing os, subprocess, sys, socket, and shutil
 
 ## Results
-- Both v1 and v2 perform equally well. 
+- Both v1 and v2 perform equally well.
   - This is suprising to me since I've seen the agent struggle to solve problems because of limitations imposed by the safety header.
 - I added v0 to see how much code execution contributed to total accuracy but it was essentially zero
   - v0 increased token count and step count, 
