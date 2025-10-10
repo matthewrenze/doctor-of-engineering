@@ -3,10 +3,10 @@
 An experiment to determine the performance of plain-text vs JSON tool I/O format.
 
 ## Treatments
-v0 - just function signatures - no description, args, or returns
-v1 - function signatures and descriptions - no args or returns
-v2 - function signatures, args, returns, notes
-v3 - JSON formated version of v2
+v0 - just function signatures - no description, args, or returns  
+v1 - function signatures and descriptions - no args or returns  
+v2 - function signatures, args, returns, notes  
+v3 - JSON formated version of v2  
 
 ## Results
 Accuracy remains the same across treatements from v0 to v2.
