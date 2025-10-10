@@ -3,8 +3,8 @@
 An evaluation framework for agent tool use.
 
 # Treatments
-v0 - react agent with no tools
-v1 - react agent with 10 tools
+v0 - react agent with no tools  
+v1 - react agent with 10 tools  
 
 # Results
 Agent with tools (54% accuracy) outperforms agent without tools (32% accuracy).
