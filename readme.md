@@ -11,6 +11,6 @@ D.Eng. students should have the ability to:
 1. [Agent Foundations (Jul)](1-foundations/readme.md)
 2. [Agent Benchmarks (Aug)](2-evaluations/readme.md)
 3. [Agent Tool-Use (Sep)](3-tool-use/readme.md)
-4. Cognitive Enhancements (Oct)
+4. [Cognitive Enhancements (Oct)](4-cognition/readme.md)
 5. Self-Improving Agents (Nov)
 6. Agent Alignment (Dec)
