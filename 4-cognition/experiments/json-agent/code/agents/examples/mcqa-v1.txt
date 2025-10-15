@@ -1,0 +1,23 @@
+Step 1 input
+{
+  "task": "Answer the following multiple-choice question:",
+  "question": "What is the sum of 2 and 2?",
+  "options": {"A": "2", "B": "3", "C": "4", "D": "5"}
+}
+
+Step 1 output
+{
+  "thought": "I need to calculate 2 + 2.",
+  "action": { "name": "calculate", "args": { "expression": "2 + 2" } }
+}
+
+Step 2 input
+{
+  "result": "4"
+}
+
+Step 2 output
+{
+  "thought": "The result is 4, so the answer is C.",
+  "action": { "name": "finish", "args": { "answer": "C" } }
+}
