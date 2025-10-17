@@ -22,6 +22,7 @@
 ## Exercises
 - Summarize the [best practices](exercises/best-practices/best-practices-for-cognitive-enhancements.md) for implementing cognititive enhancements
 - Summarize the [benchmarks](exercises/best-practices/benchmarks-for-cognitive-enhancements.md) used for evaluating cognitive enhancements
+- Create an [observation agent](exercises/observation-agent/)
 
 ## Experiments
 - Compare [plain-text vs JSON agent](experiments/json-agent/)
