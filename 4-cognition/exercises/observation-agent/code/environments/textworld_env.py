@@ -51,9 +51,25 @@ class TextWorldEnv:
         self.env.render()
 
     def step(self, action: str) -> (str, float, bool):
+        # HACK: Fix the "take <object> from floor" issue
+        if action.startswith("take "):
+            action = action.replace(" from floor", "")
+
+        # Step the environment
         state, reward, is_done, infos = self.env.step(action)
+
+        # Clean up the state
         state = re.sub(r'\n+', '\n', state.strip())
         state = state.rstrip('>')
+
+        # Increment step index
         self.step_index += 1
+
+        # Normalize the reward
         reward = reward / self.max_reward
+
+        # Handle the quit action
+        if action == "quit":
+            is_done = True
+
         return state, reward, is_done
