@@ -2,6 +2,11 @@
 
 An agent evaluation framework for the Humanity's Last Exam (HLE) benchmark.
 
+## Notes
+- There are two types of answers:
+  - Multiple choice
+  - Exact answer
+
 ## Resources
 - [Code](code/) - the source code for the agent
 - [Evals](data/evals/) - the eval sets
