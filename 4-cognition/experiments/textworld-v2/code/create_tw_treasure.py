@@ -8,7 +8,7 @@ num_tasks = 100
 eval_folder_path = "../data/evals/tw-treasure"
 game_folder_path = "../data/evals/tw-treasure/files"
 
-for level_id in range(3, num_levels + 1):
+for level_id in range(1, num_levels + 1):
 
     tasks = []
     for task_id in range(1, num_tasks + 1):
