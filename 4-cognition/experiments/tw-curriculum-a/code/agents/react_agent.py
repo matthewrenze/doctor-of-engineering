@@ -1,0 +1,67 @@
+import re
+import io
+import base64
+from PIL import Image
+from typing import Union
+
+class ReactAgent:
+    def __init__(self, model, prompt, version):
+        self.model = model
+        self.prompt = prompt
+        self.messages = []
+        self.step_idx = 0
+        self.is_observing = (version == 1)
+
+    def reset(self, task):
+        self.model.reset()
+        system_prompt = self.prompt + f"\nTask: {task.strip()}"
+        system_message = {"role": "system", "content": system_prompt.strip()}
+        self.messages = [system_message]
+        self.step_idx = 0
+
+    def act(self, state: str) -> tuple[str, str, str]:
+
+        # Prepare the user prompt
+        content = state.strip()
+        prompt_message = {"role": "user", "content": content}
+        temp_messages = self.messages.copy()
+        temp_messages.append(prompt_message)
+
+        # Only add the state to the history if agent is non-observing
+        if not self.is_observing:
+            self.messages.append(prompt_message)
+
+        # Get the response from the model
+        response = self.model.get_response(temp_messages)
+        response = response.replace("\n\n", "\n")
+        response = response.strip()
+
+        # Get the observation from the response
+        observation_match = re.search(r"Observation: (.*?)(?=\nThought:)", response, re.DOTALL)
+        observation = observation_match.group(1).strip() if observation_match else ""
+
+        # Get the thought from the response
+        thought_match = re.search(r"Thought: (.*?)(?=\nAction:)", response, re.DOTALL)
+        thought = thought_match.group(1).strip() if thought_match else ""
+
+        # Get the action from the response
+        action_match = re.search(r"Action: (.*)", response, re.DOTALL)
+        action = action_match.group(1).strip() if action_match else ""
+
+        # Add the response to the messages
+        response_message = {"role": "assistant", "content": response}
+        self.messages.append(response_message)
+
+        self.step_idx += 1
+        return observation, thought, action
+
+
+# # DEBUG:
+# class TestModel:
+#     def get_response(self, prompt):
+#         return "Thought: This is a mock thought.\nAction: Finish[mock answer]"
+# model = TestModel()
+# agent = Agent(model)
+# action = agent.act("Mock observation for testing.")
+# print(agent.prompt)
+# print(action)
