@@ -224,99 +224,99 @@ Carry out preparing meal:
 Understand "prepare meal" as preparing meal.
 
 
-The r_0 and the r_1 and the r_2 and the r_3 and the r_4 and the r_5 are rooms.
+The r_0 and the r_2 and the r_1 and the r_3 and the r_4 and the r_5 are rooms.
 
 Understand "kitchen" as r_0.
 The internal name of r_0 is "kitchen".
 The printed name of r_0 is "-= Kitchen =-".
-The kitchen part 0 is some text that varies. The kitchen part 0 is "You arrive in a kitchen. A standard one.
+The kitchen part 0 is some text that varies. The kitchen part 0 is "You are in a kitchen. A normal one.
 
- You can make out [if c_0 is locked]a locked[else if c_0 is open]an opened[otherwise]a closed[end if]".
-The kitchen part 1 is some text that varies. The kitchen part 1 is " fridge.[if c_0 is open and there is something in the c_0] The fridge contains [a list of things in the c_0].[end if]".
-The kitchen part 2 is some text that varies. The kitchen part 2 is "[if c_0 is open and the c_0 contains nothing] The fridge is empty, what a horrible day![end if]".
-The kitchen part 3 is some text that varies. The kitchen part 3 is " You see a gleam over in a corner, where you can see an oven.[if oven_0 is open and there is something in the oven_0] The oven contains [a list of things in the oven_0].[end if]".
-The kitchen part 4 is some text that varies. The kitchen part 4 is "[if oven_0 is open and the oven_0 contains nothing] The oven is empty! This is the worst thing that could possibly happen, ever![end if]".
-The kitchen part 5 is some text that varies. The kitchen part 5 is " Hey, want to see a table? Look over there, a table. The table is massive.[if there is something on the s_0] On the table you make out [a list of things on the s_0]. You look around you, at all the containers and supporters, doors and objects, and you think to yourself. Why? Why Textworld?[end if]".
-The kitchen part 6 is some text that varies. The kitchen part 6 is "[if there is nothing on the s_0] But the thing is empty, unfortunately.[end if]".
-The kitchen part 7 is some text that varies. The kitchen part 7 is " You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a counter. The counter is vast.[if there is something on the s_1] On the counter you see [a list of things on the s_1].[end if]".
-The kitchen part 8 is some text that varies. The kitchen part 8 is "[if there is nothing on the s_1] But the thing is empty, unfortunately. Aw, and here you were, all excited for there to be things on it![end if]".
-The kitchen part 9 is some text that varies. The kitchen part 9 is " You make out a stove. I guess it's true what they say, if you're looking for a stove, go to TextWorld. The stove is conventional.[if there is something on the stove_0] On the stove you see [a list of things on the stove_0].[end if]".
-The kitchen part 10 is some text that varies. The kitchen part 10 is "[if there is nothing on the stove_0] Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the stove! oh well.[end if]".
+ You see a fridge.[if c_0 is open and there is something in the c_0] The fridge contains [a list of things in the c_0]![end if]".
+The kitchen part 1 is some text that varies. The kitchen part 1 is "[if c_0 is open and the c_0 contains nothing] What a letdown! The fridge is empty![end if]".
+The kitchen part 2 is some text that varies. The kitchen part 2 is " You can make out [if oven_0 is locked]a locked[else if oven_0 is open]an opened[otherwise]a closed[end if]".
+The kitchen part 3 is some text that varies. The kitchen part 3 is " oven.[if oven_0 is open and there is something in the oven_0] The oven contains [a list of things in the oven_0]. There's something strange about this thing being here, but you don't have time to worry about that now.[end if]".
+The kitchen part 4 is some text that varies. The kitchen part 4 is "[if oven_0 is open and the oven_0 contains nothing] Empty! What kind of nightmare TextWorld is this?[end if]".
+The kitchen part 5 is some text that varies. The kitchen part 5 is " You smell an intriguing smell, and follow it to a table. [if there is something on the s_0]You see [a list of things on the s_0] on the table.[end if]".
+The kitchen part 6 is some text that varies. The kitchen part 6 is "[if there is nothing on the s_0]Looks like someone's already been here and taken everything off it, though.[end if]".
+The kitchen part 7 is some text that varies. The kitchen part 7 is " Look over there! a counter. The counter is vast.[if there is something on the s_1] On the counter you can make out [a list of things on the s_1].[end if]".
+The kitchen part 8 is some text that varies. The kitchen part 8 is "[if there is nothing on the s_1] But the thing hasn't got anything on it.[end if]".
+The kitchen part 9 is some text that varies. The kitchen part 9 is " You can see a stove. The stove is conventional.[if there is something on the stove_0] On the stove you can see [a list of things on the stove_0].[end if]".
+The kitchen part 10 is some text that varies. The kitchen part 10 is "[if there is nothing on the stove_0] Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove.[end if]".
 The kitchen part 11 is some text that varies. The kitchen part 11 is "
 
  There is [if d_0 is open]an open[otherwise]a closed[end if]".
-The kitchen part 12 is some text that varies. The kitchen part 12 is " frosted-glass door leading south. There is an exit to the east.".
+The kitchen part 12 is some text that varies. The kitchen part 12 is " plain door leading east. There is an exit to the west. Don't worry, there is no door.".
 The description of r_0 is "[kitchen part 0][kitchen part 1][kitchen part 2][kitchen part 3][kitchen part 4][kitchen part 5][kitchen part 6][kitchen part 7][kitchen part 8][kitchen part 9][kitchen part 10][kitchen part 11][kitchen part 12]".
 
-south of r_0 and north of r_5 is a door called d_0.
-The r_1 is mapped east of r_0.
-Understand "livingroom" as r_1.
-The internal name of r_1 is "livingroom".
-The printed name of r_1 is "-= Livingroom =-".
-The livingroom part 0 is some text that varies. The livingroom part 0 is "Well how about that, you are in a place we're calling a livingroom. You begin to take stock of what's here.
+The r_2 is mapped west of r_0.
+east of r_0 and west of r_1 is a door called d_0.
+Understand "livingroom" as r_2.
+The internal name of r_2 is "livingroom".
+The printed name of r_2 is "-= Livingroom =-".
+The livingroom part 0 is some text that varies. The livingroom part 0 is "You are in a livingroom. A typical one. You begin to take stock of what's here.
 
- You can make out a sofa. The sofa is comfy.[if there is something on the s_5] On the sofa you make out [a list of things on the s_5].[end if]".
-The livingroom part 1 is some text that varies. The livingroom part 1 is "[if there is nothing on the s_5] But the thing hasn't got anything on it. This always happens![end if]".
+ You can make out a sofa. The sofa is comfy.[if there is something on the s_5] On the sofa you see [a list of things on the s_5].[end if]".
+The livingroom part 1 is some text that varies. The livingroom part 1 is "[if there is nothing on the s_5] But the thing is empty, unfortunately. It would have been so cool if there was stuff on the sofa.[end if]".
 The livingroom part 2 is some text that varies. The livingroom part 2 is "
 
-You don't like doors? Why not try going east, that entranceway is not blocked by one. There is an exit to the west.".
-The description of r_1 is "[livingroom part 0][livingroom part 1][livingroom part 2]".
+There is an exit to the east. There is an exit to the west. Don't worry, there is no door.".
+The description of r_2 is "[livingroom part 0][livingroom part 1][livingroom part 2]".
 
-The r_0 is mapped west of r_1.
-The r_2 is mapped east of r_1.
-Understand "bedroom" as r_2.
-The internal name of r_2 is "bedroom".
-The printed name of r_2 is "-= Bedroom =-".
-The bedroom part 0 is some text that varies. The bedroom part 0 is "You find yourself in a bedroom. A typical kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+The r_3 is mapped west of r_2.
+The r_0 is mapped east of r_2.
+Understand "pantry" as r_1.
+The internal name of r_1 is "pantry".
+The printed name of r_1 is "-= Pantry =-".
+The pantry part 0 is some text that varies. The pantry part 0 is "You find yourself in a pantry. A typical kind of place.
 
- You can see a bed. [if there is something on the s_4]On the bed you see [a list of things on the s_4].[end if]".
-The bedroom part 1 is some text that varies. The bedroom part 1 is "[if there is nothing on the s_4]But the thing is empty, unfortunately.[end if]".
-The bedroom part 2 is some text that varies. The bedroom part 2 is "
-
-There is an exit to the east. There is an exit to the west.".
-The description of r_2 is "[bedroom part 0][bedroom part 1][bedroom part 2]".
-
-The r_1 is mapped west of r_2.
-The r_3 is mapped east of r_2.
-Understand "corridor" as r_3.
-The internal name of r_3 is "corridor".
-The printed name of r_3 is "-= Corridor =-".
-The corridor part 0 is some text that varies. The corridor part 0 is "You arrive in a corridor. A normal one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-You need an exit without a door? You should try going south. There is an exit to the west. Don't worry, there is no door.".
-The description of r_3 is "[corridor part 0]".
-
-The r_2 is mapped west of r_3.
-The r_4 is mapped south of r_3.
-Understand "bathroom" as r_4.
-The internal name of r_4 is "bathroom".
-The printed name of r_4 is "-= Bathroom =-".
-The bathroom part 0 is some text that varies. The bathroom part 0 is "You are in a bathroom. An ordinary kind of place. You start to take note of what's in the room.
-
- You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a toilet. [if there is something on the s_3]You see [a list of things on the s_3] on the toilet. There's something strange about this thing being here, but you don't have time to worry about that now.[end if]".
-The bathroom part 1 is some text that varies. The bathroom part 1 is "[if there is nothing on the s_3]The toilet appears to be empty. Aw, here you were, all excited for there to be things on it![end if]".
-The bathroom part 2 is some text that varies. The bathroom part 2 is "
-
-There is an exit to the north.".
-The description of r_4 is "[bathroom part 0][bathroom part 1][bathroom part 2]".
-
-The r_3 is mapped north of r_4.
-Understand "pantry" as r_5.
-The internal name of r_5 is "pantry".
-The printed name of r_5 is "-= Pantry =-".
-The pantry part 0 is some text that varies. The pantry part 0 is "You've just shown up in a pantry. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
- You can make out a shelf. [if there is something on the s_2]You see [a list of things on the s_2] on the shelf.[end if]".
-The pantry part 1 is some text that varies. The pantry part 1 is "[if there is nothing on the s_2]But the thing hasn't got anything on it.[end if]".
+ You see a shelf. [if there is something on the s_2]On the shelf you can see [a list of things on the s_2].[end if]".
+The pantry part 1 is some text that varies. The pantry part 1 is "[if there is nothing on the s_2]Looks like someone's already been here and taken everything off it, though. You move on, clearly upset by TextWorld.[end if]".
 The pantry part 2 is some text that varies. The pantry part 2 is "
 
  There is [if d_0 is open]an open[otherwise]a closed[end if]".
-The pantry part 3 is some text that varies. The pantry part 3 is " frosted-glass door leading north.".
-The description of r_5 is "[pantry part 0][pantry part 1][pantry part 2][pantry part 3]".
+The pantry part 3 is some text that varies. The pantry part 3 is " plain door leading west.".
+The description of r_1 is "[pantry part 0][pantry part 1][pantry part 2][pantry part 3]".
 
-north of r_5 and south of r_0 is a door called d_0.
+west of r_1 and east of r_0 is a door called d_0.
+Understand "corridor" as r_3.
+The internal name of r_3 is "corridor".
+The printed name of r_3 is "-= Corridor =-".
+The corridor part 0 is some text that varies. The corridor part 0 is "Well how about that, you are in the place we're calling the corridor.
+
+
+
+You need an exit without a door? You should try going east. There is an exit to the north. There is an exit to the south.".
+The description of r_3 is "[corridor part 0]".
+
+The r_4 is mapped south of r_3.
+The r_5 is mapped north of r_3.
+The r_2 is mapped east of r_3.
+Understand "bedroom" as r_4.
+The internal name of r_4 is "bedroom".
+The printed name of r_4 is "-= Bedroom =-".
+The bedroom part 0 is some text that varies. The bedroom part 0 is "Guess what, you are in a place we're calling a bedroom. You try to gain information on your surroundings by using a technique you call 'looking.'
+
+ Hey, want to see a bed? Look over there, a bed. You shudder, but continue examining the bed. The bed is large.[if there is something on the s_3] On the bed you make out [a list of things on the s_3].[end if]".
+The bedroom part 1 is some text that varies. The bedroom part 1 is "[if there is nothing on the s_3] The bed appears to be empty.[end if]".
+The bedroom part 2 is some text that varies. The bedroom part 2 is "
+
+There is an exit to the north. Don't worry, there is no door.".
+The description of r_4 is "[bedroom part 0][bedroom part 1][bedroom part 2]".
+
+The r_3 is mapped north of r_4.
+Understand "bathroom" as r_5.
+The internal name of r_5 is "bathroom".
+The printed name of r_5 is "-= Bathroom =-".
+The bathroom part 0 is some text that varies. The bathroom part 0 is "Guess what, you are in the place we're calling the bathroom. You begin to take stock of what's in the room.
+
+ Oh, great. Here's a toilet. [if there is something on the s_4]On the toilet you make out [a list of things on the s_4].[end if]".
+The bathroom part 1 is some text that varies. The bathroom part 1 is "[if there is nothing on the s_4]The toilet appears to be empty. It would have been so cool if there was stuff on the toilet.[end if]".
+The bathroom part 2 is some text that varies. The bathroom part 2 is "
+
+You need an exit without a door? You should try going south.".
+The description of r_5 is "[bathroom part 0][bathroom part 1][bathroom part 2]".
+
+The r_3 is mapped south of r_5.
 
 The RECIPE are recipe-likes.
 The RECIPE are privately-named.
@@ -324,8 +324,8 @@ The c_0 are containers.
 The c_0 are privately-named.
 The d_0 are doors.
 The d_0 are privately-named.
-The f_0 and the f_1 and the f_7 and the f_2 and the f_3 and the f_4 and the f_5 and the f_6 are foods.
-The f_0 and the f_1 and the f_7 and the f_2 and the f_3 and the f_4 and the f_5 and the f_6 are privately-named.
+The f_0 and the f_2 and the f_5 and the f_1 and the f_3 and the f_4 are foods.
+The f_0 and the f_2 and the f_5 and the f_1 and the f_3 and the f_4 are privately-named.
 The ingredient_2 and the ingredient_0 and the ingredient_1 are ingredient-likes.
 The ingredient_2 and the ingredient_0 and the ingredient_1 are privately-named.
 The meal_0 are meal-likes.
@@ -334,8 +334,8 @@ The o_0 and the o_1 are object-likes.
 The o_0 and the o_1 are privately-named.
 The oven_0 are oven-likes.
 The oven_0 are privately-named.
-The r_0 and the r_1 and the r_2 and the r_3 and the r_4 and the r_5 are rooms.
-The r_0 and the r_1 and the r_2 and the r_3 and the r_4 and the r_5 are privately-named.
+The r_0 and the r_2 and the r_1 and the r_3 and the r_4 and the r_5 are rooms.
+The r_0 and the r_2 and the r_1 and the r_3 and the r_4 and the r_5 are privately-named.
 The s_0 and the s_1 and the s_2 and the s_3 and the s_4 and the s_5 are supporters.
 The s_0 and the s_1 and the s_2 and the s_3 and the s_4 and the s_5 are privately-named.
 The slot_2 and the slot_0 and the slot_1 are things.
@@ -343,13 +343,13 @@ The slot_2 and the slot_0 and the slot_1 are privately-named.
 The stove_0 are stove-likes.
 The stove_0 are privately-named.
 
-The description of d_0 is "It's a grand [noun] [if open]You can see inside it.[else if locked]There is a lock on it and seems impossible to force open.[otherwise]You can't see inside it because the lid's in your way.[end if]".
-The printed name of d_0 is "frosted-glass door".
-Understand "frosted-glass door" as d_0.
-Understand "frosted-glass" as d_0.
+The description of d_0 is "It is what it is, a [noun]. [if open]You can see inside it.[else if locked]There is a lock on it and seems impossible to break open.[otherwise]You can't see inside it because the lid's in your way.[end if]".
+The printed name of d_0 is "plain door".
+Understand "plain door" as d_0.
+Understand "plain" as d_0.
 Understand "door" as d_0.
 The d_0 is closed.
-The description of c_0 is "The [noun] looks towering. [if open]You can see inside it.[else if locked]There is a lock on it and seems impossible to break open.[otherwise]You can't see inside it because the lid's in your way.[end if]".
+The description of c_0 is "The [noun] looks rugged. [if open]It is open.[else if locked]It is locked.[otherwise]It is closed.[end if]".
 The printed name of c_0 is "fridge".
 Understand "fridge" as c_0.
 The c_0 is in r_0.
@@ -359,86 +359,81 @@ The printed name of oven_0 is "oven".
 Understand "oven" as oven_0.
 The oven_0 is in r_0.
 The oven_0 is closed.
-The description of s_0 is "The [noun] is shaky.".
+The description of s_0 is "The [noun] is wobbly.".
 The printed name of s_0 is "table".
 Understand "table" as s_0.
 The s_0 is in r_0.
-The description of s_1 is "The [noun] is unstable.".
+The description of s_1 is "The [noun] is undependable.".
 The printed name of s_1 is "counter".
 Understand "counter" as s_1.
 The s_1 is in r_0.
-The description of s_2 is "The [noun] is an unstable piece of junk.".
+The description of s_2 is "The [noun] is reliable.".
 The printed name of s_2 is "shelf".
 Understand "shelf" as s_2.
-The s_2 is in r_5.
-The description of s_3 is "The [noun] is solid.".
-The printed name of s_3 is "toilet".
-Understand "toilet" as s_3.
+The s_2 is in r_1.
+The description of s_3 is "The [noun] is wobbly.".
+The printed name of s_3 is "bed".
+Understand "bed" as s_3.
 The s_3 is in r_4.
-The description of s_4 is "The [noun] is solid.".
-The printed name of s_4 is "bed".
-Understand "bed" as s_4.
-The s_4 is in r_2.
-The description of s_5 is "The [noun] is durable.".
+The description of s_4 is "The [noun] is durable.".
+The printed name of s_4 is "toilet".
+Understand "toilet" as s_4.
+The s_4 is in r_5.
+The description of s_5 is "The [noun] is stable.".
 The printed name of s_5 is "sofa".
 Understand "sofa" as s_5.
-The s_5 is in r_1.
+The s_5 is in r_2.
 The description of stove_0 is "Useful for frying things.".
 The printed name of stove_0 is "stove".
 Understand "stove" as stove_0.
 The stove_0 is in r_0.
-The description of f_0 is "The [noun] looks tantalizing.".
-The printed name of f_0 is "red potato".
-Understand "red potato" as f_0.
+The description of f_0 is "That's a [noun]!".
+The printed name of f_0 is "red apple".
+Understand "red apple" as f_0.
 Understand "red" as f_0.
-Understand "potato" as f_0.
-The base of ingredient_2 is f_0.
+Understand "apple" as f_0.
+The base of ingredient_0 is f_0.
 The f_0 is cookable.
 The f_0 is cuttable.
-The f_0 is inedible.
-The f_0 is needs cooking.
+The f_0 is edible.
 The f_0 is on the s_1.
+The f_0 is raw.
 The f_0 is uncut.
-The description of f_1 is "That's a [noun]!".
-The printed name of f_1 is "orange bell pepper".
-Understand "orange bell pepper" as f_1.
-Understand "orange" as f_1.
-Understand "bell" as f_1.
-Understand "pepper" as f_1.
-The base of ingredient_0 is f_1.
-The f_1 is cookable.
-The f_1 is cuttable.
-The f_1 is edible.
-The player carries the f_1.
-The f_1 is raw.
-The f_1 is uncut.
-The description of f_7 is "That's a [noun]!".
-The printed name of f_7 is "carrot".
-Understand "carrot" as f_7.
-The base of ingredient_1 is f_7.
-The f_7 is cookable.
-The f_7 is cuttable.
-The f_7 is edible.
-The f_7 is in the c_0.
-The f_7 is raw.
-The f_7 is uncut.
-The description of ingredient_2 is "".
-The printed name of ingredient_2 is "".
-The ingredient_2 is chopped.
-The ingredient_2 is fried.
-When play begins, add ingredient_2 to the ingredients of the RECIPE.
-The description of f_2 is "You couldn't pay me to eat that [noun].".
-The printed name of f_2 is "block of cheese".
-Understand "block of cheese" as f_2.
-Understand "block" as f_2.
-Understand "cheese" as f_2.
+The description of f_2 is "That's a [noun]!".
+The printed name of f_2 is "orange bell pepper".
+Understand "orange bell pepper" as f_2.
+Understand "orange" as f_2.
+Understand "bell" as f_2.
+Understand "pepper" as f_2.
+The base of ingredient_2 is f_2.
 The f_2 is cookable.
 The f_2 is cuttable.
 The f_2 is edible.
-The f_2 is in the c_0.
+The player carries the f_2.
 The f_2 is raw.
 The f_2 is uncut.
-The description of f_3 is "That's a [noun]!".
+The description of f_5 is "The [noun] looks tantalizing.".
+The printed name of f_5 is "banana".
+Understand "banana" as f_5.
+The base of ingredient_1 is f_5.
+The f_5 is cookable.
+The f_5 is cuttable.
+The f_5 is edible.
+The f_5 is on the s_1.
+The f_5 is raw.
+The f_5 is uncut.
+The description of f_1 is "The [noun] looks tempting.".
+The printed name of f_1 is "red potato".
+Understand "red potato" as f_1.
+Understand "red" as f_1.
+Understand "potato" as f_1.
+The f_1 is cookable.
+The f_1 is cuttable.
+The f_1 is inedible.
+The f_1 is needs cooking.
+The f_1 is on the s_1.
+The f_1 is uncut.
+The description of f_3 is "You couldn't pay me to eat that [noun].".
 The printed name of f_3 is "red hot pepper".
 Understand "red hot pepper" as f_3.
 Understand "red" as f_3.
@@ -451,44 +446,21 @@ The player carries the f_3.
 The f_3 is raw.
 The f_3 is uncut.
 The description of f_4 is "That's a [noun]!".
-The printed name of f_4 is "red apple".
-Understand "red apple" as f_4.
-Understand "red" as f_4.
-Understand "apple" as f_4.
+The printed name of f_4 is "purple potato".
+Understand "purple potato" as f_4.
+Understand "purple" as f_4.
+Understand "potato" as f_4.
 The f_4 is cookable.
 The f_4 is cuttable.
-The f_4 is edible.
+The f_4 is inedible.
+The f_4 is needs cooking.
 The f_4 is on the s_1.
-The f_4 is raw.
 The f_4 is uncut.
-The description of f_5 is "The [noun] looks tempting.".
-The printed name of f_5 is "purple potato".
-Understand "purple potato" as f_5.
-Understand "purple" as f_5.
-Understand "potato" as f_5.
-The f_5 is cookable.
-The f_5 is cuttable.
-The f_5 is inedible.
-The f_5 is needs cooking.
-The f_5 is on the s_1.
-The f_5 is uncut.
-The description of f_6 is "That's a [noun]!".
-The printed name of f_6 is "yellow bell pepper".
-Understand "yellow bell pepper" as f_6.
-Understand "yellow" as f_6.
-Understand "bell" as f_6.
-Understand "pepper" as f_6.
-The f_6 is cookable.
-The f_6 is cuttable.
-The f_6 is edible.
-The f_6 is in the c_0.
-The f_6 is raw.
-The f_6 is uncut.
-The description of ingredient_0 is "".
-The printed name of ingredient_0 is "".
-The ingredient_0 is diced.
-When play begins, add ingredient_0 to the ingredients of the RECIPE.
-The ingredient_0 is roasted.
+The description of ingredient_2 is "".
+The printed name of ingredient_2 is "".
+The ingredient_2 is diced.
+When play begins, add ingredient_2 to the ingredients of the RECIPE.
+The ingredient_2 is roasted.
 The description of meal_0 is "".
 The printed name of meal_0 is "meal".
 Understand "meal" as meal_0.
@@ -497,6 +469,11 @@ The meal of the RECIPE is the meal_0..
 The description of slot_2 is "".
 The printed name of slot_2 is "".
 When play begins, increase the carrying capacity of the player by 1..
+The description of ingredient_0 is "".
+The printed name of ingredient_0 is "".
+The ingredient_0 is fried.
+When play begins, add ingredient_0 to the ingredients of the RECIPE.
+The ingredient_0 is sliced.
 The description of RECIPE is "".
 The printed name of RECIPE is "".
 The description of ingredient_1 is "".
@@ -504,15 +481,15 @@ The printed name of ingredient_1 is "".
 When play begins, add ingredient_1 to the ingredients of the RECIPE.
 The ingredient_1 is roasted.
 The ingredient_1 is sliced.
-The description of o_0 is "You open the copy of 'Cooking: A Modern Approach (3rd Ed.)' and start reading:[line break][line break]Recipe #1[line break]---------[line break]Gather all following ingredients and follow the directions to prepare this tasty meal.[line break][line break]Ingredients:[line break]orange bell pepper[line break]  carrot[line break]  red potato[line break][line break]Directions:[line break]dice the orange bell pepper[line break]  roast the orange bell pepper[line break]  slice the carrot[line break]  roast the carrot[line break]  chop the red potato[line break]  fry the red potato[line break]  prepare meal[line break]".
+The description of o_0 is "You open the copy of 'Cooking: A Modern Approach (3rd Ed.)' and start reading:[line break][line break]Recipe #1[line break]---------[line break]Gather all following ingredients and follow the directions to prepare this tasty meal.[line break][line break]Ingredients:[line break]red apple[line break]  banana[line break]  orange bell pepper[line break][line break]Directions:[line break]slice the red apple[line break]  fry the red apple[line break]  slice the banana[line break]  roast the banana[line break]  dice the orange bell pepper[line break]  roast the orange bell pepper[line break]  prepare meal[line break]".
 The printed name of o_0 is "cookbook".
 Understand "recipe" as o_0.
 Understand "cookbook" as o_0.
 The o_0 is on the s_1.
-The description of o_1 is "The [noun] seems well matched to everything else here".
+The description of o_1 is "The [noun] appears well matched to everything else here".
 The printed name of o_1 is "knife".
 Understand "knife" as o_1.
-The o_1 is on the s_0.
+The o_1 is on the s_1.
 The o_1 is sharp.
 The description of slot_0 is "".
 The printed name of slot_0 is "".
@@ -529,7 +506,7 @@ The quest0 completed is usually false.
 Every turn:
 	if quest0 completed is true:
 		do nothing;
-	else if The f_1 is burned:
+	else if The f_0 is burned:
 		end the story; [Lost]
 
 The quest1 completed is a truth state that varies.
@@ -540,13 +517,7 @@ Test quest1_0 with ""
 Every turn:
 	if quest1 completed is true:
 		do nothing;
-	else if The f_1 is consumed:
-		end the story; [Lost]
-	else if The f_1 is fried:
-		end the story; [Lost]
-	else if The f_1 is grilled:
-		end the story; [Lost]
-	else if The f_1 is roasted:
+	else if The player carries the f_0:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest1 completed is true;
@@ -559,37 +530,43 @@ Test quest2_0 with ""
 Every turn:
 	if quest2 completed is true:
 		do nothing;
-	else if The f_1 is consumed:
+	else if The f_0 is consumed:
 		end the story; [Lost]
-	else if The f_1 is sliced:
+	else if The f_0 is grilled:
 		end the story; [Lost]
-	else if The f_1 is chopped:
+	else if The f_0 is roasted:
 		end the story; [Lost]
-	else if The f_1 is diced:
+	else if The f_0 is fried:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest2 completed is true;
 
 The quest3 completed is a truth state that varies.
 The quest3 completed is usually false.
+
+Test quest3_0 with ""
+
 Every turn:
 	if quest3 completed is true:
 		do nothing;
-	else if The f_7 is burned:
+	else if The f_0 is consumed:
 		end the story; [Lost]
+	else if The f_0 is diced:
+		end the story; [Lost]
+	else if The f_0 is chopped:
+		end the story; [Lost]
+	else if The f_0 is sliced:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest3 completed is true;
 
 The quest4 completed is a truth state that varies.
 The quest4 completed is usually false.
-
-Test quest4_0 with ""
-
 Every turn:
 	if quest4 completed is true:
 		do nothing;
-	else if The player carries the f_7:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest4 completed is true;
+	else if The f_5 is burned:
+		end the story; [Lost]
 
 The quest5 completed is a truth state that varies.
 The quest5 completed is usually false.
@@ -599,13 +576,7 @@ Test quest5_0 with ""
 Every turn:
 	if quest5 completed is true:
 		do nothing;
-	else if The f_7 is consumed:
-		end the story; [Lost]
-	else if The f_7 is fried:
-		end the story; [Lost]
-	else if The f_7 is grilled:
-		end the story; [Lost]
-	else if The f_7 is roasted:
+	else if The player carries the f_5:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest5 completed is true;
@@ -618,37 +589,43 @@ Test quest6_0 with ""
 Every turn:
 	if quest6 completed is true:
 		do nothing;
-	else if The f_7 is consumed:
+	else if The f_5 is consumed:
 		end the story; [Lost]
-	else if The f_7 is chopped:
+	else if The f_5 is grilled:
 		end the story; [Lost]
-	else if The f_7 is diced:
+	else if The f_5 is fried:
 		end the story; [Lost]
-	else if The f_7 is sliced:
+	else if The f_5 is roasted:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest6 completed is true;
 
 The quest7 completed is a truth state that varies.
 The quest7 completed is usually false.
+
+Test quest7_0 with ""
+
 Every turn:
 	if quest7 completed is true:
 		do nothing;
-	else if The f_0 is burned:
+	else if The f_5 is consumed:
 		end the story; [Lost]
+	else if The f_5 is diced:
+		end the story; [Lost]
+	else if The f_5 is chopped:
+		end the story; [Lost]
+	else if The f_5 is sliced:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest7 completed is true;
 
 The quest8 completed is a truth state that varies.
 The quest8 completed is usually false.
-
-Test quest8_0 with ""
-
 Every turn:
 	if quest8 completed is true:
 		do nothing;
-	else if The player carries the f_0:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest8 completed is true;
+	else if The f_2 is burned:
+		end the story; [Lost]
 
 The quest9 completed is a truth state that varies.
 The quest9 completed is usually false.
@@ -658,13 +635,13 @@ Test quest9_0 with ""
 Every turn:
 	if quest9 completed is true:
 		do nothing;
-	else if The f_0 is consumed:
+	else if The f_2 is consumed:
 		end the story; [Lost]
-	else if The f_0 is roasted:
+	else if The f_2 is grilled:
 		end the story; [Lost]
-	else if The f_0 is grilled:
+	else if The f_2 is fried:
 		end the story; [Lost]
-	else if The f_0 is fried:
+	else if The f_2 is roasted:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest9 completed is true;
@@ -677,13 +654,13 @@ Test quest10_0 with ""
 Every turn:
 	if quest10 completed is true:
 		do nothing;
-	else if The f_0 is consumed:
+	else if The f_2 is consumed:
 		end the story; [Lost]
-	else if The f_0 is sliced:
+	else if The f_2 is chopped:
 		end the story; [Lost]
-	else if The f_0 is diced:
+	else if The f_2 is sliced:
 		end the story; [Lost]
-	else if The f_0 is chopped:
+	else if The f_2 is diced:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest10 completed is true;
@@ -696,11 +673,11 @@ Test quest11_0 with ""
 Every turn:
 	if quest11 completed is true:
 		do nothing;
-	else if The f_1 is consumed:
-		end the story; [Lost]
-	else if The f_7 is consumed:
-		end the story; [Lost]
 	else if The f_0 is consumed:
+		end the story; [Lost]
+	else if The f_5 is consumed:
+		end the story; [Lost]
+	else if The f_2 is consumed:
 		end the story; [Lost]
 	else if The player carries the meal_0:
 		increase the score by 1; [Quest completed]
@@ -735,7 +712,7 @@ This is the simpler notify score changes rule:
 		else:
 			say "points.";
 		Now the last notified score is the score;
-	if quest1 completed is true and quest2 completed is true and quest4 completed is true and quest5 completed is true and quest6 completed is true and quest8 completed is true and quest9 completed is true and quest10 completed is true and quest11 completed is true and quest12 completed is true:
+	if quest1 completed is true and quest2 completed is true and quest3 completed is true and quest5 completed is true and quest6 completed is true and quest7 completed is true and quest9 completed is true and quest10 completed is true and quest11 completed is true and quest12 completed is true:
 		end the story finally; [Win]
 
 The simpler notify score changes rule substitutes for the notify score changes rule.
