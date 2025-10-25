@@ -3,9 +3,13 @@
 An experiment to design a incremental-learning curriculum for LLM agents using the TextWorld environment
 
 # Treatments
+- Curriculum A - increase number of skill (levels 1-3), then items (levels 4-7), then locations (levels 8-10)
+- Curriculum B - increase number of items (levels 1-5) with increasing skills and locations within each level
 
 # Results
-- [FINISH]
+- Curriculum A has a better learning curve than B
+- Curriculum A is (almost) monotonically increasing in task length
+- Curriculum B ramps up smoothly for each of the five levels
 
 # Notes
 - There are five random seeds (map, objects, quest, grammar, recipe)
