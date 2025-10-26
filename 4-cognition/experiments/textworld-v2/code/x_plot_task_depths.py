@@ -3,10 +3,7 @@ import json
 import pandas as pd
 
 # Set paths
-# eval_name = "tw-simple"
-# eval_name = "tw_coin"
-# eval_name = "tw-treasure"
-eval_name = "tw-cooking"
+eval_name = "tw-simple"
 input_folder_path = f"../data/evals/{eval_name}"
 plot_folder_path = f"../data/plots/task-depths"
 plot_file_path = f"{plot_folder_path}/{eval_name}-task-depths.png"

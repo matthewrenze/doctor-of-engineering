@@ -4,8 +4,9 @@ import textworld.challenges.tw_simple.simple
 
 # Set parameters
 num_tasks = 100
+goal_verbosity = ["detailed", "brief", "none"]
 reward_densities = ["dense", "balanced", "sparse"]
-num_sublevels = len(reward_densities)
+num_sublevels = len(goal_verbosity) * len(reward_densities)
 eval_folder_path = "../data/evals/tw-simple"
 game_folder_path = "../data/evals/tw-simple/files"
 
@@ -33,14 +34,17 @@ for task_id in range(1, num_tasks + 1):
     if os.path.exists(game_file_path):
         os.remove(game_file_path)
 
-    # Get the reward density
-    reward_density_text = reward_densities[sublevel_id - 1]
+    # Get the reward density and goal verbosity
+    goal_verbosity_text = goal_verbosity[((sublevel_id - 1) // len(reward_densities)) % len(goal_verbosity)]
+    reward_density_text = reward_densities[(sublevel_id - 1) % len(reward_densities)]
+
 
     # Set the settings
     settings = {
+        "goal": goal_verbosity_text,
         "rewards": reward_density_text,
-        "goal": "detailed",
         "test": False}
+    print(f"  Sublevel: {sublevel_id}")
     print(f"  Settings: {settings}")
 
     # Set the options

@@ -309,12 +309,12 @@ The player is in r_0.
 The quest0 completed is a truth state that varies.
 The quest0 completed is usually false.
 
-Test quest0_0 with "open antique trunk"
+Test quest0_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east"
 
 Every turn:
 	if quest0 completed is true:
 		do nothing;
-	else if The c_1 is open:
+	else if The player is in r_1:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest0 completed is true;
@@ -322,12 +322,12 @@ Every turn:
 The quest1 completed is a truth state that varies.
 The quest1 completed is usually false.
 
-Test quest1_0 with "open antique trunk / take old key from antique trunk"
+Test quest1_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door"
 
 Every turn:
 	if quest1 completed is true:
 		do nothing;
-	else if The player carries the k_0:
+	else if The d_1 is open:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest1 completed is true;
@@ -335,12 +335,12 @@ Every turn:
 The quest2 completed is a truth state that varies.
 The quest2 completed is usually false.
 
-Test quest2_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key"
+Test quest2_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take apple"
 
 Every turn:
 	if quest2 completed is true:
 		do nothing;
-	else if The d_0 is closed and the d_0 is unlocked:
+	else if The player carries the f_4:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest2 completed is true;
@@ -348,103 +348,25 @@ Every turn:
 The quest3 completed is a truth state that varies.
 The quest3 completed is usually false.
 
-Test quest3_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door"
+Test quest3_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take apple / go north / go west / put apple on stove"
 
 Every turn:
 	if quest3 completed is true:
 		do nothing;
-	else if The d_0 is open:
+	else if The f_4 is on the s_2:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest3 completed is true;
 
 The quest4 completed is a truth state that varies.
 The quest4 completed is usually false.
-
-Test quest4_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east"
-
 Every turn:
 	if quest4 completed is true:
-		do nothing;
-	else if The player is in r_1:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest4 completed is true;
-
-The quest5 completed is a truth state that varies.
-The quest5 completed is usually false.
-
-Test quest5_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door"
-
-Every turn:
-	if quest5 completed is true:
-		do nothing;
-	else if The d_1 is open:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest5 completed is true;
-
-The quest6 completed is a truth state that varies.
-The quest6 completed is usually false.
-
-Test quest6_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east"
-
-Every turn:
-	if quest6 completed is true:
-		do nothing;
-	else if The player is in r_4:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest6 completed is true;
-
-The quest7 completed is a truth state that varies.
-The quest7 completed is usually false.
-
-Test quest7_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south"
-
-Every turn:
-	if quest7 completed is true:
-		do nothing;
-	else if The player is in r_5:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest7 completed is true;
-
-The quest8 completed is a truth state that varies.
-The quest8 completed is usually false.
-
-Test quest8_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take apple"
-
-Every turn:
-	if quest8 completed is true:
-		do nothing;
-	else if The player carries the f_4:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest8 completed is true;
-
-The quest9 completed is a truth state that varies.
-The quest9 completed is usually false.
-
-Test quest9_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take apple / go north / go west / put apple on stove"
-
-Every turn:
-	if quest9 completed is true:
-		do nothing;
-	else if The f_4 is on the s_2:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest9 completed is true;
-
-The quest10 completed is a truth state that varies.
-The quest10 completed is usually false.
-Every turn:
-	if quest10 completed is true:
 		do nothing;
 	else if The f_4 is nowhere:
 		end the story; [Lost]
 
-Use scoring. The maximum score is 10.
+Use scoring. The maximum score is 4.
 This is the simpler notify score changes rule:
 	If the score is not the last notified score:
 		let V be the score - the last notified score;
@@ -457,7 +379,7 @@ This is the simpler notify score changes rule:
 		else:
 			say "points.";
 		Now the last notified score is the score;
-	if quest0 completed is true and quest1 completed is true and quest2 completed is true and quest3 completed is true and quest4 completed is true and quest5 completed is true and quest6 completed is true and quest7 completed is true and quest8 completed is true and quest9 completed is true:
+	if quest0 completed is true and quest1 completed is true and quest2 completed is true and quest3 completed is true:
 		end the story finally; [Win]
 
 The simpler notify score changes rule substitutes for the notify score changes rule.

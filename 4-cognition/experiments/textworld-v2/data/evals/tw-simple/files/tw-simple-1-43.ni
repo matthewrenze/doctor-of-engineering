@@ -312,12 +312,12 @@ The player is in r_0.
 The quest0 completed is a truth state that varies.
 The quest0 completed is usually false.
 
-Test quest0_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east"
+Test quest0_0 with "open antique trunk"
 
 Every turn:
 	if quest0 completed is true:
 		do nothing;
-	else if The player is in r_1:
+	else if The c_1 is open:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest0 completed is true;
@@ -325,12 +325,12 @@ Every turn:
 The quest1 completed is a truth state that varies.
 The quest1 completed is usually false.
 
-Test quest1_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door"
+Test quest1_0 with "open antique trunk / take old key from antique trunk"
 
 Every turn:
 	if quest1 completed is true:
 		do nothing;
-	else if The d_1 is open:
+	else if The player carries the k_0:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest1 completed is true;
@@ -338,12 +338,12 @@ Every turn:
 The quest2 completed is a truth state that varies.
 The quest2 completed is usually false.
 
-Test quest2_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take tomato plant"
+Test quest2_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key"
 
 Every turn:
 	if quest2 completed is true:
 		do nothing;
-	else if The player carries the f_3:
+	else if The d_0 is closed and the d_0 is unlocked:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest2 completed is true;
@@ -351,25 +351,103 @@ Every turn:
 The quest3 completed is a truth state that varies.
 The quest3 completed is usually false.
 
-Test quest3_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take tomato plant / go north / go west / put tomato plant on stove"
+Test quest3_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door"
 
 Every turn:
 	if quest3 completed is true:
 		do nothing;
-	else if The f_3 is on the s_2:
+	else if The d_0 is open:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest3 completed is true;
 
 The quest4 completed is a truth state that varies.
 The quest4 completed is usually false.
+
+Test quest4_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east"
+
 Every turn:
 	if quest4 completed is true:
+		do nothing;
+	else if The player is in r_1:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest4 completed is true;
+
+The quest5 completed is a truth state that varies.
+The quest5 completed is usually false.
+
+Test quest5_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door"
+
+Every turn:
+	if quest5 completed is true:
+		do nothing;
+	else if The d_1 is open:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest5 completed is true;
+
+The quest6 completed is a truth state that varies.
+The quest6 completed is usually false.
+
+Test quest6_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east"
+
+Every turn:
+	if quest6 completed is true:
+		do nothing;
+	else if The player is in r_4:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest6 completed is true;
+
+The quest7 completed is a truth state that varies.
+The quest7 completed is usually false.
+
+Test quest7_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south"
+
+Every turn:
+	if quest7 completed is true:
+		do nothing;
+	else if The player is in r_5:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest7 completed is true;
+
+The quest8 completed is a truth state that varies.
+The quest8 completed is usually false.
+
+Test quest8_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take tomato plant"
+
+Every turn:
+	if quest8 completed is true:
+		do nothing;
+	else if The player carries the f_3:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest8 completed is true;
+
+The quest9 completed is a truth state that varies.
+The quest9 completed is usually false.
+
+Test quest9_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take tomato plant / go north / go west / put tomato plant on stove"
+
+Every turn:
+	if quest9 completed is true:
+		do nothing;
+	else if The f_3 is on the s_2:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest9 completed is true;
+
+The quest10 completed is a truth state that varies.
+The quest10 completed is usually false.
+Every turn:
+	if quest10 completed is true:
 		do nothing;
 	else if The f_3 is nowhere:
 		end the story; [Lost]
 
-Use scoring. The maximum score is 4.
+Use scoring. The maximum score is 10.
 This is the simpler notify score changes rule:
 	If the score is not the last notified score:
 		let V be the score - the last notified score;
@@ -382,7 +460,7 @@ This is the simpler notify score changes rule:
 		else:
 			say "points.";
 		Now the last notified score is the score;
-	if quest0 completed is true and quest1 completed is true and quest2 completed is true and quest3 completed is true:
+	if quest0 completed is true and quest1 completed is true and quest2 completed is true and quest3 completed is true and quest4 completed is true and quest5 completed is true and quest6 completed is true and quest7 completed is true and quest8 completed is true and quest9 completed is true:
 		end the story finally; [Win]
 
 The simpler notify score changes rule substitutes for the notify score changes rule.
@@ -547,13 +625,9 @@ The last property-aggregation rule (this is the print aggregated properties rule
 		rule succeeds;
 	rule fails;
 
-The objective part 0 is some text that varies. The objective part 0 is "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First off, if it's not too much trouble, I need you to open the antique trunk within the bedroom. After ".
-The objective part 1 is some text that varies. The objective part 1 is "that, pick up the old key from the antique trunk inside the bedroom. And then, insert the old key into the wooden door within the bedroom's lock to unlock it. Then, ensure that the wooden door is open".
-The objective part 2 is some text that varies. The objective part 2 is ". After opening the wooden door, try to move east. Once you manage that, look and see that the screen door is open. After you have pulled open the screen door, attempt to go east. With that accomplish".
-The objective part 3 is some text that varies. The objective part 3 is "ed, make an effort to travel south. Then, pick-up the tomato plant from the floor of the garden. Then, travel north. With that done, make an attempt to travel west. With that accomplished, put the tom".
-The objective part 4 is some text that varies. The objective part 4 is "ato plant on the stove. That's it!".
+The objective part 0 is some text that varies. The objective part 0 is "The dinner is almost ready! It's only missing a grilled tomato plant.".
 
-An objective is some text that varies. The objective is "[objective part 0][objective part 1][objective part 2][objective part 3][objective part 4]".
+An objective is some text that varies. The objective is "[objective part 0]".
 Printing the objective is an action applying to nothing.
 Carry out printing the objective:
 	say "[objective]".

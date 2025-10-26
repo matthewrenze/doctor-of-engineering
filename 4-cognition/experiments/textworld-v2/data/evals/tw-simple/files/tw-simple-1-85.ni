@@ -310,25 +310,64 @@ The player is in r_0.
 The quest0 completed is a truth state that varies.
 The quest0 completed is usually false.
 
-Test quest0_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take milk / go north / go west / put milk on stove"
+Test quest0_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east"
 
 Every turn:
 	if quest0 completed is true:
 		do nothing;
-	else if The f_3 is on the s_2:
+	else if The player is in r_1:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest0 completed is true;
 
 The quest1 completed is a truth state that varies.
 The quest1 completed is usually false.
+
+Test quest1_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door"
+
 Every turn:
 	if quest1 completed is true:
+		do nothing;
+	else if The d_1 is open:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest1 completed is true;
+
+The quest2 completed is a truth state that varies.
+The quest2 completed is usually false.
+
+Test quest2_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take milk"
+
+Every turn:
+	if quest2 completed is true:
+		do nothing;
+	else if The player carries the f_3:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest2 completed is true;
+
+The quest3 completed is a truth state that varies.
+The quest3 completed is usually false.
+
+Test quest3_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take milk / go north / go west / put milk on stove"
+
+Every turn:
+	if quest3 completed is true:
+		do nothing;
+	else if The f_3 is on the s_2:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest3 completed is true;
+
+The quest4 completed is a truth state that varies.
+The quest4 completed is usually false.
+Every turn:
+	if quest4 completed is true:
 		do nothing;
 	else if The f_3 is nowhere:
 		end the story; [Lost]
 
-Use scoring. The maximum score is 1.
+Use scoring. The maximum score is 4.
 This is the simpler notify score changes rule:
 	If the score is not the last notified score:
 		let V be the score - the last notified score;
@@ -341,7 +380,7 @@ This is the simpler notify score changes rule:
 		else:
 			say "points.";
 		Now the last notified score is the score;
-	if quest0 completed is true:
+	if quest0 completed is true and quest1 completed is true and quest2 completed is true and quest3 completed is true:
 		end the story finally; [Win]
 
 The simpler notify score changes rule substitutes for the notify score changes rule.
@@ -506,12 +545,8 @@ The last property-aggregation rule (this is the print aggregated properties rule
 		rule succeeds;
 	rule fails;
 
-The objective part 0 is some text that varies. The objective part 0 is "Get ready to pick stuff up and put it in places, because you've just entered TextWorld! Here is your task for today. First thing I need you to do is to open the antique trunk within the bedroom. And t".
-The objective part 1 is some text that varies. The objective part 1 is "hen, take the old key from the antique trunk. And then, unlock the wooden door inside the bedroom. Then, open the wooden door within the bedroom. After that, make an attempt to head east. With that ac".
-The objective part 2 is some text that varies. The objective part 2 is "complished, open the screen door inside the kitchen. After opening the screen door, go to the east. Following that, travel south. Okay, and then, retrieve the milk from the floor of the garden. With t".
-The objective part 3 is some text that varies. The objective part 3 is "he milk, try to travel north. After that, take a trip west. Then, put the milk on the stove. That's it!".
 
-An objective is some text that varies. The objective is "[objective part 0][objective part 1][objective part 2][objective part 3]".
+An objective is some text that varies. The objective is "".
 Printing the objective is an action applying to nothing.
 Carry out printing the objective:
 	say "[objective]".

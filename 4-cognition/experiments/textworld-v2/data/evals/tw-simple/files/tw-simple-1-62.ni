@@ -312,64 +312,25 @@ The player is in r_0.
 The quest0 completed is a truth state that varies.
 The quest0 completed is usually false.
 
-Test quest0_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east"
+Test quest0_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take half of a bag of chips / go north / go west / put half of a bag of chips on stove"
 
 Every turn:
 	if quest0 completed is true:
 		do nothing;
-	else if The player is in r_1:
+	else if The f_5 is on the s_2:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest0 completed is true;
 
 The quest1 completed is a truth state that varies.
 The quest1 completed is usually false.
-
-Test quest1_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door"
-
 Every turn:
 	if quest1 completed is true:
-		do nothing;
-	else if The d_1 is open:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest1 completed is true;
-
-The quest2 completed is a truth state that varies.
-The quest2 completed is usually false.
-
-Test quest2_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take half of a bag of chips"
-
-Every turn:
-	if quest2 completed is true:
-		do nothing;
-	else if The player carries the f_5:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest2 completed is true;
-
-The quest3 completed is a truth state that varies.
-The quest3 completed is usually false.
-
-Test quest3_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take half of a bag of chips / go north / go west / put half of a bag of chips on stove"
-
-Every turn:
-	if quest3 completed is true:
-		do nothing;
-	else if The f_5 is on the s_2:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest3 completed is true;
-
-The quest4 completed is a truth state that varies.
-The quest4 completed is usually false.
-Every turn:
-	if quest4 completed is true:
 		do nothing;
 	else if The f_5 is nowhere:
 		end the story; [Lost]
 
-Use scoring. The maximum score is 4.
+Use scoring. The maximum score is 1.
 This is the simpler notify score changes rule:
 	If the score is not the last notified score:
 		let V be the score - the last notified score;
@@ -382,7 +343,7 @@ This is the simpler notify score changes rule:
 		else:
 			say "points.";
 		Now the last notified score is the score;
-	if quest0 completed is true and quest1 completed is true and quest2 completed is true and quest3 completed is true:
+	if quest0 completed is true:
 		end the story finally; [Win]
 
 The simpler notify score changes rule substitutes for the notify score changes rule.
@@ -547,12 +508,9 @@ The last property-aggregation rule (this is the print aggregated properties rule
 		rule succeeds;
 	rule fails;
 
-The objective part 0 is some text that varies. The objective part 0 is "Welcome to another life changing game of TextWorld! Here is your task for today. Your first objective is to open the antique trunk inside the bedroom. And then, recover the old key from the antique tr".
-The objective part 1 is some text that varies. The objective part 1 is "unk within the bedroom. Then, insert the old key into the wooden door in the bedroom's lock to unlock it. After that, make sure that the wooden door is open. And then, make an effort to head east. The".
-The objective part 2 is some text that varies. The objective part 2 is "n, open the screen door inside the kitchen. Then, try to go east. Then, make an attempt to head south. And then, pick up the half of a bag of chips from the floor of the garden. If you can get your ha".
-The objective part 3 is some text that varies. The objective part 3 is "nds on the half of a bag of chips, try to go to the north. Okay, and then, go west. And then, rest the half of a bag of chips on the stove. And if you do that, you're the winner!".
+The objective part 0 is some text that varies. The objective part 0 is "The dinner is almost ready! It's only missing a grilled half of a bag of chips.".
 
-An objective is some text that varies. The objective is "[objective part 0][objective part 1][objective part 2][objective part 3]".
+An objective is some text that varies. The objective is "[objective part 0]".
 Printing the objective is an action applying to nothing.
 Carry out printing the objective:
 	say "[objective]".

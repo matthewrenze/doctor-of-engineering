@@ -3,8 +3,8 @@ import textworld.gym
 import re
 
 # Set path to the game file
-eval_name = "tw-coin"
-file_name = f"{eval_name}-1-3.ulx"
+eval_name = "tw-simple"
+file_name = f"{eval_name}-1-50.ulx"
 folder_path = f"../data/evals/{eval_name}/files/"
 file_path = folder_path + file_name
 
