@@ -7,20 +7,48 @@ An experiment to design a incremental-learning curriculum for LLM agents using t
 - v1 - new agent with full state information after each step
 
 # Results
-- Curriculum A has a better learning curve than B
-- Curriculum A is (almost) monotonically increasing in task length
-- Curriculum B ramps up smoothly for each of the five levels
+- [FINISH]
+
+# Curriculum
+- Simple 
+  - Task: find and cook an item in a 6-room house
+  - Parameters:
+    - goal verbosity
+      - detailed - provides a predefined path to the object
+      - brief - provides the name of the object
+      - None - need to read note in kitchen for name / preparation of object
+    - reward density = [dense, balanced, sparse]
+  - Levels 1 - 9 sublevels of decreasing goal verbosity and reward density
+
+- Coin 
+  - Task: follow a pre-defined path to pick up a coin
+  - Levels: 
+    - Level 1 - task length / rooms range from 1-100 [10 sublevels]
+    - Level 2 - task length 1-100, adds 1x distractor rooms [10 sublevels]
+    - Level 3 - task length 1-100, adds 2x distractor rooms [10 sublevels]
+
+- Treasure 
+  - Task: Follow a pre-defined path and pick up the specified item but not any other objects
+  - Levels:
+    - Level 1 - task length 1-10, 5 rooms, all rooms empty except two objects [10 sublevels]
+    - Level 2 - task length 2-10, closed doors and objects in containers [10 sublevels]
+    - Level 3 - task length 3-20, locked doors and containers [10 sublevels]
+
+- Cooking
+ - Task: prepare a meal using n ingredients with take, cut, cook, and drop skills
+ - Levels:
+   - Level 1 - one room, one ingredient, increasing skills [8 sublevels]
+   - Level 2 - one room, two to five ingredients, all skills [18 sublevels]
+   - Level 3 - 6, 9, and 12 rooms, five ingredients, all skills [15 sublevels]
 
 # Notes
-- There are five random seeds (map, objects, quest, grammar, recipe)
-  - All five need to be set to the same value to create a completely deterministic episode
-  - Holding recipe_seed constant but varying all others creates random recipes
-  - Varying recipe_seed but keeping all others constant creates random recipes
-  - Setting options.seeds appears to override individual seeds and make them random
-- Issue: When take=0 and recipe_seed != 0, then "Shuffle recipe requires the 'take' skill" (Assertion Error)
-  - Solution is to set recipe_seed=0 when take=0
-- Issue: When take=0, inventory contains distractor items
-  - Solution: Set Drop=True for recipe=1, take=0
+- Simple, coin, and treasure do not contain a location in their infos:
+  - However, it can be pulled from description via regex of "-= Location =-"
+- For the coin game, having the same random seed with different difficulty settings produces the same chain of rooms and solution path but different distractor rooms (attached to the main chain)
+- Coin and treasure tell you where to find the items; simple and cooking do not.
+- Treasure game level 3 tasks 90-100 take a long time to run 
+  - I had to create a hack that allows me to create them separately and merge them manually
+- Coin game level 2 task 100 only has a task length of 3 but all others in the same sublevel are 10. Not sure why.
 
 
 

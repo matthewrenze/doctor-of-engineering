@@ -26,7 +26,8 @@
 
 ## Experiments
 - Compare [plain-text vs JSON agent](experiments/json-agent/)
-
+- Compare [cooking curriculum A](experiments/tw-curriculum-a/) vs [cooking curriculum B](experiments/tw-curriculum-b/)
+- Create a [new textworld curriculum](experiments/textworld-v2/) with a smooth learning curve for evaluating cognitive enhancements
 
 ## Projects
 
