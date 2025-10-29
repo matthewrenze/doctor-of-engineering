@@ -2,8 +2,8 @@
 import textworld.gym
 
 # Set path to the game file
-file_name = "tw-cooking-1-1.ulx"
-folder_path = "../data/evals/tw-cooking/files/"
+file_name = "tw-curriculum-1-1-1.ulx"
+folder_path = "../data/evals/tw-curriculum/files/"
 file_path = folder_path + file_name
 
 # Set the env info (what info the player has access to)

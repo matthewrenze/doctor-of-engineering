@@ -1,3 +1,7 @@
+# TODO:
+#  - change accuracy to success rate
+#  - change calculation to make success where reward = 1.0
+
 class SummaryRow:
     def __init__(self):
         self.agent_name = ""

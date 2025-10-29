@@ -5,7 +5,7 @@ import seaborn as sns
 from matplotlib.ticker import FuncFormatter
 
 # Set parameters
-agent_names = ["react-v0", "react-v1"]
+agent_names = ["react-v0", "react-v1", "react-v2"]
 model_name = "gpt-4.1-mini"
 input_file_path = "../data/summaries.csv"
 output_folder_path = "../data/plots/levels"
@@ -20,9 +20,6 @@ summaries = pd.read_csv(input_file_path)
 summaries = summaries[summaries["agent_name"].isin(agent_names)]
 summaries = summaries[summaries["model_name"] == model_name]
 summaries = summaries[summaries["eval_name"].str.startswith("tw-curriculum-")]
-
-# HACK: Fix accuracy (task completion rate)
-summaries["accuracy"] = (summaries["tasks"] - summaries["failures"]) / summaries["tasks"]
 
 # Merge curriculum sublevels by level
 summaries["eval_name"] = summaries["eval_name"].str.replace(r"tw-curriculum-(\d+)-\d+", r"tw-curriculum-\1", regex=True)

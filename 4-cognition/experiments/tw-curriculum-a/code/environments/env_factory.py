@@ -1,33 +1,18 @@
 from pandas import DataFrame
 from common.parameters import Parameters
-from environments.action_parser import ActionParser
-from environments.open_qa_env import OpenQAEnv
-from environments.mcqa_env import MCQAEnv
-from environments.textworld_env import TextWorldEnv
-from graders.grader_factory import GraderFactory
-from tools.tool_router import ToolRouter
+from environments.textworld_env_v0 import TextWorldEnvV0
+from environments.textworld_env_v1 import TextWorldEnvV1
 
 class EnvFactory:
 
-    def __init__(self):
-        self.grader_factory = GraderFactory()
-
     def create(self, params: Parameters, eval: DataFrame):
 
-        # Create components
-        grader = self.grader_factory.create(params)
-        parser = ActionParser()
-        router = ToolRouter()
-
         # Create environment
-        if params.env_name == "mcqa":
-            return MCQAEnv(params, eval, parser, router, grader)
-
-        elif params.env_name == "open-qa":
-            return OpenQAEnv(params, eval, parser, router, grader)
-
-        elif params.env_name == "textworld":
-            return TextWorldEnv(params, eval)
+        if params.env_name == "textworld":
+            if params.agent_version == 0:
+                return TextWorldEnvV0(params, eval)
+            else: # v1 and v2
+                return TextWorldEnvV1(params, eval)
 
         else:
             raise ValueError(f"Unknown eval name: {params.env_name}")

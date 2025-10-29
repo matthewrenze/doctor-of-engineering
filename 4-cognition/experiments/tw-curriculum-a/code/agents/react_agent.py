@@ -1,28 +1,36 @@
 import re
-import io
-import base64
-from PIL import Image
-from typing import Union
+from environments.state import State
+
 
 class ReactAgent:
-    def __init__(self, model, prompt, version):
+    def __init__(self, model, prompt: str, version: int):
         self.model = model
         self.prompt = prompt
         self.messages = []
         self.step_idx = 0
-        self.is_observing = (version == 1)
+        self.is_observing = (version == 2)
 
-    def reset(self, task):
+    def reset(self, task: str):
         self.model.reset()
-        system_prompt = self.prompt + f"\nTask: {task.strip()}"
+        system_prompt = self.prompt + f"Task: {task}\n"
         system_message = {"role": "system", "content": system_prompt.strip()}
         self.messages = [system_message]
         self.step_idx = 0
 
-    def act(self, state: str) -> tuple[str, str, str]:
+    def act(self, state: State) -> tuple[str, str, str]:
 
         # Prepare the user prompt
-        content = state.strip()
+        content = f"State:\n"
+
+        if state.feedback != "":
+            content += f"  Feedback: {state.feedback.strip()}\n"
+
+        content += "" \
+            + f"  Feedback: {state.feedback.strip()}\n" \
+            + f"  Location: {state.location.strip()}\n" \
+            + f"  Description: {state.description.strip()}\n" \
+            + f"  Inventory: {state.inventory.strip()}\n" \
+            + f"  Score: {state.score.strip()}\n"
         prompt_message = {"role": "user", "content": content}
         temp_messages = self.messages.copy()
         temp_messages.append(prompt_message)

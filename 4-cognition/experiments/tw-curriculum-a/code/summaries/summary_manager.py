@@ -30,8 +30,8 @@ class SummaryManager:
         summary.model_name = results["model_name"].iloc[0]
         summary.eval_name = results["eval_name"].iloc[0]
         summary.tasks = len(results)
-        summary.successes = results["reward"].sum()
-        summary.failures = len(results[results["reward"] == 0])
+        summary.successes = len(results[results["reward"] == 1.0])
+        summary.failures = len(results[results["reward"] < 0])
         summary.errors = len(results[results["error"] != ""])
         summary.accuracy = summary.successes / summary.tasks if summary.tasks > 0 else 0
         summary.total_reward = results["reward"].sum()

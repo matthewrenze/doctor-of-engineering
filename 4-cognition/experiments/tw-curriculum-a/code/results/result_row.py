@@ -1,3 +1,7 @@
+# TODO:
+#  - Add solution_steps (min_steps) field
+#  - Add boolean "success" field
+
 class ResultRow:
     def __init__(self):
         self.agent_name = ""

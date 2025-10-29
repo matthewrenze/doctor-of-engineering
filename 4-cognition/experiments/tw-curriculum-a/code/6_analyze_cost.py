@@ -11,14 +11,16 @@ summaries = pd.read_csv(input_file_path)
 
 # Group by model and sum the cost
 # Note: only two decimal places for cost
-cost_by_model = summaries \
-    .groupby("model_name")["total_cost"] \
+groups = ["agent_name", "model_name"]
+fields = ["tasks", "total_cost"]
+cost_by_group = summaries \
+    .groupby(groups)[fields] \
     .sum() \
     .reset_index()
-cost_by_model["total_cost"] = cost_by_model["total_cost"].round(2)
-cost_by_model = cost_by_model.sort_values(by="total_cost", ascending=False)
+cost_by_group["total_cost"] = cost_by_group["total_cost"].round(2)
+cost_by_group = cost_by_group.sort_values(by="total_cost", ascending=False)
 print("Cost by model:")
-print(cost_by_model.to_string(index=False))
+print(cost_by_group.to_string(index=False))
 print()
 
 # Sum the cost
