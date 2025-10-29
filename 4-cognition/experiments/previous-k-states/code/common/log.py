@@ -1,4 +1,5 @@
 import os
+import re
 from common.parameters import Parameters
 
 # Define the ANSI colors
@@ -24,6 +25,7 @@ class Log:
         print(f"{BOLD_WHITE}{text}{RESET}")
 
     def info(self, text):
+        text = self.clean_info(text)
         self.file.write(f"{text}\n")
         print(f"{WHITE}{text}{RESET}")
 
@@ -43,6 +45,13 @@ class Log:
         self.file.flush()
         self.file.close()
 
+    @staticmethod
+    def clean_info(text):
+        text = re.sub(r'\n+', '\n', text)
+        text = re.sub('\n', ' ', text)
+        text = re.sub(r'(?<!^)\s+', ' ', text)
+        return text
+
 # Test the log
 if __name__ == "__main__":
 
@@ -51,8 +60,7 @@ if __name__ == "__main__":
         model_name="test_model",
         env_name="test_env",
         eval_name="test_eval",
-        max_steps=10
-    )
+        max_steps=10)
 
     log = Log(params, 0)
     log.head("Here is a heading")

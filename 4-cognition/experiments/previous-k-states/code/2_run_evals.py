@@ -16,6 +16,8 @@ from agents.dialogue_writer import DialogueWriter
 agent_names = [
     "react-v0",
     "react-v1",
+    "react-v2",
+    "react-v3"
 ]
 
 # Set models
@@ -37,29 +39,18 @@ model_names = [
 
 # Set evals
 # Note: (eval_name, env_name, max_steps)
-eval_size = 100
+eval_size = 1
 eval_env_names = [
-    # ("debug-all-tools", "open-qa", 10),
-    # ("debug-finish", "open-qa", 10),
-    # ("debug-calculate", "open-qa", 10),
-    # ("debug-list-files", "open-qa", 10),
-    # ("debug-read-file", "open-qa", 10),
-    # ("debug-find-in-file", "open-qa", 10),
-    # ("debug-search-web", "open-qa", 10),
-    # ("debug-read-html", "open-qa", 10),
-    # ("debug-find-in-html", "open-qa", 10),
-    # ("debug-download-file", "open-qa", 10),
-    # ("debug-execute-code", "open-qa", 10),
-    # ("debug-tw-cooking", "textworld", 20),
-    # ("gaia", "open-qa", 20),
-    # ("gpqa-diamond", "mcqa", 20),
-    # ("hle", "open-qa", 20),
-    # ("mmlu-pro", "mcqa", 20),
-    # ("simple-qa", "open-qa", 20),
-    ("tw-simple", "textworld", 20),
-    ("tw-coin", "textworld", 20),
-    ("tw-treasure", "textworld", 100),
-    ("tw-cooking", "textworld", 75),
+    ("tw-simple-1", "textworld", 20),
+    ("tw-coin-1", "textworld", 100),
+    ("tw-coin-2", "textworld", 100),
+    ("tw-coin-3", "textworld", 100),
+    ("tw-treasure-1", "textworld", 20),
+    ("tw-treasure-2", "textworld", 40),
+    ("tw-treasure-3", "textworld", 60),
+    ("tw-cooking-1", "textworld", 20),
+    ("tw-cooking-2", "textworld", 80),
+    ("tw-cooking-3", "textworld", 100),
 ]
 
 # Set parameters
@@ -72,7 +63,6 @@ for agent_name in agent_names:
     for model_name in model_names:
         for eval_env_name in eval_env_names:
             eval_name, env_name, max_steps = eval_env_name
-            eval_name = f"{eval_name}-{eval_size}"
             params = Parameters(
                 agent_name = agent_name,
                 agent_version = int(agent_name[-1]),
@@ -103,7 +93,7 @@ for params in runs:
     agent = agent_factory.create(params, model)
     eval = eval_factory.create(params)
     env = env_factory.create(params, eval)
-    num_episodes = len(eval)
+    num_episodes = min(len(eval), eval_size)
 
     # Set up summaries
     if summary_manager.exists(params):
@@ -121,18 +111,23 @@ for params in runs:
         try:
 
             # Reset the environment
-            task, state = env.reset(episode_id)
-            log.info(f"Task: {task}")
-            log.info(f"State: {state}\n")
+            state = env.reset(episode_id)
+            log.info(f"Task: {state.task}")
+            log.info(f"State:")
+            log.info(f"  Location: {state.location}")
+            log.info(f"  Description: {state.description}")
+            log.info(f"  Inventory: {state.inventory}")
+            log.info(f"  Score: {state.score}")
+            log.info("")
 
             # Reset the agent
-            agent.reset(task)
+            agent.reset(state.task)
             step_id = 0
 
             # Create result row
             result_row = results_manager.create(params)
             result_row.episode_id = episode_id
-            result_row.episode = task
+            result_row.episode = state.task
             result_row.start_time = time.time()
             if "question" in episode:
                 result_row.type = episode["topic"]
@@ -145,14 +140,19 @@ for params in runs:
 
                 # Get the agent's action
                 observation, thought, action = agent.act(state)
-                log.info(f"Observation: {observation}")
-                log.info(f"Thought: {thought}")
-                log.info(f"Action: {action}")
+                log.info(f"Agent:")
+                log.info(f"  Observation: {observation}")
+                log.info(f"  Thought: {thought}")
+                log.info(f"  Action: {action}")
 
                 # Get the environment's state
                 state, reward, is_done = env.step(action)
-                state_text = state if isinstance(state, str) else f"[{len(state)} bytes]"
-                log.info(f"State: {state_text}")
+                log.info(f"State:")
+                log.info(f"  Feedback: {state.feedback}")
+                log.info(f"  Location: {state.location}")
+                log.info(f"  Description: {state.description}")
+                log.info(f"  Inventory: {state.inventory}")
+                log.info(f"  Score: {state.score}")
 
                 # Handle end of episode
                 if is_done:

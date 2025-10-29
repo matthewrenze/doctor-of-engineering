@@ -1,12 +1,11 @@
 class ExamplesFactory(object):
     def create(self, env_name: str, agent_version) -> str:
         # Select the examples file
-        if env_name == "mcqa":
-            file_name = f"mcqa-v{agent_version}.txt"
-        elif env_name == "open-qa":
-            file_name = f"open-qa-v{agent_version}.txt"
-        elif env_name.startswith("textworld"):
-            file_name = f"textworld-v{agent_version}.txt"
+        if env_name.startswith("textworld"):
+            if agent_version == 0:
+                file_name = "textworld-v0.txt"
+            else:
+                file_name = "textworld-vn.txt"
         else:
             raise ValueError(f"Unknown env name: {env_name}")
 

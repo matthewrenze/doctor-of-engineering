@@ -1,5 +1,7 @@
 import re
 import textworld.gym
+from environments.state import State
+
 
 class TextWorldEnv:
     def __init__(self, params, evals):
@@ -8,11 +10,9 @@ class TextWorldEnv:
         self.env = None
         self.episode = None
         self.episode_id = 0
-        self.task = ""
         self.step_index = 0
-        self.max_reward = 0.0
 
-    def reset(self, episode_id):
+    def reset(self, episode_id: int) -> State:
         self.episode_id = episode_id
         self.episode = self.evals.iloc[episode_id].to_dict()
         game_file_path = self.episode["file_path"]
@@ -36,40 +36,82 @@ class TextWorldEnv:
         self.env = textworld.gym.make(env_id)
 
         # Reset the environment
-        state, infos = self.env.reset()
+        _, infos = self.env.reset()
 
-        # Remove the banner
-        state = "\n".join(state.split("\n")[23:])
-
-        self.task = infos.get("objective", "").strip()
+        # Reset the properties
         self.step_index = 0
-        self.max_reward = infos["max_score"]
 
-        return self.task, state
+        # Get the state info
+        task = infos["objective"].strip()
+        description = infos["description"].strip()
+        location = self.get_location(description)
+        inventory = infos["inventory"].strip()
+        score = 0
+        max_score = infos["max_score"]
+        score_text = f"{score} of {max_score}"
+
+        # Clean up the description
+        description = self.remove_location(description)
+
+        # Create the state
+        state = State(
+            task=task,
+            feedback="",
+            location=location,
+            description=description,
+            inventory=inventory,
+            score=score_text)
+
+        return state
 
     def render(self):
         self.env.render()
 
-    def step(self, action: str) -> (str, float, bool):
+    def step(self, action: str) -> tuple[State, float, bool]:
         # HACK: Fix the "take <object> from floor" issue
         if action.startswith("take "):
             action = action.replace(" from floor", "")
 
         # Step the environment
-        state, reward, is_done, infos = self.env.step(action)
+        _, score, is_done, infos = self.env.step(action)
 
-        # Clean up the state
-        state = re.sub(r'\n+', '\n', state.strip())
-        state = state.rstrip('>')
+        # Get the state info
+        feedback = infos["feedback"].strip()
+        description = infos["description"].strip()
+        location = self.get_location(description)
+        inventory = infos["inventory"].strip()
+        max_score = infos["max_score"]
+        score_text = f"{score} of {max_score}"
+
+        # Clean up the description
+        description = self.remove_location(description)
+
+        # Create the state
+        state = State(
+            task="",
+            feedback=feedback,
+            location=location,
+            description=description,
+            inventory=inventory,
+            score=score_text)
 
         # Increment step index
         self.step_index += 1
 
-        # Normalize the reward
-        reward = reward / self.max_reward
+        # Compute the reward
+        reward = score / max_score
 
         # Handle the quit action
         if action == "quit":
             is_done = True
 
         return state, reward, is_done
+
+    @staticmethod
+    def get_location(description: str) -> str:
+        match = re.search(r'-= (.*?) =-', description)
+        return match.group(1).strip()
+
+    @staticmethod
+    def remove_location(description: str) -> str:
+        return re.sub(r'-= (.*?) =-', '', description).strip()

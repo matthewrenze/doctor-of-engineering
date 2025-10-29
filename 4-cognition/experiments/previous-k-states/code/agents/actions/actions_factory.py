@@ -2,11 +2,7 @@ class ActionsFactory:
     def create(self, env_name: str) -> str:
 
         # Select the action file
-        if env_name == "mcqa":
-            file_name = f"qa.txt"
-        elif env_name == "open-qa":
-            file_name = f"qa.txt"
-        elif env_name == "textworld":
+        if env_name == "textworld":
             file_name = "textworld.txt"
         else:
             raise ValueError(f"Unknown action type: {env_name}")
