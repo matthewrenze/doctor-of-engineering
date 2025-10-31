@@ -51,9 +51,6 @@ class ReactAgent:
             role = message["role"]
             counts[role] = counts.get(role, 0) + 1
         debug(f"Messages: system={counts['system']}, user={counts['user']}, model={counts['assistant']}")
-        for message in filtered_messages:
-            debug(f"{message['role']}: {message['content'].replace('\n', ' ')}")
-
 
         # Get the response from the model
         response = self.model.get_response(filtered_messages)

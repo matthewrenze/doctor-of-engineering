@@ -19,7 +19,7 @@ summaries = pd.read_csv(input_file_path)
 summaries = summaries[summaries["model_name"] == model_name]
 summaries = summaries[summaries["eval_name"].str.startswith("tw-")]
 
-# Merge curriculum sublevels by level
+# Create groups
 summaries = summaries.groupby(["agent_name", "model_name", "eval_name"], as_index=False).agg({
     "tasks": "sum",
     "total_steps": "sum",
@@ -34,6 +34,14 @@ summaries["avg_tokens_per_task"] = summaries["total_tokens"] / summaries["tasks"
 summaries["avg_reward_per_task"] = summaries["total_reward"] / summaries["tasks"]
 summaries["avg_reward_per_step"] = summaries["total_reward"] / summaries["total_steps"]
 summaries["avg_reward_per_token"] = summaries["total_reward"] / summaries["total_tokens"]
+
+# Order agents
+agent_order = sorted(
+    summaries["agent_name"].unique(),
+    key=lambda name: (name.rsplit('-v', 1)[0], int(name.rsplit('-v', 1)[1]))
+)
+summaries["agent_name"] = pd.Categorical(summaries["agent_name"], categories=agent_order, ordered=True)
+summaries = summaries.sort_values("agent_name")
 
 # Order the eval names
 eval_order = [
@@ -52,7 +60,6 @@ summaries["eval_name"] = pd.Categorical(
     summaries["eval_name"],
     categories=eval_order,
     ordered=True)
-
 
 # Create plot for task completion accuracy
 accuracy_file_name = f"accuracy-by-agent-and-eval-for-{model_name}.png"

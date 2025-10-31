@@ -14,10 +14,17 @@ from agents.dialogue_writer import DialogueWriter
 
 # Set agents
 agent_names = [
-    "react-v0",
-    "react-v1",
-    "react-v2",
-    "react-v3"
+    # "react-v0",
+    # "react-v1",
+    # "react-v2",
+    # "react-v3",
+    # "react-v4",
+    # "react-v5",
+    "react-v6",
+    "react-v7",
+    "react-v8",
+    "react-v9",
+    "react-v10"
 ]
 
 # Set models
@@ -39,7 +46,7 @@ model_names = [
 
 # Set evals
 # Note: (eval_name, env_name, max_steps)
-eval_size = 1
+eval_size = 10
 eval_env_names = [
     ("tw-simple-1", "textworld", 20),
     ("tw-coin-1", "textworld", 100),
