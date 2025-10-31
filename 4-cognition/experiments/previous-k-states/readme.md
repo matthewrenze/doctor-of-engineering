@@ -9,7 +9,20 @@ An experiment to determine the optimal number of previous states (k) for an obse
 - vn - agent has access to only the last n states
 
 # Results
-- [FINISH]
+- Accuracy (task completion rate) remains similar for all agents (between 79% and 86%)
+- Avg steps per task goes up from 14 to 18 from v0 to v1 and then gradually decreases to 13 by v8 and remains to v10
+- Avg tokens per task drops significantly (122k -> 76k) from v0 to v1 and remains between 51k to 74k to v9
+  - However, v10 has an anomaly tokens generated jumps up to 141k (not sure why)
+- Avg reward per task for v0 is 0.93, then drops to 0.82 for v1, then gradually increase to 0.93 by v10
+- Avg reward per token increases significantly from v0 at 0.8 (1e-5) to 1.1 (1e-5) for v1
+  - Avg reward per token ranges between 1.1 and 1.7 (1e-5) from v1 to v9
+  - However, it drops to 0.7 for v10 due to an anomaly 
+  - Peak is at v5 at 1.7 (1e-5)
+
+# Notes:
+- I only evaluated at n=100 (10 tasks per eval) so I don't have a clean signal to make definitive decisions
+- I should re-run at n=1,000, however, it will take multiple days and cost approximately $700
+- However, in the meantime, k=5 appears to be the optimal trade-off -- based on these preliminary results
 
 ## Resources
 - [Code](code/) - the source code for the agent

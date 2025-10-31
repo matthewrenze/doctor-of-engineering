@@ -2,13 +2,6 @@
 
 An experiment to design a incremental-learning curriculum for LLM agents using the TextWorld environment
 
-# Treatments
-- v0 - previous agent with feedback-only state information
-- v1 - new agent with full state information after each step
-
-# Results
-- [FINISH]
-
 # Curriculum
 - Simple 
   - Task: find and cook an item in a 6-room house

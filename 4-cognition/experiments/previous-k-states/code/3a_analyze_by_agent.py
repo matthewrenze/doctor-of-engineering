@@ -57,6 +57,8 @@ plt.ylabel("Accuracy (task completion rate)")
 plt.ylim(0.0, 1.0)
 plt.xticks(rotation=45, ha='right')
 plt.subplots_adjust(bottom=0.2)
+for p in ax.patches:
+    ax.annotate(f"{p.get_height():.1%}",(p.get_x() + p.get_width() / 2, p.get_height()), ha='center', va='bottom', fontsize=9)
 plt.savefig(f"{output_folder_path}/{accuracy_file_name}", bbox_inches='tight')
 plt.show()
 
@@ -74,6 +76,8 @@ plt.ylabel("Average steps per task")
 plt.xticks(rotation=45, ha='right')
 plt.subplots_adjust(bottom=0.25)
 ax.yaxis.set_major_formatter(FuncFormatter(lambda x, pos: f"{int(x):,}"))
+for p in ax.patches:
+    ax.annotate(f"{int(p.get_height()):,}",(p.get_x() + p.get_width() / 2, p.get_height()), ha='center', va='bottom', fontsize=9)
 plt.savefig(f"{output_folder_path}/{steps_file_name}", bbox_inches='tight')
 plt.show()
 
@@ -91,6 +95,8 @@ plt.ylabel("Average tokens per task")
 plt.xticks(rotation=45, ha='right')
 plt.subplots_adjust(bottom=0.25)
 ax.yaxis.set_major_formatter(FuncFormatter(lambda x, pos: f"{int(x):,}"))
+for p in ax.patches:
+    ax.annotate(f"{int(p.get_height()):,}",(p.get_x() + p.get_width() / 2, p.get_height()), ha='center', va='bottom', fontsize=9)
 plt.savefig(f"{output_folder_path}/{tokens_file_name}", bbox_inches='tight')
 plt.show()
 
@@ -108,6 +114,8 @@ plt.ylabel("Average reward per task")
 plt.ylim(0.0, 1.0)
 plt.xticks(rotation=45, ha='right')
 plt.subplots_adjust(bottom=0.2)
+for p in ax.patches:
+    ax.annotate(f"{p.get_height():.2f}",(p.get_x() + p.get_width() / 2, p.get_height()), ha='center', va='bottom', fontsize=9)
 plt.savefig(f"{output_folder_path}/{reward_file_name}", bbox_inches='tight')
 plt.show()
 
@@ -125,6 +133,8 @@ plt.ylabel("Reward per step")
 #plt.ylim(0.0, 1.0)
 plt.xticks(rotation=45, ha='right')
 plt.subplots_adjust(bottom=0.2)
+for p in ax.patches:
+    ax.annotate(f"{p.get_height():.4f}",(p.get_x() + p.get_width() / 2, p.get_height()), ha='center', va='bottom', fontsize=9)
 plt.savefig(f"{output_folder_path}/{reward_per_step_file_name}", bbox_inches='tight')
 plt.show()
 
@@ -142,6 +152,8 @@ plt.ylabel("Average reward per token")
 #plt.ylim(0.0, 1.0)
 plt.xticks(rotation=45, ha='right')
 plt.subplots_adjust(bottom=0.2)
+for p in ax.patches:
+    ax.annotate(f"{p.get_height():.6f}",(p.get_x() + p.get_width() / 2, p.get_height()), ha='center', va='bottom', fontsize=9)
 plt.savefig(f"{output_folder_path}/{reward_per_token_file_name}", bbox_inches='tight')
 plt.show()
 
