@@ -1,0 +1,627 @@
+step_id,plan,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook and a knife. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.","You are carrying: a raw pork chop, a block of cheese, a red hot pepper, a raw red potato, an orange bell pepper, a red onion and a raw purple potato.",0 of 13,0.0,False,
+1,,I should check the cookbook on the table to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red potato
+  yellow bell pepper
+  red hot pepper
+  pork chop
+  block of cheese
+
+Directions:
+dice the red potato
+  roast the red potato
+  chop the yellow bell pepper
+  roast the yellow bell pepper
+  slice the red hot pepper
+  fry the red hot pepper
+  chop the pork chop
+  fry the pork chop
+  dice the block of cheese
+  fry the block of cheese
+  prepare meal",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook and a knife. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.","You are carrying: a raw pork chop, a block of cheese, a red hot pepper, a raw red potato, an orange bell pepper, a red onion and a raw purple potato.",0 of 13,0.0,False,
+2,,"I need to gather the correct ingredients from my inventory and prepare them according to the recipe. First, I will take the yellow bell pepper from the inventory since the recipe calls for it, but I currently have an orange bell pepper, so I need to check if I can substitute or find a yellow bell pepper. I will start by dicing the red potato as the first step in the recipe.",dice raw red potato with knife,,You need to take the knife first.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook and a knife. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.","You are carrying: a raw pork chop, a block of cheese, a red hot pepper, a raw red potato, an orange bell pepper, a red onion and a raw purple potato.",0 of 13,0.0,False,
+3,,I need to take the knife from the table before I can dice the red potato.,take knife from table,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook and a knife. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.","You are carrying: a raw pork chop, a block of cheese, a red hot pepper, a raw red potato, an orange bell pepper, a red onion and a raw purple potato.",0 of 13,0.0,False,
+4,,I need to free up space in my inventory by dropping an item before I can take the knife.,drop red onion,,You drop the red onion on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook and a knife. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a red onion on the floor.","You are carrying: a raw pork chop, a block of cheese, a red hot pepper, a raw red potato, an orange bell pepper and a raw purple potato.",0 of 13,0.0,False,
+5,,"Now that I have freed up space, I will take the knife from the table.",take knife from table,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook and a knife. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a red onion on the floor.","You are carrying: a raw pork chop, a block of cheese, a red hot pepper, a raw red potato, an orange bell pepper and a raw purple potato.",0 of 13,0.0,False,
+6,,I still have too many items in my inventory. I will drop the raw purple potato to free up more space.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook and a knife. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a raw purple potato and a red onion on the floor.","You are carrying: a raw pork chop, a block of cheese, a red hot pepper, a raw red potato and an orange bell pepper.",0 of 13,0.0,False,
+7,,I still need to free up more space to take the knife. I will drop the orange bell pepper next.,drop orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook and a knife. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is an orange bell pepper, a raw purple potato and a red onion on the floor.","You are carrying: a raw pork chop, a block of cheese, a red hot pepper and a raw red potato.",0 of 13,0.0,False,
+8,,"Now that I have enough space, I will take the knife from the table.",take knife from table,,You take the knife from the table.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is an orange bell pepper, a raw purple potato and a red onion on the floor.","You are carrying: a knife, a raw pork chop, a block of cheese, a red hot pepper and a raw red potato.",0 of 13,0.0,False,
+9,,I will now dice the raw red potato as the first step in the recipe.,dice raw red potato with knife,,"You dice the red potato.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is an orange bell pepper, a raw purple potato and a red onion on the floor.","You are carrying: a knife, a raw pork chop, a block of cheese, a red hot pepper and a diced raw red potato.",1 of 13,0.07692307692307693,False,
+10,,"Next, I will roast the diced red potato using the oven.",roast diced raw red potato with oven,,That's not a verb I recognise.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is an orange bell pepper, a raw purple potato and a red onion on the floor.","You are carrying: a knife, a raw pork chop, a block of cheese, a red hot pepper and a diced raw red potato.",1 of 13,0.07692307692307693,False,
+11,,I will try to roast the diced raw red potato by using the cook action with the oven.,cook diced raw red potato with oven,,"You roasted the red potato.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is an orange bell pepper, a raw purple potato and a red onion on the floor.","You are carrying: a knife, a raw pork chop, a block of cheese, a red hot pepper and a diced roasted red potato.",2 of 13,0.15384615384615385,False,
+12,,"The recipe calls for a yellow bell pepper, but I only have an orange bell pepper. I will chop the orange bell pepper as a substitute.",chop orange bell pepper with knife,,You need to take the orange bell pepper first.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is an orange bell pepper, a raw purple potato and a red onion on the floor.","You are carrying: a knife, a raw pork chop, a block of cheese, a red hot pepper and a diced roasted red potato.",2 of 13,0.15384615384615385,False,
+13,,I need to take the orange bell pepper from the floor before I can chop it.,take orange bell pepper from floor,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is an orange bell pepper, a raw purple potato and a red onion on the floor.","You are carrying: a knife, a raw pork chop, a block of cheese, a red hot pepper and a diced roasted red potato.",2 of 13,0.15384615384615385,False,
+14,,I need to drop an item to free up space to take the orange bell pepper. I will drop the diced roasted red potato.,drop diced roasted red potato,,You drop the red potato on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, an orange bell pepper, a raw purple potato and a red onion on the floor.","You are carrying: a knife, a raw pork chop, a block of cheese and a red hot pepper.",2 of 13,0.15384615384615385,False,
+15,,I will now take the orange bell pepper from the floor.,take orange bell pepper from floor,,You pick up the orange bell pepper from the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: an orange bell pepper, a knife, a raw pork chop, a block of cheese and a red hot pepper.",2 of 13,0.15384615384615385,False,
+16,,I will chop the orange bell pepper with the knife as the next step in the recipe.,chop orange bell pepper with knife,,You chop the orange bell pepper.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a chopped orange bell pepper, a knife, a raw pork chop, a block of cheese and a red hot pepper.",2 of 13,0.15384615384615385,False,
+17,,I will roast the chopped orange bell pepper using the oven.,cook chopped orange bell pepper with oven,,You roasted the orange bell pepper.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a knife, a raw pork chop, a block of cheese and a red hot pepper.",2 of 13,0.15384615384615385,False,
+18,,"Next, I will slice the red hot pepper as per the recipe.",slice red hot pepper with knife,,"You slice the red hot pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a knife, a raw pork chop, a block of cheese and a sliced red hot pepper.",3 of 13,0.23076923076923078,False,
+19,,I will fry the sliced red hot pepper next.,fry sliced red hot pepper with stove,,That's not a verb I recognise.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a knife, a raw pork chop, a block of cheese and a sliced red hot pepper.",3 of 13,0.23076923076923078,False,
+20,,I will try to fry the sliced red hot pepper using the cook action with the stove.,cook sliced red hot pepper with stove,,"You fried the red hot pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a knife, a raw pork chop, a block of cheese and a sliced fried red hot pepper.",4 of 13,0.3076923076923077,False,
+21,,I will chop the raw pork chop next as per the recipe.,chop raw pork chop with knife,,"You chop the pork chop.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a knife, a chopped raw pork chop, a block of cheese and a sliced fried red hot pepper.",5 of 13,0.38461538461538464,False,
+22,,I will fry the chopped pork chop using the stove.,cook chopped raw pork chop with stove,,"You fried the pork chop.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a knife, a chopped fried pork chop, a block of cheese and a sliced fried red hot pepper.",6 of 13,0.46153846153846156,False,
+23,,I will dice the block of cheese next.,dice block of cheese with knife,,"You dice the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a knife, a chopped fried pork chop, a diced block of cheese and a sliced fried red hot pepper.",7 of 13,0.5384615384615384,False,
+24,,I will fry the diced block of cheese using the stove.,cook diced block of cheese with stove,,"You fried the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a knife, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+25,,I have completed all the cooking steps. Now I will prepare the meal.,prepare meal,,You still miss something.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a knife, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+26,,"I missed roasting the yellow bell pepper, but I used an orange bell pepper instead. I will check if I need to roast the orange bell pepper again or if I missed any other step. The recipe says to roast the yellow bell pepper, which I substituted with the orange bell pepper and already roasted it. I will check if I missed any other ingredient or step. The recipe also requires a red hot pepper, pork chop, block of cheese, and red potato, all of which I prepared. I will try to prepare the meal again to see if it recognizes the completion.",prepare meal,,You still miss something.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a knife, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+27,,"I realize the recipe calls for a yellow bell pepper, but I used an orange bell pepper instead. I will try to take a yellow bell pepper from the floor if available or substitute with the orange bell pepper again. Since there is no yellow bell pepper visible, I will try to drop the orange bell pepper and take the raw purple potato to see if it can be used as a substitute or needed for the meal.",drop chopped roasted orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a chopped roasted orange bell pepper, a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a knife, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+28,,I will take the diced roasted red potato from the floor to have all cooked ingredients ready for the meal.,take diced roasted red potato from floor,,You pick up the red potato from the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a chopped roasted orange bell pepper, a raw purple potato and a red onion on the floor.","You are carrying: a diced roasted red potato, a knife, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+29,,I will take the chopped roasted orange bell pepper from the floor to have all cooked ingredients ready for the meal.,take chopped roasted orange bell pepper from floor,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a chopped roasted orange bell pepper, a raw purple potato and a red onion on the floor.","You are carrying: a diced roasted red potato, a knife, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+30,,I need to drop an item to free up space to take the chopped roasted orange bell pepper. I will drop the knife.,drop knife,,You drop the knife on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a knife, a chopped roasted orange bell pepper, a raw purple potato and a red onion on the floor.","You are carrying: a diced roasted red potato, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+31,,I will now take the chopped roasted orange bell pepper from the floor.,take chopped roasted orange bell pepper from floor,,You pick up the orange bell pepper from the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a knife, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a diced roasted red potato, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+32,,I will take the knife from the floor to have the tool back in my inventory.,take knife from floor,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a knife, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a diced roasted red potato, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+33,,I need to drop an item to free up space to take the knife. I will drop the diced roasted red potato.,drop diced roasted red potato,,You drop the red potato on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a knife, a raw purple potato and a red onion on the floor.","You are carrying: a chopped roasted orange bell pepper, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+34,,I will now take the knife from the floor.,take knife from floor,,You pick up the knife from the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a knife, a chopped roasted orange bell pepper, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+35,,I will try to prepare the meal again now that I have all the cooked ingredients and the knife.,prepare meal,,You still miss something.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a knife, a chopped roasted orange bell pepper, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+36,,"I realize the recipe requires a yellow bell pepper, but I used an orange bell pepper instead. I will try to find a yellow bell pepper or substitute the orange bell pepper again. Since there is no yellow bell pepper visible, I will try to take the raw purple potato and see if it can be used or needed for the meal.",take raw purple potato from floor,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a knife, a chopped roasted orange bell pepper, a chopped fried pork chop, a diced fried block of cheese and a sliced fried red hot pepper.",8 of 13,0.6153846153846154,False,
+37,,I need to drop an item to free up space to take the raw purple potato. I will drop the sliced fried red hot pepper.,drop sliced fried red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a sliced fried red hot pepper, a diced roasted red potato, a raw purple potato and a red onion on the floor.","You are carrying: a knife, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+38,,I will now take the raw purple potato from the floor.,take raw purple potato from floor,,You pick up the purple potato from the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a sliced fried red hot pepper, a diced roasted red potato and a red onion on the floor.","You are carrying: a raw purple potato, a knife, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+39,,I will dice the raw purple potato with the knife as it might be the missing ingredient.,dice raw purple potato with knife,,You dice the purple potato.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a sliced fried red hot pepper, a diced roasted red potato and a red onion on the floor.","You are carrying: a diced raw purple potato, a knife, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+40,,I will roast the diced raw purple potato using the oven to complete its preparation.,cook diced raw purple potato with oven,,You roasted the purple potato.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a sliced fried red hot pepper, a diced roasted red potato and a red onion on the floor.","You are carrying: a diced roasted purple potato, a knife, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+41,,I will try to prepare the meal again now that I have all the cooked ingredients.,prepare meal,,You still miss something.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a sliced fried red hot pepper, a diced roasted red potato and a red onion on the floor.","You are carrying: a diced roasted purple potato, a knife, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+42,,"I have prepared all the ingredients from the recipe, but the game still says I miss something. I will check if the red hot pepper needs to be added back to inventory and prepared again. I will take the sliced fried red hot pepper from the floor.",take sliced fried red hot pepper from floor,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a sliced fried red hot pepper, a diced roasted red potato and a red onion on the floor.","You are carrying: a diced roasted purple potato, a knife, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+43,,I need to drop an item to free up space to take the sliced fried red hot pepper. I will drop the diced roasted purple potato.,drop diced roasted purple potato,,You drop the purple potato on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted purple potato, a sliced fried red hot pepper, a diced roasted red potato and a red onion on the floor.","You are carrying: a knife, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+44,,I will now take the sliced fried red hot pepper from the floor.,take sliced fried red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted purple potato, a diced roasted red potato and a red onion on the floor.","You are carrying: a sliced fried red hot pepper, a knife, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+45,,I will try to prepare the meal again now that I have all the cooked ingredients.,prepare meal,,You still miss something.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted purple potato, a diced roasted red potato and a red onion on the floor.","You are carrying: a sliced fried red hot pepper, a knife, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+46,,"I have prepared all the ingredients from the recipe, but the game still says I miss something. I will check if the red onion on the floor is needed for the recipe or if I missed any step. Since the recipe does not mention the red onion, I will try to take the red onion and examine it to see if it is relevant.",take red onion from floor,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted purple potato, a diced roasted red potato and a red onion on the floor.","You are carrying: a sliced fried red hot pepper, a knife, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+47,,I need to drop an item to free up space to take the red onion. I will drop the knife.,drop knife,,You drop the knife on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a knife, a diced roasted purple potato, a diced roasted red potato and a red onion on the floor.","You are carrying: a sliced fried red hot pepper, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+48,,I will take the red onion from the floor to examine it.,take red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a knife, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a red onion, a sliced fried red hot pepper, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+49,,I will examine the red onion to see if it is relevant to the recipe or the meal preparation.,examine red onion,,The red onion looks savory.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a knife, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a red onion, a sliced fried red hot pepper, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+50,,"Since the red onion is not part of the recipe, I will drop it to free up space and then try to prepare the meal again.",drop red onion,,You drop the red onion on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a red onion, a knife, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a sliced fried red hot pepper, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+51,,I will take the knife from the floor to have the tool back in my inventory.,take knife from floor,,You pick up the knife from the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a knife, a sliced fried red hot pepper, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+52,,I will try to prepare the meal again now that I have all the cooked ingredients and the knife.,prepare meal,,You still miss something.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a knife, a sliced fried red hot pepper, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+53,,"I have prepared all the ingredients from the recipe, but the game still says I miss something. I will try to look around the kitchen to see if there is any other ingredient or item I missed.",look,,"-= Kitchen =-
+You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a knife, a sliced fried red hot pepper, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+54,,I will check the fridge to see if there is a yellow bell pepper or any other ingredient I might have missed.,open fridge,,"You open the fridge, revealing a yellow bell pepper and a raw yellow potato.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge contains a yellow bell pepper and a raw yellow potato. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a knife, a sliced fried red hot pepper, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+55,,I will take the yellow bell pepper from the fridge to use it in the recipe.,take yellow bell pepper from fridge,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge contains a yellow bell pepper and a raw yellow potato. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a knife, a sliced fried red hot pepper, a chopped roasted orange bell pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+56,,I need to drop an item to free up space to take the yellow bell pepper. I will drop the chopped roasted orange bell pepper.,drop chopped roasted orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge contains a yellow bell pepper and a raw yellow potato. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a knife, a sliced fried red hot pepper, a chopped fried pork chop and a diced fried block of cheese.",8 of 13,0.6153846153846154,False,
+57,,I will now take the yellow bell pepper from the fridge.,take yellow bell pepper from fridge,,"You take the yellow bell pepper from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge contains a raw yellow potato. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a yellow bell pepper, a knife, a sliced fried red hot pepper, a chopped fried pork chop and a diced fried block of cheese.",9 of 13,0.6923076923076923,False,
+58,,I will chop the yellow bell pepper with the knife as per the recipe.,chop yellow bell pepper with knife,,"You chop the yellow bell pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge contains a raw yellow potato. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a chopped yellow bell pepper, a knife, a sliced fried red hot pepper, a chopped fried pork chop and a diced fried block of cheese.",10 of 13,0.7692307692307693,False,
+59,,I will roast the chopped yellow bell pepper using the oven.,cook chopped yellow bell pepper with oven,,"You roasted the yellow bell pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge contains a raw yellow potato. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a chopped roasted yellow bell pepper, a knife, a sliced fried red hot pepper, a chopped fried pork chop and a diced fried block of cheese.",11 of 13,0.8461538461538461,False,
+60,,I will try to prepare the meal now that I have all the correct ingredients prepared.,prepare meal,,You still miss something.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge contains a raw yellow potato. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a chopped roasted yellow bell pepper, a knife, a sliced fried red hot pepper, a chopped fried pork chop and a diced fried block of cheese.",11 of 13,0.8461538461538461,False,
+61,,"I have prepared all the ingredients from the recipe, but the game still says I miss something. I will try to take the raw yellow potato from the fridge and prepare it as the recipe might require it.",take raw yellow potato from fridge,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge contains a raw yellow potato. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a chopped roasted yellow bell pepper, a knife, a sliced fried red hot pepper, a chopped fried pork chop and a diced fried block of cheese.",11 of 13,0.8461538461538461,False,
+62,,I need to drop an item to free up space to take the raw yellow potato. I will drop the diced fried block of cheese.,drop diced fried block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge contains a raw yellow potato. Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced fried block of cheese, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a chopped roasted yellow bell pepper, a knife, a sliced fried red hot pepper and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+63,,I will take the raw yellow potato from the fridge to prepare it.,take raw yellow potato from fridge,,You take the yellow potato from the fridge.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced fried block of cheese, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a raw yellow potato, a chopped roasted yellow bell pepper, a knife, a sliced fried red hot pepper and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+64,,I will dice the raw yellow potato with the knife as the next step in the recipe.,dice raw yellow potato with knife,,You dice the yellow potato.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced fried block of cheese, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced raw yellow potato, a chopped roasted yellow bell pepper, a knife, a sliced fried red hot pepper and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+65,,I will roast the diced raw yellow potato using the oven.,cook diced raw yellow potato with oven,,You roasted the yellow potato.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced fried block of cheese, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced roasted yellow potato, a chopped roasted yellow bell pepper, a knife, a sliced fried red hot pepper and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+66,,I will try to prepare the meal now that I have all the cooked ingredients.,prepare meal,,You still miss something.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced fried block of cheese, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced roasted yellow potato, a chopped roasted yellow bell pepper, a knife, a sliced fried red hot pepper and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+67,,"I have prepared all the ingredients from the recipe, but the game still says I miss something. I will try to take the diced fried block of cheese from the floor and add it back to my inventory.",take diced fried block of cheese from floor,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced fried block of cheese, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced roasted yellow potato, a chopped roasted yellow bell pepper, a knife, a sliced fried red hot pepper and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+68,,I need to drop an item to free up space to take the diced fried block of cheese. I will drop the sliced fried red hot pepper.,drop sliced fried red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a sliced fried red hot pepper, a diced fried block of cheese, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced roasted yellow potato, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+69,,I will take the diced fried block of cheese from the floor.,take diced fried block of cheese from floor,,You pick up the block of cheese from the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a sliced fried red hot pepper, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced fried block of cheese, a diced roasted yellow potato, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+70,,I will try to prepare the meal again now that I have all the cooked ingredients.,prepare meal,,You still miss something.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a sliced fried red hot pepper, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced fried block of cheese, a diced roasted yellow potato, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+71,,"I have prepared all the ingredients from the recipe, but the game still says I miss something. I will try to take the sliced fried red hot pepper from the floor and add it back to my inventory.",take sliced fried red hot pepper from floor,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a sliced fried red hot pepper, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced fried block of cheese, a diced roasted yellow potato, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+72,,I need to drop an item to free up space to take the sliced fried red hot pepper. I will drop the diced roasted yellow potato.,drop diced roasted yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted yellow potato, a sliced fried red hot pepper, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced fried block of cheese, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+73,,I will take the sliced fried red hot pepper from the floor.,take sliced fried red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted yellow potato, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a sliced fried red hot pepper, a diced fried block of cheese, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+74,,I will try to prepare the meal again now that I have all the cooked ingredients.,prepare meal,,You still miss something.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted yellow potato, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a sliced fried red hot pepper, a diced fried block of cheese, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+75,,"I have prepared all the ingredients from the recipe, but the game still says I miss something. I will try to take the diced roasted yellow potato from the floor and add it back to my inventory.",take diced roasted yellow potato from floor,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced roasted yellow potato, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a sliced fried red hot pepper, a diced fried block of cheese, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+76,,I need to drop an item to free up space to take the diced roasted yellow potato. I will drop the diced fried block of cheese.,drop diced fried block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced fried block of cheese, a diced roasted yellow potato, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a sliced fried red hot pepper, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+77,,I will take the diced roasted yellow potato from the floor.,take diced roasted yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced fried block of cheese, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced roasted yellow potato, a sliced fried red hot pepper, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+78,,I will try to prepare the meal again now that I have all the cooked ingredients.,prepare meal,,You still miss something.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced fried block of cheese, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced roasted yellow potato, a sliced fried red hot pepper, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+79,,"I have prepared all the ingredients from the recipe, but the game still says I miss something. I will try to take the diced fried block of cheese from the floor and add it back to my inventory.",take diced fried block of cheese from floor,,You're carrying too many things already.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a diced fried block of cheese, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced roasted yellow potato, a sliced fried red hot pepper, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,False,
+80,,I need to drop an item to free up space to take the diced fried block of cheese. I will drop the sliced fried red hot pepper.,drop sliced fried red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You make a grand eccentric entrance into a kitchen.
+
+You can see a fridge. The fridge is empty, what a horrible day! Look over there! an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. You can see a counter. The counter is vast. On the counter you can make out a red apple. You see a stove. Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a sliced fried red hot pepper, a diced fried block of cheese, a chopped roasted orange bell pepper, a red onion, a diced roasted purple potato and a diced roasted red potato on the floor.","You are carrying: a diced roasted yellow potato, a chopped roasted yellow bell pepper, a knife and a chopped fried pork chop.",11 of 13,0.8461538461538461,True,
