@@ -2,7 +2,7 @@ step_id,plan,thought,action,task,feedback,location,description,inventory,score,r
 0,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a red hot pepper, a raw red potato, a banana, a red apple, an orange bell pepper, a red onion, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.",You are carrying nothing.,0 of 14,0.0,False,
-1,,I should first check the cookbook on the counter to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,I should first examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -26,47 +26,50 @@ chop the red potato
   prepare meal",Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a red hot pepper, a raw red potato, a banana, a red apple, an orange bell pepper, a red onion, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.",You are carrying nothing.,0 of 14,0.0,False,
-2,,"I need to gather the ingredients listed in the recipe: red potato, yellow bell pepper, white onion, and red hot pepper. I see a red hot pepper, a red potato, a red onion, and an orange bell pepper on the counter. I will take the red hot pepper first.",take red hot pepper from counter,,"You take the red hot pepper from the counter.
+2,,"I need to gather the ingredients listed in the recipe: red potato, yellow bell pepper, white onion, and red hot pepper. I see a red potato, an orange bell pepper (which might be a substitute for yellow), a red onion (not white), and a red hot pepper on the counter. I will take these ingredients first.","take red potato from counter, take orange bell pepper from counter, take red onion from counter, take red hot pepper from counter",,I only understood you as far as wanting to take the red potato from the counter.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+
+You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a red hot pepper, a raw red potato, a banana, a red apple, an orange bell pepper, a red onion, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.",You are carrying nothing.,0 of 14,0.0,False,
+3,,"I will take the red potato first, then take the other ingredients one by one.",take red potato from counter,,"You take the red potato from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a raw red potato, a banana, a red apple, an orange bell pepper, a red onion, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.",You are carrying: a red hot pepper.,1 of 14,0.07142857142857142,False,
-3,,"Next, I should take the red potato from the counter as it is one of the required ingredients.",take red potato from counter,,"You take the red potato from the counter.
+You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a red hot pepper, a banana, a red apple, an orange bell pepper, a red onion, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.",You are carrying: a raw red potato.,1 of 14,0.07142857142857142,False,
+4,,"I will now take the orange bell pepper, which is the closest substitute for the yellow bell pepper in the recipe.",take orange bell pepper from counter,,You take the orange bell pepper from the counter.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+
+You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a red hot pepper, a banana, a red apple, a red onion, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.",You are carrying: an orange bell pepper and a raw red potato.,1 of 14,0.07142857142857142,False,
+5,,"I will take the red onion next, as a substitute for the white onion in the recipe.",take red onion from counter,,You take the red onion from the counter.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+
+You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a red hot pepper, a banana, a red apple, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.","You are carrying: a red onion, an orange bell pepper and a raw red potato.",1 of 14,0.07142857142857142,False,
+6,,I will take the red hot pepper last to complete the ingredients needed for the recipe.,take red hot pepper from counter,,"You take the red hot pepper from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, an orange bell pepper, a red onion, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.",You are carrying: a raw red potato and a red hot pepper.,2 of 14,0.14285714285714285,False,
-4,,"I need to take the white onion next, but I only see a red onion on the counter. I will take the red onion anyway, as it might be used as a substitute.",take red onion from counter,,You take the red onion from the counter.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.","You are carrying: a red hot pepper, a red onion, an orange bell pepper and a raw red potato.",2 of 14,0.14285714285714285,False,
+7,,I will chop the red potato with the knife as the first step in the recipe.,chop raw red potato with knife,,You need to take the knife first.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, an orange bell pepper, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.","You are carrying: a red onion, a raw red potato and a red hot pepper.",2 of 14,0.14285714285714285,False,
-5,,"The recipe calls for a yellow bell pepper, but I only see an orange bell pepper on the counter. I will take the orange bell pepper as a substitute.",take orange bell pepper from counter,,You take the orange bell pepper from the counter.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.","You are carrying: a red hot pepper, a red onion, an orange bell pepper and a raw red potato.",2 of 14,0.14285714285714285,False,
+8,,I need to take the knife from the counter before I can chop the red potato.,take knife from counter,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.","You are carrying: an orange bell pepper, a red onion, a raw red potato and a red hot pepper.",2 of 14,0.14285714285714285,False,
-6,,I have all the ingredients needed for the recipe. Now I should chop the red potato as the first step in the directions.,chop red potato with knife,,You need to take the knife first.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.","You are carrying: an orange bell pepper, a red onion, a raw red potato and a red hot pepper.",2 of 14,0.14285714285714285,False,
-7,,I need to take the knife from the counter before I can chop the red potato.,take knife from counter,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.","You are carrying: an orange bell pepper, a red onion, a raw red potato and a red hot pepper.",2 of 14,0.14285714285714285,False,
-8,,I am carrying too many items to take the knife. I should put down one of the ingredients to free up space. I will put down the orange bell pepper first.,drop orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.","You are carrying: a red hot pepper, a red onion, an orange bell pepper and a raw red potato.",2 of 14,0.14285714285714285,False,
+9,,I need to drop one ingredient to free up space to take the knife. I will drop the orange bell pepper as it can be picked up again later if needed.,drop orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato, a cookbook and a knife. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is an orange bell pepper on the floor.","You are carrying: a red onion, a raw red potato and a red hot pepper.",2 of 14,0.14285714285714285,False,
-9,,"Now that I have space, I should take the knife from the counter to chop the ingredients.",take knife from counter,,You take the knife from the counter.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is an orange bell pepper on the floor.","You are carrying: a red hot pepper, a red onion and a raw red potato.",2 of 14,0.14285714285714285,False,
+10,,I will now take the knife from the counter to chop the red potato.,take knife from counter,,You take the knife from the counter.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is an orange bell pepper on the floor.","You are carrying: a knife, a red onion, a raw red potato and a red hot pepper.",2 of 14,0.14285714285714285,False,
-10,,I will chop the raw red potato first as per the recipe instructions.,chop raw red potato with knife,,"You chop the red potato.
+There is an orange bell pepper on the floor.","You are carrying: a knife, a red hot pepper, a red onion and a raw red potato.",2 of 14,0.14285714285714285,False,
+11,,I will chop the red potato with the knife as the first step in the recipe.,chop raw red potato with knife,,"You chop the red potato.
 
 
 
@@ -76,36 +79,15 @@ You can see a closed fridge in the room. You see a closed oven. You hear a noise
 
 
 
-There is an orange bell pepper on the floor.","You are carrying: a knife, a red onion, a chopped raw red potato and a red hot pepper.",3 of 14,0.21428571428571427,False,
-11,,"Next, I should fry the chopped red potato on the stove.",fry chopped raw red potato with stove,,That's not a verb I recognise.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is an orange bell pepper on the floor.","You are carrying: a knife, a red hot pepper, a red onion and a chopped raw red potato.",3 of 14,0.21428571428571427,False,
+12,,I will fry the chopped red potato on the stove as the next step.,fry chopped raw red potato with stove,,That's not a verb I recognise.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is an orange bell pepper on the floor.","You are carrying: a knife, a red onion, a chopped raw red potato and a red hot pepper.",3 of 14,0.21428571428571427,False,
-12,,The stove is conventional and likely needs the ingredient to be placed on it for frying. I will try to put the chopped red potato on the stove first.,put chopped raw red potato on stove,,You put the red potato on the stove.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. On the stove you can see a chopped raw red potato.
-
-
-
-There is an orange bell pepper on the floor.","You are carrying: a knife, a red onion and a red hot pepper.",3 of 14,0.21428571428571427,False,
-13,,"Now that the chopped red potato is on the stove, I should fry it using the stove.",cook chopped raw red potato with stove,,You need to take the red potato first.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. On the stove you can see a chopped raw red potato.
-
-
-
-There is an orange bell pepper on the floor.","You are carrying: a knife, a red onion and a red hot pepper.",3 of 14,0.21428571428571427,False,
-14,,I need to take the chopped raw red potato from the stove before I can cook it.,take chopped raw red potato from stove,,You take the red potato from the stove.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is an orange bell pepper on the floor.","You are carrying: a chopped raw red potato, a knife, a red onion and a red hot pepper.",3 of 14,0.21428571428571427,False,
-15,,I will now cook (fry) the chopped raw red potato using the stove.,cook chopped raw red potato with stove,,"You fried the red potato.
+There is an orange bell pepper on the floor.","You are carrying: a knife, a red hot pepper, a red onion and a chopped raw red potato.",3 of 14,0.21428571428571427,False,
+13,,I will try to cook the chopped raw red potato using the stove instead of frying it.,cook chopped raw red potato with stove,,"You fried the red potato.
 
 
 
@@ -115,85 +97,71 @@ You can see a closed fridge in the room. You see a closed oven. You hear a noise
 
 
 
-There is an orange bell pepper on the floor.","You are carrying: a chopped fried red potato, a knife, a red onion and a red hot pepper.",4 of 14,0.2857142857142857,False,
-16,,"Next, I should chop the orange bell pepper as a substitute for the yellow bell pepper in the recipe.",chop orange bell pepper with knife,,You need to take the orange bell pepper first.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is an orange bell pepper on the floor.","You are carrying: a knife, a red hot pepper, a red onion and a chopped fried red potato.",4 of 14,0.2857142857142857,False,
+14,,"I will chop the orange bell pepper next, which I dropped on the floor earlier.",take orange bell pepper from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is an orange bell pepper on the floor.","You are carrying: a chopped fried red potato, a knife, a red onion and a red hot pepper.",4 of 14,0.2857142857142857,False,
-17,,I need to take the orange bell pepper from the floor before I can chop it.,take orange bell pepper from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is an orange bell pepper on the floor.","You are carrying: a knife, a red hot pepper, a red onion and a chopped fried red potato.",4 of 14,0.2857142857142857,False,
+15,,I need to drop an item to free up space to take the orange bell pepper. I will drop the chopped fried red potato since it can be cooked again later if needed.,drop chopped fried red potato,,You drop the red potato on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is an orange bell pepper on the floor.","You are carrying: a chopped fried red potato, a knife, a red onion and a red hot pepper.",4 of 14,0.2857142857142857,False,
-18,,I am carrying too many items to take the orange bell pepper. I should drop one item to free space. I will drop the chopped fried red potato.,drop chopped fried red potato,,You drop the red potato on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a chopped fried red potato and an orange bell pepper on the floor.","You are carrying: a knife, a red hot pepper and a red onion.",4 of 14,0.2857142857142857,False,
+16,,I will take the orange bell pepper from the floor now.,take orange bell pepper from floor,,You pick up the orange bell pepper from the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a chopped fried red potato and an orange bell pepper on the floor.","You are carrying: a knife, a red onion and a red hot pepper.",4 of 14,0.2857142857142857,False,
-19,,"Now that I have space, I should take the orange bell pepper from the floor to chop it.",take orange bell pepper from floor,,You pick up the orange bell pepper from the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a chopped fried red potato on the floor.","You are carrying: an orange bell pepper, a knife, a red hot pepper and a red onion.",4 of 14,0.2857142857142857,False,
+17,,I will chop the orange bell pepper with the knife as the next step.,chop orange bell pepper with knife,,You chop the orange bell pepper.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a chopped fried red potato on the floor.","You are carrying: an orange bell pepper, a knife, a red onion and a red hot pepper.",4 of 14,0.2857142857142857,False,
-20,,I will chop the orange bell pepper now as per the recipe.,chop orange bell pepper with knife,,You chop the orange bell pepper.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a chopped fried red potato on the floor.","You are carrying: a chopped orange bell pepper, a knife, a red hot pepper and a red onion.",4 of 14,0.2857142857142857,False,
+18,,I will roast the chopped orange bell pepper using the oven as the next step.,open oven,,You open the oven.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+
+
+
+There is a chopped fried red potato on the floor.","You are carrying: a chopped orange bell pepper, a knife, a red hot pepper and a red onion.",4 of 14,0.2857142857142857,False,
+19,,I will put the chopped orange bell pepper into the oven to roast it.,insert chopped orange bell pepper into oven,,You put the orange bell pepper into the oven.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+
+You can see a closed fridge in the room. You see an opened oven. The oven contains a chopped orange bell pepper. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+
+
+
+There is a chopped fried red potato on the floor.","You are carrying: a knife, a red hot pepper and a red onion.",4 of 14,0.2857142857142857,False,
+20,,I will close the oven to start roasting the orange bell pepper.,close oven,,You close the oven.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a chopped fried red potato on the floor.","You are carrying: a chopped orange bell pepper, a knife, a red onion and a red hot pepper.",4 of 14,0.2857142857142857,False,
-21,,"Next, I should roast the chopped orange bell pepper as per the recipe.",cook chopped orange bell pepper with stove,,You fried the orange bell pepper.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a chopped fried red potato on the floor.","You are carrying: a knife, a red hot pepper and a red onion.",4 of 14,0.2857142857142857,False,
+21,,I will dice the red onion with the knife as the next step in the recipe.,dice red onion with knife,,You dice the red onion.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a chopped fried red potato on the floor.","You are carrying: a chopped fried orange bell pepper, a knife, a red onion and a red hot pepper.",4 of 14,0.2857142857142857,False,
-22,,"Next, I should dice the red onion as per the recipe instructions.",dice red onion with knife,,You dice the red onion.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a chopped fried red potato on the floor.","You are carrying: a knife, a red hot pepper and a diced red onion.",4 of 14,0.2857142857142857,False,
+22,,I will fry the diced red onion using the stove as the next step.,cook diced red onion with stove,,You fried the red onion.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a chopped fried red potato on the floor.","You are carrying: a chopped fried orange bell pepper, a knife, a diced red onion and a red hot pepper.",4 of 14,0.2857142857142857,False,
-23,,I should fry the diced red onion on the stove next.,put diced red onion on stove,,You put the red onion on the stove.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. On the stove you can see a diced red onion.
-
-
-
-There is a chopped fried red potato on the floor.","You are carrying: a chopped fried orange bell pepper, a knife and a red hot pepper.",4 of 14,0.2857142857142857,False,
-24,,I need to fry the diced red onion using the stove.,cook diced red onion with stove,,You need to take the red onion first.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. On the stove you can see a diced red onion.
-
-
-
-There is a chopped fried red potato on the floor.","You are carrying: a chopped fried orange bell pepper, a knife and a red hot pepper.",4 of 14,0.2857142857142857,False,
-25,,I need to take the diced red onion from the stove before I can cook it.,take diced red onion from stove,,You take the red onion from the stove.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a chopped fried red potato on the floor.","You are carrying: a diced red onion, a chopped fried orange bell pepper, a knife and a red hot pepper.",4 of 14,0.2857142857142857,False,
-26,,I will now fry the diced red onion using the stove.,cook diced red onion with stove,,You fried the red onion.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a chopped fried red potato on the floor.","You are carrying: a diced fried red onion, a chopped fried orange bell pepper, a knife and a red hot pepper.",4 of 14,0.2857142857142857,False,
-27,,"Next, I should chop the red hot pepper as per the recipe.",chop red hot pepper with knife,,"You chop the red hot pepper.
+There is a chopped fried red potato on the floor.","You are carrying: a knife, a red hot pepper and a diced fried red onion.",4 of 14,0.2857142857142857,False,
+23,,I will chop the red hot pepper with the knife as the next step.,chop red hot pepper with knife,,"You chop the red hot pepper.
 
 
 
@@ -203,29 +171,8 @@ You can see a closed fridge in the room. You see a closed oven. You hear a noise
 
 
 
-There is a chopped fried red potato on the floor.","You are carrying: a diced fried red onion, a chopped fried orange bell pepper, a knife and a chopped red hot pepper.",5 of 14,0.35714285714285715,False,
-28,,I should fry the chopped red hot pepper on the stove next.,put chopped red hot pepper on stove,,You put the red hot pepper on the stove.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. On the stove you can see a chopped red hot pepper.
-
-
-
-There is a chopped fried red potato on the floor.","You are carrying: a diced fried red onion, a chopped fried orange bell pepper and a knife.",5 of 14,0.35714285714285715,False,
-29,,I need to fry the chopped red hot pepper using the stove.,cook chopped red hot pepper with stove,,You need to take the red hot pepper first.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. On the stove you can see a chopped red hot pepper.
-
-
-
-There is a chopped fried red potato on the floor.","You are carrying: a diced fried red onion, a chopped fried orange bell pepper and a knife.",5 of 14,0.35714285714285715,False,
-30,,I need to take the chopped red hot pepper from the stove before I can cook it.,take chopped red hot pepper from stove,,You take the red hot pepper from the stove.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a chopped fried red potato on the floor.","You are carrying: a chopped red hot pepper, a diced fried red onion, a chopped fried orange bell pepper and a knife.",5 of 14,0.35714285714285715,False,
-31,,I will now fry the chopped red hot pepper using the stove.,cook chopped red hot pepper with stove,,"You fried the red hot pepper.
+There is a chopped fried red potato on the floor.","You are carrying: a knife, a chopped red hot pepper and a diced fried red onion.",5 of 14,0.35714285714285715,False,
+24,,I will fry the chopped red hot pepper using the stove as the next step.,cook chopped red hot pepper with stove,,"You fried the red hot pepper.
 
 
 
@@ -235,293 +182,177 @@ You can see a closed fridge in the room. You see a closed oven. You hear a noise
 
 
 
-There is a chopped fried red potato on the floor.","You are carrying: a chopped fried red hot pepper, a diced fried red onion, a chopped fried orange bell pepper and a knife.",6 of 14,0.42857142857142855,False,
-32,,I have completed all the cooking steps. Now I should prepare the meal using the cooked ingredients.,prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a chopped fried red potato on the floor.","You are carrying: a knife, a chopped fried red hot pepper and a diced fried red onion.",6 of 14,0.42857142857142855,False,
+25,,I will prepare the meal now that all ingredients are cooked.,prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
 You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a chopped fried red potato on the floor.","You are carrying: a chopped fried red hot pepper, a diced fried red onion, a chopped fried orange bell pepper and a knife.",6 of 14,0.42857142857142855,False,
-33,,I am missing the fried red potato to prepare the meal. I should pick up the chopped fried red potato from the floor.,take chopped fried red potato from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a chopped fried red potato on the floor.","You are carrying: a knife, a chopped fried red hot pepper and a diced fried red onion.",6 of 14,0.42857142857142855,False,
+26,,"I am missing the fried red potato to prepare the meal, so I will take the chopped fried red potato from the floor.",take chopped fried red potato from floor,,You pick up the red potato from the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.","You are carrying: a chopped fried red potato, a knife, a chopped fried red hot pepper and a diced fried red onion.",6 of 14,0.42857142857142855,False,
+27,,I will now prepare the meal with all the cooked ingredients I have.,prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.","You are carrying: a chopped fried red potato, a knife, a chopped fried red hot pepper and a diced fried red onion.",6 of 14,0.42857142857142855,False,
+28,,"I am missing the roasted orange bell pepper to prepare the meal, so I will open the oven to take it out.",open oven,,"You open the oven, revealing a chopped orange bell pepper.",Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see an opened oven. The oven contains a chopped orange bell pepper. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.","You are carrying: a chopped fried red potato, a knife, a chopped fried red hot pepper and a diced fried red onion.",6 of 14,0.42857142857142855,False,
+29,,I will take the chopped orange bell pepper from the oven to complete the ingredients.,take chopped orange bell pepper from oven,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-There is a chopped fried red potato on the floor.","You are carrying: a chopped fried red hot pepper, a diced fried red onion, a chopped fried orange bell pepper and a knife.",6 of 14,0.42857142857142855,False,
-34,,I am carrying too many items to take the chopped fried red potato. I should drop the knife to free space.,drop knife,,You drop the knife on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+You can see a closed fridge in the room. You see an opened oven. The oven contains a chopped orange bell pepper. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.","You are carrying: a chopped fried red potato, a knife, a chopped fried red hot pepper and a diced fried red onion.",6 of 14,0.42857142857142855,False,
+30,,I need to drop an item to free up space to take the chopped orange bell pepper. I will drop the knife since I don't need it for the meal preparation anymore.,drop knife,,You drop the knife on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+You can see a closed fridge in the room. You see an opened oven. The oven contains a chopped orange bell pepper. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a knife and a chopped fried red potato on the floor.","You are carrying: a chopped fried red hot pepper, a diced fried red onion and a chopped fried orange bell pepper.",6 of 14,0.42857142857142855,False,
-35,,"Now that I have space, I should take the chopped fried red potato from the floor.",take chopped fried red potato from floor,,You pick up the red potato from the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a knife on the floor.","You are carrying: a chopped fried red potato, a chopped fried red hot pepper and a diced fried red onion.",6 of 14,0.42857142857142855,False,
+31,,I will now take the chopped orange bell pepper from the oven.,take chopped orange bell pepper from oven,,You take the orange bell pepper from the oven.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a knife on the floor.","You are carrying: a chopped fried red potato, a chopped fried red hot pepper, a diced fried red onion and a chopped fried orange bell pepper.",6 of 14,0.42857142857142855,False,
-36,,I have all the cooked ingredients now. I should prepare the meal.,prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato, a chopped fried red hot pepper and a diced fried red onion.",6 of 14,0.42857142857142855,False,
+32,,I will now prepare the meal with all the cooked ingredients I have.,prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a knife on the floor.","You are carrying: a chopped fried red potato, a chopped fried red hot pepper, a diced fried red onion and a chopped fried orange bell pepper.",6 of 14,0.42857142857142855,False,
-37,,I might have missed the red hot pepper in the cooked form. I will check if I have the cooked red hot pepper in my inventory.,inventory,,"You are carrying: a chopped fried red potato, a chopped fried red hot pepper, a diced fried red onion and a chopped fried orange bell pepper.",Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato, a chopped fried red hot pepper and a diced fried red onion.",6 of 14,0.42857142857142855,False,
+33,,"I am missing the fried red potato to prepare the meal, so I will drop the chopped fried red potato and then take the chopped fried red potato from the floor.","drop chopped fried red potato, take chopped fried red potato from floor",,You can't see any such thing.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a knife on the floor.","You are carrying: a chopped fried red potato, a chopped fried red hot pepper, a diced fried red onion and a chopped fried orange bell pepper.",6 of 14,0.42857142857142855,False,
-38,,I have all the cooked ingredients required. I will try to prepare the meal again.,prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato, a chopped fried red hot pepper and a diced fried red onion.",6 of 14,0.42857142857142855,False,
+34,,"I already have the chopped fried red potato in my inventory, so I will try to prepare the meal again.",prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a knife on the floor.","You are carrying: a chopped fried red potato, a chopped fried red hot pepper, a diced fried red onion and a chopped fried orange bell pepper.",6 of 14,0.42857142857142855,False,
-39,,"I might be missing the white onion specifically, not the red onion substitute. I will drop the red onion and take the white onion from the fridge if available.",drop diced fried red onion,,You drop the red onion on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato, a chopped fried red hot pepper and a diced fried red onion.",6 of 14,0.42857142857142855,False,
+35,,"I must be missing the cooked red onion, so I will drop the diced fried red onion and fry it again to ensure it is cooked properly.",drop diced fried red onion,,You drop the red onion on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see a closed fridge in the room. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a diced fried red onion and a knife on the floor.","You are carrying: a chopped fried red potato, a chopped fried red hot pepper and a chopped fried orange bell pepper.",6 of 14,0.42857142857142855,False,
-40,,I will open the fridge to check if there is a white onion inside.,open fridge,,"You open the fridge, revealing a yellow bell pepper, a white onion, a raw yellow potato and a carrot.",Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+There is a diced fried red onion and a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+36,,I will fry the diced fried red onion again using the stove.,cook diced fried red onion with stove,,You need to take the red onion first.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a white onion, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
 
-There is a diced fried red onion and a knife on the floor.","You are carrying: a chopped fried red potato, a chopped fried red hot pepper and a chopped fried orange bell pepper.",6 of 14,0.42857142857142855,False,
-41,,I should take the white onion from the fridge to use in the recipe.,take white onion from fridge,,"You take the white onion from the fridge.
+There is a diced fried red onion and a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+37,,I will take the diced fried red onion from the floor to fry it again.,take diced fried red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
-Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+There is a knife on the floor.","You are carrying: a diced fried red onion, a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+38,,I will fry the diced fried red onion again using the stove.,cook diced fried red onion with stove,,You burned the red onion!,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
-There is a diced fried red onion and a knife on the floor.","You are carrying: a white onion, a chopped fried red potato, a chopped fried red hot pepper and a chopped fried orange bell pepper.",7 of 14,0.5,False,
-42,,I need to dice the white onion as per the recipe instructions.,dice white onion with knife,,You need to take the knife first.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+There is a knife on the floor.","You are carrying: a diced burned red onion, a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+39,,I will drop the burned red onion and try dicing and frying the red onion again from the counter.,drop diced burned red onion,,I only understood you as far as wanting to drop the red onion.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
-There is a diced fried red onion and a knife on the floor.","You are carrying: a white onion, a chopped fried red potato, a chopped fried red hot pepper and a chopped fried orange bell pepper.",7 of 14,0.5,False,
-43,,I need to take the knife from the floor before I can dice the white onion.,take knife from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+There is a knife on the floor.","You are carrying: a diced burned red onion, a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+40,,I will drop the diced burned red onion to free up space.,drop diced burned red onion,,I only understood you as far as wanting to drop the red onion.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
-There is a diced fried red onion and a knife on the floor.","You are carrying: a white onion, a chopped fried red potato, a chopped fried red hot pepper and a chopped fried orange bell pepper.",7 of 14,0.5,False,
-44,,I am carrying too many items to take the knife. I should drop one item to free space. I will drop the chopped fried red hot pepper.,drop chopped fried red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+There is a knife on the floor.","You are carrying: a diced burned red onion, a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+41,,I will drop the diced burned red onion again to free up space.,drop diced burned red onion,,I only understood you as far as wanting to drop the red onion.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
-There is a chopped fried red hot pepper, a diced fried red onion and a knife on the floor.","You are carrying: a white onion, a chopped fried red potato and a chopped fried orange bell pepper.",7 of 14,0.5,False,
-45,,"Now that I have space, I should take the knife from the floor to dice the white onion.",take knife from floor,,You pick up the knife from the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
+There is a knife on the floor.","You are carrying: a diced burned red onion, a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+42,,"I will drop the diced burned red onion by specifying ""red onion"" instead of ""diced burned red onion"" to see if it works.",drop red onion,,You drop the red onion on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
-There is a chopped fried red hot pepper and a diced fried red onion on the floor.","You are carrying: a knife, a white onion, a chopped fried red potato and a chopped fried orange bell pepper.",7 of 14,0.5,False,
-46,,I will dice the white onion now as per the recipe.,dice white onion with knife,,"You dice the white onion.
 
+There is a diced burned red onion and a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+43,,I will take the red onion from the counter again to dice and fry it properly.,take red onion from counter,,I only understood you as far as wanting to take the red onion.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
-Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
+There is a diced burned red onion and a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+44,,I will dice the red onion with the knife now.,dice red onion with knife,,The red onion is already diced.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
-There is a chopped fried red hot pepper and a diced fried red onion on the floor.","You are carrying: a knife, a diced white onion, a chopped fried red potato and a chopped fried orange bell pepper.",8 of 14,0.5714285714285714,False,
-47,,I should fry the diced white onion on the stove next.,put diced white onion on stove,,You put the white onion on the stove.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. On the stove you can see a diced white onion.
 
+There is a diced burned red onion and a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+45,,I will cook the diced red onion with the stove to fry it properly.,cook diced red onion with stove,,You need to take the red onion first.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
-There is a chopped fried red hot pepper and a diced fried red onion on the floor.","You are carrying: a knife, a chopped fried red potato and a chopped fried orange bell pepper.",8 of 14,0.5714285714285714,False,
-48,,I need to fry the diced white onion using the stove.,cook diced white onion with stove,,You need to take the white onion first.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. On the stove you can see a diced white onion.
 
+There is a diced burned red onion and a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+46,,I will take the diced red onion from the floor to fry it properly.,take diced red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
-There is a chopped fried red hot pepper and a diced fried red onion on the floor.","You are carrying: a knife, a chopped fried red potato and a chopped fried orange bell pepper.",8 of 14,0.5714285714285714,False,
-49,,I need to take the diced white onion from the stove before I can cook it.,take diced white onion from stove,,You take the white onion from the stove.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
+There is a knife on the floor.","You are carrying: a diced burned red onion, a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+47,,I will try to prepare the meal again with the ingredients I have.,prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
-There is a chopped fried red hot pepper and a diced fried red onion on the floor.","You are carrying: a diced white onion, a knife, a chopped fried red potato and a chopped fried orange bell pepper.",8 of 14,0.5714285714285714,False,
-50,,I will now fry the diced white onion using the stove.,cook diced white onion with stove,,"You fried the white onion.
 
 
+There is a knife on the floor.","You are carrying: a diced burned red onion, a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+48,,"I have burned the red onion, so I will drop the diced burned red onion and try to dice and fry the red onion again from the counter.",drop diced burned red onion,,I only understood you as far as wanting to drop the red onion.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
+There is a knife on the floor.","You are carrying: a diced burned red onion, a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+49,,I will drop the diced burned red onion again to free up space.,drop red onion,,You drop the red onion on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-There is a chopped fried red hot pepper and a diced fried red onion on the floor.","You are carrying: a diced fried white onion, a knife, a chopped fried red potato and a chopped fried orange bell pepper.",9 of 14,0.6428571428571429,False,
-51,,I have now completed all the cooking steps. I should prepare the meal using the cooked ingredients.,prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
+There is a diced burned red onion and a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+50,,I will take the red onion from the counter again to dice and fry it properly.,take red onion from counter,,I only understood you as far as wanting to take the red onion.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-There is a chopped fried red hot pepper and a diced fried red onion on the floor.","You are carrying: a diced fried white onion, a knife, a chopped fried red potato and a chopped fried orange bell pepper.",9 of 14,0.6428571428571429,False,
-52,,I might be missing the red hot pepper in the cooked form again. I will take the chopped fried red hot pepper from the floor.,take chopped fried red hot pepper from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
+There is a diced burned red onion and a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,False,
+51,,I will dice the red onion with the knife now.,dice red onion with knife,,The red onion is already diced.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
 
-There is a chopped fried red hot pepper and a diced fried red onion on the floor.","You are carrying: a diced fried white onion, a knife, a chopped fried red potato and a chopped fried orange bell pepper.",9 of 14,0.6428571428571429,False,
-53,,I am carrying too many items to take the chopped fried red hot pepper. I should drop the knife to free space.,drop knife,,You drop the knife on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
+You can see a closed fridge in the room. You see an opened oven. The oven is empty, what a horrible day! You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
 
 
-
-There is a knife, a chopped fried red hot pepper and a diced fried red onion on the floor.","You are carrying: a diced fried white onion, a chopped fried red potato and a chopped fried orange bell pepper.",9 of 14,0.6428571428571429,False,
-54,,"Now that I have space, I should take the chopped fried red hot pepper from the floor.",take chopped fried red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a knife and a diced fried red onion on the floor.","You are carrying: a chopped fried red hot pepper, a diced fried white onion, a chopped fried red potato and a chopped fried orange bell pepper.",9 of 14,0.6428571428571429,False,
-55,,I have all the cooked ingredients now. I should prepare the meal.,prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a knife and a diced fried red onion on the floor.","You are carrying: a chopped fried red hot pepper, a diced fried white onion, a chopped fried red potato and a chopped fried orange bell pepper.",9 of 14,0.6428571428571429,False,
-56,,I might be missing the diced fried red onion. I will take the diced fried red onion from the floor.,take diced fried red onion from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a knife and a diced fried red onion on the floor.","You are carrying: a chopped fried red hot pepper, a diced fried white onion, a chopped fried red potato and a chopped fried orange bell pepper.",9 of 14,0.6428571428571429,False,
-57,,I am carrying too many items to take the diced fried red onion. I should drop one item to free space. I will drop the chopped fried orange bell pepper.,drop chopped fried orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a chopped fried orange bell pepper, a knife and a diced fried red onion on the floor.","You are carrying: a chopped fried red hot pepper, a diced fried white onion and a chopped fried red potato.",9 of 14,0.6428571428571429,False,
-58,,"Now that I have space, I should take the diced fried red onion from the floor.",take diced fried red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a chopped fried orange bell pepper and a knife on the floor.","You are carrying: a diced fried red onion, a chopped fried red hot pepper, a diced fried white onion and a chopped fried red potato.",9 of 14,0.6428571428571429,False,
-59,,I have all the cooked ingredients now. I should prepare the meal.,prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a chopped fried orange bell pepper and a knife on the floor.","You are carrying: a diced fried red onion, a chopped fried red hot pepper, a diced fried white onion and a chopped fried red potato.",9 of 14,0.6428571428571429,False,
-60,,I might be missing the yellow bell pepper from the fridge. I will take the yellow bell pepper from the fridge.,take yellow bell pepper from fridge,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a chopped fried orange bell pepper and a knife on the floor.","You are carrying: a diced fried red onion, a chopped fried red hot pepper, a diced fried white onion and a chopped fried red potato.",9 of 14,0.6428571428571429,False,
-61,,I am carrying too many items to take the yellow bell pepper. I should drop one item to free space. I will drop the chopped fried red potato.,drop chopped fried red potato,,You drop the red potato on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a yellow bell pepper, a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a chopped fried red potato, a chopped fried orange bell pepper and a knife on the floor.","You are carrying: a diced fried red onion, a chopped fried red hot pepper and a diced fried white onion.",9 of 14,0.6428571428571429,False,
-62,,"Now that I have space, I should take the yellow bell pepper from the fridge.",take yellow bell pepper from fridge,,"You take the yellow bell pepper from the fridge.
-
-
-
-Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a chopped fried red potato, a chopped fried orange bell pepper and a knife on the floor.","You are carrying: a yellow bell pepper, a diced fried red onion, a chopped fried red hot pepper and a diced fried white onion.",10 of 14,0.7142857142857143,False,
-63,,I need to chop the yellow bell pepper as per the recipe instructions.,chop yellow bell pepper with knife,,You need to take the knife first.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a chopped fried red potato, a chopped fried orange bell pepper and a knife on the floor.","You are carrying: a yellow bell pepper, a diced fried red onion, a chopped fried red hot pepper and a diced fried white onion.",10 of 14,0.7142857142857143,False,
-64,,I need to take the knife from the floor before I can chop the yellow bell pepper.,take knife from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a chopped fried red potato, a chopped fried orange bell pepper and a knife on the floor.","You are carrying: a yellow bell pepper, a diced fried red onion, a chopped fried red hot pepper and a diced fried white onion.",10 of 14,0.7142857142857143,False,
-65,,I am carrying too many items to take the knife. I should drop one item to free space. I will drop the diced fried white onion.,drop diced fried white onion,,You drop the white onion on the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a diced fried white onion, a chopped fried red potato, a chopped fried orange bell pepper and a knife on the floor.","You are carrying: a yellow bell pepper, a diced fried red onion and a chopped fried red hot pepper.",10 of 14,0.7142857142857143,False,
-66,,"Now that I have space, I should take the knife from the floor to chop the yellow bell pepper.",take knife from floor,,You pick up the knife from the ground.,Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a diced fried white onion, a chopped fried red potato and a chopped fried orange bell pepper on the floor.","You are carrying: a knife, a yellow bell pepper, a diced fried red onion and a chopped fried red hot pepper.",10 of 14,0.7142857142857143,False,
-67,,I will chop the yellow bell pepper now as per the recipe.,chop yellow bell pepper with knife,,"You chop the yellow bell pepper.
-
-
-
-Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a diced fried white onion, a chopped fried red potato and a chopped fried orange bell pepper on the floor.","You are carrying: a knife, a chopped yellow bell pepper, a diced fried red onion and a chopped fried red hot pepper.",11 of 14,0.7857142857142857,False,
-68,,I should roast the chopped yellow bell pepper as per the recipe.,cook chopped yellow bell pepper with stove,,"You fried the yellow bell pepper.
-
-
-
-                              *** You lost! ***
-
-You scored 11 out of a possible 14, in 67 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
->",Kitchen,"You are in a kitchen. A typical kind of place. The room is well lit.
-
-You can see an opened fridge in the room. The fridge contains a raw yellow potato and a carrot. You see a closed oven. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. However, the table, like an empty table, has nothing on it. You can make out a counter. The counter is vast. On the counter you make out a banana, a red apple, a raw purple potato and a cookbook. You can see a stove. The stove is conventional. But the thing is empty, unfortunately.
-
-
-
-There is a diced fried white onion, a chopped fried red potato and a chopped fried orange bell pepper on the floor.","You are carrying: a knife, a chopped yellow bell pepper, a diced fried red onion and a chopped fried red hot pepper.",11 of 14,0.7857142857142857,True,
+There is a diced burned red onion and a knife on the floor.","You are carrying: a chopped orange bell pepper, a chopped fried red potato and a chopped fried red hot pepper.",6 of 14,0.42857142857142855,True,

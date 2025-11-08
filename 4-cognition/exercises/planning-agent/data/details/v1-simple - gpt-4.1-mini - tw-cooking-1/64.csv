@@ -1,0 +1,70 @@
+step_id,plan,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+
+You see a closed fridge right there by you. You can see a closed oven. Hey, want to see a table? Look over there, a table. You see a knife on the table. You can see a counter. On the counter you can make out a cookbook. You make out a stove. But there isn't a thing on it.",You are carrying nothing.,0 of 4,0.0,False,
+1,"1. [ ] Examine the cookbook on the counter to find a recipe.
+2. [ ] Take the knife from the table.
+3. [ ] Gather ingredients from the fridge or counter as per the recipe.
+4. [ ] Cook the meal using the stove or oven.
+5. [ ] Eat the meal.",I should first examine the cookbook on the counter to find a recipe for a delicious meal.,examine cookbook on counter,,I only understood you as far as wanting to examine the cookbook.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+
+You see a closed fridge right there by you. You can see a closed oven. Hey, want to see a table? Look over there, a table. You see a knife on the table. You can see a counter. On the counter you can make out a cookbook. You make out a stove. But there isn't a thing on it.",You are carrying nothing.,0 of 4,0.0,False,
+2,"1. [x] Examine the cookbook on the counter to find a recipe.
+2. [ ] Take the knife from the table.
+3. [ ] Gather ingredients from the fridge or counter as per the recipe.
+4. [ ] Cook the meal using the stove or oven.
+5. [ ] Eat the meal.",I should try to examine the cookbook on the counter again to find the recipe.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+carrot
+
+Directions:
+roast the carrot
+  prepare meal",Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+
+You see a closed fridge right there by you. You can see a closed oven. Hey, want to see a table? Look over there, a table. You see a knife on the table. You can see a counter. On the counter you can make out a cookbook. You make out a stove. But there isn't a thing on it.",You are carrying nothing.,0 of 4,0.0,False,
+3,"1. [x] Examine the cookbook on the counter to find a recipe.
+2. [ ] Take the carrot from the fridge.
+3. [ ] Roast the carrot to prepare the meal.
+4. [ ] Eat the roasted carrot.",The recipe requires a carrot to roast. I should take the carrot from the fridge first.,open fridge,,"You open the fridge, revealing a carrot and a raw pork chop.",Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+
+You see an opened fridge right there by you. The fridge contains a carrot and a raw pork chop. You can see a closed oven. Hey, want to see a table? Look over there, a table. You see a knife on the table. You can see a counter. On the counter you can make out a cookbook. You make out a stove. But there isn't a thing on it.",You are carrying nothing.,0 of 4,0.0,False,
+4,"1. [x] Examine the cookbook on the counter to find a recipe.
+2. [ ] Take the carrot from the fridge.
+3. [ ] Roast the carrot to prepare the meal.
+4. [ ] Eat the roasted carrot.",I should take the carrot from the fridge to start preparing the meal.,take carrot from fridge,,"You take the carrot from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+
+You see an opened fridge right there by you. The fridge contains a raw pork chop. You can see a closed oven. Hey, want to see a table? Look over there, a table. You see a knife on the table. You can see a counter. On the counter you can make out a cookbook. You make out a stove. But there isn't a thing on it.",You are carrying: a carrot.,1 of 4,0.25,False,
+5,"1. [x] Examine the cookbook on the counter to find a recipe.
+2. [x] Take the carrot from the fridge.
+3. [ ] Roast the carrot to prepare the meal.
+4. [ ] Eat the roasted carrot.",I should roast the carrot now to prepare the meal.,cook carrot with oven,,"You roasted the carrot.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+
+You see an opened fridge right there by you. The fridge contains a raw pork chop. You can see a closed oven. Hey, want to see a table? Look over there, a table. You see a knife on the table. You can see a counter. On the counter you can make out a cookbook. You make out a stove. But there isn't a thing on it.",You are carrying: a roasted carrot.,2 of 4,0.5,False,
+6,"1. [x] Examine the cookbook on the counter to find a recipe.
+2. [x] Take the carrot from the fridge.
+3. [x] Roast the carrot to prepare the meal.
+4. [ ] Eat the roasted carrot.",I should eat the roasted carrot now to enjoy the meal.,eat roasted carrot,,"You eat the carrot. Not bad.
+
+
+                              *** You lost! ***
+
+You scored 2 out of a possible 4, in 5 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+
+You see an opened fridge right there by you. The fridge contains a raw pork chop. You can see a closed oven. Hey, want to see a table? Look over there, a table. You see a knife on the table. You can see a counter. On the counter you can make out a cookbook. You make out a stove. But there isn't a thing on it.",You are carrying: a roasted carrot.,2 of 4,0.5,True,

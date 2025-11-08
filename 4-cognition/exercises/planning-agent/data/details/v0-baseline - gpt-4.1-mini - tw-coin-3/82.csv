@@ -4,8 +4,7 @@ step_id,plan,thought,action,task,feedback,location,description,inventory,score,r
 
 
 There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I will start by going west as the task instructs to make an effort to go west first.,go west,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+1,,I will start by going west as the first step instructs.,go west,,"Guess what, you are in the place we're calling the chamber.
 
 
 
@@ -14,8 +13,7 @@ There is an unguarded exit to the east. You need an unblocked exit? You should t
 
 
 There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-2,,"Next, I will go south as the task instructs to head south after going west.",go south,,"-= Balmy Scullery =-
-Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+2,,"Next, I should go south as per the instructions.",go south,,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
 
 
 
@@ -24,8 +22,12 @@ There is an exit to the north. Don't worry, it is unblocked.",Balmy Scullery,"Ah
 
 
 There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-3,,"The next step is to go east, but there is no east exit here, so I will go north to try to find an east exit as the task suggests going east after south.",go north,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+3,,I should now go east as the next step instructs.,go east,,You can't go that way.,Balmy Scullery,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+4,,"Since I cannot go east from here, I will try to go north as the next possible direction.",go north,,"Guess what, you are in the place we're calling the chamber.
 
 
 
@@ -34,8 +36,7 @@ There is an unguarded exit to the east. You need an unblocked exit? You should t
 
 
 There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-4,,"Now that I am back in the chamber, I will go east as the task instructs to go east after south and north.",go east,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+5,,I will now try to go east as the next step instructs.,go east,,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -44,8 +45,7 @@ There is an exit to the east. Don't worry, it is unblocked. You need an unblocke
 
 
 There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-5,,"The task instructs to go east again, so I will go east from the cubicle.",go east,,"-= Well Lit Bar =-
-You arrive in a bar. A well lit kind of place.
+6,,I will try to go east again as the next step instructs.,go east,,"You arrive in a bar. A well lit kind of place.
 
 
 
@@ -54,33 +54,17 @@ There is an exit to the west. Don't worry, it is unguarded.",Well Lit Bar,"You a
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-6,,"The task instructs to go east again, but there is no east exit here, so I will try to go west to find another path.",go west,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I will try to go east again as the task instructs multiple east movements.,go east,,"-= Well Lit Bar =-
-You arrive in a bar. A well lit kind of place.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Well Lit Bar,"You arrive in a bar. A well lit kind of place.
+7,,I will now try to go east again as the next step instructs.,go east,,You can't go that way.,Well Lit Bar,"You arrive in a bar. A well lit kind of place.
 
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-8,,"Since I cannot go east from the Well Lit Bar, I will try to go north as the task suggests trying to move north after east.",go north,,You can't go that way.,Well Lit Bar,"You arrive in a bar. A well lit kind of place.
+8,,"Since I cannot go east from here, I will try to go north as the next step instructs.",go north,,You can't go that way.,Well Lit Bar,"You arrive in a bar. A well lit kind of place.
 
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-9,,"Since I cannot go north from the Well Lit Bar, I will try to go west to explore other directions.",go west,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+9,,I will try to go west as the next step instructs.,go west,,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -89,908 +73,766 @@ There is an exit to the east. Don't worry, it is unblocked. You need an unblocke
 
 
 There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I will try to go north from the cubicle as the task suggests trying to go north after east.,go north,,"-= Still Workshop 21 =-
-You've entered a still workshop 21. You begin to take stock of what's here.
+10,,I will try to go west as the next step instructs.,go west,,"Guess what, you are in the place we're calling the chamber.
 
 
 
-You need an unguarded exit? You should try going south.",Still Workshop 21,"You've entered a still workshop 21. You begin to take stock of what's here.
+There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+
+
+
+There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I will try to go north as the next step instructs.,go north,,"This just in- You, in the steamy cookhouse.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked.",Steamy Cookhouse,"This just in- You, in the steamy cookhouse.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I will try to go west as the next step instructs.,go west,,You can't go that way.,Steamy Cookhouse,"This just in- You, in the steamy cookhouse.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+13,,"Since I cannot go west, I will try to go south as the next step instructs.",go south,,"Guess what, you are in the place we're calling the chamber.
+
+
+
+There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+
+
+
+There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I will try to go south as the next step instructs.,go south,,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",Balmy Scullery,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I will try to go south as the next step instructs.,go south,,You can't go that way.,Balmy Scullery,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+16,,"Since I cannot go south, I will try to go south again as the next step instructs.",go south,,You can't go that way.,Balmy Scullery,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+17,,"Since I cannot go south, I will try to go east as the next step instructs.",go east,,You can't go that way.,Balmy Scullery,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+18,,"Since I cannot go east, I will try to go south as the next step instructs.",go south,,You can't go that way.,Balmy Scullery,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+19,,"Since I cannot go south, I will try to go south again as the next step instructs.",go south,,You can't go that way.,Balmy Scullery,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+20,,"Since I cannot go south, I will try to go east as the next step instructs.",go east,,You can't go that way.,Balmy Scullery,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+21,,"Since I cannot go east, I will try to go south as the next step instructs.",go south,,You can't go that way.,Balmy Scullery,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+22,,"Since I cannot go south, I will try to go south again as the next step instructs.",go south,,You can't go that way.,Balmy Scullery,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+23,,"Since I cannot go south, I will try to go east as the next step instructs.",go east,,You can't go that way.,Balmy Scullery,"Ah, the scullery. This is some kind of scullery, really great balmy vibes in this place, a wonderful balmy atmosphere. And now, well, you're in it.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+24,,"Since I cannot go east, I will try to go north as the next step instructs.",go north,,"Guess what, you are in the place we're calling the chamber.
+
+
+
+There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+
+
+
+There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I will try to go west as the next step instructs.,go west,,"You find yourself in a scullery. An ordinary one.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I will try to go south as the next step instructs.,go south,,"You've just walked into a misty sauna.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",Misty Sauna,"You've just walked into a misty sauna.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I will try to go east as the next step instructs.,go east,,"You are in a washroom. A clean one.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",Clean Washroom,"You are in a washroom. A clean one.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I will try to go north as the next step instructs.,go north,,"You are in a studio 23. A silent one.
+
+
+
+You need an unguarded exit? You should try going south.",Silent Studio 23,"You are in a studio 23. A silent one.
 
 
 
 You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-11,,"The task instructs to go west after north, so I will try to go west from the Still Workshop 21.",go west,,You can't go that way.,Still Workshop 21,"You've entered a still workshop 21. You begin to take stock of what's here.
+29,,I will try to go east as the next step instructs.,go east,,You can't go that way.,Silent Studio 23,"You are in a studio 23. A silent one.
 
 
 
 You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-12,,"Since I cannot go west from Still Workshop 21, I will try to go south as suggested by the description.",go south,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+30,,"Since I cannot go east, I will try to go south as the next step instructs.",go south,,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",Clean Washroom,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I will try to go north again from the cubicle to explore further as the task suggests multiple north movements.,go north,,"-= Still Workshop 21 =-
-You've entered a still workshop 21. You begin to take stock of what's here.
+There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I will try to go east as the next step instructs.,go east,,"You've just sauntered into a serious cubicle 3.
 
 
 
-You need an unguarded exit? You should try going south.",Still Workshop 21,"You've entered a still workshop 21. You begin to take stock of what's here.
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Serious Cubicle 3,"You've just sauntered into a serious cubicle 3.
 
 
 
-You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I will try to go south again from Still Workshop 21 to return to the cubicle and explore other directions.,go south,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I will take the coin from the floor of the serious cubicle as the final step instructs.,take coin from floor,,You can't see any such thing.,Serious Cubicle 3,"You've just sauntered into a serious cubicle 3.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I will look around the Serious Cubicle 3 to find the coin on the floor.,look,,"You've just sauntered into a serious cubicle 3.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I will try to go east from the cubicle again to explore the path towards the coin.,go east,,"-= Well Lit Bar =-
-You arrive in a bar. A well lit kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Serious Cubicle 3,"You've just sauntered into a serious cubicle 3.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Well Lit Bar,"You arrive in a bar. A well lit kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I will examine the floor in Serious Cubicle 3 to find the coin.,examine floor,,You can't see any such thing.,Serious Cubicle 3,"You've just sauntered into a serious cubicle 3.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+35,,"Since I cannot find the coin on the floor, I will look around the room more generally to find any objects.",look,,"You've just sauntered into a serious cubicle 3.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Serious Cubicle 3,"You've just sauntered into a serious cubicle 3.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+36,,"Since I cannot find the coin here, I will try to go east to explore more areas.",go east,,"Ah, the studio 6. This is some kind of studio 6, really great serious vibes in this place, a wonderful serious atmosphere. And now, well, you're in it. You begin to take stock of what's here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Serious Studio 6,"Ah, the studio 6. This is some kind of studio 6, really great serious vibes in this place, a wonderful serious atmosphere. And now, well, you're in it. You begin to take stock of what's here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I will look around the Serious Studio 6 to find the coin.,look,,"Ah, the studio 6. This is some kind of studio 6, really great serious vibes in this place, a wonderful serious atmosphere. And now, well, you're in it. You begin to take stock of what's here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Serious Studio 6,"Ah, the studio 6. This is some kind of studio 6, really great serious vibes in this place, a wonderful serious atmosphere. And now, well, you're in it. You begin to take stock of what's here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I will try to go east to explore more areas.,go east,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I will look around the Recreation Zone to find the coin.,look,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I will try to go east to explore more areas.,go east,,"You've just shown up in a lounge.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Lounge,"You've just shown up in a lounge.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I will try to go west to return to the Recreation Zone and explore other directions.,go west,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I will try to go north to explore more areas.,go north,,"You arrive in a basement. A gloomy one.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I will try to go east to explore more areas.,go east,,"Of every canteen you could have shown up in, you had to come round a balmy one. You can barely contain your excitement.
+
+
+
+There is an exit to the west. Don't worry, it is unguarded.",Balmy Canteen,"Of every canteen you could have shown up in, you had to come round a balmy one. You can barely contain your excitement.
 
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-16,,"Since I cannot go east from the Well Lit Bar, I will try to go west to return to the cubicle and explore other directions.",go west,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+44,,I will try to go west to return to the Gloomy Basement and explore other directions.,go west,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I will try to go north from the cubicle again to explore further as the task suggests multiple north movements.,go north,,"-= Still Workshop 21 =-
-You've entered a still workshop 21. You begin to take stock of what's here.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I will try to go north to explore more areas.,go north,,"You arrive in a cookery. An upsettingly hot kind of place.
 
 
 
-You need an unguarded exit? You should try going south.",Still Workshop 21,"You've entered a still workshop 21. You begin to take stock of what's here.
+You need an unblocked exit? You should try going south.",Upsettingly Hot Cookery,"You arrive in a cookery. An upsettingly hot kind of place.
 
 
 
-You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I will try to go south from Still Workshop 21 to return to the cubicle and explore other directions.,go south,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I will try to go south to return to the Gloomy Basement.,go south,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I will try to go west from the cubicle to explore other directions as the task suggests multiple west movements.,go west,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I will try to go south to explore more areas.,go south,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I will try to go west from the chamber to explore further as the task suggests multiple west movements.,go west,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I will try to go south to explore more areas.,go south,,"You are in a cubicle 36. A still kind of place.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
+You need an unguarded exit? You should try going north.",Still Cubicle 36,"You are in a cubicle 36. A still kind of place.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I will try to go north from the scullery as the task suggests multiple north movements.,go north,,"-= Serious Cubicle 22 =-
-You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I will try to go west to explore more areas.,go west,,You can't go that way.,Still Cubicle 36,"You are in a cubicle 36. A still kind of place.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded.",Serious Cubicle 22,"You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+50,,"Since I cannot go west, I will try to go north as the next step instructs.",go north,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I will go south from Serious Cubicle 22 as it is the only exit available.,go south,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I will try to go east to explore more areas.,go east,,"You've just shown up in a lounge.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I will try to go east from the scullery to explore further as the task suggests multiple east movements.,go east,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+You don't like doors? Why not try going west, that entranceway is unguarded.",Lounge,"You've just shown up in a lounge.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I will look around the lounge to find the coin.,look,,"You've just shown up in a lounge.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I will try to go north from the chamber as the task suggests multiple north movements.,go north,,"-= Steamy Cookhouse =-
-This just in- You, in the steamy cookhouse.
+You don't like doors? Why not try going west, that entranceway is unguarded.",Lounge,"You've just shown up in a lounge.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked.",Steamy Cookhouse,"This just in- You, in the steamy cookhouse.
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I will try to go west to return to the Recreation Zone and explore other directions.,go west,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I will try to go south from the steamy cookhouse as it is the only exit available.,go south,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I will try to go north to explore more areas.,go north,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I will try to go east from the chamber as the task suggests multiple east movements.,go east,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I will try to go east to explore more areas.,go east,,"Of every canteen you could have shown up in, you had to come round a balmy one. You can barely contain your excitement.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I will try to go north from the cubicle to explore further as the task suggests multiple north movements.,go north,,"-= Still Workshop 21 =-
-You've entered a still workshop 21. You begin to take stock of what's here.
+There is an exit to the west. Don't worry, it is unguarded.",Balmy Canteen,"Of every canteen you could have shown up in, you had to come round a balmy one. You can barely contain your excitement.
 
 
 
-You need an unguarded exit? You should try going south.",Still Workshop 21,"You've entered a still workshop 21. You begin to take stock of what's here.
+There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I will try to go west to return to the Gloomy Basement and explore other directions.,go west,,"You arrive in a basement. A gloomy one.
 
 
 
-You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I will try to go south from Still Workshop 21 to return to the cubicle and explore other directions.,go south,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I will try to go north to explore more areas.,go north,,"You arrive in a cookery. An upsettingly hot kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I will try to go west from the cubicle to explore other directions as the task suggests multiple west movements.,go west,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+You need an unblocked exit? You should try going south.",Upsettingly Hot Cookery,"You arrive in a cookery. An upsettingly hot kind of place.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I will try to go south to return to the Gloomy Basement.,go south,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I will try to go west from the chamber to explore further as the task suggests multiple west movements.,go west,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I will try to go south to explore more areas.,go south,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I will try to go north from the scullery as the task suggests multiple north movements.,go north,,"-= Serious Cubicle 22 =-
-You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an exit to the south. Don't worry, it is unguarded.",Serious Cubicle 22,"You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I will try to go south to explore more areas.,go south,,"You are in a cubicle 36. A still kind of place.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I will take the exit to the south from Serious Cubicle 22 as it is the only available exit.,go south,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
+You need an unguarded exit? You should try going north.",Still Cubicle 36,"You are in a cubicle 36. A still kind of place.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
+You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I will try to go north as the next step instructs.,go north,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I will try to go east from the scullery to explore further as the task suggests multiple east movements.,go east,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I will try to go east to explore more areas.,go east,,"You've just shown up in a lounge.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I will try to go north from the chamber as the task suggests multiple north movements.,go north,,"-= Steamy Cookhouse =-
-This just in- You, in the steamy cookhouse.
+You don't like doors? Why not try going west, that entranceway is unguarded.",Lounge,"You've just shown up in a lounge.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked.",Steamy Cookhouse,"This just in- You, in the steamy cookhouse.
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I will look around the lounge to find the coin.,look,,"You've just shown up in a lounge.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I will go south from the steamy cookhouse as it is the only exit available.,go south,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+You don't like doors? Why not try going west, that entranceway is unguarded.",Lounge,"You've just shown up in a lounge.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I will try to go west to return to the Recreation Zone and explore other directions.,go west,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I will try to go east from the chamber as the task suggests multiple east movements.,go east,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+65,,I will try to go north to explore more areas.,go north,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I will try to go north from the cubicle to explore further as the task suggests multiple north movements.,go north,,"-= Still Workshop 21 =-
-You've entered a still workshop 21. You begin to take stock of what's here.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-You need an unguarded exit? You should try going south.",Still Workshop 21,"You've entered a still workshop 21. You begin to take stock of what's here.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+66,,I will try to go east to explore more areas.,go east,,"Of every canteen you could have shown up in, you had to come round a balmy one. You can barely contain your excitement.
 
 
 
-You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I will try to go south from Still Workshop 21 to return to the cubicle and explore other directions.,go south,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the west. Don't worry, it is unguarded.",Balmy Canteen,"Of every canteen you could have shown up in, you had to come round a balmy one. You can barely contain your excitement.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+67,,I will try to go west to return to the Gloomy Basement and explore other directions.,go west,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I will try to go west from the cubicle to explore other directions as the task suggests multiple west movements.,go west,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+68,,I will try to go north to explore more areas.,go north,,"You arrive in a cookery. An upsettingly hot kind of place.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I will try to go west from the chamber to explore further as the task suggests multiple west movements.,go west,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
+You need an unblocked exit? You should try going south.",Upsettingly Hot Cookery,"You arrive in a cookery. An upsettingly hot kind of place.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+69,,I will try to go south to return to the Gloomy Basement.,go south,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I will try to go north from the scullery as the task suggests multiple north movements.,go north,,"-= Serious Cubicle 22 =-
-You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded.",Serious Cubicle 22,"You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+70,,I will try to go south to explore more areas.,go south,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I will go south from Serious Cubicle 22 as it is the only exit available.,go south,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+71,,I will try to go south to explore more areas.,go south,,"You are in a cubicle 36. A still kind of place.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I will try to go east from the scullery to explore further as the task suggests multiple east movements.,go east,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+You need an unguarded exit? You should try going north.",Still Cubicle 36,"You are in a cubicle 36. A still kind of place.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+72,,I will try to go north as the next step instructs.,go north,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I will try to go north from the chamber as the task suggests multiple north movements.,go north,,"-= Steamy Cookhouse =-
-This just in- You, in the steamy cookhouse.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked.",Steamy Cookhouse,"This just in- You, in the steamy cookhouse.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+73,,I will try to go east to explore more areas.,go east,,"You've just shown up in a lounge.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I will go south from the steamy cookhouse as it is the only exit available.,go south,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+You don't like doors? Why not try going west, that entranceway is unguarded.",Lounge,"You've just shown up in a lounge.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+74,,I will look around the lounge to find the coin.,look,,"You've just shown up in a lounge.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I will try to go east from the chamber as the task suggests multiple east movements.,go east,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+You don't like doors? Why not try going west, that entranceway is unguarded.",Lounge,"You've just shown up in a lounge.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+75,,I will try to go west to return to the Recreation Zone and explore other directions.,go west,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I will try to go north from the cubicle to explore further as the task suggests multiple north movements.,go north,,"-= Still Workshop 21 =-
-You've entered a still workshop 21. You begin to take stock of what's here.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-You need an unguarded exit? You should try going south.",Still Workshop 21,"You've entered a still workshop 21. You begin to take stock of what's here.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+76,,I will try to go north to explore more areas.,go north,,"You arrive in a basement. A gloomy one.
 
 
 
-You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I will try to go south from Still Workshop 21 to return to the cubicle and explore other directions.,go south,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+77,,I will try to go east to explore more areas.,go east,,"Of every canteen you could have shown up in, you had to come round a balmy one. You can barely contain your excitement.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I will try to go west from the cubicle to explore other directions as the task suggests multiple west movements.,go west,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+There is an exit to the west. Don't worry, it is unguarded.",Balmy Canteen,"Of every canteen you could have shown up in, you had to come round a balmy one. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+78,,I will try to go west to return to the Gloomy Basement and explore other directions.,go west,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I will try to go west from the chamber to explore further as the task suggests multiple west movements.,go west,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+79,,I will try to go north to explore more areas.,go north,,"You arrive in a cookery. An upsettingly hot kind of place.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I will try to go north from the scullery as the task suggests multiple north movements.,go north,,"-= Serious Cubicle 22 =-
-You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You need an unblocked exit? You should try going south.",Upsettingly Hot Cookery,"You arrive in a cookery. An upsettingly hot kind of place.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded.",Serious Cubicle 22,"You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+80,,I will try to go south to return to the Gloomy Basement.,go south,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I will go south from Serious Cubicle 22 as it is the only exit available.,go south,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+81,,I will try to go south to explore more areas.,go south,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I will try to go east from the scullery to explore further as the task suggests multiple east movements.,go east,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+82,,I will try to go south to explore more areas.,go south,,"You are in a cubicle 36. A still kind of place.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I will try to go north from the chamber as the task suggests multiple north movements.,go north,,"-= Steamy Cookhouse =-
-This just in- You, in the steamy cookhouse.
+You need an unguarded exit? You should try going north.",Still Cubicle 36,"You are in a cubicle 36. A still kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked.",Steamy Cookhouse,"This just in- You, in the steamy cookhouse.
+You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+83,,I will try to go north as the next step instructs.,go north,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-55,,I will go south from the steamy cookhouse as it is the only exit available.,go south,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+84,,I will try to go east to explore more areas.,go east,,"You've just shown up in a lounge.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-56,,I will try to go east from the chamber as the task suggests multiple east movements.,go east,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+You don't like doors? Why not try going west, that entranceway is unguarded.",Lounge,"You've just shown up in a lounge.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+85,,I will look around the lounge to find the coin.,look,,"You've just shown up in a lounge.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-57,,I will try to go north from the cubicle to explore further as the task suggests multiple north movements.,go north,,"-= Still Workshop 21 =-
-You've entered a still workshop 21. You begin to take stock of what's here.
+You don't like doors? Why not try going west, that entranceway is unguarded.",Lounge,"You've just shown up in a lounge.
 
 
 
-You need an unguarded exit? You should try going south.",Still Workshop 21,"You've entered a still workshop 21. You begin to take stock of what's here.
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+86,,I will try to go west to return to the Recreation Zone and explore other directions.,go west,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I will try to go south from Still Workshop 21 to return to the cubicle and explore other directions.,go south,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+87,,I will try to go north to explore more areas.,go north,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-59,,I will try to go west from the cubicle to explore other directions as the task suggests multiple west movements.,go west,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+88,,I will try to go east to explore more areas.,go east,,"Of every canteen you could have shown up in, you had to come round a balmy one. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I will try to go west from the chamber to explore further as the task suggests multiple west movements.,go west,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
+There is an exit to the west. Don't worry, it is unguarded.",Balmy Canteen,"Of every canteen you could have shown up in, you had to come round a balmy one. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
+There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+89,,I will try to go west to return to the Gloomy Basement and explore other directions.,go west,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I will try to go north from the scullery as the task suggests multiple north movements.,go north,,"-= Serious Cubicle 22 =-
-You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded.",Serious Cubicle 22,"You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+90,,I will try to go north to explore more areas.,go north,,"You arrive in a cookery. An upsettingly hot kind of place.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-62,,I will go south from Serious Cubicle 22 as it is the only exit available.,go south,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
+You need an unblocked exit? You should try going south.",Upsettingly Hot Cookery,"You arrive in a cookery. An upsettingly hot kind of place.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+91,,I will try to go south to return to the Gloomy Basement.,go south,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-63,,I will try to go east from the scullery to explore further as the task suggests multiple east movements.,go east,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+92,,I will try to go south to explore more areas.,go south,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I will try to go north from the chamber as the task suggests multiple north movements.,go north,,"-= Steamy Cookhouse =-
-This just in- You, in the steamy cookhouse.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked.",Steamy Cookhouse,"This just in- You, in the steamy cookhouse.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+93,,I will try to go south to explore more areas.,go south,,"You are in a cubicle 36. A still kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-65,,I will go south from the steamy cookhouse as it is the only exit available.,go south,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+You need an unguarded exit? You should try going north.",Still Cubicle 36,"You are in a cubicle 36. A still kind of place.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+94,,I will try to go north as the next step instructs.,go north,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-66,,I will try to go east from the chamber as the task suggests multiple east movements.,go east,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+95,,I will try to go east to explore more areas.,go east,,"You've just shown up in a lounge.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-67,,I will try to go north from the cubicle to explore further as the task suggests multiple north movements.,go north,,"-= Still Workshop 21 =-
-You've entered a still workshop 21. You begin to take stock of what's here.
+You don't like doors? Why not try going west, that entranceway is unguarded.",Lounge,"You've just shown up in a lounge.
 
 
 
-You need an unguarded exit? You should try going south.",Still Workshop 21,"You've entered a still workshop 21. You begin to take stock of what's here.
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+96,,I will look around the lounge to find the coin.,look,,"You've just shown up in a lounge.
 
 
 
-You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-68,,I will try to go south from Still Workshop 21 to return to the cubicle and explore other directions.,go south,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+You don't like doors? Why not try going west, that entranceway is unguarded.",Lounge,"You've just shown up in a lounge.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+97,,I will try to go west to return to the Recreation Zone and explore other directions.,go west,,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-69,,I will try to go west from the cubicle to explore other directions as the task suggests multiple west movements.,go west,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Recreation Zone,"You've entered a recreation zone. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+98,,I will try to go north to explore more areas.,go north,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-70,,I will try to go west from the chamber to explore further as the task suggests multiple west movements.,go west,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+99,,I will try to go east to explore more areas.,go east,,"Of every canteen you could have shown up in, you had to come round a balmy one. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-71,,I will try to go north from the scullery as the task suggests multiple north movements.,go north,,"-= Serious Cubicle 22 =-
-You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the west. Don't worry, it is unguarded.",Balmy Canteen,"Of every canteen you could have shown up in, you had to come round a balmy one. You can barely contain your excitement.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded.",Serious Cubicle 22,"You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+100,,I will try to go west to return to the Gloomy Basement and explore other directions.,go west,,"You arrive in a basement. A gloomy one.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-72,,I will go south from Serious Cubicle 22 as it is the only exit available.,go south,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Gloomy Basement,"You arrive in a basement. A gloomy one.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-73,,I will try to go east from the scullery to explore further as the task suggests multiple east movements.,go east,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-74,,I will try to go north from the chamber as the task suggests multiple north movements.,go north,,"-= Steamy Cookhouse =-
-This just in- You, in the steamy cookhouse.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unblocked.",Steamy Cookhouse,"This just in- You, in the steamy cookhouse.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-75,,I will go south from the steamy cookhouse as it is the only exit available.,go south,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-76,,I will try to go east from the chamber as the task suggests multiple east movements.,go east,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-77,,I will try to go north from the cubicle to explore further as the task suggests multiple north movements.,go north,,"-= Still Workshop 21 =-
-You've entered a still workshop 21. You begin to take stock of what's here.
-
-
-
-You need an unguarded exit? You should try going south.",Still Workshop 21,"You've entered a still workshop 21. You begin to take stock of what's here.
-
-
-
-You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-78,,I will try to go south from Still Workshop 21 to return to the cubicle and explore other directions.,go south,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-79,,I will try to go west from the cubicle to explore other directions as the task suggests multiple west movements.,go west,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-80,,I will try to go west from the chamber to explore further as the task suggests multiple west movements.,go west,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-81,,I will try to go north from the scullery as the task suggests multiple north movements.,go north,,"-= Serious Cubicle 22 =-
-You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded.",Serious Cubicle 22,"You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-82,,I will go south from Serious Cubicle 22 as it is the only exit available.,go south,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-83,,I will try to go east from the scullery to explore further as the task suggests multiple east movements.,go east,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-84,,I will try to go north from the chamber as the task suggests multiple north movements.,go north,,"-= Steamy Cookhouse =-
-This just in- You, in the steamy cookhouse.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unblocked.",Steamy Cookhouse,"This just in- You, in the steamy cookhouse.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-85,,I will go south from the steamy cookhouse as it is the only exit available.,go south,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-86,,I will try to go east from the chamber as the task suggests multiple east movements.,go east,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-87,,I will try to go north from the cubicle to explore further as the task suggests multiple north movements.,go north,,"-= Still Workshop 21 =-
-You've entered a still workshop 21. You begin to take stock of what's here.
-
-
-
-You need an unguarded exit? You should try going south.",Still Workshop 21,"You've entered a still workshop 21. You begin to take stock of what's here.
-
-
-
-You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-88,,I will try to go south from Still Workshop 21 to return to the cubicle and explore other directions.,go south,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-89,,I will try to go west from the cubicle to explore other directions as the task suggests multiple west movements.,go west,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-90,,I will try to go west from the chamber to explore further as the task suggests multiple west movements.,go west,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-91,,I will try to go north from the scullery as the task suggests multiple north movements.,go north,,"-= Serious Cubicle 22 =-
-You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded.",Serious Cubicle 22,"You arrive in a cubicle 22. A serious kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-92,,I will go south from Serious Cubicle 22 as it is the only exit available.,go south,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-93,,I will try to go east from the scullery to explore further as the task suggests multiple east movements.,go east,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-94,,I will try to go north from the chamber as the task suggests multiple north movements.,go north,,"-= Steamy Cookhouse =-
-This just in- You, in the steamy cookhouse.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unblocked.",Steamy Cookhouse,"This just in- You, in the steamy cookhouse.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-95,,I will go south from the steamy cookhouse as it is the only exit available.,go south,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-96,,I will try to go east from the chamber as the task suggests multiple east movements.,go east,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-97,,I will try to go north from the cubicle to explore further as the task suggests multiple north movements.,go north,,"-= Still Workshop 21 =-
-You've entered a still workshop 21. You begin to take stock of what's here.
-
-
-
-You need an unguarded exit? You should try going south.",Still Workshop 21,"You've entered a still workshop 21. You begin to take stock of what's here.
-
-
-
-You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-98,,I will try to go south from Still Workshop 21 to return to the cubicle and explore other directions.,go south,,"-= Cubicle =-
-You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You arrive in a cubicle. A standard one. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-99,,I will try to go west from the cubicle to explore other directions as the task suggests multiple west movements.,go west,,"-= Chamber =-
-Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Chamber,"Guess what, you are in the place we're calling the chamber.
-
-
-
-There is an unguarded exit to the east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-100,,I will try to go west from the chamber to explore further as the task suggests multiple west movements.,go west,,"-= Scullery =-
-You find yourself in a scullery. An ordinary one.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Scullery,"You find yourself in a scullery. An ordinary one.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,True,
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,True,

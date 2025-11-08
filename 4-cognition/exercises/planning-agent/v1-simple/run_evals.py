@@ -2,6 +2,7 @@
 import time
 from common.log import Log
 from common.console import warn
+from common.console import debug
 from common.parameters import Parameters
 from details.details_manager import DetailsManager
 from environments.env_factory import EnvFactory
@@ -21,27 +22,27 @@ agent_names = [
 # Set models
 model_names = [
     "gpt-4.1-mini",
-    # "gpt-5-mini",
 ]
 
 # Set evals
 # Note: (eval_name, env_name, max_steps)
 eval_size = 100
 eval_env_names = [
-    ("tw-simple-1", "textworld", 20),
-    ("tw-coin-1", "textworld", 100),
-    ("tw-coin-2", "textworld", 100),
-    ("tw-coin-3", "textworld", 100),
-    ("tw-treasure-1", "textworld", 20),
-    ("tw-treasure-2", "textworld", 40),
-    ("tw-treasure-3", "textworld", 60),
-    ("tw-cooking-1", "textworld", 20),
-    ("tw-cooking-2", "textworld", 80),
-    ("tw-cooking-3", "textworld", 100),
+    # ("tw-simple-1", "textworld"),
+    # ("tw-coin-1", "textworld"),
+    # ("tw-coin-2", "textworld"),
+    # ("tw-coin-3", "textworld"),
+    ("tw-treasure-1", "textworld"),
+    ("tw-treasure-2", "textworld"),
+    ("tw-treasure-3", "textworld"),
+    ("tw-cooking-1", "textworld"),
+    ("tw-cooking-2", "textworld"),
+    ("tw-cooking-3", "textworld"),
 ]
 
 # Set parameters
-# max_steps = 20
+steps_floor = 20
+steps_ceiling = 100
 sleep_time = 1
 
 # Create the runs
@@ -49,14 +50,14 @@ runs = []
 for agent_name in agent_names:
     for model_name in model_names:
         for eval_env_name in eval_env_names:
-            eval_name, env_name, max_steps = eval_env_name
+            eval_name, env_name = eval_env_name
             params = Parameters(
                 agent_name = agent_name,
                 agent_version = int(agent_name.split("-")[0][1:]),
                 model_name = model_name,
                 env_name = env_name,
                 eval_name = eval_name,
-                max_steps = max_steps
+                max_steps = 0  # to be set per episode
             )
             runs.append(params)
 
@@ -98,6 +99,11 @@ for params in runs:
 
         # Create the episode
         episode = eval.iloc[episode_id].to_dict()
+        solution_steps = episode["solution_steps"]
+        max_steps = int(solution_steps * 1.5)
+        max_steps = max(steps_floor, min(steps_ceiling, max_steps))
+        params.max_steps = max_steps
+        debug(f"Max steps: {params.max_steps} (Solution steps: {solution_steps})")
         answer = ""
         reward = 0.0
         step_id = 0

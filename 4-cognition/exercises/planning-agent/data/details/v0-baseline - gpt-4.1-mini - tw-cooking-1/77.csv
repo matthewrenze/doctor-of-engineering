@@ -2,10 +2,13 @@ step_id,plan,thought,action,task,feedback,location,description,inventory,score,r
 0,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You've entered a kitchen.
 
 You make out a closed fridge. You can see a closed oven here. You bend down to tie your shoe. When you stand up, you notice a table. The table is massive. On the table you make out a cookbook and a knife. You see a counter. You shudder, but continue examining the counter. The counter is vast. On the counter you can see a red hot pepper, a red onion, an orange bell pepper and a banana. You can see a stove. Looks like someone's already been here and taken everything off it, though.",You are carrying nothing.,0 of 5,0.0,False,
-1,,I should first check the cookbook on the table to find a recipe for a delicious meal.,take cookbook from table,,You take the cookbook from the table.,Kitchen,"You've entered a kitchen.
+1,,I should first take the cookbook and the knife from the table to check the recipe and have the tool to prepare the meal.,take cookbook from table,,You take the cookbook from the table.,Kitchen,"You've entered a kitchen.
 
 You make out a closed fridge. You can see a closed oven here. You bend down to tie your shoe. When you stand up, you notice a table. The table is massive. On the table you make out a knife. You see a counter. You shudder, but continue examining the counter. The counter is vast. On the counter you can see a red hot pepper, a red onion, an orange bell pepper and a banana. You can see a stove. Looks like someone's already been here and taken everything off it, though.",You are carrying: a cookbook.,0 of 5,0.0,False,
-2,,I should open the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+2,,I should take the knife from the table to be able to prepare the ingredients for the meal.,take knife from table,,You take the knife from the table.,Kitchen,"You've entered a kitchen.
+
+You make out a closed fridge. You can see a closed oven here. You bend down to tie your shoe. When you stand up, you notice a table. The table is massive. But the thing is empty. You see a counter. You shudder, but continue examining the counter. The counter is vast. On the counter you can see a red hot pepper, a red onion, an orange bell pepper and a banana. You can see a stove. Looks like someone's already been here and taken everything off it, though.",You are carrying: a knife and a cookbook.,0 of 5,0.0,False,
+3,,I should check the cookbook to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -19,24 +22,21 @@ slice the red hot pepper
   roast the red hot pepper
   prepare meal",Kitchen,"You've entered a kitchen.
 
-You make out a closed fridge. You can see a closed oven here. You bend down to tie your shoe. When you stand up, you notice a table. The table is massive. On the table you make out a knife. You see a counter. You shudder, but continue examining the counter. The counter is vast. On the counter you can see a red hot pepper, a red onion, an orange bell pepper and a banana. You can see a stove. Looks like someone's already been here and taken everything off it, though.",You are carrying: a cookbook.,0 of 5,0.0,False,
-3,,I need to take the red hot pepper from the counter to start preparing the meal.,take red hot pepper from counter,,"You take the red hot pepper from the counter.
+You make out a closed fridge. You can see a closed oven here. You bend down to tie your shoe. When you stand up, you notice a table. The table is massive. But the thing is empty. You see a counter. You shudder, but continue examining the counter. The counter is vast. On the counter you can see a red hot pepper, a red onion, an orange bell pepper and a banana. You can see a stove. Looks like someone's already been here and taken everything off it, though.",You are carrying: a knife and a cookbook.,0 of 5,0.0,False,
+4,,I should take the red hot pepper from the counter to prepare the meal according to the recipe.,take red hot pepper from counter,,"You take the red hot pepper from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've entered a kitchen.
 
-You make out a closed fridge. You can see a closed oven here. You bend down to tie your shoe. When you stand up, you notice a table. The table is massive. On the table you make out a knife. You see a counter. You shudder, but continue examining the counter. The counter is vast. On the counter you can see a red onion, an orange bell pepper and a banana. You can see a stove. Looks like someone's already been here and taken everything off it, though.",You are carrying: a red hot pepper and a cookbook.,1 of 5,0.2,False,
-4,,I need to take the knife from the table to slice the red hot pepper.,take knife from table,,You take the knife from the table.,Kitchen,"You've entered a kitchen.
-
-You make out a closed fridge. You can see a closed oven here. You bend down to tie your shoe. When you stand up, you notice a table. The table is massive. But the thing is empty. You see a counter. You shudder, but continue examining the counter. The counter is vast. On the counter you can see a red onion, an orange bell pepper and a banana. You can see a stove. Looks like someone's already been here and taken everything off it, though.","You are carrying: a knife, a red hot pepper and a cookbook.",1 of 5,0.2,False,
+You make out a closed fridge. You can see a closed oven here. You bend down to tie your shoe. When you stand up, you notice a table. The table is massive. But the thing is empty. You see a counter. You shudder, but continue examining the counter. The counter is vast. On the counter you can see a red onion, an orange bell pepper and a banana. You can see a stove. Looks like someone's already been here and taken everything off it, though.","You are carrying: a red hot pepper, a knife and a cookbook.",1 of 5,0.2,False,
 5,,I should slice the red hot pepper with the knife as per the recipe instructions.,slice red hot pepper with knife,,"You slice the red hot pepper.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've entered a kitchen.
 
-You make out a closed fridge. You can see a closed oven here. You bend down to tie your shoe. When you stand up, you notice a table. The table is massive. But the thing is empty. You see a counter. You shudder, but continue examining the counter. The counter is vast. On the counter you can see a red onion, an orange bell pepper and a banana. You can see a stove. Looks like someone's already been here and taken everything off it, though.","You are carrying: a knife, a sliced red hot pepper and a cookbook.",2 of 5,0.4,False,
+You make out a closed fridge. You can see a closed oven here. You bend down to tie your shoe. When you stand up, you notice a table. The table is massive. But the thing is empty. You see a counter. You shudder, but continue examining the counter. The counter is vast. On the counter you can see a red onion, an orange bell pepper and a banana. You can see a stove. Looks like someone's already been here and taken everything off it, though.","You are carrying: a sliced red hot pepper, a knife and a cookbook.",2 of 5,0.4,False,
 6,,I should roast the sliced red hot pepper as the next step in the recipe.,cook sliced red hot pepper with stove,,"You fried the red hot pepper.
 
 
@@ -49,4 +49,4 @@ You scored 2 out of a possible 5, in 6 turns.
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 >",Kitchen,"You've entered a kitchen.
 
-You make out a closed fridge. You can see a closed oven here. You bend down to tie your shoe. When you stand up, you notice a table. The table is massive. But the thing is empty. You see a counter. You shudder, but continue examining the counter. The counter is vast. On the counter you can see a red onion, an orange bell pepper and a banana. You can see a stove. Looks like someone's already been here and taken everything off it, though.","You are carrying: a knife, a sliced red hot pepper and a cookbook.",2 of 5,0.4,True,
+You make out a closed fridge. You can see a closed oven here. You bend down to tie your shoe. When you stand up, you notice a table. The table is massive. But the thing is empty. You see a counter. You shudder, but continue examining the counter. The counter is vast. On the counter you can see a red onion, an orange bell pepper and a banana. You can see a stove. Looks like someone's already been here and taken everything off it, though.","You are carrying: a sliced red hot pepper, a knife and a cookbook.",2 of 5,0.4,True,

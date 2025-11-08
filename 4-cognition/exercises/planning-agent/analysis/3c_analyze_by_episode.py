@@ -2,16 +2,17 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from matplotlib.ticker import FuncFormatter
 
 # Set parameters
 agent_name = "v0-baseline"
 model_name = "gpt-4.1-mini"
 input_folder_path = "../data/results"
-output_folder_path = "../data/plots/by-episode"
+output_folder_path = f"../data/plots/by-episode/{agent_name}"
+scatter_folder_path = f"{output_folder_path}/scatter"
 
 # Create the output folder
 os.makedirs(output_folder_path, exist_ok=True)
+os.makedirs(scatter_folder_path, exist_ok=True)
 
 # Load the data
 all_results = pd.DataFrame()
@@ -20,6 +21,10 @@ for input_file_name in input_file_names:
     input_file_path = f"{input_folder_path}/{input_file_name}"
     input_results = pd.read_csv(input_file_path)
     all_results = pd.concat([all_results, input_results], ignore_index=True)
+
+# Filter rows
+all_results = all_results[all_results["agent_name"] == agent_name]
+all_results = all_results[all_results["model_name"] == model_name]
 
 # Order the eval names
 eval_order = [
@@ -41,8 +46,6 @@ for eval_name in eval_order:
     results = all_results.copy()
 
     # Filter rows
-    results = results[results["agent_name"] == agent_name]
-    results = results[results["model_name"] == model_name]
     results = results[results["eval_name"] == eval_name]
 
     # Create plot for task completion accuracy
@@ -66,11 +69,35 @@ for eval_name in eval_order:
     plt.savefig(f"{output_folder_path}/{accuracy_file_name}", bbox_inches='tight')
     plt.show()
 
+    # Create a scatter plot of steps vs solution steps
+    scatter_file_name = f"steps-vs-solution-steps-for-{agent_name}-with-{model_name}-on-{eval_name}.png"
+    sns.set_style("whitegrid")
+    plt.figure(figsize=(8, 8))
+    palette = sns.color_palette(n_colors=2)[::-1]
+    plt.plot([0, 100], [0, 100], ls="--", c=".8")
+    ax = sns.scatterplot(
+        x="solution_steps",
+        y="steps",
+        hue="success",
+        palette=palette,
+        data=results)
+    plt.title(f"Steps vs Solution Steps for {agent_name} with {model_name} on {eval_name}")
+    plt.xlabel("Solution Steps")
+    plt.ylabel("Agent Steps")
+    plt.xlim(0, 100)
+    plt.ylim(0, 100)
+    plt.legend(title="Success")
+    plt.tight_layout()
+    # Draw a diagonal line
+    plt.savefig(f"{scatter_folder_path}/{scatter_file_name}", bbox_inches='tight')
+    plt.show()
+
 # Create a scatter plot of steps vs solution steps
 scatter_file_name = f"steps-vs-solution-steps-for-{agent_name}-with-{model_name}.png"
 sns.set_style("whitegrid")
 plt.figure(figsize=(8, 8))
 palette = sns.color_palette(n_colors=2)[::-1]
+plt.plot([0, 100], [0, 100], ls="--", c=".8")
 ax = sns.scatterplot(
     x="solution_steps",
     y="steps",
@@ -84,5 +111,6 @@ plt.xlim(0, 100)
 plt.ylim(0, 100)
 plt.legend(title="Success")
 plt.tight_layout()
-plt.savefig(f"{output_folder_path}/{scatter_file_name}", bbox_inches='tight')
+# Draw a diagonal line
+plt.savefig(f"{scatter_folder_path}/{scatter_file_name}", bbox_inches='tight')
 plt.show()

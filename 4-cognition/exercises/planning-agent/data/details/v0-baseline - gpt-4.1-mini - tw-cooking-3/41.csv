@@ -4,18 +4,17 @@ step_id,plan,thought,action,task,feedback,location,description,inventory,score,r
 You make out a shelf. Looks like someone's already been here and taken everything off it, though.
 
 There is a closed plain door leading west.","You are carrying: a raw red potato, a raw purple potato, a raw pork chop, a red hot pepper and a raw yellow potato.",0 of 14,0.0,False,
-1,,I should go west through the closed plain door to explore the next room and look for the kitchen or the cookbook.,go west,,You have to open the plain door first.,Pantry,"You arrive in a pantry. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+1,,I should go west through the closed plain door to find the kitchen where the cookbook might be.,go west,,You have to open the plain door first.,Pantry,"You arrive in a pantry. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 You make out a shelf. Looks like someone's already been here and taken everything off it, though.
 
 There is a closed plain door leading west.","You are carrying: a raw red potato, a raw purple potato, a raw pork chop, a red hot pepper and a raw yellow potato.",0 of 14,0.0,False,
-2,,I need to open the plain door before I can go west through it.,open plain door,,You open plain door.,Pantry,"You arrive in a pantry. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+2,,I need to open the plain door before going west.,open door,,You open plain door.,Pantry,"You arrive in a pantry. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 You make out a shelf. Looks like someone's already been here and taken everything off it, though.
 
 There is an open plain door leading west.","You are carrying: a raw red potato, a raw purple potato, a raw pork chop, a red hot pepper and a raw yellow potato.",0 of 14,0.0,False,
-3,,"Now that the door is open, I should go west through the open plain door to explore the next room.",go west,,"-= Kitchen =-
-You find yourself in a kitchen. A typical one.
+3,,"Now that the door is open, I should go west to find the kitchen and look for the cookbook.",go west,,"You find yourself in a kitchen. A typical one.
 
 You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a banana and a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
@@ -24,7 +23,26 @@ There is an open plain door leading east. There is a closed patio door leading w
 You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a banana and a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a raw red potato, a raw purple potato, a raw pork chop, a red hot pepper and a raw yellow potato.",0 of 14,0.0,False,
-4,,I should examine the cookbook on the counter to check the recipe for cooking a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+4,,I should take the cookbook from the counter to check the recipe.,take cookbook from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a banana and a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a raw red potato, a raw purple potato, a raw pork chop, a red hot pepper and a raw yellow potato.",0 of 14,0.0,False,
+5,,"I am carrying too many items, so I should put down one item to free up space before taking the cookbook.",drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a banana and a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a red hot pepper on the floor.","You are carrying: a raw red potato, a raw purple potato, a raw pork chop and a raw yellow potato.",0 of 14,0.0,False,
+6,,"Now that I have freed up space, I should take the cookbook from the counter to check the recipe.",take cookbook from counter,,You take the cookbook from the counter.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a banana. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a red hot pepper on the floor.","You are carrying: a cookbook, a raw red potato, a raw purple potato, a raw pork chop and a raw yellow potato.",0 of 14,0.0,False,
+7,,I should examine the cookbook to find the recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -50,244 +68,421 @@ slice the pork chop
   roast the banana
   prepare meal",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a banana and a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
-
-There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a raw red potato, a raw purple potato, a raw pork chop, a red hot pepper and a raw yellow potato.",0 of 14,0.0,False,
-5,,"I need to find a red onion and a banana to complete the ingredients for the recipe. I see a banana on the counter, so I should take the banana first.",take banana from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
-
-You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a banana and a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
-
-There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a raw red potato, a raw purple potato, a raw pork chop, a red hot pepper and a raw yellow potato.",0 of 14,0.0,False,
-6,,"I am carrying too many items, so I should drop the red hot pepper to free up space for the banana.",drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
-
-You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a banana and a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a banana. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a red hot pepper on the floor.","You are carrying: a raw red potato, a raw purple potato, a raw pork chop and a raw yellow potato.",0 of 14,0.0,False,
-7,,"Now that I have freed up space, I should take the banana from the counter.",take banana from counter,,"You take the banana from the counter.
+There is a red hot pepper on the floor.","You are carrying: a cookbook, a raw red potato, a raw purple potato, a raw pork chop and a raw yellow potato.",0 of 14,0.0,False,
+8,,I need to find a red onion and a banana to complete the ingredients for the recipe.,take banana from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a banana. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a red hot pepper on the floor.","You are carrying: a cookbook, a raw red potato, a raw purple potato, a raw pork chop and a raw yellow potato.",0 of 14,0.0,False,
+9,,I need to drop one item to free up space before taking the banana.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a banana. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a raw yellow potato and a red hot pepper on the floor.","You are carrying: a cookbook, a raw red potato, a raw purple potato and a raw pork chop.",0 of 14,0.0,False,
+10,,"Now that I have freed up space, I should take the banana from the counter.",take banana from counter,,"You take the banana from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a red hot pepper on the floor.","You are carrying: a banana, a raw red potato, a raw purple potato, a raw pork chop and a raw yellow potato.",1 of 14,0.07142857142857142,False,
-8,,I need to find a red onion to complete the ingredients. I should check the fridge to see if the red onion is inside.,open fridge,,"You open the fridge, revealing a red onion, a red apple and a white onion.",Kitchen,"You find yourself in a kitchen. A typical one.
+There is a raw yellow potato and a red hot pepper on the floor.","You are carrying: a banana, a cookbook, a raw red potato, a raw purple potato and a raw pork chop.",1 of 14,0.07142857142857142,False,
+11,,"I need to find a red onion to complete the ingredients for the recipe, so I should explore the kitchen further by going south.",go south,,"Well, here we are in the livingroom. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
-You make out a fridge. The fridge contains a red onion, a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+Look out! It's a- oh, never mind, it's just a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it.
+
+You need an exit without a door? You should try going north. There is an exit to the south. Don't worry, there is no door.",Livingroom,"Well, here we are in the livingroom. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+Look out! It's a- oh, never mind, it's just a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it.
+
+You need an exit without a door? You should try going north. There is an exit to the south. Don't worry, there is no door.","You are carrying: a banana, a cookbook, a raw red potato, a raw purple potato and a raw pork chop.",1 of 14,0.07142857142857142,False,
+12,,"There is nothing useful in the living room, so I should go back north to the kitchen and check other areas for a red onion.",go north,,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a red hot pepper on the floor.","You are carrying: a banana, a raw red potato, a raw purple potato, a raw pork chop and a raw yellow potato.",1 of 14,0.07142857142857142,False,
-9,,"I am still carrying too many items to take the red onion, so I should drop the raw yellow potato to free up space.",drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+There is a raw yellow potato and a red hot pepper on the floor.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red onion, a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a raw yellow potato and a red hot pepper on the floor.","You are carrying: a banana, a raw red potato, a raw purple potato and a raw pork chop.",1 of 14,0.07142857142857142,False,
-10,,"Now that I have freed up space, I should take the red onion from the fridge.",take red onion from fridge,,"You take the red onion from the fridge.
+There is a raw yellow potato and a red hot pepper on the floor.","You are carrying: a banana, a cookbook, a raw red potato, a raw purple potato and a raw pork chop.",1 of 14,0.07142857142857142,False,
+13,,I should check the fridge in the kitchen for the red onion.,open fridge,,"You open the fridge, revealing a red onion, a red apple and a white onion.",Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red onion, a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a raw yellow potato and a red hot pepper on the floor.","You are carrying: a banana, a cookbook, a raw red potato, a raw purple potato and a raw pork chop.",1 of 14,0.07142857142857142,False,
+14,,I need to drop one item to free up space before taking the red onion from the fridge.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red onion, a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a raw purple potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a banana, a cookbook, a raw red potato and a raw pork chop.",1 of 14,0.07142857142857142,False,
+15,,"Now that I have freed up space, I should take the red onion from the fridge.",take red onion from fridge,,"You take the red onion from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a raw yellow potato and a red hot pepper on the floor.","You are carrying: a red onion, a banana, a raw red potato, a raw purple potato and a raw pork chop.",2 of 14,0.14285714285714285,False,
-11,,I should take the knife from the table to prepare the ingredients as per the recipe.,take knife from table,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
+There is a raw purple potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a red onion, a banana, a cookbook, a raw red potato and a raw pork chop.",2 of 14,0.14285714285714285,False,
+16,,I should take the knife from the table to prepare the ingredients.,take knife from table,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
-
-There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
-
-There is a raw yellow potato and a red hot pepper on the floor.","You are carrying: a red onion, a banana, a raw red potato, a raw purple potato and a raw pork chop.",2 of 14,0.14285714285714285,False,
-12,,"I am carrying too many items to take the knife, so I should drop the banana to free up space.",drop banana,,You drop the banana on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
-
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a red onion, a raw red potato, a raw purple potato and a raw pork chop.",2 of 14,0.14285714285714285,False,
-13,,"Now that I have freed up space, I should take the knife from the table.",take knife from table,,You take the knife from the table.,Kitchen,"You find yourself in a kitchen. A typical one.
+There is a raw purple potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a red onion, a banana, a cookbook, a raw red potato and a raw pork chop.",2 of 14,0.14285714285714285,False,
+17,,I need to drop one item to free up space before taking the knife from the table.,drop banana,,You drop the banana on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? On the table you can make out a knife. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a raw red potato, a raw purple potato and a raw pork chop.",2 of 14,0.14285714285714285,False,
-14,,I should slice the pork chop with the knife as the first step in the recipe.,slice pork chop with knife,,"You slice the pork chop.
+There is a banana, a raw purple potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a red onion, a cookbook, a raw red potato and a raw pork chop.",2 of 14,0.14285714285714285,False,
+18,,"Now that I have freed up space, I should take the knife from the table.",take knife from table,,You take the knife from the table.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a banana, a raw purple potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a cookbook, a raw red potato and a raw pork chop.",2 of 14,0.14285714285714285,False,
+19,,I should slice the pork chop with the knife as the first step of the recipe.,slice raw pork chop with knife,,"You slice the pork chop.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a raw red potato, a raw purple potato and a sliced raw pork chop.",3 of 14,0.21428571428571427,False,
-15,,I should fry the sliced pork chop as the next step in the recipe.,cook sliced raw pork chop with stove,,"You fried the pork chop.
+There is a banana, a raw purple potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a cookbook, a raw red potato and a sliced raw pork chop.",3 of 14,0.21428571428571427,False,
+20,,I should fry the sliced pork chop as the next step in the recipe.,fry sliced raw pork chop with stove,,That's not a verb I recognise.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a banana, a raw purple potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a cookbook, a raw red potato and a sliced raw pork chop.",3 of 14,0.21428571428571427,False,
+21,,"I should try to fry the sliced pork chop using the correct verb ""cook"" with the stove.",cook sliced raw pork chop with stove,,"You fried the pork chop.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a raw red potato, a raw purple potato and a sliced fried pork chop.",4 of 14,0.2857142857142857,False,
-16,,I should dice the purple potato with the knife as the next step in the recipe.,dice raw purple potato with knife,,"You dice the purple potato.
+There is a banana, a raw purple potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a cookbook, a raw red potato and a sliced fried pork chop.",4 of 14,0.2857142857142857,False,
+22,,I should dice the purple potato with the knife as the next step in the recipe.,dice raw purple potato with knife,,You need to take the purple potato first.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a banana, a raw purple potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a cookbook, a raw red potato and a sliced fried pork chop.",4 of 14,0.2857142857142857,False,
+23,,I need to take the raw purple potato from the floor before dicing it.,take raw purple potato from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a banana, a raw purple potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a cookbook, a raw red potato and a sliced fried pork chop.",4 of 14,0.2857142857142857,False,
+24,,I need to drop one item to free up space before taking the raw purple potato.,drop raw red potato,,You drop the red potato on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a raw red potato, a banana, a raw purple potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a cookbook and a sliced fried pork chop.",4 of 14,0.2857142857142857,False,
+25,,"Now that I have freed up space, I should take the raw purple potato from the floor.",take raw purple potato from floor,,You pick up the purple potato from the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a raw red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a raw purple potato, a knife, a red onion, a cookbook and a sliced fried pork chop.",4 of 14,0.2857142857142857,False,
+26,,I should dice the raw purple potato with the knife as the next step in the recipe.,dice raw purple potato with knife,,"You dice the purple potato.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a raw red potato, a diced raw purple potato and a sliced fried pork chop.",5 of 14,0.35714285714285715,False,
-17,,I should roast the diced purple potato as the next step in the recipe.,cook diced raw purple potato with oven,,"You roasted the purple potato.
+There is a raw red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a diced raw purple potato, a knife, a red onion, a cookbook and a sliced fried pork chop.",5 of 14,0.35714285714285715,False,
+27,,I should roast the diced purple potato using the oven as the next step in the recipe.,cook diced raw purple potato with oven,,"You roasted the purple potato.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a raw red potato, a diced roasted purple potato and a sliced fried pork chop.",6 of 14,0.42857142857142855,False,
-18,,I should dice the raw red potato with the knife as the next step in the recipe.,dice raw red potato with knife,,"You dice the red potato.
+There is a raw red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a diced roasted purple potato, a knife, a red onion, a cookbook and a sliced fried pork chop.",6 of 14,0.42857142857142855,False,
+28,,I should dice the raw red potato with the knife as the next step in the recipe.,dice raw red potato with knife,,You need to take the red potato first.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a raw red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a diced roasted purple potato, a knife, a red onion, a cookbook and a sliced fried pork chop.",6 of 14,0.42857142857142855,False,
+29,,I need to take the raw red potato from the floor before dicing it.,take raw red potato from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a raw red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a diced roasted purple potato, a knife, a red onion, a cookbook and a sliced fried pork chop.",6 of 14,0.42857142857142855,False,
+30,,I need to drop one item to free up space before taking the raw red potato.,drop red onion,,You drop the red onion on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a red onion, a raw red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",6 of 14,0.42857142857142855,False,
+31,,"Now that I have freed up space, I should take the raw red potato from the floor.",take raw red potato from floor,,You pick up the red potato from the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a red onion, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a raw red potato, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",6 of 14,0.42857142857142855,False,
+32,,I should dice the raw red potato with the knife as the next step in the recipe.,dice raw red potato with knife,,"You dice the red potato.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a diced raw red potato, a diced roasted purple potato and a sliced fried pork chop.",7 of 14,0.5,False,
-19,,I should fry the diced red potato as the next step in the recipe.,cook diced raw red potato with stove,,"You fried the red potato.
+There is a red onion, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a diced raw red potato, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",7 of 14,0.5,False,
+33,,I should fry the diced red potato using the stove as the next step in the recipe.,cook diced raw red potato with stove,,"You fried the red potato.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a diced fried red potato, a diced roasted purple potato and a sliced fried pork chop.",8 of 14,0.5714285714285714,False,
-20,,I should slice the red onion with the knife as the next step in the recipe.,slice red onion with knife,,"You slice the red onion.
+There is a red onion, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a diced fried red potato, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",8 of 14,0.5714285714285714,False,
+34,,I should slice the red onion with the knife as the next step in the recipe.,slice red onion with knife,,You need to take the red onion first.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a red onion, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a diced fried red potato, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",8 of 14,0.5714285714285714,False,
+35,,I need to take the red onion from the floor before slicing it.,take red onion from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a red onion, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a diced fried red potato, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",8 of 14,0.5714285714285714,False,
+36,,I need to drop one item to free up space before taking the red onion.,drop diced fried red potato,,You drop the red potato on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a diced fried red potato, a red onion, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",8 of 14,0.5714285714285714,False,
+37,,"Now that I have freed up space, I should take the red onion from the floor.",take red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a diced fried red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a red onion, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",8 of 14,0.5714285714285714,False,
+38,,I should slice the red onion with the knife as the next step in the recipe.,slice red onion with knife,,"You slice the red onion.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a sliced red onion, a diced fried red potato, a diced roasted purple potato and a sliced fried pork chop.",9 of 14,0.6428571428571429,False,
-21,,I should fry the sliced red onion as the next step in the recipe.,cook sliced red onion with stove,,"You fried the red onion.
+There is a diced fried red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced red onion, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",9 of 14,0.6428571428571429,False,
+39,,I should fry the sliced red onion using the stove as the next step in the recipe.,cook sliced red onion with stove,,"You fried the red onion.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a sliced fried red onion, a diced fried red potato, a diced roasted purple potato and a sliced fried pork chop.",10 of 14,0.7142857142857143,False,
-22,,I should slice the banana with the knife as the next step in the recipe.,slice banana with knife,,You need to take the banana first.,Kitchen,"You find yourself in a kitchen. A typical one.
+There is a diced fried red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced fried red onion, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",10 of 14,0.7142857142857143,False,
+40,,I should slice the banana with the knife as the next step in the recipe.,slice banana with knife,,You need to take the banana first.,Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
-
-There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
-
-There is a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a sliced fried red onion, a diced fried red potato, a diced roasted purple potato and a sliced fried pork chop.",10 of 14,0.7142857142857143,False,
-23,,I need to take the banana from the floor before I can slice it.,take banana from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
-
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a sliced fried red onion, a diced fried red potato, a diced roasted purple potato and a sliced fried pork chop.",10 of 14,0.7142857142857143,False,
-24,,"I am carrying too many items to take the banana, so I should drop the diced fried red potato to free up space.",drop diced fried red potato,,You drop the red potato on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+There is a diced fried red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced fried red onion, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",10 of 14,0.7142857142857143,False,
+41,,I need to take the banana from the floor before slicing it.,take banana from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
-
-There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
-
-There is a diced fried red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a knife, a sliced fried red onion, a diced roasted purple potato and a sliced fried pork chop.",10 of 14,0.7142857142857143,False,
-25,,"Now that I have freed up space, I should take the banana from the floor.",take banana from floor,,You pick up the banana from the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
-
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a diced fried red potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a banana, a knife, a sliced fried red onion, a diced roasted purple potato and a sliced fried pork chop.",10 of 14,0.7142857142857143,False,
-26,,I should slice the banana with the knife as the next step in the recipe.,slice banana with knife,,"You slice the banana.
+There is a diced fried red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced fried red onion, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",10 of 14,0.7142857142857143,False,
+42,,I need to drop one item to free up space before taking the banana.,drop sliced fried red onion,,You drop the red onion on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a sliced fried red onion, a diced fried red potato, a banana, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",10 of 14,0.7142857142857143,False,
+43,,"Now that I have freed up space, I should take the banana from the floor.",take banana from floor,,You pick up the banana from the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a sliced fried red onion, a diced fried red potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a banana, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",10 of 14,0.7142857142857143,False,
+44,,I should slice the banana with the knife as the next step in the recipe.,slice banana with knife,,"You slice the banana.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a diced fried red potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced banana, a knife, a sliced fried red onion, a diced roasted purple potato and a sliced fried pork chop.",11 of 14,0.7857142857142857,False,
-27,,I should roast the sliced banana as the next step in the recipe.,cook sliced banana with oven,,"You roasted the banana.
+There is a sliced fried red onion, a diced fried red potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced banana, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",11 of 14,0.7857142857142857,False,
+45,,I should roast the sliced banana using the oven as the next step in the recipe.,cook sliced banana with oven,,"You roasted the banana.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a diced fried red potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced roasted banana, a knife, a sliced fried red onion, a diced roasted purple potato and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
-28,,I should prepare the meal now that all the ingredients are ready as per the recipe.,prepare meal,,You still miss something.,Kitchen,"You find yourself in a kitchen. A typical one.
+There is a sliced fried red onion, a diced fried red potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced roasted banana, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+46,,I should prepare the meal now that all ingredients are ready.,prepare meal,,You still miss something.,Kitchen,"You find yourself in a kitchen. A typical one.
 
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
-
-There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
-
-There is a diced fried red potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced roasted banana, a knife, a sliced fried red onion, a diced roasted purple potato and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
-29,,"The recipe requires a red potato, but I only prepared the red potato and purple potato. I still have a raw yellow potato in the room, which is not part of the recipe. I should check if I missed any step or ingredient. The recipe does not mention the yellow potato or the red hot pepper, so I should ignore them. I will try to prepare the meal again to confirm.",prepare meal,,You still miss something.,Kitchen,"You find yourself in a kitchen. A typical one.
-
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a diced fried red potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced roasted banana, a knife, a sliced fried red onion, a diced roasted purple potato and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
-30,,"I realize I missed frying the sliced roasted banana as the recipe says to roast the banana, but I did not fry it. I will fry the sliced roasted banana now.",cook sliced roasted banana with stove,,"You burned the banana!
+There is a sliced fried red onion, a diced fried red potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced roasted banana, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+47,,"I am missing the yellow potato, so I should take it from the floor to complete the ingredients.",take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
 
-
-
-                              *** You lost! ***
-
-You scored 12 out of a possible 14, in 30 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
->",Kitchen,"You find yourself in a kitchen. A typical one.
-
-You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. On the counter you can make out a cookbook. Now that's what I call TextWorld! You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
 
 There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
 
-There is a diced fried red potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced roasted banana, a knife, a sliced fried red onion, a diced roasted purple potato and a sliced fried pork chop.",12 of 14,0.8571428571428571,True,
+There is a sliced fried red onion, a diced fried red potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a sliced roasted banana, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+48,,I need to drop one item to free up space before taking the raw yellow potato.,drop sliced roasted banana,,You drop the banana on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a sliced roasted banana, a sliced fried red onion, a diced fried red potato, a raw yellow potato and a red hot pepper on the floor.","You are carrying: a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+49,,"Now that I have freed up space, I should take the raw yellow potato from the floor.",take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a sliced roasted banana, a sliced fried red onion, a diced fried red potato and a red hot pepper on the floor.","You are carrying: a raw yellow potato, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+50,,I should dice the raw yellow potato with the knife as the next step in the recipe.,dice raw yellow potato with knife,,You dice the yellow potato.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a sliced roasted banana, a sliced fried red onion, a diced fried red potato and a red hot pepper on the floor.","You are carrying: a diced raw yellow potato, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+51,,I should fry the diced yellow potato using the stove as the next step in the recipe.,cook diced raw yellow potato with stove,,You fried the yellow potato.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a sliced roasted banana, a sliced fried red onion, a diced fried red potato and a red hot pepper on the floor.","You are carrying: a diced fried yellow potato, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+52,,I should prepare the meal now that all ingredients are ready.,prepare meal,,You still miss something.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a sliced roasted banana, a sliced fried red onion, a diced fried red potato and a red hot pepper on the floor.","You are carrying: a diced fried yellow potato, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+53,,"I am missing the red hot pepper, so I should take it from the floor to complete the ingredients.",take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a sliced roasted banana, a sliced fried red onion, a diced fried red potato and a red hot pepper on the floor.","You are carrying: a diced fried yellow potato, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+54,,I need to drop one item to free up space before taking the red hot pepper.,drop diced fried yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a diced fried yellow potato, a sliced roasted banana, a sliced fried red onion, a diced fried red potato and a red hot pepper on the floor.","You are carrying: a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+55,,"Now that I have freed up space, I should take the red hot pepper from the floor.",take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a diced fried yellow potato, a sliced roasted banana, a sliced fried red onion and a diced fried red potato on the floor.","You are carrying: a red hot pepper, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+56,,I should prepare the meal now that all ingredients are ready.,prepare meal,,You still miss something.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a diced fried yellow potato, a sliced roasted banana, a sliced fried red onion and a diced fried red potato on the floor.","You are carrying: a red hot pepper, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+57,,"I am missing the red onion again, so I should take it from the floor to complete the ingredients.",take sliced fried red onion from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a diced fried yellow potato, a sliced roasted banana, a sliced fried red onion and a diced fried red potato on the floor.","You are carrying: a red hot pepper, a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,False,
+58,,I need to drop one item to free up space before taking the sliced fried red onion.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You find yourself in a kitchen. A typical one.
+
+You make out a fridge. The fridge contains a red apple and a white onion. You can see a closed conventional looking oven nearby. Oh wow! Is that what I think it is? It is! It's a table. Wow, isn't TextWorld just the best? However, the table, like an empty table, has nothing on it. You smell a sickening smell, and follow it to a counter. The counter is vast. But there isn't a thing on it. You can make out a stove. The stove is conventional. But the thing hasn't got anything on it. Aw, here you were, all excited for there to be things on it!
+
+There is an open plain door leading east. There is a closed patio door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a red hot pepper, a diced fried yellow potato, a sliced roasted banana, a sliced fried red onion and a diced fried red potato on the floor.","You are carrying: a diced roasted purple potato, a knife, a cookbook and a sliced fried pork chop.",12 of 14,0.8571428571428571,True,

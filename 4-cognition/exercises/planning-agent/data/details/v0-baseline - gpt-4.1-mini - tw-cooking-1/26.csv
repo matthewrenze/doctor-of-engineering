@@ -2,7 +2,7 @@ step_id,plan,thought,action,task,feedback,location,description,inventory,score,r
 0,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You are in a kitchen. A typical one. You start to take note of what's in the room.
 
 You see a fridge. You see a closed oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. The table appears to be empty. Look out! It's a- oh, never mind, it's just a counter. The counter is vast. On the counter you can make out a red hot pepper, a cookbook and a knife. Hmmm... what else, what else? You can make out a stove. Wow, isn't TextWorld just the best? The stove is conventional. Looks like someone's already been here and taken everything off it, though.",You are carrying nothing.,0 of 3,0.0,False,
-1,,I should examine the cookbook on the counter to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,I should first examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -16,24 +16,27 @@ dice the parsley
   prepare meal",Kitchen,"You are in a kitchen. A typical one. You start to take note of what's in the room.
 
 You see a fridge. You see a closed oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. The table appears to be empty. Look out! It's a- oh, never mind, it's just a counter. The counter is vast. On the counter you can make out a red hot pepper, a cookbook and a knife. Hmmm... what else, what else? You can make out a stove. Wow, isn't TextWorld just the best? The stove is conventional. Looks like someone's already been here and taken everything off it, though.",You are carrying nothing.,0 of 3,0.0,False,
-2,,I need to find parsley to follow the recipe. I should check the fridge for parsley.,open fridge,,"You open the fridge, revealing a diced parsley, a white onion, a red onion and a block of cheese.",Kitchen,"You are in a kitchen. A typical one. You start to take note of what's in the room.
+2,,I need to find and take the parsley from the kitchen to follow the recipe.,take parsley from counter,,You can't see any such thing.,Kitchen,"You are in a kitchen. A typical one. You start to take note of what's in the room.
+
+You see a fridge. You see a closed oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. The table appears to be empty. Look out! It's a- oh, never mind, it's just a counter. The counter is vast. On the counter you can make out a red hot pepper, a cookbook and a knife. Hmmm... what else, what else? You can make out a stove. Wow, isn't TextWorld just the best? The stove is conventional. Looks like someone's already been here and taken everything off it, though.",You are carrying nothing.,0 of 3,0.0,False,
+3,,"Since the parsley is not visible on the counter, I should check inside the fridge to see if the parsley is there.",open fridge,,"You open the fridge, revealing a diced parsley, a white onion, a red onion and a block of cheese.",Kitchen,"You are in a kitchen. A typical one. You start to take note of what's in the room.
 
 You see a fridge. The fridge contains a diced parsley, a white onion, a red onion and a block of cheese. You see a closed oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. The table appears to be empty. Look out! It's a- oh, never mind, it's just a counter. The counter is vast. On the counter you can make out a red hot pepper, a cookbook and a knife. Hmmm... what else, what else? You can make out a stove. Wow, isn't TextWorld just the best? The stove is conventional. Looks like someone's already been here and taken everything off it, though.",You are carrying nothing.,0 of 3,0.0,False,
-3,,"The parsley is already diced in the fridge, so I should take the diced parsley from the fridge.",take diced parsley from fridge,,"You take the parsley from the fridge.
+4,,"The parsley is already diced in the fridge, so I should take the diced parsley from the fridge.",take diced parsley from fridge,,"You take the parsley from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A typical one. You start to take note of what's in the room.
 
 You see a fridge. The fridge contains a white onion, a red onion and a block of cheese. You see a closed oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. The table appears to be empty. Look out! It's a- oh, never mind, it's just a counter. The counter is vast. On the counter you can make out a red hot pepper, a cookbook and a knife. Hmmm... what else, what else? You can make out a stove. Wow, isn't TextWorld just the best? The stove is conventional. Looks like someone's already been here and taken everything off it, though.",You are carrying: a diced parsley.,1 of 3,0.3333333333333333,False,
-4,,"Since the parsley is already diced, I should prepare the meal now.",prepare meal,,"Adding the meal to your inventory.
+5,,I should now prepare the meal using the diced parsley as per the recipe.,prepare meal,,"Adding the meal to your inventory.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A typical one. You start to take note of what's in the room.
 
 You see a fridge. The fridge contains a white onion, a red onion and a block of cheese. You see a closed oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. The table appears to be empty. Look out! It's a- oh, never mind, it's just a counter. The counter is vast. On the counter you can make out a red hot pepper, a cookbook and a knife. Hmmm... what else, what else? You can make out a stove. Wow, isn't TextWorld just the best? The stove is conventional. Looks like someone's already been here and taken everything off it, though.",You are carrying: a meal.,2 of 3,0.6666666666666666,False,
-5,,I should eat the meal to complete the task of enjoying the meal.,eat meal,,"You eat the meal. Not bad.
+6,,I should now eat the meal to complete the task.,eat meal,,"You eat the meal. Not bad.
 
 
 Your score has just gone up by one point.

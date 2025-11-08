@@ -1,0 +1,86 @@
+step_id,plan,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You are in a standard kind of place. That is to say, you're in a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+An open conventional looking fridge is close by. The fridge contains a fried carrot, a white onion, a red onion and a cilantro. You see an opened oven. The oven is empty! What a waste of a day! You make out a table. Why don't you take a picture of it, it'll last longer! You see a cookbook and a knife on the table. Look over there! a counter. The counter appears to be empty. Silly counter, silly, empty, good for nothing counter. You bend down to tie your shoe. When you stand up, you notice a stove. What a coincidence, weren't you just thinking about a stove? But the thing hasn't got anything on it.",You are carrying nothing.,0 of 4,0.0,False,
+1,"1. [ ] Examine the cookbook to find a recipe.
+2. [ ] Gather necessary ingredients from the fridge.
+3. [ ] Use the knife to prepare ingredients.
+4. [ ] Cook the meal using the stove or oven.
+5. [ ] Eat the prepared meal.",I should first examine the cookbook on the table to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+carrot
+
+Directions:
+chop the carrot
+  fry the carrot
+  prepare meal",Kitchen,"You are in a standard kind of place. That is to say, you're in a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+An open conventional looking fridge is close by. The fridge contains a fried carrot, a white onion, a red onion and a cilantro. You see an opened oven. The oven is empty! What a waste of a day! You make out a table. Why don't you take a picture of it, it'll last longer! You see a cookbook and a knife on the table. Look over there! a counter. The counter appears to be empty. Silly counter, silly, empty, good for nothing counter. You bend down to tie your shoe. When you stand up, you notice a stove. What a coincidence, weren't you just thinking about a stove? But the thing hasn't got anything on it.",You are carrying nothing.,0 of 4,0.0,False,
+2,"1. [x] Examine the cookbook to find a recipe.
+2. [ ] Take the carrot from the fridge.
+3. [ ] Take the knife from the table.
+4. [ ] Chop the carrot with the knife.
+5. [ ] Fry the chopped carrot on the stove.
+6. [ ] Prepare the meal.
+7. [ ] Eat the meal.","The recipe requires a carrot, which I see fried carrot in the fridge, but I need a raw carrot to chop and fry. Since there is no raw carrot mentioned, I will take the fried carrot from the fridge and the knife from the table to see if I can proceed.",take fried carrot from fridge,,"You take the carrot from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You are in a standard kind of place. That is to say, you're in a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+An open conventional looking fridge is close by. The fridge contains a white onion, a red onion and a cilantro. You see an opened oven. The oven is empty! What a waste of a day! You make out a table. Why don't you take a picture of it, it'll last longer! You see a cookbook and a knife on the table. Look over there! a counter. The counter appears to be empty. Silly counter, silly, empty, good for nothing counter. You bend down to tie your shoe. When you stand up, you notice a stove. What a coincidence, weren't you just thinking about a stove? But the thing hasn't got anything on it.",You are carrying: a fried carrot.,1 of 4,0.25,False,
+3,"1. [x] Examine the cookbook to find a recipe.
+2. [x] Take the fried carrot from the fridge.
+3. [ ] Take the knife from the table.
+4. [ ] Chop the fried carrot with the knife.
+5. [ ] Fry the chopped carrot on the stove.
+6. [ ] Prepare the meal.
+7. [ ] Eat the meal.",I should take the knife from the table to chop the fried carrot as per the recipe.,take knife from table,,You take the knife from the table.,Kitchen,"You are in a standard kind of place. That is to say, you're in a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+An open conventional looking fridge is close by. The fridge contains a white onion, a red onion and a cilantro. You see an opened oven. The oven is empty! What a waste of a day! You make out a table. Why don't you take a picture of it, it'll last longer! You see a cookbook on the table. Look over there! a counter. The counter appears to be empty. Silly counter, silly, empty, good for nothing counter. You bend down to tie your shoe. When you stand up, you notice a stove. What a coincidence, weren't you just thinking about a stove? But the thing hasn't got anything on it.",You are carrying: a knife and a fried carrot.,1 of 4,0.25,False,
+4,"1. [x] Examine the cookbook to find a recipe.
+2. [x] Take the fried carrot from the fridge.
+3. [x] Take the knife from the table.
+4. [ ] Chop the fried carrot with the knife.
+5. [ ] Fry the chopped carrot on the stove.
+6. [ ] Prepare the meal.
+7. [ ] Eat the meal.",I will chop the fried carrot with the knife as the recipe instructs.,chop fried carrot with knife,,"You chop the carrot.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You are in a standard kind of place. That is to say, you're in a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+An open conventional looking fridge is close by. The fridge contains a white onion, a red onion and a cilantro. You see an opened oven. The oven is empty! What a waste of a day! You make out a table. Why don't you take a picture of it, it'll last longer! You see a cookbook on the table. Look over there! a counter. The counter appears to be empty. Silly counter, silly, empty, good for nothing counter. You bend down to tie your shoe. When you stand up, you notice a stove. What a coincidence, weren't you just thinking about a stove? But the thing hasn't got anything on it.",You are carrying: a knife and a chopped fried carrot.,2 of 4,0.5,False,
+5,"1. [x] Examine the cookbook to find a recipe.
+2. [x] Take the fried carrot from the fridge.
+3. [x] Take the knife from the table.
+4. [x] Chop the fried carrot with the knife.
+5. [ ] Fry the chopped carrot on the stove.
+6. [ ] Prepare the meal.
+7. [ ] Eat the meal.",I should fry the chopped carrot on the stove as the next step in the recipe.,fry chopped fried carrot with stove,,That's not a verb I recognise.,Kitchen,"You are in a standard kind of place. That is to say, you're in a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+An open conventional looking fridge is close by. The fridge contains a white onion, a red onion and a cilantro. You see an opened oven. The oven is empty! What a waste of a day! You make out a table. Why don't you take a picture of it, it'll last longer! You see a cookbook on the table. Look over there! a counter. The counter appears to be empty. Silly counter, silly, empty, good for nothing counter. You bend down to tie your shoe. When you stand up, you notice a stove. What a coincidence, weren't you just thinking about a stove? But the thing hasn't got anything on it.",You are carrying: a knife and a chopped fried carrot.,2 of 4,0.5,False,
+6,"1. [x] Examine the cookbook to find a recipe.
+2. [x] Take the fried carrot from the fridge.
+3. [x] Take the knife from the table.
+4. [x] Chop the fried carrot with the knife.
+5. [ ] Fry the chopped carrot on the stove.
+6. [ ] Prepare the meal.
+7. [ ] Eat the meal.","The command ""fry chopped fried carrot with stove"" was not recognized. I will try ""cook chopped fried carrot with stove"" instead to fry it.",cook chopped fried carrot with stove,,"You burned the carrot!
+
+
+
+                              *** You lost! ***
+
+You scored 2 out of a possible 4, in 5 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You are in a standard kind of place. That is to say, you're in a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+An open conventional looking fridge is close by. The fridge contains a white onion, a red onion and a cilantro. You see an opened oven. The oven is empty! What a waste of a day! You make out a table. Why don't you take a picture of it, it'll last longer! You see a cookbook on the table. Look over there! a counter. The counter appears to be empty. Silly counter, silly, empty, good for nothing counter. You bend down to tie your shoe. When you stand up, you notice a stove. What a coincidence, weren't you just thinking about a stove? But the thing hasn't got anything on it.",You are carrying: a knife and a chopped fried carrot.,2 of 4,0.5,True,

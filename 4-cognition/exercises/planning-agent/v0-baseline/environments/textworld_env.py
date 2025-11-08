@@ -84,6 +84,7 @@ class TextWorldEnv:
         score_text = f"{score} of {max_score}"
 
         # Clean up the description
+        feedback = self.remove_location(feedback)
         description = self.remove_location(description)
 
         # Create the state
