@@ -37,9 +37,9 @@ class GptModel:
             params["temperature"] = 0.0
 
         # Set retry variables
-        retries = [10, 20, 30]  # wait before each retry
+        retries = [10, 20, 30, 60, 180]  # wait before each retry
         attempts = 0
-
+        
         while True:
             try:
                 # Get the response
@@ -55,8 +55,11 @@ class GptModel:
 
                 return content
             except Exception as e:
-                warn(f"Retrying LLM API call in {retries[attempts]} seconds due to error: {e}")
+
                 if attempts >= len(retries):
                     raise
-                time.sleep(retries[attempts])
+
+                delay = retries[attempts]
+                warn(f"Retrying LLM API call in {delay} seconds due to error: {e}")
+                time.sleep(delay)
                 attempts += 1
