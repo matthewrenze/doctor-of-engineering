@@ -23,11 +23,14 @@
 - Summarize the [best practices](exercises/best-practices/best-practices-for-cognitive-enhancements.md) for implementing cognititive enhancements
 - Summarize the [benchmarks](exercises/best-practices/benchmarks-for-cognitive-enhancements.md) used for evaluating cognitive enhancements
 - Create an [observation agent](exercises/observation-agent/)
+- Create a [planning agent](exercises/planning-agent/)
 
 ## Experiments
 - Compare [plain-text vs JSON agent](experiments/json-agent/)
 - Compare [cooking curriculum A](experiments/tw-curriculum-a/) vs [cooking curriculum B](experiments/tw-curriculum-b/)
 - Create a [new textworld curriculum](experiments/textworld-v2/) with a smooth learning curve for evaluating cognitive enhancements
+- Optimize the number of accessible [previous k states](experiments/previous-k-states/) for an observation agent
+- Create an [oracle agent](experiments/oracle-agent/)
 
 ## Projects
 
