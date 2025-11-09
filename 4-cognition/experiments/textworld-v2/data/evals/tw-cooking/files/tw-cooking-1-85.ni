@@ -412,9 +412,9 @@ Every turn:
 		do nothing;
 	else if The f_5 is consumed:
 		end the story; [Lost]
-	else if The f_5 is fried:
-		end the story; [Lost]
 	else if The f_5 is grilled:
+		end the story; [Lost]
+	else if The f_5 is fried:
 		end the story; [Lost]
 	else if The f_5 is roasted:
 		increase the score by 1; [Quest completed]
@@ -431,9 +431,9 @@ Every turn:
 		do nothing;
 	else if The f_5 is consumed:
 		end the story; [Lost]
-	else if The f_5 is diced:
-		end the story; [Lost]
 	else if The f_5 is sliced:
+		end the story; [Lost]
+	else if The f_5 is diced:
 		end the story; [Lost]
 	else if The f_5 is chopped:
 		increase the score by 1; [Quest completed]

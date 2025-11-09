@@ -422,9 +422,9 @@ Every turn:
 		do nothing;
 	else if The f_3 is consumed:
 		end the story; [Lost]
-	else if The f_3 is diced:
-		end the story; [Lost]
 	else if The f_3 is sliced:
+		end the story; [Lost]
+	else if The f_3 is diced:
 		end the story; [Lost]
 	else if The f_3 is chopped:
 		increase the score by 1; [Quest completed]

@@ -412,9 +412,9 @@ Every turn:
 		do nothing;
 	else if The f_5 is consumed:
 		end the story; [Lost]
-	else if The f_5 is sliced:
-		end the story; [Lost]
 	else if The f_5 is chopped:
+		end the story; [Lost]
+	else if The f_5 is sliced:
 		end the story; [Lost]
 
 The quest4 completed is a truth state that varies.

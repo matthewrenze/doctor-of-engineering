@@ -111,36 +111,14 @@ for level_id in range(1, 4):
         # Compile the game
         game_path = textworld.generator.compile_game(game, options)
 
-        # Hack: Remove any consecutive 'drop' actions after the "examine cookbook" step
-        # to avoid counting unnecessary 'drops' from distractors in inventory
-        filtered_walkthrough = []
-        filter_on = False
-        for action in game.walkthrough:
-            # Always include "examine cookbook" and activate filter
-            if action == "examine cookbook":
-                filtered_walkthrough.append(action)
-                filter_on = True
-                continue
-
-            # Skip "drop" actions while the filter is active
-            if filter_on and action.startswith("drop"):
-                continue
-
-            # Turn filter off once we hit a non-drop action
-            if filter_on and not action.startswith("drop"):
-                filter_on = False
-
-            # Normal operation (add action)
-            filtered_walkthrough.append(action)
-
         # Add the task
         task = {
             "id": task_id,
             "level": level_id,
             "sublevel": lesson["sublevel"],
             "task": game.objective,
-            "solution": ", ".join(filtered_walkthrough),
-            "solution_steps": len(filtered_walkthrough),
+            "solution": ", ".join(game.walkthrough),
+            "solution_steps": len(game.walkthrough),
             "file_path": game_file_path
         }
         tasks.append(task)

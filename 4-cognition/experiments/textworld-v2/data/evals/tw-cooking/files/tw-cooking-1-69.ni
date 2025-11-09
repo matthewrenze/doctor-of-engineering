@@ -409,9 +409,9 @@ Every turn:
 		do nothing;
 	else if The f_0 is consumed:
 		end the story; [Lost]
-	else if The f_0 is fried:
-		end the story; [Lost]
 	else if The f_0 is grilled:
+		end the story; [Lost]
+	else if The f_0 is fried:
 		end the story; [Lost]
 	else if The f_0 is roasted:
 		increase the score by 1; [Quest completed]
@@ -425,9 +425,9 @@ Every turn:
 		do nothing;
 	else if The f_0 is consumed:
 		end the story; [Lost]
-	else if The f_0 is sliced:
-		end the story; [Lost]
 	else if The f_0 is chopped:
+		end the story; [Lost]
+	else if The f_0 is sliced:
 		end the story; [Lost]
 
 The quest4 completed is a truth state that varies.

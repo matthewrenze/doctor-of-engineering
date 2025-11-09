@@ -394,9 +394,9 @@ Every turn:
 		do nothing;
 	else if The f_0 is consumed:
 		end the story; [Lost]
-	else if The f_0 is diced:
-		end the story; [Lost]
 	else if The f_0 is chopped:
+		end the story; [Lost]
+	else if The f_0 is diced:
 		end the story; [Lost]
 
 The quest3 completed is a truth state that varies.
