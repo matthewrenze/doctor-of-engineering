@@ -1,0 +1,88 @@
+step_id,plan,summary,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see a closed fridge. Oh, great. Here's an oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. You see a knife on the counter. You can see a stove. But the thing is empty, unfortunately.",You are carrying nothing.,0 of 5,0.0,False,
+1,,"I am in the kitchen with a closed fridge, an oven, a large table with a cookbook, a knife on the counter, and an empty stove.",I should examine the cookbook on the table to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red onion
+
+Directions:
+dice the red onion
+  roast the red onion
+  prepare meal",Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see a closed fridge. Oh, great. Here's an oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. You see a knife on the counter. You can see a stove. But the thing is empty, unfortunately.",You are carrying nothing.,0 of 5,0.0,False,
+2,,"I examined the cookbook and found a recipe that requires a red onion to dice, roast, and prepare a meal.",I should open the fridge to look for the red onion needed for the recipe.,open fridge,,"You open the fridge, revealing a red onion, a red apple and a white onion.",Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red onion, a red apple and a white onion. Oh, great. Here's an oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. You see a knife on the counter. You can see a stove. But the thing is empty, unfortunately.",You are carrying nothing.,0 of 5,0.0,False,
+3,,"I opened the fridge and found a red onion, a red apple, and a white onion inside.",I should take the red onion from the fridge to start preparing the recipe.,take red onion from fridge,,"You take the red onion from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red apple and a white onion. Oh, great. Here's an oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. You see a knife on the counter. You can see a stove. But the thing is empty, unfortunately.",You are carrying: a red onion.,1 of 5,0.2,False,
+4,,I took the red onion from the fridge and now I am carrying it.,I should take the knife from the counter to dice the red onion.,take knife from counter,,You take the knife from the counter.,Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red apple and a white onion. Oh, great. Here's an oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. But the thing is empty, unfortunately. You can see a stove. But the thing is empty, unfortunately.",You are carrying: a knife and a red onion.,1 of 5,0.2,False,
+5,,I took the knife from the counter and now I am carrying it along with the red onion.,I should dice the red onion with the knife as per the recipe instructions.,dice red onion with knife,,"You dice the red onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red apple and a white onion. Oh, great. Here's an oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. But the thing is empty, unfortunately. You can see a stove. But the thing is empty, unfortunately.",You are carrying: a knife and a diced red onion.,2 of 5,0.4,False,
+6,,I diced the red onion with the knife as instructed by the recipe.,I should roast the diced red onion in the oven next.,put diced red onion into oven,,The oven is closed.,Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red apple and a white onion. Oh, great. Here's an oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. But the thing is empty, unfortunately. You can see a stove. But the thing is empty, unfortunately.",You are carrying: a knife and a diced red onion.,2 of 5,0.4,False,
+7,,I put the diced red onion into the oven and closed the oven.,I should now turn on the oven to roast the diced red onion.,open oven,,You open the oven.,Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red apple and a white onion. Oh, great. Here's an oven. The oven is empty! What a waste of a day! Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. But the thing is empty, unfortunately. You can see a stove. But the thing is empty, unfortunately.",You are carrying: a knife and a diced red onion.,2 of 5,0.4,False,
+8,,"I opened the oven, but the diced red onion is no longer inside.",I should put the diced red onion back into the oven and close it to roast.,put diced red onion into oven,,You put the red onion into the oven.,Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red apple and a white onion. Oh, great. Here's an oven. The oven contains a diced red onion. Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. But the thing is empty, unfortunately. You can see a stove. But the thing is empty, unfortunately.",You are carrying: a knife.,2 of 5,0.4,False,
+9,,I put the diced red onion back into the oven.,I should close the oven to start roasting the diced red onion.,close oven,,You close the oven.,Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red apple and a white onion. Oh, great. Here's an oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. But the thing is empty, unfortunately. You can see a stove. But the thing is empty, unfortunately.",You are carrying: a knife.,2 of 5,0.4,False,
+10,,I closed the oven with the diced red onion inside.,I should check the cookbook for the next step in the recipe.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red onion
+
+Directions:
+dice the red onion
+  roast the red onion
+  prepare meal",Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red apple and a white onion. Oh, great. Here's an oven. Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. But the thing is empty, unfortunately. You can see a stove. But the thing is empty, unfortunately.",You are carrying: a knife.,2 of 5,0.4,False,
+11,,"I examined the cookbook and reviewed the recipe steps: dice the red onion, roast the red onion, and prepare the meal.","Since the red onion is roasting in the oven, I should wait until it is done and then prepare the meal.",open oven,,"You open the oven, revealing a diced red onion.",Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red apple and a white onion. Oh, great. Here's an oven. The oven contains a diced red onion. Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. But the thing is empty, unfortunately. You can see a stove. But the thing is empty, unfortunately.",You are carrying: a knife.,2 of 5,0.4,False,
+12,,I opened the oven and found the diced red onion inside.,I should take the diced red onion from the oven to prepare the meal.,take diced red onion from oven,,You take the red onion from the oven.,Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red apple and a white onion. Oh, great. Here's an oven. The oven is empty! What a waste of a day! Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. But the thing is empty, unfortunately. You can see a stove. But the thing is empty, unfortunately.",You are carrying: a diced red onion and a knife.,2 of 5,0.4,False,
+13,,I took the diced red onion from the oven and now I am carrying it.,I should prepare the meal using the diced red onion as per the recipe.,prepare meal,,Something still needs to be cooked.,Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red apple and a white onion. Oh, great. Here's an oven. The oven is empty! What a waste of a day! Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. But the thing is empty, unfortunately. You can see a stove. But the thing is empty, unfortunately.",You are carrying: a diced red onion and a knife.,2 of 5,0.4,False,
+14,,"I tried to prepare the meal, but it said something still needs to be cooked.",I should cook the diced red onion on the stove before preparing the meal.,cook diced red onion with stove,,"You fried the red onion.
+
+
+
+                              *** You lost! ***
+
+You scored 2 out of a possible 5, in 14 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You are in a kitchen. A typical one. You begin looking for stuff.
+
+You can see an opened fridge. The fridge contains a red apple and a white onion. Oh, great. Here's an oven. The oven is empty! What a waste of a day! Look out! It's a- oh, never mind, it's just a table. The table is massive. On the table you can see a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. But the thing is empty, unfortunately. You can see a stove. But the thing is empty, unfortunately.",You are carrying: a diced red onion and a knife.,2 of 5,0.4,True,

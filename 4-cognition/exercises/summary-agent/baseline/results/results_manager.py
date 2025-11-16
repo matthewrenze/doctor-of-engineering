@@ -1,0 +1,36 @@
+import os
+import pandas as pd
+from results.result_row import ResultRow
+from common.parameters import Parameters
+
+class ResultsManager:
+    def __init__(self):
+        self.folder_path = "../data/results"
+        self.results = pd.DataFrame()
+
+    def create(self, params: Parameters):
+        row = ResultRow()
+        row.agent_name = params.agent_name
+        row.model_name = params.model_name
+        row.eval_name = params.eval_name
+        return row
+
+    def add(self, row):
+        self.results = self.results._append(row.__dict__, ignore_index=True)
+
+    def get_table(self):
+        return self.results
+
+    def save(self):
+        # Create the folder if it doesn't exist
+        os.makedirs(self.folder_path, exist_ok=True)
+
+        # Create the file path
+        agent_name = self.results["agent_name"].iloc[0]
+        model_name = self.results["model_name"].iloc[0]
+        eval_name = self.results["eval_name"].iloc[0]
+        file_name = f"{agent_name} - {model_name} - {eval_name}.csv"
+        file_path = f"{self.folder_path}/{file_name}"
+
+        # Save the results
+        self.results.to_csv(file_path, index=False)

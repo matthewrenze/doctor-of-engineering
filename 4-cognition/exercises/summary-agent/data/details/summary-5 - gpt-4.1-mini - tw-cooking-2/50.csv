@@ -1,0 +1,199 @@
+step_id,plan,summary,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a banana, a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?","You are carrying: a red apple, a raw pork chop, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 14,0.0,False,
+1,,I am in the kitchen with various ingredients and tools available.,I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+block of cheese
+  banana
+  carrot
+  red potato
+
+Directions:
+chop the block of cheese
+  roast the block of cheese
+  dice the banana
+  roast the banana
+  slice the carrot
+  fry the carrot
+  dice the red potato
+  roast the red potato
+  prepare meal",Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a banana, a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?","You are carrying: a red apple, a raw pork chop, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 14,0.0,False,
+2,,"I examined the cookbook and found a recipe requiring a block of cheese, banana, carrot, and red potato with detailed preparation steps.","I need to gather the required ingredients from the kitchen and my inventory, starting with the banana and red potato on the counter.",take banana from counter; take red potato from counter; take carrot from counter if available; take block of cheese from fridge if available.,,You can't see any such thing.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a banana, a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?","You are carrying: a red apple, a raw pork chop, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 14,0.0,False,
+3,,I tried to take the carrot and block of cheese but they are not present in the kitchen.,I should take the banana and the raw red potato from the counter since they are available and part of the recipe.,take banana from counter; take raw red potato from counter,,You can't see any such thing.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a banana, a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?","You are carrying: a red apple, a raw pork chop, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 14,0.0,False,
+4,,I attempted to take the banana and raw red potato but was unable to do so.,"I should explicitly take the banana first, then try to take the raw red potato separately.",take banana from counter,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a banana, a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?","You are carrying: a red apple, a raw pork chop, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 14,0.0,False,
+5,,I tried to take the banana but was told I am carrying too many things already.,I should drop some items from my inventory to make space for the recipe ingredients.,drop red apple; drop raw pork chop; drop yellow bell pepper; drop red onion; drop raw yellow potato; drop orange bell pepper,,"Which do you mean, the red apple, the red onion, the red potato or the red hot pepper?",Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a banana, a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?","You are carrying: a red apple, a raw pork chop, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 14,0.0,False,
+6,,I tried to drop multiple items but the system asked for clarification on which specific item to drop.,"I should drop items one by one, starting with the red apple.",drop red apple,,You drop the red apple on the ground.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a banana, a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a red apple on the floor.","You are carrying: a raw pork chop, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 14,0.0,False,
+7,,I dropped the red apple to free up inventory space.,"I should continue dropping items to free more space, next dropping the raw pork chop.",drop raw pork chop,,You drop the pork chop on the ground.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a banana, a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a raw pork chop and a red apple on the floor.","You are carrying: a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 14,0.0,False,
+8,,I dropped the raw pork chop to free up inventory space.,"I should continue dropping items to free more space, next dropping the yellow bell pepper.",drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a banana, a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a yellow bell pepper, a raw pork chop and a red apple on the floor.","You are carrying: a red onion, a raw yellow potato and an orange bell pepper.",0 of 14,0.0,False,
+9,,I dropped the yellow bell pepper to free up inventory space.,"I should continue dropping items to free more space, next dropping the red onion.",drop red onion,,You drop the red onion on the ground.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a banana, a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.",You are carrying: a raw yellow potato and an orange bell pepper.,0 of 14,0.0,False,
+10,,I dropped the red onion to free up inventory space.,"I should continue dropping items to free more space, next dropping the raw yellow potato.",drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a banana, a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.",You are carrying: an orange bell pepper.,0 of 14,0.0,False,
+11,,I dropped the raw yellow potato to free up inventory space.,I should drop the orange bell pepper to free up all inventory space.,drop orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a banana, a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.",You are carrying nothing.,0 of 14,0.0,False,
+12,,I dropped the orange bell pepper to free up all inventory space.,I should take the banana from the counter to start gathering ingredients for the recipe.,take banana from counter,,"You take the banana from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a raw red potato, a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.",You are carrying: a banana.,1 of 14,0.07142857142857142,False,
+13,,I took the banana from the counter.,I should take the raw red potato from the counter next to gather all ingredients for the recipe.,take raw red potato from counter,,"You take the red potato from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a red hot pepper, a raw purple potato, a cookbook and a knife on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.",You are carrying: a raw red potato and a banana.,2 of 14,0.14285714285714285,False,
+14,,I took the raw red potato from the counter.,I should take the knife from the counter to prepare the ingredients.,take knife from counter,,You take the knife from the counter.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a red hot pepper, a raw purple potato and a cookbook on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.","You are carrying: a knife, a raw red potato and a banana.",2 of 14,0.14285714285714285,False,
+15,,I took the knife from the counter.,"I should take the block of cheese from the floor if available, but since it is not mentioned, I will take the raw purple potato from the counter to continue gathering ingredients.",take raw purple potato from counter,,You take the purple potato from the counter.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a red hot pepper and a cookbook on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.","You are carrying: a raw purple potato, a knife, a raw red potato and a banana.",2 of 14,0.14285714285714285,False,
+16,,I took the raw purple potato from the counter.,I should check the floor for the block of cheese since it is required for the recipe and not yet in my inventory.,look floor,,You can't see any such thing.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a red hot pepper and a cookbook on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.","You are carrying: a raw purple potato, a knife, a raw red potato and a banana.",2 of 14,0.14285714285714285,False,
+17,,I looked on the floor but did not find a block of cheese.,I should check inside the fridge for the block of cheese.,open fridge,,"You open the fridge, revealing a carrot, a block of cheese and a white onion.",Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. The fridge contains a carrot, a block of cheese and a white onion. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a red hot pepper and a cookbook on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.","You are carrying: a raw purple potato, a knife, a raw red potato and a banana.",2 of 14,0.14285714285714285,False,
+18,,"I opened the fridge and found a carrot, a block of cheese, and a white onion inside.",I should take the block of cheese from the fridge to have all the required ingredients.,take block of cheese from fridge,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. The fridge contains a carrot, a block of cheese and a white onion. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a red hot pepper and a cookbook on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.","You are carrying: a raw purple potato, a knife, a raw red potato and a banana.",2 of 14,0.14285714285714285,False,
+19,,I tried to take the block of cheese but was told I am carrying too many things.,I should drop the banana to free up inventory space for the block of cheese.,drop banana,,You drop the banana on the ground.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. The fridge contains a carrot, a block of cheese and a white onion. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a red hot pepper and a cookbook on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a banana, an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.","You are carrying: a raw purple potato, a knife and a raw red potato.",2 of 14,0.14285714285714285,False,
+20,,I dropped the banana to free up inventory space.,I should now take the block of cheese from the fridge.,take block of cheese from fridge,,"You take the block of cheese from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. The fridge contains a carrot and a white onion. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a red hot pepper and a cookbook on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a banana, an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.","You are carrying: a block of cheese, a raw purple potato, a knife and a raw red potato.",3 of 14,0.21428571428571427,False,
+21,,I took the block of cheese from the fridge and now have it in my inventory.,I should take the carrot from the fridge to have all ingredients for the recipe.,take carrot from fridge,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. The fridge contains a carrot and a white onion. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a red hot pepper and a cookbook on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a banana, an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.","You are carrying: a block of cheese, a raw purple potato, a knife and a raw red potato.",3 of 14,0.21428571428571427,False,
+22,,I tried to take the carrot from the fridge but was told I am carrying too many things.,I should drop the raw purple potato to free up inventory space for the carrot.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. The fridge contains a carrot and a white onion. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a red hot pepper and a cookbook on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a raw purple potato, a banana, an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.","You are carrying: a block of cheese, a knife and a raw red potato.",3 of 14,0.21428571428571427,False,
+23,,I dropped the raw purple potato to free up inventory space.,I should now take the carrot from the fridge.,take carrot from fridge,,"You take the carrot from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. The fridge contains a white onion. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a red hot pepper and a cookbook on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a raw purple potato, a banana, an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.","You are carrying: a carrot, a block of cheese, a knife and a raw red potato.",4 of 14,0.2857142857142857,False,
+24,,I took the carrot from the fridge and now have it in my inventory.,I should prepare the ingredients by dicing the carrot and potatoes with the knife.,dice carrot with knife,,"You dice the carrot.
+
+
+
+                              *** You lost! ***
+
+You scored 4 out of a possible 14, in 20 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You are in a kitchen. A standard one. You can barely contain your excitement.
+
+You make out a fridge. The fridge contains a white onion. You see an oven. You can make out a table. But the thing is empty, unfortunately. You see a counter. You see a red hot pepper and a cookbook on the counter. You shudder, but continue examining the room. You see a stove. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a raw purple potato, a banana, an orange bell pepper, a raw yellow potato, a red onion, a yellow bell pepper, a raw pork chop and a red apple on the floor.","You are carrying: a carrot, a block of cheese, a knife and a raw red potato.",4 of 14,0.2857142857142857,True,
