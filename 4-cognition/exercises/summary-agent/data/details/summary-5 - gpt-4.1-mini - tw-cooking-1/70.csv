@@ -2,7 +2,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"Well how about that, you are in a place we're calling a kitchen.
 
 You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a fridge. I mean, just wow! Isn't TextWorld just the best? You can make out an oven. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a table. The table is massive. On the table you see a cookbook. You see a counter. You see a chopped raw red potato and a raw purple potato on the counter. You can see a stove. Looks like someone's already been here and taken everything off it, though. Oh! Why couldn't there just be stuff on it?",You are carrying nothing.,0 of 4,0.0,False,
-1,,"I am in the kitchen with a cookbook on the table, a chopped raw red potato and a raw purple potato on the counter, and an oven and stove present.",I should examine the cookbook on the table to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,I am in the kitchen with a cookbook on the table and some potatoes on the counter.,I should examine the cookbook on the table to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -17,28 +17,31 @@ chop the red potato
   prepare meal",Kitchen,"Well how about that, you are in a place we're calling a kitchen.
 
 You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a fridge. I mean, just wow! Isn't TextWorld just the best? You can make out an oven. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a table. The table is massive. On the table you see a cookbook. You see a counter. You see a chopped raw red potato and a raw purple potato on the counter. You can see a stove. Looks like someone's already been here and taken everything off it, though. Oh! Why couldn't there just be stuff on it?",You are carrying nothing.,0 of 4,0.0,False,
-2,,"I examined the cookbook and found a recipe that requires a red potato to be chopped, fried, and then prepared as a meal.","Since the red potato is already chopped on the counter, I should take the chopped red potato and fry it on the stove.",take chopped raw red potato from counter,,"You take the red potato from the counter.
+2,,"I examined the cookbook and found a recipe that requires a red potato to be chopped, fried, and then prepared as a meal.","The red potato is already chopped on the counter, so I should take the chopped raw red potato and fry it on the stove.",take chopped raw red potato from counter,,"You take the red potato from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"Well how about that, you are in a place we're calling a kitchen.
 
 You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a fridge. I mean, just wow! Isn't TextWorld just the best? You can make out an oven. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a table. The table is massive. On the table you see a cookbook. You see a counter. You see a raw purple potato on the counter. You can see a stove. Looks like someone's already been here and taken everything off it, though. Oh! Why couldn't there just be stuff on it?",You are carrying: a chopped raw red potato.,1 of 4,0.25,False,
-3,,I took the chopped raw red potato from the counter and am now carrying it.,I should fry the chopped raw red potato on the stove as per the recipe.,cook chopped raw red potato with stove,,"You fried the red potato.
+3,,I took the chopped raw red potato from the counter and now I am carrying it.,I should fry the chopped raw red potato on the stove as per the recipe.,fry chopped raw red potato with stove,,That's not a verb I recognise.,Kitchen,"Well how about that, you are in a place we're calling a kitchen.
+
+You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a fridge. I mean, just wow! Isn't TextWorld just the best? You can make out an oven. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a table. The table is massive. On the table you see a cookbook. You see a counter. You see a raw purple potato on the counter. You can see a stove. Looks like someone's already been here and taken everything off it, though. Oh! Why couldn't there just be stuff on it?",You are carrying: a chopped raw red potato.,1 of 4,0.25,False,
+4,,"I tried to fry the chopped raw red potato with the stove, but the command was not recognized.","I should try using the command ""cook"" instead of ""fry"" to cook the chopped raw red potato with the stove.",cook chopped raw red potato with stove,,"You fried the red potato.
 
 
 
 Your score has just gone up by one point.",Kitchen,"Well how about that, you are in a place we're calling a kitchen.
 
 You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a fridge. I mean, just wow! Isn't TextWorld just the best? You can make out an oven. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a table. The table is massive. On the table you see a cookbook. You see a counter. You see a raw purple potato on the counter. You can see a stove. Looks like someone's already been here and taken everything off it, though. Oh! Why couldn't there just be stuff on it?",You are carrying: a chopped fried red potato.,2 of 4,0.5,False,
-4,,I fried the chopped raw red potato on the stove and now have a chopped fried red potato.,I should now prepare the meal using the chopped fried red potato as the recipe instructs.,prepare meal,,"Adding the meal to your inventory.
+5,,"I cooked the chopped raw red potato with the stove, successfully frying it.","The recipe says to prepare the meal after frying the potato, so I should now prepare the meal.",prepare meal,,"Adding the meal to your inventory.
 
 
 
 Your score has just gone up by one point.",Kitchen,"Well how about that, you are in a place we're calling a kitchen.
 
 You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a fridge. I mean, just wow! Isn't TextWorld just the best? You can make out an oven. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a table. The table is massive. On the table you see a cookbook. You see a counter. You see a raw purple potato on the counter. You can see a stove. Looks like someone's already been here and taken everything off it, though. Oh! Why couldn't there just be stuff on it?",You are carrying: a meal.,3 of 4,0.75,False,
-5,,I prepared the meal using the chopped fried red potato and now have a meal in my inventory.,"Since I am hungry, I should eat the meal to enjoy it.",eat meal,,"You eat the meal. Not bad.
+6,,I prepared the meal and added it to my inventory.,I should now eat the meal to enjoy it as the final step.,eat meal,,"You eat the meal. Not bad.
 
 
 Your score has just gone up by one point.

@@ -4,12 +4,12 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 You bend down to tie your shoe. When you stand up, you notice a suitcase. You make out a locked typical looking locker in the room. You scan the room for a recliner, and you find a recliner. The recliner is ordinary. The recliner appears to be empty.
 
 There is a closed gate leading west. There is an open portal leading east. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the chamber with a closed gate leading west.,I should open the gate in the chamber as the first step.,open gate,,You open gate.,Chamber,"You've entered a chamber. Okay, just remember what you're here to do, and everything will go great.
+1,,I am in the chamber.,I should open the gate in the chamber first.,open gate,,You open gate.,Chamber,"You've entered a chamber. Okay, just remember what you're here to do, and everything will go great.
 
 You bend down to tie your shoe. When you stand up, you notice a suitcase. You make out a locked typical looking locker in the room. You scan the room for a recliner, and you find a recliner. The recliner is ordinary. The recliner appears to be empty.
 
 There is an open gate leading west. There is an open portal leading east. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I opened the gate in the chamber; the gate is now open leading west.,I should go west through the open gate.,go west,,"You've just walked into a parlor.
+2,,I opened the gate in the chamber; the gate is now open.,I should go west through the open gate.,go west,,"You've just walked into a parlor.
 
 
 
@@ -22,17 +22,17 @@ There is a keycard on the floor.",Parlor,"You've just walked into a parlor.
 There is an open gate leading east. There is a closed passageway leading north. You don't like doors? Why not try going west, that entranceway is unguarded.
 
 There is a keycard on the floor.",You are carrying nothing.,0 of 1,0.0,False,
-3,,I went west into the parlor; there is a keycard on the floor.,I should take the keycard from the floor.,take keycard from floor,,You pick up the keycard from the ground.,Parlor,"You've just walked into a parlor.
+3,,I went west into the parlor; I see a keycard on the floor.,I should take the keycard from the floor.,take keycard from floor,,You pick up the keycard from the ground.,Parlor,"You've just walked into a parlor.
 
 
 
 There is an open gate leading east. There is a closed passageway leading north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying: a keycard.,0 of 1,0.0,False,
-4,,I picked up the keycard from the floor in the parlor.,I should check if the passageway leading north in the parlor is unlocked with the keycard.,unlock passageway with keycard,,You unlock passageway.,Parlor,"You've just walked into a parlor.
+4,,I took the keycard from the floor; now I am carrying it.,I should check if the passageway is unlocked with the keycard.,unlock passageway with keycard,,You unlock passageway.,Parlor,"You've just walked into a parlor.
 
 
 
 There is an open gate leading east. There is a closed passageway leading north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying: a keycard.,0 of 1,0.0,False,
-5,,I unlocked the passageway in the parlor with the keycard; the passageway is now unlocked.,I should look around to confirm that the passageway in the parlor is wide open.,look,,"You've just walked into a parlor.
+5,,I unlocked the passageway with the keycard; the passageway is now unlocked.,I should look around to see that the passageway in the parlor is wide open.,look,,"You've just walked into a parlor.
 
 
 
@@ -41,17 +41,22 @@ There is an open gate leading east. There is a closed passageway leading north. 
 
 
 There is an open gate leading east. There is a closed passageway leading north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying: a keycard.,0 of 1,0.0,False,
-6,,I unlocked the passageway in the parlor with the keycard; the passageway is now unlocked.,I should go north through the passageway in the parlor.,go north,,You have to open the passageway first.,Parlor,"You've just walked into a parlor.
+6,,I looked around in the parlor; the passageway is still described as closed.,"The passageway is still described as closed, so I should try going north to see if I can access it.",go north,,You have to open the passageway first.,Parlor,"You've just walked into a parlor.
 
 
 
 There is an open gate leading east. There is a closed passageway leading north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying: a keycard.,0 of 1,0.0,False,
-7,,"I tried to unlock the passageway in the parlor with the keycard, but I need to open the passageway first.",I should open the passageway in the parlor before going north.,open passageway,,You open passageway.,Parlor,"You've just walked into a parlor.
+7,,I tried to go north but was told I have to open the passageway first.,"Since the passageway is locked and I have the keycard, I should try to open the passageway using the keycard.",open passageway with keycard,,That's unlocked at the moment.,Parlor,"You've just walked into a parlor.
+
+
+
+There is an open gate leading east. There is a closed passageway leading north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying: a keycard.,0 of 1,0.0,False,
+8,,"I tried to open the passageway with the keycard, but it is already unlocked and still closed.","Since the passageway is unlocked but closed, I should open the passageway door itself.",open passageway,,You open passageway.,Parlor,"You've just walked into a parlor.
 
 
 
 There is an open gate leading east. There is an open passageway leading north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying: a keycard.,0 of 1,0.0,False,
-8,,I opened the passageway in the parlor; the passageway is now open leading north.,I should go north through the open passageway.,go north,,"You find yourself in a bathroom. A standard kind of place.
+9,,I opened the passageway door; it is now open.,I should go north through the open passageway.,go north,,"You find yourself in a bathroom. A standard kind of place.
 
 You scan the room for a bench, and you find a bench. The bench is typical. On the bench you can make out a rectangular key.
 
@@ -60,12 +65,12 @@ There is an open passageway leading south. There is an open door leading north. 
 You scan the room for a bench, and you find a bench. The bench is typical. On the bench you can make out a rectangular key.
 
 There is an open passageway leading south. There is an open door leading north. You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying: a keycard.,0 of 1,0.0,False,
-9,,I went north into the bathroom; I found a bench with a rectangular key on it.,I should take the rectangular key from the bench.,take rectangular key from bench,,You take the rectangular key from the bench.,Bathroom,"You find yourself in a bathroom. A standard kind of place.
+10,,I went north into the bathroom; I see a bench with a rectangular key on it.,I should take the rectangular key from the bench.,take rectangular key from bench,,You take the rectangular key from the bench.,Bathroom,"You find yourself in a bathroom. A standard kind of place.
 
 You scan the room for a bench, and you find a bench. The bench is typical. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
 
 There is an open passageway leading south. There is an open door leading north. You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying: a rectangular key and a keycard.,0 of 1,0.0,False,
-10,,I took the rectangular key from the bench in the bathroom.,I should go west from the bathroom to continue following the instructions.,go west,,"You have walked into a pantry. Not the pantry you'd expect. No, this is a pantry. You begin looking for stuff.
+11,,I took the rectangular key from the bench; now I am carrying it along with the keycard.,I should go west to the pantry.,go west,,"You have walked into a pantry. Not the pantry you'd expect. No, this is a pantry. You begin looking for stuff.
 
 You can see a locked rectangular chest in the corner. Hey, want to see a safe? Look over there, a safe.
 
@@ -74,17 +79,17 @@ You don't like doors? Why not try going east, that entranceway is unblocked.",Pa
 You can see a locked rectangular chest in the corner. Hey, want to see a safe? Look over there, a safe.
 
 You don't like doors? Why not try going east, that entranceway is unblocked.",You are carrying: a rectangular key and a keycard.,0 of 1,0.0,False,
-11,,I went north into the pantry; I see a locked rectangular chest in the corner.,I should use the rectangular key to unlock the rectangular chest.,unlock rectangular chest with rectangular key,,You unlock the rectangular chest.,Pantry,"You have walked into a pantry. Not the pantry you'd expect. No, this is a pantry. You begin looking for stuff.
+12,,I went west into the pantry; I see a locked rectangular chest.,I should unlock the rectangular chest with the rectangular key.,unlock rectangular chest with rectangular key,,You unlock the rectangular chest.,Pantry,"You have walked into a pantry. Not the pantry you'd expect. No, this is a pantry. You begin looking for stuff.
 
 You can see a closed rectangular chest in the corner. Hey, want to see a safe? Look over there, a safe.
 
 You don't like doors? Why not try going east, that entranceway is unblocked.",You are carrying: a rectangular key and a keycard.,0 of 1,0.0,False,
-12,,I unlocked the rectangular chest in the pantry; the chest is now unlocked.,I should open the rectangular chest in the pantry to see what's inside.,open rectangular chest,,"You open the rectangular chest, revealing a candy bar.",Pantry,"You have walked into a pantry. Not the pantry you'd expect. No, this is a pantry. You begin looking for stuff.
+13,,I unlocked the rectangular chest with the rectangular key; the chest is now unlocked.,I should open the rectangular chest to check its contents.,open rectangular chest,,"You open the rectangular chest, revealing a candy bar.",Pantry,"You have walked into a pantry. Not the pantry you'd expect. No, this is a pantry. You begin looking for stuff.
 
 You can see an opened rectangular chest in the corner. The rectangular chest contains a candy bar. You wonder idly who left that here. Hey, want to see a safe? Look over there, a safe.
 
 You don't like doors? Why not try going east, that entranceway is unblocked.",You are carrying: a rectangular key and a keycard.,0 of 1,0.0,False,
-13,,"I opened the rectangular chest in the pantry, revealing a candy bar inside.",I should take the candy bar from the opened rectangular chest in the pantry.,take candy bar from rectangular chest,,"You take the candy bar from the rectangular chest.
+14,,I opened the rectangular chest; it contains a candy bar.,I should take the candy bar from the rectangular chest.,take candy bar from rectangular chest,,"You take the candy bar from the rectangular chest.
 
 
 
@@ -93,7 +98,7 @@ Your score has just gone up by one point.
 
                                *** The End ***
 
-You scored 1 out of a possible 1, in 14 turns.
+You scored 1 out of a possible 1, in 15 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

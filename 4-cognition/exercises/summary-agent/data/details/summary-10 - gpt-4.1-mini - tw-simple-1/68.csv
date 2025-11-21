@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 You can make out a closed chest drawer. You make out a closed antique trunk. You can make out a king-size bed. The king-size bed is ordinary. The king-size bed appears to be empty.
 
 There is a closed wooden door leading east.",You are carrying nothing.,0 of 10,0.0,False,
-1,,I am in the bedroom.,I should look around the bedroom to gather more information about the objects and possible actions.,look,,"You find yourself in a bedroom. An usual one.
+1,,I am in the bedroom.,I should look around the bedroom to gather more information about the objects present.,look,,"You find yourself in a bedroom. An usual one.
 
 You can make out a closed chest drawer. You make out a closed antique trunk. You can make out a king-size bed. The king-size bed is ordinary. The king-size bed appears to be empty.
 
@@ -13,7 +13,7 @@ There is a closed wooden door leading east.",Bedroom,"You find yourself in a bed
 You can make out a closed chest drawer. You make out a closed antique trunk. You can make out a king-size bed. The king-size bed is ordinary. The king-size bed appears to be empty.
 
 There is a closed wooden door leading east.",You are carrying nothing.,0 of 10,0.0,False,
-2,,I looked around the bedroom; the objects and door are still the same.,I should try to open the chest drawer to see if there is anything useful inside.,open chest drawer,,"You open the chest drawer, revealing an old key.
+2,,"I looked around the bedroom; I see a closed chest drawer, a closed antique trunk, an empty king-size bed, and a closed wooden door leading east.",I should try to open the chest drawer to see if there is anything useful inside.,open chest drawer,,"You open the chest drawer, revealing an old key.
 
 
 Your score has just gone up by one point.",Bedroom,"You find yourself in a bedroom. An usual one.
@@ -45,7 +45,7 @@ There is a closed wooden door leading east.",You are carrying: an old key.,2 of 
 You can make out an opened chest drawer. The chest drawer is empty! This is the worst thing that could possibly happen, ever! You make out an opened antique trunk. The antique trunk is empty! What a waste of a day! You can make out a king-size bed. The king-size bed is ordinary. The king-size bed appears to be empty.
 
 There is a closed wooden door leading east.",You are carrying: an old key.,2 of 10,0.2,False,
-7,,"I tried to open the wooden door, but it is locked and requires the old key.",I should unlock the wooden door with the old key.,unlock wooden door with old key,,"You unlock wooden door.
+7,,"I tried to open the wooden door, but it is locked and requires the old key.",I should unlock the wooden door with the old key before trying to open it.,unlock wooden door with old key,,"You unlock wooden door.
 
 
 Your score has just gone up by one point.",Bedroom,"You find yourself in a bedroom. An usual one.
@@ -53,7 +53,7 @@ Your score has just gone up by one point.",Bedroom,"You find yourself in a bedro
 You can make out an opened chest drawer. The chest drawer is empty! This is the worst thing that could possibly happen, ever! You make out an opened antique trunk. The antique trunk is empty! What a waste of a day! You can make out a king-size bed. The king-size bed is ordinary. The king-size bed appears to be empty.
 
 There is a closed wooden door leading east.",You are carrying: an old key.,3 of 10,0.3,False,
-8,,I unlocked the wooden door with the old key.,I should now open the wooden door to proceed east.,open wooden door,,"You open wooden door.
+8,,I unlocked the wooden door with the old key.,I should open the wooden door now that it is unlocked.,open wooden door,,"You open wooden door.
 
 
 Your score has just gone up by one point.",Bedroom,"You find yourself in a bedroom. An usual one.
@@ -74,22 +74,32 @@ Your score has just gone up by one point.",Kitchen,"You've just walked into a ki
 You see a closed refrigerator. Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. You see a note on the kitchen island.
 
 There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: an old key.,5 of 10,0.5,False,
-10,,I went east through the wooden door and entered the kitchen.,I should examine the note on the kitchen island to see if it contains useful information.,examine note on kitchen island,,I only understood you as far as wanting to examine the note.,Kitchen,"You've just walked into a kitchen.
+10,,"I went east through the open wooden door and entered the kitchen, where I see a closed refrigerator, an empty counter, an empty stove, a kitchen island with a note on it, a closed screen door to the east, an open wooden door to the west, an unguarded entranceway to the north, and an unblocked exit to the south.",I should examine the note on the kitchen island to see if it contains any useful information.,examine note on kitchen island,,I only understood you as far as wanting to examine the note.,Kitchen,"You've just walked into a kitchen.
 
 You see a closed refrigerator. Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. You see a note on the kitchen island.
 
 There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: an old key.,5 of 10,0.5,False,
-11,,"I tried to examine the note on the kitchen island, but the command was not understood.",I should try to take the note from the kitchen island to read it.,take note from kitchen island,,You take the note from the kitchen island.,Kitchen,"You've just walked into a kitchen.
+11,,"I attempted to examine the note on the kitchen island, but the command was not understood.",I should try a simpler command to examine the note.,examine note,,The dinner is almost ready! It's only missing a grilled bell pepper.,Kitchen,"You've just walked into a kitchen.
 
-You see a closed refrigerator. Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. Unfortunately, there isn't a thing on it.
+You see a closed refrigerator. Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. You see a note on the kitchen island.
 
-There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: a note and an old key.,5 of 10,0.5,False,
-12,,I took the note from the kitchen island; now I am carrying it.,I should examine the note in my inventory to read its contents.,examine note,,The dinner is almost ready! It's only missing a grilled bell pepper.,Kitchen,"You've just walked into a kitchen.
+There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: an old key.,5 of 10,0.5,False,
+12,,I examined the note on the kitchen island; it says the dinner is almost ready and is only missing a grilled bell pepper.,I should look around the kitchen to find a bell pepper to grill.,look counter,,The counter is an unstable piece of trash.,Kitchen,"You've just walked into a kitchen.
 
-You see a closed refrigerator. Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. Unfortunately, there isn't a thing on it.
+You see a closed refrigerator. Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. You see a note on the kitchen island.
 
-There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: a note and an old key.,5 of 10,0.5,False,
-13,,"I examined the note and learned that the dinner is almost ready, only missing a grilled bell pepper.",I should go north through the unguarded entranceway to look for a bell pepper.,go north,,"Well, here we are in a bathroom.
+There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: an old key.,5 of 10,0.5,False,
+13,,"I looked at the counter, but it is empty and unstable.",I should check the refrigerator to see if there is a bell pepper inside.,open refrigerator,,"You open the refrigerator, revealing a milk and a tomato plant.",Kitchen,"You've just walked into a kitchen.
+
+You see an opened refrigerator. The refrigerator contains a milk and a tomato plant. Now why would someone leave that there? Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. You see a note on the kitchen island.
+
+There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: an old key.,5 of 10,0.5,False,
+14,,I opened the refrigerator and found milk and a tomato plant inside.,"Since there is no bell pepper in the refrigerator, I should check the tomato plant to see if it can help or if there is a bell pepper nearby.",examine tomato plant,,You couldn't pay me to eat that standard thing.,Kitchen,"You've just walked into a kitchen.
+
+You see an opened refrigerator. The refrigerator contains a milk and a tomato plant. Now why would someone leave that there? Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. You see a note on the kitchen island.
+
+There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: an old key.,5 of 10,0.5,False,
+15,,"I examined the tomato plant, but it is not edible or useful for the grilled bell pepper.",I should explore the other exits in the kitchen to find a bell pepper.,go north,,"Well, here we are in a bathroom.
 
 You see a closed toilet. You can see a closed bath. Look over there! a sink. On the sink you make out a toothbrush.
 
@@ -97,35 +107,25 @@ There is an exit to the south. Don't worry, it is unblocked.",Bathroom,"Well, he
 
 You see a closed toilet. You can see a closed bath. Look over there! a sink. On the sink you make out a toothbrush.
 
-There is an exit to the south. Don't worry, it is unblocked.",You are carrying: a note and an old key.,5 of 10,0.5,False,
-14,,I went north and entered the bathroom.,"Since there is no bell pepper here, I should go back south to the kitchen and explore other directions.",go south,,"You've just walked into a kitchen.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying: an old key.,5 of 10,0.5,False,
+16,,"I went north from the kitchen and entered the bathroom, where I see a closed toilet, a closed bath, a sink with a toothbrush on it, and an unblocked exit to the south.",I should go back south to the kitchen and explore other exits to find the bell pepper.,go south,,"You've just walked into a kitchen.
 
-You see a closed refrigerator. Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. Unfortunately, there isn't a thing on it.
+You see an opened refrigerator. The refrigerator contains a milk and a tomato plant. Now why would someone leave that there? Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. You see a note on the kitchen island.
 
 There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",Kitchen,"You've just walked into a kitchen.
 
-You see a closed refrigerator. Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. Unfortunately, there isn't a thing on it.
+You see an opened refrigerator. The refrigerator contains a milk and a tomato plant. Now why would someone leave that there? Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. You see a note on the kitchen island.
 
-There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: a note and an old key.,5 of 10,0.5,False,
-15,,I went south back to the kitchen.,I should try to open the closed refrigerator to see if there is a bell pepper inside.,open refrigerator,,"You open the refrigerator, revealing a milk and a tomato plant.",Kitchen,"You've just walked into a kitchen.
-
-You see an opened refrigerator. The refrigerator contains a milk and a tomato plant. Now why would someone leave that there? Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. Unfortunately, there isn't a thing on it.
-
-There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: a note and an old key.,5 of 10,0.5,False,
-16,,I opened the refrigerator and found milk and a tomato plant inside.,"Since there is no bell pepper in the refrigerator, I should check the tomato plant to see if it can help.",examine tomato plant,,You couldn't pay me to eat that standard thing.,Kitchen,"You've just walked into a kitchen.
-
-You see an opened refrigerator. The refrigerator contains a milk and a tomato plant. Now why would someone leave that there? Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. Unfortunately, there isn't a thing on it.
-
-There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: a note and an old key.,5 of 10,0.5,False,
-17,,I examined the tomato plant but it is not edible.,I should try to open the closed screen door leading east to see if there is a bell pepper beyond it.,open screen door,,"You open screen door.
+There is a closed screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: an old key.,5 of 10,0.5,False,
+17,,I returned south to the kitchen from the bathroom.,I should try going east through the closed screen door to see if I can find the bell pepper.,open screen door,,"You open screen door.
 
 
 Your score has just gone up by one point.",Kitchen,"You've just walked into a kitchen.
 
-You see an opened refrigerator. The refrigerator contains a milk and a tomato plant. Now why would someone leave that there? Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. Unfortunately, there isn't a thing on it.
+You see an opened refrigerator. The refrigerator contains a milk and a tomato plant. Now why would someone leave that there? Hey, want to see a counter? Look over there, a counter. However, the counter, like an empty counter, has nothing on it. You make out a stove. Now why would someone leave that there? But the thing is empty, unfortunately. It would have been so cool if there was stuff on the stove. You make out a kitchen island. You see a note on the kitchen island.
 
-There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: a note and an old key.,6 of 10,0.6,False,
-18,,I opened the screen door leading east.,I should go east through the open screen door to explore what is beyond.,go east,,"Ah, the backyard. This is some kind of backyard, really great standard vibes in this place, a wonderful standard atmosphere. Okay, just remember what you're here to do, and everything will go great.
+There is an open screen door leading east. There is an open wooden door leading west. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unblocked exit to the south.",You are carrying: an old key.,6 of 10,0.6,False,
+18,,I opened the screen door leading east.,I should go east through the open screen door to explore the next area.,go east,,"Ah, the backyard. This is some kind of backyard, really great standard vibes in this place, a wonderful standard atmosphere. Okay, just remember what you're here to do, and everything will go great.
 
 You can make out a set of chairs. The set of chairs is typical. But there isn't a thing on it. Sometimes, just sometimes, TextWorld can just be the worst. You rest your hand against a wall, but you miss the wall and fall onto a bbq. Looks like someone's already been here and taken everything off it, though. You make out a patio table. Why don't you take a picture of it, it'll last longer! But there isn't a thing on it.
 
@@ -137,8 +137,8 @@ Your score has just gone up by one point.",Backyard,"Ah, the backyard. This is s
 
 You can make out a set of chairs. The set of chairs is typical. But there isn't a thing on it. Sometimes, just sometimes, TextWorld can just be the worst. You rest your hand against a wall, but you miss the wall and fall onto a bbq. Looks like someone's already been here and taken everything off it, though. You make out a patio table. Why don't you take a picture of it, it'll last longer! But there isn't a thing on it.
 
-There is an open screen door leading west. There is an unblocked exit to the south.",You are carrying: a note and an old key.,7 of 10,0.7,False,
-19,,I went east through the screen door and entered the backyard.,"Since there is nothing on the chairs, bbq, or patio table, I should go south to explore further.",go south,,"You find yourself in a garden. An ordinary one.
+There is an open screen door leading west. There is an unblocked exit to the south.",You are carrying: an old key.,7 of 10,0.7,False,
+19,,"I went east through the open screen door and entered the backyard, which has a set of chairs, a bbq with nothing on it, and a patio table with nothing on it. There is an open screen door leading west and an unblocked exit to the south.",I should go south through the unblocked exit to explore further for the bell pepper.,go south,,"You find yourself in a garden. An ordinary one.
 
 
 
@@ -153,8 +153,8 @@ Your score has just gone up by one point.",Garden,"You find yourself in a garden
 
 There is an exit to the north. Don't worry, it is unguarded.
 
-There is a lettuce, a bell pepper, a half of a bag of chips and a shovel on the floor.",You are carrying: a note and an old key.,8 of 10,0.8,False,
-20,,"I went south and entered the garden where I found a lettuce, a bell pepper, a half of a bag of chips, and a shovel on the floor.",I should take the bell pepper from the floor since it is the missing ingredient for the dinner.,take bell pepper from floor,,"You pick up the bell pepper from the ground.
+There is a lettuce, a bell pepper, a half of a bag of chips and a shovel on the floor.",You are carrying: an old key.,8 of 10,0.8,False,
+20,,"I went south from the backyard and entered a garden where I see a lettuce, a bell pepper, a half of a bag of chips, and a shovel on the floor, with an unguarded exit to the north.",I should take the bell pepper from the floor to prepare the grilled bell pepper.,take bell pepper from floor,,"You pick up the bell pepper from the ground.
 
 
 
@@ -164,4 +164,4 @@ Your score has just gone up by one point.",Garden,"You find yourself in a garden
 
 There is an exit to the north. Don't worry, it is unguarded.
 
-There is a lettuce, a half of a bag of chips and a shovel on the floor.","You are carrying: a bell pepper, a note and an old key.",9 of 10,0.9,True,
+There is a lettuce, a half of a bag of chips and a shovel on the floor.",You are carrying: a bell pepper and an old key.,9 of 10,0.9,True,

@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the Fun Recreation Zone.,I should travel south as the first step.,go south,,"If you're wondering why everything seems so roomy all of a sudden, it's because you've just shown up in the roomy vault. You begin to take stock of what's in the room.
+1,,I am in the Fun Recreation Zone.,I need to travel south first as instructed.,go south,,"If you're wondering why everything seems so roomy all of a sudden, it's because you've just shown up in the roomy vault. You begin to take stock of what's in the room.
 
 
 
@@ -13,7 +13,7 @@ You need an unblocked exit? You should try going east. You need an unblocked exi
 
 
 You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I moved south to the Roomy Vault.,I should now try to move south again as instructed.,go south,,"You are in a cubicle. A normal kind of place.
+2,,I traveled south to the Roomy Vault.,I should travel south again as the next step is to take a trip south.,go south,,"You are in a cubicle. A normal kind of place.
 
 
 
@@ -22,7 +22,7 @@ There is an exit to the north. Don't worry, it is unblocked. You need an unguard
 
 
 There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-3,,I moved south to the Roomy Vault and then moved south again to the Cubicle.,I should continue following the instructions by moving south once more.,go south,,"You find yourself in a cellar. A spacious kind of place.
+3,,I went south to the Cubicle.,I should go south again as the next step is to venture south.,go south,,"You find yourself in a cellar. A spacious kind of place.
 
 
 
@@ -31,7 +31,7 @@ You don't like doors? Why not try going north, that entranceway is unblocked. Yo
 
 
 You don't like doors? Why not try going north, that entranceway is unblocked. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I moved south twice and arrived in the Spacious Cellar.,I should go west as the exit to the west is unblocked.,go west,,"You are in a spare room. A cramped one.
+4,,I went south to the Spacious Cellar.,I should go west next as the instructions say to go west after venturing south.,go west,,"You are in a spare room. A cramped one.
 
 
 
@@ -40,7 +40,7 @@ You don't like doors? Why not try going east, that entranceway is unblocked. You
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I moved south twice and arrived in the Cramped Spare Room.,I should go west as the entranceway is unblocked.,go west,,"You've just shown up in a laundromat.
+5,,I went west to the Cramped Spare Room.,I should venture west next as per the instructions.,go west,,"You've just shown up in a laundromat.
 
 
 
@@ -49,7 +49,53 @@ There is an exit to the east. Don't worry, it is unblocked. There is an unguarde
 
 
 There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I moved south twice and arrived in the Laundromat.,I should now move west as the next step in the sequence.,go west,,"Well, here we are in a sweaty canteen.
+6,,I went west to the Laundromat.,I should attempt to venture south next as instructed.,go south,,"You've entered a clean restroom.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded.",Clean Restroom,"You've entered a clean restroom.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+7,,I went south to the Clean Restroom.,I should now try to venture south again as per the instructions.,go south,,You can't go that way.,Clean Restroom,"You've entered a clean restroom.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+8,,I tried to go south from the Clean Restroom but couldn't.,"Since going south is not possible, I will try to go west as the next step in the instructions.",go west,,You can't go that way.,Clean Restroom,"You've entered a clean restroom.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+9,,I tried to go west from the Clean Restroom but couldn't.,"Since west is not possible, I will try to go north as suggested by the environment.",go north,,"You've just shown up in a laundromat.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Laundromat,"You've just shown up in a laundromat.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I went north from the Clean Restroom to the Laundromat.,I should now try to go south from the Laundromat as it is unguarded.,go south,,"You've entered a clean restroom.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded.",Clean Restroom,"You've entered a clean restroom.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I went south from the Laundromat to the Clean Restroom.,I should now go north from the Clean Restroom since the entranceway is unguarded.,go north,,"You've just shown up in a laundromat.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Laundromat,"You've just shown up in a laundromat.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I went north from the Clean Restroom to the Laundromat.,I should go west from the Laundromat as it is unblocked.,go west,,"Well, here we are in a sweaty canteen.
 
 
 
@@ -58,7 +104,7 @@ There is an unguarded exit to the east. There is an unblocked exit to the south.
 
 
 There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I moved south twice and arrived in the Sweaty Canteen.,I should now move west as the next step in the sequence.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
+13,,I went west from the Laundromat to the Sweaty Canteen.,I should go west again from the Sweaty Canteen as the exit is unguarded.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -67,7 +113,7 @@ You need an unguarded exit? You should try going east.",Spotless Shower,"You're 
 
 
 You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I moved south multiple times and arrived in the Spotless Shower.,I should go east as suggested to continue following the instructions.,go east,,"Well, here we are in a sweaty canteen.
+14,,I went west from the Sweaty Canteen to the Spotless Shower.,I should go east from the Spotless Shower to return to the Sweaty Canteen.,go east,,"Well, here we are in a sweaty canteen.
 
 
 
@@ -76,7 +122,7 @@ There is an unguarded exit to the east. There is an unblocked exit to the south.
 
 
 There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I moved south multiple times and arrived in the Sweaty Canteen.,I should go west from the Sweaty Canteen as the next step in the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
+15,,I went east from the Spotless Shower to the Sweaty Canteen.,I should go west from the Sweaty Canteen to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -85,7 +131,7 @@ You need an unguarded exit? You should try going east.",Spotless Shower,"You're 
 
 
 You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I moved south multiple times and arrived in the Spotless Shower.,I should go east as suggested to continue following the instructions.,go east,,"Well, here we are in a sweaty canteen.
+16,,I went west from the Sweaty Canteen to the Spotless Shower.,I should go east from the Spotless Shower to continue following the instructions.,go east,,"Well, here we are in a sweaty canteen.
 
 
 
@@ -94,493 +140,7 @@ There is an unguarded exit to the east. There is an unblocked exit to the south.
 
 
 There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I moved south multiple times and arrived in the Sweaty Canteen.,I should go west from the Sweaty Canteen as the next step in the sequence.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I moved south multiple times and arrived in the Spotless Shower.,I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I moved south multiple times and arrived in the Sweaty Canteen.,I should go west from the Sweaty Canteen as the next step in the sequence.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I moved south multiple times and arrived in the Spotless Shower.,I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I moved south multiple times and arrived in the Sweaty Canteen.,I should go west as the next step in the sequence is to go west.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I moved south multiple times and arrived in the Spotless Shower.,I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I moved south multiple times and arrived in the Sweaty Canteen.,I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I moved south multiple times and arrived in the Spotless Shower.,I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I moved south multiple times and arrived in the Sweaty Canteen.,I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I moved south multiple times and arrived in the Spotless Shower.,I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I moved south multiple times and arrived in the Sweaty Canteen.,I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I moved south multiple times and arrived in the Spotless Shower.,I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I arrived in the Sweaty Canteen.,I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I moved south multiple times and arrived in the Spotless Shower.,I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I moved south multiple times and arrived in the Sweaty Canteen.,I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I moved south multiple times and arrived in the Spotless Shower.,I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I arrived in the Sweaty Canteen.,I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I arrived in the Spotless Shower.,I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I arrived in the Sweaty Canteen.,I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I arrived in the Spotless Shower.,I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I arrived in the Sweaty Canteen.,I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I arrived in the Spotless Shower.,I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I arrived in the Sweaty Canteen.,I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I arrived in the Spotless Shower.,I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I arrived in the Sweaty Canteen.,I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I arrived in the Spotless Shower.,I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I arrived in the Sweaty Canteen.,I should go west to continue exploring as per the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I arrived in the Spotless Shower.,I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-39,,"I am in the Sweaty Canteen with exits to the east, south, and west.",I should go west to continue exploring as per the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-40,,"I arrived in the Spotless Shower, which has exits to the east, south, and west.",I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-41,,"I arrived in the Sweaty Canteen, which has exits to the east, south, and west.",I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-42,,"I arrived in the Spotless Shower, which has exits to the east, south, and west.",I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-43,,"I arrived in the Sweaty Canteen, which has exits to the east, south, and west.",I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-44,,"I arrived in the Spotless Shower, which has exits to the east, south, and west.",I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-45,,"I arrived in the Sweaty Canteen, which has exits to the east, south, and west.",I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-46,,"I arrived in the Spotless Shower, which has exits to the east, south, and west.",I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-47,,"I arrived in the Sweaty Canteen, which has exits to the east, south, and west.",I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-48,,"I arrived in the Spotless Shower with exits to the east, south, and west.",I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-49,,"I arrived in the Sweaty Canteen with exits to the east, south, and west.",I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-50,,"I arrived in the Spotless Shower with exits to the east, south, and west.",I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-51,,"I arrived in the Sweaty Canteen with exits to the east, south, and west.",I should go west to continue exploring as per the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-52,,"I arrived in the Spotless Shower with exits to the east, south, and west.",I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-53,,"I arrived in the Sweaty Canteen with exits to the east, south, and west.",I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-54,,"I arrived in the Spotless Shower with exits to the east, south, and west.",I should go east as suggested to find an unguarded exit.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-55,,"I arrived in the Sweaty Canteen with exits to the east, south, and west.",I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-56,,"I arrived in the Spotless Shower with exits to the east, south, and west.",I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-57,,"I arrived in the Sweaty Canteen with exits to the east, south, and west.",I should go west to continue exploring and eventually reach the cramped garage to pick up the coin.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I arrived in the Spotless Shower.,I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-59,,"I arrived in the Sweaty Canteen with exits to the east, south, and west.",I should go west to continue exploring and eventually reach the cramped garage to pick up the coin.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-60,,"I arrived in the Spotless Shower with exits to the east, south, and west.",I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-61,,"I arrived in the Sweaty Canteen with exits to the east, south, and west.",I should go west to continue exploring and eventually reach the cramped garage to pick up the coin.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-62,,"I arrived in the Spotless Shower with exits to the east, south, and west.",I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-63,,"I arrived in the Sweaty Canteen with exits to the east, south, and west.",I should go west to continue following the instructions.,go west,,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",Spotless Shower,"You're not going to believe this, but you've just entered a spotless shower. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-64,,"I arrived in the Spotless Shower with exits to the east, south, and west.",I should go east to find an unguarded exit as suggested.,go east,,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",Sweaty Canteen,"Well, here we are in a sweaty canteen.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-65,,"I am in the Sweaty Canteen with exits to the east, south, and west.",I should go south as the next step in the instructions is to travel south.,go south,,"You're now in the cramped bathroom.
+17,,I went east from the Spotless Shower to the Sweaty Canteen.,I should go south from the Sweaty Canteen as the next step in the instructions.,go south,,"You're now in the cramped bathroom.
 
 
 
@@ -589,7 +149,7 @@ There is an unguarded exit to the east. There is an unblocked exit to the north.
 
 
 There is an unguarded exit to the east. There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-66,,I moved south multiple times and arrived in the Cramped Bathroom.,I should go west through the unguarded entranceway as suggested.,go west,,"You've just walked into a messy cellar.
+18,,I went south from the Sweaty Canteen to the Cramped Bathroom.,I should go west from the Cramped Bathroom as the next step in the instructions.,go west,,"You've just walked into a messy cellar.
 
 
 
@@ -598,133 +158,12 @@ You need an unblocked exit? You should try going east. You don't like doors? Why
 
 
 You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-67,,"I moved south multiple times and arrived in the Cramped Bathroom, then moved to the Messy Cellar.",I should go west to explore the unblocked entranceway.,go west,,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",Cramped Cellar,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-68,,I moved south multiple times and arrived in the Cramped Cellar.,I should go east as the exit is unblocked in that direction.,go east,,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Messy Cellar,"You've just walked into a messy cellar.
+19,,I went west from the Cramped Bathroom to the Messy Cellar.,I should go south from the Messy Cellar as the next step in the instructions.,go south,,You can't go that way.,Messy Cellar,"You've just walked into a messy cellar.
 
 
 
 You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-69,,I arrived in the Messy Cellar.,I should go west to continue exploring as the west exit is unblocked.,go west,,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",Cramped Cellar,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-70,,I moved south multiple times and arrived in the Cramped Cellar.,I should go east as the exit to the east is suggested to be unblocked.,go east,,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Messy Cellar,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-71,,I arrived in the Messy Cellar.,I should go west to explore one of the unblocked exits.,go west,,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",Cramped Cellar,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-72,,I moved south multiple times and arrived in the Cramped Cellar.,I should go east as the exit to the Cramped Cellar is unblocked in that direction.,go east,,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Messy Cellar,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-73,,I arrived in the Messy Cellar.,I should go west to explore one of the unblocked exits.,go west,,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",Cramped Cellar,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-74,,I moved south multiple times and arrived in the Cramped Cellar.,"The exit to the east is suggested as unblocked, so I should go east.",go east,,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Messy Cellar,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-75,,I arrived in the Messy Cellar.,I should go west to explore one of the unblocked entranceways.,go west,,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",Cramped Cellar,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-76,,I moved south multiple times and arrived in the Cramped Cellar.,"The exit to the east is suggested as unblocked, so I should go east.",go east,,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Messy Cellar,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-77,,I arrived in the Messy Cellar.,I should go west to explore one of the unblocked entranceways.,go west,,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",Cramped Cellar,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-78,,I moved south multiple times and arrived in the Cramped Cellar.,"The exit to the east is suggested as unblocked, so I should go east.",go east,,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Messy Cellar,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-79,,I arrived in the Messy Cellar.,I should go west to explore one of the unblocked entranceways.,go west,,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",Cramped Cellar,"You've just sauntered into a cramped cellar.
-
-
-
-You need an unblocked exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-80,,I moved south multiple times and arrived in the Cramped Cellar.,"The exit to the Cramped Cellar is blocked except for the east direction, so I should go east.",go east,,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Messy Cellar,"You've just walked into a messy cellar.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-81,,I arrived in the Messy Cellar.,I should go east to continue following the directions.,go east,,"You're now in the cramped bathroom.
+20,,I tried to go south from the Messy Cellar but couldn't.,"Since south is blocked, I will try going east as suggested by the environment.",go east,,"You're now in the cramped bathroom.
 
 
 
@@ -733,7 +172,12 @@ There is an unguarded exit to the east. There is an unblocked exit to the north.
 
 
 There is an unguarded exit to the east. There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-82,,I arrived in the Cramped Bathroom.,I should go west through the unguarded entranceway as suggested.,go west,,"You've just walked into a messy cellar.
+21,,I went east from the Messy Cellar to the Cramped Bathroom.,I should try going south from the Cramped Bathroom as per the task instructions.,go south,,You can't go that way.,Cramped Bathroom,"You're now in the cramped bathroom.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I tried to go south from the Cramped Bathroom but couldn't.,"Since I can't go south, I will try going west as suggested by the description.",go west,,"You've just walked into a messy cellar.
 
 
 
@@ -742,7 +186,25 @@ You need an unblocked exit? You should try going east. You don't like doors? Why
 
 
 You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-83,,I arrived in the Messy Cellar.,I should go west to explore the unblocked entranceway.,go west,,"You've just sauntered into a cramped cellar.
+23,,I went west from the Cramped Bathroom to the Messy Cellar.,I should try going north from the Messy Cellar since it is an unblocked entranceway.,go north,,"You've just shown up in a studio.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Studio,"You've just shown up in a studio.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went north from the Messy Cellar to the Studio.,I should go south from the Studio to continue exploring as it is an unblocked exit.,go south,,"You've just walked into a messy cellar.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Messy Cellar,"You've just walked into a messy cellar.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went south from the Studio to the Messy Cellar.,I should go west from the Messy Cellar to continue exploring unblocked exits.,go west,,"You've just sauntered into a cramped cellar.
 
 
 
@@ -751,7 +213,21 @@ You need an unblocked exit? You should try going east.",Cramped Cellar,"You've j
 
 
 You need an unblocked exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-84,,I moved south multiple times and arrived in the Cramped Cellar.,"The exit to the east is suggested as unblocked, so I should go east.",go east,,"You've just walked into a messy cellar.
+26,,I went west from the Messy Cellar to the Cramped Cellar.,I should take the coin from the floor of the Cramped Cellar as instructed.,take coin from floor,,You can't see any such thing.,Cramped Cellar,"You've just sauntered into a cramped cellar.
+
+
+
+You need an unblocked exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I tried to take the coin from the floor of the Cramped Cellar but it was not there.,I should look around the Cramped Cellar carefully to find the coin.,look,,"You've just sauntered into a cramped cellar.
+
+
+
+You need an unblocked exit? You should try going east.",Cramped Cellar,"You've just sauntered into a cramped cellar.
+
+
+
+You need an unblocked exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I looked around the Cramped Cellar but did not find the coin.,I should go east as suggested to find another location where the coin might be.,go east,,"You've just walked into a messy cellar.
 
 
 
@@ -759,4 +235,508 @@ You need an unblocked exit? You should try going east. You don't like doors? Why
 
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,True,
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I went east to the Messy Cellar as suggested.,"I should try going north, west, or east to explore further and find the coin.",go north,,"You've just shown up in a studio.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Studio,"You've just shown up in a studio.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I went north to the Studio.,"I should explore the exits in the Studio to find the coin, starting with going east.",go east,,"You find yourself in a pantry. A standard one. You begin to take stock of what's here.
+
+
+
+You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going north. There is an unguarded exit to the west.",Pantry,"You find yourself in a pantry. A standard one. You begin to take stock of what's here.
+
+
+
+You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going north. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I went east to the Pantry.,I should continue exploring by going north from the Pantry.,go north,,"You find yourself in a bar. A fun one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked.",Fun Bar,"You find yourself in a bar. A fun one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I went north to the Fun Bar.,I should go south to return to the Pantry.,go south,,"You find yourself in a pantry. A standard one. You begin to take stock of what's here.
+
+
+
+You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going north. There is an unguarded exit to the west.",Pantry,"You find yourself in a pantry. A standard one. You begin to take stock of what's here.
+
+
+
+You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going north. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I went south to the Pantry.,I should go west to explore the unguarded exit.,go west,,"You've just shown up in a studio.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Studio,"You've just shown up in a studio.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I went west to the Studio.,I should go east to return to the Pantry and continue exploring.,go east,,"You find yourself in a pantry. A standard one. You begin to take stock of what's here.
+
+
+
+You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going north. There is an unguarded exit to the west.",Pantry,"You find yourself in a pantry. A standard one. You begin to take stock of what's here.
+
+
+
+You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going north. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I went east to the Pantry.,I should go east from the Pantry as suggested to continue exploring.,go east,,"You are in a vault. A standard kind of place.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",Vault,"You are in a vault. A standard kind of place.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I went east from the Pantry to the Vault.,I should go south from the Vault since the exit is unblocked and it might lead to new areas.,go south,,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",Spotless Washroom,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I went south from the Vault to the Spotless Washroom.,I should go south from the Spotless Washroom as suggested to explore further.,go south,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I went south from the Spotless Washroom to the Silent Studio.,I should go east from the Silent Studio to continue exploring the unblocked entranceway.,go east,,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Clean Bathroom,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I went east from the Silent Studio to the Clean Bathroom.,I should go west from the Clean Bathroom to return to the Silent Studio.,go west,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went west from the Clean Bathroom to the Silent Studio.,I should go east from the Silent Studio to the Clean Bathroom again.,go east,,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Clean Bathroom,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went east from the Silent Studio to the Clean Bathroom.,I should go west from the Clean Bathroom back to the Silent Studio.,go west,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I went west from the Clean Bathroom to the Silent Studio.,I should go east from the Silent Studio to the Clean Bathroom again.,go east,,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Clean Bathroom,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I went east from the Silent Studio to the Clean Bathroom.,I should go west from the Clean Bathroom back to the Silent Studio.,go west,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I went west from the Clean Bathroom to the Silent Studio.,I should go east from the Silent Studio to the Clean Bathroom.,go east,,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Clean Bathroom,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I went east from the Silent Studio to the Clean Bathroom.,I should go west from the Clean Bathroom back to the Silent Studio.,go west,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I went west from the Clean Bathroom to the Silent Studio.,I should go east from the Silent Studio to the Clean Bathroom as the entranceway is unblocked.,go east,,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Clean Bathroom,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I went east from the Silent Studio to the Clean Bathroom.,I should go west from the Clean Bathroom back to the Silent Studio as the entranceway is unguarded.,go west,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I went west from the Clean Bathroom to the Silent Studio.,I should go north from the Silent Studio since the entranceway is unguarded.,go north,,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",Spotless Washroom,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I went north from the Silent Studio to the Spotless Washroom.,I should go east from the Spotless Washroom since the exit is unblocked.,go east,,"You find yourself in a lounge. A fun kind of place.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",Fun Lounge,"You find yourself in a lounge. A fun kind of place.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I went east from the Spotless Washroom to the Fun Lounge.,I should go west from the Fun Lounge since the entranceway is unblocked.,go west,,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",Spotless Washroom,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I went west from the Fun Lounge to the Spotless Washroom.,I should go south from the Spotless Washroom as suggested.,go south,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I went south from the Spotless Washroom to the Silent Studio.,I should go east from the Silent Studio as the entranceway is unblocked.,go east,,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Clean Bathroom,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I went east from the Silent Studio to the Clean Bathroom.,I should go west from the Clean Bathroom as the entranceway is unguarded.,go west,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I went west from the Clean Bathroom to the Silent Studio.,I should go north from the Silent Studio since the entranceway is unguarded.,go north,,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",Spotless Washroom,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I went north from the Silent Studio to the Spotless Washroom.,I should go east from the Spotless Washroom since the exit is unblocked.,go east,,"You find yourself in a lounge. A fun kind of place.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",Fun Lounge,"You find yourself in a lounge. A fun kind of place.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I went east from the Spotless Washroom to the Fun Lounge.,I should go west from the Fun Lounge since the entranceway is unblocked.,go west,,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",Spotless Washroom,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I went west from the Fun Lounge to the Spotless Washroom.,I should go south from the Spotless Washroom as suggested.,go south,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I went south from the Spotless Washroom to the Silent Studio.,I should go east from the Silent Studio since the entranceway is unblocked.,go east,,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Clean Bathroom,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I went east from the Silent Studio to the Clean Bathroom.,I should go west from the Clean Bathroom since the entranceway is unguarded.,go west,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went west from the Clean Bathroom to the Silent Studio.,I should go north from the Silent Studio since the entranceway is unguarded.,go north,,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",Spotless Washroom,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I went north from the Silent Studio to the Spotless Washroom.,I should go east from the Spotless Washroom since the exit is unblocked.,go east,,"You find yourself in a lounge. A fun kind of place.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",Fun Lounge,"You find yourself in a lounge. A fun kind of place.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I went east from the Spotless Washroom to the Fun Lounge.,I should go west from the Fun Lounge since the entranceway is unblocked.,go west,,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",Spotless Washroom,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I went west from the Fun Lounge to the Spotless Washroom.,I should go south from the Spotless Washroom as suggested.,go south,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I went south from the Spotless Washroom to the Silent Studio.,I should go east from the Silent Studio as the entranceway is unblocked.,go east,,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Clean Bathroom,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+65,,I went east from the Silent Studio to the Clean Bathroom.,I should go west from the Clean Bathroom since the entranceway is unguarded.,go west,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+66,,I went west from the Clean Bathroom to the Silent Studio.,I should go east from the Silent Studio since the entranceway is unblocked.,go east,,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Clean Bathroom,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+67,,I went east from the Silent Studio to the Clean Bathroom.,I should go west from the Clean Bathroom since the entranceway is unguarded.,go west,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+68,,I went west from the Clean Bathroom to the Silent Studio.,I should go east from the Silent Studio since the entranceway is unblocked.,go east,,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Clean Bathroom,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+69,,I went east from the Silent Studio to the Clean Bathroom.,I should go west from the Clean Bathroom since the entranceway is unguarded.,go west,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+70,,I went west from the Clean Bathroom to the Silent Studio.,I should go north from the Silent Studio since the entranceway is unguarded.,go north,,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",Spotless Washroom,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+71,,I went north from the Silent Studio to the Spotless Washroom.,I should go east from the Spotless Washroom since the exit is unblocked.,go east,,"You find yourself in a lounge. A fun kind of place.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",Fun Lounge,"You find yourself in a lounge. A fun kind of place.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+72,,I went east from the Spotless Washroom to the Fun Lounge.,I should go west from the Fun Lounge since the entranceway is unblocked.,go west,,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",Spotless Washroom,"I am required to announce that you are now in the spotless washroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+73,,I went west from the Fun Lounge to the Spotless Washroom.,I should go south from the Spotless Washroom as suggested.,go south,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+74,,I went south from the Spotless Washroom to the Silent Studio.,I should go east from the Silent Studio as the entranceway is unblocked.,go east,,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Clean Bathroom,"You find yourself in a bathroom. A clean kind of place. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+75,,I went east from the Silent Studio to the Clean Bathroom.,I should go west from the Clean Bathroom since the entranceway is unguarded.,go west,,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Silent Studio,"You find yourself in a silent studio.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+76,,I went west from the Clean Bathroom to the Silent Studio.,I should go south from the Silent Studio to continue exploring.,go south,,"You've entered a closet.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",Closet,"You've entered a closet.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+77,,I went south from the Silent Studio to the Closet.,I should go west from the Closet as it is suggested as an unblocked exit.,go west,,"You arrive in a dish-pit. A normal kind of place.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Dish-Pit,"You arrive in a dish-pit. A normal kind of place.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+78,,I went west from the Closet to the Dish-Pit.,I should go west from the Dish-Pit as it is an unguarded entranceway.,go west,,"Look at that sign! What does it say? It says Welcome to the bedroom? Well that's cool.
+
+
+
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",Bedroom,"Look at that sign! What does it say? It says Welcome to the bedroom? Well that's cool.
+
+
+
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+79,,I went west from the Dish-Pit to the Bedroom.,I should go west from the Bedroom as it is an unguarded entranceway.,go west,,"You arrive in a cellar. An usual kind of place.
+
+
+
+There is an unblocked exit to the east. You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",Cellar,"You arrive in a cellar. An usual kind of place.
+
+
+
+There is an unblocked exit to the east. You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+80,,I went west from the Bedroom to the Cellar.,I should go south from the Cellar as it is an unblocked exit.,go south,,"You've entered a still cubicle. You begin to take stock of what's here.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",Still Cubicle,"You've entered a still cubicle. You begin to take stock of what's here.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+81,,I went south from the Cellar to the Still Cubicle.,I should go north from the Still Cubicle to return to the Cellar.,go north,,"You arrive in a cellar. An usual kind of place.
+
+
+
+There is an unblocked exit to the east. You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",Cellar,"You arrive in a cellar. An usual kind of place.
+
+
+
+There is an unblocked exit to the east. You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+82,,I went north from the Still Cubicle to the Cellar.,I should go east from the Cellar to explore the next area.,go east,,"Look at that sign! What does it say? It says Welcome to the bedroom? Well that's cool.
+
+
+
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",Bedroom,"Look at that sign! What does it say? It says Welcome to the bedroom? Well that's cool.
+
+
+
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+83,,I went east from the Cellar to the Bedroom.,I should go west from the Bedroom to find the Cramped Garage where the coin might be.,go west,,"You arrive in a cellar. An usual kind of place.
+
+
+
+There is an unblocked exit to the east. You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",Cellar,"You arrive in a cellar. An usual kind of place.
+
+
+
+There is an unblocked exit to the east. You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+84,,I went west from the Bedroom to the Cellar.,"I should go south from the Cellar to the Still Cubicle, then explore further to find the Cramped Garage.",go south,,"You've entered a still cubicle. You begin to take stock of what's here.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",Still Cubicle,"You've entered a still cubicle. You begin to take stock of what's here.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,True,

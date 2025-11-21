@@ -23,7 +23,7 @@ dice the block of cheese
   prepare meal",Kitchen,"You arrive in a kitchen. A typical one. You start to take note of what's in the room.
 
 Were you looking for a fridge? Because look over there, it's a fridge. Huh, weird. You see an oven. Hey, want to see a table? Look over there, a table. The table is massive. On the table you can make out a knife. You see a counter. You see a red hot pepper, a red apple, a banana, a raw yellow potato, a raw purple potato and a cookbook on the counter. Look out! It's a- oh, never mind, it's just a stove. Unfortunately, there isn't a thing on it. Silly stove, silly, empty, good for nothing stove.","You are carrying: a white onion, a red onion and a block of cheese.",0 of 8,0.0,False,
-2,,"I examined the cookbook and found a recipe requiring the block of cheese, red onion, and white onion with detailed steps.",I should start by dicing the block of cheese as the first step in the recipe.,dice block of cheese with knife,,You need to take the knife first.,Kitchen,"You arrive in a kitchen. A typical one. You start to take note of what's in the room.
+2,,"I examined the cookbook and found a recipe requiring dicing and frying the block of cheese, red onion, and white onion, then preparing the meal.",I should start by dicing the block of cheese as the first step in the recipe.,dice block of cheese with knife,,You need to take the knife first.,Kitchen,"You arrive in a kitchen. A typical one. You start to take note of what's in the room.
 
 Were you looking for a fridge? Because look over there, it's a fridge. Huh, weird. You see an oven. Hey, want to see a table? Look over there, a table. The table is massive. On the table you can make out a knife. You see a counter. You see a red hot pepper, a red apple, a banana, a raw yellow potato, a raw purple potato and a cookbook on the counter. Look out! It's a- oh, never mind, it's just a stove. Unfortunately, there isn't a thing on it. Silly stove, silly, empty, good for nothing stove.","You are carrying: a white onion, a red onion and a block of cheese.",0 of 8,0.0,False,
 3,,I tried to dice the block of cheese but was told I need to take the knife first.,I should take the knife from the table before dicing the block of cheese.,take knife from table,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A typical one. You start to take note of what's in the room.
@@ -36,14 +36,14 @@ Were you looking for a fridge? Because look over there, it's a fridge. Huh, weir
 
 
 There is a white onion on the floor.",You are carrying: a red onion and a block of cheese.,0 of 8,0.0,False,
-5,,I dropped the white onion to free up space in my inventory.,I should now take the knife from the table.,take knife from table,,You take the knife from the table.,Kitchen,"You arrive in a kitchen. A typical one. You start to take note of what's in the room.
+5,,I dropped the white onion to free up space.,I should now take the knife from the table.,take knife from table,,You take the knife from the table.,Kitchen,"You arrive in a kitchen. A typical one. You start to take note of what's in the room.
 
 Were you looking for a fridge? Because look over there, it's a fridge. Huh, weird. You see an oven. Hey, want to see a table? Look over there, a table. The table is massive. But there isn't a thing on it. You see a counter. You see a red hot pepper, a red apple, a banana, a raw yellow potato, a raw purple potato and a cookbook on the counter. Look out! It's a- oh, never mind, it's just a stove. Unfortunately, there isn't a thing on it. Silly stove, silly, empty, good for nothing stove.
 
 
 
 There is a white onion on the floor.","You are carrying: a knife, a red onion and a block of cheese.",0 of 8,0.0,False,
-6,,I took the knife from the table and now have it in my inventory.,I should dice the block of cheese with the knife as the first step of the recipe.,dice block of cheese with knife,,"You dice the block of cheese.
+6,,I took the knife from the table.,I should dice the block of cheese with the knife as the first step of the recipe.,dice block of cheese with knife,,"You dice the block of cheese.
 
 
 
@@ -54,13 +54,31 @@ Were you looking for a fridge? Because look over there, it's a fridge. Huh, weir
 
 
 There is a white onion on the floor.","You are carrying: a knife, a red onion and a diced block of cheese.",1 of 8,0.125,False,
-7,,I diced the block of cheese with the knife successfully.,I should now dice the red onion with the knife as the next step of the recipe.,dice red onion with knife,,"You dice the red onion.
+7,,I diced the block of cheese with the knife successfully.,"Next, I should fry the diced block of cheese as per the recipe.",fry diced block of cheese,,That's not a verb I recognise.,Kitchen,"You arrive in a kitchen. A typical one. You start to take note of what's in the room.
+
+Were you looking for a fridge? Because look over there, it's a fridge. Huh, weird. You see an oven. Hey, want to see a table? Look over there, a table. The table is massive. But there isn't a thing on it. You see a counter. You see a red hot pepper, a red apple, a banana, a raw yellow potato, a raw purple potato and a cookbook on the counter. Look out! It's a- oh, never mind, it's just a stove. Unfortunately, there isn't a thing on it. Silly stove, silly, empty, good for nothing stove.
+
+
+
+There is a white onion on the floor.","You are carrying: a knife, a red onion and a diced block of cheese.",1 of 8,0.125,False,
+8,,I tried to fry the diced block of cheese but the command was not recognized.,"I should try the command ""cook diced block of cheese with stove"" to fry it.",cook diced block of cheese with stove,,"You fried the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A typical one. You start to take note of what's in the room.
+
+Were you looking for a fridge? Because look over there, it's a fridge. Huh, weird. You see an oven. Hey, want to see a table? Look over there, a table. The table is massive. But there isn't a thing on it. You see a counter. You see a red hot pepper, a red apple, a banana, a raw yellow potato, a raw purple potato and a cookbook on the counter. Look out! It's a- oh, never mind, it's just a stove. Unfortunately, there isn't a thing on it. Silly stove, silly, empty, good for nothing stove.
+
+
+
+There is a white onion on the floor.","You are carrying: a knife, a red onion and a diced fried block of cheese.",2 of 8,0.25,False,
+9,,I cooked (fried) the diced block of cheese with the stove successfully.,"Next, I should dice the red onion with the knife as per the recipe.",dice red onion with knife,,"You dice the red onion.
 
 
 
                               *** You lost! ***
 
-You scored 1 out of a possible 8, in 7 turns.
+You scored 2 out of a possible 8, in 8 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
@@ -70,4 +88,4 @@ Were you looking for a fridge? Because look over there, it's a fridge. Huh, weir
 
 
 
-There is a white onion on the floor.","You are carrying: a knife, a red onion and a diced block of cheese.",1 of 8,0.125,True,
+There is a white onion on the floor.","You are carrying: a knife, a red onion and a diced fried block of cheese.",2 of 8,0.25,True,

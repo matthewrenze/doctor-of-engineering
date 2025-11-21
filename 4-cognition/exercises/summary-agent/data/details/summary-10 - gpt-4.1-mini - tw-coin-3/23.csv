@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-1,,,I will follow the instructions and go west first.,go west,,"You are in a sauna. An ordinary one.
+1,,I am in the studio.,I will go west as the first step.,go west,,"You are in a sauna. An ordinary one.
 
 
 
@@ -13,7 +13,7 @@ There is an exit to the east. Don't worry, it is unguarded. You don't like doors
 
 
 There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-2,,,I will go west again as instructed.,go west,,"You find yourself in a salon. An usual kind of place.
+2,,I went west; now I am in the sauna.,I will go west again as the next step.,go west,,"You find yourself in a salon. An usual kind of place.
 
 
 
@@ -22,7 +22,7 @@ There is an exit to the east. Don't worry, it is unguarded. You need an unguarde
 
 
 There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You need an unblocked exit? You should try going south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-3,,,"Next, I should go north as per the instructions.",go north,,"You find yourself in a study. A normal one.
+3,,I went west; now I am in the salon.,I will go north as the next step.,go north,,"You find yourself in a study. A normal one.
 
 
 
@@ -31,7 +31,7 @@ There is an unblocked exit to the east. There is an exit to the north. Don't wor
 
 
 There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-4,,,I will go east next as instructed.,go east,,"You arrive in a bar. A fun kind of place.
+4,,I went north; now I am in the study.,I will go east as the next step.,go east,,"You arrive in a bar. A fun kind of place.
 
 
 
@@ -40,7 +40,7 @@ There is an unguarded exit to the east. You don't like doors? Why not try going 
 
 
 There is an unguarded exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-5,,,I will go east again as instructed.,go east,,"You are in a scullery. A standard kind of place.
+5,,I went east; now I am in the fun bar.,I will go east as the next step.,go east,,"You are in a scullery. A standard kind of place.
 
 
 
@@ -49,7 +49,7 @@ There is an unblocked exit to the east. There is an unblocked exit to the north.
 
 
 There is an unblocked exit to the east. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-6,,,I will go north next as instructed.,go north,,"You're now in a pleasant bedchamber. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+6,,I went east; now I am in the scullery.,I will go north as the next step.,go north,,"You're now in a pleasant bedchamber. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
@@ -58,7 +58,7 @@ You need an unguarded exit? You should try going east. There is an exit to the n
 
 
 You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-7,,,I will go east as instructed.,go east,,"You find yourself in an office. A normal kind of place.
+7,,I went north; now I am in the pleasant bedchamber.,I will go east as the next step.,go east,,"You find yourself in an office. A normal kind of place.
 
 
 
@@ -67,7 +67,7 @@ There is an exit to the east. Don't worry, it is unguarded. There is an unblocke
 
 
 There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-8,,,I will go east again as instructed.,go east,,"You find yourself in a kitchenette. A typical kind of place.
+8,,I went east; now I am in the office.,I will go east as the next step.,go east,,"You find yourself in a kitchenette. A typical kind of place.
 
 
 
@@ -76,12 +76,17 @@ You don't like doors? Why not try going west, that entranceway is unguarded.",Ki
 
 
 You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-9,,,I will try to go north as instructed.,go north,,You can't go that way.,Kitchenette,"You find yourself in a kitchenette. A typical kind of place.
+9,,I went east; now I am in the kitchenette.,I will go north as the next step.,go north,,You can't go that way.,Kitchenette,"You find yourself in a kitchenette. A typical kind of place.
 
 
 
 You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-10,,,"Since I cannot go north, I will try to go west as the only other option.",go west,,"You find yourself in an office. A normal kind of place.
+10,,I tried to go north but couldn't; I am still in the kitchenette.,I will go east as the next step.,go east,,You can't go that way.,Kitchenette,"You find yourself in a kitchenette. A typical kind of place.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I tried to go east but couldn't; I am still in the kitchenette.,I will go west as the next step.,go west,,"You find yourself in an office. A normal kind of place.
 
 
 
@@ -90,7 +95,7 @@ There is an exit to the east. Don't worry, it is unguarded. There is an unblocke
 
 
 There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-11,,,I will try to go north as instructed.,go north,,"You are in a dish-pit. A typical kind of place. You begin looking for stuff.
+12,,I went west; now I am in the office.,I will go north as the next step.,go north,,"You are in a dish-pit. A typical kind of place. You begin looking for stuff.
 
 
 
@@ -99,7 +104,7 @@ You need an unblocked exit? You should try going east. You don't like doors? Why
 
 
 You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-12,,,I will try to go east as instructed.,go east,,"Well, here we are in the well lit lounge. You begin looking for stuff.
+13,,I went north; now I am in the dish-pit.,I will go east as the next step.,go east,,"Well, here we are in the well lit lounge. You begin looking for stuff.
 
 
 
@@ -108,12 +113,12 @@ There is an exit to the west. Don't worry, it is unguarded.",Well Lit Lounge,"We
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-13,,,I will try to go south as instructed.,go south,,You can't go that way.,Well Lit Lounge,"Well, here we are in the well lit lounge. You begin looking for stuff.
+14,,I went east; now I am in the well lit lounge.,I will go north as the next step.,go north,,You can't go that way.,Well Lit Lounge,"Well, here we are in the well lit lounge. You begin looking for stuff.
 
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-14,,,"Since I cannot go south, I will try to go west as the only available exit.",go west,,"You are in a dish-pit. A typical kind of place. You begin looking for stuff.
+15,,I tried to go north but couldn't; I am still in the well lit lounge.,I will go west as the next step.,go west,,"You are in a dish-pit. A typical kind of place. You begin looking for stuff.
 
 
 
@@ -122,7 +127,30 @@ You need an unblocked exit? You should try going east. You don't like doors? Why
 
 
 You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-15,,,I will try to go south as instructed.,go south,,"You find yourself in an office. A normal kind of place.
+16,,I went west; now I am in the dish-pit.,I will go north as the next step.,go north,,"You find yourself in a cubicle. A still one. You can barely contain your excitement.
+
+
+
+There is an unblocked exit to the south.",Still Cubicle,"You find yourself in a cubicle. A still one. You can barely contain your excitement.
+
+
+
+There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went north; now I am in the still cubicle.,I will go east as the next step.,go east,,You can't go that way.,Still Cubicle,"You find yourself in a cubicle. A still one. You can barely contain your excitement.
+
+
+
+There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I tried to go east but couldn't; I am still in the still cubicle.,I will go south as the next step.,go south,,"You are in a dish-pit. A typical kind of place. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Dish-Pit,"You are in a dish-pit. A typical kind of place. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went south; now I am in the dish-pit.,I will go south as the next step.,go south,,"You find yourself in an office. A normal kind of place.
 
 
 
@@ -131,7 +159,7 @@ There is an exit to the east. Don't worry, it is unguarded. There is an unblocke
 
 
 There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-16,,,I will try to go west as instructed.,go west,,"You're now in a pleasant bedchamber. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+20,,I went south; now I am in the office.,I will go west as the next step.,go west,,"You're now in a pleasant bedchamber. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
@@ -140,7 +168,7 @@ You need an unguarded exit? You should try going east. There is an exit to the n
 
 
 You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-17,,,I will try to go south as instructed.,go south,,"You are in a scullery. A standard kind of place.
+21,,I went west; now I am in the pleasant bedchamber.,I will go south as the next step.,go south,,"You are in a scullery. A standard kind of place.
 
 
 
@@ -149,7 +177,7 @@ There is an unblocked exit to the east. There is an unblocked exit to the north.
 
 
 There is an unblocked exit to the east. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-18,,,I will try to go south as instructed.,go south,,"Okay, so you're in a basement, cool, but is it cramped? You better believe it is. You try to gain information on your surroundings by using a technique you call ""looking.""
+22,,I went south; now I am in the scullery.,I will go south as the next step.,go south,,"Okay, so you're in a basement, cool, but is it cramped? You better believe it is. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
@@ -158,12 +186,12 @@ You need an unblocked exit? You should try going north.",Cramped Basement,"Okay,
 
 
 You need an unblocked exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
-19,,,I will try to go east as instructed.,go east,,You can't go that way.,Cramped Basement,"Okay, so you're in a basement, cool, but is it cramped? You better believe it is. You try to gain information on your surroundings by using a technique you call ""looking.""
+23,,I went south; now I am in the cramped basement.,I will go east as the next step.,go east,,You can't go that way.,Cramped Basement,"Okay, so you're in a basement, cool, but is it cramped? You better believe it is. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
 You need an unblocked exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
-20,,,"Since I cannot go east, I will try to go north as the only available exit.",go north,,"You are in a scullery. A standard kind of place.
+24,,I tried to go east but couldn't; I am still in the cramped basement.,I will go north as the next step.,go north,,"You are in a scullery. A standard kind of place.
 
 
 
@@ -172,7 +200,7 @@ There is an unblocked exit to the east. There is an unblocked exit to the north.
 
 
 There is an unblocked exit to the east. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-21,,,I will try to go east as instructed.,go east,,"You've entered a bar. You begin looking for stuff.
+25,,I went north; now I am in the scullery.,I will go east as the next step.,go east,,"You've entered a bar. You begin looking for stuff.
 
 
 
@@ -181,17 +209,12 @@ You don't like doors? Why not try going west, that entranceway is unguarded.",Ba
 
 
 You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-22,,,I will try to go north as instructed.,go north,,You can't go that way.,Bar,"You've entered a bar. You begin looking for stuff.
+26,,I went east; now I am in the bar.,I will go south as the next step.,go south,,You can't go that way.,Bar,"You've entered a bar. You begin looking for stuff.
 
 
 
 You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-23,,,"Since I cannot go north, I will try to go east as instructed.",go east,,You can't go that way.,Bar,"You've entered a bar. You begin looking for stuff.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-24,,,"Since I cannot go east or north, I will try to go west as the only available exit.",go west,,"You are in a scullery. A standard kind of place.
+27,,I tried to go south but couldn't; I am still in the bar.,I will go west as the next step.,go west,,"You are in a scullery. A standard kind of place.
 
 
 
@@ -200,7 +223,7 @@ There is an unblocked exit to the east. There is an unblocked exit to the north.
 
 
 There is an unblocked exit to the east. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-25,,,I will try to go north as instructed.,go north,,"You're now in a pleasant bedchamber. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+28,,I went west; now I am in the scullery.,I will go north as the next step.,go north,,"You're now in a pleasant bedchamber. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
@@ -209,7 +232,7 @@ You need an unguarded exit? You should try going east. There is an exit to the n
 
 
 You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-26,,,I will try to go east as instructed.,go east,,"You find yourself in an office. A normal kind of place.
+29,,I went north; now I am in the pleasant bedchamber.,I will go east as the next step.,go east,,"You find yourself in an office. A normal kind of place.
 
 
 
@@ -218,30 +241,12 @@ There is an exit to the east. Don't worry, it is unguarded. There is an unblocke
 
 
 There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-27,,,I will try to go east as instructed.,go east,,"You find yourself in a kitchenette. A typical kind of place.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",Kitchenette,"You find yourself in a kitchenette. A typical kind of place.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-28,,,I will try to go south as instructed.,go south,,You can't go that way.,Kitchenette,"You find yourself in a kitchenette. A typical kind of place.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-29,,,"Since I cannot go south, I will try to go west as the only available exit.",go west,,"You find yourself in an office. A normal kind of place.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west.",Office,"You find yourself in an office. A normal kind of place.
+30,,I went east; now I am in the office.,I will take the coin from the floor of the playroom as the final step.,take coin from floor,,You can't see any such thing.,Office,"You find yourself in an office. A normal kind of place.
 
 
 
 There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-30,,,I will try to go north as instructed.,go north,,"You are in a dish-pit. A typical kind of place. You begin looking for stuff.
+31,,I tried to take the coin from the floor in the office but couldn't find it.,I should go north to the next room to find the playroom and the coin.,go north,,"You are in a dish-pit. A typical kind of place. You begin looking for stuff.
 
 
 
@@ -250,7 +255,7 @@ You need an unblocked exit? You should try going east. You don't like doors? Why
 
 
 You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-31,,,I will try to go east as instructed.,go east,,"Well, here we are in the well lit lounge. You begin looking for stuff.
+32,,I went north; now I am in the dish-pit.,I will go east to continue searching for the playroom.,go east,,"Well, here we are in the well lit lounge. You begin looking for stuff.
 
 
 
@@ -259,17 +264,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Well Lit Lounge,"We
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-32,,,I will try to go east as instructed.,go east,,You can't go that way.,Well Lit Lounge,"Well, here we are in the well lit lounge. You begin looking for stuff.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-33,,,"Since I cannot go east, I will try to go north as instructed.",go north,,You can't go that way.,Well Lit Lounge,"Well, here we are in the well lit lounge. You begin looking for stuff.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-34,,,"Since I cannot go north, I will try to go west as the only available exit.",go west,,"You are in a dish-pit. A typical kind of place. You begin looking for stuff.
+33,,I went east; now I am in the well lit lounge.,I will go west to backtrack and find another path to the playroom.,go west,,"You are in a dish-pit. A typical kind of place. You begin looking for stuff.
 
 
 
@@ -277,4 +272,13 @@ You need an unblocked exit? You should try going east. You don't like doors? Why
 
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,True,
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I went west; now I am in the dish-pit.,I will go north to explore further.,go north,,"You find yourself in a cubicle. A still one. You can barely contain your excitement.
+
+
+
+There is an unblocked exit to the south.",Still Cubicle,"You find yourself in a cubicle. A still one. You can barely contain your excitement.
+
+
+
+There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,True,

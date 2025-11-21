@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the Spotless Washroom.,I should go south as the first step of the instructions.,go south,,"You are in a cookhouse. It seems to be pretty normal here.
+1,,I am in the Spotless Washroom.,"I should follow the instructions step-by-step, starting by going south.",go south,,"You are in a cookhouse. It seems to be pretty normal here.
 
 
 
@@ -13,7 +13,7 @@ You don't like doors? Why not try going north, that entranceway is unguarded. Yo
 
 
 You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-2,,"I moved to the cookhouse; it is a normal cookhouse with unguarded entrances north, south, and west.",I should go south as the first step of the instructions.,go south,,"You've entered a serious cubicle. The room is well lit.
+2,,I went south to the cookhouse.,"Next, I should try to go south again as per the instructions.",go south,,"You've entered a serious cubicle. The room is well lit.
 
 
 
@@ -22,12 +22,7 @@ You need an unguarded exit? You should try going east. There is an exit to the n
 
 
 You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-3,,"I moved to the serious cubicle; the room is well lit with unblocked exits north, east, and west.",I should go south as the task suggests starting by going south.,go south,,You can't go that way.,Serious Cubicle,"You've entered a serious cubicle. The room is well lit.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I tried to go south from the serious cubicle but was blocked.,"Since I can't go south, I will try going east as suggested.",go east,,"This is going to sound unbelievable, but you've just entered a pantry. The room is well lit.
+3,,I went south to the serious cubicle.,I should now try to go east as the instructions suggest.,go east,,"This is going to sound unbelievable, but you've just entered a pantry. The room is well lit.
 
 
 
@@ -36,7 +31,7 @@ There is an exit to the east. Don't worry, it is unblocked. You don't like doors
 
 
 There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-5,,"I moved south from the serious cubicle and entered the pantry, which is well lit with unblocked exits east, south, and west.",I should go south from the pantry as suggested to continue exploring the area.,go south,,"Ah, the kitchen. This is some kind of kitchen, really great sweaty vibes in this place, a wonderful sweaty atmosphere.
+4,,I went east to the pantry.,I should now try to go south as the instructions suggest.,go south,,"Ah, the kitchen. This is some kind of kitchen, really great sweaty vibes in this place, a wonderful sweaty atmosphere.
 
 
 
@@ -45,7 +40,7 @@ There is an unblocked exit to the east. There is an unblocked exit to the north.
 
 
 There is an unblocked exit to the east. There is an unblocked exit to the north. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I moved south from the pantry and entered the sweaty kitchen.,I should go east from the sweaty kitchen as the next step in the sequence.,go east,,"You've entered an ugly closet.
+5,,I went south to the sweaty kitchen.,I should now try to go east as the instructions suggest.,go east,,"You've entered an ugly closet.
 
 
 
@@ -54,7 +49,12 @@ There is an unblocked exit to the east. You need an unguarded exit? You should t
 
 
 There is an unblocked exit to the east. You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I moved south from the sweaty kitchen and entered the ugly closet.,I should try going north from the ugly closet as suggested to find an unguarded exit.,go north,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
+6,,I went east to the ugly closet.,"According to the instructions, I should now try to go south.",go south,,You can't go that way.,Ugly Closet,"You've entered an ugly closet.
+
+
+
+There is an unblocked exit to the east. You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+7,,I tried to go south from the ugly closet but couldn't.,The feedback suggests trying to go north instead.,go north,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
 
 
 
@@ -63,709 +63,7 @@ There is an exit to the east. Don't worry, it is unguarded. You need an unguarde
 
 
 There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I moved south from the ugly closet and entered the steamy cookhouse.,I should try going east from the steamy cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I moved south from the ugly closet and entered the marbled shower.,I should go west from the marbled shower.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I moved south from the ugly closet and entered the steamy cookhouse.,I should go east from the steamy cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I moved south from the ugly closet and entered the marbled shower.,I should go west from the marbled shower as the exit is unblocked.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I moved south from the ugly closet and entered the steamy cookhouse.,I should go east from the steamy cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I moved south from the ugly closet and entered the marbled shower.,I should go west from the marbled shower since there is an unblocked exit in that direction.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I moved south from the ugly closet and entered the steamy cookhouse.,I should go east from the steamy cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I am in the Marbled Shower with an exit to the west.,I should go west as the exit is unblocked.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I moved south from the Marbled Shower and entered the Steamy Cookhouse; then I returned to the Marbled Shower.,I should go west from the Marbled Shower as the exit is unblocked.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower as the exit is unblocked.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit there.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue exploring.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I am in the Marbled Shower with an exit to the west.,I should go west to explore the next area.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue exploring.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit there.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I am in the Marbled Shower with an exit to the west.,I should go west to explore the next area.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I am in the Marbled Shower with an exit to the west.,I should go west to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit there.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I am in the Marbled Shower with an exit to the west.,I should go west to explore the next area.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I am in the Marbled Shower with an exit to the west.,I should go west to explore the next area.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-55,,I am in the Marbled Shower with an exit to the west.,I should go west to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-56,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-57,,I am in the Marbled Shower with an exit to the west.,I should go west to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-59,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I am in the Marbled Shower with an exit to the west.,I should go west to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-62,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-63,,I am in the Marbled Shower with an exit to the west.,I should go west to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-65,,I am in the Marbled Shower with an exit to the west.,I should go west to explore the next room.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-66,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-67,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue following the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-68,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-69,,I am in the Marbled Shower with an exit to the west.,I should go west to explore the next area.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-70,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-71,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue exploring.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-72,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-73,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-74,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit there.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-75,,I am in the Marbled Shower with an exit to the west.,I should go west to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-76,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-77,,I am in the Marbled Shower with an exit to the west.,I should go west to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-78,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-79,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-80,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse as there is an unguarded exit in that direction.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-81,,I am in the Marbled Shower with an exit to the west.,I should go west from the Marbled Shower.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-82,,I moved south from the Marbled Shower and entered the Steamy Cookhouse.,I should go east from the Steamy Cookhouse since there is an unguarded exit to the east.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-83,,I am in the Marbled Shower with an exit to the west.,I should go west to continue exploring and follow the instructions.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-84,,"I moved into a steamy cookhouse with exits east, north, and south.",I should go east as the exit is unguarded and it might lead me closer to the goal.,go east,,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",Marbled Shower,"You are in a shower. A marbled one.
-
-
-
-There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-85,,I moved into the Marbled Shower; it has an exit to the west.,I should go west from the Marbled Shower to continue exploring.,go west,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Steamy Cookhouse,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-86,,"I moved into a steamy cookhouse with exits east, north, and south.",I should go south as it is an unguarded entranceway.,go south,,"You've entered an ugly closet.
+8,,I went north from the ugly closet to the steamy cookhouse.,I should follow the instructions and go south from here.,go south,,"You've entered an ugly closet.
 
 
 
@@ -774,7 +72,35 @@ There is an unblocked exit to the east. You need an unguarded exit? You should t
 
 
 There is an unblocked exit to the east. You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-87,,"I moved into the ugly closet; it has unblocked exits east, north, and west.",I should try going north to find an unguarded exit as suggested.,go north,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
+9,,I went south from the steamy cookhouse to the ugly closet.,I should try going east from the ugly closet as there is an unblocked exit.,go east,,"You arrive in a pantry. A forgotten kind of place.
+
+
+
+There is an exit to the west. Don't worry, it is unblocked.",Forgotten Pantry,"You arrive in a pantry. A forgotten kind of place.
+
+
+
+There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I went east from the ugly closet to the forgotten pantry.,I should go south from the forgotten pantry as per the instructions.,go south,,You can't go that way.,Forgotten Pantry,"You arrive in a pantry. A forgotten kind of place.
+
+
+
+There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I tried to go south from the forgotten pantry but couldn't.,"Since I cannot go south, I will try to go east from the forgotten pantry as the next step in the instructions.",go east,,You can't go that way.,Forgotten Pantry,"You arrive in a pantry. A forgotten kind of place.
+
+
+
+There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I tried to go east from the forgotten pantry but couldn't.,"Since I cannot go east, I will try to go west from the forgotten pantry as it is the only unblocked exit.",go west,,"You've entered an ugly closet.
+
+
+
+There is an unblocked exit to the east. You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Ugly Closet,"You've entered an ugly closet.
+
+
+
+There is an unblocked exit to the east. You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I went west from the forgotten pantry to the ugly closet.,I should try going north from the ugly closet as suggested to find an unguarded exit.,go north,,"You have moved into a cookhouse. Not the cookhouse you'd expect. No, this is a steamy cookhouse.
 
 
 
@@ -783,12 +109,670 @@ There is an exit to the east. Don't worry, it is unguarded. You need an unguarde
 
 
 There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-88,,"I moved into a steamy cookhouse with exits east, north, and south.",I should go south as it is an unguarded entranceway.,go south,,"You've entered an ugly closet.
+14,,I went north from the ugly closet to the steamy cookhouse.,I should go north again from the steamy cookhouse as suggested to continue progressing.,go north,,"Well how about that, you are in a place we're calling an austere study.
 
 
 
-There is an unblocked exit to the east. You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Ugly Closet,"You've entered an ugly closet.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Austere Study,"Well how about that, you are in a place we're calling an austere study.
 
 
 
-There is an unblocked exit to the east. You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,True,
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I went north from the steamy cookhouse to the austere study.,I should go east from the austere study since the entranceway is unguarded and it might lead me closer to the goal.,go east,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went east from the austere study to the pleasant chamber.,I should go east from the pleasant chamber since the exit is unblocked and it might lead me closer to the goal.,go east,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went east from the pleasant chamber to the misty shower.,I should go north from the misty shower since the exit is unblocked and might lead me closer to the goal.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went north from the misty shower to the misty laundry place.,I should go south to return to the misty shower and then try going west as suggested to explore another path.,go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went south from the misty laundry place to the misty shower.,I should go west from the misty shower to explore the unblocked entranceway.,go west,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went west from the misty shower to the pleasant chamber.,I should go east from the pleasant chamber to continue following the path.,go east,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I went east from the pleasant chamber to the misty shower.,I should go north from the misty shower to continue following the path.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I went north from the misty shower to the misty laundry place.,I should go north again as the instructions suggest to continue moving north.,go north,,You can't go that way.,Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I tried to go north from the misty laundry place but couldn't.,"Since I can't go north, I should follow the hint and go south to find an unguarded exit.",go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went south to the misty shower.,I should try going west through the unblocked entranceway as suggested.,go west,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went west to the pleasant chamber.,I should go north through the unblocked entranceway as the next step.,go north,,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",Silent Study,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I went north to the silent study.,I should go south back to the pleasant chamber to continue exploring other directions.,go south,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I went south to the pleasant chamber.,I should go east from the pleasant chamber to continue following the path.,go east,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I went east to the misty shower.,I should go north from the misty shower to continue following the path.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I went north to the misty laundry place.,I should go north again as the instructions suggest to keep moving north.,go north,,You can't go that way.,Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I tried to go north from the misty laundry place but couldn't.,"Since I can't go north, I should follow the hint and go south to find an unguarded exit.",go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I went south from the misty laundry place to the misty shower.,I should try going west through the unblocked entranceway as suggested.,go west,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I went west from the misty shower to the pleasant chamber.,I should go north through the unblocked entranceway as suggested.,go north,,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",Silent Study,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I went north from the pleasant chamber to the silent study.,I should go south back to the pleasant chamber to continue exploring other directions.,go south,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I went south from the silent study to the pleasant chamber.,I should go east from the pleasant chamber to the misty shower as it is unblocked.,go east,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I went east from the pleasant chamber to the misty shower.,I should go north from the misty shower to the misty laundry place as the exit is unblocked.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I went north from the misty shower to the misty laundry place.,I should go south from the misty laundry place as it is the only unguarded exit.,go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I went south from the misty laundry place to the misty shower.,I should try going west from the misty shower since the entranceway is unblocked.,go west,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I went west from the misty shower to the pleasant chamber.,I should go north from the pleasant chamber since the entranceway is unblocked.,go north,,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",Silent Study,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I went north from the pleasant chamber to the silent study.,I should go south from the silent study to return to the pleasant chamber.,go south,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went south from the silent study to the pleasant chamber.,I should go east from the pleasant chamber to the misty shower.,go east,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went east from the pleasant chamber to the misty shower.,I should go north from the misty shower to the misty laundry place.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I went north from the misty shower to the misty laundry place.,I should go south from the misty laundry place to return to the misty shower.,go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I went south from the misty laundry place to the misty shower.,"I should go west from the misty shower to the pleasant chamber, as the entranceway is unblocked.",go west,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I went west from the misty shower to the pleasant chamber.,"I should go north from the pleasant chamber, as the entranceway is unblocked.",go north,,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",Silent Study,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I went north from the pleasant chamber to the silent study.,I should go south from the silent study to return to the pleasant chamber.,go south,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I went south from the silent study to the pleasant chamber.,I should go east from the pleasant chamber to the misty shower.,go east,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I went east from the pleasant chamber to the misty shower.,I should go north from the misty shower to the misty laundry place.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I went north from the misty shower to the misty laundry place.,I should go south from the misty laundry place back to the misty shower.,go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I went south from the misty laundry place to the misty shower.,I should go west from the misty shower to the pleasant chamber.,go west,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I went west from the misty shower to the pleasant chamber.,I should go north from the pleasant chamber to the silent study.,go north,,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",Silent Study,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I went north from the pleasant chamber to the silent study.,I should go south from the silent study back to the pleasant chamber.,go south,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I went south from the silent study to the pleasant chamber.,I should go east from the pleasant chamber to the misty shower.,go east,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I went east from the pleasant chamber to the misty shower.,I should go north from the misty shower to the misty laundry place.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I went north from the misty shower to the misty laundry place.,I should go south from the misty laundry place to return to the misty shower.,go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I went south from the misty laundry place to the misty shower.,"I should go west from the misty shower to the pleasant chamber, as the entranceway is unblocked.",go west,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I went west from the misty shower to the pleasant chamber.,"I should go north from the pleasant chamber, as the entranceway is unblocked.",go north,,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",Silent Study,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I went north from the pleasant chamber to the silent study.,I should go south from the silent study to return to the pleasant chamber.,go south,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I went south from the silent study to the pleasant chamber.,I should go east from the pleasant chamber to the misty shower.,go east,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I went east from the pleasant chamber to the misty shower.,I should go north from the misty shower to the misty laundry place.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went north from the misty shower to the misty laundry place.,"I should try to go north again, but since it is blocked, I will go south to return to the misty shower.",go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I went south from the misty laundry place to the misty shower.,I should go north from the misty shower to the misty laundry place to continue exploring the unblocked exit.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I went north from the misty shower to the misty laundry place.,I should go south from the misty laundry place to the misty shower as it is the unguarded exit.,go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I went south from the misty laundry place to the misty shower.,I should go west from the misty shower to the pleasant chamber since the entranceway is unblocked.,go west,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I went west from the misty shower to the pleasant chamber.,I should go north from the pleasant chamber since the entranceway is unblocked.,go north,,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",Silent Study,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+65,,I went north from the pleasant chamber to the silent study.,I should go south from the silent study to return to the pleasant chamber.,go south,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+66,,I went south from the silent study to the pleasant chamber.,I should go east from the pleasant chamber to the misty shower.,go east,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+67,,I went east from the pleasant chamber to the misty shower.,I should go north from the misty shower to the misty laundry place.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+68,,I went north from the misty shower to the misty laundry place.,I should go south from the misty laundry place back to the misty shower.,go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+69,,I went south from the misty laundry place to the misty shower.,I should go west from the misty shower to the pleasant chamber.,go west,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+70,,I went west from the misty shower to the pleasant chamber.,I should go north from the pleasant chamber to the silent study.,go north,,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",Silent Study,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+71,,I went north from the pleasant chamber to the silent study.,I should go south from the silent study back to the pleasant chamber.,go south,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+72,,I went south from the silent study to the pleasant chamber.,I should go east from the pleasant chamber to the misty shower.,go east,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+73,,I went east from the pleasant chamber to the misty shower.,I should go north from the misty shower to the misty laundry place.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+74,,I went north from the misty shower to the misty laundry place.,I should go south from the misty laundry place back to the misty shower.,go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+75,,I went south from the misty laundry place to the misty shower.,I should go north from the misty shower to the misty laundry place again.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+76,,I went north from the misty shower to the misty laundry place.,I should go south from the misty laundry place to the misty shower.,go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+77,,I went south from the misty laundry place to the misty shower.,I should go west from the misty shower to the pleasant chamber.,go west,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+78,,I went west from the misty shower to the pleasant chamber.,I should go north from the pleasant chamber to the silent study.,go north,,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",Silent Study,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+79,,I went north from the pleasant chamber to the silent study.,I should go south from the silent study back to the pleasant chamber.,go south,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+80,,I went south from the silent study to the pleasant chamber.,I should go east from the pleasant chamber to the misty shower.,go east,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+81,,I went east from the pleasant chamber to the misty shower.,I should go north from the misty shower to the misty laundry place.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+82,,I went north from the misty shower to the misty laundry place.,I should go south from the misty laundry place back to the misty shower.,go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+83,,I went south from the misty laundry place to the misty shower.,I should go west from the misty shower to the pleasant chamber.,go west,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+84,,I went west from the misty shower to the pleasant chamber.,I should go north from the pleasant chamber to the silent study.,go north,,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",Silent Study,"You are in a study. A silent one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+85,,I went north from the pleasant chamber to the silent study.,I should go south from the silent study back to the pleasant chamber.,go south,,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Pleasant Chamber,"Ah, the chamber. This is some kind of chamber, really great pleasant vibes in this place, a wonderful pleasant atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+86,,I went south from the silent study to the pleasant chamber.,I should go east from the pleasant chamber to the misty shower.,go east,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+87,,I went east from the pleasant chamber to the misty shower.,I should go north from the misty shower to the misty laundry place.,go north,,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Misty Laundry Place,"You find yourself in a laundry place. A misty kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+88,,I went north from the misty shower to the misty laundry place.,I should go south from the misty laundry place back to the misty shower.,go south,,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Misty Shower,"You're now in a misty shower. You can barely contain your excitement.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,True,

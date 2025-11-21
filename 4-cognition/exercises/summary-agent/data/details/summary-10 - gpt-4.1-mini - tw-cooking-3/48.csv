@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 You see a toilet. The toilet is white. But the thing is empty, unfortunately.
 
 You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a raw pork chop, a raw red potato and a raw yellow potato.",0 of 17,0.0,False,
-1,,I am in the bathroom.,I should go west to explore the next area since the bathroom is not useful for cooking.,go west,,"You find yourself in a corridor. A standard kind of place. I guess you better just go and list everything you see here.
+1,,I am in the bathroom.,I should go west through the entranceway to explore the next area.,go west,,"You find yourself in a corridor. A standard kind of place. I guess you better just go and list everything you see here.
 
 
 
@@ -13,7 +13,7 @@ There is a closed screen door leading west. There is an exit to the east. You do
 
 
 There is a closed screen door leading west. There is an exit to the east. You don't like doors? Why not try going north, that entranceway is not blocked by one.","You are carrying: a raw pork chop, a raw red potato and a raw yellow potato.",0 of 17,0.0,False,
-2,,"I went west from the bathroom and arrived in a corridor with a closed screen door to the west, an exit to the east, and an open entrance to the north.",I should go north since it is an open entrance and might lead to the kitchen or another useful room.,go north,,"You're now in a livingroom.
+2,,"I went west from the bathroom and arrived in a corridor with a closed screen door to the west, an exit to the east, and an open entranceway to the north.",I should go north through the open entranceway to explore further.,go north,,"You're now in a livingroom.
 
 You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a sofa. But the thing hasn't got anything on it. Hm. Oh well
 
@@ -22,7 +22,7 @@ There is an exit to the east. There is an exit to the north. You need an exit wi
 You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a sofa. But the thing hasn't got anything on it. Hm. Oh well
 
 There is an exit to the east. There is an exit to the north. You need an exit without a door? You should try going south.","You are carrying: a raw pork chop, a raw red potato and a raw yellow potato.",0 of 17,0.0,False,
-3,,"I went north from the corridor and arrived in the living room with exits to the east, north, and south.","I should go east to explore further, as the kitchen might be in that direction.",go east,,"You've entered a kitchen. You start to take note of what's in the room.
+3,,"I went north from the corridor and entered the living room, where I found a secret button that revealed an empty sofa. There are exits to the east, north, and south.",I should go east to explore the next area.,go east,,"You've entered a kitchen. You start to take note of what's in the room.
 
 You make out a fridge. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a banana, a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
 
@@ -31,7 +31,7 @@ There is a closed plain door leading north. You don't like doors? Why not try go
 You make out a fridge. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a banana, a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
 
 There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a raw pork chop, a raw red potato and a raw yellow potato.",0 of 17,0.0,False,
-4,,"I went east from the living room and arrived in the kitchen with a fridge, oven, table with a cookbook and knife, a counter with various items, and a stove.",I should examine the cookbook to check the recipe for cooking a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+4,,"I went east from the living room and entered the kitchen, where I see a fridge, oven, table with a cookbook and knife, a counter with various items, and a stove. There is a closed door to the north and an open entranceway to the west.",I should examine the cookbook on the table to check the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -60,7 +60,12 @@ slice the carrot
 You make out a fridge. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a banana, a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
 
 There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a raw pork chop, a raw red potato and a raw yellow potato.",0 of 17,0.0,False,
-5,,"I examined the cookbook and found a recipe requiring carrot, orange bell pepper, banana, red onion, and block of cheese with detailed preparation steps.",I should take the required ingredients from the kitchen counter and table to follow the recipe.,take banana from counter,,"You take the banana from the counter.
+5,,"I examined the cookbook and found a recipe requiring carrot, orange bell pepper, banana, red onion, and block of cheese with detailed preparation steps.",I should take the carrot from the counter to start preparing the meal.,take carrot from counter,,You can't see any such thing.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
+
+You make out a fridge. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a banana, a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
+
+There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a raw pork chop, a raw red potato and a raw yellow potato.",0 of 17,0.0,False,
+6,,"I tried to take a carrot from the counter, but there is no carrot present.","Since there is no carrot, I should take the banana from the counter as it is part of the recipe.",take banana from counter,,"You take the banana from the counter.
 
 
 
@@ -69,102 +74,44 @@ Your score has just gone up by one point.",Kitchen,"You've entered a kitchen. Yo
 You make out a fridge. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
 
 There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a banana, a raw pork chop, a raw red potato and a raw yellow potato.",1 of 17,0.058823529411764705,False,
-6,,I took the banana from the counter and added it to my inventory.,"I should take the carrot next, but I don't see a carrot on the counter or table. I will check the fridge for the carrot.",open fridge,,"You open the fridge, revealing a block of cheese and a yellow bell pepper.",Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
+7,,I took the banana from the counter and added it to my inventory.,I should take the knife from the table to prepare the ingredients.,take knife from table,,You take the knife from the table.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
 
-You make out a fridge. The fridge contains a block of cheese and a yellow bell pepper. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
+You make out a fridge. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
 
-There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a banana, a raw pork chop, a raw red potato and a raw yellow potato.",1 of 17,0.058823529411764705,False,
-7,,I opened the fridge and found a block of cheese and a yellow bell pepper inside.,"I should take the block of cheese and the yellow bell pepper from the fridge, then look for the carrot elsewhere.",take block of cheese from fridge,,"You take the block of cheese from the fridge.
+There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a knife, a banana, a raw pork chop, a raw red potato and a raw yellow potato.",1 of 17,0.058823529411764705,False,
+8,,I took the knife from the table and added it to my inventory.,"I should take the orange bell pepper from the counter, but since there is a red hot pepper instead, I will take the red hot pepper as a substitute.",take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
 
+You make out a fridge. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
 
+There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a knife, a banana, a raw pork chop, a raw red potato and a raw yellow potato.",1 of 17,0.058823529411764705,False,
+9,,I tried to take the red hot pepper but was carrying too many items already.,I should drop one of the raw potatoes to free up space for the red hot pepper.,drop raw red potato,,You drop the red potato on the ground.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
 
-Your score has just gone up by one point.",Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
-
-You make out a fridge. The fridge contains a yellow bell pepper. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
-
-There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a block of cheese, a banana, a raw pork chop, a raw red potato and a raw yellow potato.",2 of 17,0.11764705882352941,False,
-8,,I took the block of cheese from the fridge and added it to my inventory.,I should take the yellow bell pepper from the fridge and then search for the carrot.,take yellow bell pepper from fridge,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
-
-You make out a fridge. The fridge contains a yellow bell pepper. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
-
-There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a block of cheese, a banana, a raw pork chop, a raw red potato and a raw yellow potato.",2 of 17,0.11764705882352941,False,
-9,,I tried to take the yellow bell pepper but was carrying too many things already.,I should drop one of the raw potatoes to free up space and then take the yellow bell pepper.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
-
-You make out a fridge. The fridge contains a yellow bell pepper. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
+You make out a fridge. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
 
 There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw yellow potato on the floor.","You are carrying: a block of cheese, a banana, a raw pork chop and a raw red potato.",2 of 17,0.11764705882352941,False,
-10,,I dropped the raw yellow potato on the ground to free up space.,I should now take the yellow bell pepper from the fridge.,take yellow bell pepper from fridge,,You take the yellow bell pepper from the fridge.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
+There is a raw red potato on the floor.","You are carrying: a knife, a banana, a raw pork chop and a raw yellow potato.",1 of 17,0.058823529411764705,False,
+10,,I dropped the raw red potato on the ground to free up space.,I should now take the red hot pepper from the counter.,take red hot pepper from counter,,You take the red hot pepper from the counter.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
 
-You make out a fridge. What a letdown! The fridge is empty! You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
-
-There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw yellow potato on the floor.","You are carrying: a yellow bell pepper, a block of cheese, a banana, a raw pork chop and a raw red potato.",2 of 17,0.11764705882352941,False,
-11,,I took the yellow bell pepper from the fridge after dropping the raw yellow potato.,I still need a carrot for the recipe. I should check the counter and table again for a carrot or similar item.,look around kitchen counter and table carefully for carrot or similar item,,You can't see any such thing.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
-
-You make out a fridge. What a letdown! The fridge is empty! You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
+You make out a fridge. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook. You see a counter. The counter is vast. On the counter you can see a raw purple potato and a red apple. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
 
 There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw yellow potato on the floor.","You are carrying: a yellow bell pepper, a block of cheese, a banana, a raw pork chop and a raw red potato.",2 of 17,0.11764705882352941,False,
-12,,I looked carefully around the kitchen counter and table but did not find a carrot or similar item.,"Since the carrot is missing, I cannot follow the recipe exactly. I will try to substitute the carrot with a raw red potato I have and start preparing the meal by slicing it.",slice raw red potato with knife,,You need to take the knife first.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
-
-You make out a fridge. What a letdown! The fridge is empty! You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
-
-There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw yellow potato on the floor.","You are carrying: a yellow bell pepper, a block of cheese, a banana, a raw pork chop and a raw red potato.",2 of 17,0.11764705882352941,False,
-13,,I tried to slice the raw red potato but was reminded to take the knife first.,I should take the knife from the table before slicing the raw red potato.,take knife from table,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
-
-You make out a fridge. What a letdown! The fridge is empty! You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
-
-There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw yellow potato on the floor.","You are carrying: a yellow bell pepper, a block of cheese, a banana, a raw pork chop and a raw red potato.",2 of 17,0.11764705882352941,False,
-14,,I tried to take the knife but was carrying too many things already.,I should drop the raw pork chop to free up space and then take the knife.,drop raw pork chop,,You drop the pork chop on the ground.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
-
-You make out a fridge. What a letdown! The fridge is empty! You can see an oven. You can see a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
-
-There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw pork chop and a raw yellow potato on the floor.","You are carrying: a yellow bell pepper, a block of cheese, a banana and a raw red potato.",2 of 17,0.11764705882352941,False,
-15,,I dropped the raw pork chop on the ground to free up space.,I should now take the knife from the table.,take knife from table,,You take the knife from the table.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
-
-You make out a fridge. What a letdown! The fridge is empty! You can see an oven. You can see a table. The table is massive. On the table you see a cookbook. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
-
-There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw pork chop and a raw yellow potato on the floor.","You are carrying: a knife, a yellow bell pepper, a block of cheese, a banana and a raw red potato.",2 of 17,0.11764705882352941,False,
-16,,I took the knife from the table after dropping the raw pork chop.,I should slice the raw red potato with the knife as a substitute for the carrot.,slice raw red potato with knife,,You slice the red potato.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
-
-You make out a fridge. What a letdown! The fridge is empty! You can see an oven. You can see a table. The table is massive. On the table you see a cookbook. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
-
-There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw pork chop and a raw yellow potato on the floor.","You are carrying: a knife, a yellow bell pepper, a block of cheese, a banana and a sliced raw red potato.",2 of 17,0.11764705882352941,False,
-17,,I sliced the raw red potato with the knife.,"Next, I should slice the yellow bell pepper as part of the recipe preparation.",slice yellow bell pepper with knife,,You slice the yellow bell pepper.,Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
-
-You make out a fridge. What a letdown! The fridge is empty! You can see an oven. You can see a table. The table is massive. On the table you see a cookbook. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
-
-There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw pork chop and a raw yellow potato on the floor.","You are carrying: a knife, a sliced yellow bell pepper, a block of cheese, a banana and a sliced raw red potato.",2 of 17,0.11764705882352941,False,
-18,,I sliced the yellow bell pepper with the knife.,I should now slice the banana as the recipe requires it to be sliced.,slice banana with knife,,"You slice the banana.
+There is a raw red potato on the floor.","You are carrying: a red hot pepper, a knife, a banana, a raw pork chop and a raw yellow potato.",1 of 17,0.058823529411764705,False,
+11,,I took the red hot pepper from the counter and added it to my inventory.,I should now slice the banana as per the recipe instructions.,slice banana with knife,,"You slice the banana.
 
 
 
                               *** You lost! ***
 
-You scored 2 out of a possible 17, in 17 turns.
+You scored 1 out of a possible 17, in 10 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 >",Kitchen,"You've entered a kitchen. You start to take note of what's in the room.
 
-You make out a fridge. What a letdown! The fridge is empty! You can see an oven. You can see a table. The table is massive. On the table you see a cookbook. You see a counter. The counter is vast. On the counter you can see a raw purple potato, a red apple and a red hot pepper. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
+You make out a fridge. You can see an oven. You can see a table. The table is massive. On the table you see a cookbook. You see a counter. The counter is vast. On the counter you can see a raw purple potato and a red apple. Look over there! a stove. But the thing hasn't got anything on it. Hm. Oh well
 
 There is a closed plain door leading north. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw pork chop and a raw yellow potato on the floor.","You are carrying: a knife, a sliced yellow bell pepper, a block of cheese, a banana and a sliced raw red potato.",2 of 17,0.11764705882352941,True,
+There is a raw red potato on the floor.","You are carrying: a red hot pepper, a knife, a banana, a raw pork chop and a raw yellow potato.",1 of 17,0.058823529411764705,True,

@@ -4,17 +4,17 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 You can see a shelf. The shelf is wooden. But the thing is empty.
 
 There is a closed frosted-glass door leading north.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-1,,I am in the pantry.,I should go north through the frosted-glass door to reach the kitchen and check the cookbook for the recipe.,go north,,You have to open the frosted-glass door first.,Pantry,"Fancy seeing you here. Here, by the way, being the pantry.
+1,,I am in the pantry.,I should go north through the frosted-glass door to reach the kitchen where the cookbook is likely to be.,go north,,You have to open the frosted-glass door first.,Pantry,"Fancy seeing you here. Here, by the way, being the pantry.
 
 You can see a shelf. The shelf is wooden. But the thing is empty.
 
 There is a closed frosted-glass door leading north.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-2,,I am in the pantry with a closed frosted-glass door to the north and several raw ingredients in my inventory.,I should open the frosted-glass door to proceed to the kitchen where the cookbook is likely located.,open frosted-glass door,,You open frosted-glass door.,Pantry,"Fancy seeing you here. Here, by the way, being the pantry.
+2,,I tried to go north but the frosted-glass door was closed.,I should open the frosted-glass door to be able to go north.,open frosted-glass door,,You open frosted-glass door.,Pantry,"Fancy seeing you here. Here, by the way, being the pantry.
 
 You can see a shelf. The shelf is wooden. But the thing is empty.
 
 There is an open frosted-glass door leading north.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-3,,I opened the frosted-glass door to the north; I am still in the pantry with several raw ingredients in my inventory.,I should go north through the open frosted-glass door to reach the kitchen where the cookbook is likely located.,go north,,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+3,,I opened the frosted-glass door.,I should go north through the open frosted-glass door to enter the kitchen.,go north,,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
@@ -23,7 +23,7 @@ There is an open frosted-glass door leading south. You don't like doors? Why not
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-4,,"I entered the kitchen; I see a cookbook and a knife on the table, and various ingredients on the counter. I am carrying several raw ingredients.",I should examine the cookbook to find the recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+4,,I went north through the frosted-glass door and entered the kitchen.,I should examine the cookbook on the table to find the recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -52,163 +52,62 @@ slice the red hot pepper
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-5,,,"I need to gather the ingredients listed in the recipe: red hot pepper, carrot, orange bell pepper, block of cheese, and red apple. I already have an orange bell pepper in my inventory. I should take the red hot pepper and red apple from the counter and find the carrot and block of cheese in the kitchen or pantry.",take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+5,,I examined the cookbook and found the recipe with ingredients and directions.,"I need to gather the required ingredients from the kitchen and my inventory: red hot pepper, carrot, orange bell pepper, block of cheese, and red apple.",take red hot pepper from counter; take carrot from counter; take red apple from counter; take block of cheese from fridge if available; take knife from table,,You can't see any such thing.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-6,,I tried to take more items but was told I am carrying too many things already.,I should check the cookbook on the table to find the recipe for the meal I need to cook.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red hot pepper
-  carrot
-  orange bell pepper
-  block of cheese
-  red apple
-
-Directions:
-slice the red hot pepper
-  fry the red hot pepper
-  slice the carrot
-  roast the carrot
-  slice the orange bell pepper
-  roast the orange bell pepper
-  dice the block of cheese
-  fry the block of cheese
-  slice the red apple
-  fry the red apple
-  prepare meal",Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+6,,I tried to take block of cheese from fridge but it was not visible.,"I should take the visible ingredients on the counter and the knife from the table first, then check the fridge again for the block of cheese.",take red hot pepper from counter; take carrot from counter; take red apple from counter; take knife from table; open fridge; look inside fridge,,You can't see any such thing.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-7,,"I opened the cookbook and read the recipe for a tasty meal; I am in the kitchen with several raw ingredients in my inventory, but none of the recipe ingredients.",I need to gather the ingredients listed in the recipe from the kitchen counter or elsewhere before I can start preparing the meal.,take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+7,,I tried to take items from the counter and open the fridge but was unsuccessful.,"I should take the red hot pepper, red apple, banana, and raw red potato from the counter, then take the knife from the table.",take red hot pepper from counter; take red apple from counter; take banana from counter; take raw red potato from counter; take knife from table,,You can't see any such thing.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-8,,I tried to take more items but was told I am carrying too many things already; I am in the kitchen with several raw ingredients in my inventory.,I am carrying too many items to take more ingredients. I should check the cookbook on the table to find the recipe and see which ingredients I need to use or discard.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red hot pepper
-  carrot
-  orange bell pepper
-  block of cheese
-  red apple
-
-Directions:
-slice the red hot pepper
-  fry the red hot pepper
-  slice the carrot
-  roast the carrot
-  slice the orange bell pepper
-  roast the orange bell pepper
-  dice the block of cheese
-  fry the block of cheese
-  slice the red apple
-  fry the red apple
-  prepare meal",Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+8,,I tried to take items from the counter and the knife from the table but was unsuccessful.,I should try taking the red hot pepper from the counter first to see if it is possible.,take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-9,,"I opened the cookbook and read the recipe for a tasty meal; I am in the kitchen with several raw ingredients in my inventory, but none of the recipe ingredients.","I need to gather the specific ingredients listed in the recipe: red hot pepper, carrot, orange bell pepper, block of cheese, and red apple. I currently have an orange bell pepper but not the others. I should look around the kitchen to find the missing ingredients.",look,,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.",Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-10,,"I am in the kitchen with several raw ingredients in my inventory and see a cookbook and knife on the table, plus various ingredients on the counter.",I should check the cookbook again to confirm the recipe and see what ingredients I need to use from my inventory to cook the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red hot pepper
-  carrot
-  orange bell pepper
-  block of cheese
-  red apple
-
-Directions:
-slice the red hot pepper
-  fry the red hot pepper
-  slice the carrot
-  roast the carrot
-  slice the orange bell pepper
-  roast the orange bell pepper
-  dice the block of cheese
-  fry the block of cheese
-  slice the red apple
-  fry the red apple
-  prepare meal",Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-11,,"I opened the cookbook and read the recipe for a tasty meal; I am in the kitchen with several raw ingredients in my inventory, but none of the recipe ingredients.","I need to gather the specific ingredients listed in the recipe: red hot pepper, carrot, orange bell pepper, block of cheese, and red apple. I currently have an orange bell pepper but not the others. I should take the red hot pepper and red apple from the counter and then look for the carrot and block of cheese.",take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-12,,I am in the kitchen carrying several raw ingredients but cannot take more items due to inventory limit.,I should start preparing the meal with the ingredients I have instead of trying to take more items.,prepare meal,,You still miss something.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-13,,I am in the kitchen with several raw ingredients in my inventory but missing some recipe ingredients.,"I should check the counter for the red hot pepper, red apple, banana, and raw red potato to see if I can take any of these to complete the recipe ingredients.",take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper, a red onion and a raw purple potato.",0 of 16,0.0,False,
-14,,I tried to take more items but was told I am carrying too many things already; I am in the kitchen with several raw ingredients in my inventory.,I need to reduce the number of items I am carrying to be able to take the recipe ingredients. I will drop some of the raw ingredients I have to free up space.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+9,,I tried to take the red hot pepper from the counter but was carrying too many things already.,I should drop some items from my inventory to free up space before taking new items.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
 There is a raw purple potato on the floor.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper and a red onion.",0 of 16,0.0,False,
-15,,I dropped the purple potato on the ground; I am in the kitchen with several ingredients in my inventory and some on the counter and floor.,"I should take the red hot pepper, red apple, banana, and raw red potato from the counter to gather the recipe ingredients.",take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+10,,I dropped the raw purple potato to free up space.,I should now take the red hot pepper from the counter.,take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
 There is a raw purple potato on the floor.","You are carrying: an orange bell pepper, a raw yellow potato, a raw pork chop, a white onion, a yellow bell pepper and a red onion.",0 of 16,0.0,False,
-16,,I tried to take more items but was told I am carrying too many things already; I am in the kitchen with several ingredients in my inventory and some on the counter and floor.,I need to drop some items to free up space in my inventory before I can take the ingredients needed for the recipe.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+11,,I tried to take the red hot pepper but was carrying too many things.,I should drop one item from my inventory to free up space before taking the red hot pepper.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
 There is a raw yellow potato and a raw purple potato on the floor.","You are carrying: an orange bell pepper, a raw pork chop, a white onion, a yellow bell pepper and a red onion.",0 of 16,0.0,False,
-17,,I dropped the yellow potato on the ground; now I am carrying fewer items and see some ingredients on the counter and floor.,"I should take the red hot pepper, red apple, banana, and raw red potato from the counter to gather the recipe ingredients.",take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+12,,I dropped the raw yellow potato to free up space.,I should now take the red hot pepper from the counter.,take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
 There is a raw yellow potato and a raw purple potato on the floor.","You are carrying: an orange bell pepper, a raw pork chop, a white onion, a yellow bell pepper and a red onion.",0 of 16,0.0,False,
-18,,I tried to take more items but was told I am carrying too many things already; I am in the kitchen with several ingredients in my inventory and some on the counter and floor.,I need to drop some items to free up inventory space so I can take the recipe ingredients from the counter and floor.,drop orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+13,,I tried to take the red hot pepper but was carrying too many things.,I should drop one item to free up space before taking the red hot pepper.,drop orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red hot pepper, a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
 There is an orange bell pepper, a raw yellow potato and a raw purple potato on the floor.","You are carrying: a raw pork chop, a white onion, a yellow bell pepper and a red onion.",0 of 16,0.0,False,
-19,,I dropped the orange bell pepper on the ground; now I am carrying fewer items and see some ingredients on the counter and floor in the kitchen.,"I should take the red hot pepper, red apple, banana, and raw red potato from the counter to have all the recipe ingredients needed for the meal.",take red hot pepper from counter,,"You take the red hot pepper from the counter.
+14,,I dropped the orange bell pepper to free up space.,I should now take the red hot pepper from the counter.,take red hot pepper from counter,,"You take the red hot pepper from the counter.
 
 
 
@@ -219,474 +118,409 @@ You hear a noise behind you and spin around, but you can't see anything other th
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
 There is an orange bell pepper, a raw yellow potato and a raw purple potato on the floor.","You are carrying: a red hot pepper, a raw pork chop, a white onion, a yellow bell pepper and a red onion.",1 of 16,0.0625,False,
-20,,I took the red hot pepper from the counter; now I am carrying it along with other ingredients.,I should take the red apple from the counter to have more ingredients for the recipe.,take red apple from counter,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+15,,I took the red hot pepper from the counter; now I am carrying it.,I should take the knife from the table to prepare the ingredients.,take knife from table,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
 There is an orange bell pepper, a raw yellow potato and a raw purple potato on the floor.","You are carrying: a red hot pepper, a raw pork chop, a white onion, a yellow bell pepper and a red onion.",1 of 16,0.0625,False,
-21,,I tried to take more items but was told I am carrying too many things already; I am in the kitchen with several ingredients in my inventory and some on the counter and floor.,I need to drop some items to free up inventory space so I can take the necessary ingredients from the counter and floor for the recipe.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+16,,I tried to take the knife from the table but was carrying too many things.,I should drop one item to free up space before taking the knife.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
 There is a yellow bell pepper, an orange bell pepper, a raw yellow potato and a raw purple potato on the floor.","You are carrying: a red hot pepper, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
-22,,"I dropped the yellow bell pepper on the ground; now I am carrying a red hot pepper, a raw pork chop, a white onion, and a red onion, with some ingredients on the floor and counter in the kitchen.",I should take the red apple from the counter to have more ingredients for the recipe.,take red apple from counter,,"You take the red apple from the counter.
+17,,I dropped the yellow bell pepper to free up space.,I should now take the knife from the table to prepare the meal.,take knife from table,,You take the knife from the table.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-
-
-Your score has just gone up by one point.",Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a yellow bell pepper, an orange bell pepper, a raw yellow potato and a raw purple potato on the floor.","You are carrying: a red apple, a red hot pepper, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-23,,I took the red apple from the counter; now I am carrying it along with other ingredients.,I should check the recipe in the cookbook to see what steps to follow to cook the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+There is a yellow bell pepper, an orange bell pepper, a raw yellow potato and a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+18,,I took the knife from the table; now I am carrying it.,I should take the raw yellow potato from the floor to have all ingredients for cooking.,take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red hot pepper
-  carrot
-  orange bell pepper
-  block of cheese
-  red apple
-
-Directions:
-slice the red hot pepper
-  fry the red hot pepper
-  slice the carrot
-  roast the carrot
-  slice the orange bell pepper
-  roast the orange bell pepper
-  dice the block of cheese
-  fry the block of cheese
-  slice the red apple
-  fry the red apple
-  prepare meal",Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a yellow bell pepper, an orange bell pepper, a raw yellow potato and a raw purple potato on the floor.","You are carrying: a red apple, a red hot pepper, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-24,,I opened the cookbook and read the recipe for a tasty meal; I am in the kitchen with some ingredients in my inventory and others on the floor and counter.,"I need to gather all the ingredients listed in the recipe: red hot pepper, carrot, orange bell pepper, block of cheese, and red apple. I already have the red hot pepper and red apple, so I should drop unnecessary items to free inventory space and then take the carrot, orange bell pepper, and block of cheese.",drop raw pork chop; drop white onion; drop red onion,,I only understood you as far as wanting to drop the pork chop.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a yellow bell pepper, an orange bell pepper, a raw yellow potato and a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+19,,I tried to take the raw yellow potato but was carrying too many things.,I should drop one item to free up space before taking the raw yellow potato.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a yellow bell pepper, an orange bell pepper, a raw yellow potato and a raw purple potato on the floor.","You are carrying: a red apple, a red hot pepper, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-25,,I tried to drop the pork chop but the command was not fully understood; I am in the kitchen with several ingredients in my inventory and some on the floor and counter.,I should drop the raw pork chop explicitly to free up inventory space for other ingredients needed for the recipe.,drop raw pork chop,,You drop the pork chop on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw pork chop, a yellow bell pepper, an orange bell pepper, a raw yellow potato and a raw purple potato on the floor.","You are carrying: a red apple, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-26,,I dropped the pork chop on the ground; I am in the kitchen with some ingredients in my inventory and others on the floor and counter.,I should take the raw yellow potato from the floor to have more ingredients for the recipe.,take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper, a raw yellow potato and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+20,,I dropped the red hot pepper to free up space.,I should take the raw yellow potato from the floor now that I have space.,take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw pork chop, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a red apple, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-27,,I picked up the yellow potato from the ground; I am in the kitchen with several ingredients in my inventory and some on the floor and counter.,I should now take the raw pork chop from the floor to have all the main ingredients needed for the recipe.,take raw pork chop from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw pork chop, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a red apple, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-28,,I tried to take more items but was told I am carrying too many things already.,I need to drop some items from my inventory to be able to pick up the ingredients needed for the recipe.,drop red apple,,You drop the red apple on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+21,,I took the raw yellow potato from the floor.,I should take the red hot pepper from the floor to have all ingredients needed.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red apple, a raw pork chop, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-29,,I dropped the red apple on the ground; I am in the kitchen with several ingredients on the floor and counter and some in my inventory.,I should take the raw pork chop from the floor since it is a key ingredient for cooking a meal.,take raw pork chop from floor,,You pick up the pork chop from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw pork chop, a raw yellow potato, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-30,,I picked up the pork chop from the ground; I am in the kitchen carrying several ingredients.,I should check the cookbook on the table to review the recipe and see what steps I need to take to cook the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+22,,I tried to take the red hot pepper from the floor but was carrying too many things.,I should drop an item to free up space before taking the red hot pepper.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red hot pepper
-  carrot
-  orange bell pepper
-  block of cheese
-  red apple
-
-Directions:
-slice the red hot pepper
-  fry the red hot pepper
-  slice the carrot
-  roast the carrot
-  slice the orange bell pepper
-  roast the orange bell pepper
-  dice the block of cheese
-  fry the block of cheese
-  slice the red apple
-  fry the red apple
-  prepare meal",Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw pork chop, a raw yellow potato, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-31,,I opened the cookbook and read the recipe for a tasty meal; I am in the kitchen with some ingredients in my inventory and others on the floor and counter.,"I need to gather the recipe ingredients: red hot pepper, carrot, orange bell pepper, block of cheese, and red apple. I already have the red hot pepper, but I need to pick up the carrot, orange bell pepper, block of cheese, and red apple. I will drop some unnecessary items to free inventory space and then take the required ingredients.",drop raw pork chop; drop white onion; drop red onion,,I only understood you as far as wanting to drop the pork chop.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a raw yellow potato, a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+23,,I dropped the raw yellow potato to free up space.,I should now take the red hot pepper from the floor.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw pork chop, a raw yellow potato, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-32,,I tried to drop the pork chop but the command was not fully understood; I am still in the kitchen carrying several ingredients.,I should drop the pork chop again using a clearer command to free up inventory space for other recipe ingredients.,drop pork chop,,You drop the pork chop on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw pork chop, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-33,,I dropped the pork chop on the ground; I am in the kitchen with some ingredients on the floor and some in my inventory.,I should take the raw pork chop from the floor to have all necessary ingredients for the recipe.,take raw pork chop from floor,,You pick up the pork chop from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+24,,I took the red hot pepper from the floor; now I am carrying it.,I should take the raw yellow potato from the floor to have all ingredients needed.,take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw pork chop, a raw yellow potato, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-34,,I picked up the pork chop from the ground; I am in the kitchen carrying several ingredients.,I should check the cookbook again to confirm the recipe and then start preparing the meal using the ingredients I have.,open cookbook,,It isn't something you can open.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw pork chop, a raw yellow potato, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-35,,"I tried to open something that cannot be opened; the kitchen has various ingredients on the floor and counter, and I am carrying several ingredients.",I should take the raw purple potato from the floor to have more ingredients for cooking.,take raw purple potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+25,,I tried to take the raw yellow potato but was carrying too many things.,I need to drop an item to free up space before taking the raw yellow potato.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw pork chop, a raw yellow potato, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-36,,"I am in the kitchen carrying a raw pork chop, a raw yellow potato, a red hot pepper, a white onion, and a red onion; there are additional ingredients on the floor and counter, but I cannot carry more items.",I should drop one item from my inventory to free up space so I can pick up the necessary ingredients from the floor or counter for the recipe.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw pork chop, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-37,,"I dropped the yellow potato on the ground; I am in the kitchen carrying a raw pork chop, a red hot pepper, a white onion, and a red onion, with several ingredients on the floor and counter.","I should take the remaining ingredients needed for the recipe from the floor and counter, starting with the raw yellow potato, to have all necessary items for cooking.",take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a red hot pepper, a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+26,,I dropped the red hot pepper to free up space.,I should now take the raw yellow potato from the floor.,take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a raw pork chop, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-38,,"I picked up the yellow potato from the ground; I am in the kitchen carrying a raw yellow potato, a raw pork chop, a red hot pepper, a white onion, and a red onion.",I should check the cookbook again to confirm the recipe and then prepare the meal using the ingredients I have.,open cookbook,,It isn't something you can open.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a raw pork chop, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-39,,I tried to open something that cannot be opened; I am in the kitchen with several ingredients in my inventory and some on the floor and counter.,I should take the red apple from the floor to have more ingredients for the recipe.,take red apple from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+27,,I took the raw yellow potato from the floor.,I should take the red hot pepper from the floor now.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a raw pork chop, a red hot pepper, a white onion and a red onion.",2 of 16,0.125,False,
-40,,I tried to take more items but was told I am carrying too many things already; I am in the kitchen with several ingredients in my inventory and some on the floor and counter.,I need to drop one item to free up space in my inventory so I can take the ingredients needed for the recipe from the floor or counter.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-41,,"I dropped the red hot pepper on the ground; I am in the kitchen carrying a raw yellow potato, a raw pork chop, a white onion, and a red onion, with several ingredients on the floor and counter.",I should take the red hot pepper back from the ground to have all necessary ingredients for the recipe.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+28,,I tried to take the red hot pepper from the floor but was carrying too many things.,I should drop one item to free up space before taking the red hot pepper.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a raw yellow potato, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-42,,"I picked up the red hot pepper from the ground; I am carrying a red hot pepper, a raw yellow potato, a raw pork chop, a white onion, and a red onion in the kitchen.",I should check the cookbook again to confirm the recipe and then start preparing the meal using the ingredients I have.,open cookbook,,It isn't something you can open.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a raw yellow potato, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-43,,I tried to open something that cannot be opened; I am in the kitchen with several ingredients in my inventory and some on the floor and counter.,I should check the cookbook on the table again to confirm the recipe and then prepare the meal using the ingredients I have.,open cookbook,,It isn't something you can open.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a raw yellow potato, a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+29,,I dropped the raw yellow potato to free up space.,I should now take the red hot pepper from the floor.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a raw yellow potato, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-44,,I tried to open something that cannot be opened; I am in the kitchen with several ingredients in my inventory and some on the floor and counter.,I should start preparing the meal by using the knife to chop or dice the ingredients I have that match the recipe.,dice white onion with knife,,You need to take the knife first.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a raw yellow potato, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-45,,I tried to cook but was told I need to take the knife first; I am in the kitchen with several ingredients in my inventory and see a knife on the table.,I should take the knife from the table so I can proceed with cooking the meal.,take knife from table,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+30,,I took the red hot pepper from the floor; now I am carrying it.,I should take the raw yellow potato from the floor to have all ingredients needed.,take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a raw yellow potato, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-46,,I tried to take the knife but was told I am carrying too many things already.,I need to drop one item from my inventory to be able to take the knife.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-47,,"I dropped the red hot pepper on the ground; I am in the kitchen carrying a raw yellow potato, a raw pork chop, a white onion, and a red onion, with several ingredients on the floor and counter.","I need to take the knife from the table to cook the meal, but I am carrying too many items. I should drop one item to free up space and then take the knife.",drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+31,,I tried to take the raw yellow potato but was carrying too many things.,I need to drop an item to free up space before taking the raw yellow potato.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook and a knife. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw yellow potato, a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-48,,"I dropped the yellow potato on the ground; I am in the kitchen carrying a raw pork chop, a white onion, and a red onion, with several ingredients on the floor and counter.",I need to take the knife from the table to cook the meal.,take knife from table,,You take the knife from the table.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw yellow potato, a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-49,,"I took the knife from the table; I am now carrying a knife, a raw pork chop, a white onion, and a red onion in the kitchen.",I should prepare the meal by using the knife to cut the ingredients I have and then cook the meal according to the recipe in the cookbook.,prepare meal,,You still miss something.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a red hot pepper, a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+32,,I dropped the red hot pepper to free up space.,"Now that I have space, I should take the raw yellow potato from the floor.",take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw yellow potato, a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-50,,"I am in the kitchen carrying a knife, a raw pork chop, a white onion, and a red onion; there are various ingredients on the floor and counter, and I am missing something for the recipe.",I should take the missing ingredients from the floor or counter to complete the recipe.,take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-51,,"I picked up the yellow potato from the ground; I am in the kitchen carrying a raw yellow potato, a knife, a raw pork chop, a white onion, and a red onion.",I should prepare the meal now that I have the knife and the necessary ingredients in my inventory.,prepare meal,,You still miss something.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+33,,I took the raw yellow potato from the floor.,I should now take the red hot pepper from the floor again to have all ingredients needed.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-52,,I checked the kitchen and realized I am still missing some ingredients for the recipe.,I should pick up the red hot pepper from the floor to complete the ingredients needed for the recipe.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-53,,"I tried to take more items but was told I am carrying too many things already; I am in the kitchen carrying a raw yellow potato, a knife, a raw pork chop, a white onion, and a red onion.",I need to drop some items to free up space in my inventory so I can pick up the missing ingredients for the recipe.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+34,,I tried to take the red hot pepper but was carrying too many things.,I should drop one item to free up space before taking the red hot pepper.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw yellow potato, a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-54,,"I dropped the yellow potato on the ground; I am in the kitchen carrying a knife, a raw pork chop, a white onion, and a red onion, with several ingredients on the floor and counter.","I should take the missing ingredients from the floor and counter to complete the recipe, starting with the red hot pepper, red apple, yellow bell pepper, orange bell pepper, and raw purple potato.",take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-55,,"I picked up the red hot pepper from the ground; I am in the kitchen carrying a red hot pepper, a knife, a raw pork chop, a white onion, and a red onion.","I should now prepare the meal using the ingredients I have and the knife, following the recipe in the cookbook.",prepare meal,,You still miss something.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a raw yellow potato, a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+35,,I dropped the raw yellow potato to free up space.,I should now take the red hot pepper from the floor.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-56,,I checked the kitchen and was told I still miss something for the recipe.,I should pick up the raw yellow potato from the floor to see if it completes the recipe ingredients I am carrying.,take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-57,,"I tried to take more items but was told I am carrying too many things already; I am in the kitchen carrying a red hot pepper, a knife, a raw pork chop, a white onion, and a red onion.",I need to drop one item to free up space so I can pick up the missing ingredients for the recipe.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+36,,I took the red hot pepper from the floor; now I am carrying it.,I should take the raw yellow potato from the floor to have all ingredients needed.,take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red hot pepper, a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-58,,"I dropped the red hot pepper on the ground; I am in the kitchen carrying a knife, a raw pork chop, a white onion, and a red onion, with several ingredients on the floor and counter.",I should pick up the red hot pepper from the floor to have all the necessary ingredients for the recipe.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-59,,"I picked up the red hot pepper from the ground; I am in the kitchen carrying a red hot pepper, a knife, a raw pork chop, a white onion, and a red onion.",I should check the cookbook on the table again to confirm the recipe and see if I have all the necessary ingredients to start cooking.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+37,,I tried to take the raw yellow potato but was carrying too many things.,I need to drop an item to free up space before taking the raw yellow potato.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red hot pepper
-  carrot
-  orange bell pepper
-  block of cheese
-  red apple
-
-Directions:
-slice the red hot pepper
-  fry the red hot pepper
-  slice the carrot
-  roast the carrot
-  slice the orange bell pepper
-  roast the orange bell pepper
-  dice the block of cheese
-  fry the block of cheese
-  slice the red apple
-  fry the red apple
-  prepare meal",Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-60,,I opened the cookbook and read the recipe for a tasty meal; it lists the ingredients and directions needed.,"I need to gather the missing ingredients from the kitchen floor and counter to match the recipe: carrot, orange bell pepper, block of cheese, and red apple. I already have the red hot pepper and knife. I should drop some items to free inventory space, then pick up the required ingredients.","drop white onion, drop red onion",,You can't see any such thing.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a red hot pepper, a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+38,,I dropped the red hot pepper to free up space.,"Now that I have space, I should take the raw yellow potato from the floor.",take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-61,,"I am in the kitchen carrying a red hot pepper, a knife, a raw pork chop, a white onion, and a red onion; there are various ingredients on the floor and counter, and I have read the recipe in the cookbook.",I should take the missing ingredients from the floor and counter to complete the recipe before cooking.,take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-62,,"I tried to take more items but was told I am carrying too many things already; I am in the kitchen carrying a red hot pepper, a knife, a raw pork chop, a white onion, and a red onion.",I need to drop some items to reduce my inventory before I can take the missing ingredients for the recipe.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+39,,I took the raw yellow potato from the floor; now I am carrying it.,I should now take the red hot pepper from the floor again to have all needed ingredients.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red hot pepper, a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-63,,"I dropped the red hot pepper on the ground; I am in the kitchen carrying a knife, a raw pork chop, a white onion, and a red onion, with several ingredients on the floor and counter.",I should pick up the raw yellow potato from the floor to have all the ingredients needed for the recipe.,take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-64,,"I picked up the yellow potato from the ground; I am in the kitchen carrying a raw yellow potato, a knife, a raw pork chop, a white onion, and a red onion.","I should check the cookbook again to confirm the recipe ingredients and steps, then prepare the meal using the ingredients I have.",open cookbook,,It isn't something you can open.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+40,,I tried to take the red hot pepper from the floor but was carrying too many things.,I should drop one item to free up space before taking the red hot pepper.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-65,,I tried to open something that cannot be opened; I am in the kitchen with several ingredients in my inventory and some on the floor and counter.,I should take the red hot pepper from the floor to have all the recipe ingredients in my inventory before cooking.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-66,,"I tried to take more items but was told I am carrying too many things already; I am in the kitchen carrying a raw yellow potato, a knife, a raw pork chop, a white onion, and a red onion.",I need to drop one item to free up space so I can pick up the missing ingredients for the recipe.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a raw yellow potato, a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+41,,I dropped the raw yellow potato to free up space.,I should now take the red hot pepper from the floor.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw yellow potato, a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-67,,"I dropped the yellow potato on the ground; I am in the kitchen carrying a knife, a raw pork chop, a white onion, and a red onion, with several ingredients on the floor and counter.",I should take the remaining ingredients needed for the recipe from the floor and counter to have all necessary items for cooking.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-68,,"I picked up the red hot pepper from the ground; I am in the kitchen carrying a red hot pepper, a knife, a raw pork chop, a white onion, and a red onion.","I should now prepare the meal using the ingredients I have and the knife, following the recipe in the cookbook.",prepare meal,,You still miss something.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+42,,I took the red hot pepper from the floor; now I am carrying it.,I should take the raw yellow potato from the floor to have all ingredients needed.,take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-69,,"I am in the kitchen carrying a red hot pepper, a knife, a raw pork chop, a white onion, and a red onion; I see various ingredients on the floor and counter, but I still miss something for the recipe.",I should check the ingredients on the floor and counter to find the missing ingredient for the recipe.,take banana from counter,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-70,,"I tried to take more items but was told I am carrying too many things already; I am in the kitchen carrying a red hot pepper, a knife, a raw pork chop, a white onion, and a red onion, with various ingredients on the floor and counter.",I need to drop one item to free up space so I can take the missing ingredients for the recipe.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+43,,I tried to take the raw yellow potato but was carrying too many things.,I should drop an item to free up space before taking the raw yellow potato.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
-
-There is a red hot pepper, a raw yellow potato, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-71,,"I dropped the red hot pepper on the ground; I am in the kitchen carrying a knife, a raw pork chop, a white onion, and a red onion, with various ingredients on the floor and counter.",I should take the raw yellow potato from the floor to have all the ingredients needed for the recipe.,take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,False,
-72,,"I picked up the yellow potato from the ground; I am in the kitchen carrying a raw yellow potato, a knife, a raw pork chop, a white onion, and a red onion.",I should check the cookbook on the table again to confirm the recipe and see if I have all the necessary ingredients to start cooking.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+There is a red hot pepper, a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+44,,I dropped the red hot pepper to free up space.,I should now take the raw yellow potato from the floor.,take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
 
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red hot pepper
-  carrot
-  orange bell pepper
-  block of cheese
-  red apple
-
-Directions:
-slice the red hot pepper
-  fry the red hot pepper
-  slice the carrot
-  roast the carrot
-  slice the orange bell pepper
-  roast the orange bell pepper
-  dice the block of cheese
-  fry the block of cheese
-  slice the red apple
-  fry the red apple
-  prepare meal",Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
 
-There is a red hot pepper, a red apple, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",2 of 16,0.125,True,
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+45,,I took the raw yellow potato from the floor; now I am carrying it.,I should take the red hot pepper from the floor again to have all ingredients needed.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+46,,I tried to take the red hot pepper from the floor but was carrying too many things.,I need to drop an item to free up space before taking the red hot pepper.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+47,,I dropped the raw yellow potato to free up space.,"Now that I have space, I should take the red hot pepper from the floor.",take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+48,,I took the red hot pepper from the floor; now I am carrying it.,I should now take the raw yellow potato from the floor to gather all needed ingredients.,take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+49,,I tried to take the raw yellow potato but was carrying too many things.,I need to drop an item to free up space before taking the raw yellow potato.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+50,,I dropped the red hot pepper to free up space.,"Now that I have space, I should take the raw yellow potato from the floor.",take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+51,,I took the raw yellow potato from the floor.,I should now take the red hot pepper from the floor to have all ingredients needed.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+52,,I tried to take the red hot pepper but was carrying too many things.,I should drop one item to free up space before taking the red hot pepper.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+53,,I dropped the raw yellow potato to free up space.,I should now take the red hot pepper from the floor.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+54,,I took the red hot pepper from the floor; now I am carrying it.,I should now take the raw yellow potato from the floor.,take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+55,,I tried to take the raw yellow potato but was carrying too many things.,I should drop an item to free up space before taking the raw yellow potato.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+56,,I dropped the red hot pepper to free up space.,I should now take the raw yellow potato from the floor.,take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+57,,I took the raw yellow potato from the floor; now I am carrying it.,I should take the red hot pepper from the floor to have all ingredients needed.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+58,,I tried to take the red hot pepper but was carrying too many things.,I should drop an item to free up space before taking the red hot pepper.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+59,,I dropped the raw yellow potato to free up space.,I should now take the red hot pepper from the floor.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+60,,I took the red hot pepper from the floor; now I am carrying it.,I should take the raw yellow potato from the floor next.,take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+61,,I tried to take the raw yellow potato but was carrying too many things.,I need to drop an item to free up space before taking the raw yellow potato.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+62,,I dropped the red hot pepper to free up space.,"Now that I have space, I should take the raw yellow potato from the floor.",take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+63,,I took the raw yellow potato from the floor.,I should now take the red hot pepper from the floor again to have all needed ingredients.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+64,,I tried to take the red hot pepper but was carrying too many things.,I should drop one item to free up space before taking the red hot pepper.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+65,,I dropped the raw yellow potato to free up space.,I should now take the red hot pepper from the floor.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+66,,I took the red hot pepper from the floor; now I am carrying it.,I should take the raw yellow potato from the floor to have all ingredients needed.,take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+67,,I tried to take the raw yellow potato but was carrying too many things.,I should drop an item to free up space before taking the raw yellow potato.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+68,,I dropped the red hot pepper to free up space.,I should now take the raw yellow potato from the floor.,take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+69,,I took the raw yellow potato from the floor; now I am carrying it.,I should take the red hot pepper from the floor to have all ingredients needed.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a raw yellow potato, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+70,,I tried to take the red hot pepper but was carrying too many things.,I should drop one item to free up space before taking the red hot pepper.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a red hot pepper, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+71,,I dropped the raw yellow potato to free up space.,I should now take the red hot pepper from the floor.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,False,
+72,,I took the red hot pepper from the floor; now I am carrying it.,I should take the raw yellow potato from the floor to have all ingredients needed.,take raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"This might come as a shock to you, but you've just walked into a kitchen. Okay, just remember what you're here to do, and everything will go great.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You can make out a closed oven close by. If you haven't noticed it already, there seems to be something there by the wall, it's a table. The table is massive. On the table you see a cookbook. You see a counter. You see a red apple, a banana and a raw red potato on the counter. You can make out a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open frosted-glass door leading south. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+There is a raw yellow potato, a yellow bell pepper, an orange bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a raw pork chop, a white onion and a red onion.",1 of 16,0.0625,True,

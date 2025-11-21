@@ -2,7 +2,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You are in a kitchen. An usual kind of place. I guess you better just go and list everything you see here.
 
 Hey, want to see a fridge? Look over there, a fridge. The fridge contains a chopped fried pork chop, an orange bell pepper, a yellow bell pepper, a white onion and some water. You can see an opened conventional looking oven close by. The oven is empty! What a waste of a day! You hear a noise behind you and spin around, but you can't see anything other than a table. But oh no! there's nothing on this piece of trash. You see a gleam over in a corner, where you can see a counter. The counter is vast. On the counter you see a red apple, a red hot pepper and a cookbook. You see a stove. But there isn't a thing on it.",You are carrying nothing.,0 of 3,0.0,False,
-1,,"I am in the kitchen with various items around including a fridge, oven, table, counter, stove, and a cookbook on the counter.",I should examine the cookbook on the counter to check the recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,"I am in the kitchen with various items around including a fridge, an oven, a table, a counter with a red apple, a red hot pepper, and a cookbook.",I should examine the cookbook to find the recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -17,36 +17,21 @@ chop the pork chop
   prepare meal",Kitchen,"You are in a kitchen. An usual kind of place. I guess you better just go and list everything you see here.
 
 Hey, want to see a fridge? Look over there, a fridge. The fridge contains a chopped fried pork chop, an orange bell pepper, a yellow bell pepper, a white onion and some water. You can see an opened conventional looking oven close by. The oven is empty! What a waste of a day! You hear a noise behind you and spin around, but you can't see anything other than a table. But oh no! there's nothing on this piece of trash. You see a gleam over in a corner, where you can see a counter. The counter is vast. On the counter you see a red apple, a red hot pepper and a cookbook. You see a stove. But there isn't a thing on it.",You are carrying nothing.,0 of 3,0.0,False,
-2,,"I opened the cookbook and read the recipe for a pork chop meal; the kitchen contains a fridge with ingredients, an empty oven, a table with nothing on it, a counter with some items, and a stove with nothing on it.",I should take the pork chop from the fridge to start preparing the meal.,take pork chop from fridge,,"You take the pork chop from the fridge.
+2,,"I examined the cookbook and found a recipe that requires a pork chop to be chopped, fried, and then prepared as a meal.","Since the fridge already contains a chopped fried pork chop, I should take it and prepare the meal.",take chopped fried pork chop from fridge,,"You take the pork chop from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You are in a kitchen. An usual kind of place. I guess you better just go and list everything you see here.
 
 Hey, want to see a fridge? Look over there, a fridge. The fridge contains an orange bell pepper, a yellow bell pepper, a white onion and some water. You can see an opened conventional looking oven close by. The oven is empty! What a waste of a day! You hear a noise behind you and spin around, but you can't see anything other than a table. But oh no! there's nothing on this piece of trash. You see a gleam over in a corner, where you can see a counter. The counter is vast. On the counter you see a red apple, a red hot pepper and a cookbook. You see a stove. But there isn't a thing on it.",You are carrying: a chopped fried pork chop.,1 of 3,0.3333333333333333,False,
-3,,I took the pork chop from the fridge; now I am carrying it.,I should check the recipe in the cookbook again to see the next steps for cooking the pork chop meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-pork chop
-
-Directions:
-chop the pork chop
-  fry the pork chop
-  prepare meal",Kitchen,"You are in a kitchen. An usual kind of place. I guess you better just go and list everything you see here.
-
-Hey, want to see a fridge? Look over there, a fridge. The fridge contains an orange bell pepper, a yellow bell pepper, a white onion and some water. You can see an opened conventional looking oven close by. The oven is empty! What a waste of a day! You hear a noise behind you and spin around, but you can't see anything other than a table. But oh no! there's nothing on this piece of trash. You see a gleam over in a corner, where you can see a counter. The counter is vast. On the counter you see a red apple, a red hot pepper and a cookbook. You see a stove. But there isn't a thing on it.",You are carrying: a chopped fried pork chop.,1 of 3,0.3333333333333333,False,
-4,,I took the pork chop from the fridge and chopped and fried it as per the recipe; now I am carrying a chopped fried pork chop.,I should now prepare the meal using the chopped fried pork chop to complete the recipe.,prepare meal,,"Adding the meal to your inventory.
+3,,I took the chopped fried pork chop from the fridge and now I am carrying it.,I should prepare the meal using the chopped fried pork chop as per the recipe.,prepare meal,,"Adding the meal to your inventory.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You are in a kitchen. An usual kind of place. I guess you better just go and list everything you see here.
 
 Hey, want to see a fridge? Look over there, a fridge. The fridge contains an orange bell pepper, a yellow bell pepper, a white onion and some water. You can see an opened conventional looking oven close by. The oven is empty! What a waste of a day! You hear a noise behind you and spin around, but you can't see anything other than a table. But oh no! there's nothing on this piece of trash. You see a gleam over in a corner, where you can see a counter. The counter is vast. On the counter you see a red apple, a red hot pepper and a cookbook. You see a stove. But there isn't a thing on it.",You are carrying: a meal.,2 of 3,0.6666666666666666,False,
-5,,I added the meal to my inventory; now I am carrying the meal.,I should eat the meal since I am hungry and have it ready.,eat meal,,"You eat the meal. Not bad.
+4,,I prepared the meal using the chopped fried pork chop and now I am carrying the meal.,I should eat the meal to satisfy my hunger.,eat meal,,"You eat the meal. Not bad.
 
 
 Your score has just gone up by one point.
@@ -54,7 +39,7 @@ Your score has just gone up by one point.
 
                                *** The End ***
 
-You scored 3 out of a possible 3, in 6 turns.
+You scored 3 out of a possible 3, in 5 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

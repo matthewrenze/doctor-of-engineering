@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the study.,I should go west as the first step of the trip.,go west,,"Well I'll be, you are in the place we're calling the steam room.
+1,,I am in the study.,I should go west as the first step in the sequence.,go west,,"Well I'll be, you are in the place we're calling the steam room.
 
 
 
@@ -67,7 +67,7 @@ There is an exit to the east. Don't worry, it is unguarded. There is an exit to 
 
 
 There is an exit to the east. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I went north to the bathroom.,"Next, I should go west as per the instructions.",go west,,"Okay, so you're in a basement, cool, but is it typical? You better believe it is.
+8,,I went north to the bathroom.,"Next, I should go west as instructed.",go west,,"Okay, so you're in a basement, cool, but is it typical? You better believe it is.
 
 
 
@@ -85,7 +85,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. The
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I went south to the shower.,"Next, I should go east as per the instructions.",go east,,"You are in a workshop. A normal one.
+10,,I went south to the shower.,"Next, I should go east as instructed.",go east,,"You are in a workshop. A normal one.
 
 
 
@@ -103,7 +103,7 @@ There is an exit to the north. Don't worry, it is unguarded. There is an exit to
 
 
 There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I went east to the garage.,"Next, I should go south as per the instructions.",go south,,"You are in a restroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+12,,I went east to the garage.,"Next, I should go south as instructed.",go south,,"You are in a restroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
@@ -121,7 +121,7 @@ You need an unguarded exit? You should try going east. You need an unguarded exi
 
 
 You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I went south to the kitchenette.,"Next, I should go east as per the instructions.",go east,,"You've entered a cubicle. The room is well lit.
+14,,I went south to the kitchenette.,"Next, I should go east as instructed.",go east,,"You've entered a cubicle. The room is well lit.
 
 
 
@@ -139,7 +139,7 @@ There is an exit to the north. Don't worry, it is unblocked. You don't like door
 
 
 There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I went south to the studio.,"Next, I should go west as per the instructions.",go west,,"You find yourself in an office. An austere one. You can barely contain your excitement.
+16,,I went south to the studio.,"Next, I should go west as instructed.",go west,,"You find yourself in an office. An austere one. You can barely contain your excitement.
 
 
 
@@ -157,17 +157,47 @@ There is an unguarded exit to the east.",Pantry,"You are in a pantry. A typical 
 
 
 There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I went west to the pantry.,"Next, I should go north as per the instructions.",go north,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+18,,I went west to the pantry.,"Next, I should go north as instructed.",go north,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
 There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I tried to go north from the pantry but couldn't.,"Since north is blocked, I should try going west as the next step in the instructions.",go west,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+19,,I tried to go north from the pantry but couldn't.,"Since north is not possible, I should try going west as the next instruction.",go west,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
 There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I tried to go west from the pantry but couldn't.,"Since west and north are blocked, I should try going east as the next step in the instructions.",go east,,"You find yourself in an office. An austere one. You can barely contain your excitement.
+20,,I tried to go west from the pantry but couldn't.,I should try going north again as the next instruction.,go north,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I tried to go north from the pantry again but couldn't.,I should try going west again as the next instruction.,go west,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I tried to go west from the pantry again but couldn't.,I should try going north again as the next instruction.,go north,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I tried to go north from the pantry again but couldn't.,I should try going west again as the next instruction.,go west,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I tried to go west from the pantry again but couldn't.,"Since I cannot go north or west, I should try going north again as the next instruction.",go north,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I tried to go north from the pantry again but couldn't.,"Since north and west are blocked, I should try going south as the next instruction.",go south,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I tried to go south from the pantry but couldn't.,"Since all other directions are blocked except east, I should try going east.",go east,,"You find yourself in an office. An austere one. You can barely contain your excitement.
 
 
 
@@ -176,40 +206,7 @@ You need an unguarded exit? You should try going east. There is an unguarded exi
 
 
 You need an unguarded exit? You should try going east. There is an unguarded exit to the north. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I went east back to the austere office.,"Next, I should try to go west again as per the instructions.",go west,,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-
-
-There is an unguarded exit to the east.",Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-
-
-There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I went west to the pantry again.,"Since I cannot go north or west from here, I should try going north again as per the instructions.",go north,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-
-
-There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I tried to go north from the pantry again but couldn't.,"Since north and west are blocked, I should try going west again as per the instructions.",go west,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-
-
-There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I tried to go west from the pantry again but couldn't.,"Since west and north are blocked, I should try going north again as per the instructions.",go north,,You can't go that way.,Pantry,"You are in a pantry. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-
-
-There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I tried to go north from the pantry again but couldn't.,"Since north and west are blocked, I should try going east as the next step in the instructions.",go east,,"You find yourself in an office. An austere one. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an unguarded exit to the north. There is an unguarded exit to the west.",Austere Office,"You find yourself in an office. An austere one. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an unguarded exit to the north. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I went east back to the austere office.,"Next, I should try going north as per the instructions.",go north,,"You've entered a canteen.
+27,,I went east back to the austere office.,"Next, I should go north as instructed.",go north,,"You've entered a canteen.
 
 
 
@@ -218,7 +215,7 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unguard
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I went north to the canteen.,"Next, I should try going west as per the instructions.",go west,,"You find yourself in a workshop. A silent one.
+28,,I went north to the canteen.,"Next, I should go west as instructed.",go west,,"You find yourself in a workshop. A silent one.
 
 
 
@@ -227,12 +224,7 @@ You need an unguarded exit? You should try going east. There is an exit to the s
 
 
 You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I went west to the silent workshop.,"Next, I should try going north as per the instructions.",go north,,You can't go that way.,Silent Workshop,"You find yourself in a workshop. A silent one.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I tried to go north from the silent workshop but couldn't.,"Since north is blocked, I should try going west as per the instructions.",go west,,"You are in an attic. A normal kind of place.
+29,,I went west to the silent workshop.,"Next, I should try going west again as instructed.",go west,,"You are in an attic. A normal kind of place.
 
 
 
@@ -241,7 +233,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I went west to the attic.,"Next, I should try going north as per the instructions.",go north,,"You are in a kitchenette. A balmy one.
+30,,I went west to the attic.,"Next, I should try going north as instructed.",go north,,"You are in a kitchenette. A balmy one.
 
 
 
@@ -250,112 +242,32 @@ You need an unguarded exit? You should try going south.",Balmy Kitchenette,"You 
 
 
 You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I went north to the balmy kitchenette.,"Next, I should try going south as per the instructions.",go south,,"You are in an attic. A normal kind of place.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded.",Attic,"You are in an attic. A normal kind of place.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I went south back to the attic.,"Next, I should try going west as per the instructions.",go west,,"Of every cookery you could have sauntered into, you had to show up in an ordinary one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unblocked.",Cookery,"Of every cookery you could have sauntered into, you had to show up in an ordinary one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I went west to the cookery.,"Next, I should try going north as per the instructions.",go north,,"You've just shown up in a kitchen.
-
-
-
-You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Kitchen,"You've just shown up in a kitchen.
-
-
-
-You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I went north to the kitchen.,I should pick up the coin from the floor of the steamy kitchen as the final step.,take coin from floor,,You can't see any such thing.,Kitchen,"You've just shown up in a kitchen.
-
-
-
-You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I tried to take the coin from the floor but couldn't find it.,I should look around the kitchen carefully to find the coin.,look,,"You've just shown up in a kitchen.
-
-
-
-You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Kitchen,"You've just shown up in a kitchen.
-
-
-
-You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I looked around the kitchen but still couldn't find the coin.,I should examine the floor closely to find the coin.,examine floor,,You can't see any such thing.,Kitchen,"You've just shown up in a kitchen.
-
-
-
-You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I examined the floor but still couldn't find the coin.,I should try going east to explore the next area and see if the coin is there.,go east,,"Well, here we are in an austere workshop.
-
-
-
-There is an unguarded exit to the west.",Austere Workshop,"Well, here we are in an austere workshop.
-
-
-
-There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I went east to the austere workshop.,I should try going west to return to the kitchen and look for the coin again.,go west,,"You've just shown up in a kitchen.
-
-
-
-You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Kitchen,"You've just shown up in a kitchen.
-
-
-
-You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I went west back to the kitchen.,"I should try to take the coin again, maybe it is just not visible but can be taken.",take coin,,You can't see any such thing.,Kitchen,"You've just shown up in a kitchen.
-
-
-
-You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I tried to take the coin again but still couldn't find it.,"Since the coin is not visible or accessible here, I should check if I am in the correct location by looking around once more.",look,,"You've just shown up in a kitchen.
-
-
-
-You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Kitchen,"You've just shown up in a kitchen.
-
-
-
-You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I looked around the kitchen again but found no coin.,I should try going south to explore the next area as the coin might be there.,go south,,"Of every cookery you could have sauntered into, you had to show up in an ordinary one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unblocked.",Cookery,"Of every cookery you could have sauntered into, you had to show up in an ordinary one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I went south to the cookery.,I should try going east to explore the unguarded entranceway.,go east,,"You are in an attic. A normal kind of place.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded.",Attic,"You are in an attic. A normal kind of place.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I went east to the attic.,I should try going north to explore the unblocked entranceway.,go north,,"You are in a kitchenette. A balmy one.
-
-
-
-You need an unguarded exit? You should try going south.",Balmy Kitchenette,"You are in a kitchenette. A balmy one.
+31,,I went north to the balmy kitchenette.,"Next, I should try going west as instructed.",go west,,You can't go that way.,Balmy Kitchenette,"You are in a kitchenette. A balmy one.
 
 
 
 You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I went north to the balmy kitchenette.,I should try going south to return to the attic and look for the coin there.,go south,,"You are in an attic. A normal kind of place.
+32,,I tried to go west from the balmy kitchenette but couldn't.,"Since west is blocked, I should try going north as the next instruction.",go north,,You can't go that way.,Balmy Kitchenette,"You are in a kitchenette. A balmy one.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I tried to go north from the balmy kitchenette but couldn't.,"Since north is blocked, I should try going west again as the next instruction.",go west,,You can't go that way.,Balmy Kitchenette,"You are in a kitchenette. A balmy one.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I tried to go west from the balmy kitchenette again but couldn't.,"Since west and north are blocked, I should try going north again as the next instruction.",go north,,You can't go that way.,Balmy Kitchenette,"You are in a kitchenette. A balmy one.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I tried to go north from the balmy kitchenette again but couldn't.,"Since north and west are blocked, I should try going north once more as the next instruction.",go north,,You can't go that way.,Balmy Kitchenette,"You are in a kitchenette. A balmy one.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I tried to go north from the balmy kitchenette again but couldn't.,"Since north and west are blocked, I should try going south as the next instruction.",go south,,"You are in an attic. A normal kind of place.
 
 
 
@@ -364,7 +276,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I went south back to the attic.,I should try going west to explore the unguarded exit and see if the coin is there.,go west,,"Of every cookery you could have sauntered into, you had to show up in an ordinary one. You try to gain information on your surroundings by using a technique you call ""looking.""
+37,,I went south to the attic.,"Next, I should try going west as instructed.",go west,,"Of every cookery you could have sauntered into, you had to show up in an ordinary one. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
@@ -373,16 +285,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. The
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I went west to the cookery.,I should look around the cookery to see if the coin is visible here.,look,,"Of every cookery you could have sauntered into, you had to show up in an ordinary one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unblocked.",Cookery,"Of every cookery you could have sauntered into, you had to show up in an ordinary one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I looked around the cookery but found no coin.,I should try going north to explore the unguarded exit and see if the coin is there.,go north,,"You've just shown up in a kitchen.
+38,,I went west to the cookery.,"Next, I should try going north as instructed.",go north,,"You've just shown up in a kitchen.
 
 
 
@@ -391,7 +294,7 @@ You need an unblocked exit? You should try going east. There is an exit to the s
 
 
 You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I went north to the kitchen.,I should try going west to explore the unblocked exit and look for the coin there.,go west,,"You arrive in a workshop. A serious kind of place.
+39,,I went north to the kitchen.,"Next, I should try going west as instructed.",go west,,"You arrive in a workshop. A serious kind of place.
 
 
 
@@ -399,4 +302,57 @@ You don't like doors? Why not try going east, that entranceway is unblocked. The
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,True,
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went west to the serious workshop.,"Next, I should try going north as instructed.",go north,,"You've just sauntered into an austere study.
+
+
+
+There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Austere Study,"You've just sauntered into an austere study.
+
+
+
+There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went north to the austere study.,"Next, I should try going west as instructed.",go west,,"You arrive in a launderette. An usual kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",Launderette,"You arrive in a launderette. An usual kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I went west to the launderette.,"Next, I should try going west as instructed.",go west,,You can't go that way.,Launderette,"You arrive in a launderette. An usual kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I tried to go west from the launderette but couldn't.,"Since west is blocked, I should try going north as the next instruction.",go north,,You can't go that way.,Launderette,"You arrive in a launderette. An usual kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I tried to go north from the launderette but couldn't.,"Since north is blocked, I should try going west again as the next instruction.",go west,,You can't go that way.,Launderette,"You arrive in a launderette. An usual kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I tried to go west from the launderette again but couldn't.,"Since west and north are blocked, I should try going north again as the next instruction.",go north,,You can't go that way.,Launderette,"You arrive in a launderette. An usual kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I tried to go north from the launderette again but couldn't.,"Since west and north are blocked, I should try going west again as the next instruction.",go west,,You can't go that way.,Launderette,"You arrive in a launderette. An usual kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I tried to go west from the launderette again but couldn't.,"Since west and north are blocked, I should try going north again as the next instruction.",go north,,You can't go that way.,Launderette,"You arrive in a launderette. An usual kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I tried to go north from the launderette again but couldn't.,"Since west and north are blocked, I should try going west again as the next instruction.",go west,,You can't go that way.,Launderette,"You arrive in a launderette. An usual kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,True,

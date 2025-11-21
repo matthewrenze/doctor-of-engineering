@@ -2,7 +2,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
 
 You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook and a knife on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.",You are carrying: a raw purple potato and a banana.,0 of 6,0.0,False,
-1,,,I should examine the cookbook on the table to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,I am in the kitchen with a raw purple potato and a banana in my inventory.,I should examine the cookbook on the table to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -20,13 +20,13 @@ chop the banana
   prepare meal",Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
 
 You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook and a knife on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.",You are carrying: a raw purple potato and a banana.,0 of 6,0.0,False,
-2,,I examined the cookbook and found a recipe that uses the banana and purple potato I have.,I should chop the banana first as per the recipe.,chop banana with knife,,You need to take the knife first.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
+2,,"I examined the cookbook and found a recipe that requires chopping and frying the banana, dicing and frying the purple potato, and then preparing the meal.",I should start by chopping the banana as per the recipe instructions.,slice banana with knife,,You need to take the knife first.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
 
 You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook and a knife on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.",You are carrying: a raw purple potato and a banana.,0 of 6,0.0,False,
-3,,I tried to chop the banana but realized I need to take the knife first.,I should take the knife from the table before chopping the banana.,take knife from table,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
+3,,I tried to slice the banana but was reminded to take the knife first.,I should take the knife from the table before attempting to slice the banana.,take knife from table,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
 
 You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook and a knife on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.",You are carrying: a raw purple potato and a banana.,0 of 6,0.0,False,
-4,,I tried to take the knife but was carrying too many things already.,I should put down one of the items I am carrying to free up space for the knife.,drop banana,,You drop the banana on the ground.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
+4,,I tried to take the knife but was told I am carrying too many things already.,I should drop one of the items I am carrying to free up space for the knife.,drop banana,,You drop the banana on the ground.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
 
 You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook and a knife on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.
 
@@ -40,55 +40,41 @@ You can make out a closed fridge nearby. You see an oven. You make out a table. 
 
 
 There is a banana on the floor.",You are carrying: a knife and a raw purple potato.,0 of 6,0.0,False,
-6,,I took the knife from the table.,I should take the banana from the floor to have all ingredients for the recipe.,take banana from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
+6,,I took the knife from the table and now carry it along with the raw purple potato.,I should slice the banana on the floor with the knife as the recipe instructs.,slice banana with knife,,You need to take the banana first.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
 
 You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.
 
 
 
 There is a banana on the floor.",You are carrying: a knife and a raw purple potato.,0 of 6,0.0,False,
-7,,I tried to take the banana from the floor but was carrying too many things already.,I should put down the knife temporarily to pick up the banana.,drop knife,,You drop the knife on the ground.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
-
-You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.
-
-
-
-There is a knife and a banana on the floor.",You are carrying: a raw purple potato.,0 of 6,0.0,False,
-8,,I dropped the knife on the ground to free up space.,I should take the banana from the floor now.,take banana from floor,,You pick up the banana from the ground.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
-
-You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.
-
-
-
-There is a knife on the floor.",You are carrying: a banana and a raw purple potato.,0 of 6,0.0,False,
-9,,I took the banana from the floor.,I should now take the knife from the floor to prepare the ingredients.,take knife from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
-
-You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.
-
-
-
-There is a knife on the floor.",You are carrying: a banana and a raw purple potato.,0 of 6,0.0,False,
-10,,I tried to take the knife from the floor but was carrying too many things already.,I should put down the banana to pick up the knife.,drop banana,,You drop the banana on the ground.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
-
-You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.
-
-
-
-There is a banana and a knife on the floor.",You are carrying: a raw purple potato.,0 of 6,0.0,False,
-11,,I dropped the banana on the ground to free up space.,I should take the knife from the floor now.,take knife from floor,,You pick up the knife from the ground.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
+7,,I tried to slice the banana on the floor but was reminded to take the banana first.,I should take the banana from the floor before slicing it.,take banana from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
 
 You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.
 
 
 
 There is a banana on the floor.",You are carrying: a knife and a raw purple potato.,0 of 6,0.0,False,
-12,,I took the knife from the floor.,I should chop the raw purple potato with the knife as part of the recipe.,chop raw purple potato with knife,,"You chop the purple potato.
+8,,I tried to take the banana but was told I am carrying too many things already.,I should drop the raw purple potato to free up space for the banana.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
+
+You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.
+
+
+
+There is a raw purple potato and a banana on the floor.",You are carrying: a knife.,0 of 6,0.0,False,
+9,,I dropped the raw purple potato to free up space.,I should take the banana from the floor now.,take banana from floor,,You pick up the banana from the ground.,Kitchen,"You find yourself in a kitchen. You begin to take stock of what's in the room.
+
+You can make out a closed fridge nearby. You see an oven. You make out a table. You see a cookbook on the table. You see a counter. The counter is vast. Unfortunately, there isn't a thing on it. You make out a stove. You shudder, but continue examining the stove. The stove is conventional. However, the stove, like an empty stove, has nothing on it.
+
+
+
+There is a raw purple potato on the floor.",You are carrying: a banana and a knife.,0 of 6,0.0,False,
+10,,I took the banana from the floor and now carry it along with the knife.,I should slice the banana with the knife as per the recipe.,slice banana with knife,,"You slice the banana.
 
 
 
                               *** You lost! ***
 
-You scored 0 out of a possible 6, in 12 turns.
+You scored 0 out of a possible 6, in 10 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
@@ -98,4 +84,4 @@ You can make out a closed fridge nearby. You see an oven. You make out a table. 
 
 
 
-There is a banana on the floor.",You are carrying: a knife and a raw purple potato.,0 of 6,0.0,True,
+There is a raw purple potato on the floor.",You are carrying: a banana and a knife.,0 of 6,0.0,True,

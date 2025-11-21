@@ -15,7 +15,7 @@ Each step will be subdivided into the following sub-steps:
    - Inventory - the items you are currently carrying.
    - Score - your current score and maximum possible score.
 You will use feedback from the State to refine your thought and action in subsequent steps.
-For each response, you must include exactly one thought and one action.
+For each response, you must include exactly one summary, one thought, and one action.
 The environment will provide the state after each action.
 
 # Summaries
@@ -23,7 +23,7 @@ Your summary for step zero should just contain your current location.
 For all subsequent steps, your summary should describe the action you took and the result of that action
 Summaries should be in the format "Summary: <action>; <result>".
 Summaries will be stored in the "Previous steps" section of your context.
-You may not have access to previous full state information, only the summaries you provide.
+You will only have access to the {k_pairs} most recent previous steps in your context.
 So, your summaries must contain all relevant information you need to understand the current situation.
 
 # Actions

@@ -16,11 +16,9 @@ from agents.dialogue_writer import DialogueWriter
 
 # Set agents
 agent_names = [
-    # "summary-1",
-    # "summary-5",
+    "summary-1",
+    "summary-5",
     "summary-10",
-    # "summary-15",
-    # "summary-20"
 ]
 
 # Set models

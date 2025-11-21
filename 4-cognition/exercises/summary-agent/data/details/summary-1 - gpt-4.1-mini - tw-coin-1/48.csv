@@ -4,7 +4,16 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the parlor.,I should move north as the first step of the task.,go north,,"You arrive in a shower. An usual one.
+1,,I am in the parlor.,I should look around the parlor to list everything I see here.,look,,"Well how about that, you are in a place we're calling a parlor. I guess you better just go and list everything you see here.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",Parlor,"Well how about that, you are in a place we're calling a parlor. I guess you better just go and list everything you see here.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+2,,I looked around the parlor; it has an exit to the north.,I should move north as the first step of the task.,go north,,"You arrive in a shower. An usual one.
 
 
 
@@ -13,7 +22,7 @@ There is an exit to the east. Don't worry, it is unblocked. You don't like doors
 
 
 There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I moved north and arrived in the shower.,I should go east as the exit to the east is unblocked.,go east,,"Well how about that, you are in the place we're calling the bedroom.
+3,,I went north to the shower; there is an exit to the east and south.,I should take a trip east as the next step.,go east,,"Well how about that, you are in the place we're calling the bedroom.
 
 
 
@@ -22,7 +31,7 @@ There is an exit to the north. Don't worry, it is unblocked. There is an exit to
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-3,,I moved north from the shower and arrived in the bedroom.,I should go north from the bedroom as the exit is unblocked.,go north,,"You've entered a balmy dish-pit.
+4,,I went east to the bedroom; there are exits to the north and west.,I should move north as the next step.,go north,,"You've entered a balmy dish-pit.
 
 
 
@@ -31,7 +40,7 @@ There is an unblocked exit to the north. There is an unblocked exit to the south
 
 
 There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I moved north from the bedroom and arrived in the balmy dish-pit.,I should now move north as the next step in the sequence.,go north,,"You've just shown up in a clean bathroom.
+5,,I went north to the balmy dish-pit; there are exits to the north and south.,I should move north again as the next step.,go north,,"You've just shown up in a clean bathroom.
 
 
 
@@ -40,7 +49,7 @@ There is an exit to the north. Don't worry, it is unguarded. There is an exit to
 
 
 There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I moved north from the balmy dish-pit and arrived in the clean bathroom.,I should continue following the instructions by moving north again.,go north,,"You've entered a steamy cookhouse.
+6,,I went north to the clean bathroom; there are exits to the north and south.,I should go north again as the next step.,go north,,"You've entered a steamy cookhouse.
 
 
 
@@ -49,17 +58,48 @@ You don't like doors? Why not try going south, that entranceway is unguarded. Yo
 
 
 You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I moved north from the clean bathroom and arrived in the steamy cookhouse.,I should go east as the next step in the instructions is to take a trip east.,go east,,You can't go that way.,Steamy Cookhouse,"You've entered a steamy cookhouse.
+7,,I went north to the steamy cookhouse; there are exits to the south and west.,I should go west as the next step.,go west,,"You've entered a launderette. You start to take note of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+8,,I went west to the launderette; there is an exit to the east.,I should go north as the next step.,go north,,You can't go that way.,Launderette,"You've entered a launderette. You start to take note of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+9,,I tried to go north from the launderette but couldn't; only east and west exits are available.,I should go east from the launderette as the next step.,go east,,"You've entered a steamy cookhouse.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Steamy Cookhouse,"You've entered a steamy cookhouse.
 
 
 
 You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I attempted to move north from the steamy cookhouse but was unable to; the way is blocked.,"Since I cannot go north, I will try going east as the next step in the instructions.",go east,,You can't go that way.,Steamy Cookhouse,"You've entered a steamy cookhouse.
+10,,I went east from the launderette to the steamy cookhouse.,I should go south from the steamy cookhouse as the next step.,go south,,"You've just shown up in a clean bathroom.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Clean Bathroom,"You've just shown up in a clean bathroom.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I went south from the steamy cookhouse to the clean bathroom.,I should go north from the clean bathroom as the next step.,go north,,"You've entered a steamy cookhouse.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Steamy Cookhouse,"You've entered a steamy cookhouse.
 
 
 
 You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I attempted to move north from the steamy cookhouse but was unable to; the way is blocked.,"Since I cannot go north, I will try to go west as suggested.",go west,,"You've entered a launderette. You start to take note of what's in the room.
+12,,I went north from the clean bathroom to the steamy cookhouse.,I should go west from the steamy cookhouse.,go west,,"You've entered a launderette. You start to take note of what's in the room.
 
 
 
@@ -68,575 +108,471 @@ There is an exit to the east. Don't worry, it is unblocked. You need an unguarde
 
 
 There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-9,,"I moved north twice, then north twice more until I reached the steamy cookhouse, where I was blocked from moving north. I then moved west and entered the launderette.",I should take the coin from the floor of the launderette as instructed.,take coin from floor,,You can't see any such thing.,Launderette,"You've entered a launderette. You start to take note of what's in the room.
+13,,I went west from the steamy cookhouse to the launderette.,I should go west from the launderette.,go west,,"Okay, so you're in a sauna, cool, but is it luxurious? You better believe it is. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I moved west into the launderette but could not find the coin on the floor.,I should look around the launderette more carefully to find the coin.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I moved west into the launderette but could not find the coin on the floor.,I should carefully examine the launderette to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I moved west into the launderette but could not find the coin on the floor.,I should carefully examine the launderette to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I moved west into the launderette but could not find the coin on the floor.,I should carefully examine the launderette to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going west.",Luxurious Sauna,"Okay, so you're in a sauna, cool, but is it luxurious? You better believe it is. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went west from the launderette to the luxurious sauna.,I should go west from the luxurious sauna.,go west,,"You find yourself in a launderette. A spotless one. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the north.",Spotless Launderette,"You find yourself in a launderette. A spotless one. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I went west from the luxurious sauna to the spotless launderette.,I should go north from the spotless launderette.,go north,,"You arrive in a scullery. A steamy kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked.",Steamy Scullery,"You arrive in a scullery. A steamy kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went north from the spotless launderette to the steamy scullery.,I should go north from the steamy scullery.,go north,,"You find yourself in a basement. A standard one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked.",Basement,"You find yourself in a basement. A standard one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went north from the steamy scullery to the basement.,I should go north from the basement.,go north,,"Wow! You're in a restroom.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the south.",Restroom,"Wow! You're in a restroom.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went north from the basement to the restroom.,I should go east from the restroom.,go east,,"This is going to sound unbelievable, but you've just entered a sauna.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+There is an unblocked exit to the east. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"This is going to sound unbelievable, but you've just entered a sauna.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+There is an unblocked exit to the east. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went east from the restroom to the sauna.,I should go north from the sauna.,go north,,You can't go that way.,Sauna,"This is going to sound unbelievable, but you've just entered a sauna.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+There is an unblocked exit to the east. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I tried to go north from the sauna but couldn't; only east and west exits are available.,I should go west from the sauna.,go west,,"Wow! You're in a restroom.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the south.",Restroom,"Wow! You're in a restroom.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I went west from the sauna to the restroom.,I should go south from the restroom.,go south,,"You find yourself in a basement. A standard one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked.",Basement,"You find yourself in a basement. A standard one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I went south from the restroom to the basement.,I should go north from the basement.,go north,,"Wow! You're in a restroom.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the south.",Restroom,"Wow! You're in a restroom.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I went north from the basement to the restroom.,I should go east from the restroom.,go east,,"This is going to sound unbelievable, but you've just entered a sauna.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+There is an unblocked exit to the east. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"This is going to sound unbelievable, but you've just entered a sauna.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+There is an unblocked exit to the east. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went east from the restroom to the sauna.,I should go east from the sauna.,go east,,"You find yourself in a vault. A normal kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",Vault,"You find yourself in a vault. A normal kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went east from the sauna to the vault.,I should go east from the vault.,go east,,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I went east from the vault to the laundromat.,I should look around the laundromat to find the coin on the floor.,look,,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I looked around the laundromat but did not find the coin yet.,I should try to take the coin from the floor in the laundromat.,take coin from floor,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I tried to take the coin from the floor but couldn't see any such thing.,I should look around the laundromat more carefully to find the coin.,look,,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I looked around the laundromat but did not find the coin.,I should try to examine the floor in the laundromat to see if the coin is there.,examine floor,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I examined the floor in the laundromat but couldn't see the coin.,I should try to look around the laundromat more carefully to find the coin.,look,,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I looked around the laundromat again but still did not find the coin.,"Since the coin is on the floor, I should try to take the coin from the floor again.",take coin from floor,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I tried to take the coin from the floor again but couldn't see it.,I should examine the floor more closely to find the coin.,examine floor,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I examined the floor closely but still couldn't see the coin.,I should try to look around the laundromat once more to see if I missed anything.,look,,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I looked around the laundromat again but did not find the coin.,"Since the coin is not visible on the floor, I should try to examine other objects or areas in the laundromat that might be hiding the coin.",examine laundromat,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I examined the laundromat but couldn't find the coin.,I should try to examine the floor again more closely or look for any other objects in the laundromat that might contain the coin.,examine floor,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I examined the floor closely but still couldn't find the coin.,"Since the coin is not visible on the floor, I should try to look around the laundromat more thoroughly or check if there are any containers or objects where the coin might be hidden.",look,,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I moved west into the launderette and started to take note of what's in the room.,I should examine the launderette more closely to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I looked around the laundromat but did not find the coin.,"Since the coin is not visible and there are no other objects mentioned, I should try to take the coin from the floor again, as the task specifically says to recover the coin from the floor.",take coin from floor,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I tried to take the coin from the floor but couldn't see it.,"Since the coin is not visible on the floor, I should try to examine other objects or areas in the laundromat that might hide the coin or provide a clue to its location.",examine laundromat,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I examined the laundromat but couldn't find the coin.,"Since examining the laundromat did not reveal the coin, I should try to look around the laundromat again carefully to see if I missed any details or objects that might hide the coin.",look,,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I looked around the laundromat again but still did not find the coin.,"Since looking around the laundromat did not reveal the coin, I should try to examine the floor once more carefully to see if the coin is hidden there.",examine floor,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I examined the floor in the laundromat but still couldn't see the coin.,"Since examining the floor did not reveal the coin, I should try to take the coin from the floor directly to see if it is possible to pick it up even if it is not visible.",take coin from floor,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I tried to take the coin from the floor but couldn't see it.,"Since the coin is not visible or accessible on the floor, I should look around the laundromat more thoroughly to find any other place where the coin might be.",look around laundromat,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I looked around the laundromat but still couldn't find the coin.,"Since looking around the laundromat did not reveal the coin, I should try examining other objects or areas within the laundromat more closely to find the coin.",examine laundromat,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I examined the laundromat but still couldn't find the coin.,"Since examining the laundromat did not help, I should try to go east as suggested to explore another area that might have the coin.",go east,,"You find yourself in a dish-pit. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Dish-Pit,"You find yourself in a dish-pit. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I went east to the dish-pit.,I should try going west as suggested to explore further for the coin.,go west,,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I went west to the laundromat.,I should carefully examine the laundromat again to find the coin on the floor.,examine floor,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I examined the floor in the laundromat but couldn't see the coin.,I should try to look around the laundromat more thoroughly to find the coin.,look,,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I looked around the laundromat but still did not find the coin.,"I should try to take the coin from the floor again, as it might be there but not immediately visible.",take coin from floor,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I tried to take the coin from the floor again but couldn't see it.,"Since the coin is not visible on the floor, I should examine the laundromat more closely to find any hidden or overlooked details.",examine laundromat,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I examined the laundromat but still couldn't find the coin.,"Since examining the laundromat did not reveal the coin, I should try to look around the laundromat again to see if there is any other clue or detail I missed.",look,,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I looked around the laundromat again but still did not find the coin.,"Since the coin is not visible on the floor or by looking around, I should try to examine other objects or areas within the laundromat that might be hiding the coin.",examine laundromat,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I examined the laundromat but couldn't see the coin or any other relevant object.,"Since the coin is not visible by examining the laundromat, I should try to look more closely at the floor again or try to take the coin directly from the floor.",examine floor,,You can't see any such thing.,Laundromat,"You've entered a laundromat. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I examined the floor in the laundromat but still couldn't see the coin.,"Since examining the floor did not reveal the coin, I should try to go east as suggested by the environment to explore further or find another clue.",go east,,"You find yourself in a dish-pit. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Dish-Pit,"You find yourself in a dish-pit. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I went east to the dish-pit; there is an unblocked exit to the north and west.,I should try going north from the dish-pit to continue exploring and possibly find the coin.,go north,,"You're now in the silent cubicle.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",Silent Cubicle,"You're now in the silent cubicle.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-55,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I went north to the silent cubicle; there are unguarded exits to the north and south.,I should go north again to continue exploring and find the coin.,go north,,"You arrive in a workshop. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Workshop,"You arrive in a workshop. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-56,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I went north to the workshop; there are unblocked exits to the south and west.,I should go west to explore the workshop further and look for the coin.,go west,,"You have stumbled into the most usual of all possible pantrys.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded.",Pantry,"You have stumbled into the most usual of all possible pantrys.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-57,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I went west to the pantry; there are unguarded exits to the east and north.,I should go north from the pantry to continue exploring and possibly find the coin.,go north,,"You are in a closet. An usual kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",Closet,"You are in a closet. An usual kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I went north to the closet; there are unguarded exits to the south and west.,I should go west from the closet to continue exploring and possibly find the coin.,go west,,"You arrive in an attic. An ordinary one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going west.",Attic,"You arrive in an attic. An ordinary one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-59,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I went west from the closet to the attic; there are unblocked exits to the east and west.,I should go east from the attic to explore further and possibly find the coin.,go east,,"You are in a closet. An usual kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",Closet,"You are in a closet. An usual kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went east from the attic to the closet; there are unguarded exits to the south and west.,I should go south from the closet to continue exploring and find the coin.,go south,,"You have stumbled into the most usual of all possible pantrys.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded.",Pantry,"You have stumbled into the most usual of all possible pantrys.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I went south from the closet to the pantry; there are unguarded exits to the east and north.,I should go east from the pantry to continue exploring and look for the coin.,go east,,"You arrive in a workshop. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Workshop,"You arrive in a workshop. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-62,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I went east from the pantry to the workshop; there are unblocked exits to the south and west.,I should go west from the workshop to continue exploring and possibly find the coin.,go west,,"You have stumbled into the most usual of all possible pantrys.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded.",Pantry,"You have stumbled into the most usual of all possible pantrys.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-63,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I went west from the workshop to the pantry; there are unguarded exits to the east and north.,I should go north from the pantry to explore further.,go north,,"You are in a closet. An usual kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",Closet,"You are in a closet. An usual kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I went north from the pantry to the closet; there are unguarded exits to the south and west.,I should go west from the closet to continue exploring.,go west,,"You arrive in an attic. An ordinary one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going west.",Attic,"You arrive in an attic. An ordinary one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-65,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+65,,I went west from the closet to the attic; there are unblocked exits to the east and west.,I should go east from the attic to continue exploring.,go east,,"You are in a closet. An usual kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",Closet,"You are in a closet. An usual kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-66,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+66,,I went east from the attic to the closet; there are unguarded exits to the south and west.,I should go west from the closet to explore further.,go west,,"You arrive in an attic. An ordinary one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going west.",Attic,"You arrive in an attic. An ordinary one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-67,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+67,,I went west from the closet to the attic; there are unblocked exits to the east and west.,I should go west from the attic to continue exploring.,go west,,"You've entered a cookhouse.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Cookhouse,"You've entered a cookhouse.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-68,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+68,,I went west from the attic to the cookhouse; there is an unblocked exit to the east.,I should go east to return to the attic.,go east,,"You arrive in an attic. An ordinary one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going west.",Attic,"You arrive in an attic. An ordinary one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-69,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+69,,I went east from the cookhouse to the attic; the attic has unblocked exits to the east and west.,I should go west to return to the cookhouse.,go west,,"You've entered a cookhouse.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Cookhouse,"You've entered a cookhouse.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-70,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+70,,I went west from the attic to the cookhouse; the cookhouse has an unblocked exit to the east.,I should go east to return to the attic.,go east,,"You arrive in an attic. An ordinary one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going west.",Attic,"You arrive in an attic. An ordinary one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-71,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+71,,I went east from the cookhouse to the attic; the attic has unblocked exits to the east and west.,I should go east to explore further.,go east,,"You are in a closet. An usual kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",Closet,"You are in a closet. An usual kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-72,,I moved west into the launderette and started to take note of what's in the room.,I should look around the launderette carefully to find the coin on the floor.,look,,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+72,,I went east from the attic to the closet; the closet has unguarded exits to the south and west.,I should go south to continue exploring.,go south,,"You have stumbled into the most usual of all possible pantrys.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Launderette,"You've entered a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded.",Pantry,"You have stumbled into the most usual of all possible pantrys.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,True,
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,True,

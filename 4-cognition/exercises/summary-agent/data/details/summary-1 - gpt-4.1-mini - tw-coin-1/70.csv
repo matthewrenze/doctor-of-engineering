@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the vault.,I should start by going east as suggested.,go east,,"Guess what, you are in a place we're calling a bedroom.
+1,,I am in the vault.,I should go east as the entranceway is unguarded.,go east,,"Guess what, you are in a place we're calling a bedroom.
 
 
 
@@ -13,7 +13,7 @@ There is an unguarded exit to the east. You need an unblocked exit? You should t
 
 
 There is an unguarded exit to the east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I moved east from the vault and arrived in the bedroom.,I should continue moving east as instructed.,go east,,"You've entered a bar.
+2,,I went east to the bedroom.,I should go east again as the exit is unguarded.,go east,,"You've entered a bar.
 
 
 
@@ -22,7 +22,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. The
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-3,,I moved east from the bedroom and entered the bar.,I should go east through the unguarded entranceway as suggested.,go east,,"You are in a dish-pit. An ordinary kind of place.
+3,,I went east to the bar.,I should try going east again as the entranceway is unguarded.,go east,,"You are in a dish-pit. An ordinary kind of place.
 
 
 
@@ -31,12 +31,12 @@ There is an exit to the north. Don't worry, it is unguarded. There is an exit to
 
 
 There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I moved east from the bar and arrived in the dish-pit.,I should go east again as instructed.,go east,,You can't go that way.,Dish-Pit,"You are in a dish-pit. An ordinary kind of place.
+4,,I went east to the dish-pit.,I should try going east again as per the instructions.,go east,,You can't go that way.,Dish-Pit,"You are in a dish-pit. An ordinary kind of place.
 
 
 
 There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I attempted to go east from the dish-pit but was unable to; there are exits to the north and west.,"Since I cannot go east, I will go north from the dish-pit.",go north,,"Well, here we are in the still study.
+5,,I tried to go east from the dish-pit but couldn't.,"Since east is blocked, I will try going north as the next direction.",go north,,"Well, here we are in the still study.
 
 
 
@@ -45,7 +45,7 @@ You need an unblocked exit? You should try going north. You need an unguarded ex
 
 
 You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I moved north from the dish-pit and arrived in the still study.,I should follow the instructions and try going north from the still study.,go north,,"This sauna you have just entered is definitely spotless.
+6,,I went north to the still study.,I should continue going north as suggested to find an unblocked exit.,go north,,"This sauna you have just entered is definitely spotless.
 
 
 
@@ -54,7 +54,7 @@ There is an unguarded exit to the north. There is an exit to the south. Don't wo
 
 
 There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I moved north from the dish-pit and arrived in the spotless sauna.,I should move north from the spotless sauna to continue exploring.,go north,,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+7,,I went north to the spotless sauna.,I should go north again through the unguarded exit to continue exploring.,go north,,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
 
 
 
@@ -63,7 +63,7 @@ You need an unblocked exit? You should try going north. There is an unblocked ex
 
 
 You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I moved north from the spotless sauna and arrived in the sweaty cookhouse.,I should go north as suggested to find an unblocked exit.,go north,,"You've just walked into a washroom. You begin to take stock of what's here.
+8,,I went north to the sweaty cookhouse.,I should go north again through the unblocked exit to continue moving forward.,go north,,"You've just walked into a washroom. You begin to take stock of what's here.
 
 
 
@@ -72,16 +72,7 @@ There is an unguarded exit to the east. You don't like doors? Why not try going 
 
 
 There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I moved north from the sweaty cookhouse and arrived in the washroom.,"I should explore the washroom and then decide which exit to take next, either east or south.",look,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I moved north from the sweaty cookhouse and arrived in the washroom.,I should explore the washroom further by going east through the unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+9,,I went north to the washroom.,I should go east through the unguarded exit to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -90,16 +81,106 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I moved north from the sweaty cookhouse and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+10,,I went east to the Super Hot Kitchenette.,I should go south through the unguarded exit to continue exploring.,go south,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I moved north from the sweaty cookhouse and arrived in the washroom.,I should explore the washroom further by going east through the unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I went south to the Launderette.,I should go west through the unguarded entranceway to continue exploring.,go west,,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Roomy Attic,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I went west to the Roomy Attic.,I should go east through the unguarded exit to continue exploring.,go east,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I went east from the Roomy Attic to the Launderette.,I should go west through the unguarded entranceway to continue exploring.,go west,,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Roomy Attic,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went west from the Launderette to the Roomy Attic.,I should go south through the unblocked exit to continue exploring.,go south,,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",Silent Cubicle,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I went south from the Roomy Attic to the Silent Cubicle.,I should go south again through the unguarded exit to continue moving forward.,go south,,"You are in a garage. A spacious kind of place. You begin looking for stuff.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Spacious Garage,"You are in a garage. A spacious kind of place. You begin looking for stuff.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went south from the Silent Cubicle to the Spacious Garage.,I should go south again through the unguarded exit to continue exploring.,go south,,"You find yourself in a bedchamber. A relaxing kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",Relaxing Bedchamber,"You find yourself in a bedchamber. A relaxing kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went south from the Spacious Garage to the Relaxing Bedchamber.,I should go north to return to the Spacious Garage and then continue exploring other directions.,go north,,"You are in a garage. A spacious kind of place. You begin looking for stuff.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Spacious Garage,"You are in a garage. A spacious kind of place. You begin looking for stuff.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went north from the Relaxing Bedchamber to the Spacious Garage.,I should go north from the Spacious Garage to continue exploring.,go north,,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",Silent Cubicle,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went north from the Spacious Garage to the Silent Cubicle.,I should go north from the Silent Cubicle to continue exploring.,go north,,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Roomy Attic,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went north from the Silent Cubicle to the Roomy Attic.,I should go east from the Roomy Attic to continue exploring.,go east,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I went east from the Roomy Attic to the Launderette.,I should go north from the Launderette to continue exploring.,go north,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -108,7 +189,7 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I moved north from the sweaty cookhouse and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+22,,I went north from the Launderette to the Super Hot Kitchenette.,I should go west from the Super Hot Kitchenette to explore the unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
 
 
 
@@ -117,7 +198,25 @@ There is an unguarded exit to the east. You don't like doors? Why not try going 
 
 
 There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I moved north from the sweaty cookhouse and arrived in the washroom.,I should explore the washroom more by going east through the unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+23,,I went west from the Super Hot Kitchenette to the Washroom.,I should go south from the Washroom to continue exploring the unblocked entranceway.,go south,,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",Sweaty Cookhouse,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went south from the Washroom to the Sweaty Cookhouse.,I should go north from the Sweaty Cookhouse to explore the unblocked exit.,go north,,"You've just walked into a washroom. You begin to take stock of what's here.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went north from the Sweaty Cookhouse to the Washroom.,I should go east from the Washroom to explore the unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -126,16 +225,106 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west from the super hot kitchenette as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+26,,I went east from the Washroom to the Super Hot Kitchenette.,I should go south from the Super Hot Kitchenette to explore the unguarded exit.,go south,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit in the washroom.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I went south from the Super Hot Kitchenette to the Launderette.,I should go west from the Launderette to explore the unguarded entranceway.,go west,,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Roomy Attic,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I went west from the Launderette to the Roomy Attic.,I should go south from the Roomy Attic to continue exploring.,go south,,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",Silent Cubicle,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I went south from the Roomy Attic to the Silent Cubicle.,I should go south from the Silent Cubicle to continue following the path.,go south,,"You are in a garage. A spacious kind of place. You begin looking for stuff.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Spacious Garage,"You are in a garage. A spacious kind of place. You begin looking for stuff.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I went south from the Silent Cubicle to the Spacious Garage.,I should go south from the Spacious Garage to continue exploring.,go south,,"You find yourself in a bedchamber. A relaxing kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",Relaxing Bedchamber,"You find yourself in a bedchamber. A relaxing kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I went south from the Spacious Garage to the Relaxing Bedchamber.,I should go south from the Relaxing Bedchamber to continue exploring.,go south,,"You find yourself in a crowded laundromat.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded.",Crowded Laundromat,"You find yourself in a crowded laundromat.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I went south from the Relaxing Bedchamber to the Crowded Laundromat.,I should go north from the Crowded Laundromat to return to the Relaxing Bedchamber.,go north,,"You find yourself in a bedchamber. A relaxing kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",Relaxing Bedchamber,"You find yourself in a bedchamber. A relaxing kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I went north from the Crowded Laundromat to the Relaxing Bedchamber.,I should go north from the Relaxing Bedchamber to continue exploring.,go north,,"You are in a garage. A spacious kind of place. You begin looking for stuff.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Spacious Garage,"You are in a garage. A spacious kind of place. You begin looking for stuff.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I went north from the Relaxing Bedchamber to the Spacious Garage.,I should go north from the Spacious Garage to continue moving forward.,go north,,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",Silent Cubicle,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I went north from the Spacious Garage to the Silent Cubicle.,I should go north from the Silent Cubicle to continue exploring.,go north,,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Roomy Attic,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I went north from the Silent Cubicle to the Roomy Attic.,I should go east from the Roomy Attic to continue following the path.,go east,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I went east from the Roomy Attic to the Launderette.,I should go north from the Launderette to continue exploring.,go north,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -144,7 +333,7 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+38,,I went north from the Launderette to the Super Hot Kitchenette.,I should go west from the Super Hot Kitchenette to explore further.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
 
 
 
@@ -153,7 +342,25 @@ There is an unguarded exit to the east. You don't like doors? Why not try going 
 
 
 There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+39,,I went west from the Super Hot Kitchenette to the Washroom.,I should go south from the Washroom to continue exploring.,go south,,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",Sweaty Cookhouse,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went south from the Washroom to the Sweaty Cookhouse.,I should go north from the Sweaty Cookhouse to return to the Washroom and then explore the east exit.,go north,,"You've just walked into a washroom. You begin to take stock of what's here.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went north from the Sweaty Cookhouse to the Washroom.,I should go east from the Washroom to explore the unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -162,52 +369,34 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+42,,I went east from the Washroom to the Super Hot Kitchenette.,I should go south from the Super Hot Kitchenette to continue exploring the unguarded exit.,go south,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I went south from the Super Hot Kitchenette to the Launderette.,I should go west from the Launderette to explore the unguarded entranceway.,go west,,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Roomy Attic,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I went west from the Launderette to the Roomy Attic.,I should go east from the Roomy Attic to return to the Launderette.,go east,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom to explore the unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I went east from the Roomy Attic to the Launderette.,I should go north from the Launderette to the Super Hot Kitchenette.,go north,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -216,7 +405,7 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+46,,I went north from the Launderette to the Super Hot Kitchenette.,I should go west from the Super Hot Kitchenette to the Washroom.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
 
 
 
@@ -225,7 +414,43 @@ There is an unguarded exit to the east. You don't like doors? Why not try going 
 
 
 There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+47,,I went west from the Super Hot Kitchenette to the Washroom.,I should go south from the Washroom to the Sweaty Cookhouse.,go south,,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",Sweaty Cookhouse,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I went south from the Washroom to the Sweaty Cookhouse.,I should go south from the Sweaty Cookhouse to the Still Study.,go south,,"This sauna you have just entered is definitely spotless.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Spotless Sauna,"This sauna you have just entered is definitely spotless.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I went south from the Sweaty Cookhouse to the Spotless Sauna.,I should go north from the Spotless Sauna to the Still Study.,go north,,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",Sweaty Cookhouse,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I went north from the Spotless Sauna to the Sweaty Cookhouse.,I should go north from the Sweaty Cookhouse to the Washroom.,go north,,"You've just walked into a washroom. You begin to take stock of what's here.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I went north from the Sweaty Cookhouse to the Washroom.,I should go east from the Washroom to the Super Hot Kitchenette.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -234,16 +459,232 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+52,,I went east from the Washroom to the Super Hot Kitchenette.,I should go south from the Super Hot Kitchenette to the Launderette.,go south,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I went south from the Super Hot Kitchenette to the Launderette.,I should go west from the Launderette to the Roomy Attic.,go west,,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Roomy Attic,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I went west from the Launderette to the Roomy Attic.,I should go south from the Roomy Attic to the Silent Cubicle.,go south,,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",Silent Cubicle,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I went south from the Roomy Attic to the Silent Cubicle.,I should go south from the Silent Cubicle to the Spacious Garage.,go south,,"You are in a garage. A spacious kind of place. You begin looking for stuff.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Spacious Garage,"You are in a garage. A spacious kind of place. You begin looking for stuff.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I went south from the Silent Cubicle to the Spacious Garage.,I should go south from the Spacious Garage to the Relaxing Bedchamber.,go south,,"You find yourself in a bedchamber. A relaxing kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",Relaxing Bedchamber,"You find yourself in a bedchamber. A relaxing kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I went south from the Spacious Garage to the Relaxing Bedchamber.,I should go south from the Relaxing Bedchamber to the Crowded Laundromat.,go south,,"You find yourself in a crowded laundromat.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded.",Crowded Laundromat,"You find yourself in a crowded laundromat.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I went south from the Relaxing Bedchamber to the Crowded Laundromat.,I should go south from the Crowded Laundromat to the Hot Canteen to find the coin.,go south,,"You've just shown up in a garage. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked.",Garage,"You've just shown up in a garage. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I went south from the Crowded Laundromat to the Garage.,I should go east from the Garage to find the Hot Canteen and look for the coin.,go east,,"You arrive in a pantry. A normal kind of place. You can barely contain your excitement.
+
+
+
+You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Pantry,"You arrive in a pantry. A normal kind of place. You can barely contain your excitement.
+
+
+
+You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went east from the Garage to the Pantry.,I should go north from the Pantry to reach the Hot Canteen.,go north,,"Well how about that, you are in the place we're calling the kitchenette. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Kitchenette,"Well how about that, you are in the place we're calling the kitchenette. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I went north from the Pantry to the Kitchenette.,I should go west from the Kitchenette to the Hot Canteen.,go west,,"You find yourself in a parlor. A typical kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the west.",Parlor,"You find yourself in a parlor. A typical kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I went west from the Kitchenette to the Parlor.,I should go west again to reach the Hot Canteen.,go west,,"You find yourself in a cubicle. A standard kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Cubicle,"You find yourself in a cubicle. A standard kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I went west from the Parlor to the Cubicle.,I should go south to try to reach the Hot Canteen.,go south,,"You've entered a clean restroom. Let's see what's in here.
+
+
+
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked.",Clean Restroom,"You've entered a clean restroom. Let's see what's in here.
+
+
+
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I went south from the Cubicle to the Clean Restroom.,I should go south again to continue exploring towards the Hot Canteen.,go south,,"You find yourself in an austere study.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked.",Austere Study,"You find yourself in an austere study.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+65,,I went south from the Clean Restroom to the Austere Study.,I should go north to return to the Clean Restroom and then try going north again to find the Hot Canteen.,go north,,"You've entered a clean restroom. Let's see what's in here.
+
+
+
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked.",Clean Restroom,"You've entered a clean restroom. Let's see what's in here.
+
+
+
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+66,,I went north from the Austere Study to the Clean Restroom.,I should try going north again to explore further and find the Hot Canteen.,go north,,"You find yourself in a cubicle. A standard kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Cubicle,"You find yourself in a cubicle. A standard kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+67,,I went north from the Clean Restroom to the Cubicle.,I should go east from the Cubicle to continue exploring towards the Hot Canteen.,go east,,"You find yourself in a parlor. A typical kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the west.",Parlor,"You find yourself in a parlor. A typical kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+68,,I went east from the Cubicle to the Parlor.,I should go east from the Parlor to continue moving towards the Hot Canteen.,go east,,"Well how about that, you are in the place we're calling the kitchenette. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Kitchenette,"Well how about that, you are in the place we're calling the kitchenette. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+69,,I went east from the Parlor to the Kitchenette.,I should go south from the Kitchenette to explore further towards the Hot Canteen.,go south,,"You arrive in a pantry. A normal kind of place. You can barely contain your excitement.
+
+
+
+You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",Pantry,"You arrive in a pantry. A normal kind of place. You can barely contain your excitement.
+
+
+
+You need an unblocked exit? You should try going north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+70,,I went south from the Kitchenette to the Pantry.,I should go west from the Pantry to continue exploring.,go west,,"You've just shown up in a garage. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked.",Garage,"You've just shown up in a garage. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+71,,I went west from the Pantry to the Garage.,I should go north from the Garage to continue exploring.,go north,,"You find yourself in a crowded laundromat.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded.",Crowded Laundromat,"You find yourself in a crowded laundromat.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+72,,I went north from the Garage to the Crowded Laundromat.,I should go north from the Crowded Laundromat to continue moving forward.,go north,,"You find yourself in a bedchamber. A relaxing kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",Relaxing Bedchamber,"You find yourself in a bedchamber. A relaxing kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+73,,I went north from the Crowded Laundromat to the Relaxing Bedchamber.,I should go north from the Relaxing Bedchamber to continue exploring.,go north,,"You are in a garage. A spacious kind of place. You begin looking for stuff.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Spacious Garage,"You are in a garage. A spacious kind of place. You begin looking for stuff.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+74,,I went north from the Relaxing Bedchamber to the Spacious Garage.,I should go north from the Spacious Garage to continue moving forward.,go north,,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",Silent Cubicle,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+75,,I went north from the Spacious Garage to the Silent Cubicle.,I should go north from the Silent Cubicle to continue exploring.,go north,,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Roomy Attic,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+76,,I went north from the Silent Cubicle to the Roomy Attic.,I should go east from the Roomy Attic to continue following the path.,go east,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+77,,I went east from the Roomy Attic to the Launderette.,I should go north from the Launderette to continue exploring.,go north,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -252,7 +693,7 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+78,,I went north from the Launderette to the Super Hot Kitchenette.,I should go west from the Super Hot Kitchenette to explore further.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
 
 
 
@@ -261,7 +702,25 @@ There is an unguarded exit to the east. You don't like doors? Why not try going 
 
 
 There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+79,,I went west from the Super Hot Kitchenette to the Washroom.,I should go south from the Washroom to continue exploring.,go south,,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",Sweaty Cookhouse,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+80,,I went south from the Washroom to the Sweaty Cookhouse.,I should go north from the Sweaty Cookhouse to return to the Washroom.,go north,,"You've just walked into a washroom. You begin to take stock of what's here.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+81,,I went north from the Sweaty Cookhouse to the Washroom.,I should go east from the Washroom to the Super Hot Kitchenette.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -270,52 +729,34 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+82,,I went east from the Washroom to the Super Hot Kitchenette.,I should go south from the Super Hot Kitchenette to the Launderette.,go south,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit in the washroom.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+83,,I went south from the Super Hot Kitchenette to the Launderette.,I should go west from the Launderette through the unguarded entranceway.,go west,,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Roomy Attic,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+84,,I went west from the Launderette to the Roomy Attic.,I should go east from the Roomy Attic through the unguarded exit.,go east,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+85,,I went east from the Roomy Attic to the Launderette.,I should go north from the Launderette through the unblocked exit.,go north,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -324,7 +765,7 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+86,,I went north from the Launderette to the Super Hot Kitchenette.,I should go west from the Super Hot Kitchenette through the unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
 
 
 
@@ -333,7 +774,25 @@ There is an unguarded exit to the east. You don't like doors? Why not try going 
 
 
 There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+87,,I went west from the Super Hot Kitchenette to the Washroom.,I should go south from the Washroom through the unblocked entranceway.,go south,,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",Sweaty Cookhouse,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+88,,I went south from the Washroom to the Sweaty Cookhouse.,I should go north from the Sweaty Cookhouse through the unblocked exit.,go north,,"You've just walked into a washroom. You begin to take stock of what's here.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+89,,I went north from the Sweaty Cookhouse to the Washroom.,I should go east through the unguarded exit from the Washroom.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -342,52 +801,34 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+90,,I went east from the Washroom to the Super Hot Kitchenette.,I should go south through the unguarded exit from the Super Hot Kitchenette.,go south,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+91,,I went south from the Super Hot Kitchenette to the Launderette.,I should go west through the unguarded entranceway from the Launderette.,go west,,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Roomy Attic,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I moved north multiple times and arrived in the super hot kitchenette.,I should try going west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+92,,I went west from the Launderette to the Roomy Attic.,I should go east through the unguarded exit from the Roomy Attic.,go east,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I moved north multiple times and arrived in the super hot kitchenette.,I should try going west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit in the washroom to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+93,,I went east from the Roomy Attic to the Launderette.,I should go north from the Launderette since the exit is unblocked.,go north,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -396,7 +837,7 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+94,,I went north from the Launderette to the Super Hot Kitchenette.,I should go west from the Super Hot Kitchenette as suggested.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
 
 
 
@@ -405,7 +846,25 @@ There is an unguarded exit to the east. You don't like doors? Why not try going 
 
 
 There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+95,,I went west from the Super Hot Kitchenette to the Washroom.,I should go south from the Washroom since the entranceway is unblocked.,go south,,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",Sweaty Cookhouse,"You are in a cookhouse. A sweaty kind of place. The room is well lit.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+96,,I went south from the Washroom to the Sweaty Cookhouse.,I should go north from the Sweaty Cookhouse since it has an unblocked exit.,go north,,"You've just walked into a washroom. You begin to take stock of what's here.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+97,,I went north from the Sweaty Cookhouse to the Washroom.,I should go east from the Washroom since there is an unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
 
 
 
@@ -414,489 +873,30 @@ There is an unguarded exit to the south. You need an unguarded exit? You should 
 
 
 There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+98,,I went east from the Washroom to the Super Hot Kitchenette.,I should go south from the Super Hot Kitchenette since there is an unguarded exit.,go south,,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",Launderette,"If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the launderette.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom to explore the unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+99,,I went south from the Super Hot Kitchenette to the Launderette.,I should go west from the Launderette since the entranceway is unguarded.,go west,,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Roomy Attic,"You've seen better attics, but at least this one seems pretty roomy. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+100,,I went west from the Launderette to the Roomy Attic.,I should go south from the Roomy Attic to explore further.,go south,,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",Silent Cubicle,"You arrive in a cubicle. A silent one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom to explore the unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I moved north multiple times and arrived in the super hot kitchenette.,I should try going west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit in the washroom to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-55,,I moved north multiple times and arrived in the super hot kitchenette.,I should try going west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-56,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit in the washroom.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-57,,I moved north multiple times and arrived in the super hot kitchenette.,I should try going west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-59,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-62,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit in the washroom.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-63,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit in the washroom.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-65,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-66,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit in the washroom.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-67,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-68,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-69,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-70,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-71,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-72,,I moved north multiple times and arrived in the washroom.,I should try going east since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-73,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-74,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom to explore the unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-75,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-76,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom to explore the unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-77,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-78,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-79,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-80,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-81,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-82,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom to explore the unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-83,,I moved north multiple times and arrived in the super hot kitchenette.,I should try going west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-84,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-85,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-86,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom to explore the unguarded exit.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-87,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-88,,I moved north multiple times and arrived in the washroom.,I should go east through the unguarded exit to explore further.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-89,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-90,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-91,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-92,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-93,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-94,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-95,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-96,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-97,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit and continue exploring.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-98,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-99,,I moved north multiple times and arrived in the super hot kitchenette.,I should go west as suggested to find an unguarded exit.,go west,,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You've just walked into a washroom. You begin to take stock of what's here.
-
-
-
-There is an unguarded exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-100,,I moved north multiple times and arrived in the washroom.,I should go east from the washroom since there is an unguarded exit to the east.,go east,,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Super Hot Kitchenette,"Okay, so you're in a kitchenette, cool, but is it super hot? You better believe it is.
-
-
-
-There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,True,
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,True,

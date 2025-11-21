@@ -4,7 +4,12 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 There is an exit to the east. There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-1,,I am in the corridor.,I should go east to find the kitchen where the cookbook might be.,go east,,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+1,,I am in the corridor.,I should check the goal of the game to understand what I need to do.,goal,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",Corridor,"Well, here we are in the corridor. You start to take note of what's in the room.
+
+
+
+There is an exit to the east. There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
+2,,I checked the goal; I need to cook a delicious meal by checking the cookbook in the kitchen.,I should go east to find the kitchen.,go east,,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
 
 You make out a closed fridge. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a red apple, a banana, a red hot pepper, a raw red potato, a raw purple potato, a red onion, a raw yellow potato, a cookbook and a knife. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
 
@@ -13,7 +18,7 @@ There is a closed frosted-glass door leading east. You need an exit without a do
 You make out a closed fridge. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a red apple, a banana, a red hot pepper, a raw red potato, a raw purple potato, a red onion, a raw yellow potato, a cookbook and a knife. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
 
 There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-2,,"I went east to the kitchen and found various ingredients, a cookbook, and a knife on the counter.",I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+3,,"I went east to the kitchen; I see various ingredients, a cookbook, a knife, and a stove revealed by a secret button.",I should examine the cookbook to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -42,7 +47,7 @@ slice the banana
 You make out a closed fridge. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a red apple, a banana, a red hot pepper, a raw red potato, a raw purple potato, a red onion, a raw yellow potato, a cookbook and a knife. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
 
 There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-3,,"I examined the cookbook and found a recipe requiring banana, orange bell pepper, pork chop, red apple, and red hot pepper with specific preparation steps.","I should take the banana, red apple, red hot pepper, and knife from the counter first, then check the fridge for the orange bell pepper and pork chop.",take banana from counter,,"You take the banana from the counter.
+4,,"I examined the cookbook and found a recipe requiring banana, orange bell pepper, pork chop, red apple, and red hot pepper with detailed preparation steps.","I should take the banana, red apple, and red hot pepper from the counter first, then look for the orange bell pepper and pork chop.",take banana from counter,,"You take the banana from the counter.
 
 
 
@@ -51,7 +56,7 @@ Your score has just gone up by one point.",Kitchen,"You've just shown up in a ki
 You make out a closed fridge. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a red apple, a red hot pepper, a raw red potato, a raw purple potato, a red onion, a raw yellow potato, a cookbook and a knife. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
 
 There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.",You are carrying: a banana.,1 of 17,0.058823529411764705,False,
-4,,I took the banana from the counter and now I am carrying it.,"I should take the red apple, red hot pepper, and knife from the counter before checking the fridge for the remaining ingredients.",take red apple from counter,,"You take the red apple from the counter.
+5,,I took the banana from the counter; now I am carrying it.,I should take the red apple from the counter next.,take red apple from counter,,"You take the red apple from the counter.
 
 
 
@@ -60,7 +65,7 @@ Your score has just gone up by one point.",Kitchen,"You've just shown up in a ki
 You make out a closed fridge. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a red hot pepper, a raw red potato, a raw purple potato, a red onion, a raw yellow potato, a cookbook and a knife. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
 
 There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.",You are carrying: a red apple and a banana.,2 of 17,0.11764705882352941,False,
-5,,I took the red apple from the counter and now I am carrying it along with the banana.,I should take the red hot pepper and the knife from the counter next.,take red hot pepper from counter,,"You take the red hot pepper from the counter.
+6,,I took the red apple from the counter; now I am carrying it along with the banana.,I should take the red hot pepper from the counter next.,take red hot pepper from counter,,"You take the red hot pepper from the counter.
 
 
 
@@ -69,38 +74,54 @@ Your score has just gone up by one point.",Kitchen,"You've just shown up in a ki
 You make out a closed fridge. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato, a cookbook and a knife. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
 
 There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.","You are carrying: a red hot pepper, a red apple and a banana.",3 of 17,0.17647058823529413,False,
-6,,I took the red hot pepper from the counter and now I am carrying it along with the red apple and banana.,I should take the knife from the counter before checking the fridge for the orange bell pepper and pork chop.,take knife from counter,,You take the knife from the counter.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+7,,I took the red hot pepper from the counter; now I am carrying it along with the red apple and banana.,"I need to find the orange bell pepper and pork chop, which might be in the fridge.",open fridge,,"You open the fridge, revealing an orange bell pepper, a raw pork chop, a carrot, a yellow bell pepper, a white onion and a block of cheese.",Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
 
-You make out a closed fridge. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
+You make out an opened fridge. The fridge contains an orange bell pepper, a raw pork chop, a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato, a cookbook and a knife. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
 
-There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.","You are carrying: a knife, a red hot pepper, a red apple and a banana.",3 of 17,0.17647058823529413,False,
-7,,"I took the knife from the counter and now I am carrying it along with the red hot pepper, red apple, and banana.",I should open the fridge to check for the orange bell pepper and pork chop.,open fridge,,"You open the fridge, revealing an orange bell pepper, a raw pork chop, a carrot, a yellow bell pepper, a white onion and a block of cheese.",Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
-
-You make out an opened fridge. The fridge contains an orange bell pepper, a raw pork chop, a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
-
-There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.","You are carrying: a knife, a red hot pepper, a red apple and a banana.",3 of 17,0.17647058823529413,False,
+There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.","You are carrying: a red hot pepper, a red apple and a banana.",3 of 17,0.17647058823529413,False,
 8,,I opened the fridge and found an orange bell pepper and a raw pork chop among other items.,I should take the orange bell pepper and the raw pork chop from the fridge.,take orange bell pepper from fridge,,"You take the orange bell pepper from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
 
-You make out an opened fridge. The fridge contains a raw pork chop, a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
+You make out an opened fridge. The fridge contains a raw pork chop, a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato, a cookbook and a knife. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
 
-There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.","You are carrying: an orange bell pepper, a knife, a red hot pepper, a red apple and a banana.",4 of 17,0.23529411764705882,False,
-9,,"I took the orange bell pepper from the fridge and now I am carrying it along with the knife, red hot pepper, red apple, and banana.",I should take the raw pork chop from the fridge to complete the ingredients.,take raw pork chop from fridge,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.","You are carrying: an orange bell pepper, a red hot pepper, a red apple and a banana.",4 of 17,0.23529411764705882,False,
+9,,"I took the orange bell pepper from the fridge; now I am carrying it along with the red hot pepper, red apple, and banana.",I should take the raw pork chop from the fridge next.,take raw pork chop from fridge,,"You take the pork chop from the fridge.
 
-You make out an opened fridge. The fridge contains a raw pork chop, a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
 
-There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.","You are carrying: an orange bell pepper, a knife, a red hot pepper, a red apple and a banana.",4 of 17,0.23529411764705882,False,
-10,,I tried to take the raw pork chop but was told I am carrying too many things already.,"I should put down one item to free up space, then take the raw pork chop.",drop banana,,You drop the banana on the ground.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
 
-You make out an opened fridge. The fridge contains a raw pork chop, a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+
+You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato, a cookbook and a knife. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
+
+There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.","You are carrying: a raw pork chop, an orange bell pepper, a red hot pepper, a red apple and a banana.",5 of 17,0.29411764705882354,False,
+10,,I took the raw pork chop from the fridge; now I am carrying all the required ingredients for the recipe.,I should slice the banana with the knife as the first step in the recipe.,slice banana with knife,,You need to take the knife first.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+
+You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato, a cookbook and a knife. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
+
+There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.","You are carrying: a raw pork chop, an orange bell pepper, a red hot pepper, a red apple and a banana.",5 of 17,0.29411764705882354,False,
+11,,I tried to slice the banana but was reminded to take the knife first.,I should take the knife from the counter before slicing the banana.,take knife from counter,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+
+You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato, a cookbook and a knife. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
+
+There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.","You are carrying: a raw pork chop, an orange bell pepper, a red hot pepper, a red apple and a banana.",5 of 17,0.29411764705882354,False,
+12,,I tried to take the knife but was told I am carrying too many things already.,I should put down one of the ingredients to free up space for the knife.,drop raw pork chop,,You drop the pork chop on the ground.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+
+You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato, a cookbook and a knife. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
 
 There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
 
-There is a banana on the floor.","You are carrying: an orange bell pepper, a knife, a red hot pepper and a red apple.",4 of 17,0.23529411764705882,False,
-11,,I dropped the banana on the ground to free up space in my inventory.,I should now take the raw pork chop from the fridge.,take raw pork chop from fridge,,"You take the pork chop from the fridge.
+There is a raw pork chop on the floor.","You are carrying: an orange bell pepper, a red hot pepper, a red apple and a banana.",5 of 17,0.29411764705882354,False,
+13,,I dropped the raw pork chop on the ground to free up space.,I should now take the knife from the counter.,take knife from counter,,You take the knife from the counter.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+
+You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
+
+There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
+
+There is a raw pork chop on the floor.","You are carrying: a knife, an orange bell pepper, a red hot pepper, a red apple and a banana.",5 of 17,0.29411764705882354,False,
+14,,I took the knife from the counter; now I am carrying it along with the other ingredients except the pork chop.,I should slice the banana with the knife as the first step in the recipe.,slice banana with knife,,"You slice the banana.
 
 
 
@@ -110,29 +131,8 @@ You make out an opened fridge. The fridge contains a carrot, a yellow bell peppe
 
 There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
 
-There is a banana on the floor.","You are carrying: a raw pork chop, an orange bell pepper, a knife, a red hot pepper and a red apple.",5 of 17,0.29411764705882354,False,
-12,,"I took the raw pork chop from the fridge and now I am carrying it along with the orange bell pepper, knife, red hot pepper, and red apple.","I should slice the banana first as per the recipe, so I need to take the banana from the floor.",take banana from floor,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
-
-You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
-
-There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
-
-There is a banana on the floor.","You are carrying: a raw pork chop, an orange bell pepper, a knife, a red hot pepper and a red apple.",5 of 17,0.29411764705882354,False,
-13,,I tried to take the banana from the floor but was told I am carrying too many things already.,"I should drop the red hot pepper to free up space, then take the banana from the floor.",drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
-
-You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
-
-There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
-
-There is a red hot pepper and a banana on the floor.","You are carrying: a raw pork chop, an orange bell pepper, a knife and a red apple.",5 of 17,0.29411764705882354,False,
-14,,I dropped the red hot pepper on the ground to free up space in my inventory.,I should now take the banana from the floor.,take banana from floor,,You pick up the banana from the ground.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
-
-You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
-
-There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
-
-There is a red hot pepper on the floor.","You are carrying: a banana, a raw pork chop, an orange bell pepper, a knife and a red apple.",5 of 17,0.29411764705882354,False,
-15,,"I took the banana from the floor and now I am carrying it along with the raw pork chop, orange bell pepper, knife, and red apple.",I should slice the banana with the knife as per the recipe.,slice banana with knife,,"You slice the banana.
+There is a raw pork chop on the floor.","You are carrying: a knife, an orange bell pepper, a red hot pepper, a red apple and a sliced banana.",6 of 17,0.35294117647058826,False,
+15,,I sliced the banana with the knife successfully.,I should now slice the orange bell pepper with the knife.,slice orange bell pepper with knife,,"You slice the orange bell pepper.
 
 
 
@@ -142,8 +142,8 @@ You make out an opened fridge. The fridge contains a carrot, a yellow bell peppe
 
 There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
 
-There is a red hot pepper on the floor.","You are carrying: a sliced banana, a raw pork chop, an orange bell pepper, a knife and a red apple.",6 of 17,0.35294117647058826,False,
-16,,I sliced the banana with the knife as per the recipe.,I should slice the red apple with the knife next.,slice red apple with knife,,"You slice the red apple.
+There is a raw pork chop on the floor.","You are carrying: a knife, a sliced orange bell pepper, a red hot pepper, a red apple and a sliced banana.",7 of 17,0.4117647058823529,False,
+16,,I sliced the orange bell pepper with the knife successfully.,I should slice the red hot pepper with the knife next.,slice red hot pepper with knife,,"You slice the red hot pepper.
 
 
 
@@ -153,14 +153,53 @@ You make out an opened fridge. The fridge contains a carrot, a yellow bell peppe
 
 There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
 
-There is a red hot pepper on the floor.","You are carrying: a sliced banana, a raw pork chop, an orange bell pepper, a knife and a sliced red apple.",7 of 17,0.4117647058823529,False,
-17,,I sliced the red apple with the knife as per the recipe.,I should dice the orange bell pepper with the knife next.,dice orange bell pepper with knife,,"You dice the orange bell pepper.
+There is a raw pork chop on the floor.","You are carrying: a knife, a sliced orange bell pepper, a sliced red hot pepper, a red apple and a sliced banana.",8 of 17,0.47058823529411764,False,
+17,,I sliced the red hot pepper with the knife successfully.,I should slice the red apple with the knife next.,slice red apple with knife,,"You slice the red apple.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+
+You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
+
+There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
+
+There is a raw pork chop on the floor.","You are carrying: a knife, a sliced orange bell pepper, a sliced red hot pepper, a sliced red apple and a sliced banana.",9 of 17,0.5294117647058824,False,
+18,,I sliced the red apple with the knife successfully.,I should now cook the raw pork chop using the stove.,cook raw pork chop with stove,,You need to take the pork chop first.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+
+You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
+
+There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
+
+There is a raw pork chop on the floor.","You are carrying: a knife, a sliced orange bell pepper, a sliced red hot pepper, a sliced red apple and a sliced banana.",9 of 17,0.5294117647058824,False,
+19,,I tried to cook the raw pork chop but was reminded to take it first.,I should pick up the raw pork chop from the floor before cooking it.,take raw pork chop from floor,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+
+You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
+
+There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
+
+There is a raw pork chop on the floor.","You are carrying: a knife, a sliced orange bell pepper, a sliced red hot pepper, a sliced red apple and a sliced banana.",9 of 17,0.5294117647058824,False,
+20,,I tried to take the raw pork chop but was told I am carrying too many things already.,I should drop the knife to free up space for the pork chop.,drop knife,,You drop the knife on the ground.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+
+You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
+
+There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
+
+There is a knife and a raw pork chop on the floor.","You are carrying: a sliced orange bell pepper, a sliced red hot pepper, a sliced red apple and a sliced banana.",9 of 17,0.5294117647058824,False,
+21,,I dropped the knife on the ground to free up space.,I should now take the raw pork chop from the floor.,take raw pork chop from floor,,You pick up the pork chop from the ground.,Kitchen,"You've just shown up in a kitchen. You begin to take stock of what's in the room.
+
+You make out an opened fridge. The fridge contains a carrot, a yellow bell pepper, a white onion and a block of cheese. You can make out an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You see a counter. On the counter you see a raw red potato, a raw purple potato, a red onion, a raw yellow potato and a cookbook. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. But there isn't a thing on it.
+
+There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
+
+There is a knife on the floor.","You are carrying: a raw pork chop, a sliced orange bell pepper, a sliced red hot pepper, a sliced red apple and a sliced banana.",9 of 17,0.5294117647058824,False,
+22,,I took the raw pork chop from the floor; now I am carrying it along with the sliced ingredients.,I should cook the raw pork chop using the stove.,cook raw pork chop with stove,,"You fried the pork chop.
 
 
 
                               *** You lost! ***
 
-You scored 7 out of a possible 17, in 17 turns.
+You scored 9 out of a possible 17, in 22 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
@@ -170,4 +209,4 @@ You make out an opened fridge. The fridge contains a carrot, a yellow bell peppe
 
 There is a closed frosted-glass door leading east. You need an exit without a door? You should try going north. You need an exit without a door? You should try going west.
 
-There is a red hot pepper on the floor.","You are carrying: a sliced banana, a raw pork chop, an orange bell pepper, a knife and a sliced red apple.",7 of 17,0.4117647058823529,True,
+There is a knife on the floor.","You are carrying: a raw pork chop, a sliced orange bell pepper, a sliced red hot pepper, a sliced red apple and a sliced banana.",9 of 17,0.5294117647058824,True,

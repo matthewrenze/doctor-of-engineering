@@ -4,17 +4,17 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 You make out a toolbox. You shudder, but continue examining the room. You scan the room for a workbench, and you find a workbench. The workbench is wooden. Unfortunately, there isn't a thing on it.
 
 There is a closed barn door leading south.","You are carrying: a red onion, a raw pork chop, a white onion and a red apple.",0 of 15,0.0,False,
-1,,"I am in the shed with a toolbox, a workbench, and a closed barn door to the south. I am carrying a red onion, a raw pork chop, a white onion, and a red apple.",I need to get to the kitchen to check the cookbook for the recipe to cook a delicious meal. I should go south through the barn door to explore further.,go south,,You have to open the barn door first.,Shed,"You find yourself in a shed. A standard kind of place.
+1,,I am in the shed.,"I need to get to the kitchen to check the cookbook for the recipe. The barn door leads south, so I should go south through the barn door.",go south,,You have to open the barn door first.,Shed,"You find yourself in a shed. A standard kind of place.
 
 You make out a toolbox. You shudder, but continue examining the room. You scan the room for a workbench, and you find a workbench. The workbench is wooden. Unfortunately, there isn't a thing on it.
 
 There is a closed barn door leading south.","You are carrying: a red onion, a raw pork chop, a white onion and a red apple.",0 of 15,0.0,False,
-2,,"I tried to go south through the barn door, but it is closed and needs to be opened first.",I should open the barn door to be able to go south.,open barn door,,You open barn door.,Shed,"You find yourself in a shed. A standard kind of place.
+2,,I tried to go south through the barn door but it was closed.,I should open the barn door first before going south.,open barn door,,You open barn door.,Shed,"You find yourself in a shed. A standard kind of place.
 
 You make out a toolbox. You shudder, but continue examining the room. You scan the room for a workbench, and you find a workbench. The workbench is wooden. Unfortunately, there isn't a thing on it.
 
 There is an open barn door leading south.","You are carrying: a red onion, a raw pork chop, a white onion and a red apple.",0 of 15,0.0,False,
-3,,I opened the barn door.,"Now that the barn door is open, I should go south to explore further.",go south,,"You are in a backyard. A standard kind of place.
+3,,I opened the barn door.,"Now that the barn door is open, I should go south through it to continue towards the kitchen.",go south,,"You are in a backyard. A standard kind of place.
 
 What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
 
@@ -23,7 +23,7 @@ There is an open barn door leading north. There is a closed sliding patio door l
 What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
 
 There is an open barn door leading north. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a raw pork chop, a white onion and a red apple.",0 of 15,0.0,False,
-4,,"I went south from the shed to the backyard, which has a patio chair, patio table, and a closed BBQ. There is an open barn door to the north, a closed sliding patio door to the west, and an open entranceway to the east.",I should go east through the open entranceway to continue exploring and find the kitchen.,go east,,"You've entered a garden.
+4,,I went south through the open barn door and arrived in the backyard.,"To reach the kitchen, I should try going east through the entranceway since it is not blocked by a door.",go east,,"You've entered a garden.
 
 
 
@@ -36,7 +36,7 @@ There is a red hot pepper, a raw yellow potato and a yellow bell pepper on the f
 You need an exit without a door? You should try going west.
 
 There is a red hot pepper, a raw yellow potato and a yellow bell pepper on the floor.","You are carrying: a red onion, a raw pork chop, a white onion and a red apple.",0 of 15,0.0,False,
-5,,"I went east from the backyard to the garden, where I see a red hot pepper, a raw yellow potato, and a yellow bell pepper on the floor. The only exit is west.","I should take the red hot pepper, raw yellow potato, and yellow bell pepper to have more ingredients for cooking.",take red hot pepper from floor,,"You pick up the red hot pepper from the ground.
+5,,I went east from the backyard and entered the garden.,"I should take the red hot pepper, raw yellow potato, and yellow bell pepper from the floor to have more ingredients for cooking.",take red hot pepper from floor,,"You pick up the red hot pepper from the ground.
 
 
 
@@ -47,42 +47,49 @@ Your score has just gone up by one point.",Garden,"You've entered a garden.
 You need an exit without a door? You should try going west.
 
 There is a raw yellow potato and a yellow bell pepper on the floor.","You are carrying: a red hot pepper, a red onion, a raw pork chop, a white onion and a red apple.",1 of 15,0.06666666666666667,False,
-6,,I took the red hot pepper from the floor in the garden.,I should also take the raw yellow potato and the yellow bell pepper to have all the ingredients available here.,take raw yellow potato from floor,,You're carrying too many things already.,Garden,"You've entered a garden.
+6,,I took the red hot pepper from the floor.,I should take the raw yellow potato next to gather more ingredients.,take raw yellow potato from floor,,You're carrying too many things already.,Garden,"You've entered a garden.
 
 
 
 You need an exit without a door? You should try going west.
 
 There is a raw yellow potato and a yellow bell pepper on the floor.","You are carrying: a red hot pepper, a red onion, a raw pork chop, a white onion and a red apple.",1 of 15,0.06666666666666667,False,
-7,,I tried to take the raw yellow potato but was carrying too many things already.,I should drop the red apple to free up space and then take the raw yellow potato.,drop red apple,,You drop the red apple on the ground.,Garden,"You've entered a garden.
+7,,I tried to take the raw yellow potato but I am carrying too many things already.,"I should drop an item I don't need to make space for more ingredients. The red apple is less useful for cooking a savory meal, so I will drop it.",drop red apple,,You drop the red apple on the ground.,Garden,"You've entered a garden.
 
 
 
 You need an exit without a door? You should try going west.
 
 There is a red apple, a raw yellow potato and a yellow bell pepper on the floor.","You are carrying: a red hot pepper, a red onion, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-8,,I dropped the red apple to free up space.,I should now take the raw yellow potato from the floor.,take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Garden,"You've entered a garden.
+8,,I dropped the red apple to free up space.,Now I can take the raw yellow potato from the floor.,take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Garden,"You've entered a garden.
 
 
 
 You need an exit without a door? You should try going west.
 
 There is a red apple and a yellow bell pepper on the floor.","You are carrying: a raw yellow potato, a red hot pepper, a red onion, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-9,,I took the raw yellow potato from the floor in the garden.,I should drop the red onion to free up space and then take the yellow bell pepper.,drop red onion,,You drop the red onion on the ground.,Garden,"You've entered a garden.
+9,,I took the raw yellow potato from the floor.,I should try to take the yellow bell pepper next to have more ingredients for cooking.,take yellow bell pepper from floor,,You're carrying too many things already.,Garden,"You've entered a garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a red apple and a yellow bell pepper on the floor.","You are carrying: a raw yellow potato, a red hot pepper, a red onion, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+10,,I tried to take the yellow bell pepper but I am carrying too many things already.,"I should drop another item to make space. The red onion might be less essential than the other ingredients, so I will drop it.",drop red onion,,You drop the red onion on the ground.,Garden,"You've entered a garden.
 
 
 
 You need an exit without a door? You should try going west.
 
 There is a red onion, a red apple and a yellow bell pepper on the floor.","You are carrying: a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-10,,I dropped the red onion to free up space.,I should now take the yellow bell pepper from the floor.,take yellow bell pepper from floor,,You pick up the yellow bell pepper from the ground.,Garden,"You've entered a garden.
+11,,I dropped the red onion to free up space.,Now I can take the yellow bell pepper from the floor.,take yellow bell pepper from floor,,You pick up the yellow bell pepper from the ground.,Garden,"You've entered a garden.
 
 
 
 You need an exit without a door? You should try going west.
 
 There is a red onion and a red apple on the floor.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-11,,I took the yellow bell pepper from the floor in the garden.,I should go west to the backyard to access the kitchen.,go west,,"You are in a backyard. A standard kind of place.
+12,,I took the yellow bell pepper from the floor.,I should go west to exit the garden and head to the kitchen to check the cookbook for the recipe.,go west,,"You are in a backyard. A standard kind of place.
 
 What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
 
@@ -91,12 +98,52 @@ There is an open barn door leading north. There is a closed sliding patio door l
 What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
 
 There is an open barn door leading north. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-12,,I went west from the garden to the backyard.,I should go west through the closed sliding patio door to enter the kitchen.,open sliding patio door,,You open sliding patio door.,Backyard,"You are in a backyard. A standard kind of place.
+13,,I went west from the garden to the backyard.,"I should go north through the open barn door to reach the shed, then go to the kitchen to find the cookbook.",go north,,"You find yourself in a shed. A standard kind of place.
+
+You make out a toolbox. You shudder, but continue examining the room. You scan the room for a workbench, and you find a workbench. The workbench is wooden. Unfortunately, there isn't a thing on it.
+
+There is an open barn door leading south.",Shed,"You find yourself in a shed. A standard kind of place.
+
+You make out a toolbox. You shudder, but continue examining the room. You scan the room for a workbench, and you find a workbench. The workbench is wooden. Unfortunately, there isn't a thing on it.
+
+There is an open barn door leading south.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+14,,I went north through the barn door to the shed.,The shed does not seem to be the kitchen. I should go south back to the backyard and then find another way to the kitchen.,go south,,"You are in a backyard. A standard kind of place.
+
+What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
+
+There is an open barn door leading north. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Backyard,"You are in a backyard. A standard kind of place.
+
+What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
+
+There is an open barn door leading north. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+15,,I went south back to the backyard from the shed.,"I should go east from the backyard, as the description suggests that entranceway is not blocked by a door and might lead to the kitchen.",go east,,"You've entered a garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a red onion and a red apple on the floor.",Garden,"You've entered a garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a red onion and a red apple on the floor.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+16,,I went east from the backyard and entered the garden again.,I should go west to exit the garden and try another direction to find the kitchen.,go west,,"You are in a backyard. A standard kind of place.
+
+What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
+
+There is an open barn door leading north. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Backyard,"You are in a backyard. A standard kind of place.
+
+What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
+
+There is an open barn door leading north. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+17,,I went west from the garden back to the backyard.,I should try going west through the closed sliding patio door to see if I can enter the kitchen.,open sliding patio door,,You open sliding patio door.,Backyard,"You are in a backyard. A standard kind of place.
 
 What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
 
 There is an open barn door leading north. There is an open sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-13,,I opened the sliding patio door in the backyard.,I should go west through the open sliding patio door to enter the kitchen.,go west,,"You're now in the corridor.
+18,,I opened the sliding patio door to the west.,I should go west through the now open sliding patio door to enter the kitchen.,go west,,"You're now in the corridor.
 
 
 
@@ -105,7 +152,7 @@ There is an open sliding patio door leading east. You need an exit without a doo
 
 
 There is an open sliding patio door leading east. You need an exit without a door? You should try going north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-14,,I went west through the open sliding patio door to the corridor.,I should go north from the corridor to enter the kitchen.,go north,,"You find yourself in a bathroom. An ordinary kind of place. Okay, just remember what you're here to do, and everything will go great.
+19,,I went west through the open sliding patio door and entered the corridor.,I should go north from the corridor to find the kitchen.,go north,,"You find yourself in a bathroom. An ordinary kind of place. Okay, just remember what you're here to do, and everything will go great.
 
 What's that over there? It looks like it's a toilet. The toilet is white. Unfortunately, there isn't a thing on it. You swear loudly.
 
@@ -114,7 +161,7 @@ You don't like doors? Why not try going south, that entranceway is not blocked b
 What's that over there? It looks like it's a toilet. The toilet is white. Unfortunately, there isn't a thing on it. You swear loudly.
 
 You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-15,,I went north from the corridor but ended up in the bathroom.,I should go south to return to the corridor and then try going west to find the kitchen.,go south,,"You're now in the corridor.
+20,,I went north from the corridor and entered the bathroom.,I should go back south to the corridor and then try going west to find the kitchen.,go south,,"You're now in the corridor.
 
 
 
@@ -123,7 +170,7 @@ There is an open sliding patio door leading east. You need an exit without a doo
 
 
 There is an open sliding patio door leading east. You need an exit without a door? You should try going north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-16,,I went south from the bathroom back to the corridor.,I should go west from the corridor to find the kitchen.,go west,,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
+21,,I went south from the bathroom back to the corridor.,I should go west from the corridor to find the kitchen.,go west,,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
 
 You see a closed fridge, which looks conventional, in the corner. You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
 
@@ -132,7 +179,7 @@ There is a closed plain door leading west. There is an exit to the east. You nee
 You see a closed fridge, which looks conventional, in the corner. You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-17,,I went west from the corridor and arrived in the kitchen.,I should examine the cookbook on the counter to check the recipe for cooking a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+22,,I went west from the corridor and entered the kitchen.,I should examine the cookbook on the counter to check the recipe for cooking a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -161,7 +208,7 @@ chop the block of cheese
 You see a closed fridge, which looks conventional, in the corner. You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-18,,"I examined the cookbook and found a recipe requiring a block of cheese, red onion, pork chop, red hot pepper, and carrot.","I need to find a block of cheese and a carrot, and also get a red onion instead of the white onion I have.",go east,,"You're now in the corridor.
+23,,"I examined the cookbook and found a recipe requiring a block of cheese, red onion, pork chop, red hot pepper, and carrot, with detailed cooking steps.","I need to find a block of cheese and a carrot, as I already have the red hot pepper and pork chop, but I do not have a carrot or block of cheese.",go east,,"You're now in the corridor.
 
 
 
@@ -170,7 +217,7 @@ There is an open sliding patio door leading east. You need an exit without a doo
 
 
 There is an open sliding patio door leading east. You need an exit without a door? You should try going north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-19,,I went east from the kitchen to the corridor.,I should go east through the open sliding patio door to the backyard to look for a block of cheese and a carrot.,go east,,"You are in a backyard. A standard kind of place.
+24,,I went east from the kitchen back to the corridor.,I should go east through the open sliding patio door to the backyard and then go to the garden to look for a carrot and block of cheese.,go east,,"You are in a backyard. A standard kind of place.
 
 What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
 
@@ -179,7 +226,7 @@ There is an open barn door leading north. There is an open sliding patio door le
 What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
 
 There is an open barn door leading north. There is an open sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-20,,"I went east from the corridor to the backyard, but there is no block of cheese or carrot here.",I should go north through the open barn door to the shed to check if there is a block of cheese or carrot there.,go north,,"You find yourself in a shed. A standard kind of place.
+25,,I went east from the corridor to the backyard.,I should go north through the open barn door to enter the garden and look for a carrot and block of cheese.,go north,,"You find yourself in a shed. A standard kind of place.
 
 You make out a toolbox. You shudder, but continue examining the room. You scan the room for a workbench, and you find a workbench. The workbench is wooden. Unfortunately, there isn't a thing on it.
 
@@ -188,7 +235,7 @@ There is an open barn door leading south.",Shed,"You find yourself in a shed. A 
 You make out a toolbox. You shudder, but continue examining the room. You scan the room for a workbench, and you find a workbench. The workbench is wooden. Unfortunately, there isn't a thing on it.
 
 There is an open barn door leading south.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-21,,"I went north from the backyard to the shed, but there is no block of cheese or carrot here.",I should go south back to the backyard and then east to the garden to look for a carrot and block of cheese.,go south,,"You are in a backyard. A standard kind of place.
+26,,I went north through the barn door and entered the shed instead of the garden.,I should go south back to the backyard and then go north again to enter the garden.,go south,,"You are in a backyard. A standard kind of place.
 
 What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
 
@@ -197,7 +244,30 @@ There is an open barn door leading north. There is an open sliding patio door le
 What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
 
 There is an open barn door leading north. There is an open sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-22,,I went south from the shed to the backyard.,I should go east to the garden to look for a carrot and block of cheese.,go east,,"You've entered a garden.
+27,,I went south from the shed back to the backyard.,I should go north through the barn door again to enter the garden.,go north,,"You find yourself in a shed. A standard kind of place.
+
+You make out a toolbox. You shudder, but continue examining the room. You scan the room for a workbench, and you find a workbench. The workbench is wooden. Unfortunately, there isn't a thing on it.
+
+There is an open barn door leading south.",Shed,"You find yourself in a shed. A standard kind of place.
+
+You make out a toolbox. You shudder, but continue examining the room. You scan the room for a workbench, and you find a workbench. The workbench is wooden. Unfortunately, there isn't a thing on it.
+
+There is an open barn door leading south.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+28,,I went north through the barn door but ended up in the shed again instead of the garden.,I should try going east from the backyard to enter the garden.,go east,,You can't go that way.,Shed,"You find yourself in a shed. A standard kind of place.
+
+You make out a toolbox. You shudder, but continue examining the room. You scan the room for a workbench, and you find a workbench. The workbench is wooden. Unfortunately, there isn't a thing on it.
+
+There is an open barn door leading south.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+29,,I tried to go east from the shed but couldn't.,"I should go south from the shed back to the backyard, then try going east from the backyard to the garden.",go south,,"You are in a backyard. A standard kind of place.
+
+What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
+
+There is an open barn door leading north. There is an open sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Backyard,"You are in a backyard. A standard kind of place.
+
+What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
+
+There is an open barn door leading north. There is an open sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+30,,I went south from the shed back to the backyard.,I should try going east from the backyard to enter the garden.,go east,,"You've entered a garden.
 
 
 
@@ -210,42 +280,28 @@ There is a red onion and a red apple on the floor.",Garden,"You've entered a gar
 You need an exit without a door? You should try going west.
 
 There is a red onion and a red apple on the floor.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-23,,"I went east from the backyard to the garden, where I see a red onion and a red apple on the floor but no carrot or block of cheese.",I should take the red onion and red apple to check if they can be used or if the carrot or block of cheese might be found elsewhere.,take red onion from floor,,You're carrying too many things already.,Garden,"You've entered a garden.
+31,,I went east from the backyard and entered the garden.,I should take the red onion from the floor to have all ingredients for the recipe.,take red onion from floor,,You're carrying too many things already.,Garden,"You've entered a garden.
 
 
 
 You need an exit without a door? You should try going west.
 
 There is a red onion and a red apple on the floor.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
-24,,I tried to take the red onion but was carrying too many things.,I should drop the white onion to free up space and then take the red onion.,drop white onion,,You drop the white onion on the ground.,Garden,"You've entered a garden.
+32,,I tried to take the red onion but I am carrying too many things already.,I should drop the yellow bell pepper to free up space and then take the red onion.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Garden,"You've entered a garden.
 
 
 
 You need an exit without a door? You should try going west.
 
-There is a white onion, a red onion and a red apple on the floor.","You are carrying: a yellow bell pepper, a raw yellow potato, a red hot pepper and a raw pork chop.",1 of 15,0.06666666666666667,False,
-25,,I dropped the white onion to free up space.,I should take the red onion from the floor now.,take red onion from floor,,You pick up the red onion from the ground.,Garden,"You've entered a garden.
+There is a yellow bell pepper, a red onion and a red apple on the floor.","You are carrying: a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+33,,I dropped the yellow bell pepper to free up space.,I should now take the red onion from the floor.,take red onion from floor,,You pick up the red onion from the ground.,Garden,"You've entered a garden.
 
 
 
 You need an exit without a door? You should try going west.
 
-There is a white onion and a red apple on the floor.","You are carrying: a red onion, a yellow bell pepper, a raw yellow potato, a red hot pepper and a raw pork chop.",1 of 15,0.06666666666666667,False,
-26,,I took the red onion from the floor.,I should drop the yellow bell pepper to free up space and then take the red apple.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Garden,"You've entered a garden.
-
-
-
-You need an exit without a door? You should try going west.
-
-There is a yellow bell pepper, a white onion and a red apple on the floor.","You are carrying: a red onion, a raw yellow potato, a red hot pepper and a raw pork chop.",1 of 15,0.06666666666666667,False,
-27,,I dropped the yellow bell pepper to free up space.,I should take the red apple from the floor now.,take red apple from floor,,You pick up the red apple from the ground.,Garden,"You've entered a garden.
-
-
-
-You need an exit without a door? You should try going west.
-
-There is a yellow bell pepper and a white onion on the floor.","You are carrying: a red apple, a red onion, a raw yellow potato, a red hot pepper and a raw pork chop.",1 of 15,0.06666666666666667,False,
-28,,I took the red apple from the floor.,I should go west to return to the backyard.,go west,,"You are in a backyard. A standard kind of place.
+There is a yellow bell pepper and a red apple on the floor.","You are carrying: a red onion, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+34,,I took the red onion from the floor.,"I should go west from the garden back to the backyard, then west through the sliding patio door to the corridor, and finally west to the kitchen to cook the meal.",go west,,"You are in a backyard. A standard kind of place.
 
 What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
 
@@ -253,8 +309,8 @@ There is an open barn door leading north. There is an open sliding patio door le
 
 What's that over there? It looks like it's a patio chair. But the thing is empty. It would have been so cool if there was stuff on the patio chair. You can see a patio table. Unfortunately, there isn't a thing on it. You can see a closed BBQ.
 
-There is an open barn door leading north. There is an open sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red apple, a red onion, a raw yellow potato, a red hot pepper and a raw pork chop.",1 of 15,0.06666666666666667,False,
-29,,I went west from the garden to the backyard.,I should go west through the sliding patio door to the corridor and then to the kitchen to cook the meal.,go west,,"You're now in the corridor.
+There is an open barn door leading north. There is an open sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+35,,I went west from the garden to the backyard.,I should go west through the open sliding patio door to the corridor.,go west,,"You're now in the corridor.
 
 
 
@@ -262,8 +318,8 @@ There is an open sliding patio door leading east. You need an exit without a doo
 
 
 
-There is an open sliding patio door leading east. You need an exit without a door? You should try going north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a red apple, a red onion, a raw yellow potato, a red hot pepper and a raw pork chop.",1 of 15,0.06666666666666667,False,
-30,,I went west from the backyard to the corridor.,I should go west from the corridor to the kitchen.,go west,,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
+There is an open sliding patio door leading east. You need an exit without a door? You should try going north. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a red onion, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+36,,I went west through the open sliding patio door and entered the corridor.,I should go west from the corridor to enter the kitchen.,go west,,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
 
 You see a closed fridge, which looks conventional, in the corner. You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
 
@@ -271,30 +327,25 @@ There is a closed plain door leading west. There is an exit to the east. You nee
 
 You see a closed fridge, which looks conventional, in the corner. You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.","You are carrying: a red apple, a red onion, a raw yellow potato, a red hot pepper and a raw pork chop.",1 of 15,0.06666666666666667,False,
-31,,I went west from the corridor to the kitchen.,I should cook the meal using the ingredients I have according to the cookbook recipe.,prepare meal,,You still miss something.,Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
-
-You see a closed fridge, which looks conventional, in the corner. You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.","You are carrying: a red apple, a red onion, a raw yellow potato, a red hot pepper and a raw pork chop.",1 of 15,0.06666666666666667,False,
-32,,I tried to prepare the meal but was told I still miss something.,I need to find the block of cheese and carrot required by the recipe before I can cook the meal.,open fridge,,"You open the fridge, revealing a block of cheese and a carrot.",Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
+There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.","You are carrying: a red onion, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+37,,I went west from the corridor and entered the kitchen.,I should take the block of cheese from the fridge to complete the recipe.,open fridge,,"You open the fridge, revealing a block of cheese and a carrot.",Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
 
 You see an opened fridge, which looks conventional, in the corner. The fridge contains a block of cheese and a carrot. You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.","You are carrying: a red apple, a red onion, a raw yellow potato, a red hot pepper and a raw pork chop.",1 of 15,0.06666666666666667,False,
-33,,I opened the fridge and found a block of cheese and a carrot inside.,I should take the block of cheese and the carrot from the fridge to have all ingredients for the recipe.,take block of cheese from fridge,,You're carrying too many things already.,Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
+There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.","You are carrying: a red onion, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+38,,I opened the fridge and found a block of cheese and a carrot inside.,I should take the block of cheese from the fridge.,take block of cheese from fridge,,You're carrying too many things already.,Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
 
 You see an opened fridge, which looks conventional, in the corner. The fridge contains a block of cheese and a carrot. You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.","You are carrying: a red apple, a red onion, a raw yellow potato, a red hot pepper and a raw pork chop.",1 of 15,0.06666666666666667,False,
-34,,I tried to take the block of cheese but was carrying too many things.,I should drop the red apple to free up space for the block of cheese.,drop red apple,,You drop the red apple on the ground.,Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
+There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.","You are carrying: a red onion, a raw yellow potato, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+39,,I tried to take the block of cheese but I am carrying too many things already.,I should drop the raw yellow potato to free up space and then take the block of cheese.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
 
 You see an opened fridge, which looks conventional, in the corner. The fridge contains a block of cheese and a carrot. You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.
 
-There is a red apple on the floor.","You are carrying: a red onion, a raw yellow potato, a red hot pepper and a raw pork chop.",1 of 15,0.06666666666666667,False,
-35,,I dropped the red apple to free up space.,I should now take the block of cheese from the fridge.,take block of cheese from fridge,,"You take the block of cheese from the fridge.
+There is a raw yellow potato on the floor.","You are carrying: a red onion, a red hot pepper, a raw pork chop and a white onion.",1 of 15,0.06666666666666667,False,
+40,,I dropped the raw yellow potato to free up space.,I should now take the block of cheese from the fridge.,take block of cheese from fridge,,"You take the block of cheese from the fridge.
 
 
 
@@ -304,22 +355,22 @@ You see an opened fridge, which looks conventional, in the corner. The fridge co
 
 There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.
 
-There is a red apple on the floor.","You are carrying: a block of cheese, a red onion, a raw yellow potato, a red hot pepper and a raw pork chop.",2 of 15,0.13333333333333333,False,
-36,,I took the block of cheese from the fridge and my score increased.,I should now take the carrot from the fridge to have all ingredients for the recipe.,take carrot from fridge,,You're carrying too many things already.,Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
+There is a raw yellow potato on the floor.","You are carrying: a block of cheese, a red onion, a red hot pepper, a raw pork chop and a white onion.",2 of 15,0.13333333333333333,False,
+41,,I took the block of cheese from the fridge.,I should take the carrot from the fridge to complete the recipe ingredients.,take carrot from fridge,,You're carrying too many things already.,Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
 
 You see an opened fridge, which looks conventional, in the corner. The fridge contains a carrot. You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.
 
-There is a red apple on the floor.","You are carrying: a block of cheese, a red onion, a raw yellow potato, a red hot pepper and a raw pork chop.",2 of 15,0.13333333333333333,False,
-37,,I tried to take the carrot but was carrying too many things.,I should drop the raw yellow potato to free up space for the carrot.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
+There is a raw yellow potato on the floor.","You are carrying: a block of cheese, a red onion, a red hot pepper, a raw pork chop and a white onion.",2 of 15,0.13333333333333333,False,
+42,,I tried to take the carrot but I am carrying too many things already.,I should drop the white onion to free up space and then take the carrot.,drop white onion,,You drop the white onion on the ground.,Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
 
 You see an opened fridge, which looks conventional, in the corner. The fridge contains a carrot. You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.
 
-There is a raw yellow potato and a red apple on the floor.","You are carrying: a block of cheese, a red onion, a red hot pepper and a raw pork chop.",2 of 15,0.13333333333333333,False,
-38,,I dropped the raw yellow potato to free up space.,I should now take the carrot from the fridge.,take carrot from fridge,,"You take the carrot from the fridge.
+There is a white onion and a raw yellow potato on the floor.","You are carrying: a block of cheese, a red onion, a red hot pepper and a raw pork chop.",2 of 15,0.13333333333333333,False,
+43,,I dropped the white onion to free up space.,I should now take the carrot from the fridge.,take carrot from fridge,,"You take the carrot from the fridge.
 
 
 
@@ -329,15 +380,8 @@ You see an opened fridge, which looks conventional, in the corner. Empty! What k
 
 There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.
 
-There is a raw yellow potato and a red apple on the floor.","You are carrying: a carrot, a block of cheese, a red onion, a red hot pepper and a raw pork chop.",3 of 15,0.2,False,
-39,,I took the carrot from the fridge and my score increased.,I should prepare the meal now that I have all the required ingredients.,prepare meal,,Something still needs to be cooked.,Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
-
-You see an opened fridge, which looks conventional, in the corner. Empty! What kind of nightmare TextWorld is this? You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.
-
-There is a raw yellow potato and a red apple on the floor.","You are carrying: a carrot, a block of cheese, a red onion, a red hot pepper and a raw pork chop.",3 of 15,0.2,False,
-40,,I tried to prepare the meal but was told something still needs to be cooked.,I should cook the raw pork chop on the stove before preparing the meal.,cook raw pork chop with stove,,"You fried the pork chop.
+There is a white onion and a raw yellow potato on the floor.","You are carrying: a carrot, a block of cheese, a red onion, a red hot pepper and a raw pork chop.",3 of 15,0.2,False,
+44,,I took the carrot from the fridge.,I have all the ingredients for the recipe now; I should cook the pork chop on the stove.,cook raw pork chop with stove,,"You fried the pork chop.
 
 
 
@@ -347,21 +391,21 @@ You see an opened fridge, which looks conventional, in the corner. Empty! What k
 
 There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.
 
-There is a raw yellow potato and a red apple on the floor.","You are carrying: a carrot, a block of cheese, a red onion, a red hot pepper and a fried pork chop.",4 of 15,0.26666666666666666,False,
-41,,I cooked the raw pork chop on the stove and my score increased.,I should now prepare the meal with all the ingredients I have.,prepare meal,,Something still needs to be cooked.,Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
+There is a white onion and a raw yellow potato on the floor.","You are carrying: a carrot, a block of cheese, a red onion, a red hot pepper and a fried pork chop.",4 of 15,0.26666666666666666,False,
+45,,I cooked the raw pork chop on the stove and it is now fried.,"I should now prepare the meal using the fried pork chop, block of cheese, red onion, red hot pepper, and carrot.",prepare meal,,Something still needs to be cooked.,Kitchen,"Look around you. Take it all in. It's not every day someone gets to be in a kitchen.
 
 You see an opened fridge, which looks conventional, in the corner. Empty! What kind of nightmare TextWorld is this? You see a closed conventional looking oven in the room. You see a table. The table is massive. Looks like someone's already been here and taken everything off it, though. You make out a counter. The counter is vast. On the counter you make out a raw purple potato, a raw red potato, a cookbook and a knife. You see a gleam over in a corner, where you can see a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.
 
-There is a raw yellow potato and a red apple on the floor.","You are carrying: a carrot, a block of cheese, a red onion, a red hot pepper and a fried pork chop.",4 of 15,0.26666666666666666,False,
-42,,I tried to prepare the meal again but was told something still needs to be cooked.,I should check if the red onion or red hot pepper needs cooking and cook them if necessary.,cook red onion with stove,,"You fried the red onion.
+There is a white onion and a raw yellow potato on the floor.","You are carrying: a carrot, a block of cheese, a red onion, a red hot pepper and a fried pork chop.",4 of 15,0.26666666666666666,False,
+46,,I tried to prepare the meal but was told something still needs to be cooked.,I should check if the red onion needs to be cooked and cook it on the stove if necessary.,cook red onion with stove,,"You fried the red onion.
 
 
 
                               *** You lost! ***
 
-You scored 4 out of a possible 15, in 42 turns.
+You scored 4 out of a possible 15, in 46 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
@@ -371,4 +415,4 @@ You see an opened fridge, which looks conventional, in the corner. Empty! What k
 
 There is a closed plain door leading west. There is an exit to the east. You need an exit without a door? You should try going north.
 
-There is a raw yellow potato and a red apple on the floor.","You are carrying: a carrot, a block of cheese, a red onion, a red hot pepper and a fried pork chop.",4 of 15,0.26666666666666666,True,
+There is a white onion and a raw yellow potato on the floor.","You are carrying: a carrot, a block of cheese, a red onion, a red hot pepper and a fried pork chop.",4 of 15,0.26666666666666666,True,

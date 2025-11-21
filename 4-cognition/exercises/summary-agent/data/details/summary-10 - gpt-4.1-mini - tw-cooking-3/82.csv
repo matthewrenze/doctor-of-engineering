@@ -4,17 +4,17 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see a closed BBQ nearby.
 
 There is a closed barn door leading east. There is a closed sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.",You are carrying: a white onion and a raw pork chop.,0 of 16,0.0,False,
-1,,I am in the backyard.,I should go west through the sliding patio door to get to the kitchen where the cookbook is likely located.,go west,,You have to open the sliding patio door first.,Backyard,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
+1,,I am in the backyard.,"I need to get to the kitchen to check the cookbook for the recipe. The sliding patio door to the west might lead inside the house, possibly to the kitchen.",go west,,You have to open the sliding patio door first.,Backyard,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
 
 You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see a closed BBQ nearby.
 
 There is a closed barn door leading east. There is a closed sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.",You are carrying: a white onion and a raw pork chop.,0 of 16,0.0,False,
-2,,I tried to go west but the sliding patio door was closed.,I should open the sliding patio door before going west.,open sliding patio door,,You open sliding patio door.,Backyard,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
+2,,I tried to go west but the sliding patio door was closed.,I should open the sliding patio door first before going west.,open sliding patio door,,You open sliding patio door.,Backyard,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
 
 You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see a closed BBQ nearby.
 
 There is a closed barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.",You are carrying: a white onion and a raw pork chop.,0 of 16,0.0,False,
-3,,I opened the sliding patio door.,"Now that the sliding patio door is open, I should go west through it to enter the kitchen.",go west,,"Well, here we are in a kitchen. You begin looking for stuff.
+3,,I opened the sliding patio door.,"Now that the sliding patio door is open, I should go west through it to enter the house and find the kitchen.",go west,,"Well, here we are in a kitchen. You begin looking for stuff.
 
 You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a red apple, a banana, a raw purple potato, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
@@ -23,7 +23,7 @@ There is an open sliding patio door leading east. There is a closed frosted-glas
 You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a red apple, a banana, a raw purple potato, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
 There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.",You are carrying: a white onion and a raw pork chop.,0 of 16,0.0,False,
-4,,I went west through the open sliding patio door and arrived in the kitchen.,I should examine the cookbook on the counter to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+4,,I went west through the open sliding patio door and entered the kitchen.,I should examine the cookbook on the counter to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -52,7 +52,7 @@ dice the white onion
 You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a red apple, a banana, a raw purple potato, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
 There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.",You are carrying: a white onion and a raw pork chop.,0 of 16,0.0,False,
-5,,"I examined the cookbook and found a recipe requiring white onion, red apple, yellow potato, block of cheese, and orange bell pepper.",I should take the red apple from the counter to start gathering ingredients.,take red apple from counter,,"You take the red apple from the counter.
+5,,"I examined the cookbook and found a recipe requiring white onion, red apple, yellow potato, block of cheese, and orange bell pepper.",I have the white onion but need to gather the other ingredients from the kitchen counter and fridge.,take red apple from counter,,"You take the red apple from the counter.
 
 
 
@@ -61,243 +61,404 @@ Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitch
 You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
 There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a red apple, a white onion and a raw pork chop.",1 of 16,0.0625,False,
-6,,I took the red apple from the counter and added it to my inventory.,"I need a yellow potato for the recipe, but there are only raw purple and raw red potatoes on the counter. I should take the raw red potato as a substitute.",take raw red potato from counter,,You take the red potato from the counter.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+6,,I took the red apple from the counter.,"I need to find a yellow potato, block of cheese, and orange bell pepper. There are raw purple and red potatoes on the counter, but no yellow potato. I should check the fridge for the missing ingredients.",open fridge,,"You open the fridge, revealing a block of cheese, a carrot, a red onion and a red hot pepper.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. The fridge contains a block of cheese, a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a raw red potato, a red apple, a white onion and a raw pork chop.",1 of 16,0.0625,False,
-7,,I took the raw red potato from the counter and added it to my inventory.,I still need a block of cheese and an orange bell pepper for the recipe. I should check the fridge for these ingredients.,open fridge,,"You open the fridge, revealing a block of cheese, a carrot, a red onion and a red hot pepper.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a block of cheese, a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a raw red potato, a red apple, a white onion and a raw pork chop.",1 of 16,0.0625,False,
-8,,"I opened the fridge and found a block of cheese, a carrot, a red onion, and a red hot pepper inside.",I should take the block of cheese from the fridge to continue gathering ingredients.,take block of cheese from fridge,,"You take the block of cheese from the fridge.
+There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a red apple, a white onion and a raw pork chop.",1 of 16,0.0625,False,
+7,,"I opened the fridge and found a block of cheese, a carrot, a red onion, and a red hot pepper.",I should take the block of cheese from the fridge since it is one of the required ingredients.,take block of cheese from fridge,,"You take the block of cheese from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a raw red potato, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
-9,,I took the block of cheese from the fridge and added it to my inventory.,I still need an orange bell pepper for the recipe. I should check if the red hot pepper in the fridge can be used as a substitute or if I need to find an orange bell pepper elsewhere.,examine red hot pepper,,You couldn't pay me to eat that red hot pepper.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+8,,I took the block of cheese from the fridge.,"I still need a yellow potato and an orange bell pepper. There is a raw purple potato and a raw red potato on the counter, but no yellow potato or orange bell pepper. I should check the fridge again or explore other areas for these ingredients.",close fridge,,You close the fridge.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a raw red potato, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
-10,,I examined the red hot pepper and found it is not suitable for eating.,"Since there is no orange bell pepper in the kitchen, I should check the fridge for the carrot and take it as a possible substitute ingredient.",take carrot from fridge,,You're carrying too many things already.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+9,,I closed the fridge.,"Since the yellow potato and orange bell pepper are not in the kitchen, I should explore other areas. The closed frosted-glass door to the north might lead to another room where these ingredients could be found.",open frosted-glass door,,You open frosted-glass door.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a raw red potato, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
-11,,I tried to take the carrot from the fridge but I am carrying too many things already.,I should drop the raw pork chop to free up space for the carrot.,drop raw pork chop,,You drop the pork chop on the ground.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+10,,I opened the frosted-glass door to the north.,I should go north through the open frosted-glass door to explore the next room for the missing ingredients.,go north,,"Well, here we are in the pantry.
 
-You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You see a shelf. The shelf is wooden. Looks like someone's already been here and taken everything off it, though. This always happens!
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+There is an open frosted-glass door leading south.",Pantry,"Well, here we are in the pantry.
 
-There is a raw pork chop on the floor.","You are carrying: a block of cheese, a raw red potato, a red apple and a white onion.",2 of 16,0.125,False,
-12,,I dropped the raw pork chop on the ground to free up space.,"Now that I have space, I should take the carrot from the fridge.",take carrot from fridge,,You take the carrot from the fridge.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+You see a shelf. The shelf is wooden. Looks like someone's already been here and taken everything off it, though. This always happens!
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+There is an open frosted-glass door leading south.","You are carrying: a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+11,,"I went north through the frosted-glass door and entered the pantry, but the shelf is empty.","Since the pantry is empty, I should return to the kitchen and take the raw purple potato or raw red potato from the counter as a substitute for the yellow potato. Then I need to find an orange bell pepper elsewhere.",go south,,"Well, here we are in a kitchen. You begin looking for stuff.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is a raw pork chop on the floor.","You are carrying: a carrot, a block of cheese, a raw red potato, a red apple and a white onion.",2 of 16,0.125,False,
-13,,I took the carrot from the fridge after dropping the raw pork chop.,I should now dice the white onion as the first step in the recipe.,dice white onion with knife,,You need to take the knife first.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+12,,I returned to the kitchen from the pantry.,I should take the raw purple potato from the counter as a substitute for the yellow potato and then search for the orange bell pepper.,take raw purple potato from counter,,You take the purple potato from the counter.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-There is a raw pork chop on the floor.","You are carrying: a carrot, a block of cheese, a raw red potato, a red apple and a white onion.",2 of 16,0.125,False,
-14,,I tried to dice the white onion but was reminded to take the knife first.,I should take the knife from the counter before dicing the white onion.,take knife from counter,,You're carrying too many things already.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a raw purple potato, a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+13,,I took the raw purple potato from the counter.,"I still need to find an orange bell pepper. Since there is a banana on the counter and a red hot pepper in the fridge, I should check the backyard or other areas for the orange bell pepper.",go east,,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see a closed BBQ nearby.
 
-There is a raw pork chop on the floor.","You are carrying: a carrot, a block of cheese, a raw red potato, a red apple and a white onion.",2 of 16,0.125,False,
-15,,I tried to take the knife but was told I am carrying too many things.,I should drop the carrot to free up space for the knife.,drop carrot,,You drop the carrot on the ground.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+There is a closed barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.",Backyard,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see a closed BBQ nearby.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+There is a closed barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.","You are carrying: a raw purple potato, a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+14,,I went east to the backyard but found no orange bell pepper on the patio table or chair.,I should open the closed barn door to the east to check if the orange bell pepper is inside.,open barn door,,You open barn door.,Backyard,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
 
-There is a carrot and a raw pork chop on the floor.","You are carrying: a block of cheese, a raw red potato, a red apple and a white onion.",2 of 16,0.125,False,
-16,,I dropped the carrot on the ground to free up space.,I should now take the knife from the counter.,take knife from counter,,You take the knife from the counter.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see a closed BBQ nearby.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+There is an open barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.","You are carrying: a raw purple potato, a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+15,,I opened the barn door to the east.,I should go east through the open barn door to explore the barn for the orange bell pepper.,go east,,"You are in a shed. A normal kind of place.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+You make out a toolbox. You see a workbench. The workbench is wooden. But the thing hasn't got anything on it.
 
-There is a carrot and a raw pork chop on the floor.","You are carrying: a knife, a block of cheese, a raw red potato, a red apple and a white onion.",2 of 16,0.125,False,
-17,,I took the knife from the counter after dropping the carrot.,I should now dice the white onion with the knife.,dice white onion with knife,,"You dice the white onion.
+There is an open barn door leading west.",Shed,"You are in a shed. A normal kind of place.
+
+You make out a toolbox. You see a workbench. The workbench is wooden. But the thing hasn't got anything on it.
+
+There is an open barn door leading west.","You are carrying: a raw purple potato, a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+16,,"I went east into the shed, but found no orange bell pepper on the workbench or toolbox.","Since the shed has no orange bell pepper, I should return to the kitchen and check if the banana on the counter can be used as a substitute or if I can find the orange bell pepper elsewhere.",go west,,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see a closed BBQ nearby.
+
+There is an open barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.",Backyard,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see a closed BBQ nearby.
+
+There is an open barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.","You are carrying: a raw purple potato, a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+17,,I returned to the backyard from the shed.,I should open the closed BBQ nearby to check if the orange bell pepper is inside.,open BBQ,,You open the BBQ.,Backyard,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see an opened BBQ nearby. What a letdown! The BBQ is empty!
+
+There is an open barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.","You are carrying: a raw purple potato, a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+18,,"I opened the BBQ, but it was empty.","Since the orange bell pepper is not in the backyard or shed, I should go back to the kitchen and check the banana on the counter or explore the south exit for the missing ingredient.",go west,,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a raw purple potato, a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+19,,I returned to the kitchen from the backyard.,I should take the banana from the counter and then explore the south exit to look for the orange bell pepper.,take banana from counter,,You're carrying too many things already.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.","You are carrying: a raw purple potato, a block of cheese, a red apple, a white onion and a raw pork chop.",2 of 16,0.125,False,
+20,,I tried to take the banana but was carrying too many things already.,"I should drop the raw pork chop to free up inventory space, then take the banana from the counter.",drop raw pork chop,,You drop the pork chop on the ground.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a raw pork chop on the floor.","You are carrying: a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+21,,I dropped the raw pork chop to free up inventory space.,Now I can take the banana from the counter and then explore the south exit to find the orange bell pepper.,take banana from counter,,You take the banana from the counter.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a raw pork chop on the floor.","You are carrying: a banana, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+22,,I took the banana from the counter.,I should go south through the exit to explore for the orange bell pepper.,go south,,"You are in a livingroom. A standard one.
+
+You see a sofa. But the thing is empty, unfortunately.
+
+There is a closed front door leading east. There is an exit to the north. You need an exit without a door? You should try going west.",Livingroom,"You are in a livingroom. A standard one.
+
+You see a sofa. But the thing is empty, unfortunately.
+
+There is a closed front door leading east. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a banana, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+23,,I went south to the living room but found no orange bell pepper on the sofa.,I should go north back to the kitchen to reconsider my options or explore the front door to the east if possible.,go north,,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a raw pork chop on the floor.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a raw pork chop on the floor.","You are carrying: a banana, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+24,,I returned north to the kitchen from the living room.,I should take the raw red potato from the counter to have all the ingredients from the recipe except the orange bell pepper.,take raw red potato from counter,,You're carrying too many things already.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a raw pork chop on the floor.","You are carrying: a banana, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+25,,I tried to take the raw red potato but was carrying too many things already.,"I should drop the banana to free up inventory space, then take the raw red potato from the counter.",drop banana,,You drop the banana on the ground.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a raw red potato, a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+26,,I dropped the banana to free up inventory space.,Now I can take the raw red potato from the counter.,take raw red potato from counter,,You take the red potato from the counter.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+27,,I took the raw red potato from the counter.,I have all the ingredients except the orange bell pepper; I should check the fridge again for the orange bell pepper or any other possible location.,open fridge,,"You open the fridge, revealing a carrot, a red onion and a red hot pepper.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+28,,I opened the fridge again but found no orange bell pepper inside.,"Since the orange bell pepper is not in the fridge, kitchen, backyard, shed, or living room, I should check the pantry again or explore the north exit from the backyard.",go north from kitchen through frosted-glass door to pantry,,I only understood you as far as wanting to go north.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+29,,I tried to go north through the frosted-glass door but remained in the kitchen.,I should explicitly go north through the frosted-glass door to enter the pantry.,go north through frosted-glass door,,I only understood you as far as wanting to go north.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+30,,I tried to go north but the command was not understood properly.,I should try a simpler command to go north.,go north,,"Well, here we are in the pantry.
+
+You see a shelf. The shelf is wooden. Looks like someone's already been here and taken everything off it, though. This always happens!
+
+There is an open frosted-glass door leading south.",Pantry,"Well, here we are in the pantry.
+
+You see a shelf. The shelf is wooden. Looks like someone's already been here and taken everything off it, though. This always happens!
+
+There is an open frosted-glass door leading south.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+31,,I went north into the pantry but found the shelf empty.,"Since the pantry is empty, I should return to the kitchen and check the backyard again for the orange bell pepper.",go south,,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+32,,I returned south to the kitchen from the pantry.,I should go east through the sliding patio door to the backyard to search again for the orange bell pepper.,go east through sliding patio door,,I only understood you as far as wanting to go east.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+33,,I tried to go east but the command was not fully understood.,I should try a simpler command to go east.,go east,,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see an opened BBQ nearby. What a letdown! The BBQ is empty!
+
+There is an open barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.",Backyard,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see an opened BBQ nearby. What a letdown! The BBQ is empty!
+
+There is an open barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+34,,I went east to the backyard but found no orange bell pepper on the patio table or chair.,I should go east through the barn door to the shed to check for the orange bell pepper.,go east through barn door,,I only understood you as far as wanting to go east.,Backyard,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see an opened BBQ nearby. What a letdown! The BBQ is empty!
+
+There is an open barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+35,,I tried to go east through the barn door but the command was not fully understood.,I should try a simpler command to go east.,go east,,"You are in a shed. A normal kind of place.
+
+You make out a toolbox. You see a workbench. The workbench is wooden. But the thing hasn't got anything on it.
+
+There is an open barn door leading west.",Shed,"You are in a shed. A normal kind of place.
+
+You make out a toolbox. You see a workbench. The workbench is wooden. But the thing hasn't got anything on it.
+
+There is an open barn door leading west.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+36,,I went east into the shed but found no orange bell pepper on the workbench or toolbox.,"Since the orange bell pepper is not found in the kitchen, pantry, backyard, or shed, I should check if I missed any other locations or if I can proceed with the recipe without it.",examine cookbook,,You can't see any such thing.,Shed,"You are in a shed. A normal kind of place.
+
+You make out a toolbox. You see a workbench. The workbench is wooden. But the thing hasn't got anything on it.
+
+There is an open barn door leading west.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+37,,I tried to examine the cookbook in the shed but it is not here.,I should return west to the backyard and then west to the kitchen to examine the cookbook there.,go west,,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see an opened BBQ nearby. What a letdown! The BBQ is empty!
+
+There is an open barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.",Backyard,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see an opened BBQ nearby. What a letdown! The BBQ is empty!
+
+There is an open barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+38,,I went west from the shed to the backyard.,I should go west through the sliding patio door to the kitchen to examine the cookbook.,go west through sliding patio door,,I only understood you as far as wanting to go west.,Backyard,"Okay, so you're in a backyard, cool, but is it typical? You better believe it is. You can barely contain your excitement.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. Were you looking for a patio table? Because look over there, it's a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. You see an opened BBQ nearby. What a letdown! The BBQ is empty!
+
+There is an open barn door leading east. There is an open sliding patio door leading west. There is an exit to the north. Don't worry, there is no door.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+39,,I tried to go west through the sliding patio door but the command was not fully understood.,I should try a simpler command to go west.,go west,,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+40,,I went west through the sliding patio door to the kitchen.,I should examine the cookbook on the counter to review the recipe.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+white onion
+  red apple
+  yellow potato
+  block of cheese
+  orange bell pepper
+
+Directions:
+dice the white onion
+  fry the white onion
+  slice the red apple
+  fry the red apple
+  slice the yellow potato
+  fry the yellow potato
+  chop the block of cheese
+  roast the block of cheese
+  slice the orange bell pepper
+  grill the orange bell pepper
+  prepare meal",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+41,,"I examined the cookbook and found the recipe requiring white onion, red apple, yellow potato, block of cheese, and orange bell pepper with detailed cooking steps.",I have all ingredients except the yellow potato and orange bell pepper. I should check if the raw red potato or raw purple potato can substitute for the yellow potato and continue preparing the meal.,slice raw red potato with knife,,You need to take the knife first.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+42,,I tried to slice the raw red potato with the knife but was told I need to take the knife first.,I should take the knife from the counter before slicing the raw red potato.,take knife from counter,,You're carrying too many things already.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw purple potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+43,,I tried to take the knife from the counter but was carrying too many things already.,I should drop one item to free up inventory space before taking the knife.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook and a knife on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a raw purple potato, a banana and a raw pork chop on the floor.","You are carrying: a raw red potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+44,,I dropped the raw purple potato to free up inventory space.,I should now take the knife from the counter to prepare the meal.,take knife from counter,,You take the knife from the counter.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+
+There is a raw purple potato, a banana and a raw pork chop on the floor.","You are carrying: a knife, a raw red potato, a block of cheese, a red apple and a white onion.",2 of 16,0.125,False,
+45,,I took the knife from the counter.,I should dice the white onion with the knife as the first step in the recipe.,dice white onion with knife,,"You dice the white onion.
 
 
 
 Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
 
-There is a carrot and a raw pork chop on the floor.","You are carrying: a knife, a block of cheese, a raw red potato, a red apple and a diced white onion.",3 of 16,0.1875,False,
-18,,I diced the white onion with the knife successfully.,"Next, I should dice the raw red potato as required by the recipe.",dice raw red potato with knife,,You dice the red potato.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+There is a raw purple potato, a banana and a raw pork chop on the floor.","You are carrying: a knife, a raw red potato, a block of cheese, a red apple and a diced white onion.",3 of 16,0.1875,False,
+46,,I diced the white onion with the knife; my score increased by one point.,"Next, I should fry the diced white onion as per the recipe.",fry diced white onion with stove,,That's not a verb I recognise.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
 
-There is a carrot and a raw pork chop on the floor.","You are carrying: a knife, a block of cheese, a diced raw red potato, a red apple and a diced white onion.",3 of 16,0.1875,False,
-19,,I diced the raw red potato with the knife successfully.,I should now dice the carrot as the next step in the recipe.,dice carrot with knife,,You need to take the carrot first.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
-
-There is a carrot and a raw pork chop on the floor.","You are carrying: a knife, a block of cheese, a diced raw red potato, a red apple and a diced white onion.",3 of 16,0.1875,False,
-20,,I tried to dice the carrot but was reminded to take it first.,I should take the carrot from the floor before dicing it.,take carrot from floor,,You're carrying too many things already.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
-
-There is a carrot and a raw pork chop on the floor.","You are carrying: a knife, a block of cheese, a diced raw red potato, a red apple and a diced white onion.",3 of 16,0.1875,False,
-21,,I tried to take the carrot but was told I am carrying too many things.,I should drop the red apple to free up space for the carrot.,drop red apple,,You drop the red apple on the ground.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
-
-There is a red apple, a carrot and a raw pork chop on the floor.","You are carrying: a knife, a block of cheese, a diced raw red potato and a diced white onion.",3 of 16,0.1875,False,
-22,,I dropped the red apple on the ground to free up space.,I should now take the carrot from the floor.,take carrot from floor,,You pick up the carrot from the ground.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
-
-There is a red apple and a raw pork chop on the floor.","You are carrying: a carrot, a knife, a block of cheese, a diced raw red potato and a diced white onion.",3 of 16,0.1875,False,
-23,,I took the carrot from the floor.,I should dice the carrot with the knife now.,dice carrot with knife,,You dice the carrot.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
-
-There is a red apple and a raw pork chop on the floor.","You are carrying: a diced carrot, a knife, a block of cheese, a diced raw red potato and a diced white onion.",3 of 16,0.1875,False,
-24,,I diced the carrot with the knife successfully.,I should now prepare the meal using the diced ingredients and the block of cheese.,prepare meal,,Something still needs to be cooked.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
-
-There is a red apple and a raw pork chop on the floor.","You are carrying: a diced carrot, a knife, a block of cheese, a diced raw red potato and a diced white onion.",3 of 16,0.1875,False,
-25,,I tried to prepare the meal but was told something still needs to be cooked.,I should cook the diced ingredients on the stove before preparing the meal.,cook diced carrot with stove,,You fried the carrot.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
-
-There is a red apple and a raw pork chop on the floor.","You are carrying: a diced fried carrot, a knife, a block of cheese, a diced raw red potato and a diced white onion.",3 of 16,0.1875,False,
-26,,I cooked (fried) the diced carrot on the stove.,I should now cook the diced raw red potato on the stove as well.,cook diced raw red potato with stove,,You fried the red potato.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
-
-There is a red apple and a raw pork chop on the floor.","You are carrying: a diced fried carrot, a knife, a block of cheese, a diced fried red potato and a diced white onion.",3 of 16,0.1875,False,
-27,,I cooked (fried) the diced raw red potato on the stove.,I should cook the diced white onion on the stove next.,cook diced white onion with stove,,"You fried the white onion.
+There is a raw purple potato, a banana and a raw pork chop on the floor.","You are carrying: a knife, a raw red potato, a block of cheese, a red apple and a diced white onion.",3 of 16,0.1875,False,
+47,,I tried to fry the diced white onion with the stove but the command was not recognized.,I should try to cook the diced white onion with the stove instead.,cook diced white onion with stove,,"You fried the white onion.
 
 
 
 Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
 
-There is a red apple and a raw pork chop on the floor.","You are carrying: a diced fried carrot, a knife, a block of cheese, a diced fried red potato and a diced fried white onion.",4 of 16,0.25,False,
-28,,I cooked (fried) the diced white onion on the stove and gained a point.,I should now prepare the meal using the cooked ingredients and the block of cheese.,prepare meal,,Something still needs to be cooked.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
-
-There is a red apple and a raw pork chop on the floor.","You are carrying: a diced fried carrot, a knife, a block of cheese, a diced fried red potato and a diced fried white onion.",4 of 16,0.25,False,
-29,,I tried to prepare the meal but was told something still needs to be cooked.,I should cook the block of cheese in the oven before preparing the meal.,cook block of cheese with oven,,"You roasted the block of cheese.
+There is a raw purple potato, a banana and a raw pork chop on the floor.","You are carrying: a knife, a raw red potato, a block of cheese, a red apple and a diced fried white onion.",4 of 16,0.25,False,
+48,,I cooked (fried) the diced white onion with the stove; my score increased by one point.,"Next, I should slice the red apple with the knife as per the recipe.",slice red apple with knife,,"You slice the red apple.
 
 
 
 Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
 
-There is a red apple and a raw pork chop on the floor.","You are carrying: a diced fried carrot, a knife, a roasted block of cheese, a diced fried red potato and a diced fried white onion.",5 of 16,0.3125,False,
-30,,I cooked (roasted) the block of cheese in the oven and gained a point.,I should now prepare the meal using all the cooked ingredients.,prepare meal,,Something still needs to be cut.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+There is a raw purple potato, a banana and a raw pork chop on the floor.","You are carrying: a knife, a raw red potato, a block of cheese, a sliced red apple and a diced fried white onion.",5 of 16,0.3125,False,
+49,,I sliced the red apple with the knife; my score increased by one point.,"Next, I should fry the sliced red apple with the stove.",cook sliced red apple with stove,,"You fried the red apple.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
 
-There is a red apple and a raw pork chop on the floor.","You are carrying: a diced fried carrot, a knife, a roasted block of cheese, a diced fried red potato and a diced fried white onion.",5 of 16,0.3125,False,
-31,,I tried to prepare the meal but was told something still needs to be cut.,I should cut the red apple on the floor to include it in the meal.,take red apple from floor,,You're carrying too many things already.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
 
-There is a red apple and a raw pork chop on the floor.","You are carrying: a diced fried carrot, a knife, a roasted block of cheese, a diced fried red potato and a diced fried white onion.",5 of 16,0.3125,False,
-32,,I tried to take the red apple but was told I am carrying too many things.,I should drop the knife to free up space and then take the red apple.,drop knife,,You drop the knife on the ground.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+There is a raw purple potato, a banana and a raw pork chop on the floor.","You are carrying: a knife, a raw red potato, a block of cheese, a sliced fried red apple and a diced fried white onion.",6 of 16,0.375,False,
+50,,I cooked (fried) the sliced red apple with the stove; my score increased by one point.,"Next, I should slice the raw red potato with the knife as a substitute for the yellow potato.",slice raw red potato with knife,,You slice the red potato.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
 
-There is a knife, a red apple and a raw pork chop on the floor.","You are carrying: a diced fried carrot, a roasted block of cheese, a diced fried red potato and a diced fried white onion.",5 of 16,0.3125,False,
-33,,I dropped the knife on the ground to free up space.,I should now take the red apple from the floor.,take red apple from floor,,You pick up the red apple from the ground.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
+There is a raw purple potato, a banana and a raw pork chop on the floor.","You are carrying: a knife, a sliced raw red potato, a block of cheese, a sliced fried red apple and a diced fried white onion.",6 of 16,0.375,False,
+51,,I sliced the raw red potato with the knife.,"Next, I should fry the sliced raw red potato with the stove.",cook sliced raw red potato with stove,,You fried the red potato.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
 
-There is a knife and a raw pork chop on the floor.","You are carrying: a red apple, a diced fried carrot, a roasted block of cheese, a diced fried red potato and a diced fried white onion.",5 of 16,0.3125,False,
-34,,I took the red apple from the floor.,I should dice the red apple with the knife to prepare it for the meal.,take knife from floor,,You're carrying too many things already.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
-
-There is a knife and a raw pork chop on the floor.","You are carrying: a red apple, a diced fried carrot, a roasted block of cheese, a diced fried red potato and a diced fried white onion.",5 of 16,0.3125,False,
-35,,I tried to take the knife from the floor but was told I am carrying too many things.,I should drop the roasted block of cheese to free up space and then take the knife.,drop roasted block of cheese,,You drop the block of cheese on the ground.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
-
-There is a roasted block of cheese, a knife and a raw pork chop on the floor.","You are carrying: a red apple, a diced fried carrot, a diced fried red potato and a diced fried white onion.",5 of 16,0.3125,False,
-36,,I dropped the roasted block of cheese on the ground to free up space.,I should now take the knife from the floor to dice the red apple.,take knife from floor,,You pick up the knife from the ground.,Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
-
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
-
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
-
-There is a roasted block of cheese and a raw pork chop on the floor.","You are carrying: a knife, a red apple, a diced fried carrot, a diced fried red potato and a diced fried white onion.",5 of 16,0.3125,False,
-37,,I took the knife from the floor.,I should dice the red apple with the knife now.,dice red apple with knife,,"You dice the red apple.
+There is a raw purple potato, a banana and a raw pork chop on the floor.","You are carrying: a knife, a sliced fried red potato, a block of cheese, a sliced fried red apple and a diced fried white onion.",6 of 16,0.375,False,
+52,,I cooked (fried) the sliced raw red potato with the stove.,"Next, I should slice the block of cheese with the knife.",slice block of cheese with knife,,"You slice the block of cheese.
 
 
 
                               *** You lost! ***
 
-You scored 5 out of a possible 16, in 37 turns.
+You scored 6 out of a possible 16, in 45 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 >",Kitchen,"Well, here we are in a kitchen. You begin looking for stuff.
 
-You can see a fridge. Huh, weird. The fridge contains a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a banana, a raw purple potato and a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
+You can see a fridge. Huh, weird. The fridge contains a carrot, a red onion and a red hot pepper. You can see a closed conventional looking oven in the room. You make out a table. Unfortunately, there isn't a thing on it. You can see a counter. You see a cookbook on the counter. You make out a stove. You wonder idly who left that here. The stove is conventional. But there isn't a thing on it.
 
-There is an open sliding patio door leading east. There is a closed frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
+There is an open sliding patio door leading east. There is an open frosted-glass door leading north. There is an exit to the south. You need an exit without a door? You should try going west.
 
-There is a roasted block of cheese and a raw pork chop on the floor.","You are carrying: a knife, a red apple, a diced fried carrot, a diced fried red potato and a diced fried white onion.",5 of 16,0.3125,True,
+There is a raw purple potato, a banana and a raw pork chop on the floor.","You are carrying: a knife, a sliced fried red potato, a block of cheese, a sliced fried red apple and a diced fried white onion.",6 of 16,0.375,True,

@@ -2,7 +2,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You arrive in a kitchen. A normal kind of place.
 
 You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw pork chop.,0 of 10,0.0,False,
-1,,I am in the kitchen with various ingredients and a cookbook on the counter.,I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,I am in the kitchen with various items on the counter and a raw pork chop in my inventory.,I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -23,140 +23,60 @@ chop the carrot
   prepare meal",Kitchen,"You arrive in a kitchen. A normal kind of place.
 
 You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw pork chop.,0 of 10,0.0,False,
-2,,"I opened the cookbook and read the recipe for a meal that requires carrot, pork chop, and yellow potato with specific preparation steps; I am in the kitchen with a raw pork chop in my inventory.",I need to gather the carrot and yellow potato from the counter and then follow the recipe steps starting with chopping the carrot.,take carrot from counter,,You can't see any such thing.,Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw pork chop.,0 of 10,0.0,False,
-3,,I tried to find the carrot but it was not visible; I am in the kitchen with a raw pork chop in my inventory and various ingredients on the counter.,I should take the raw yellow potato from the counter to prepare the meal.,take raw yellow potato from counter,,"You take the yellow potato from the counter.
+2,,"I examined the cookbook and found a recipe requiring a carrot, pork chop, and yellow potato with specific preparation steps.",I need to gather a carrot and the yellow potato from the counter to proceed with the recipe.,take raw yellow potato from counter,,"You take the yellow potato from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
 
 You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw yellow potato and a raw pork chop.,1 of 10,0.1,False,
-4,,I took the yellow potato from the counter; now I am carrying a raw yellow potato and a raw pork chop.,I should take the carrot from the counter to have all the ingredients needed for the recipe.,take carrot from counter,,You can't see any such thing.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+3,,I took the raw yellow potato from the counter and now have it in my inventory along with the raw pork chop.,I still need to find a carrot to complete the ingredients for the recipe.,take carrot from counter,,You can't see any such thing.,Kitchen,"You arrive in a kitchen. A normal kind of place.
 
 You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw yellow potato and a raw pork chop.,1 of 10,0.1,False,
-5,,"I looked around the kitchen and found a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook, and a knife on the counter; I am carrying a raw yellow potato and a raw pork chop.",I should take the yellow bell pepper from the counter to gather all ingredients for the meal.,take yellow bell pepper from counter,,You take the yellow bell pepper from the counter.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+4,,I tried to take a carrot from the counter but it is not there.,"Since there is no carrot on the counter, I should check inside the fridge for the carrot.",open fridge,,"You open the fridge, revealing a carrot, an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion.",Kitchen,"You arrive in a kitchen. A normal kind of place.
 
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a yellow bell pepper, a raw yellow potato and a raw pork chop.",1 of 10,0.1,False,
-6,,I took the yellow bell pepper from the counter; now I am carrying it along with the raw yellow potato and raw pork chop.,I should take the raw purple potato from the counter to have all the ingredients needed for the recipe.,take raw purple potato from counter,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a yellow bell pepper, a raw yellow potato and a raw pork chop.",1 of 10,0.1,False,
-7,,I tried to take another item but was told I am carrying too many things.,I should put down one of the items I am carrying to free up space before taking the carrot.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a yellow bell pepper on the floor.",You are carrying: a raw yellow potato and a raw pork chop.,1 of 10,0.1,False,
-8,,I dropped the yellow bell pepper on the ground; I am carrying a raw yellow potato and a raw pork chop.,I should take the carrot from the counter to complete the ingredients needed for the recipe.,take carrot from counter,,You can't see any such thing.,Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a yellow bell pepper on the floor.",You are carrying: a raw yellow potato and a raw pork chop.,1 of 10,0.1,False,
-9,,"I tried to take another item but was told I am carrying too many things; I dropped the yellow bell pepper; I am carrying a raw yellow potato and a raw pork chop; I looked around the kitchen and saw a raw purple potato, a red apple, a banana, a cookbook, and a knife on the counter, and a yellow bell pepper on the floor.",I should take the knife from the counter to prepare the ingredients for cooking.,take knife from counter,,You take the knife from the counter.,Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a yellow bell pepper on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",1 of 10,0.1,False,
-10,,"I took the knife from the counter; now I am carrying a knife, a raw yellow potato, and a raw pork chop.",I should take the raw purple potato from the counter to have all the ingredients needed for the recipe.,take raw purple potato from counter,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a yellow bell pepper on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",1 of 10,0.1,False,
-11,,"I tried to take another item but was told I am carrying too many things; I took the knife from the counter and am carrying a knife, a raw yellow potato, and a raw pork chop.","I need to free up inventory space by putting down one item before taking the carrot, which is required for the recipe.",drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a raw yellow potato and a yellow bell pepper on the floor.",You are carrying: a knife and a raw pork chop.,1 of 10,0.1,False,
-12,,I dropped the yellow potato on the ground; I am now carrying a knife and a raw pork chop.,I should take the carrot from the counter to proceed with the recipe.,take carrot from counter,,You can't see any such thing.,Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a raw yellow potato and a yellow bell pepper on the floor.",You are carrying: a knife and a raw pork chop.,1 of 10,0.1,False,
-13,,I dropped the yellow potato and now I am carrying a knife and a raw pork chop; I cannot see the carrot.,I should take the raw yellow potato from the floor to prepare the meal as per the recipe.,take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a yellow bell pepper on the floor.","You are carrying: a raw yellow potato, a knife and a raw pork chop.",1 of 10,0.1,False,
-14,,"I picked up the yellow potato from the ground; I am carrying a raw yellow potato, a knife, and a raw pork chop in the kitchen.",I should look around the kitchen carefully to find the carrot needed for the recipe.,look,,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a yellow bell pepper on the floor.",Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a yellow bell pepper on the floor.","You are carrying: a raw yellow potato, a knife and a raw pork chop.",1 of 10,0.1,False,
-15,,"I moved around the kitchen and observed the available items and appliances; I am carrying a raw yellow potato, a knife, and a raw pork chop.",I should look for the carrot since it is required for the recipe and I haven't found it yet.,look for carrot,,You can't see any such thing.,Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a yellow bell pepper on the floor.","You are carrying: a raw yellow potato, a knife and a raw pork chop.",1 of 10,0.1,False,
-16,,"I looked around the kitchen and saw the fridge, oven, table, counter with some items, stove, and a yellow bell pepper on the floor; I am carrying a raw yellow potato, a knife, and a raw pork chop.",I should check the fridge to see if the carrot is inside since I cannot see it on the counter.,open fridge,,"You open the fridge, revealing a carrot, an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion.",Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. The fridge contains a carrot, an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a yellow bell pepper on the floor.","You are carrying: a raw yellow potato, a knife and a raw pork chop.",1 of 10,0.1,False,
-17,,"I opened the fridge and found a carrot along with other ingredients; I am in the kitchen carrying a raw yellow potato, a knife, and a raw pork chop.",I should take the carrot from the fridge to have all the ingredients needed for the recipe.,take carrot from fridge,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. The fridge contains a carrot, an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a yellow bell pepper on the floor.","You are carrying: a raw yellow potato, a knife and a raw pork chop.",1 of 10,0.1,False,
-18,,I tried to take the carrot from the fridge but was told I am carrying too many things.,I should drop one item to free up space so I can take the carrot from the fridge.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
-
-You make out a fridge. The fridge contains a carrot, an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
-
-
-
-There is a raw yellow potato and a yellow bell pepper on the floor.",You are carrying: a knife and a raw pork chop.,1 of 10,0.1,False,
-19,,I dropped the yellow potato on the ground; I am carrying a knife and a raw pork chop.,I should take the carrot from the fridge now that I am carrying fewer items.,take carrot from fridge,,"You take the carrot from the fridge.
+You make out a fridge. The fridge contains a carrot, an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw yellow potato and a raw pork chop.,1 of 10,0.1,False,
+5,,I opened the fridge and found a carrot along with other items.,I should take the carrot from the fridge to have all ingredients needed for the recipe.,take carrot from fridge,,"You take the carrot from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
 
-You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
+You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a carrot, a raw yellow potato and a raw pork chop.",2 of 10,0.2,False,
+6,,I took the carrot from the fridge and now have all the ingredients needed for the recipe.,I should prepare the ingredients by dicing the carrot and yellow potato and then cook the pork chop.,dice carrot with knife,,You need to take the knife first.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a carrot, a raw yellow potato and a raw pork chop.",2 of 10,0.2,False,
+7,,I tried to dice the carrot but was told I need to take the knife first.,I should take the knife from the counter before dicing the carrot.,take knife from counter,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a carrot, a raw yellow potato and a raw pork chop.",2 of 10,0.2,False,
+8,,I tried to take the knife but was told I am carrying too many things already.,I should drop one of the items I am carrying to free up space before taking the knife.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
 
 
 
-There is a raw yellow potato and a yellow bell pepper on the floor.","You are carrying: a carrot, a knife and a raw pork chop.",2 of 10,0.2,False,
-20,,"I dropped the yellow potato and took the carrot from the fridge; I am now carrying a carrot, a knife, and a raw pork chop.","I should prepare the ingredients by dicing the carrot and yellow potato, then cook the pork chop as per the recipe in the cookbook.",dice carrot with knife,,"You dice the carrot.
+There is a raw yellow potato on the floor.",You are carrying: a carrot and a raw pork chop.,2 of 10,0.2,False,
+9,,I dropped the raw yellow potato to free up space.,I should now take the knife from the counter to prepare the ingredients.,take knife from counter,,You take the knife from the counter.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
+
+
+
+There is a raw yellow potato on the floor.","You are carrying: a knife, a carrot and a raw pork chop.",2 of 10,0.2,False,
+10,,I took the knife from the counter; now I am carrying it along with the carrot and raw pork chop.,I should dice the carrot with the knife as per the recipe instructions.,dice carrot with knife,,"You dice the carrot.
 
 
 
                               *** You lost! ***
 
-You scored 2 out of a possible 10, in 15 turns.
+You scored 2 out of a possible 10, in 9 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 >",Kitchen,"You arrive in a kitchen. A normal kind of place.
 
-You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
+You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.
 
 
 
-There is a raw yellow potato and a yellow bell pepper on the floor.","You are carrying: a carrot, a knife and a raw pork chop.",2 of 10,0.2,True,
+There is a raw yellow potato on the floor.","You are carrying: a knife, a carrot and a raw pork chop.",2 of 10,0.2,True,

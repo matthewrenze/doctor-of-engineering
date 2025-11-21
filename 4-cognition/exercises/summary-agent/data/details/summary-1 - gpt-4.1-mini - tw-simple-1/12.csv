@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 You can make out a chest drawer. You see an antique trunk. Look out! It's a- oh, never mind, it's just a king-size bed. The king-size bed is typical. Looks like someone's already been here and taken everything off it, though.
 
 There is a closed wooden door leading east.",You are carrying nothing.,0 of 10,0.0,False,
-1,,I am in the bedroom.,I should open the antique trunk in the bedroom.,open antique trunk,,"You open the antique trunk, revealing an old key.
+1,,I am in the bedroom.,I should open the antique trunk in the bedroom first.,open antique trunk,,"You open the antique trunk, revealing an old key.
 
 
 Your score has just gone up by one point.",Bedroom,"You find yourself in a bedroom. Let's see what's in here.
@@ -12,7 +12,7 @@ Your score has just gone up by one point.",Bedroom,"You find yourself in a bedro
 You can make out a chest drawer. You see an antique trunk. The antique trunk contains an old key. Look out! It's a- oh, never mind, it's just a king-size bed. The king-size bed is typical. Looks like someone's already been here and taken everything off it, though.
 
 There is a closed wooden door leading east.",You are carrying nothing.,1 of 10,0.1,False,
-2,,I opened the antique trunk in the bedroom; it revealed an old key.,I should take the old key from the antique trunk.,take old key from antique trunk,,"You take the old key from the antique trunk.
+2,,"I opened the antique trunk, revealing an old key.",I should take the old key from the antique trunk.,take old key from antique trunk,,"You take the old key from the antique trunk.
 
 
 
@@ -21,12 +21,12 @@ Your score has just gone up by one point.",Bedroom,"You find yourself in a bedro
 You can make out a chest drawer. You see an antique trunk. What a letdown! The antique trunk is empty! Look out! It's a- oh, never mind, it's just a king-size bed. The king-size bed is typical. Looks like someone's already been here and taken everything off it, though.
 
 There is a closed wooden door leading east.",You are carrying: an old key.,2 of 10,0.2,False,
-3,,I took the old key from the antique trunk; now I am carrying it.,I should check if the wooden door in the bedroom is unlocked with the old key.,examine wooden door,,The wooden door looks imposing. It is closed.,Bedroom,"You find yourself in a bedroom. Let's see what's in here.
+3,,I took the old key from the antique trunk.,I should check if the wooden door is unlocked with the old key.,examine wooden door,,The wooden door looks imposing. It is closed.,Bedroom,"You find yourself in a bedroom. Let's see what's in here.
 
 You can make out a chest drawer. You see an antique trunk. What a letdown! The antique trunk is empty! Look out! It's a- oh, never mind, it's just a king-size bed. The king-size bed is typical. Looks like someone's already been here and taken everything off it, though.
 
 There is a closed wooden door leading east.",You are carrying: an old key.,2 of 10,0.2,False,
-4,,I examined the wooden door; it is closed.,I should check if the wooden door is unlocked with the old key.,unlock wooden door with old key,,"You unlock wooden door.
+4,,I examined the wooden door; it is closed and looks imposing.,I should try to unlock the wooden door with the old key.,unlock wooden door with old key,,"You unlock wooden door.
 
 
 Your score has just gone up by one point.",Bedroom,"You find yourself in a bedroom. Let's see what's in here.
@@ -34,7 +34,7 @@ Your score has just gone up by one point.",Bedroom,"You find yourself in a bedro
 You can make out a chest drawer. You see an antique trunk. What a letdown! The antique trunk is empty! Look out! It's a- oh, never mind, it's just a king-size bed. The king-size bed is typical. Looks like someone's already been here and taken everything off it, though.
 
 There is a closed wooden door leading east.",You are carrying: an old key.,3 of 10,0.3,False,
-5,,I unlocked the wooden door with the old key; the door is now unlocked.,I should open the wooden door in the bedroom to proceed east.,open wooden door,,"You open wooden door.
+5,,I unlocked the wooden door with the old key; the door is now unlocked.,I should open the wooden door to the east.,open wooden door,,"You open wooden door.
 
 
 Your score has just gone up by one point.",Bedroom,"You find yourself in a bedroom. Let's see what's in here.
@@ -55,7 +55,12 @@ Your score has just gone up by one point.",Kitchen,"I am sorry to announce that 
 You make out a closed refrigerator nearby. You see a counter. However, the counter, like an empty counter, has nothing on it. You smell a lovely smell, and follow it to a stove. But the thing is empty, unfortunately. As if things weren't amazing enough already, you can even see a kitchen island. The kitchen island is ordinary. On the kitchen island you make out a note.
 
 There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the south.",You are carrying: an old key.,5 of 10,0.5,False,
-7,,I went east into the kitchen; the screen door is closed.,I should open the screen door to the east.,open screen door,,"You open screen door.
+7,,I went east into the kitchen.,I should check if the screen door leading east is open.,examine screen door,,it's a solid screen door It is closed.,Kitchen,"I am sorry to announce that you are now in the kitchen.
+
+You make out a closed refrigerator nearby. You see a counter. However, the counter, like an empty counter, has nothing on it. You smell a lovely smell, and follow it to a stove. But the thing is empty, unfortunately. As if things weren't amazing enough already, you can even see a kitchen island. The kitchen island is ordinary. On the kitchen island you make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the south.",You are carrying: an old key.,5 of 10,0.5,False,
+8,,I examined the screen door; it is closed.,I should open the screen door to the east.,open screen door,,"You open screen door.
 
 
 Your score has just gone up by one point.",Kitchen,"I am sorry to announce that you are now in the kitchen.
@@ -63,7 +68,7 @@ Your score has just gone up by one point.",Kitchen,"I am sorry to announce that 
 You make out a closed refrigerator nearby. You see a counter. However, the counter, like an empty counter, has nothing on it. You smell a lovely smell, and follow it to a stove. But the thing is empty, unfortunately. As if things weren't amazing enough already, you can even see a kitchen island. The kitchen island is ordinary. On the kitchen island you make out a note.
 
 There is an open screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the south.",You are carrying: an old key.,6 of 10,0.6,False,
-8,,I opened the screen door in the kitchen; it is now open.,I should go east through the open screen door.,go east,,"You find yourself in a backyard. A typical kind of place.
+9,,I opened the screen door; it is now open.,I should go east through the open screen door.,go east,,"You find yourself in a backyard. A typical kind of place.
 
 You can make out a set of chairs. The set of chairs appears to be empty. Oh wow! Is that what I think it is? It is! It's a bbq. The bbq is typical. But the thing is empty, unfortunately. You see a patio table. I guess it's true what they say, if you're looking for a patio table, go to TextWorld. The patio table is normal. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it!
 
@@ -76,7 +81,7 @@ Your score has just gone up by one point.",Backyard,"You find yourself in a back
 You can make out a set of chairs. The set of chairs appears to be empty. Oh wow! Is that what I think it is? It is! It's a bbq. The bbq is typical. But the thing is empty, unfortunately. You see a patio table. I guess it's true what they say, if you're looking for a patio table, go to TextWorld. The patio table is normal. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it!
 
 There is an open screen door leading west. You need an unblocked exit? You should try going south.",You are carrying: an old key.,7 of 10,0.7,False,
-9,,I went east through the open screen door and arrived in the backyard.,I should go south from the backyard as suggested to continue exploring.,go south,,"You've entered a garden.
+10,,I went east through the screen door; I am now in the backyard.,I should go south as suggested to find the unblocked exit.,go south,,"You've entered a garden.
 
 
 
@@ -92,7 +97,7 @@ Your score has just gone up by one point.",Garden,"You've entered a garden.
 There is an unguarded exit to the north.
 
 There is a half of a bag of chips, a lettuce, a tomato plant and a shovel on the floor.",You are carrying: an old key.,8 of 10,0.8,False,
-10,,I went east into the garden; I see a half of a bag of chips on the floor.,I should take the half of a bag of chips from the floor.,take half of a bag of chips from floor,,"You pick up the half of a bag of chips from the ground.
+11,,I went south from the backyard; I am now in the garden.,I should take the half of a bag of chips from the floor.,take half of a bag of chips from floor,,"You pick up the half of a bag of chips from the ground.
 
 
 
@@ -103,7 +108,7 @@ Your score has just gone up by one point.",Garden,"You've entered a garden.
 There is an unguarded exit to the north.
 
 There is a lettuce, a tomato plant and a shovel on the floor.",You are carrying: a half of a bag of chips and an old key.,9 of 10,0.9,False,
-11,,I picked up the half of a bag of chips from the floor in the garden; now I am carrying it.,I should go north from the garden.,go north,,"You find yourself in a backyard. A typical kind of place.
+12,,I took the half of a bag of chips from the floor in the garden.,I should go north to return to the backyard.,go north,,"You find yourself in a backyard. A typical kind of place.
 
 You can make out a set of chairs. The set of chairs appears to be empty. Oh wow! Is that what I think it is? It is! It's a bbq. The bbq is typical. But the thing is empty, unfortunately. You see a patio table. I guess it's true what they say, if you're looking for a patio table, go to TextWorld. The patio table is normal. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it!
 
@@ -112,65 +117,7 @@ There is an open screen door leading west. You need an unblocked exit? You shoul
 You can make out a set of chairs. The set of chairs appears to be empty. Oh wow! Is that what I think it is? It is! It's a bbq. The bbq is typical. But the thing is empty, unfortunately. You see a patio table. I guess it's true what they say, if you're looking for a patio table, go to TextWorld. The patio table is normal. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it!
 
 There is an open screen door leading west. You need an unblocked exit? You should try going south.",You are carrying: a half of a bag of chips and an old key.,9 of 10,0.9,False,
-12,,I picked up the half of a bag of chips from the garden floor; now I am carrying it.,I should go south from the backyard as suggested to continue the path.,go south,,"You've entered a garden.
-
-
-
-There is an unguarded exit to the north.
-
-There is a lettuce, a tomato plant and a shovel on the floor.",Garden,"You've entered a garden.
-
-
-
-There is an unguarded exit to the north.
-
-There is a lettuce, a tomato plant and a shovel on the floor.",You are carrying: a half of a bag of chips and an old key.,9 of 10,0.9,False,
-13,,I picked up the half of a bag of chips from the garden floor; now I am carrying it.,I should go north from the garden to continue following the instructions.,go north,,"You find yourself in a backyard. A typical kind of place.
-
-You can make out a set of chairs. The set of chairs appears to be empty. Oh wow! Is that what I think it is? It is! It's a bbq. The bbq is typical. But the thing is empty, unfortunately. You see a patio table. I guess it's true what they say, if you're looking for a patio table, go to TextWorld. The patio table is normal. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it!
-
-There is an open screen door leading west. You need an unblocked exit? You should try going south.",Backyard,"You find yourself in a backyard. A typical kind of place.
-
-You can make out a set of chairs. The set of chairs appears to be empty. Oh wow! Is that what I think it is? It is! It's a bbq. The bbq is typical. But the thing is empty, unfortunately. You see a patio table. I guess it's true what they say, if you're looking for a patio table, go to TextWorld. The patio table is normal. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it!
-
-There is an open screen door leading west. You need an unblocked exit? You should try going south.",You are carrying: a half of a bag of chips and an old key.,9 of 10,0.9,False,
-14,,I went north from the garden to the backyard; the backyard has an open screen door leading west and an exit to the south.,I should go south from the backyard as suggested to continue the path.,go south,,"You've entered a garden.
-
-
-
-There is an unguarded exit to the north.
-
-There is a lettuce, a tomato plant and a shovel on the floor.",Garden,"You've entered a garden.
-
-
-
-There is an unguarded exit to the north.
-
-There is a lettuce, a tomato plant and a shovel on the floor.",You are carrying: a half of a bag of chips and an old key.,9 of 10,0.9,False,
-15,,"I went north from the garden to the backyard; the backyard has an open screen door leading west and an exit to the south. Now I am in the garden with a lettuce, a tomato plant, and a shovel on the floor.",I should go west to return to the kitchen.,go west,,You can't go that way.,Garden,"You've entered a garden.
-
-
-
-There is an unguarded exit to the north.
-
-There is a lettuce, a tomato plant and a shovel on the floor.",You are carrying: a half of a bag of chips and an old key.,9 of 10,0.9,False,
-16,,I tried to go west from the garden but was unable to; I am still in the garden.,"Since I cannot go west from the garden, I should try going south to return to the backyard.",go south,,You can't go that way.,Garden,"You've entered a garden.
-
-
-
-There is an unguarded exit to the north.
-
-There is a lettuce, a tomato plant and a shovel on the floor.",You are carrying: a half of a bag of chips and an old key.,9 of 10,0.9,False,
-17,,I tried to go west from the garden but was unable to; I am still in the garden.,"Since I cannot go west from the garden, I should go north to the backyard and then try to go west from there to reach the kitchen.",go north,,"You find yourself in a backyard. A typical kind of place.
-
-You can make out a set of chairs. The set of chairs appears to be empty. Oh wow! Is that what I think it is? It is! It's a bbq. The bbq is typical. But the thing is empty, unfortunately. You see a patio table. I guess it's true what they say, if you're looking for a patio table, go to TextWorld. The patio table is normal. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it!
-
-There is an open screen door leading west. You need an unblocked exit? You should try going south.",Backyard,"You find yourself in a backyard. A typical kind of place.
-
-You can make out a set of chairs. The set of chairs appears to be empty. Oh wow! Is that what I think it is? It is! It's a bbq. The bbq is typical. But the thing is empty, unfortunately. You see a patio table. I guess it's true what they say, if you're looking for a patio table, go to TextWorld. The patio table is normal. But the thing is empty, unfortunately. Aw, here you were, all excited for there to be things on it!
-
-There is an open screen door leading west. You need an unblocked exit? You should try going south.",You are carrying: a half of a bag of chips and an old key.,9 of 10,0.9,False,
-18,,I went north from the garden to the backyard; now I am in the backyard with an open screen door leading west and an exit to the south.,I should go west through the open screen door to enter the kitchen.,go west,,"I am sorry to announce that you are now in the kitchen.
+13,,I went north from the garden to the backyard.,I should go west through the open screen door to enter the kitchen.,go west,,"I am sorry to announce that you are now in the kitchen.
 
 You make out a closed refrigerator nearby. You see a counter. However, the counter, like an empty counter, has nothing on it. You smell a lovely smell, and follow it to a stove. But the thing is empty, unfortunately. As if things weren't amazing enough already, you can even see a kitchen island. The kitchen island is ordinary. On the kitchen island you make out a note.
 
@@ -179,7 +126,25 @@ There is an open screen door leading east. There is an open wooden door leading 
 You make out a closed refrigerator nearby. You see a counter. However, the counter, like an empty counter, has nothing on it. You smell a lovely smell, and follow it to a stove. But the thing is empty, unfortunately. As if things weren't amazing enough already, you can even see a kitchen island. The kitchen island is ordinary. On the kitchen island you make out a note.
 
 There is an open screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the south.",You are carrying: a half of a bag of chips and an old key.,9 of 10,0.9,False,
-19,,"I went west from the backyard to the kitchen; the kitchen has a closed refrigerator, an empty counter, a stove, a kitchen island with a note, and open doors leading east and west, and unblocked exits north and south. I am carrying a half of a bag of chips and an old key.",I should put the half of a bag of chips on the stove in the kitchen to complete the task.,put half of a bag of chips on stove,,"You put the half of a bag of chips on the stove.
+14,,I went west through the screen door; now I am in the kitchen.,I should go south from the kitchen.,go south,,"You are in a living room. A typical one. You begin looking for stuff.
+
+You make out a couch. You can't really describe the couch besides that it's typical. The couch is typical. On the couch you make out a milk. Were you looking for a low table? Because look over there, it's a low table. Wow, isn't TextWorld just the best? You see a remote on the low table. Were you looking for a tv? Because look over there, it's a tv. Why don't you take a picture of it, it'll last longer! But there isn't a thing on it.
+
+There is an exit to the north. Don't worry, it is unguarded.",Living Room,"You are in a living room. A typical one. You begin looking for stuff.
+
+You make out a couch. You can't really describe the couch besides that it's typical. The couch is typical. On the couch you make out a milk. Were you looking for a low table? Because look over there, it's a low table. Wow, isn't TextWorld just the best? You see a remote on the low table. Were you looking for a tv? Because look over there, it's a tv. Why don't you take a picture of it, it'll last longer! But there isn't a thing on it.
+
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying: a half of a bag of chips and an old key.,9 of 10,0.9,False,
+15,,I went south from the kitchen; now I am in the living room.,I should go north from the living room to return to the kitchen.,go north,,"I am sorry to announce that you are now in the kitchen.
+
+You make out a closed refrigerator nearby. You see a counter. However, the counter, like an empty counter, has nothing on it. You smell a lovely smell, and follow it to a stove. But the thing is empty, unfortunately. As if things weren't amazing enough already, you can even see a kitchen island. The kitchen island is ordinary. On the kitchen island you make out a note.
+
+There is an open screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the south.",Kitchen,"I am sorry to announce that you are now in the kitchen.
+
+You make out a closed refrigerator nearby. You see a counter. However, the counter, like an empty counter, has nothing on it. You smell a lovely smell, and follow it to a stove. But the thing is empty, unfortunately. As if things weren't amazing enough already, you can even see a kitchen island. The kitchen island is ordinary. On the kitchen island you make out a note.
+
+There is an open screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the south.",You are carrying: a half of a bag of chips and an old key.,9 of 10,0.9,False,
+16,,I went north from the living room; now I am in the kitchen.,I should put the half of a bag of chips on the stove in the kitchen.,put half of a bag of chips on stove,,"You put the half of a bag of chips on the stove.
 
 
 Your score has just gone up by one point.
@@ -187,7 +152,7 @@ Your score has just gone up by one point.
 
                                *** The End ***
 
-You scored 10 out of a possible 10, in 20 turns.
+You scored 10 out of a possible 10, in 17 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

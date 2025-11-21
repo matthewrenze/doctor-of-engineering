@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 You can make out a bar. But the thing is empty. You can see a couch. But there isn't a thing on it.
 
 There is an open wooden door leading south. There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying: a latchkey.,0 of 1,0.0,False,
-1,,I am in the bedroom.,I should go south through the open wooden door.,go south,,"You've just shown up in a laundromat.
+1,,I am in the bedroom.,I need to go south first as per the task instructions.,go south,,"You've just shown up in a laundromat.
 
 You see a dresser. You see a drawer. There's something strange about this being here, but you can't put your finger on it.
 
@@ -13,7 +13,7 @@ There is a closed American door leading south. There is an open wooden door lead
 You see a dresser. You see a drawer. There's something strange about this being here, but you can't put your finger on it.
 
 There is a closed American door leading south. There is an open wooden door leading north. There is an exit to the east. Don't worry, it is unblocked.",You are carrying: a latchkey.,0 of 1,0.0,False,
-2,,I went south to the laundromat.,I should go east through the unblocked exit.,go east,,"You find yourself in a vault. A typical kind of place. You begin looking for stuff.
+2,,I went south to the laundromat.,"Next, I need to go east as per the task instructions.",go east,,"You find yourself in a vault. A typical kind of place. You begin looking for stuff.
 
 As if things weren't amazing enough already, you can even see a stand. The stand is standard. But oh no! there's nothing on this piece of garbage.
 
@@ -22,7 +22,7 @@ You need an unguarded exit? You should try going south. You need an unguarded ex
 As if things weren't amazing enough already, you can even see a stand. The stand is standard. But oh no! there's nothing on this piece of garbage.
 
 You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying: a latchkey.,0 of 1,0.0,False,
-3,,I went east to the vault.,I should go south through the unguarded exit.,go south,,"You are in a closet. It seems to be pretty usual here. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+3,,I went east to the vault.,"Next, I need to go south as per the task instructions.",go south,,"You are in a closet. It seems to be pretty usual here. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 You bend down to tie your shoe. When you stand up, you notice a counter. Looks like someone's already been here and taken everything off it, though.
 
@@ -35,7 +35,7 @@ You bend down to tie your shoe. When you stand up, you notice a counter. Looks l
 There is an unguarded exit to the north. There is an unguarded exit to the west.
 
 There is an American passkey on the floor.",You are carrying: a latchkey.,0 of 1,0.0,False,
-4,,I went south to the closet.,I should go west through the unguarded exit.,go west,,"You arrive in a canteen. A normal kind of place.
+4,,I went south to the closet.,"Next, I need to go west as per the task instructions.",go west,,"You arrive in a canteen. A normal kind of place.
 
 
 
@@ -44,82 +44,82 @@ There is a closed American door leading north. There is a closed door leading we
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-5,,I went west to the canteen.,I should open the closed door leading west.,open door west,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
+5,,I went west to the canteen.,I need to open the door leading west as per the task instructions.,open door west,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-6,,I tried to open the door west but was asked to specify which door.,I should open the closed door leading west (not the American door).,open door west,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
+6,,I tried to open the door leading west but was asked to specify which door.,"I should open the ""door"" leading west as it is the only non-American door mentioned.",open door,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-7,,I tried to open the door west again but was asked to specify which door.,"I should open the ""door"" leading west explicitly.",open door,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
+7,,I tried to open the door leading west but was asked again to specify which door.,"I should try to open the ""door west"" explicitly.",open door west,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-8,,I tried to open the door west multiple times but was asked to specify which door.,"I should try to open the ""American door"" leading north instead.",open American door north,,I only understood you as far as wanting to open American door.,Canteen,"You arrive in a canteen. A normal kind of place.
+8,,I tried to open the door west but was repeatedly asked to specify which door.,"I should try to open the ""American door"" leading north instead.",open American door,,You have to unlock the American door with the American passkey first.,Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-9,,I tried to open the American door north but it was not successful.,I should try to unlock the American door north with the latchkey first.,unlock American door north with latchkey,,I didn't understand that sentence.,Canteen,"You arrive in a canteen. A normal kind of place.
+9,,I tried to open the American door north but was told I need to unlock it first with the American passkey.,I should unlock the American door with the American passkey I saw earlier on the floor in the closet.,unlock American door with American passkey,,I only understood you as far as wanting to unlock American door with American door.,Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-10,,I tried to unlock the American door north with the latchkey but it was not understood.,"I should try to unlock the ""door"" leading west with the latchkey instead.",unlock door west with latchkey,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
+10,,I tried to unlock the American door with the American passkey but the command was not understood.,I should try to unlock the American door with the latchkey I am carrying.,unlock American door with latchkey,,That doesn't seem to fit the lock.,Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-11,,I tried to unlock the door west with the latchkey but was asked to specify which door.,"I should try to unlock the ""American door"" leading north with the latchkey again, but without specifying direction.",unlock American door with latchkey,,That doesn't seem to fit the lock.,Canteen,"You arrive in a canteen. A normal kind of place.
+11,,I tried to unlock the American door with the latchkey but it doesn't fit the lock.,I should try to open the door west again.,open door west,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-12,,I tried to unlock the American door with the latchkey but it doesn't fit the lock.,I should try to open the door west.,open door west,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
+12,,I tried to open the door west again but was asked to specify which door.,"I should try to open the ""door"" leading west explicitly.",open door,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-13,,I tried to open the door west but was asked to specify which door.,I should try to open the American door north.,open American door north,,I only understood you as far as wanting to open American door.,Canteen,"You arrive in a canteen. A normal kind of place.
+13,,I tried to open the door west explicitly but was still asked to specify which door.,I should try to unlock the door west with the latchkey first.,unlock door west with latchkey,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-14,,I tried to open the American door north but the command was not fully understood.,"I should try to open the ""American door"" without specifying direction.",open American door,,You have to unlock the American door with the American passkey first.,Canteen,"You arrive in a canteen. A normal kind of place.
+14,,I tried to unlock the door west with the latchkey but was asked to specify which door.,"I should try to unlock the ""door"" leading west explicitly with the latchkey.",unlock door with latchkey,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-15,,I tried to open the American door but was told I need the American passkey to unlock it first.,I should check my inventory to see if I have the American passkey.,inventory,,You are carrying: a latchkey.,Canteen,"You arrive in a canteen. A normal kind of place.
+15,,I tried to unlock the door with the latchkey but was asked to specify which door.,"I should try to unlock the ""door west"" explicitly with the latchkey.",unlock door west with latchkey,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-16,,"I checked my inventory and I only have a latchkey, no American passkey.","Since I don't have the American passkey, I should try to open the door west again.",open door west,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
+16,,I tried to unlock the door west with the latchkey again but was asked to specify which door.,"I should try to unlock the ""American door"" leading north with the latchkey.",unlock American door with latchkey,,That doesn't seem to fit the lock.,Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-17,,I tried to open the door west but was asked to specify which door.,"I should try to open the ""door west"" explicitly.",open door west,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
+17,,I tried to unlock the American door with the latchkey but it doesn't fit the lock.,I should try to open the door west without unlocking it first.,open door west,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-18,,I tried to open the door west explicitly but was asked to specify which door again.,I should try to unlock the door west with the latchkey first.,unlock door west with latchkey,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
+18,,I tried to open the door west but was asked to specify which door.,"I should try to open the ""door"" leading west explicitly.",open door,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-19,,I tried to unlock the door west with the latchkey but was asked to specify which door.,"I should try to unlock the ""door west"" explicitly with the latchkey.",unlock door west with latchkey,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
+19,,I tried to open the door west explicitly but was asked to specify which door.,"I should try to open the ""door west"" explicitly.",open door west,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 
 There is a closed American door leading north. There is a closed door leading west. There is an unblocked exit to the east.",You are carrying: a latchkey.,0 of 1,0.0,False,
-20,,I tried to unlock the door west explicitly with the latchkey but was asked to specify which door again.,"I should try to unlock the ""door"" west explicitly with the latchkey.",unlock door with latchkey,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
+20,,I tried to open the door west explicitly again but was asked to specify which door.,"I should try to unlock the ""door"" leading west with the latchkey again.",unlock door with latchkey,,"Which do you mean, American door or door?",Canteen,"You arrive in a canteen. A normal kind of place.
 
 
 

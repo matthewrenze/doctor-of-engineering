@@ -4,12 +4,12 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 You see an opened locker. The locker is empty! This is the worst thing that could possibly happen, ever!
 
 There is a closed door leading north. There is an open passageway leading west.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the pantry.,"I should check if the door is open, then go north, then west, then north twice, and finally pick up the latchkey from the studio floor.",look door,,"it is what it is, a door It is closed.",Pantry,"You arrive in a pantry. An usual kind of place.
+1,,I am in the pantry.,I should check if the door leading north is open as requested.,examine door,,"it is what it is, a door It is closed.",Pantry,"You arrive in a pantry. An usual kind of place.
 
 You see an opened locker. The locker is empty! This is the worst thing that could possibly happen, ever!
 
 There is a closed door leading north. There is an open passageway leading west.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I looked at the door; it is closed.,"Since the door north is closed, I cannot go north. I will go west through the open passageway as instructed.",go west,,"You've just sauntered into a study. You can barely contain your excitement.
+2,,I examined the door and found it is closed.,"Since the door north is closed, I cannot go north. I will go west through the open passageway as instructed.",go west,,"You've just sauntered into a study. You can barely contain your excitement.
 
 
 
@@ -18,12 +18,7 @@ There is an open passageway leading east. You don't like doors? Why not try goin
 
 
 There is an open passageway leading east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-3,,I went west into the study.,I should now go north as instructed.,go north,,You can't go that way.,Study,"You've just sauntered into a study. You can barely contain your excitement.
-
-
-
-There is an open passageway leading east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I tried to go north from the study but couldn't.,"Since I can't go north, I will try going west as suggested.",go west,,"You arrive in a steam room. An usual kind of place. I guess you better just go and list everything you see here.
+3,,I went west and arrived in the study.,"I should go north as requested, but there is no mention of a north exit here. I will try going west as suggested.",go west,,"You arrive in a steam room. An usual kind of place. I guess you better just go and list everything you see here.
 
 You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a rack. Make a note of this, you might have to put stuff on or in it later on. The rack is normal. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
 
@@ -32,12 +27,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded.",St
 You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a rack. Make a note of this, you might have to put stuff on or in it later on. The rack is normal. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
 
 You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I went west into the steam room and discovered a secret rack.,I should now try to go north as instructed.,go north,,You can't go that way.,Steam Room,"You arrive in a steam room. An usual kind of place. I guess you better just go and list everything you see here.
-
-You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a rack. Make a note of this, you might have to put stuff on or in it later on. The rack is normal. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
-
-You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I tried to go north from the steam room but couldn't.,"Since I can't go north, I will go east as suggested.",go east,,"You've just sauntered into a study. You can barely contain your excitement.
+4,,"I went west and arrived in the steam room, where I found a secret rack revealed by pressing a button.","I should try to go north as requested, but there is no north exit here. I will go east as suggested.",go east,,"You've just sauntered into a study. You can barely contain your excitement.
 
 
 
@@ -46,17 +36,12 @@ There is an open passageway leading east. You don't like doors? Why not try goin
 
 
 There is an open passageway leading east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I went east back to the study.,I should look around the study to find the latchkey on the floor.,look floor,,You can't see any such thing.,Study,"You've just sauntered into a study. You can barely contain your excitement.
+5,,I went east and returned to the study.,"I should try to go north again, but there is no north exit here. I will try going north from the study to see if it is possible.",go north,,You can't go that way.,Study,"You've just sauntered into a study. You can barely contain your excitement.
 
 
 
 There is an open passageway leading east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I looked at the floor in the study but did not see the latchkey.,I should look around the study more carefully to find the latchkey.,look around study,,You can't see any such thing.,Study,"You've just sauntered into a study. You can barely contain your excitement.
-
-
-
-There is an open passageway leading east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I looked around the study but still did not see the latchkey.,I should try going west to the steam room and check if the latchkey is there.,go west,,"You arrive in a steam room. An usual kind of place. I guess you better just go and list everything you see here.
+6,,I tried to go north from the study but was unable to.,"Since I cannot go north from the study, I will go west to the steam room again and look for the latchkey on the floor as requested.",go west,,"You arrive in a steam room. An usual kind of place. I guess you better just go and list everything you see here.
 
 You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a rack. Make a note of this, you might have to put stuff on or in it later on. The rack is normal. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
 
@@ -65,7 +50,26 @@ You don't like doors? Why not try going east, that entranceway is unguarded.",St
 You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a rack. Make a note of this, you might have to put stuff on or in it later on. The rack is normal. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
 
 You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I went west to the steam room but did not find the latchkey.,I should try going east back to the study and then go east again to explore further.,go east,,"You've just sauntered into a study. You can barely contain your excitement.
+7,,I went west to the steam room again.,I should look around the steam room carefully to find the latchkey on the floor.,look,,"You arrive in a steam room. An usual kind of place. I guess you better just go and list everything you see here.
+
+You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a rack. Make a note of this, you might have to put stuff on or in it later on. The rack is normal. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",Steam Room,"You arrive in a steam room. An usual kind of place. I guess you better just go and list everything you see here.
+
+You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a rack. Make a note of this, you might have to put stuff on or in it later on. The rack is normal. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+8,,I looked around the steam room but did not find the latchkey on the floor.,I should examine the floor in the steam room to find the latchkey.,examine floor,,You can't see any such thing.,Steam Room,"You arrive in a steam room. An usual kind of place. I guess you better just go and list everything you see here.
+
+You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a rack. Make a note of this, you might have to put stuff on or in it later on. The rack is normal. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+9,,I examined the floor in the steam room but did not find the latchkey.,I should try going west from the steam room to see if there is another room where the latchkey might be.,go west,,You can't go that way.,Steam Room,"You arrive in a steam room. An usual kind of place. I guess you better just go and list everything you see here.
+
+You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a rack. Make a note of this, you might have to put stuff on or in it later on. The rack is normal. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+You don't like doors? Why not try going east, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I tried to go west from the steam room but was unable to.,I should go east back to the study and then try going north from there again to find the latchkey.,go east,,"You've just sauntered into a study. You can barely contain your excitement.
 
 
 
@@ -74,7 +78,12 @@ There is an open passageway leading east. You don't like doors? Why not try goin
 
 
 There is an open passageway leading east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I went east back to the study.,I should go east from the study to explore further and look for the latchkey.,go east,,"You arrive in a pantry. An usual kind of place.
+11,,I went east back to the study.,I should try going north from the study again to find the latchkey.,go north,,You can't go that way.,Study,"You've just sauntered into a study. You can barely contain your excitement.
+
+
+
+There is an open passageway leading east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I tried to go north from the study again but was unable to.,"Since I cannot go north from the study, I will go east and then try to go north from there to find the latchkey.",go east,,"You arrive in a pantry. An usual kind of place.
 
 You see an opened locker. The locker is empty! This is the worst thing that could possibly happen, ever!
 
@@ -83,12 +92,12 @@ There is a closed door leading north. There is an open passageway leading west."
 You see an opened locker. The locker is empty! This is the worst thing that could possibly happen, ever!
 
 There is a closed door leading north. There is an open passageway leading west.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I went east from the study to the pantry.,I should try going north through the closed door in the pantry.,open door,,You open door.,Pantry,"You arrive in a pantry. An usual kind of place.
+13,,"I went east to the pantry, which has an empty locker and a closed door leading north.",I should try to go north through the closed door in the pantry to find the latchkey.,open door,,You open door.,Pantry,"You arrive in a pantry. An usual kind of place.
 
 You see an opened locker. The locker is empty! This is the worst thing that could possibly happen, ever!
 
 There is an open door leading north. There is an open passageway leading west.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I opened the closed door leading north in the pantry.,I should now go north through the open door.,go north,,"You arrive in a dish-pit. A typical kind of place.
+14,,I opened the door leading north in the pantry.,I should go north through the now open door to find the latchkey.,go north,,"You arrive in a dish-pit. A typical kind of place.
 
 
 
@@ -97,20 +106,16 @@ There is an open door leading south. There is an open gate leading north. There 
 
 
 There is an open door leading south. There is an open gate leading north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I went north into the dish-pit.,I should go west through the unblocked exit to explore further.,go west,,"Well how about that, you are in a place we're calling a washroom. The room is well lit.
+15,,I went north into the dish-pit.,I should go north through the open gate in the dish-pit to find the latchkey.,go north,,"Well, here we are in the vault.
 
+Oh, great. Here's a stand. But oh no! there's nothing on this piece of junk. What, you think everything in TextWorld should have stuff on it?
 
+There is an open gate leading south. There is an open gateway leading west. There is an exit to the north. Don't worry, it is unblocked.",Vault,"Well, here we are in the vault.
 
-You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.
+Oh, great. Here's a stand. But oh no! there's nothing on this piece of junk. What, you think everything in TextWorld should have stuff on it?
 
-There is a shadfly on the floor.",Washroom,"Well how about that, you are in a place we're calling a washroom. The room is well lit.
-
-
-
-You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.
-
-There is a shadfly on the floor.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I went west into the washroom.,I should go north from the washroom to continue exploring.,go north,,"You are in a cellar. A typical kind of place.
+There is an open gate leading south. There is an open gateway leading west. There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+16,,"I went north into the vault, which has a stand but nothing on it.",I should go west from the vault to explore further for the latchkey.,go west,,"You are in a cellar. A typical kind of place.
 
 Hey, want to see a safe? Look over there, a safe. Classic TextWorld. You hear a noise behind you and spin around, but you can't see anything other than a counter. The counter is usual. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the counter.
 
@@ -119,7 +124,7 @@ There is an open gateway leading east. You need an unguarded exit? You should tr
 Hey, want to see a safe? Look over there, a safe. Classic TextWorld. You hear a noise behind you and spin around, but you can't see anything other than a counter. The counter is usual. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the counter.
 
 There is an open gateway leading east. You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I went north into the cellar.,I should go north again to explore further.,go north,,"Ah, the studio. This is some kind of studio, really great normal vibes in this place, a wonderful normal atmosphere.
+17,,"I went west into the cellar, which has a safe and an empty counter.",I should try going north in the cellar to continue exploring for the latchkey.,go north,,"Ah, the studio. This is some kind of studio, really great normal vibes in this place, a wonderful normal atmosphere.
 
 You see a locked trunk in the room.
 
@@ -132,7 +137,7 @@ You see a locked trunk in the room.
 You need an unblocked exit? You should try going south.
 
 There is a latchkey on the floor.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I went north into the studio and found a latchkey on the floor.,I should take the latchkey from the floor.,take latchkey from floor,,"You pick up the latchkey from the ground.
+18,,I went north into the studio and found a latchkey on the floor.,I should take the latchkey from the floor in the studio.,take latchkey from floor,,"You pick up the latchkey from the ground.
 
 
 
@@ -141,7 +146,7 @@ Your score has just gone up by one point.
 
                                *** The End ***
 
-You scored 1 out of a possible 1, in 16 turns.
+You scored 1 out of a possible 1, in 18 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

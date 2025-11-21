@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the canteen.,"I will follow the instructions step-by-step, starting by traveling east.",go east,,"You are in a bedchamber. A standard kind of place. You can barely contain your excitement.
+1,,I am in the canteen.,I need to follow the sequence of movements starting with traveling east.,go east,,"You are in a bedchamber. A standard kind of place. You can barely contain your excitement.
 
 
 
@@ -13,7 +13,7 @@ There is an exit to the east. Don't worry, it is unblocked. You need an unguarde
 
 
 There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I went east from the canteen and arrived in the bedchamber.,I should go east again as the instruction says to travel east twice.,go east,,"You're now in the steamy shower.
+2,,I traveled east to the bedchamber.,I should travel east again as the next step in the sequence.,go east,,"You're now in the steamy shower.
 
 
 
@@ -22,7 +22,7 @@ There is an unguarded exit to the north. There is an unguarded exit to the south
 
 
 There is an unguarded exit to the north. There is an unguarded exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-3,,"I went east from the canteen to the bedchamber, then east again to the steamy shower.",I should go north from the steamy shower as the next step is to venture north.,go north,,"You've just sauntered into a pleasant bedchamber.
+3,,I traveled east to the steamy shower.,I should venture north as the next step in the sequence.,go north,,"You've just sauntered into a pleasant bedchamber.
 
 
 
@@ -31,7 +31,7 @@ There is an exit to the east. Don't worry, it is unguarded. There is an exit to 
 
 
 There is an exit to the east. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I went east twice and arrived in the pleasant bedchamber.,I should continue by going east as the next instruction is to venture east.,go east,,"You're now in a bedroom. Let's see what's in here.
+4,,I went north to the pleasant bedchamber.,I should attempt to go east next.,go east,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -40,16 +40,540 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-5,,"I arrived in a bedroom with exits east, south, and west.",I should go east as suggested to continue exploring.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+5,,I traveled east to the bedroom.,I should attempt to go south next.,go south,,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Spotless Washroom,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-6,,"I went east twice and then south to enter the basement, which has an exit to the west.",I should go west from the basement as the next step in the sequence.,go west,,"You're now in a bedroom. Let's see what's in here.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+6,,I went south to the spotless washroom.,I should try to go west next.,go west,,"You are in a workshop 0. A still kind of place.
+
+
+
+You need an unguarded exit? You should try going east.",Still Workshop 0,"You are in a workshop 0. A still kind of place.
+
+
+
+You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
+7,,I went west to the still workshop 0.,I should try to go south next.,go south,,You can't go that way.,Still Workshop 0,"You are in a workshop 0. A still kind of place.
+
+
+
+You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
+8,,I tried to go south but couldn't; I am still in the workshop 0.,"Since I can't go south, I will try to go east as suggested.",go east,,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Spotless Washroom,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+9,,I went east to the spotless washroom.,I should try going south as the next step in the sequence.,go south,,"You've just walked into a cubicle.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You've just walked into a cubicle.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I went south to the cubicle.,I should go west as the next step in the sequence.,go west,,"You arrive in a basement. A messy kind of place.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked.",Messy Basement,"You arrive in a basement. A messy kind of place.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I went west to the messy basement.,I should go south as the next step in the sequence.,go south,,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Well Lit Recreation Zone,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I went south to the well lit recreation zone.,I should go south next as per the instructions.,go south,,"You've entered a silent studio 6. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked.",Silent Studio 6,"You've entered a silent studio 6. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I went south to the silent studio 6.,I should go north next as the entranceway is unblocked.,go north,,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Well Lit Recreation Zone,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went north to the well lit recreation zone.,"I should go south next as instructed, then continue following the directions.",go south,,"You've entered a silent studio 6. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked.",Silent Studio 6,"You've entered a silent studio 6. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I went south to the silent studio 6.,I should go north as the exit is unblocked and continue following the directions.,go north,,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Well Lit Recreation Zone,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went north to the well lit recreation zone.,I should go west as there is an unguarded exit to the west.,go west,,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",Cramped Pantry,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went west to the cramped pantry.,I should go south as there is an unguarded exit to the south.,go south,,"You are in a pantry. A gloomy kind of place. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",Gloomy Pantry,"You are in a pantry. A gloomy kind of place. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went south to the gloomy pantry.,I should go north as it is the only exit and unblocked.,go north,,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",Cramped Pantry,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went north to the cramped pantry.,I should go east through the unguarded entranceway.,go east,,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Well Lit Recreation Zone,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went east to the well lit recreation zone.,I should go east again as per the initial instructions.,go east,,You can't go that way.,Well Lit Recreation Zone,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I tried to go east from the well lit recreation zone but couldn't.,"Since east is blocked, I should try going south as suggested.",go south,,"You've entered a silent studio 6. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked.",Silent Studio 6,"You've entered a silent studio 6. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I went south from the well lit recreation zone to the silent studio 6.,I should try going north since the entranceway is unblocked.,go north,,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Well Lit Recreation Zone,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I went north from the silent studio 6 to the well lit recreation zone.,I should go west through the unguarded exit.,go west,,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",Cramped Pantry,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went west from the well lit recreation zone to the cramped pantry.,I should go south through the unguarded exit.,go south,,"You are in a pantry. A gloomy kind of place. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",Gloomy Pantry,"You are in a pantry. A gloomy kind of place. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went south from the cramped pantry to the gloomy pantry.,I should go north back to the cramped pantry.,go north,,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",Cramped Pantry,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I went north from the gloomy pantry to the cramped pantry.,I should go east to the unguarded entranceway.,go east,,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Well Lit Recreation Zone,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I went east from the cramped pantry to the well lit recreation zone.,I should go south to the unguarded exit.,go south,,"You've entered a silent studio 6. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked.",Silent Studio 6,"You've entered a silent studio 6. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I went south from the well lit recreation zone to the silent studio 6.,I should go north to the unblocked entranceway.,go north,,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Well Lit Recreation Zone,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I went north from the silent studio 6 to the well lit recreation zone.,I should go west to explore the unguarded exit.,go west,,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",Cramped Pantry,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I went west to the cramped pantry.,I should go west again to continue exploring the unblocked exit.,go west,,"You've entered a recreation zone.
+
+
+
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Recreation Zone,"You've entered a recreation zone.
+
+
+
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I went west to the recreation zone.,I should go south to explore the unguarded exit.,go south,,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",Chamber,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I went south to the chamber.,I should go east to explore the unguarded entranceway.,go east,,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",Dish-Pit,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I went east to the dish-pit.,I should go east again as per the original instructions to continue exploring.,go east,,You can't go that way.,Dish-Pit,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I tried to go east from the dish-pit but couldn't.,"Since east is blocked, I will try going north as suggested by the environment.",go north,,"You arrive in a lounge. A well lit one.
+
+
+
+You need an unblocked exit? You should try going south.",Well Lit Lounge,"You arrive in a lounge. A well lit one.
+
+
+
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I went north from the dish-pit and arrived in the well lit lounge.,"The only unblocked exit from here is south, so I should go south.",go south,,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",Dish-Pit,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I went south from the well lit lounge and returned to the dish-pit.,I should try going west from the dish-pit as it is one of the suggested unblocked exits.,go west,,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",Chamber,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I went west from the dish-pit and arrived in the chamber.,I should go east from the chamber to explore the unguarded entranceway.,go east,,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",Dish-Pit,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I went east from the chamber and returned to the dish-pit.,I should go north from the dish-pit as it is an unblocked exit.,go north,,"You arrive in a lounge. A well lit one.
+
+
+
+You need an unblocked exit? You should try going south.",Well Lit Lounge,"You arrive in a lounge. A well lit one.
+
+
+
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I went north from the dish-pit and arrived in the well lit lounge.,I should go south from the well lit lounge as it is an unblocked exit.,go south,,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",Dish-Pit,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went south from the well lit lounge and returned to the dish-pit.,I should try going west from the dish-pit to explore further.,go west,,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",Chamber,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went west from the dish-pit and arrived in the chamber.,I should go south from the chamber to continue exploring.,go south,,"You are in a basement. A roomy one.
+
+
+
+You need an unblocked exit? You should try going north.",Roomy Basement,"You are in a basement. A roomy one.
+
+
+
+You need an unblocked exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I went south from the chamber and arrived in a roomy basement.,I should go north from the roomy basement to return to the chamber.,go north,,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",Chamber,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I went north from the roomy basement and arrived in the chamber.,I should go east from the chamber to explore the unguarded entranceway.,go east,,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",Dish-Pit,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I went east from the chamber and arrived in the dish-pit.,I should go north from the dish-pit to continue exploring.,go north,,"You arrive in a lounge. A well lit one.
+
+
+
+You need an unblocked exit? You should try going south.",Well Lit Lounge,"You arrive in a lounge. A well lit one.
+
+
+
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I went north from the dish-pit and arrived in the well lit lounge.,I should go south from the well lit lounge to return to the dish-pit.,go south,,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",Dish-Pit,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I went south from the well lit lounge and returned to the dish-pit.,I should go west from the dish-pit to explore the next area.,go west,,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",Chamber,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I went west from the dish-pit and arrived in the chamber.,I should go north from the chamber to continue exploring.,go north,,"You've entered a recreation zone.
+
+
+
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Recreation Zone,"You've entered a recreation zone.
+
+
+
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I went north from the chamber and entered a recreation zone.,I should go east from the recreation zone as suggested to continue exploring.,go east,,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",Cramped Pantry,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I went east from the recreation zone and arrived in the cramped pantry.,I should go south from the cramped pantry to continue exploring as it is an unguarded exit.,go south,,"You are in a pantry. A gloomy kind of place. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",Gloomy Pantry,"You are in a pantry. A gloomy kind of place. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I went south from the cramped pantry and arrived in the gloomy pantry.,I should go north from the gloomy pantry to return to the cramped pantry and then try going west as it is an unblocked exit.,go north,,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",Cramped Pantry,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I went north from the gloomy pantry and arrived in the cramped pantry.,I should go west from the cramped pantry as it is an unblocked exit.,go west,,"You've entered a recreation zone.
+
+
+
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Recreation Zone,"You've entered a recreation zone.
+
+
+
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I went west from the cramped pantry and arrived in the recreation zone.,I should go south from the recreation zone as it is an unguarded exit.,go south,,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",Chamber,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I went south from the recreation zone and arrived in the chamber.,I should go east from the chamber as it is an unguarded exit.,go east,,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",Dish-Pit,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I went east from the chamber and arrived in the dish-pit.,"I should go east again, but the exits are north, south, and west, so I will try going north.",go north,,"You arrive in a lounge. A well lit one.
+
+
+
+You need an unblocked exit? You should try going south.",Well Lit Lounge,"You arrive in a lounge. A well lit one.
+
+
+
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I went north from the dish-pit and arrived in the well lit lounge.,I should go south from the well lit lounge to return to the dish-pit.,go south,,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",Dish-Pit,"You are in a dish-pit. It seems to be pretty standard here.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I went south from the well lit lounge and returned to the dish-pit.,I should go west from the dish-pit to explore the chamber.,go west,,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",Chamber,"Well I'll be, you are in a place we're calling a chamber.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I went west from the dish-pit and arrived in the chamber.,I should go north from the chamber to continue exploring.,go north,,"You've entered a recreation zone.
+
+
+
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Recreation Zone,"You've entered a recreation zone.
+
+
+
+You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I went north from the chamber and entered a recreation zone.,I should go east from the recreation zone to continue exploring.,go east,,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",Cramped Pantry,"Fancy seeing you here. Here, by the way, being the cramped pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I went east from the recreation zone and arrived in the cramped pantry.,I should go east from the cramped pantry to continue exploring.,go east,,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Well Lit Recreation Zone,"Well how about that, you are in the place we're calling the well lit recreation zone. You begin looking for stuff.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went east from the cramped pantry and arrived in the well lit recreation zone.,I should go north from the well lit recreation zone to continue exploring.,go north,,"You arrive in a basement. A messy kind of place.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked.",Messy Basement,"You arrive in a basement. A messy kind of place.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I went north from the well lit recreation zone and arrived in the messy basement.,I should go east from the messy basement to continue exploring.,go east,,"You've just walked into a cubicle.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You've just walked into a cubicle.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I went east from the messy basement and arrived in the cubicle.,I should go east from the cubicle to continue exploring.,go east,,"You find yourself in a playroom. An ordinary kind of place.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",Playroom,"You find yourself in a playroom. An ordinary kind of place.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I went east from the cubicle and arrived in the playroom.,I should go north from the playroom as suggested to continue exploring.,go north,,You can't go that way.,Playroom,"You find yourself in a playroom. An ordinary kind of place.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I tried to go north from the playroom but couldn't; the way is blocked.,"Since north is blocked, I should follow the hint and go west where the entranceway is unblocked.",go west,,"You've just walked into a cubicle.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"You've just walked into a cubicle.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+65,,I went west from the playroom to the cubicle.,"From the cubicle, I have unblocked exits to the east, north, and west. I should try going north as suggested.",go north,,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Spotless Washroom,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+66,,I went north from the cubicle to the spotless washroom.,"From the spotless washroom, I have unblocked exits to the north, south, and west. I should try going north.",go north,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -58,7 +582,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-7,,"I arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+67,,I went north from the spotless washroom to the bedroom.,"In the bedroom, I have unblocked exits to the east, south, and west. I should try going east.",go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
 
 
 
@@ -67,7 +591,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've mo
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-8,,"I moved south and arrived in the basement, an ordinary room with an exit to the west.",I should go west from the basement as the exit is unguarded.,go west,,"You're now in a bedroom. Let's see what's in here.
+68,,I went east from the bedroom to the basement.,"In the basement, there is an unguarded exit to the west. I should go west.",go west,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -76,7 +600,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-9,,"I moved south and arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+69,,I went west from the basement to the bedroom.,"In the bedroom, there are unblocked exits to the east, south, and west. I should go east as it is unguarded.",go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
 
 
 
@@ -85,7 +609,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've mo
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-10,,"I moved south and arrived in the basement, an ordinary room with an exit to the west.",I should go west from the basement as the next step.,go west,,"You're now in a bedroom. Let's see what's in here.
+70,,I went east from the bedroom to the basement.,"In the basement, there is an unguarded exit to the west. I should go west.",go west,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -94,7 +618,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-11,,"I moved south and arrived in a bedroom with exits east, south, and west.",I should go east as suggested to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+71,,I went west from the basement to the bedroom.,"In the bedroom, there are unblocked exits to the east, south, and west. I should go east as the entranceway is unguarded.",go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
 
 
 
@@ -103,7 +627,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've mo
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-12,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west from the basement as the exit is unguarded.,go west,,"You're now in a bedroom. Let's see what's in here.
+72,,I went east from the bedroom to the basement.,"In the basement, there is an unguarded exit to the west. I should go west.",go west,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -112,7 +636,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-13,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as suggested to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+73,,I went west from the basement to the bedroom.,"In the bedroom, there are unblocked exits to the east, south, and west. I should go east as the entranceway is unguarded.",go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
 
 
 
@@ -121,7 +645,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've mo
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-14,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
+74,,I went east from the bedroom to the basement.,"In the basement, there is an unguarded exit to the west. I should go west.",go west,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -130,7 +654,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-15,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as suggested to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+75,,I went west from the basement to the bedroom.,"In the bedroom, I see exits east, south, and west. I should go east as the entranceway is unguarded.",go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
 
 
 
@@ -139,7 +663,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've mo
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-16,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west from the basement to continue exploring.,go west,,"You're now in a bedroom. Let's see what's in here.
+76,,I went east from the bedroom to the basement.,"In the basement, there is an unguarded exit to the west. I should go west.",go west,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -148,7 +672,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-17,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+77,,I went west from the basement to the bedroom.,"In the bedroom, there are exits east, south, and west. I should go east as it is unguarded.",go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
 
 
 
@@ -157,7 +681,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've mo
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-18,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
+78,,I went east from the bedroom to the basement.,"In the basement, there is an unguarded exit to the west. I should go west.",go west,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -166,52 +690,34 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-19,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+79,,I went west from the basement to the bedroom.,"In the bedroom, there are exits east, south, and west. I should go south as suggested.",go south,,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Spotless Washroom,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-20,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+80,,I went south from the bedroom to the spotless washroom.,"In the spotless washroom, there are exits north, south, and west. I should go west as it is unguarded.",go west,,"You are in a workshop 0. A still kind of place.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
+You need an unguarded exit? You should try going east.",Still Workshop 0,"You are in a workshop 0. A still kind of place.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-21,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as suggested to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
+81,,I went west from the spotless washroom to the still workshop 0.,"The only unguarded exit here is east, so I should go east.",go east,,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Spotless Washroom,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-22,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-23,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-24,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+82,,I went east from the still workshop 0 to the spotless washroom.,I should try going north as it is an unblocked exit.,go north,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -220,7 +726,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-25,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+83,,I went north from the spotless washroom to the bedroom.,I should go east through the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
 
 
 
@@ -229,7 +735,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've mo
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-26,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
+84,,I went east from the bedroom to the basement.,I should go west through the unguarded exit.,go west,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -238,52 +744,34 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-27,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as suggested to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+85,,I went west from the basement to the bedroom.,I should go south through the unblocked exit.,go south,,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Spotless Washroom,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-28,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+86,,I went south from the bedroom to the spotless washroom.,I should go west through the unguarded exit.,go west,,"You are in a workshop 0. A still kind of place.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
+You need an unguarded exit? You should try going east.",Still Workshop 0,"You are in a workshop 0. A still kind of place.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-29,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as suggested to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
+87,,I went west from the spotless washroom to the still workshop 0.,I should go east through the unguarded exit.,go east,,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Spotless Washroom,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-30,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and eventually reach the misty launderette to pick up the coin.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-31,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as suggested to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-32,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+88,,I went east from the still workshop 0 to the spotless washroom.,I should go north to continue exploring.,go north,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -292,7 +780,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-33,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as suggested to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+89,,I went north from the spotless washroom to the bedroom.,I should go east through the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
 
 
 
@@ -301,7 +789,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've mo
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-34,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and find the misty launderette where the coin might be.,go west,,"You're now in a bedroom. Let's see what's in here.
+90,,I went east from the bedroom to the basement.,I should go west through the unguarded exit.,go west,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -310,7 +798,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-35,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as suggested to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+91,,I went west from the basement to the bedroom.,I should go east through the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
 
 
 
@@ -319,7 +807,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've mo
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-36,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and eventually reach the misty launderette to pick up the coin.,go west,,"You're now in a bedroom. Let's see what's in here.
+92,,I went east from the bedroom to the basement.,I should go west through the unguarded exit.,go west,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -328,7 +816,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-37,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as suggested to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+93,,I went west from the basement to the bedroom.,I should go east through the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
 
 
 
@@ -337,7 +825,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've mo
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-38,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
+94,,I went east from the bedroom to the basement.,I should go west through the unguarded exit.,go west,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -346,7 +834,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-39,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+95,,I went west from the basement to the bedroom.,I should go east through the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
 
 
 
@@ -355,7 +843,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've mo
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-40,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
+96,,I went east from the bedroom to the basement.,I should go west through the unguarded exit.,go west,,"You're now in a bedroom. Let's see what's in here.
 
 
 
@@ -364,538 +852,34 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-41,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+97,,I went west from the basement to the bedroom.,I should go south from the bedroom.,go south,,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Spotless Washroom,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-42,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+98,,I went south from the bedroom to the spotless washroom.,I should go west from the spotless washroom.,go west,,"You are in a workshop 0. A still kind of place.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
+You need an unguarded exit? You should try going east.",Still Workshop 0,"You are in a workshop 0. A still kind of place.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-43,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
+99,,I went west from the spotless washroom to the still workshop 0.,I should go east from the still workshop 0.,go east,,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Spotless Washroom,"You find yourself in a washroom. A spotless one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-44,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and eventually reach the misty launderette to pick up the coin.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-45,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-46,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and eventually reach the misty launderette to pick up the coin.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-47,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-48,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-49,,"I arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-50,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-51,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-52,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-53,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-54,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and find the misty launderette to pick up the coin.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-55,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-56,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and find the misty launderette to pick up the coin.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-57,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-58,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-59,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-60,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-61,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-62,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-63,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-64,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-65,,"I arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-66,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-67,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-68,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-69,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-70,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-71,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-72,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-73,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-74,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and find the misty launderette to pick up the coin.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-75,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-76,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-77,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-78,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-79,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-80,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-81,,"I arrived in a bedroom with exits east, south, and west.",I should go east as the entranceway is unguarded.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-82,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-83,,"I moved south multiple times and arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-84,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-85,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-86,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring as per the instructions.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-87,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-88,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and find the misty launderette to pick up the coin.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-89,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-90,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and find the misty launderette where the coin might be.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-91,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-92,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and eventually reach the misty launderette to pick up the coin.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-93,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-94,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and find the misty launderette to pick up the coin.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-95,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-96,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and find the misty launderette where the coin might be.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-97,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-98,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and find the misty launderette to pick up the coin.,go west,,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Bedroom,"You're now in a bedroom. Let's see what's in here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-99,,"I arrived in a bedroom with exits east, south, and west.",I should go east to explore the unguarded entranceway.,go east,,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Basement,"You've moved into an ordinary room. Your mind races to think of what kind of room would be ordinary. And then it hits you. Of course. You're in the basement.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-100,,"I moved south multiple times and arrived in the basement, an ordinary room with an exit to the west.",I should go west to continue exploring and find the misty launderette to pick up the coin.,go west,,"You're now in a bedroom. Let's see what's in here.
+You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+100,,I went east from the still workshop 0 to the spotless washroom.,I should go north from the spotless washroom.,go north,,"You're now in a bedroom. Let's see what's in here.
 
 
 

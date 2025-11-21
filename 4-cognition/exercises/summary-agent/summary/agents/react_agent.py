@@ -9,7 +9,7 @@ class ReactAgent:
         self.prompt = prompt
         self.messages = []
         self.summaries = []
-        self.state_action_queue = deque(maxlen=version - 1)
+        self.state_action_queue = deque(maxlen=version)
         self.step_idx = 0
         self.k_full_steps = version
 
@@ -45,8 +45,9 @@ class ReactAgent:
 
         # Add the summaries as a single user message
         num_summaries = len(self.summaries)
+        num_current_summaries = 0
         if num_summaries > 0 and self.step_idx >= self.k_full_steps:
-            num_current_summaries = (self.step_idx - self.k_full_steps) + 1
+            num_current_summaries = (self.step_idx - self.k_full_steps)
             current_summaries = self.summaries[:num_current_summaries]
             summaries_content = "Previous steps:\n" + "\n - ".join(current_summaries)
             summaries_message = {"role": "user", "content": summaries_content}
@@ -61,7 +62,7 @@ class ReactAgent:
         current_messages.append(prompt_message)
 
         # Debug: print message counts
-        debug(f"Total messages: {len(self.messages)}, Summaries: {num_summaries}, State-Actions: {len(self.state_action_queue)}, Current Messages: {len(current_messages)}")
+        debug(f"Total messages: {len(self.messages)}, Total summaries: {num_summaries}, Current summaries: {num_current_summaries}, State-actions: {len(self.state_action_queue)}, Current messages: {len(current_messages)}")
 
         # # Debug: print the first 80 characters of the current messages
         # debug_messages = ""

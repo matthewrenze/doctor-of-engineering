@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the kitchen.,I should go south as the entranceway is unblocked.,go south,,"You are in a bathroom. An ordinary kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+1,,I am in the kitchen.,I should try to go south as the entranceway is unblocked.,go south,,"You are in a bathroom. An ordinary kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
@@ -13,7 +13,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. The
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I went south from the kitchen and arrived in the bathroom.,I should continue going south as the task instructs to travel south multiple times.,go south,,"You arrive in a chamber. A typical kind of place.
+2,,I went south to the bathroom.,I should travel south again as the exit to the south is unblocked.,go south,,"You arrive in a chamber. A typical kind of place.
 
 
 
@@ -22,7 +22,7 @@ You need an unblocked exit? You should try going east. You need an unblocked exi
 
 
 You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-3,,"I went south from the kitchen to the bathroom, then went south again to the chamber.",I should continue following the instructions and go south again.,go south,,"You've just walked into a lounge. Okay, just remember what you're here to do, and everything will go great.
+3,,I went south to the chamber.,I should venture south again as the exit to the south is unguarded.,go south,,"You've just walked into a lounge. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -31,7 +31,7 @@ There is an unguarded exit to the east. You need an unguarded exit? You should t
 
 
 There is an unguarded exit to the east. You need an unguarded exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I went south twice from the kitchen and arrived in the lounge.,I should continue following the instructions by going south again.,go south,,"You find yourself in a kitchenette. An ordinary kind of place.
+4,,I went south to the lounge.,I should go south again as there is an unblocked exit to the south.,go south,,"You find yourself in a kitchenette. An ordinary kind of place.
 
 
 
@@ -40,7 +40,7 @@ You don't like doors? Why not try going north, that entranceway is unguarded. Th
 
 
 You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I went south twice from the kitchen and arrived in the kitchenette.,I should continue following the instructions by going south again.,go south,,"You find yourself in a basement. A normal kind of place.
+5,,I went south to the kitchenette.,I should go south again as there is an unguarded exit to the south.,go south,,"You find yourself in a basement. A normal kind of place.
 
 
 
@@ -49,7 +49,7 @@ There is an exit to the east. Don't worry, it is unblocked. There is an exit to 
 
 
 There is an exit to the east. Don't worry, it is unblocked. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I went south multiple times from the kitchen and arrived in the basement.,I should continue following the instructions by going south again.,go south,,"Well, here we are in the playroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+6,,I went south to the basement.,I should go south again as the exit to the south is unblocked.,go south,,"Well, here we are in the playroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
@@ -58,7 +58,7 @@ You need an unguarded exit? You should try going north. There is an exit to the 
 
 
 You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I went south multiple times from the kitchen and arrived in the playroom.,I should go south from the playroom as the exit to the south is unblocked.,go south,,"You're now in a stuffed cellar.
+7,,I went south to the playroom.,I should go south again as the exit to the south is unblocked.,go south,,"You're now in a stuffed cellar.
 
 
 
@@ -67,21 +67,31 @@ There is an unblocked exit to the north. There is an exit to the south. Don't wo
 
 
 There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I went south multiple times from the kitchen and arrived in the stuffed cellar.,I should try to go west as suggested to continue following the directions.,go west,,"You arrive in a laundry place. A standard one.
+8,,I went south to the stuffed cellar.,I should go south again as the exit to the south is unblocked.,go south,,"You are in a washroom. A normal kind of place. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked.",Laundry Place,"You arrive in a laundry place. A standard one.
+There is an unguarded exit to the north.",Washroom,"You are in a washroom. A normal kind of place. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I went south multiple times from the kitchen and arrived in the laundry place.,I should now attempt to venture west as instructed.,go west,,You can't go that way.,Laundry Place,"You arrive in a laundry place. A standard one.
+There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+9,,I went south to the washroom.,I should try to venture south again.,go south,,You can't go that way.,Washroom,"You are in a washroom. A normal kind of place. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I tried to go south from the laundry place but was told I can't go that way.,"Since going south is not possible, I should try going east as there is an unguarded exit in that direction.",go east,,"You're now in a stuffed cellar.
+There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I tried to go south from the washroom but couldn't.,"Since I can't go south, I will try to go west as the next direction.",go west,,You can't go that way.,Washroom,"You are in a washroom. A normal kind of place. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I tried to go west from the washroom but couldn't.,"Since I can't go west, I will try to go south again as the next direction.",go south,,You can't go that way.,Washroom,"You are in a washroom. A normal kind of place. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I tried to go south from the washroom again but couldn't.,I should try going north since the only unguarded exit is to the north.,go north,,"You're now in a stuffed cellar.
 
 
 
@@ -90,7 +100,7 @@ There is an unblocked exit to the north. There is an exit to the south. Don't wo
 
 
 There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I went south multiple times from the kitchen and arrived in the stuffed cellar.,I should try to go west as suggested to find an unblocked exit.,go west,,"You arrive in a laundry place. A standard one.
+13,,I went north from the washroom to the stuffed cellar.,I should try going west as suggested by the description.,go west,,"You arrive in a laundry place. A standard one.
 
 
 
@@ -99,7 +109,7 @@ There is an exit to the east. Don't worry, it is unguarded. There is an unblocke
 
 
 There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I went south multiple times from the kitchen and arrived in the laundry place.,I should go south from the laundry place as instructed.,go south,,"You find yourself in an attic. An ordinary kind of place.
+14,,I went west to the laundry place.,I should go south as the task instructs to go south again.,go south,,"You find yourself in an attic. An ordinary kind of place.
 
 
 
@@ -108,7 +118,7 @@ There is an unblocked exit to the east. There is an unblocked exit to the north.
 
 
 There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I went south multiple times from the kitchen and arrived in the attic.,"I should go south as the task instructs to go south multiple times, but the attic does not have a south exit. I will try going west since it is unguarded and might lead to the next step.",go west,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
+15,,I went south to the attic.,I should go west as the task instructs to go west next.,go west,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
 
 
 
@@ -117,12 +127,107 @@ You need an unguarded exit? You should try going east. There is an exit to the n
 
 
 You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I went south multiple times from the kitchen and arrived in the cookhouse.,"I should go south, then west, then north, then west, then north, then east, then south, then east, then south, then west, then west, then north to follow the instructions and reach the spare room to recover the coin.",go south,,You can't go that way.,Cookhouse,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
+16,,I went west to the cookhouse.,I should go north as the task instructs to venture north next.,go north,,"Ah, the shower. This is some kind of shower, really great typical vibes in this place, a wonderful typical atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the north. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",Shower,"Ah, the shower. This is some kind of shower, really great typical vibes in this place, a wonderful typical atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the north. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went north to the shower.,I should try to go east as the task instructs to venture east next.,go east,,You can't go that way.,Shower,"Ah, the shower. This is some kind of shower, really great typical vibes in this place, a wonderful typical atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the north. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I tried to go east from the shower but couldn't.,"Since I cannot go east, I will follow the hint and go south from the shower.",go south,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookhouse,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
 
 
 
 You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I tried to go south from the cookhouse but was told I can't go that way.,I should go east from the cookhouse as suggested to find an unguarded exit.,go east,,"You find yourself in an attic. An ordinary kind of place.
+19,,I went south from the shower to the cookhouse.,I should go west from the cookhouse as it is an unblocked exit.,go west,,"You are in a dish-pit. An ordinary kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unguarded exit to the east.",Dish-Pit,"You are in a dish-pit. An ordinary kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went west from the cookhouse to the dish-pit.,I should go east from the dish-pit since it is an unguarded exit.,go east,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookhouse,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I went east from the dish-pit to the cookhouse.,I should go north from the cookhouse since it is an unguarded exit.,go north,,"Ah, the shower. This is some kind of shower, really great typical vibes in this place, a wonderful typical atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the north. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",Shower,"Ah, the shower. This is some kind of shower, really great typical vibes in this place, a wonderful typical atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the north. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I went north from the cookhouse to the shower.,I should go west from the shower since the entranceway is unguarded.,go west,,"You find yourself in a garage. A typical one.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Garage,"You find yourself in a garage. A typical one.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I went west from the shower to the garage.,I should go south from the garage as per the task instructions.,go south,,You can't go that way.,Garage,"You find yourself in a garage. A typical one.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I tried to go south from the garage but couldn't.,"Since I cannot go south, I will try going east from the garage as it is an unguarded exit.",go east,,"Ah, the shower. This is some kind of shower, really great typical vibes in this place, a wonderful typical atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the north. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",Shower,"Ah, the shower. This is some kind of shower, really great typical vibes in this place, a wonderful typical atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the north. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went east from the garage to the shower.,I should now go south from the shower as suggested by the description.,go south,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookhouse,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I went south from the shower to the cookhouse.,I should go west from the cookhouse as the exit is unblocked.,go west,,"You are in a dish-pit. An ordinary kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unguarded exit to the east.",Dish-Pit,"You are in a dish-pit. An ordinary kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unguarded exit to the east.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I went west from the cookhouse to the dish-pit.,I should go east from the dish-pit since the exit is unguarded.,go east,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookhouse,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I went east from the dish-pit to the cookhouse.,I should go east from the cookhouse as it is an unguarded exit.,go east,,"You find yourself in an attic. An ordinary kind of place.
 
 
 
@@ -131,25 +236,12 @@ There is an unblocked exit to the east. There is an unblocked exit to the north.
 
 
 There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I arrived in the attic after going south multiple times from the kitchen.,I should go west from the attic as the exit is unguarded and I need to follow the instructions to venture west.,go west,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookhouse,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-17,,"I arrived in the cookhouse and found exits to the north, east, and west.",I should go east as suggested to find an unguarded exit.,go east,,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Attic,"You find yourself in an attic. An ordinary kind of place.
+29,,I went east from the cookhouse to the attic.,I should go south from the attic as per the task instructions.,go south,,You can't go that way.,Attic,"You find yourself in an attic. An ordinary kind of place.
 
 
 
 There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-18,,"I arrived in the attic, which has exits to the east, north, and west.","I should go south as the task initially instructed, but since there is no south exit here, I will try going west as it is unguarded.",go west,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
+30,,I tried to go south from the attic but couldn't.,"Since I cannot go south, I will try to go west from the attic as it is unguarded.",go west,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
 
 
 
@@ -158,120 +250,12 @@ You need an unguarded exit? You should try going east. There is an exit to the n
 
 
 You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-19,,"I arrived in the cookhouse, which has unguarded exits to the north, east, and west.",I should go east as suggested to find an unguarded exit.,go east,,"You find yourself in an attic. An ordinary kind of place.
+31,,I went west from the attic to the cookhouse.,I should now go north from the cookhouse as it is an unguarded exit.,go north,,"Ah, the shower. This is some kind of shower, really great typical vibes in this place, a wonderful typical atmosphere. And now, well, you're in it.
 
 
 
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Attic,"You find yourself in an attic. An ordinary kind of place.
+There is an unguarded exit to the north. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",Shower,"Ah, the shower. This is some kind of shower, really great typical vibes in this place, a wonderful typical atmosphere. And now, well, you're in it.
 
 
 
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-20,,"I arrived in the attic, which has unblocked exits to the east, north, and west.","I should go south as the task instructs multiple times to go south first, but since there is no south exit here, I will try going west as the next step suggests.",go west,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookhouse,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-21,,"I arrived in the cookhouse with unguarded exits to the north, east, and west.",I should go east as suggested to proceed through the unguarded exit.,go east,,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Attic,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-22,,"I arrived in the attic, which has unblocked exits to the east, north, and west.","I should go south as the task instructs to try going south first, but since there is no south exit in the attic, I will try going west as the next step in the task suggests.",go west,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookhouse,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-23,,"I arrived in the cookhouse with unguarded exits to the north, east, and west.",I should go east as suggested to continue following the directions.,go east,,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Attic,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-24,,"I am in the attic with unblocked exits to the east, north, and west.",I should go west from the attic as the next step in the instructions is to go west.,go west,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookhouse,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-25,,"I arrived in the cookhouse with unguarded exits to the north, east, and west.",I should go east as suggested to continue following the directions.,go east,,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Attic,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-26,,"I am in the attic with unblocked exits to the east, north, and west.",I should go west from the attic as the next step in the instructions is to go west.,go west,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookhouse,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-27,,"I arrived in the cookhouse with unguarded exits to the north, east, and west.",I should go east from the cookhouse as suggested to continue following the directions.,go east,,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Attic,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-28,,"I am in the attic with unblocked exits to the east, north, and west.","I should go south as the task initially instructed multiple times to go south, but there is no south exit here. I will try going west as the next instruction after south is to venture west.",go west,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookhouse,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-29,,"I am in the cookhouse with unguarded exits to the north, east, and west.",I should go east as suggested to continue following the instructions.,go east,,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Attic,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-30,,"I am in the attic with unblocked exits to the east, north, and west.","I should go south as the task instructs, but there is no south exit here. I will try going west instead, as it is unguarded and might lead me closer to the goal.",go west,,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookhouse,"You have stumbled into a cookhouse. Not the cookhouse you'd expect. No, this is a cookhouse.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-31,,"I am in the cookhouse with unguarded exits to the north, east, and west.",I should go east as suggested to continue exploring the area.,go east,,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Attic,"You find yourself in an attic. An ordinary kind of place.
-
-
-
-There is an unblocked exit to the east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,True,
+There is an unguarded exit to the north. You need an unguarded exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,True,

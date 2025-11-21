@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the Roomy Cellar.,I should go south as suggested to find an unguarded exit.,go south,,"You find yourself in a sauna. An usual one. Let's see what's in here.
+1,,I am in the Roomy Cellar.,I should follow the instructions and go south first.,go south,,"You find yourself in a sauna. An usual one. Let's see what's in here.
 
 
 
@@ -13,7 +13,7 @@ You need an unblocked exit? You should try going east. You don't like doors? Why
 
 
 You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I went south from the Roomy Cellar and arrived in the Sauna.,I should go east as suggested to find an unblocked exit.,go east,,"I am sorry to announce that you are now in the closet.
+2,,I went south from the Roomy Cellar and arrived in the Sauna.,"Next, I should go east as suggested.",go east,,"I am sorry to announce that you are now in the closet.
 
 
 
@@ -22,25 +22,7 @@ You need an unblocked exit? You should try going south. You don't like doors? Wh
 
 
 You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-3,,"I went south from the Roomy Cellar to the Sauna, then went south to the Closet.",I should go west from the Closet since the entranceway is unblocked.,go west,,"You find yourself in a sauna. An usual one. Let's see what's in here.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked.",Sauna,"You find yourself in a sauna. An usual one. Let's see what's in here.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I went south twice from the Roomy Cellar and arrived in the Sauna.,I should go east from the Sauna as suggested to find an unblocked exit.,go east,,"I am sorry to announce that you are now in the closet.
-
-
-
-You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Closet,"I am sorry to announce that you are now in the closet.
-
-
-
-You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I went south twice from the Roomy Cellar and arrived in the Closet.,I should go south from the Closet as suggested to find an unblocked exit.,go south,,"You are in a dish-pit. An usual kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+3,,I went east from the Sauna and arrived in the Closet.,"Next, I should go south as suggested.",go south,,"You are in a dish-pit. An usual kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
@@ -49,7 +31,7 @@ You don't like doors? Why not try going east, that entranceway is unblocked. The
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I went south twice from the Roomy Cellar and arrived in the Closet; then I moved to the Dish-Pit.,I should go east from the Dish-Pit since the entranceway is unblocked.,go east,,"You're now in a cellar.
+4,,I went south from the Closet and arrived in the Dish-Pit.,"Next, I should go east as the entranceway is unblocked.",go east,,"You're now in a cellar.
 
 
 
@@ -58,7 +40,7 @@ You don't like doors? Why not try going south, that entranceway is unguarded. Yo
 
 
 You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I went south twice from the Roomy Cellar and arrived in the Cellar.,I should go south as the entranceway is unguarded.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+5,,I went east from the Dish-Pit and arrived in the Cellar.,I should go south next as the entranceway is unguarded.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -67,7 +49,7 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unblock
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I went south twice from the Roomy Cellar and arrived in the Attic.,I should go west from the Attic as the exit is unblocked.,go west,,"You find yourself in a cookery. An upsettingly hot kind of place.
+6,,I went south from the Cellar and arrived in the Attic.,I should go west next as there is an unblocked exit to the west.,go west,,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
@@ -76,7 +58,12 @@ You need an unguarded exit? You should try going east. You need an unguarded exi
 
 
 You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I arrived in the Upsettingly Hot Cookery.,I should go east as suggested to find an unguarded exit.,go east,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+7,,I went west from the Attic and arrived in the Upsettingly Hot Cookery.,I should go south next as per the instructions.,go south,,You can't go that way.,Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+8,,I tried to go south from the Upsettingly Hot Cookery but couldn't.,"Since south is not possible, I will try going east as suggested.",go east,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -85,16 +72,165 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unblock
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I am in the Attic with exits to the north and west.,I should go north from the Attic as the next step in the sequence.,go north,,"You're now in a cellar.
+9,,I went east from the Upsettingly Hot Cookery and arrived in the Attic.,I should go south from the Attic as per the original instructions.,go south,,You can't go that way.,Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I tried to go south from the Attic but couldn't.,"Since I cannot go south, I will try going west from the Attic as the exit is unblocked.",go west,,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I went north from the Attic and arrived in the Cellar.,I should go south as suggested to use the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I went west from the Attic and arrived in the Upsettingly Hot Cookery.,I should try going north from the Upsettingly Hot Cookery since it is an unblocked exit.,go north,,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I went north from the Upsettingly Hot Cookery and arrived in the Bedchamber.,I should try going north from the Bedchamber since it is an unblocked exit.,go north,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I went north from the Bedchamber and arrived in the Still Workshop.,I should try going south from the Still Workshop since it is an unguarded exit.,go south,,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went south from the Still Workshop and arrived back in the Bedchamber.,I should go north again to return to the Still Workshop.,go north,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I went north from the Bedchamber and arrived in the Still Workshop.,I should go north again as the exit to the north is unblocked.,go north,,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",Stuffed Pantry,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went north from the Still Workshop and arrived in the Stuffed Pantry.,I should go south as it is an unguarded exit.,go south,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went south from the Stuffed Pantry and arrived in the Still Workshop.,I should go north as the next step in the sequence is to go north.,go north,,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",Stuffed Pantry,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went north from the Still Workshop and arrived in the Stuffed Pantry.,I should go west as the next step in the sequence is to go west.,go west,,"You make a grand eccentric entrance into a launderette.
+
+
+
+There is an unblocked exit to the east. There is an unguarded exit to the north.",Launderette,"You make a grand eccentric entrance into a launderette.
+
+
+
+There is an unblocked exit to the east. There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went west from the Stuffed Pantry and arrived in the Launderette.,I should go north as the next step in the sequence is to go north.,go north,,"You find yourself in a spare room. An ordinary one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded.",Spare Room,"You find yourself in a spare room. An ordinary one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went north from the Launderette and arrived in the Spare Room.,I should go east next as the sequence instructs to go east.,go east,,"You've just walked into a cookhouse.
+
+
+
+There is an unblocked exit to the east. There is an exit to the west. Don't worry, it is unguarded.",Cookhouse,"You've just walked into a cookhouse.
+
+
+
+There is an unblocked exit to the east. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I went east from the Spare Room and arrived in the Cookhouse.,"The next instruction is to go south, but there is no south exit here. I should check the available exits to find a way to go south eventually.",go west,,"You find yourself in a spare room. An ordinary one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded.",Spare Room,"You find yourself in a spare room. An ordinary one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I went west from the Cookhouse and arrived back in the Spare Room.,I should go south from the Spare Room as the exit is unblocked and unguarded.,go south,,"You make a grand eccentric entrance into a launderette.
+
+
+
+There is an unblocked exit to the east. There is an unguarded exit to the north.",Launderette,"You make a grand eccentric entrance into a launderette.
+
+
+
+There is an unblocked exit to the east. There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I went south from the Spare Room and arrived in the Launderette.,I should go east from the Launderette as the exit is unblocked.,go east,,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",Stuffed Pantry,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went east from the Launderette and arrived in the Stuffed Pantry.,I should go south from the Stuffed Pantry as suggested by the feedback.,go south,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went south from the Stuffed Pantry and arrived in the Still Workshop.,I should go south from the Still Workshop as the entranceway is unguarded.,go south,,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I went south from the Still Workshop and arrived in the Bedchamber.,I should go south from the Bedchamber as the exit is unguarded.,go south,,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I went south from the Bedchamber and arrived in the Upsettingly Hot Cookery.,I should go east from the Upsettingly Hot Cookery as it is an unguarded exit.,go east,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -103,16 +239,75 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unblock
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I am in the attic with exits to the north and west.,I should go north from the attic as the next step in the sequence.,go north,,"You're now in a cellar.
+28,,I went east from the Upsettingly Hot Cookery and arrived in the Attic.,I should go south from the Attic as per the task instructions.,go south,,You can't go that way.,Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I tried to go south from the Attic but couldn't.,"Since I cannot go south, I will try going west from the Attic as it is unblocked.",go west,,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I went west from the Attic and arrived in the Upsettingly Hot Cookery.,I should try going north from the Upsettingly Hot Cookery as it is suggested as an unblocked exit.,go north,,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I went north from the Upsettingly Hot Cookery and arrived in the Bedchamber.,I should try going north from the Bedchamber as it is suggested as an unblocked exit.,go north,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I went north from the Bedchamber and arrived in the Still Workshop.,I should go north from the Still Workshop since the exit is unblocked.,go north,,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",Stuffed Pantry,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I went north from the Still Workshop and arrived in the Stuffed Pantry.,I should go south from the Stuffed Pantry to continue exploring.,go south,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I went south from the Stuffed Pantry and arrived in the Still Workshop.,I should go south from the Still Workshop to continue following the path.,go south,,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I went south from the Still Workshop and arrived in the Bedchamber.,I should go south from the Bedchamber to continue following the path.,go south,,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I went south from the Bedchamber and arrived in the Upsettingly Hot Cookery.,I should go east from the Upsettingly Hot Cookery to continue following the path.,go east,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -121,88 +316,70 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unblock
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I am in the attic with exits to the north and west.,I should go north from the attic.,go north,,"You're now in a cellar.
+37,,I went east from the Upsettingly Hot Cookery and arrived in the Attic.,"I should go south from the Attic, but since it's blocked, I will try going west instead.",go west,,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I went west from the Attic and arrived in the Upsettingly Hot Cookery.,I should go north from the Upsettingly Hot Cookery.,go north,,"You make another one of your grand eccentric entrances into a bedchamber.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I am in the attic with exits to the north and west.,I should go north from the attic.,go north,,"You're now in a cellar.
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I went north from the Upsettingly Hot Cookery and arrived in the Bedchamber.,I should go north from the Bedchamber.,go north,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went north from the Bedchamber and arrived in the Still Workshop.,I should go north from the Still Workshop.,go north,,"You make a grand eccentric entrance into a stuffed pantry.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",Stuffed Pantry,"You make a grand eccentric entrance into a stuffed pantry.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I am in the attic with exits to the north and west.,I should go north from the attic.,go north,,"You're now in a cellar.
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went north from the Still Workshop and arrived in the Stuffed Pantry.,I should go south from the Stuffed Pantry.,go south,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I went south from the Stuffed Pantry and arrived in the Still Workshop.,I should go south from the Still Workshop.,go south,,"You make another one of your grand eccentric entrances into a bedchamber.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I am in the attic with exits to the north and west.,I should go north from the attic as the next step in the sequence.,go north,,"You're now in a cellar.
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I went south from the Still Workshop and arrived in the Bedchamber.,I should go south from the Bedchamber.,go south,,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I am in the attic with exits to the north and west.,I should go north from the attic.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I went south from the Bedchamber and arrived in the Upsettingly Hot Cookery.,I should go east from the Upsettingly Hot Cookery.,go east,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -211,16 +388,75 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unblock
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I am in the attic with exits to the north and west.,I should go north from the attic.,go north,,"You're now in a cellar.
+45,,I went east from the Upsettingly Hot Cookery and arrived in the Attic.,I should go south from the Attic.,go south,,You can't go that way.,Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I tried to go south from the Attic but couldn't.,I should go west from the Attic since south is blocked.,go west,,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I went west from the Attic and arrived in the Upsettingly Hot Cookery.,I should go north from the Upsettingly Hot Cookery as it is an unblocked exit.,go north,,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I went north from the Upsettingly Hot Cookery and arrived in the Bedchamber.,I should go north from the Bedchamber as it is an unblocked exit.,go north,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I went north from the Bedchamber and arrived in the Still Workshop.,I should go north from the Still Workshop as it is an unblocked exit.,go north,,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",Stuffed Pantry,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I went north from the Still Workshop and arrived in the Stuffed Pantry.,I should go south from the Stuffed Pantry as it is an unguarded exit.,go south,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I went south from the Stuffed Pantry and arrived in the Still Workshop.,I should go south from the Still Workshop as it is an unguarded exit.,go south,,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I went south from the Still Workshop and arrived in the Bedchamber.,I should go south from the Bedchamber as it is an unguarded exit.,go south,,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I went south from the Bedchamber and arrived in the Upsettingly Hot Cookery.,I should go east from the Upsettingly Hot Cookery as it is an unguarded exit.,go east,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -229,88 +465,70 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unblock
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I am in the attic with exits to the north and west.,I should go north from the attic as the next step in the sequence.,go north,,"You're now in a cellar.
+54,,I went east from the Upsettingly Hot Cookery and arrived in the Attic.,"I should go south from the Attic, but the exit is blocked, so I will go west instead.",go west,,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I went west from the Attic and arrived in the Upsettingly Hot Cookery.,I should go north from the Upsettingly Hot Cookery.,go north,,"You make another one of your grand eccentric entrances into a bedchamber.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I am in the attic with exits to the north and west.,I should go north from the attic as the exit is unblocked.,go north,,"You're now in a cellar.
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I went north from the Upsettingly Hot Cookery and arrived in the Bedchamber.,I should go north from the Bedchamber.,go north,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I went north from the Attic and arrived in the Cellar.,I should follow the suggestion and go south to the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I went north from the Bedchamber and arrived in the Still Workshop.,I should go north from the Still Workshop.,go north,,"You make a grand eccentric entrance into a stuffed pantry.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",Stuffed Pantry,"You make a grand eccentric entrance into a stuffed pantry.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I am in the attic with exits to the north and west.,I should go north from the attic as the next step in the sequence.,go north,,"You're now in a cellar.
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I went north from the Still Workshop and arrived in the Stuffed Pantry.,I should go south from the Stuffed Pantry.,go south,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I went north from the Attic and arrived in the Cellar.,I should go south as suggested to use the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I went south from the Stuffed Pantry and arrived in the Still Workshop.,I should go south from the Still Workshop.,go south,,"You make another one of your grand eccentric entrances into a bedchamber.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I am in the attic with exits to the north and west.,I should go north from the attic as the exit is unblocked.,go north,,"You're now in a cellar.
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went south from the Still Workshop and arrived in the Bedchamber.,I should go south from the Bedchamber.,go south,,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to explore the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I am in the attic with exits to the north and west.,I should go north from the attic as the exit is unblocked.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to explore the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I went south from the Bedchamber and arrived in the Upsettingly Hot Cookery.,I should go east from the Upsettingly Hot Cookery.,go east,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -319,16 +537,116 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unblock
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I am in the attic with exits to the north and west.,I should go north from the attic as the exit is unblocked.,go north,,"You're now in a cellar.
+62,,I went east from the Upsettingly Hot Cookery and arrived in the Attic.,I should go south from the Attic.,go south,,You can't go that way.,Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I tried to go south from the Attic but couldn't.,I should go west from the Attic since that exit is unblocked.,go west,,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I went north from the Attic and arrived in the Cellar.,I should follow the suggestion and go south to the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I went west from the Attic and arrived in the Upsettingly Hot Cookery.,I should go north from the Upsettingly Hot Cookery since that exit is unblocked.,go north,,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+65,,I went north from the Upsettingly Hot Cookery and arrived in the Bedchamber.,I should go north from the Bedchamber since that exit is unblocked.,go north,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+66,,I went north from the Bedchamber and arrived in the Still Workshop.,I should go north from the Still Workshop since that exit is unblocked.,go north,,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",Stuffed Pantry,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+67,,I went north from the Still Workshop and arrived in the Stuffed Pantry.,I should go south from the Stuffed Pantry as it is an unguarded exit.,go south,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+68,,I went south from the Stuffed Pantry and arrived in the Still Workshop.,I should go south from the Still Workshop as it is an unguarded exit.,go south,,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+69,,I went south from the Still Workshop and arrived in the Bedchamber.,I should go east from the Bedchamber as the next step in the sequence is to travel east.,go east,,You can't go that way.,Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+70,,I tried to go east from the Bedchamber but couldn't.,"Since east is blocked, I will try going north as suggested by the description.",go north,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+71,,I went north from the Bedchamber and arrived in the Still Workshop.,I should continue north as the exit is unblocked.,go north,,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",Stuffed Pantry,"You make a grand eccentric entrance into a stuffed pantry.
+
+
+
+You need an unguarded exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+72,,I went north from the Still Workshop and arrived in the Stuffed Pantry.,I should go south to return to the Still Workshop as suggested.,go south,,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Still Workshop,"You are in a workshop. A still kind of place. You start to take note of what's in the room.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+73,,I went south from the Stuffed Pantry and arrived in the Still Workshop.,I should go south again to reach the Bedchamber as the south exit is unguarded.,go south,,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+74,,I went south from the Still Workshop and arrived in the Bedchamber.,I should go south again to reach the Upsettingly Hot Cookery as the south exit is unguarded.,go south,,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
+
+
+
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+75,,I went south from the Bedchamber and arrived in the Upsettingly Hot Cookery.,I should go east to reach the Attic as the east exit is unguarded.,go east,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -337,7 +655,7 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unblock
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I am in the attic with exits to the north and west.,I should go north from the attic as the exit is unblocked.,go north,,"You're now in a cellar.
+76,,I went east from the Upsettingly Hot Cookery and arrived in the Attic.,"I should go south from the Attic, but the exit is blocked, so I will go north instead.",go north,,"You're now in a cellar.
 
 
 
@@ -346,7 +664,7 @@ You don't like doors? Why not try going south, that entranceway is unguarded. Yo
 
 
 You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+77,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as the entranceway is unguarded.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -355,363 +673,21 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unblock
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I am in the attic with exits to the north and west.,I should go north from the attic as the exit is unblocked.,go north,,"You're now in a cellar.
+78,,I went south from the Cellar and arrived in the Attic.,I should go west from the Attic as the exit is unblocked.,go west,,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",Upsettingly Hot Cookery,"You find yourself in a cookery. An upsettingly hot kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+79,,I went west from the Attic and arrived in the Upsettingly Hot Cookery.,I should go north from the Upsettingly Hot Cookery as the exit is unblocked.,go north,,"You make another one of your grand eccentric entrances into a bedchamber.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Bedchamber,"You make another one of your grand eccentric entrances into a bedchamber.
 
 
 
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I am in the attic with exits to the north and west.,I should go north from the attic.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to explore the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I am in the attic with exits to the north and west.,I should go north from the attic as the exit is unblocked.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I am in the attic with exits to the north and west.,I should go north from the attic as the next step in the sequence.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I went north from the Attic and arrived in the Cellar.,I should follow the suggestion and go south to the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I am in the attic with exits to the north and west.,I should go north from the attic.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I am in the attic with exits to the north and west.,I should go north from the attic as the next step in the sequence.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I arrived in the cellar.,I should go south as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I am in the attic with exits to the north and west.,I should go north from the attic as the exit is unblocked.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I arrived in the cellar.,I should go south as suggested to find the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I am in the attic with exits to the north and west.,I should go north from the attic.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-55,,I arrived in the cellar.,I should go south as suggested to explore the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-56,,I am in the attic with exits to the north and west.,I should go north from the attic to continue exploring.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-57,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I am in the attic with exits to the north and west.,I should go north from the attic as the exit is unblocked.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-59,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue the path.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I am in the attic with exits to the north and west.,I should go north from the attic to continue exploring.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I went north from the Attic and arrived in the Cellar.,I should go south as suggested to use the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-62,,I am in the attic with exits to the north and west.,I should go north from the attic as the exit is unblocked.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-63,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I am in the attic with exits to the north and west.,I should go north from the attic.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-65,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-66,,I am in the attic with exits to the north and west.,I should go north from the attic to continue exploring.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-67,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to explore the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-68,,I am in the attic with exits to the north and west.,I should go north from the attic to continue exploring.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-69,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-70,,I am in the attic with exits to the north and west.,I should go north from the attic to continue exploring.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-71,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to explore the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-72,,I am in the attic with exits to the north and west.,I should go north from the attic to continue exploring.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-73,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to continue exploring.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-74,,I am in the attic with exits to the north and west.,I should go north from the attic as the next step in the sequence.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-75,,I went north from the Attic and arrived in the Cellar.,I should go south from the Cellar as suggested to explore the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-76,,I am in the attic with exits to the north and west.,I should go north from the attic to continue exploring.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-77,,I went north from the Attic and arrived in the Cellar.,I should go south as suggested to explore the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-78,,I am in the attic with exits to the north and west.,I should go north from the attic.,go north,,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",Cellar,"You're now in a cellar.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-79,,I arrived in the cellar.,I should follow the hint and go south to the unguarded entranceway.,go south,,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Attic,"You are in an attic. It seems to be pretty standard here. Okay, just remember what you're here to do, and everything will go great.
-
-
-
-There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,True,
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,True,

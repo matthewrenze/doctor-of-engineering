@@ -2,7 +2,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You've entered a kitchen. The room is well lit.
 
 You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.",You are carrying: a raw pork chop.,0 of 8,0.0,False,
-1,,I am in the kitchen with various ingredients and tools available.,I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,I am in the kitchen with various ingredients and tools on the counter and a raw pork chop in my inventory.,I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -20,233 +20,197 @@ slice the red onion
   prepare meal",Kitchen,"You've entered a kitchen. The room is well lit.
 
 You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.",You are carrying: a raw pork chop.,0 of 8,0.0,False,
-2,,I examined the cookbook and found a recipe requiring red onion and yellow bell pepper.,I should look for a red onion and a yellow bell pepper on the counter to start preparing the meal.,take orange bell pepper from counter,,You take the orange bell pepper from the counter.,Kitchen,"You've entered a kitchen. The room is well lit.
+2,,"I examined the cookbook and found a recipe requiring red onion and yellow bell pepper, with instructions to slice and fry them before preparing the meal.",I need to find the red onion and yellow bell pepper first. I see an orange bell pepper on the counter but no red onion. I should check the fridge for the red onion.,open fridge,,"You open the fridge, revealing a red onion, a yellow bell pepper, a block of cheese, a white onion and a carrot.",Kitchen,"You've entered a kitchen. The room is well lit.
 
-You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.",You are carrying: an orange bell pepper and a raw pork chop.,0 of 8,0.0,False,
-3,,I took the orange bell pepper from the counter.,I should look for a red onion on the counter to complete the ingredients for the recipe.,look counter,,"The counter is reliable.
-
-On the counter are a red hot pepper, a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana, a cookbook and a knife.",Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.",You are carrying: an orange bell pepper and a raw pork chop.,0 of 8,0.0,False,
-4,,"I looked at the counter and found no red onion, only a red hot pepper and other items.","Since there is no red onion, I should take the red hot pepper as a possible substitute and proceed with the recipe steps.",take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.",You are carrying: an orange bell pepper and a raw pork chop.,0 of 8,0.0,False,
-5,,I tried to take the red hot pepper but was carrying too many things already.,I should drop the raw pork chop to free up space and then take the red hot pepper.,drop raw pork chop,,You drop the pork chop on the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is a raw pork chop on the floor.",You are carrying: an orange bell pepper.,0 of 8,0.0,False,
-6,,I dropped the raw pork chop to free up space.,I should now take the red hot pepper from the counter.,take red hot pepper from counter,,You take the red hot pepper from the counter.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is a raw pork chop on the floor.",You are carrying: a red hot pepper and an orange bell pepper.,0 of 8,0.0,False,
-7,,I took the red hot pepper from the counter after dropping the pork chop.,I should now prepare the meal using the orange bell pepper and red hot pepper as ingredients.,prepare meal,,You still miss something.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is a raw pork chop on the floor.",You are carrying: a red hot pepper and an orange bell pepper.,0 of 8,0.0,False,
-8,,I tried to prepare the meal but was told I still miss something.,I should check the cookbook again to see what other ingredients are needed.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red onion
-  yellow bell pepper
-
-Directions:
-slice the red onion
-  fry the red onion
-  slice the yellow bell pepper
-  fry the yellow bell pepper
-  prepare meal",Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is a raw pork chop on the floor.",You are carrying: a red hot pepper and an orange bell pepper.,0 of 8,0.0,False,
-9,,I examined the cookbook and confirmed the recipe requires red onion and yellow bell pepper.,I should look for a red onion and a yellow bell pepper instead of the red hot pepper and orange bell pepper I currently have.,drop red hot pepper and orange bell pepper,,"red hot pepper: You drop the red hot pepper on the ground.
-orange bell pepper: You drop the orange bell pepper on the ground.",Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying nothing.,0 of 8,0.0,False,
-10,,I dropped the red hot pepper and orange bell pepper to free my hands.,I should take the knife from the counter to prepare the ingredients.,take knife from counter,,You take the knife from the counter.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a knife.,0 of 8,0.0,False,
-11,,I took the knife from the counter.,I should look for the red onion and yellow bell pepper on the counter or elsewhere in the kitchen.,look,,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a knife.,0 of 8,0.0,False,
-12,,I looked around the kitchen but did not find a red onion or yellow bell pepper on the counter or floor.,I should check inside the fridge for the missing ingredients.,open fridge,,"You open the fridge, revealing a red onion, a yellow bell pepper, a block of cheese, a white onion and a carrot.",Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. The fridge contains a red onion, a yellow bell pepper, a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a knife.,0 of 8,0.0,False,
-13,,I opened the fridge and found the red onion and yellow bell pepper inside.,I should take the red onion and yellow bell pepper from the fridge to prepare the meal.,take red onion from fridge,,"You take the red onion from the fridge.
+You make out a fridge. The fridge contains a red onion, a yellow bell pepper, a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.",You are carrying: a raw pork chop.,0 of 8,0.0,False,
+3,,I opened the fridge and found the red onion and yellow bell pepper needed for the recipe.,I should take the red onion and yellow bell pepper from the fridge to prepare them.,take red onion from fridge,,"You take the red onion from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've entered a kitchen. The room is well lit.
 
-You make out a fridge. The fridge contains a yellow bell pepper, a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+You make out a fridge. The fridge contains a yellow bell pepper, a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.",You are carrying: a red onion and a raw pork chop.,1 of 8,0.125,False,
+4,,I took the red onion from the fridge and added it to my inventory.,I should also take the yellow bell pepper from the fridge to have all ingredients for the recipe.,take yellow bell pepper from fridge,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a yellow bell pepper, a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.",You are carrying: a red onion and a raw pork chop.,1 of 8,0.125,False,
+5,,I tried to take the yellow bell pepper but was carrying too many things already.,I should put the raw pork chop down to free up space and then take the yellow bell pepper.,drop raw pork chop,,You drop the pork chop on the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a yellow bell pepper, a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
 
 
 
-There is an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a red onion and a knife.,1 of 8,0.125,False,
-14,,I took the red onion from the fridge.,I should take the yellow bell pepper from the fridge as well.,take yellow bell pepper from fridge,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. The fridge contains a yellow bell pepper, a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a red onion and a knife.,1 of 8,0.125,False,
-15,,I tried to take the yellow bell pepper but was carrying too many things.,I should drop the knife to free up space and then take the yellow bell pepper.,drop knife,,You drop the knife on the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. The fridge contains a yellow bell pepper, a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is a knife, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a red onion.,1 of 8,0.125,False,
-16,,I dropped the knife to free up space.,I should now take the yellow bell pepper from the fridge.,take yellow bell pepper from fridge,,"You take the yellow bell pepper from the fridge.
+There is a raw pork chop on the floor.",You are carrying: a red onion.,1 of 8,0.125,False,
+6,,I dropped the raw pork chop on the ground to free up space.,Now I can take the yellow bell pepper from the fridge to have all ingredients for the recipe.,take yellow bell pepper from fridge,,"You take the yellow bell pepper from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've entered a kitchen. The room is well lit.
 
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
 
 
 
-There is a knife, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a yellow bell pepper and a red onion.,2 of 8,0.25,False,
-17,,I took the yellow bell pepper from the fridge.,I should take the knife from the floor to prepare the meal.,take knife from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room is well lit.
+There is a raw pork chop on the floor.",You are carrying: a yellow bell pepper and a red onion.,2 of 8,0.25,False,
+7,,I took the yellow bell pepper from the fridge and now have both required ingredients.,I should slice the red onion first as per the recipe instructions.,slice red onion with knife,,You need to take the knife first.,Kitchen,"You've entered a kitchen. The room is well lit.
 
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is a knife, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a yellow bell pepper and a red onion.,2 of 8,0.25,False,
-18,,I tried to take the knife but was carrying too many things.,I should drop the yellow bell pepper to free up space and then take the knife.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
 
 
 
-There is a yellow bell pepper, a knife, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a red onion.,2 of 8,0.25,False,
-19,,I dropped the yellow bell pepper to free up space.,I should take the knife from the floor now.,take knife from floor,,You pick up the knife from the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
+There is a raw pork chop on the floor.",You are carrying: a yellow bell pepper and a red onion.,2 of 8,0.25,False,
+8,,I tried to slice the red onion but realized I need to take the knife first.,I should take the knife from the counter before slicing the red onion.,take knife from counter,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room is well lit.
 
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is a yellow bell pepper, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a knife and a red onion.,2 of 8,0.25,False,
-20,,I took the knife from the floor.,I should now take the yellow bell pepper from the floor to have all ingredients for the recipe.,take yellow bell pepper from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
 
 
 
-There is a yellow bell pepper, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a knife and a red onion.,2 of 8,0.25,False,
-21,,I tried to take the yellow bell pepper but was carrying too many things.,I should drop the red onion to free up space and then take the yellow bell pepper.,drop red onion,,You drop the red onion on the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
+There is a raw pork chop on the floor.",You are carrying: a yellow bell pepper and a red onion.,2 of 8,0.25,False,
+9,,I tried to take the knife but was carrying too many things already.,I should put down one of the ingredients to free up space for the knife.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
 
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red onion, a yellow bell pepper, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a knife.,2 of 8,0.25,False,
-22,,I dropped the red onion to free up space.,I should take the yellow bell pepper from the floor now.,take yellow bell pepper from floor,,You pick up the yellow bell pepper from the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana, a cookbook and a knife on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
 
 
 
-There is a red onion, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a yellow bell pepper and a knife.,2 of 8,0.25,False,
-23,,I took the yellow bell pepper from the floor.,I should now take the red onion from the floor to have all ingredients for the recipe.,take red onion from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room is well lit.
+There is a yellow bell pepper and a raw pork chop on the floor.",You are carrying: a red onion.,2 of 8,0.25,False,
+10,,I dropped the yellow bell pepper to free up space.,I should now take the knife from the counter to slice the red onion.,take knife from counter,,You take the knife from the counter.,Kitchen,"You've entered a kitchen. The room is well lit.
 
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red onion, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a yellow bell pepper and a knife.,2 of 8,0.25,False,
-24,,I tried to take the red onion but was carrying too many things.,I should drop the yellow bell pepper to free up space and then take the red onion.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
 
 
 
-There is a yellow bell pepper, a red onion, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a knife.,2 of 8,0.25,False,
-25,,I dropped the yellow bell pepper to free up space.,I should take the red onion from the floor now.,take red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+There is a yellow bell pepper and a raw pork chop on the floor.",You are carrying: a knife and a red onion.,2 of 8,0.25,False,
+11,,I took the knife from the counter after freeing up space.,I should slice the red onion now using the knife.,slice red onion with knife,,"You slice the red onion.
 
 
 
-There is a yellow bell pepper, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a red onion and a knife.,2 of 8,0.25,False,
-26,,I took the red onion from the floor.,I should now take the yellow bell pepper from the floor again.,take yellow bell pepper from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room is well lit.
+Your score has just gone up by one point.",Kitchen,"You've entered a kitchen. The room is well lit.
 
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is a yellow bell pepper, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a red onion and a knife.,2 of 8,0.25,False,
-27,,I tried to take the yellow bell pepper but was carrying too many things.,I should drop the knife to free up space and then take the yellow bell pepper.,drop knife,,You drop the knife on the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
 
 
 
-There is a knife, a yellow bell pepper, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a red onion.,2 of 8,0.25,False,
-28,,I dropped the knife to free up space.,I should take the yellow bell pepper from the floor now.,take yellow bell pepper from floor,,You pick up the yellow bell pepper from the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
+There is a yellow bell pepper and a raw pork chop on the floor.",You are carrying: a knife and a sliced red onion.,3 of 8,0.375,False,
+12,,I sliced the red onion with the knife successfully.,I should now take the yellow bell pepper from the floor to slice it as well.,take yellow bell pepper from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room is well lit.
 
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is a knife, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a yellow bell pepper and a red onion.,2 of 8,0.25,False,
-29,,I took the yellow bell pepper from the floor.,I should take the knife from the floor to prepare the meal.,take knife from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
 
 
 
-There is a knife, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a yellow bell pepper and a red onion.,2 of 8,0.25,False,
-30,,I tried to take the knife but was carrying too many things.,I should drop the yellow bell pepper to free up space and then take the knife.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
+There is a yellow bell pepper and a raw pork chop on the floor.",You are carrying: a knife and a sliced red onion.,3 of 8,0.375,False,
+13,,I tried to take the yellow bell pepper but was carrying too many things already.,I should put down the sliced red onion to free up space for the yellow bell pepper.,drop sliced red onion,,You drop the red onion on the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
 
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
-
-
-
-There is a yellow bell pepper, a knife, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a red onion.,2 of 8,0.25,False,
-31,,I dropped the yellow bell pepper to free up space.,I should take the knife from the floor now.,take knife from floor,,You pick up the knife from the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
-
-You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red apple, a raw yellow potato, a raw red potato, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
 
 
 
-There is a yellow bell pepper, an orange bell pepper, a red hot pepper and a raw pork chop on the floor.",You are carrying: a knife and a red onion.,2 of 8,0.25,True,
+There is a sliced red onion, a yellow bell pepper and a raw pork chop on the floor.",You are carrying: a knife.,3 of 8,0.375,False,
+14,,I dropped the sliced red onion to free up space.,I should now take the yellow bell pepper from the floor to slice it.,take yellow bell pepper from floor,,You pick up the yellow bell pepper from the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+
+
+
+There is a sliced red onion and a raw pork chop on the floor.",You are carrying: a yellow bell pepper and a knife.,3 of 8,0.375,False,
+15,,I took the yellow bell pepper from the floor after dropping the sliced red onion.,I should slice the yellow bell pepper with the knife now.,slice yellow bell pepper with knife,,"You slice the yellow bell pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+
+
+
+There is a sliced red onion and a raw pork chop on the floor.",You are carrying: a sliced yellow bell pepper and a knife.,4 of 8,0.5,False,
+16,,I sliced the yellow bell pepper with the knife successfully.,I should now take the sliced red onion from the floor to prepare the meal.,take sliced red onion from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+
+
+
+There is a sliced red onion and a raw pork chop on the floor.",You are carrying: a sliced yellow bell pepper and a knife.,4 of 8,0.5,False,
+17,,I tried to take the sliced red onion but was carrying too many things already.,I should put down the sliced yellow bell pepper to free up space for the sliced red onion.,drop sliced yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+
+
+
+There is a sliced yellow bell pepper, a sliced red onion and a raw pork chop on the floor.",You are carrying: a knife.,4 of 8,0.5,False,
+18,,I dropped the sliced yellow bell pepper to free up space.,I should now take the sliced red onion from the floor.,take sliced red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+
+
+
+There is a sliced yellow bell pepper and a raw pork chop on the floor.",You are carrying: a sliced red onion and a knife.,4 of 8,0.5,False,
+19,,I took the sliced red onion from the floor after dropping the sliced yellow bell pepper.,I should now take the sliced yellow bell pepper from the floor again to prepare the meal.,take sliced yellow bell pepper from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+
+
+
+There is a sliced yellow bell pepper and a raw pork chop on the floor.",You are carrying: a sliced red onion and a knife.,4 of 8,0.5,False,
+20,,I tried to take the sliced yellow bell pepper but was carrying too many things already.,I should prepare the meal now with the sliced red onion I have and the sliced yellow bell pepper on the floor.,prepare meal,,Something still needs to be cooked.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. Unfortunately, there isn't a thing on it.
+
+
+
+There is a sliced yellow bell pepper and a raw pork chop on the floor.",You are carrying: a sliced red onion and a knife.,4 of 8,0.5,False,
+21,,I tried to prepare the meal but was informed something still needs to be cooked.,I should put the sliced red onion on the stove to cook it before preparing the meal.,put sliced red onion on stove,,You put the red onion on the stove.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. On the stove you see a sliced red onion.
+
+
+
+There is a sliced yellow bell pepper and a raw pork chop on the floor.",You are carrying: a knife.,4 of 8,0.5,False,
+22,,I put the sliced red onion on the stove.,I should now put the sliced yellow bell pepper on the stove to cook it as well.,put sliced yellow bell pepper on stove,,You need to take the yellow bell pepper first.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. On the stove you see a sliced red onion.
+
+
+
+There is a sliced yellow bell pepper and a raw pork chop on the floor.",You are carrying: a knife.,4 of 8,0.5,False,
+23,,I tried to put the sliced yellow bell pepper on the stove but was told I need to take it first.,I should take the sliced yellow bell pepper from the floor before putting it on the stove.,take sliced yellow bell pepper from floor,,You pick up the yellow bell pepper from the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. On the stove you see a sliced red onion.
+
+
+
+There is a raw pork chop on the floor.",You are carrying: a sliced yellow bell pepper and a knife.,4 of 8,0.5,False,
+24,,I took the sliced yellow bell pepper from the floor.,I should put the sliced yellow bell pepper on the stove to cook it.,put sliced yellow bell pepper on stove,,You put the yellow bell pepper on the stove.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. On the stove you see a sliced yellow bell pepper and a sliced red onion.
+
+
+
+There is a raw pork chop on the floor.",You are carrying: a knife.,4 of 8,0.5,False,
+25,,I put the sliced yellow bell pepper on the stove.,I should now prepare the meal since both ingredients are on the stove.,prepare meal,,You still miss something.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. On the stove you see a sliced yellow bell pepper and a sliced red onion.
+
+
+
+There is a raw pork chop on the floor.",You are carrying: a knife.,4 of 8,0.5,False,
+26,,I tried to prepare the meal but was told I still miss something.,The raw pork chop is still uncooked; I should cook it by putting it on the stove.,take raw pork chop from floor,,You pick up the pork chop from the ground.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. On the stove you see a sliced yellow bell pepper and a sliced red onion.",You are carrying: a raw pork chop and a knife.,4 of 8,0.5,False,
+27,,I took the raw pork chop from the floor.,I should put the raw pork chop on the stove to cook it.,put raw pork chop on stove,,You put the pork chop on the stove.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. On the stove you see a raw pork chop, a sliced yellow bell pepper and a sliced red onion.",You are carrying: a knife.,4 of 8,0.5,False,
+28,,I put the raw pork chop on the stove.,I should now prepare the meal since all ingredients are on the stove.,prepare meal,,You still miss something.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. On the stove you see a raw pork chop, a sliced yellow bell pepper and a sliced red onion.",You are carrying: a knife.,4 of 8,0.5,False,
+29,,I tried to prepare the meal but was told I still miss something; the pork chop is still raw on the stove.,I should cook the ingredients on the stove to complete the cooking process.,cook sliced red onion with stove,,You need to take the red onion first.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. On the stove you see a raw pork chop, a sliced yellow bell pepper and a sliced red onion.",You are carrying: a knife.,4 of 8,0.5,False,
+30,,I tried to cook the sliced red onion with the stove but was told I need to take the red onion first.,I should take the sliced red onion from the stove before cooking it.,take sliced red onion from stove,,You take the red onion from the stove.,Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. On the stove you see a raw pork chop and a sliced yellow bell pepper.",You are carrying: a sliced red onion and a knife.,4 of 8,0.5,False,
+31,,I took the sliced red onion from the stove.,I should cook the sliced red onion with the stove now that I have it.,cook sliced red onion with stove,,"You fried the red onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've entered a kitchen. The room is well lit.
+
+You make out a fridge. The fridge contains a block of cheese, a white onion and a carrot. You can see a closed oven. You can see a table. The table is massive. But the thing hasn't got anything on it. You can make out a counter. You see a red hot pepper, a red apple, a raw yellow potato, a raw red potato, an orange bell pepper, a raw purple potato, a banana and a cookbook on the counter. You bend down to tie your shoe. When you stand up, you notice a stove. Make a note of this, you might have to put stuff on or in it later on. On the stove you see a raw pork chop and a sliced yellow bell pepper.",You are carrying: a sliced fried red onion and a knife.,5 of 8,0.625,True,

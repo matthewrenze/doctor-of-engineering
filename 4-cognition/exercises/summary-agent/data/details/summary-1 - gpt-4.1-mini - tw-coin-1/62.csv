@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the studio.,I will follow the instructions and go east first.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+1,,I am in the studio.,"I will follow the instructions step-by-step, starting by going east.",go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
 
 
 
@@ -13,7 +13,7 @@ There is an unblocked exit to the north. You need an unguarded exit? You should 
 
 
 There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I moved east from the studio and arrived in the bedchamber.,I should now go north as instructed.,go north,,"You've entered a playroom.
+2,,I went east to the bedchamber.,"Next, I should go north as instructed.",go north,,"You've entered a playroom.
 
 
 
@@ -22,16 +22,513 @@ There is an exit to the east. Don't worry, it is unblocked. You don't like doors
 
 
 There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-3,,"I moved east from the studio to the bedchamber, then moved east again to the playroom.",I should continue following the instructions by going south from the playroom since the south entranceway is unguarded.,go south,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+3,,I went north to the playroom.,"Next, I should go east as per the instructions.",go east,,"Look around you. Take it all in. It's not every day someone gets to be in a cubicle. You begin to take stock of what's in the room.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"Look around you. Take it all in. It's not every day someone gets to be in a cubicle. You begin to take stock of what's in the room.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I moved east twice and arrived in the bedchamber again.,I should follow the instructions and go north from the bedchamber.,go north,,"You've entered a playroom.
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+4,,I went east to the cubicle.,"Next, I should go south as per the instructions.",go south,,"You arrive in a cellar. An usual one.
+
+
+
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",Cellar,"You arrive in a cellar. An usual one.
+
+
+
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+5,,I went south to the cellar.,"Next, I should go west as per the instructions.",go west,,"Ah, the workshop. This is some kind of workshop, really great serious vibes in this place, a wonderful serious atmosphere.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",Serious Workshop,"Ah, the workshop. This is some kind of workshop, really great serious vibes in this place, a wonderful serious atmosphere.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+6,,I went west to the Serious Workshop.,I should go south next as per the instructions.,go south,,"You arrive in a bathroom. An usual kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",Bathroom,"You arrive in a bathroom. An usual kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+7,,I went south to the Bathroom.,I should go west next as per the instructions.,go west,,You can't go that way.,Bathroom,"You arrive in a bathroom. An usual kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+8,,I tried to go west from the Bathroom but couldn't.,"Since west is not an option, I should try going south as the next direction in the sequence.",go south,,You can't go that way.,Bathroom,"You arrive in a bathroom. An usual kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+9,,I tried to go south from the Bathroom but couldn't.,"The only available exits are east and north, so I should try going east.",go east,,"You find yourself in a dish-pit. A hot kind of place.
+
+
+
+There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Hot Dish-Pit,"You find yourself in a dish-pit. A hot kind of place.
+
+
+
+There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I went east from the Bathroom to the Hot Dish-Pit.,I should go north from the Hot Dish-Pit as it is an unblocked exit.,go north,,"You are in a chamber. A cozy one. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cozy Chamber,"You are in a chamber. A cozy one. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I went north from the Hot Dish-Pit to the Cozy Chamber.,I should go south from the Cozy Chamber as it is an unguarded exit.,go south,,"You find yourself in a dish-pit. A hot kind of place.
+
+
+
+There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Hot Dish-Pit,"You find yourself in a dish-pit. A hot kind of place.
+
+
+
+There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I went south from the Cozy Chamber to the Hot Dish-Pit.,I should go west from the Hot Dish-Pit to explore the area.,go west,,"You arrive in a bathroom. An usual kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",Bathroom,"You arrive in a bathroom. An usual kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I went west from the Hot Dish-Pit to the Bathroom.,I should go north from the Bathroom to continue exploring.,go north,,"Ah, the workshop. This is some kind of workshop, really great serious vibes in this place, a wonderful serious atmosphere.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",Serious Workshop,"Ah, the workshop. This is some kind of workshop, really great serious vibes in this place, a wonderful serious atmosphere.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went north from the Bathroom to the Serious Workshop.,I should go east from the Serious Workshop to continue following the path.,go east,,"You arrive in a cellar. An usual one.
+
+
+
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",Cellar,"You arrive in a cellar. An usual one.
+
+
+
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I went east from the Serious Workshop to the Cellar.,I should go north from the Cellar as suggested to continue the path.,go north,,"Look around you. Take it all in. It's not every day someone gets to be in a cubicle. You begin to take stock of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"Look around you. Take it all in. It's not every day someone gets to be in a cubicle. You begin to take stock of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went north from the Cellar to the Cubicle.,I should go south from the Cubicle to continue following the path.,go south,,"You arrive in a cellar. An usual one.
+
+
+
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",Cellar,"You arrive in a cellar. An usual one.
+
+
+
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went south from the Cubicle to the Cellar.,I should go west from the Cellar as it is an unguarded exit.,go west,,"Ah, the workshop. This is some kind of workshop, really great serious vibes in this place, a wonderful serious atmosphere.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",Serious Workshop,"Ah, the workshop. This is some kind of workshop, really great serious vibes in this place, a wonderful serious atmosphere.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went west from the Cellar to the Serious Workshop.,I should go south from the Serious Workshop as it is an unblocked exit.,go south,,"You arrive in a bathroom. An usual kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",Bathroom,"You arrive in a bathroom. An usual kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went south from the Serious Workshop to the Bathroom.,I should go east from the Bathroom to the Hot Dish-Pit.,go east,,"You find yourself in a dish-pit. A hot kind of place.
+
+
+
+There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Hot Dish-Pit,"You find yourself in a dish-pit. A hot kind of place.
+
+
+
+There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went east from the Bathroom to the Hot Dish-Pit.,I should go north from the Hot Dish-Pit to the Cozy Chamber.,go north,,"You are in a chamber. A cozy one. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cozy Chamber,"You are in a chamber. A cozy one. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I went north from the Hot Dish-Pit to the Cozy Chamber.,I should go west from the Cozy Chamber.,go west,,"I am stoked to announce that you are now in the balmy kitchenette.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Balmy Kitchenette,"I am stoked to announce that you are now in the balmy kitchenette.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I went west from the Cozy Chamber to the Balmy Kitchenette.,I should go south from the Balmy Kitchenette.,go south,,"You are in a kitchenette. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded.",Kitchenette,"You are in a kitchenette. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I went south from the Balmy Kitchenette to the Kitchenette.,I should go east from the Kitchenette.,go east,,"You are in a vault. A typical kind of place.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Vault,"You are in a vault. A typical kind of place.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went east from the Kitchenette to the Vault.,I should go south from the Vault.,go south,,"You find yourself in a parlor. A standard kind of place. You start to take note of what's in the room.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Parlor,"You find yourself in a parlor. A standard kind of place. You start to take note of what's in the room.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went south from the Vault to the Parlor.,I should go east from the Parlor.,go east,,"You are in a cookery. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookery,"You are in a cookery. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I went east from the Parlor to the Cookery.,I should go south from the Cookery.,go south,,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Sleepy Bedroom,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I went south from the Cookery to the Sleepy Bedroom.,I should go south from the Sleepy Bedroom.,go south,,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",Workshop,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I went south from the Sleepy Bedroom to the Workshop.,I should go north from the Workshop.,go north,,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Sleepy Bedroom,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I went north from the Workshop to the Sleepy Bedroom.,I should go north from the Sleepy Bedroom.,go north,,"You are in a cookery. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookery,"You are in a cookery. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I went north from the Sleepy Bedroom to the Cookery.,I should go south from the Cookery.,go south,,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Sleepy Bedroom,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I went south from the Cookery to the Sleepy Bedroom.,I should go south from the Sleepy Bedroom.,go south,,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",Workshop,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I went south from the Sleepy Bedroom to the Workshop.,I should go east from the Workshop.,go east,,"Well, here we are in the cookhouse.
+
+
+
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",Cookhouse,"Well, here we are in the cookhouse.
+
+
+
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I went east from the Workshop to the Cookhouse.,I should go south from the Cookhouse.,go south,,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",Forgotten Basement,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I went south from the Cookhouse to the Forgotten Basement.,I should look around the Forgotten Basement to find the coin.,look,,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",Forgotten Basement,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I looked around the Forgotten Basement but found no new information.,I should try to take the coin from the floor in the Forgotten Basement.,take coin from floor,,You can't see any such thing.,Forgotten Basement,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I tried to take the coin from the floor in the Forgotten Basement but couldn't find it.,I should go north to see if the coin is in the adjacent room.,go north,,"Well, here we are in the cookhouse.
+
+
+
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",Cookhouse,"Well, here we are in the cookhouse.
+
+
+
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I went north to the Cookhouse.,I should go west through the unguarded exit to explore further for the coin.,go west,,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",Workshop,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I went west to the Workshop.,I should go north through the unblocked entranceway to continue searching for the coin.,go north,,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Sleepy Bedroom,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I went north to the Sleepy Bedroom.,I should go north through the unguarded exit to continue exploring.,go north,,"You are in a cookery. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookery,"You are in a cookery. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went north to the Cookery.,I should go south through the unguarded entranceway to continue following the path.,go south,,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Sleepy Bedroom,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went south to the Sleepy Bedroom.,I should go south again through the unguarded exit to continue following the path.,go south,,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",Workshop,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I went south from the Sleepy Bedroom to the Workshop.,I should go east from the Workshop as the exit is unblocked and it is part of the path.,go east,,"Well, here we are in the cookhouse.
+
+
+
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",Cookhouse,"Well, here we are in the cookhouse.
+
+
+
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I went east from the Workshop to the Cookhouse.,I should go south from the Cookhouse as the exit is unblocked and it is part of the path.,go south,,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",Forgotten Basement,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I went south from the Cookhouse to the Forgotten Basement.,I should look around the Forgotten Basement to find the coin.,look,,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",Forgotten Basement,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I looked around the Forgotten Basement but found no new information.,I should try to take the coin from the floor in the Forgotten Basement.,take coin from floor,,You can't see any such thing.,Forgotten Basement,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I tried to take the coin from the floor in the Forgotten Basement but couldn't find it.,I should explore the Forgotten Basement more carefully or try moving to another location to find the coin.,look,,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",Forgotten Basement,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I looked around the Forgotten Basement but found no new information.,"Since the coin is not visible here, I should try going north to the Cookhouse to explore other areas.",go north,,"Well, here we are in the cookhouse.
+
+
+
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",Cookhouse,"Well, here we are in the cookhouse.
+
+
+
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I went north to the Cookhouse.,I should try going west from the Cookhouse to explore the unguarded exit and look for the coin.,go west,,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",Workshop,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I went west to the Workshop.,I should go north from the Workshop to explore the unblocked entranceway.,go north,,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Sleepy Bedroom,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I went north from the Workshop to the Sleepy Bedroom.,I should go north from the Sleepy Bedroom to continue exploring.,go north,,"You are in a cookery. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookery,"You are in a cookery. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I went north from the Sleepy Bedroom to the Cookery.,I should go west from the Cookery to continue exploring.,go west,,"You find yourself in a parlor. A standard kind of place. You start to take note of what's in the room.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Parlor,"You find yourself in a parlor. A standard kind of place. You start to take note of what's in the room.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I went west from the Cookery to the Parlor.,I should go north from the Parlor to continue exploring.,go north,,"You are in a vault. A typical kind of place.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Vault,"You are in a vault. A typical kind of place.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I went north from the Parlor to the Vault.,I should go west from the Vault to continue exploring.,go west,,"You are in a kitchenette. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded.",Kitchenette,"You are in a kitchenette. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I went west from the Vault to the Kitchenette.,I should go north from the Kitchenette to explore further.,go north,,"I am stoked to announce that you are now in the balmy kitchenette.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Balmy Kitchenette,"I am stoked to announce that you are now in the balmy kitchenette.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I went north from the Kitchenette to the Balmy Kitchenette.,I should go east from the Balmy Kitchenette to continue exploring.,go east,,"You are in a chamber. A cozy one. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cozy Chamber,"You are in a chamber. A cozy one. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I went east from the Balmy Kitchenette to the Cozy Chamber.,I should go south from the Cozy Chamber as the entranceway is unguarded.,go south,,"You find yourself in a dish-pit. A hot kind of place.
+
+
+
+There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Hot Dish-Pit,"You find yourself in a dish-pit. A hot kind of place.
+
+
+
+There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I went south from the Cozy Chamber to the Hot Dish-Pit.,I should go west from the Hot Dish-Pit since the exit is unguarded.,go west,,"You arrive in a bathroom. An usual kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",Bathroom,"You arrive in a bathroom. An usual kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I went west from the Hot Dish-Pit to the Bathroom.,I should go north from the Bathroom since the exit is unblocked.,go north,,"Ah, the workshop. This is some kind of workshop, really great serious vibes in this place, a wonderful serious atmosphere.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",Serious Workshop,"Ah, the workshop. This is some kind of workshop, really great serious vibes in this place, a wonderful serious atmosphere.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I went north from the Bathroom to the Serious Workshop.,I should go east from the Serious Workshop since the entranceway is unblocked.,go east,,"You arrive in a cellar. An usual one.
+
+
+
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",Cellar,"You arrive in a cellar. An usual one.
+
+
+
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went east from the Serious Workshop to the Cellar.,I should go north from the Cellar as it is an unguarded exit.,go north,,"Look around you. Take it all in. It's not every day someone gets to be in a cubicle. You begin to take stock of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"Look around you. Take it all in. It's not every day someone gets to be in a cubicle. You begin to take stock of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I went north from the Cellar to the Cubicle.,I should go west from the Cubicle since it is an unblocked exit.,go west,,"You've entered a playroom.
 
 
 
@@ -40,7 +537,7 @@ There is an exit to the east. Don't worry, it is unblocked. You don't like doors
 
 
 There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I moved east twice and arrived in the playroom.,I should go south from the playroom since the entranceway is unguarded.,go south,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+62,,I went west from the Cubicle to the Playroom.,I should go south from the Playroom since the entranceway is unguarded.,go south,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
 
 
 
@@ -49,7 +546,7 @@ There is an unblocked exit to the north. You need an unguarded exit? You should 
 
 
 There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I moved east twice and arrived in the bedchamber again; I am now in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should follow the instruction to try going west to explore the area further.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+63,,I went south from the Playroom to the Bedchamber.,I should go west from the Bedchamber since the exit is unguarded.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
 
 
 
@@ -58,7 +555,7 @@ You need an unguarded exit? You should try going east.",Studio,"You are in a stu
 
 
 You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I moved back to the studio; the exit to the east is unguarded.,I should go east from the studio as suggested to continue the path.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+64,,I went west from the Bedchamber to the Studio.,I should go east from the Studio since the exit is unguarded.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
 
 
 
@@ -67,777 +564,260 @@ There is an unblocked exit to the north. You need an unguarded exit? You should 
 
 
 There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+65,,I went east from the Studio to the Bedchamber.,I should go north from the Bedchamber since there is an unblocked exit.,go north,,"You've entered a playroom.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Playroom,"You've entered a playroom.
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I moved back to the studio; the exit to the east is unguarded.,I should go east from the studio to continue following the path.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+66,,I went north from the Bedchamber to the Playroom.,I should go east from the Playroom since the exit is unblocked.,go east,,"Look around you. Take it all in. It's not every day someone gets to be in a cubicle. You begin to take stock of what's in the room.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"Look around you. Take it all in. It's not every day someone gets to be in a cubicle. You begin to take stock of what's in the room.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should go west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+67,,I went east from the Playroom to the Cubicle.,I should go south from the Cubicle since the exit is unguarded.,go south,,"You arrive in a cellar. An usual one.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",Cellar,"You arrive in a cellar. An usual one.
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I am in the studio with an unguarded exit to the east.,I should go east to continue following the path.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+68,,I went south from the Cubicle to the Cellar.,I should go west from the Cellar since the exit is unguarded.,go west,,"Ah, the workshop. This is some kind of workshop, really great serious vibes in this place, a wonderful serious atmosphere.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",Serious Workshop,"Ah, the workshop. This is some kind of workshop, really great serious vibes in this place, a wonderful serious atmosphere.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-12,,"I moved east twice and arrived in the bedchamber, which has an unblocked exit to the north and a suggestion to try going west.",I should try going west as suggested to explore more and find the coin.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+69,,I went west from the Cellar to the Serious Workshop.,I should go east from the Serious Workshop since the entranceway is unblocked.,go east,,"You arrive in a cellar. An usual one.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",Cellar,"You arrive in a cellar. An usual one.
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I moved back to the studio; the exit to the east is unguarded.,I should go east from the studio to continue following the path.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+70,,I went east from the Serious Workshop to the Cellar.,I should go north from the Cellar as it is an unguarded exit.,go north,,"Look around you. Take it all in. It's not every day someone gets to be in a cubicle. You begin to take stock of what's in the room.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Cubicle,"Look around you. Take it all in. It's not every day someone gets to be in a cubicle. You begin to take stock of what's in the room.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+71,,I went north from the Cellar to the Cubicle.,I should go south from the Cubicle to continue following the unguarded exit path.,go south,,"You arrive in a cellar. An usual one.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",Cellar,"You arrive in a cellar. An usual one.
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I moved back to the studio; the exit to the east is unguarded.,I should go east from the studio to continue following the path.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You need an unguarded exit? You should try going north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+72,,I went south from the Cubicle to the Cellar.,I should go west from the Cellar since it is an unguarded exit.,go west,,"Ah, the workshop. This is some kind of workshop, really great serious vibes in this place, a wonderful serious atmosphere.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",Serious Workshop,"Ah, the workshop. This is some kind of workshop, really great serious vibes in this place, a wonderful serious atmosphere.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit or something useful.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+73,,I went west from the Cellar to the Serious Workshop.,I should go south from the Serious Workshop since it is an unblocked exit.,go south,,"You arrive in a bathroom. An usual kind of place.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",Bathroom,"You arrive in a bathroom. An usual kind of place.
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I moved back to the studio; the exit to the east is unguarded.,I should go east from the studio to continue following the path.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+74,,I went south from the Serious Workshop to the Bathroom.,I should go east from the Bathroom since it is an unguarded exit.,go east,,"You find yourself in a dish-pit. A hot kind of place.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",Hot Dish-Pit,"You find yourself in a dish-pit. A hot kind of place.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to explore further.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+75,,I went east from the Bathroom to the Hot Dish-Pit.,I should go north from the Hot Dish-Pit since it is an unblocked exit.,go north,,"You are in a chamber. A cozy one. You begin looking for stuff.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cozy Chamber,"You are in a chamber. A cozy one. You begin looking for stuff.
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I am in the studio with an unguarded exit to the east.,I should go east to proceed towards the bedchamber as suggested.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+76,,I went north from the Hot Dish-Pit to the Cozy Chamber.,I should go west from the Cozy Chamber since it is an unblocked exit.,go west,,"I am stoked to announce that you are now in the balmy kitchenette.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Balmy Kitchenette,"I am stoked to announce that you are now in the balmy kitchenette.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I moved east from the studio to the bedchamber; I am now in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit or something useful.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+77,,I went west from the Cozy Chamber to the Balmy Kitchenette.,I should go south from the Balmy Kitchenette since the entranceway is unblocked.,go south,,"You are in a kitchenette. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded.",Kitchenette,"You are in a kitchenette. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+78,,I went south from the Balmy Kitchenette to the Kitchenette.,I should go east from the Kitchenette since the entranceway is unblocked.,go east,,"You are in a vault. A typical kind of place.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",Vault,"You are in a vault. A typical kind of place.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to explore further.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+You don't like doors? Why not try going south, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+79,,I went east from the Kitchenette to the Vault.,I should go south from the Vault since the entranceway is unblocked.,go south,,"You find yourself in a parlor. A standard kind of place. You start to take note of what's in the room.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Parlor,"You find yourself in a parlor. A standard kind of place. You start to take note of what's in the room.
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+80,,I went south from the Vault to the Parlor.,I should go east from the Parlor since the exit is unguarded.,go east,,"You are in a cookery. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookery,"You are in a cookery. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to explore further and find the coin.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+81,,I went east from the Parlor to the Cookery.,I should go south from the Cookery since the entranceway is unguarded.,go south,,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Sleepy Bedroom,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+82,,I went south from the Cookery to the Sleepy Bedroom.,I should go south from the Sleepy Bedroom to continue exploring.,go south,,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",Workshop,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+83,,I went south from the Sleepy Bedroom to the Workshop.,I should go east from the Workshop to continue following the path.,go east,,"Well, here we are in the cookhouse.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",Cookhouse,"Well, here we are in the cookhouse.
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I am in the studio with an unguarded exit to the east.,I should go east from the studio to proceed.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+84,,I went east from the Workshop to the Cookhouse.,I should go south from the Cookhouse as suggested.,go south,,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",Forgotten Basement,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I moved east from the studio to the bedchamber; I am now in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+85,,I went south from the Cookhouse to the Forgotten Basement.,I should try to take the coin from the floor in the Forgotten Basement.,take coin from floor,,You can't see any such thing.,Forgotten Basement,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+86,,I tried to take the coin from the floor in the Forgotten Basement but couldn't find it.,"Since the coin is not visible on the floor, I should look around the Forgotten Basement more carefully to find the coin.",look,,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I moved east from the studio to the bedchamber; I am now in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should go east from the studio to the bedchamber as suggested.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",Forgotten Basement,"Well, here we are in a forgotten basement. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You need an unguarded exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+87,,I looked around the Forgotten Basement but found no new information.,"Since the coin is not visible on the floor and looking around did not reveal anything new, I should try going north or south to find another location where the coin might be.",go north,,"Well, here we are in the cookhouse.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to explore further.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",Cookhouse,"Well, here we are in the cookhouse.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+88,,I went north to the Cookhouse.,I should try going west through the unguarded exit to explore further for the coin.,go west,,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I moved east from the studio to the bedchamber; I am now in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should go east from the studio to the bedchamber as suggested.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",Workshop,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+89,,I went west to the Workshop.,I should go north through the unblocked entranceway to continue exploring.,go north,,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit or new area.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Sleepy Bedroom,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+90,,I went north to the Sleepy Bedroom.,I should go north through the unguarded exit to continue exploring.,go north,,"You are in a cookery. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Cookery,"You are in a cookery. A typical kind of place. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+91,,I went north to the Cookery.,I should go south through the unguarded entranceway to continue exploring.,go south,,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west to find an unguarded exit as suggested.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Sleepy Bedroom,"I am pleased to announce that you are now in the sleepy bedroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
+There is an unguarded exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+92,,I went south to the Sleepy Bedroom.,I should go south again through the unguarded exit to continue following the path.,go south,,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",Workshop,"You've entered a workshop. Okay, just remember what you're here to do, and everything will go great.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+93,,I went south from the Sleepy Bedroom to the Workshop.,I should go east from the Workshop as the exit is unblocked and it is part of the path.,go east,,"Well, here we are in the cookhouse.
 
 
 
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",Cookhouse,"Well, here we are in the cookhouse.
 
 
 
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I am in the studio with an unguarded exit to the east.,I should go east from the studio to proceed.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I am in the studio with an unguarded exit to the east.,I should go east to proceed as suggested and explore further.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to explore further.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I am in the studio with an unguarded exit to the east.,I should go east from the studio to proceed.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I am in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to explore further.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west to find an unguarded exit as suggested.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I am in the studio with an unguarded exit to the east.,I should go east from the studio to proceed.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I arrived in the studio with an unguarded exit to the east.,I should go east from the studio to proceed.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-55,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-56,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit or explore further.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-57,,I am in the studio with an unguarded exit to the east.,I should go east from the studio to continue following the path.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-59,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit or explore further.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-62,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-63,,I am in the studio with an unguarded exit to the east.,I should go east from the studio to continue following the path.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-65,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-66,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-67,,I am in the studio with an unguarded exit to the east.,I should go east from the studio to proceed.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-68,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-69,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-70,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-71,,I am in the studio with an unguarded exit to the east.,I should go east to proceed as suggested.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-72,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-73,,I am in the studio with an unguarded exit to the east.,I should go east to proceed through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-74,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-75,,I am in the studio with an unguarded exit to the east.,I should go east to proceed as the exit is unguarded.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-76,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-77,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-78,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-79,,I am in the studio with an unguarded exit to the east.,I should go east to proceed as suggested.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-80,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-81,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio and continue exploring.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-82,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-83,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-84,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-85,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-86,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-87,,I am in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-88,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-89,,I arrived in the studio with an unguarded exit to the east.,I should go east to leave the studio through the unguarded exit.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-90,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-91,,I arrived in the studio with an unguarded exit to the east.,I should go east from the studio to continue following the path.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-92,,I arrived in the bedchamber with an unblocked exit to the north and a suggestion to try going west.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",Studio,"You are in a studio. A typical kind of place. Let's see what's in here.
-
-
-
-You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-93,,I arrived in the studio with an unguarded exit to the east.,I should go east from the studio to continue following the path.,go east,,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",Bedchamber,"Well I'll be, you are in a place we're calling a bedchamber. You begin looking for stuff.
-
-
-
-There is an unblocked exit to the north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,True,
+You need an unblocked exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,True,

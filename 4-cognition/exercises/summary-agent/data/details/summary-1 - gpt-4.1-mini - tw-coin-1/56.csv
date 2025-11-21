@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the playroom.,I should travel south as the first step of the instructions.,go south,,"You arrive in a parlor. A normal kind of place.
+1,,I am in the playroom.,I should travel south as the first step.,go south,,"You arrive in a parlor. A normal kind of place.
 
 
 
@@ -13,7 +13,7 @@ There is an unblocked exit to the north. There is an unblocked exit to the south
 
 
 There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I traveled south from the playroom to the parlor.,I should travel south again as instructed.,go south,,"You find yourself in a washroom. A standard kind of place.
+2,,I traveled south from the playroom to the parlor.,I should take a trip south again as instructed.,go south,,"You find yourself in a washroom. A standard kind of place.
 
 
 
@@ -22,7 +22,7 @@ There is an unguarded exit to the north. You don't like doors? Why not try going
 
 
 There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-3,,I traveled south from the parlor to the washroom.,I should continue traveling south as instructed.,go south,,"You arrive in a cubicle. An austere kind of place.
+3,,I took a trip south from the parlor to the washroom.,I should venture south again as the exit to the south is unblocked.,go south,,"You arrive in a cubicle. An austere kind of place.
 
 
 
@@ -31,12 +31,7 @@ You don't like doors? Why not try going north, that entranceway is unguarded. Th
 
 
 You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I traveled south twice to reach the austere cubicle.,I should now try to go south again as instructed.,go south,,You can't go that way.,Austere Cubicle,"You arrive in a cubicle. An austere kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I tried to travel south from the austere cubicle but couldn't; I am still in the austere cubicle.,"Since I can't go south, I should try going west as there is an unguarded exit in that direction.",go west,,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
+4,,I ventured south from the washroom to the austere cubicle.,I should venture west as there is an unguarded exit to the west.,go west,,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
@@ -45,7 +40,7 @@ You need an unblocked exit? You should try going east. There is an unguarded exi
 
 
 You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-6,,"I traveled south twice from the washroom to the austere cubicle, then moved east to enter the spare room.",I should now try to go west from the spare room as there is an unguarded exit in that direction.,go west,,"You are in a kitchen. An usual kind of place. You can barely contain your excitement.
+5,,I went west from the austere cubicle to the spare room.,I should venture west again as there is an unguarded exit to the west.,go west,,"You are in a kitchen. An usual kind of place. You can barely contain your excitement.
 
 
 
@@ -54,7 +49,12 @@ There is an exit to the east. Don't worry, it is unguarded. There is an exit to 
 
 
 There is an exit to the east. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I traveled east from the spare room to the kitchen.,I should now travel west from the kitchen as the next step in the sequence.,go west,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+6,,I went west from the spare room to the kitchen.,I should venture south as per the instructions.,go south,,You can't go that way.,Kitchen,"You are in a kitchen. An usual kind of place. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+7,,I tried to go south from the kitchen but couldn't because there is no exit that way.,"Since I cannot go south, I will try to go west as the next instruction suggests.",go west,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
@@ -63,7 +63,7 @@ There is an exit to the east. Don't worry, it is unblocked. There is an exit to 
 
 
 There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I traveled east from the kitchen to the silent office.,I should travel south from the silent office as the next step in the sequence.,go south,,"You are in a garage. A spacious kind of place.
+8,,I went west from the kitchen to the silent office.,"The next instruction is to venture south, so I will go south from the silent office.",go south,,"You are in a garage. A spacious kind of place.
 
 
 
@@ -72,70 +72,57 @@ You don't like doors? Why not try going north, that entranceway is unguarded. Yo
 
 
 You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I traveled east from the silent office to the garage.,I should go north from the garage as the entranceway is unguarded.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+9,,I went south from the silent office to the spacious garage.,"The next instruction is to go west, so I will go west from the garage.",go west,,"You find yourself in a dish-pit. A hot kind of place. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked.",Hot Dish-Pit,"You find yourself in a dish-pit. A hot kind of place. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I traveled east from the garage to the silent office.,I should go south from the silent office as the next step in the instructions.,go south,,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I went west from the spacious garage to the hot dish-pit.,"The next instruction is to venture south, but there is no south exit here. I will try going north instead to follow the path.",go north,,"You arrive in a studio. An ordinary one.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the east. There is an unblocked exit to the south.",Studio,"You arrive in a studio. An ordinary one.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I traveled east from the silent office to the garage; I am now in the spacious garage.,I should try going north as the entranceway is unguarded.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the east. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I went north from the hot dish-pit to the studio.,"The next instruction is to go to the west, but there is no west exit here. I will try going east as it is an unguarded exit.",go east,,"You find yourself in a pantry. A typical one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Pantry,"You find yourself in a pantry. A typical one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I traveled east from the garage to the silent office.,I should go south from the silent office as the next step in the sequence.,go south,,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I went east from the studio to the pantry.,"The next instruction is to attempt to venture west, which is possible here. I will go west.",go west,,"You arrive in a studio. An ordinary one.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the east. There is an unblocked exit to the south.",Studio,"You arrive in a studio. An ordinary one.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I traveled east multiple times and ended up in the spacious garage.,I should try going north or west from the spacious garage as the entrances are unguarded and unblocked.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the east. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I went west from the pantry back to the studio.,The next instruction is to venture south from the studio. I will go south.,go south,,"You find yourself in a dish-pit. A hot kind of place. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked.",Hot Dish-Pit,"You find yourself in a dish-pit. A hot kind of place. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I traveled east multiple times and ended up in the spacious garage; then I moved east to the silent office.,I should go south from the silent office as the exit is unblocked.,go south,,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went south from the studio to the hot dish-pit.,The next instruction is to go west from the hot dish-pit. I will go west.,go west,,You can't go that way.,Hot Dish-Pit,"You find yourself in a dish-pit. A hot kind of place. You begin to take stock of what's here.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I traveled east multiple times and ended up in the spacious garage.,I should try going north from the spacious garage as the entranceway is unguarded.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I traveled east multiple times and ended up in the spacious garage; then I moved east to the silent office and arrived there.,I should go south from the silent office as the exit is unblocked.,go south,,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I tried to go west from the hot dish-pit but couldn't because there is no exit that way.,The hot dish-pit has unguarded entrances to the east and north. I will try going east.,go east,,"You are in a garage. A spacious kind of place.
 
 
 
@@ -144,16 +131,166 @@ You don't like doors? Why not try going north, that entranceway is unguarded. Yo
 
 
 You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I arrived in the spacious garage.,I should try going north as suggested to explore the unguarded entranceway.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+16,,I went east from the hot dish-pit to the spacious garage.,"From the spacious garage, I can go north or west. I will try going west.",go west,,"You find yourself in a dish-pit. A hot kind of place. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked.",Hot Dish-Pit,"You find yourself in a dish-pit. A hot kind of place. You begin to take stock of what's here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I traveled east to the silent office.,I should go south from the silent office as the next step in the instructions.,go south,,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went west from the spacious garage to the hot dish-pit.,"From the hot dish-pit, I can go east or north. I will try going north.",go north,,"You arrive in a studio. An ordinary one.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the south.",Studio,"You arrive in a studio. An ordinary one.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went north from the hot dish-pit to the studio.,"From the studio, I can go east or south. I will try going east.",go east,,"You find yourself in a pantry. A typical one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Pantry,"You find yourself in a pantry. A typical one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went east from the studio to the pantry.,"From the pantry, I can go east or west. I will try going east.",go east,,"Look around you. Take it all in. It's not every day someone gets to be in a study.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Study,"Look around you. Take it all in. It's not every day someone gets to be in a study.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went east from the pantry to the study.,I should look around the study to find the coin on the floor.,look,,"Look around you. Take it all in. It's not every day someone gets to be in a study.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Study,"Look around you. Take it all in. It's not every day someone gets to be in a study.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I looked around the study but did not find any new information.,I should try to take the coin from the floor in the study.,take coin from floor,,You can't see any such thing.,Study,"Look around you. Take it all in. It's not every day someone gets to be in a study.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I tried to take the coin from the floor in the study but couldn't find it.,I should explore the study more carefully to find the coin or try moving to another room to find it.,look,,"Look around you. Take it all in. It's not every day someone gets to be in a study.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Study,"Look around you. Take it all in. It's not every day someone gets to be in a study.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I looked around the study again but did not find the coin.,"Since the coin is not visible in the study, I should try going west or south as suggested to explore other rooms where the coin might be.",go west,,"You find yourself in a pantry. A typical one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Pantry,"You find yourself in a pantry. A typical one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went west from the study to the pantry.,"The coin was not found in the study, so I should continue exploring by going south or west from the pantry to find the coin.",go south,,You can't go that way.,Pantry,"You find yourself in a pantry. A typical one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I tried to go south from the pantry but couldn't because there is no exit that way.,"Since I cannot go south, I should try going west or east from the pantry to continue exploring.",go west,,"You arrive in a studio. An ordinary one.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the south.",Studio,"You arrive in a studio. An ordinary one.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I went west from the pantry to the studio.,I should go east from the studio to return to the pantry and then try to find another way to the study to look for the coin again.,go east,,"You find yourself in a pantry. A typical one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Pantry,"You find yourself in a pantry. A typical one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I went east from the studio to the pantry.,I should go east from the pantry to enter the study again and try to find the coin on the floor.,go east,,"Look around you. Take it all in. It's not every day someone gets to be in a study.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Study,"Look around you. Take it all in. It's not every day someone gets to be in a study.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I went east from the pantry to the study.,I should try to take the coin from the floor in the study again.,take coin from floor,,You can't see any such thing.,Study,"Look around you. Take it all in. It's not every day someone gets to be in a study.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I tried to take the coin from the floor in the study but couldn't find it.,I should go south from the study to see if the coin might be in the adjacent area.,go south,,"Well how about that, you are in a place we're calling a sweaty cookery. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the north. There is an unblocked exit to the south.",Sweaty Cookery,"Well how about that, you are in a place we're calling a sweaty cookery. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I went south from the study to the sweaty cookery.,I should look around the sweaty cookery to see if the coin is here.,look,,"Well how about that, you are in a place we're calling a sweaty cookery. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the north. There is an unblocked exit to the south.",Sweaty Cookery,"Well how about that, you are in a place we're calling a sweaty cookery. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+There is an unguarded exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I looked around the sweaty cookery but did not find any new information.,I should try going north to return to the study and then look for the coin again.,go north,,"Look around you. Take it all in. It's not every day someone gets to be in a study.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Study,"Look around you. Take it all in. It's not every day someone gets to be in a study.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I went north to the study and looked around but did not find the coin.,I should try going west from the study to see if the coin is in the adjacent room.,go west,,"You find yourself in a pantry. A typical one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Pantry,"You find yourself in a pantry. A typical one.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I went west from the study to the pantry.,I should try going west from the pantry to check the adjacent room for the coin.,go west,,"You arrive in a studio. An ordinary one.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the south.",Studio,"You arrive in a studio. An ordinary one.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I went west from the pantry to the studio.,I should go south from the studio to explore the next room for the coin.,go south,,"You find yourself in a dish-pit. A hot kind of place. You begin to take stock of what's here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked.",Hot Dish-Pit,"You find yourself in a dish-pit. A hot kind of place. You begin to take stock of what's here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I went south from the studio to the hot dish-pit.,I should go east from the hot dish-pit to explore the next room.,go east,,"You are in a garage. A spacious kind of place.
 
 
 
@@ -162,7 +299,7 @@ You don't like doors? Why not try going north, that entranceway is unguarded. Yo
 
 
 You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I am in the spacious garage.,I should go north as the entranceway is unguarded.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+36,,I went east from the hot dish-pit to the spacious garage.,I should go north from the spacious garage to continue exploring.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
@@ -171,588 +308,435 @@ There is an exit to the east. Don't worry, it is unblocked. There is an exit to 
 
 
 There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office as the next step in the instructions.,go south,,"You are in a garage. A spacious kind of place.
+37,,I went north from the spacious garage to the silent office.,I should go east from the silent office to continue exploring.,go east,,"You are in a kitchen. An usual kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an exit to the east. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",Kitchen,"You are in a kitchen. An usual kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I am in the spacious garage.,I should go north as the entranceway is unguarded.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the east. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I went east from the silent office to the kitchen.,I should go east from the kitchen to continue exploring.,go east,,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",Spare Room,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I went east from the kitchen to the spare room.,I should go east from the spare room to continue exploring.,go east,,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Austere Cubicle,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I am in the spacious garage.,I should go north as the entranceway is unguarded.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went east from the spare room to the austere cubicle.,I should go north from the austere cubicle to continue exploring.,go north,,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went north from the austere cubicle to the washroom.,I should go north from the washroom to continue exploring.,go north,,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",Parlor,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I am in the spacious garage.,I should go north as the entranceway is unguarded.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I went north from the washroom to the parlor.,I should go north from the parlor to continue moving forward.,go north,,"If you're wondering why everything seems so usual all of a sudden, it's because you've just sauntered into the playroom. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the south.",Playroom,"If you're wondering why everything seems so usual all of a sudden, it's because you've just sauntered into the playroom. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I went north from the parlor to the playroom.,I should go south from the playroom to return to the parlor.,go south,,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",Parlor,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I am in the spacious garage.,I should go north as the entranceway is unguarded.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I went south from the playroom to the parlor.,I should go south again from the parlor to continue the journey.,go south,,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I traveled east to the silent office; I am now in the silent office.,I should travel south from the silent office as the next step in the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I went south from the parlor to the washroom.,I should go south again from the washroom to continue the journey.,go south,,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Austere Cubicle,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north to explore the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I went south from the washroom to the austere cubicle.,I should go west from the austere cubicle as there is an unguarded exit that way.,go west,,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",Spare Room,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I went west from the austere cubicle to the spare room.,I should go east from the spare room as there is an unguarded exit that way.,go east,,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Austere Cubicle,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I went east from the spare room to the austere cubicle.,I should go north from the austere cubicle since the entranceway is unguarded.,go north,,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I went north from the austere cubicle to the washroom.,I should go north from the washroom since the exit is unguarded.,go north,,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",Parlor,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north from the spacious garage as the entranceway is unguarded.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I went north from the washroom to the parlor.,I should go north from the parlor since the exit is unblocked.,go north,,"If you're wondering why everything seems so usual all of a sudden, it's because you've just sauntered into the playroom. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the south.",Playroom,"If you're wondering why everything seems so usual all of a sudden, it's because you've just sauntered into the playroom. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I went north from the parlor to the playroom.,I should go south from the playroom since the exit is unblocked.,go south,,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",Parlor,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I went south from the playroom to the parlor.,I should go south again from the parlor as the exit is unblocked.,go south,,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue following the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I went south from the parlor to the washroom.,I should go south again from the washroom since the exit is unblocked.,go south,,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Austere Cubicle,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I went south from the washroom to the austere cubicle.,I should go west from the austere cubicle since there is an unguarded exit that way.,go west,,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",Spare Room,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office as the next step in the sequence.,go south,,"You are in a garage. A spacious kind of place.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I went west from the austere cubicle to the spare room.,I should go east from the spare room since there is an unguarded exit that way.,go east,,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Austere Cubicle,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north from the spacious garage as the entranceway is unguarded.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I went east from the spare room to the austere cubicle.,I should go north from the austere cubicle since the entranceway is unguarded.,go north,,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue following the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I went north from the austere cubicle to the washroom.,I should go north from the washroom since the exit is unguarded.,go north,,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",Parlor,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north as the entranceway is unguarded.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I went north from the washroom to the parlor.,I should go north from the parlor since the exit is unblocked.,go north,,"If you're wondering why everything seems so usual all of a sudden, it's because you've just sauntered into the playroom. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the south.",Playroom,"If you're wondering why everything seems so usual all of a sudden, it's because you've just sauntered into the playroom. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue following the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I went north from the parlor to the playroom.,I should go south from the playroom to return to the parlor.,go south,,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",Parlor,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went south from the playroom to the parlor.,I should go south from the parlor to the washroom.,go south,,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue following the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I went south from the parlor to the washroom.,I should go south from the washroom to the austere cubicle.,go south,,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Austere Cubicle,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance to explore further.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I went south from the washroom to the austere cubicle.,I should go west from the austere cubicle to the spare room.,go west,,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",Spare Room,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I went west from the austere cubicle to the spare room.,I should go west from the spare room to the kitchen.,go west,,"You are in a kitchen. An usual kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an exit to the east. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",Kitchen,"You are in a kitchen. An usual kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the east. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I went west from the spare room to the kitchen.,I should go east from the kitchen to the spare room.,go east,,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",Spare Room,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+65,,I went east from the kitchen to the spare room.,I should go east from the spare room to the austere cubicle.,go east,,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Austere Cubicle,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+66,,I went east from the spare room to the austere cubicle.,I should go north from the austere cubicle to the washroom.,go north,,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to explore further.,go south,,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+67,,I went north from the austere cubicle to the washroom.,I should go north from the washroom to the parlor.,go north,,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",Parlor,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance to explore further.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+68,,I went north from the washroom to the parlor.,I should go north from the parlor to the playroom.,go north,,"If you're wondering why everything seems so usual all of a sudden, it's because you've just sauntered into the playroom. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the south.",Playroom,"If you're wondering why everything seems so usual all of a sudden, it's because you've just sauntered into the playroom. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+69,,I went north from the parlor to the playroom.,I should go south from the playroom to the parlor.,go south,,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",Parlor,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north to explore the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+70,,I went south from the playroom to the parlor.,I should go south from the parlor to the washroom.,go south,,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue following the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+71,,I went south from the parlor to the washroom.,I should go south from the washroom to the austere cubicle.,go south,,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Austere Cubicle,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-55,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance to explore further.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+72,,I went south from the washroom to the austere cubicle.,I should go west from the austere cubicle to the spare room.,go west,,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",Spare Room,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-56,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to explore further.,go south,,"You are in a garage. A spacious kind of place.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+73,,I went west from the austere cubicle to the spare room.,I should go east from the spare room back to the austere cubicle.,go east,,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Austere Cubicle,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-57,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north from the spacious garage to explore the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+74,,I went east from the spare room to the austere cubicle.,I should go north from the austere cubicle to the washroom.,go north,,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+75,,I went north from the austere cubicle to the washroom.,I should go north from the washroom to the parlor.,go north,,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",Parlor,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-59,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north from the spacious garage to explore the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+76,,I went north from the washroom to the parlor.,I should go north from the parlor to the playroom.,go north,,"If you're wondering why everything seems so usual all of a sudden, it's because you've just sauntered into the playroom. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the south.",Playroom,"If you're wondering why everything seems so usual all of a sudden, it's because you've just sauntered into the playroom. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring and eventually find the serious study to pick up the coin.,go south,,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+77,,I went north from the parlor to the playroom.,I should go south from the playroom to the parlor.,go south,,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",Parlor,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance to explore further.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+78,,I went south from the playroom to the parlor.,I should go south from the parlor to the washroom.,go south,,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-62,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+79,,I went south from the parlor to the washroom.,I should go south from the washroom to the austere cubicle.,go south,,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Austere Cubicle,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-63,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+80,,I went south from the washroom to the austere cubicle.,I should go west from the austere cubicle to the spare room.,go west,,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",Spare Room,"You have entered a spare room. Not the spare room you'd expect. No, this is a spare room.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
+You need an unblocked exit? You should try going east. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+81,,I went west from the austere cubicle to the spare room.,I should go east from the spare room back to the austere cubicle.,go east,,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Austere Cubicle,"You arrive in a cubicle. An austere kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-65,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north from the spacious garage to explore the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+82,,I went east from the spare room to the austere cubicle.,I should go north from the austere cubicle to the washroom.,go north,,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Washroom,"You find yourself in a washroom. A standard kind of place.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-66,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue following the instructions.,go south,,"You are in a garage. A spacious kind of place.
+There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+83,,I went north from the austere cubicle to the washroom.,I should go north from the washroom to the parlor.,go north,,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",Parlor,"You arrive in a parlor. A normal kind of place.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-67,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance to explore further.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+84,,I went north from the washroom to the parlor.,I should go north from the parlor to the playroom.,go north,,"If you're wondering why everything seems so usual all of a sudden, it's because you've just sauntered into the playroom. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an unblocked exit to the south.",Playroom,"If you're wondering why everything seems so usual all of a sudden, it's because you've just sauntered into the playroom. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-68,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-69,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance to explore further.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-70,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-71,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance to explore further.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-72,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue following the instructions.,go south,,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-73,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north from the spacious garage to explore the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-74,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to explore further.,go south,,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-75,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-76,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-77,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north to explore the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-78,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring and eventually reach the serious study to pick up the coin.,go south,,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-79,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance to explore further.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-80,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-81,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north through the unguarded entrance to explore further.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-82,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring and eventually reach the serious study to pick up the coin.,go south,,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-83,,I am in the spacious garage with unguarded entrances to the north and west.,I should go north from the spacious garage to explore the unguarded entrance.,go north,,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",Silent Office,"You arrive in an office. A silent kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-84,,I traveled east to the silent office; I am now in the silent office.,I should go south from the silent office to continue exploring as per the instructions.,go south,,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Spacious Garage,"You are in a garage. A spacious kind of place.
-
-
-
-You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,True,
+There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,True,

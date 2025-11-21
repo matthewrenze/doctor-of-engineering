@@ -2,7 +2,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.","You are carrying: a yellow bell pepper, a raw yellow potato and a red hot pepper.",0 of 7,0.0,False,
-1,,"I am in the kitchen with a cookbook and a knife on the table, and I am carrying a yellow bell pepper, a raw yellow potato, and a red hot pepper.",I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,"I am in the kitchen with a cookbook and a knife on the table, a fridge, an oven, a counter, and a stove. I am carrying a yellow bell pepper, a raw yellow potato, and a red hot pepper.",I should examine the cookbook on the table to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -20,37 +20,33 @@ dice the red onion
   prepare meal",Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.","You are carrying: a yellow bell pepper, a raw yellow potato and a red hot pepper.",0 of 7,0.0,False,
-2,,"I examined the cookbook and found a recipe requiring a red onion and a yellow bell pepper, with steps to dice and fry the red onion, slice and fry the yellow bell pepper, and then prepare the meal.",I need to find a red onion first since I already have a yellow bell pepper.,look fridge,,The fridge looks robust. You can't see inside it because the lid's in your way.,Kitchen,"You are in a kitchen. A standard one.
-
-You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.","You are carrying: a yellow bell pepper, a raw yellow potato and a red hot pepper.",0 of 7,0.0,False,
-3,,I looked at the fridge but couldn't see inside because the lid was in my way.,I should open the fridge to see if there is a red onion inside.,open fridge,,"You open the fridge, revealing a red onion, a raw red potato and a white onion.",Kitchen,"You are in a kitchen. A standard one.
+2,,"I examined the cookbook and found a recipe requiring a red onion and a yellow bell pepper, with steps to dice and fry the onion, slice and fry the pepper, then prepare the meal.","I need to find a red onion first since I already have a yellow bell pepper. I should look around the kitchen, especially the fridge, to find a red onion.",open fridge,,"You open the fridge, revealing a red onion, a raw red potato and a white onion.",Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a red onion, a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.","You are carrying: a yellow bell pepper, a raw yellow potato and a red hot pepper.",0 of 7,0.0,False,
-4,,"I opened the fridge and found a red onion, a raw red potato, and a white onion inside.",I should take the red onion from the fridge to use it in the recipe.,take red onion from fridge,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one.
+3,,"I opened the fridge and found a red onion, a raw red potato, and a white onion.",I should take the red onion from the fridge since it is required for the recipe.,take red onion from fridge,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a red onion, a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.","You are carrying: a yellow bell pepper, a raw yellow potato and a red hot pepper.",0 of 7,0.0,False,
-5,,I tried to take the red onion but was told I am carrying too many things already.,I should drop an item I don't need for the recipe to free up space.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You are in a kitchen. A standard one.
+4,,I tried to take the red onion but was told I am carrying too many things already.,"I should drop an item I don't need for the recipe to free up space. The recipe only requires a yellow bell pepper and a red onion, so I can drop the raw yellow potato and the red hot pepper.",drop raw yellow potato; drop red hot pepper,,"Which do you mean, the yellow bell pepper or the yellow potato?",Kitchen,"You are in a kitchen. A standard one.
+
+You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a red onion, a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.","You are carrying: a yellow bell pepper, a raw yellow potato and a red hot pepper.",0 of 7,0.0,False,
+5,,I tried to drop items but was asked to specify which yellow item to drop.,I will drop the raw yellow potato and the red hot pepper to free space for the red onion.,drop raw yellow potato; drop red hot pepper,,"Which do you mean, the yellow bell pepper or the yellow potato?",Kitchen,"You are in a kitchen. A standard one.
+
+You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a red onion, a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.","You are carrying: a yellow bell pepper, a raw yellow potato and a red hot pepper.",0 of 7,0.0,False,
+6,,"I tried to drop items but was repeatedly asked to specify which yellow item to drop, and the inventory remains unchanged.","I should drop the red hot pepper first, then drop the raw yellow potato separately to free space.",drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a red onion, a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
 
 
 
-There is a raw yellow potato on the floor.",You are carrying: a yellow bell pepper and a red hot pepper.,0 of 7,0.0,False,
-6,,I dropped the raw yellow potato to free up space and now I am carrying a yellow bell pepper and a red hot pepper.,I should now take the red onion from the fridge.,take red onion from fridge,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one.
+There is a red hot pepper on the floor.",You are carrying: a yellow bell pepper and a raw yellow potato.,0 of 7,0.0,False,
+7,,I dropped the red hot pepper to free up space in my inventory.,Now I should drop the raw yellow potato to free up more space for the red onion.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a red onion, a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
 
 
 
-There is a raw yellow potato on the floor.",You are carrying: a yellow bell pepper and a red hot pepper.,0 of 7,0.0,False,
-7,,I tried to take the red onion again but was still carrying too many things.,I should drop the red hot pepper to free up space for the red onion.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You are in a kitchen. A standard one.
-
-You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a red onion, a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
-
-
-
-There is a red hot pepper and a raw yellow potato on the floor.",You are carrying: a yellow bell pepper.,0 of 7,0.0,False,
-8,,I dropped the red hot pepper to free up space and now I am carrying only a yellow bell pepper.,I should take the red onion from the fridge now.,take red onion from fridge,,"You take the red onion from the fridge.
+There is a raw yellow potato and a red hot pepper on the floor.",You are carrying: a yellow bell pepper.,0 of 7,0.0,False,
+8,,I dropped the raw yellow potato to free up space in my inventory.,I should now take the red onion from the fridge as required by the recipe.,take red onion from fridge,,"You take the red onion from the fridge.
 
 
 
@@ -60,36 +56,36 @@ You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such
 
 
 
-There is a red hot pepper and a raw yellow potato on the floor.",You are carrying: a red onion and a yellow bell pepper.,1 of 7,0.14285714285714285,False,
-9,,I took the red onion from the fridge and now I am carrying a red onion and a yellow bell pepper.,I should dice the red onion with the knife from the table.,dice red onion with knife,,You need to take the knife first.,Kitchen,"You are in a kitchen. A standard one.
+There is a raw yellow potato and a red hot pepper on the floor.",You are carrying: a red onion and a yellow bell pepper.,1 of 7,0.14285714285714285,False,
+9,,I took the red onion from the fridge and now have the ingredients needed for the recipe.,I should dice the red onion with the knife as the first step of the recipe.,dice red onion with knife,,You need to take the knife first.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
 
 
 
-There is a red hot pepper and a raw yellow potato on the floor.",You are carrying: a red onion and a yellow bell pepper.,1 of 7,0.14285714285714285,False,
+There is a raw yellow potato and a red hot pepper on the floor.",You are carrying: a red onion and a yellow bell pepper.,1 of 7,0.14285714285714285,False,
 10,,I tried to dice the red onion but was reminded to take the knife first.,I should take the knife from the table before dicing the red onion.,take knife from table,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
 
 
 
-There is a red hot pepper and a raw yellow potato on the floor.",You are carrying: a red onion and a yellow bell pepper.,1 of 7,0.14285714285714285,False,
-11,,I tried to take the knife but was carrying too many things.,I should drop the yellow bell pepper to free up space for the knife.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You are in a kitchen. A standard one.
+There is a raw yellow potato and a red hot pepper on the floor.",You are carrying: a red onion and a yellow bell pepper.,1 of 7,0.14285714285714285,False,
+11,,I tried to take the knife but was told I am carrying too many things already.,I should drop the yellow bell pepper to free space for the knife.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook and a knife. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
 
 
 
-There is a yellow bell pepper, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a red onion.,1 of 7,0.14285714285714285,False,
-12,,I dropped the yellow bell pepper to free up space and now I am carrying only the red onion.,I should take the knife from the table now.,take knife from table,,You take the knife from the table.,Kitchen,"You are in a kitchen. A standard one.
+There is a yellow bell pepper, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a red onion.,1 of 7,0.14285714285714285,False,
+12,,I dropped the yellow bell pepper to free up space in my inventory.,I should now take the knife from the table.,take knife from table,,You take the knife from the table.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
 
 
 
-There is a yellow bell pepper, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a knife and a red onion.,1 of 7,0.14285714285714285,False,
-13,,I took the knife from the table and now I am carrying a knife and a red onion.,I should dice the red onion with the knife.,dice red onion with knife,,"You dice the red onion.
+There is a yellow bell pepper, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a knife and a red onion.,1 of 7,0.14285714285714285,False,
+13,,I took the knife from the table and now have the knife and red onion in my inventory.,I should dice the red onion with the knife as the next step in the recipe.,dice red onion with knife,,"You dice the red onion.
 
 
 
@@ -99,29 +95,29 @@ You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such
 
 
 
-There is a yellow bell pepper, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a knife and a diced red onion.,2 of 7,0.2857142857142857,False,
-14,,I diced the red onion with the knife successfully.,I should take the yellow bell pepper from the floor to prepare it next.,take yellow bell pepper from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one.
+There is a yellow bell pepper, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a knife and a diced red onion.,2 of 7,0.2857142857142857,False,
+14,,I diced the red onion with the knife successfully.,I should now take the yellow bell pepper from the floor to prepare it next.,take yellow bell pepper from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
 
 
 
-There is a yellow bell pepper, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a knife and a diced red onion.,2 of 7,0.2857142857142857,False,
-15,,I tried to take the yellow bell pepper but was carrying too many things.,I should drop the diced red onion to free up space for the yellow bell pepper.,drop diced red onion,,You drop the red onion on the ground.,Kitchen,"You are in a kitchen. A standard one.
+There is a yellow bell pepper, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a knife and a diced red onion.,2 of 7,0.2857142857142857,False,
+15,,I tried to take the yellow bell pepper but was told I am carrying too many things already.,I should drop the diced red onion to free space for the yellow bell pepper.,drop diced red onion,,You drop the red onion on the ground.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
 
 
 
-There is a diced red onion, a yellow bell pepper, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a knife.,2 of 7,0.2857142857142857,False,
-16,,I dropped the diced red onion to free up space and now I am carrying only the knife.,I should take the yellow bell pepper from the floor now.,take yellow bell pepper from floor,,You pick up the yellow bell pepper from the ground.,Kitchen,"You are in a kitchen. A standard one.
+There is a diced red onion, a yellow bell pepper, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a knife.,2 of 7,0.2857142857142857,False,
+16,,I dropped the diced red onion to free up space in my inventory.,I should now take the yellow bell pepper from the floor.,take yellow bell pepper from floor,,You pick up the yellow bell pepper from the ground.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
 
 
 
-There is a diced red onion, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a yellow bell pepper and a knife.,2 of 7,0.2857142857142857,False,
-17,,I took the yellow bell pepper from the floor and now I am carrying it along with the knife.,I should slice the yellow bell pepper with the knife as per the recipe.,slice yellow bell pepper with knife,,"You slice the yellow bell pepper.
+There is a diced red onion, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a yellow bell pepper and a knife.,2 of 7,0.2857142857142857,False,
+17,,I took the yellow bell pepper from the floor and now have it and the knife in my inventory.,I should slice the yellow bell pepper with the knife as the next step in the recipe.,slice yellow bell pepper with knife,,"You slice the yellow bell pepper.
 
 
 
@@ -131,29 +127,29 @@ You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such
 
 
 
-There is a diced red onion, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a sliced yellow bell pepper and a knife.,3 of 7,0.42857142857142855,False,
-18,,I sliced the yellow bell pepper with the knife successfully.,I should fry the diced red onion now as per the recipe.,take diced red onion from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one.
+There is a diced red onion, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a sliced yellow bell pepper and a knife.,3 of 7,0.42857142857142855,False,
+18,,I sliced the yellow bell pepper with the knife successfully.,I should now fry the diced red onion on the stove as the next step in the recipe.,take diced red onion from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
 
 
 
-There is a diced red onion, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a sliced yellow bell pepper and a knife.,3 of 7,0.42857142857142855,False,
-19,,I tried to take the diced red onion but was carrying too many things.,I should drop the sliced yellow bell pepper to free up space for the diced red onion.,drop sliced yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You are in a kitchen. A standard one.
+There is a diced red onion, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a sliced yellow bell pepper and a knife.,3 of 7,0.42857142857142855,False,
+19,,I tried to take the diced red onion but was told I am carrying too many things already.,I should put the knife down to free space for the diced red onion.,drop knife,,You drop the knife on the ground.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
 
 
 
-There is a sliced yellow bell pepper, a diced red onion, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a knife.,3 of 7,0.42857142857142855,False,
-20,,I dropped the sliced yellow bell pepper to free up space and now I am carrying only the knife.,I should take the diced red onion from the floor now.,take diced red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You are in a kitchen. A standard one.
+There is a knife, a diced red onion, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a sliced yellow bell pepper.,3 of 7,0.42857142857142855,False,
+20,,I dropped the knife on the ground to free up space in my inventory.,I should now take the diced red onion from the floor.,take diced red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You are in a kitchen. A standard one.
 
 You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
 
 
 
-There is a sliced yellow bell pepper, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a diced red onion and a knife.,3 of 7,0.42857142857142855,False,
-21,,I took the diced red onion from the floor and now I am carrying it along with the knife.,I should fry the diced red onion on the stove as per the recipe.,cook diced red onion with stove,,"You fried the red onion.
+There is a knife, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a diced red onion and a sliced yellow bell pepper.,3 of 7,0.42857142857142855,False,
+21,,I took the diced red onion from the floor and now have it and the sliced yellow bell pepper in my inventory.,I should fry the diced red onion on the stove as the next step in the recipe.,cook diced red onion with stove,,"You fried the red onion.
 
 
 
@@ -163,29 +159,8 @@ You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such
 
 
 
-There is a sliced yellow bell pepper, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a diced fried red onion and a knife.,4 of 7,0.5714285714285714,False,
-22,,I fried the diced red onion on the stove successfully.,I should now fry the sliced yellow bell pepper as the next step in the recipe.,take sliced yellow bell pepper from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one.
-
-You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
-
-
-
-There is a sliced yellow bell pepper, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a diced fried red onion and a knife.,4 of 7,0.5714285714285714,False,
-23,,I tried to take the sliced yellow bell pepper but was carrying too many things.,I should drop the diced fried red onion to free up space for the sliced yellow bell pepper.,drop diced fried red onion,,You drop the red onion on the ground.,Kitchen,"You are in a kitchen. A standard one.
-
-You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
-
-
-
-There is a diced fried red onion, a sliced yellow bell pepper, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a knife.,4 of 7,0.5714285714285714,False,
-24,,I dropped the diced fried red onion to free up space and now I am carrying only the knife.,I should take the sliced yellow bell pepper from the floor now.,take sliced yellow bell pepper from floor,,You pick up the yellow bell pepper from the ground.,Kitchen,"You are in a kitchen. A standard one.
-
-You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
-
-
-
-There is a diced fried red onion, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a sliced yellow bell pepper and a knife.,4 of 7,0.5714285714285714,False,
-25,,I took the sliced yellow bell pepper from the floor and now I am carrying it along with the knife.,I should fry the sliced yellow bell pepper on the stove as the next step in the recipe.,cook sliced yellow bell pepper with stove,,"You fried the yellow bell pepper.
+There is a knife, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a diced fried red onion and a sliced yellow bell pepper.,4 of 7,0.5714285714285714,False,
+22,,I fried the diced red onion on the stove successfully.,I should now fry the sliced yellow bell pepper on the stove as the next step in the recipe.,cook sliced yellow bell pepper with stove,,"You fried the yellow bell pepper.
 
 
 
@@ -195,36 +170,8 @@ You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such
 
 
 
-There is a diced fried red onion, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a sliced fried yellow bell pepper and a knife.,5 of 7,0.7142857142857143,False,
-26,,I fried the sliced yellow bell pepper on the stove successfully.,I should now prepare the meal using the fried red onion and fried yellow bell pepper.,prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A standard one.
-
-You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
-
-
-
-There is a diced fried red onion, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a sliced fried yellow bell pepper and a knife.,5 of 7,0.7142857142857143,False,
-27,,I tried to prepare the meal but was told I still miss something.,I should take the diced fried red onion from the floor to have both ingredients needed for the meal.,take diced fried red onion from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A standard one.
-
-You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
-
-
-
-There is a diced fried red onion, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a sliced fried yellow bell pepper and a knife.,5 of 7,0.7142857142857143,False,
-28,,I tried to take the diced fried red onion but was carrying too many things.,I should drop the knife to free up space and then take the diced fried red onion.,drop knife,,You drop the knife on the ground.,Kitchen,"You are in a kitchen. A standard one.
-
-You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
-
-
-
-There is a knife, a diced fried red onion, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a sliced fried yellow bell pepper.,5 of 7,0.7142857142857143,False,
-29,,I dropped the knife to free up space.,I should now take the diced fried red onion from the floor.,take diced fried red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You are in a kitchen. A standard one.
-
-You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
-
-
-
-There is a knife, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a diced fried red onion and a sliced fried yellow bell pepper.,5 of 7,0.7142857142857143,False,
-30,,I took the diced fried red onion from the floor.,I should now prepare the meal with the diced fried red onion and sliced fried yellow bell pepper.,prepare meal,,"Adding the meal to your inventory.
+There is a knife, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a diced fried red onion and a sliced fried yellow bell pepper.,5 of 7,0.7142857142857143,False,
+23,,I fried the sliced yellow bell pepper on the stove successfully.,I should now prepare the meal using the fried red onion and fried yellow bell pepper.,prepare meal,,"Adding the meal to your inventory.
 
 
 
@@ -234,4 +181,23 @@ You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such
 
 
 
-There is a knife, a red hot pepper and a raw yellow potato on the floor.",You are carrying: a meal.,6 of 7,0.8571428571428571,True,
+There is a knife, a raw yellow potato and a red hot pepper on the floor.",You are carrying: a meal.,6 of 7,0.8571428571428571,False,
+24,,"I prepared the meal using the fried red onion and fried yellow bell pepper, and it was added to my inventory.",I should now eat the meal to complete the task.,eat meal,,"You eat the meal. Not bad.
+
+
+Your score has just gone up by one point.
+
+
+                               *** The End ***
+
+You scored 7 out of a possible 7, in 23 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You are in a kitchen. A standard one.
+
+You see a fridge. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. The fridge contains a raw red potato and a white onion. You can see an oven. You rest your hand against a wall, but you miss the wall and fall onto a table. You wonder idly who left that here. On the table you can make out a cookbook. You can make out a counter. The counter is vast. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the counter. You scan the room for a stove, and you find a stove. The stove is conventional. But the thing hasn't got anything on it.
+
+
+
+There is a knife, a raw yellow potato and a red hot pepper on the floor.",You are carrying nothing.,7 of 7,1.0,True,

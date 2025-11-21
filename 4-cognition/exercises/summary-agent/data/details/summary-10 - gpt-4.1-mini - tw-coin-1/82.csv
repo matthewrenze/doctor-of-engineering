@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the cubicle.,I should go west through the unguarded entranceway as suggested.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+1,,I am in the cubicle.,I should go west as the entranceway is unguarded.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
 
 
 
@@ -13,12 +13,12 @@ You don't like doors? Why not try going east, that entranceway is unblocked. The
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I went west from the cubicle and arrived in the chamber.,I should go south as the next step in the task.,go south,,You can't go that way.,Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+2,,I went west from the cubicle and arrived in a chamber.,I should go south next as per the task instructions.,go south,,You can't go that way.,Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
 
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-3,,I tried to go south from the chamber but was unable to.,"Since south is blocked, I will try going east as suggested.",go east,,"You've seen better cubicles, but at least this one seems pretty typical.
+3,,I tried to go south from the chamber but couldn't.,"Since I can't go south, I will try to go east as suggested.",go east,,"You've seen better cubicles, but at least this one seems pretty typical.
 
 
 
@@ -27,7 +27,7 @@ You don't like doors? Why not try going west, that entranceway is unguarded.",Cu
 
 
 You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I went east from the chamber and returned to the cubicle.,I should try going west again from the cubicle as the first step instructed.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+4,,I went east from the chamber and returned to the cubicle.,"I will try to go west again from the cubicle, then south, then east twice as per the instructions.",go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
 
 
 
@@ -36,7 +36,7 @@ You don't like doors? Why not try going east, that entranceway is unblocked. The
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I went west from the cubicle and arrived in the chamber again.,I should try going east from the chamber as the next step.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
+5,,I went west from the cubicle and arrived in the chamber again.,I will try to go east twice as per the instructions.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
 
 
 
@@ -45,12 +45,12 @@ You don't like doors? Why not try going west, that entranceway is unguarded.",Cu
 
 
 You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I went east from the chamber and returned to the cubicle.,I should try going east from the cubicle as the next step.,go east,,You can't go that way.,Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
+6,,I went east from the chamber and returned to the cubicle.,I will try to go east again as per the instructions.,go east,,You can't go that way.,Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
 
 
 
 You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I tried to go east from the cubicle but was unable to.,"Since east is blocked, I will try going west again from the cubicle.",go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+7,,I tried to go east from the cubicle but couldn't.,"I will try to go east from the chamber again by going west first, then south, then east as per the instructions.",go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
 
 
 
@@ -59,7 +59,108 @@ You don't like doors? Why not try going east, that entranceway is unblocked. The
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I went west from the cubicle and arrived in the chamber again.,I should try going west from the chamber as the next step.,go west,,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
+8,,I went west from the cubicle and arrived in the chamber again.,I will try to go south from the chamber again.,go south,,You can't go that way.,Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+9,,I tried to go south from the chamber but couldn't.,I will try to go east from the chamber.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I went east from the chamber and returned to the cubicle.,I will try to go west from the cubicle again.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I went west from the cubicle and arrived in the chamber again.,I will try to go east from the chamber.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I went east from the chamber and returned to the cubicle.,I will try to take a trip south from the cubicle as per the instructions.,go south,,You can't go that way.,Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I tried to go south from the cubicle but couldn't.,I will try to go west from the cubicle again.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went west from the cubicle and arrived in the chamber again.,I will try to take a trip south from the chamber.,go south,,You can't go that way.,Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I tried to go south from the chamber but couldn't.,I will try to go east from the chamber.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went east from the chamber and returned to the cubicle.,I will try to take the coin from the floor of the cheap laundromat as the final step.,take coin from floor,,You can't see any such thing.,Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I tried to take the coin from the floor but couldn't find it.,I should explore more to find the cheap laundromat where the coin is located. I will go west to the chamber again.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went west from the cubicle and arrived in the chamber again.,I will try to go east from the chamber to return to the cubicle and look for other directions or clues to find the cheap laundromat.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went east from the chamber and returned to the cubicle.,I will try to look around the cubicle carefully to find any items or clues.,look,,"You've seen better cubicles, but at least this one seems pretty typical.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I looked around the cubicle but found nothing new.,I will try to go west to the chamber again and explore further.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I went west from the cubicle and arrived in the chamber again.,I will try to go west from the chamber to see if there is another room or the cheap laundromat.,go west,,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
 
 
 
@@ -68,7 +169,7 @@ You need an unguarded exit? You should try going east. There is an exit to the s
 
 
 You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I went west from the chamber and arrived in the scullery.,I should try going south from the scullery as the next step.,go south,,"Well, here we are in the basement.
+22,,I went west from the chamber and arrived in the scullery.,I will try to go south from the scullery to explore further.,go south,,"Well, here we are in the basement.
 
 
 
@@ -77,7 +178,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. The
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I went south from the scullery and arrived in the basement.,I should try going east from the basement as the next step.,go east,,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
+23,,I went south from the scullery and arrived in the basement.,I will try to go east from the basement to explore more.,go east,,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
 
 
 
@@ -86,7 +187,7 @@ There is an unguarded exit to the east. There is an unblocked exit to the west."
 
 
 There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I went east from the basement and arrived in the balmy dish-pit.,I should try going east from the balmy dish-pit as the next step.,go east,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+24,,I went east from the basement and arrived in the balmy dish-pit.,I will try to go east from the balmy dish-pit to continue exploring.,go east,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
 
 
 
@@ -95,7 +196,26 @@ You need an unguarded exit? You should try going east. You don't like doors? Why
 
 
 You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I went east from the balmy dish-pit and arrived in the launderette.,I should try going east from the launderette as the next step.,go east,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+25,,I went east from the balmy dish-pit and arrived in the launderette.,I will look around the launderette to find the coin on the floor.,look,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I looked around the launderette but did not find the coin yet.,I will try to take the coin from the floor in the launderette.,take coin from floor,,You can't see any such thing.,Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I tried to take the coin from the floor in the launderette but couldn't find it.,I will examine the launderette more closely to find the coin.,examine launderette,,You can't see any such thing.,Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I examined the launderette but still couldn't find the coin.,I will try to go east from the launderette to see if the coin is in the next room.,go east,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
@@ -104,7 +224,16 @@ There is an unblocked exit to the east. You don't like doors? Why not try going 
 
 
 There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I went east from the launderette and arrived in the sweaty kitchen.,I should try going east from the sweaty kitchen as the next step.,go east,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+29,,I went east from the launderette and arrived in the sweaty kitchen.,I will look around the sweaty kitchen to find the coin.,look,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",Sweaty Kitchen,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I looked around the sweaty kitchen but did not find the coin.,I will try to go east from the sweaty kitchen to explore further.,go east,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
 
 
 
@@ -113,7 +242,16 @@ There is an exit to the north. Don't worry, it is unguarded. There is an unguard
 
 
 There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I went east from the sweaty kitchen and arrived in the stuffed spare room.,I should try going north from the stuffed spare room as the next step.,go north,,"You've entered a balmy canteen.
+31,,I went east from the sweaty kitchen and arrived in the stuffed spare room.,I will look around the stuffed spare room to find the coin.,look,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",Stuffed Spare Room,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I looked around the stuffed spare room but did not find the coin.,I will try to go north from the stuffed spare room to explore further.,go north,,"You've entered a balmy canteen.
 
 
 
@@ -122,610 +260,7 @@ There is an unguarded exit to the south. There is an unblocked exit to the west.
 
 
 There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I went north from the stuffed spare room and arrived in the balmy canteen.,I should try going south from the balmy canteen as the next step.,go south,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
-
-
-
-There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",Stuffed Spare Room,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
-
-
-
-There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I went south from the balmy canteen and arrived back in the stuffed spare room.,I should try going west from the stuffed spare room as the next step.,go west,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",Sweaty Kitchen,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I went west from the stuffed spare room and arrived in the sweaty kitchen.,I should try going west from the sweaty kitchen as the next step.,go west,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I went west from the sweaty kitchen and arrived in the launderette.,I should try going south from the launderette as the next step.,go south,,You can't go that way.,Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I tried to go south from the launderette but was unable to.,I should try going west from the launderette as the next step.,go west,,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",Balmy Dish-Pit,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I went west from the launderette and arrived in the balmy dish-pit.,I should try going east from the balmy dish-pit as the next step.,go east,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I went east from the balmy dish-pit and arrived in the launderette.,I should take the coin from the floor of the launderette as the final step.,take coin from floor,,You can't see any such thing.,Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I tried to take the coin from the floor of the launderette but couldn't find it.,I should look around the launderette carefully to find the coin.,look,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I looked around the launderette but did not find any new information about the coin.,I should examine the floor in the launderette to find the coin.,examine floor,,You can't see any such thing.,Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I examined the floor in the launderette but couldn't find the coin.,I should look around the balmy dish-pit again to see if the coin is there.,go west,,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",Balmy Dish-Pit,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I went west from the launderette and arrived in the balmy dish-pit.,I should look around the balmy dish-pit carefully to find the coin.,look,,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",Balmy Dish-Pit,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I looked around the balmy dish-pit but did not find any new information about the coin.,I should examine the floor in the balmy dish-pit to find the coin.,examine floor,,You can't see any such thing.,Balmy Dish-Pit,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I examined the floor in the balmy dish-pit but couldn't find the coin.,I should try going west from the balmy dish-pit to explore further.,go west,,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",Basement,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I went west from the balmy dish-pit and arrived in the basement.,I should look around the basement to find the coin.,look,,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",Basement,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I looked around the basement but did not find any new information about the coin.,I should examine the floor in the basement to find the coin.,examine floor,,You can't see any such thing.,Basement,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I examined the floor in the basement but couldn't find the coin.,I should try going north from the basement to explore further.,go north,,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Scullery,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I went north from the basement and arrived in the scullery.,I should look around the scullery carefully to find the coin.,look,,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Scullery,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I looked around the scullery but did not find any new information about the coin.,I should examine the floor in the scullery to find the coin.,examine floor,,You can't see any such thing.,Scullery,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I examined the floor in the scullery but couldn't find the coin.,I should try going east from the scullery to explore further.,go east,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I went east from the scullery and arrived in the chamber.,I should look around the chamber carefully to find the coin.,look,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I looked around the chamber but did not find any new information about the coin.,I should examine the floor in the chamber to find the coin.,examine floor,,You can't see any such thing.,Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I examined the floor in the chamber but couldn't find the coin.,I should try going east from the chamber to explore further.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I went east from the chamber and arrived in the cubicle.,I should look around the cubicle carefully to find the coin.,look,,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I looked around the cubicle but did not find any new information about the coin.,I should examine the floor in the cubicle to find the coin.,examine floor,,You can't see any such thing.,Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I examined the floor in the cubicle but couldn't find the coin.,I should go west from the cubicle to continue exploring.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I went west from the cubicle and arrived in the chamber.,I should try going east from the chamber to explore further.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I went east from the chamber and arrived in the cubicle.,I should try going west from the cubicle to explore further.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I went west from the cubicle and arrived in the chamber.,I should try going east from the chamber to explore further.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I went east from the chamber and arrived in the cubicle.,I should try going west from the cubicle to explore further.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I went west from the cubicle and arrived in the chamber.,I should try going east from the chamber to explore further.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I went east from the chamber and arrived in the cubicle.,I should try going west from the cubicle to explore further.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I went west from the cubicle and arrived in the chamber.,I should look around the chamber to find the coin.,look,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I looked around the chamber but did not find any new information about the coin.,I should examine the floor in the chamber to find the coin.,examine floor,,You can't see any such thing.,Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I examined the floor in the chamber but couldn't find the coin.,I should try going west from the chamber to explore other areas.,go west,,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Scullery,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I went west from the chamber and arrived in the scullery.,I should look around the scullery to find the coin.,look,,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Scullery,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I looked around the scullery but did not find any new information about the coin.,I should examine the floor in the scullery to find the coin.,examine floor,,You can't see any such thing.,Scullery,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I examined the floor in the scullery but couldn't find the coin.,I should try going south from the scullery to explore further.,go south,,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",Basement,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I went south from the scullery and arrived in the basement.,I should look around the basement to find the coin.,look,,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",Basement,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I looked around the basement but did not find any new information about the coin.,I should examine the floor in the basement to find the coin.,examine floor,,You can't see any such thing.,Basement,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I examined the floor in the basement but couldn't find the coin.,I should try going east from the basement to explore further.,go east,,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",Balmy Dish-Pit,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-55,,I went east from the basement and arrived in the balmy dish-pit.,I should look around the balmy dish-pit to find the coin.,look,,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",Balmy Dish-Pit,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-56,,I looked around the balmy dish-pit but did not find any new information about the coin.,I should examine the floor in the balmy dish-pit to find the coin.,examine floor,,You can't see any such thing.,Balmy Dish-Pit,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-57,,I examined the floor in the balmy dish-pit but couldn't find the coin.,I should try going east from the balmy dish-pit to explore further.,go east,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I went east from the balmy dish-pit and arrived in the launderette.,I should look around the launderette to find the coin.,look,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-59,,I looked around the launderette but did not find any new information about the coin.,I should examine the floor in the launderette to find the coin.,examine floor,,You can't see any such thing.,Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I examined the floor in the launderette but couldn't find the coin.,I should try to take the coin from the floor of the launderette again.,take coin from floor,,You can't see any such thing.,Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I tried to take the coin from the floor of the launderette again but couldn't find it.,I should try going west from the launderette to explore other areas.,go west,,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",Balmy Dish-Pit,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-62,,I went west from the launderette and arrived in the balmy dish-pit.,I should try going west from the balmy dish-pit to explore further.,go west,,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",Basement,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-63,,I went west from the balmy dish-pit and arrived in the basement.,I should try going north from the basement to explore further.,go north,,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Scullery,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I went north from the basement and arrived in the scullery.,I should try going east from the scullery to explore further.,go east,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-65,,I went east from the scullery and arrived in the chamber.,I should look around the chamber to find the coin.,look,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-66,,I looked around the chamber but did not find any new information about the coin.,I should examine the floor in the chamber to find the coin.,examine floor,,You can't see any such thing.,Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-67,,I examined the floor in the chamber but couldn't find the coin.,I should try going east from the chamber to explore further.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-68,,I went east from the chamber and arrived in the cubicle.,I should look around the cubicle to find the coin.,look,,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-69,,I looked around the cubicle but did not find any new information about the coin.,I should examine the floor in the cubicle to find the coin.,examine floor,,You can't see any such thing.,Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-70,,I examined the floor in the cubicle but couldn't find the coin.,I should go west from the cubicle to continue exploring.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-71,,I went west from the cubicle and arrived in the chamber.,I should try going east from the chamber to continue exploring.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-72,,I went east from the chamber and arrived in the cubicle.,I should try going west from the cubicle to continue exploring.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-73,,I went west from the cubicle and arrived in the chamber.,I should try going east from the chamber to continue exploring.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-74,,I went east from the chamber and arrived in the cubicle.,I should try going west from the cubicle to continue exploring.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-75,,I went west from the cubicle and arrived in the chamber.,I should try going east from the chamber to continue exploring.,go east,,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",Cubicle,"You've seen better cubicles, but at least this one seems pretty typical.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-76,,I went east from the chamber and arrived in the cubicle.,I should try to take a trip west from the cubicle again.,go west,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-77,,I went west from the cubicle and arrived in the chamber.,I should look around the chamber to find the coin.,look,,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-78,,I looked around the chamber but did not find any new information about the coin.,I should examine the floor in the chamber to find the coin.,examine floor,,You can't see any such thing.,Chamber,"You arrive in a chamber. A typical kind of place. I guess you better just go and list everything you see here.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-79,,I examined the floor in the chamber but couldn't find the coin.,I should try going west from the chamber to explore other areas.,go west,,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Scullery,"Look at you, bigshot, walking into a scullery like it isn't some huge deal. You can barely contain your excitement.
-
-
-
-You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-80,,I went west from the chamber and arrived in the scullery.,I should try going south from the scullery to continue exploring.,go south,,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",Basement,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-81,,I went south from the scullery and arrived in the basement.,I should try going east from the basement to continue exploring.,go east,,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",Balmy Dish-Pit,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-82,,I went east from the basement and arrived in the balmy dish-pit.,I should look around the balmy dish-pit to find the coin.,look,,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",Balmy Dish-Pit,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-83,,I looked around the balmy dish-pit but did not find any new information about the coin.,I should try going east from the balmy dish-pit to continue exploring.,go east,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-84,,I went east from the balmy dish-pit and arrived in the launderette.,I should look around the launderette to find the coin.,look,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-85,,I looked around the launderette but did not find any new information about the coin.,I should examine the floor in the launderette to find the coin.,examine floor,,You can't see any such thing.,Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-86,,I examined the floor in the launderette but couldn't find the coin.,I should try going east from the launderette to explore further.,go east,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",Sweaty Kitchen,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-87,,I went east from the launderette and arrived in the sweaty kitchen.,I should look around the sweaty kitchen to find the coin.,look,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",Sweaty Kitchen,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-88,,I looked around the sweaty kitchen but did not find any new information about the coin.,I should try going east from the sweaty kitchen to continue exploring.,go east,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
-
-
-
-There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",Stuffed Spare Room,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
-
-
-
-There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-89,,I went east from the sweaty kitchen and arrived in the stuffed spare room.,I should look around the stuffed spare room to find the coin.,look,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
-
-
-
-There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",Stuffed Spare Room,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
-
-
-
-There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-90,,I looked around the stuffed spare room but did not find any new information about the coin.,I should try going north from the stuffed spare room to continue exploring.,go north,,"You've entered a balmy canteen.
+33,,I went north from the stuffed spare room and arrived in the balmy canteen.,I will look around the balmy canteen to find the coin.,look,,"You've entered a balmy canteen.
 
 
 
@@ -734,7 +269,25 @@ There is an unguarded exit to the south. There is an unblocked exit to the west.
 
 
 There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-91,,I went north from the stuffed spare room and arrived in the balmy canteen.,I should look around the balmy canteen to find the coin.,look,,"You've entered a balmy canteen.
+34,,I looked around the balmy canteen but did not find the coin.,I will try to go west from the balmy canteen to explore further.,go west,,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Gloomy Basement,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I went west from the balmy canteen and arrived in the gloomy basement.,I will look around the gloomy basement to find the coin.,look,,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Gloomy Basement,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I looked around the gloomy basement but did not find the coin.,I will try to go east from the gloomy basement to explore further.,go east,,"You've entered a balmy canteen.
 
 
 
@@ -743,7 +296,7 @@ There is an unguarded exit to the south. There is an unblocked exit to the west.
 
 
 There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-92,,I looked around the balmy canteen but did not find any new information about the coin.,I should try going south from the balmy canteen to continue exploring.,go south,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+37,,I went east from the gloomy basement and returned to the balmy canteen.,I will try to go south from the balmy canteen to explore further.,go south,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
 
 
 
@@ -752,7 +305,7 @@ There is an exit to the north. Don't worry, it is unguarded. There is an unguard
 
 
 There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-93,,I went south from the balmy canteen and arrived in the stuffed spare room.,I should try going west from the stuffed spare room to continue exploring.,go west,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+38,,I went south from the balmy canteen and arrived in the stuffed spare room.,I will try to go west from the stuffed spare room to explore further.,go west,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
@@ -761,7 +314,7 @@ There is an unblocked exit to the east. You don't like doors? Why not try going 
 
 
 There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-94,,I went west from the stuffed spare room and arrived in the sweaty kitchen.,I should try going west from the sweaty kitchen to continue exploring.,go west,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+39,,I went west from the stuffed spare room and arrived in the sweaty kitchen.,I will try to go west from the sweaty kitchen to explore further.,go west,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
 
 
 
@@ -770,34 +323,12 @@ You need an unguarded exit? You should try going east. You don't like doors? Why
 
 
 You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-95,,I went west from the sweaty kitchen and arrived in the launderette.,I should try going west from the launderette to explore the unblocked entranceway.,go west,,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
+40,,I went west from the sweaty kitchen and arrived in the launderette.,I will try to take the coin from the floor in the launderette.,take coin from floor,,You can't see any such thing.,Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
 
 
 
-There is an unguarded exit to the east. There is an unblocked exit to the west.",Balmy Dish-Pit,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-96,,I went west from the launderette and arrived in the balmy dish-pit.,I should try going west from the balmy dish-pit to continue exploring.,go west,,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",Basement,"Well, here we are in the basement.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-97,,I went west from the balmy dish-pit and arrived in the basement.,I should try going east from the basement to explore the unguarded entranceway.,go east,,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",Balmy Dish-Pit,"You are in a dish-pit. A balmy kind of place. You start to take note of what's in the room.
-
-
-
-There is an unguarded exit to the east. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-98,,I went east from the basement and arrived in the balmy dish-pit.,I should try going east from the balmy dish-pit to continue exploring.,go east,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I tried to take the coin from the floor in the launderette but couldn't find it.,I will look around the launderette more carefully to find the coin.,look,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
 
 
 
@@ -806,7 +337,97 @@ You need an unguarded exit? You should try going east. You don't like doors? Why
 
 
 You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-99,,I went east from the balmy dish-pit and arrived in the launderette.,I should look around the launderette carefully to find the coin on the floor.,look,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+42,,I looked around the launderette again but still did not find the coin.,I will try to go east from the launderette to explore further.,go east,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",Sweaty Kitchen,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I went east from the launderette and arrived in the sweaty kitchen.,I will try to go east from the sweaty kitchen to explore further.,go east,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",Stuffed Spare Room,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I went east from the sweaty kitchen and arrived in the stuffed spare room.,I will try to go north from the stuffed spare room to explore further.,go north,,"You've entered a balmy canteen.
+
+
+
+There is an unguarded exit to the south. There is an unblocked exit to the west.",Balmy Canteen,"You've entered a balmy canteen.
+
+
+
+There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I went north from the stuffed spare room and arrived in the balmy canteen.,I will try to go west from the balmy canteen to explore further.,go west,,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Gloomy Basement,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I went west from the balmy canteen and arrived in the gloomy basement.,I will try to go west from the gloomy basement to explore further.,go west,,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Super Hot Canteen,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I went west from the gloomy basement and arrived in the super hot canteen.,I will look around the super hot canteen to find the coin.,look,,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Super Hot Canteen,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I looked around the super hot canteen but did not find the coin.,I will try to go east from the super hot canteen to explore further.,go east,,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Gloomy Basement,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I went east from the super hot canteen and arrived in the gloomy basement.,I will try to go east from the gloomy basement to explore further.,go east,,"You've entered a balmy canteen.
+
+
+
+There is an unguarded exit to the south. There is an unblocked exit to the west.",Balmy Canteen,"You've entered a balmy canteen.
+
+
+
+There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I went east from the gloomy basement and arrived in the balmy canteen.,I will try to go south from the balmy canteen to explore further.,go south,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",Stuffed Spare Room,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I went south from the balmy canteen and arrived in the stuffed spare room.,I will try to go west from the stuffed spare room to explore further.,go west,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",Sweaty Kitchen,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I went west from the stuffed spare room and arrived in the sweaty kitchen.,I will try to go west from the sweaty kitchen to explore further.,go west,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
 
 
 
@@ -815,8 +436,427 @@ You need an unguarded exit? You should try going east. You don't like doors? Why
 
 
 You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-100,,I looked around the launderette but did not find any new information about the coin.,I should try to take the coin from the floor of the launderette again.,take coin from floor,,You can't see any such thing.,Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+53,,I went west from the sweaty kitchen and arrived in the launderette.,I will look around the launderette carefully to find the coin.,look,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
 
 
 
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,True,
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I looked around the launderette but did not find the coin.,I will try to take the coin from the floor in the launderette again.,take coin from floor,,You can't see any such thing.,Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I tried to take the coin from the floor in the launderette but couldn't find it.,I will try to go east from the launderette to explore further.,go east,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",Sweaty Kitchen,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I went east from the launderette and arrived in the sweaty kitchen.,I will try to go east from the sweaty kitchen to explore further.,go east,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",Stuffed Spare Room,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I went east from the sweaty kitchen and arrived in the stuffed spare room.,I will try to go north from the stuffed spare room to explore further.,go north,,"You've entered a balmy canteen.
+
+
+
+There is an unguarded exit to the south. There is an unblocked exit to the west.",Balmy Canteen,"You've entered a balmy canteen.
+
+
+
+There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I went north from the stuffed spare room and arrived in the balmy canteen.,I will try to go west from the balmy canteen to explore further.,go west,,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Gloomy Basement,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I went west from the balmy canteen and arrived in the gloomy basement.,I will try to go west from the gloomy basement to explore further.,go west,,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Super Hot Canteen,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went west from the gloomy basement and arrived in the super hot canteen.,I will look around the super hot canteen to find the coin.,look,,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Super Hot Canteen,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I looked around the super hot canteen but did not find the coin.,I will try to go south from the super hot canteen to explore further.,go south,,"You find yourself in a dish-pit. A standard kind of place.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Dish-Pit,"You find yourself in a dish-pit. A standard kind of place.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I went south from the super hot canteen and arrived in the dish-pit.,I will try to go east from the dish-pit to explore further.,go east,,"You're now in the study.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Study,"You're now in the study.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I went east from the dish-pit and arrived in the study.,I will try to go west from the study to explore further.,go west,,"You find yourself in a dish-pit. A standard kind of place.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Dish-Pit,"You find yourself in a dish-pit. A standard kind of place.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I went west from the study and returned to the dish-pit.,I will try to go north from the dish-pit to explore further.,go north,,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Super Hot Canteen,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+65,,I went north from the dish-pit and arrived in the super hot canteen.,I will try to go east from the super hot canteen to explore further.,go east,,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Gloomy Basement,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+66,,I went east from the super hot canteen and arrived in the gloomy basement.,I will try to go east from the gloomy basement to explore further.,go east,,"You've entered a balmy canteen.
+
+
+
+There is an unguarded exit to the south. There is an unblocked exit to the west.",Balmy Canteen,"You've entered a balmy canteen.
+
+
+
+There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+67,,I went east from the gloomy basement and arrived in the balmy canteen.,I will try to go south from the balmy canteen to explore further.,go south,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",Stuffed Spare Room,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+68,,I went south from the balmy canteen and arrived in the stuffed spare room.,I will try to go west from the stuffed spare room to explore further.,go west,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",Sweaty Kitchen,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+69,,I went west from the stuffed spare room and arrived in the sweaty kitchen.,I will look around the sweaty kitchen to find the coin.,look,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",Sweaty Kitchen,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+70,,I looked around the sweaty kitchen but did not find the coin.,I will try to go west from the sweaty kitchen to explore further.,go west,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+71,,I went west from the sweaty kitchen and arrived in the launderette.,I will look around the launderette carefully to find the coin.,look,,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+72,,I looked around the launderette but did not find the coin.,I will try to take the coin from the floor in the launderette.,take coin from floor,,You can't see any such thing.,Launderette,"Well I'll be, you are in a place we're calling a launderette. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+73,,I tried to take the coin from the floor in the launderette but couldn't find it.,I will try to go east from the launderette to explore further.,go east,,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",Sweaty Kitchen,"You arrive in a kitchen. A sweaty one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+74,,I went east from the launderette and arrived in the sweaty kitchen.,I will try to go east from the sweaty kitchen to explore further.,go east,,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",Stuffed Spare Room,"You arrive in a stuffed kind of place. That is to say, you're in a spare room.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+75,,I went east from the sweaty kitchen and arrived in the stuffed spare room.,I will try to go north from the stuffed spare room to explore further.,go north,,"You've entered a balmy canteen.
+
+
+
+There is an unguarded exit to the south. There is an unblocked exit to the west.",Balmy Canteen,"You've entered a balmy canteen.
+
+
+
+There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+76,,I went north from the stuffed spare room and arrived in the balmy canteen.,I will try to go west from the balmy canteen to explore further.,go west,,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Gloomy Basement,"You find yourself in a basement. A gloomy one.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+77,,I went west from the balmy canteen and arrived in the gloomy basement.,I will try to go west from the gloomy basement to explore further.,go west,,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Super Hot Canteen,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+78,,I went west from the gloomy basement and arrived in the super hot canteen.,I will look around the super hot canteen to find the coin.,look,,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",Super Hot Canteen,"You're now in the super hot canteen. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+79,,I looked around the super hot canteen but did not find the coin.,I will try to go south from the super hot canteen to explore further.,go south,,"You find yourself in a dish-pit. A standard kind of place.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Dish-Pit,"You find yourself in a dish-pit. A standard kind of place.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+80,,I went south from the super hot canteen and arrived in the dish-pit.,I will try to go east from the dish-pit to explore further.,go east,,"You're now in the study.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Study,"You're now in the study.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+81,,I went east from the dish-pit and arrived in the study.,I will try to go north from the study to explore further.,go north,,"You find yourself in a cookery. An ordinary one.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked.",Cookery,"You find yourself in a cookery. An ordinary one.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+82,,I went north from the study and arrived in the cookery.,I will try to go east from the cookery to explore further.,go east,,"You find yourself in an office. An ordinary one. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",Office,"You find yourself in an office. An ordinary one. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+You need an unblocked exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+83,,I went east from the cookery and arrived in the office.,I will try to go south from the office to explore further.,go south,,"You've entered a studio.
+
+
+
+You need an unguarded exit? You should try going east. There is an unguarded exit to the north.",Studio,"You've entered a studio.
+
+
+
+You need an unguarded exit? You should try going east. There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+84,,I went south from the office and arrived in the studio.,I will try to go east from the studio to explore further.,go east,,"You find yourself in a bathroom. A normal one. You start to take note of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded.",Bathroom,"You find yourself in a bathroom. A normal one. You start to take note of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+85,,I went east from the studio and arrived in the bathroom.,I will look around the bathroom to find the coin.,look,,"You find yourself in a bathroom. A normal one. You start to take note of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded.",Bathroom,"You find yourself in a bathroom. A normal one. You start to take note of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+86,,I looked around the bathroom but did not find the coin.,I will try to go north from the bathroom to explore further.,go north,,"You arrive in a kitchenette. An upsettingly hot one.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",Upsettingly Hot Kitchenette,"You arrive in a kitchenette. An upsettingly hot one.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+87,,I went north from the bathroom and arrived in the upsettingly hot kitchenette.,I will look around the upsettingly hot kitchenette to find the coin.,look,,"You arrive in a kitchenette. An upsettingly hot one.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",Upsettingly Hot Kitchenette,"You arrive in a kitchenette. An upsettingly hot one.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+88,,I looked around the upsettingly hot kitchenette but did not find the coin.,I will try to go north from the upsettingly hot kitchenette to explore further.,go north,,"You've just walked into a pantry.
+
+
+
+You need an unguarded exit? You should try going east. There is an unguarded exit to the south.",Pantry,"You've just walked into a pantry.
+
+
+
+You need an unguarded exit? You should try going east. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+89,,I went north from the upsettingly hot kitchenette and arrived in the pantry.,I will look around the pantry to find the coin.,look,,"You've just walked into a pantry.
+
+
+
+You need an unguarded exit? You should try going east. There is an unguarded exit to the south.",Pantry,"You've just walked into a pantry.
+
+
+
+You need an unguarded exit? You should try going east. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+90,,I looked around the pantry but did not find the coin.,I will try to go east from the pantry to explore further.,go east,,"You find yourself in a vault. A typical one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west.",Vault,"You find yourself in a vault. A typical one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+91,,I went east from the pantry and arrived in the vault.,I will look around the vault to find the coin.,look,,"You find yourself in a vault. A typical one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west.",Vault,"You find yourself in a vault. A typical one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+92,,I looked around the vault but did not find the coin.,I will try to go south from the vault to explore further.,go south,,"You've entered a cookhouse.
+
+
+
+You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Cookhouse,"You've entered a cookhouse.
+
+
+
+You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+93,,I went south from the vault and arrived in the cookhouse.,I will look around the cookhouse to find the coin.,look,,"You've entered a cookhouse.
+
+
+
+You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Cookhouse,"You've entered a cookhouse.
+
+
+
+You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+94,,I looked around the cookhouse but did not find the coin.,I will try to go west from the cookhouse to explore further.,go west,,"I am sorry to announce that you are now in the shower.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Shower,"I am sorry to announce that you are now in the shower.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+95,,I went west from the cookhouse and arrived in the shower.,I will look around the shower to find the coin.,look,,"I am sorry to announce that you are now in the shower.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",Shower,"I am sorry to announce that you are now in the shower.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+96,,I looked around the shower but did not find the coin.,I will try to go south from the shower to explore further.,go south,,"You find yourself in a shower. A steamy kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Steamy Shower,"You find yourself in a shower. A steamy kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+97,,I went south from the shower and arrived in the steamy shower.,I will look around the steamy shower to find the coin.,look,,"You find yourself in a shower. A steamy kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Steamy Shower,"You find yourself in a shower. A steamy kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+98,,I looked around the steamy shower but did not find the coin.,I will try to go south from the steamy shower to explore further.,go south,,"You have fallen into the most roomy of all possible garages.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",Roomy Garage,"You have fallen into the most roomy of all possible garages.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+99,,I went south from the steamy shower and arrived in the roomy garage.,I will look around the roomy garage to find the coin.,look,,"You have fallen into the most roomy of all possible garages.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",Roomy Garage,"You have fallen into the most roomy of all possible garages.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+100,,I looked around the roomy garage but did not find the coin.,I will try to go south from the roomy garage to explore further.,go south,,"You've just shown up in an austere study. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Austere Study,"You've just shown up in an austere study. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,True,

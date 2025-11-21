@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 You can make out a toilet! But the thing is empty. It would have been so cool if there was stuff on the toilet.
 
 There is an exit to the west.","You are carrying: a raw purple potato, a banana, a raw pork chop, a white onion, a raw yellow potato and a red onion.",0 of 16,0.0,False,
-1,,I am in the bathroom.,I should go west to find the kitchen where the cookbook might be.,go west,,"Well, here we are in a corridor.
+1,,I am in the bathroom.,I need to go to the kitchen to check the cookbook for the recipe.,go west,,"Well, here we are in a corridor.
 
 
 
@@ -13,7 +13,7 @@ There is a closed screen door leading west. You need an exit without a door? You
 
 
 There is a closed screen door leading west. You need an exit without a door? You should try going east. There is an exit to the south. Don't worry, there is no door.","You are carrying: a raw purple potato, a banana, a raw pork chop, a white onion, a raw yellow potato and a red onion.",0 of 16,0.0,False,
-2,,I went west to the corridor; there is a closed screen door west and an open exit south.,"I should go south since there is no door blocking that way, to explore further for the kitchen.",go south,,"You are in a kitchen. A typical one.
+2,,I went west to the corridor.,I should go south where there is an exit without a door to reach the kitchen.,go south,,"You are in a kitchen. A typical one.
 
 You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
 
@@ -22,7 +22,7 @@ There is a closed frosted-glass door leading east. There is an exit to the north
 You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
 
 There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.","You are carrying: a raw purple potato, a banana, a raw pork chop, a white onion, a raw yellow potato and a red onion.",0 of 16,0.0,False,
-3,,"I went south and arrived in the kitchen with a knife on the table, a cookbook on the counter, and various vegetables.",I should examine the cookbook on the counter to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+3,,I went south to the kitchen.,I should examine the cookbook on the counter to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -51,33 +51,64 @@ dice the red apple
 You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
 
 There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.","You are carrying: a raw purple potato, a banana, a raw pork chop, a white onion, a raw yellow potato and a red onion.",0 of 16,0.0,False,
-4,,"I examined the cookbook and found a recipe requiring red apple, purple potato, red hot pepper, orange bell pepper, and carrot.","I need to gather the required ingredients from the kitchen and my inventory, starting with taking the red hot pepper and yellow bell pepper from the counter.",take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical one.
+4,,I examined the cookbook and found the recipe with ingredients and directions.,"I need to gather the ingredients from the kitchen and my inventory. I see a red hot pepper and a yellow bell pepper on the counter, but I need a red apple, purple potato, orange bell pepper, and carrot. I have a purple potato in my inventory but not the others. I should take the red hot pepper and yellow bell pepper from the counter first.",take red hot pepper from counter; take yellow bell pepper from counter,,You can't see any such thing.,Kitchen,"You are in a kitchen. A typical one.
 
 You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
 
 There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.","You are carrying: a raw purple potato, a banana, a raw pork chop, a white onion, a raw yellow potato and a red onion.",0 of 16,0.0,False,
-5,,I tried to take the red hot pepper but was carrying too many things already.,I should drop some items I don't need for the recipe to free up inventory space.,drop banana,,You drop the banana on the ground.,Kitchen,"You are in a kitchen. A typical one.
+5,,I tried to take the red hot pepper and yellow bell pepper from the counter but was told I can't see them.,"I need to take the red hot pepper and yellow bell pepper from the counter separately, one at a time.",take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical one.
+
+You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
+
+There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.","You are carrying: a raw purple potato, a banana, a raw pork chop, a white onion, a raw yellow potato and a red onion.",0 of 16,0.0,False,
+6,,I tried to take the red hot pepper but was told I am carrying too many things already.,I should drop some items from my inventory to make space for the needed ingredients.,drop banana; drop raw pork chop; drop white onion; drop red onion; drop raw yellow potato,,You can't see any such thing.,Kitchen,"You are in a kitchen. A typical one.
+
+You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
+
+There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.","You are carrying: a raw purple potato, a banana, a raw pork chop, a white onion, a raw yellow potato and a red onion.",0 of 16,0.0,False,
+7,,I tried to drop several items but was told I can't see any such thing.,I should drop items one at a time to ensure the command is recognized.,drop banana,,You drop the banana on the ground.,Kitchen,"You are in a kitchen. A typical one.
 
 You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
 
 There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
 
 There is a banana on the floor.","You are carrying: a raw purple potato, a raw pork chop, a white onion, a raw yellow potato and a red onion.",0 of 16,0.0,False,
-6,,I dropped the banana to free up inventory space.,I should now take the red hot pepper from the counter.,take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical one.
-
-You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
-
-There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
-
-There is a banana on the floor.","You are carrying: a raw purple potato, a raw pork chop, a white onion, a raw yellow potato and a red onion.",0 of 16,0.0,False,
-7,,I tried to take the red hot pepper again but still have too many items.,I should drop another unnecessary item to make more space.,drop raw pork chop,,You drop the pork chop on the ground.,Kitchen,"You are in a kitchen. A typical one.
+8,,I dropped the banana on the ground.,I should continue dropping items one by one to free up inventory space.,drop raw pork chop,,You drop the pork chop on the ground.,Kitchen,"You are in a kitchen. A typical one.
 
 You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
 
 There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
 
 There is a raw pork chop and a banana on the floor.","You are carrying: a raw purple potato, a white onion, a raw yellow potato and a red onion.",0 of 16,0.0,False,
-8,,I dropped the raw pork chop to free up more inventory space.,I should now take the red hot pepper from the counter.,take red hot pepper from counter,,"You take the red hot pepper from the counter.
+9,,I dropped the raw pork chop on the ground.,I should continue dropping items one by one to free up inventory space.,drop white onion,,You drop the white onion on the ground.,Kitchen,"You are in a kitchen. A typical one.
+
+You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
+
+There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
+
+There is a white onion, a raw pork chop and a banana on the floor.","You are carrying: a raw purple potato, a raw yellow potato and a red onion.",0 of 16,0.0,False,
+10,,I dropped the white onion on the ground.,I should continue dropping items one by one to free up inventory space.,drop red onion,,You drop the red onion on the ground.,Kitchen,"You are in a kitchen. A typical one.
+
+You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
+
+There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
+
+There is a red onion, a white onion, a raw pork chop and a banana on the floor.",You are carrying: a raw purple potato and a raw yellow potato.,0 of 16,0.0,False,
+11,,I dropped the red onion on the ground.,I should continue dropping items one by one to free up inventory space.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"You are in a kitchen. A typical one.
+
+You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
+
+There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
+
+There is a raw purple potato, a red onion, a white onion, a raw pork chop and a banana on the floor.",You are carrying: a raw yellow potato.,0 of 16,0.0,False,
+12,,I dropped the raw purple potato on the ground.,I should drop the last item in my inventory to free up space for the peppers.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You are in a kitchen. A typical one.
+
+You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a red hot pepper, a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
+
+There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
+
+There is a raw yellow potato, a raw purple potato, a red onion, a white onion, a raw pork chop and a banana on the floor.",You are carrying nothing.,0 of 16,0.0,False,
+13,,I dropped the raw yellow potato on the ground and now have an empty inventory.,I should take the red hot pepper and yellow bell pepper from the counter to proceed with the recipe.,take red hot pepper from counter,,"You take the red hot pepper from the counter.
 
 
 
@@ -87,98 +118,35 @@ You see a closed fridge. Were you looking for an oven? Because look over there, 
 
 There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
 
-There is a raw pork chop and a banana on the floor.","You are carrying: a red hot pepper, a raw purple potato, a white onion, a raw yellow potato and a red onion.",1 of 16,0.0625,False,
-9,,I took the red hot pepper from the counter successfully.,I should drop the white onion and red onion as they are not needed for the recipe.,drop white onion,,You drop the white onion on the ground.,Kitchen,"You are in a kitchen. A typical one.
-
-You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
-
-There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
-
-There is a white onion, a raw pork chop and a banana on the floor.","You are carrying: a red hot pepper, a raw purple potato, a raw yellow potato and a red onion.",1 of 16,0.0625,False,
-10,,I dropped the white onion to free up inventory space.,I should drop the red onion next to free up more space.,drop red onion,,You drop the red onion on the ground.,Kitchen,"You are in a kitchen. A typical one.
-
-You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
-
-There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
-
-There is a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a red hot pepper, a raw purple potato and a raw yellow potato.",1 of 16,0.0625,False,
-11,,I dropped the red onion to free up more inventory space.,I should take the red apple from the counter next.,take red apple from counter,,You can't see any such thing.,Kitchen,"You are in a kitchen. A typical one.
-
-You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a raw red potato, a yellow bell pepper and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
-
-There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
-
-There is a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a red hot pepper, a raw purple potato and a raw yellow potato.",1 of 16,0.0625,False,
-12,,I tried to take a red apple but it is not present on the counter.,I should take the yellow bell pepper from the counter instead.,take yellow bell pepper from counter,,You take the yellow bell pepper from the counter.,Kitchen,"You are in a kitchen. A typical one.
+There is a raw yellow potato, a raw purple potato, a red onion, a white onion, a raw pork chop and a banana on the floor.",You are carrying: a red hot pepper.,1 of 16,0.0625,False,
+14,,I took the red hot pepper from the counter.,I should take the yellow bell pepper from the counter next.,take yellow bell pepper from counter,,You take the yellow bell pepper from the counter.,Kitchen,"You are in a kitchen. A typical one.
 
 You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a raw red potato and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
 
 There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
 
-There is a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a yellow bell pepper, a red hot pepper, a raw purple potato and a raw yellow potato.",1 of 16,0.0625,False,
-13,,I took the yellow bell pepper from the counter successfully.,I should take the carrot from the floor to complete the ingredients for the recipe.,take carrot from floor,,You can't see any such thing.,Kitchen,"You are in a kitchen. A typical one.
+There is a raw yellow potato, a raw purple potato, a red onion, a white onion, a raw pork chop and a banana on the floor.",You are carrying: a yellow bell pepper and a red hot pepper.,1 of 16,0.0625,False,
+15,,I took the yellow bell pepper from the counter.,I should take the knife from the table to prepare the ingredients.,take knife from table,,You take the knife from the table.,Kitchen,"You are in a kitchen. A typical one.
 
-You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a raw red potato and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
-
-There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
-
-There is a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a yellow bell pepper, a red hot pepper, a raw purple potato and a raw yellow potato.",1 of 16,0.0625,False,
-14,,I tried to take a carrot from the floor but it is not present.,I should take the raw red potato from the counter instead.,take raw red potato from counter,,You take the red potato from the counter.,Kitchen,"You are in a kitchen. A typical one.
-
-You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
+You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can see a counter. You see a raw red potato and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
 
 There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
 
-There is a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a raw red potato, a yellow bell pepper, a red hot pepper, a raw purple potato and a raw yellow potato.",1 of 16,0.0625,False,
-15,,I took the raw red potato from the counter successfully.,I have all the ingredients from the recipe now; I should use the knife to prepare them.,dice raw red potato with knife,,You need to take the knife first.,Kitchen,"You are in a kitchen. A typical one.
-
-You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
-
-There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
-
-There is a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a raw red potato, a yellow bell pepper, a red hot pepper, a raw purple potato and a raw yellow potato.",1 of 16,0.0625,False,
-16,,I tried to dice the raw red potato but was told I need to take the knife first.,I should take the knife from the table before preparing the ingredients.,take knife from table,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A typical one.
-
-You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
-
-There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
-
-There is a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a raw red potato, a yellow bell pepper, a red hot pepper, a raw purple potato and a raw yellow potato.",1 of 16,0.0625,False,
-17,,I tried to take the knife but was carrying too many items.,I should drop one item to free inventory space before taking the knife.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You are in a kitchen. A typical one.
-
-You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. On the table you can see a knife. You can see a counter. You see a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
-
-There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
-
-There is a raw yellow potato, a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a raw red potato, a yellow bell pepper, a red hot pepper and a raw purple potato.",1 of 16,0.0625,False,
-18,,I dropped the raw yellow potato to free inventory space.,Now I should take the knife from the table.,take knife from table,,You take the knife from the table.,Kitchen,"You are in a kitchen. A typical one.
-
-You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can see a counter. You see a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
-
-There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
-
-There is a raw yellow potato, a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a knife, a raw red potato, a yellow bell pepper, a red hot pepper and a raw purple potato.",1 of 16,0.0625,False,
-19,,I took the knife from the table successfully.,I should dice all the raw vegetables I have to prepare the meal.,dice raw red potato with knife,,You dice the red potato.,Kitchen,"You are in a kitchen. A typical one.
-
-You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can see a counter. You see a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
-
-There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
-
-There is a raw yellow potato, a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a knife, a diced raw red potato, a yellow bell pepper, a red hot pepper and a raw purple potato.",1 of 16,0.0625,False,
-20,,I diced the raw red potato successfully.,I should dice the raw purple potato next to continue preparing the ingredients.,dice raw purple potato with knife,,"You dice the purple potato.
+There is a raw yellow potato, a raw purple potato, a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a knife, a yellow bell pepper and a red hot pepper.",1 of 16,0.0625,False,
+16,,I took the knife from the table.,I should dice the red hot pepper with the knife as part of the recipe.,dice red hot pepper with knife,,"You dice the red hot pepper.
 
 
 
                               *** You lost! ***
 
-You scored 1 out of a possible 16, in 18 turns.
+You scored 1 out of a possible 16, in 14 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 >",Kitchen,"You are in a kitchen. A typical one.
 
-You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can see a counter. You see a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
+You see a closed fridge. Were you looking for an oven? Because look over there, it's an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can see a counter. You see a raw red potato and a cookbook on the counter. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto a stove. But oh no! there's nothing on this piece of garbage.
 
 There is a closed frosted-glass door leading east. There is an exit to the north. Don't worry, there is no door. You need an exit without a door? You should try going south.
 
-There is a raw yellow potato, a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a knife, a diced raw red potato, a yellow bell pepper, a red hot pepper and a raw purple potato.",1 of 16,0.0625,True,
+There is a raw yellow potato, a raw purple potato, a red onion, a white onion, a raw pork chop and a banana on the floor.","You are carrying: a knife, a yellow bell pepper and a red hot pepper.",1 of 16,0.0625,True,

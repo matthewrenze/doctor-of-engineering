@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the kitchen.,I should go south as the task instructs to try going south first.,go south,,"Well, here we are in a canteen.
+1,,I am in the kitchen.,I should go south as the first step of the task.,go south,,"Well, here we are in a canteen.
 
 
 
@@ -13,7 +13,7 @@ There is an unblocked exit to the east. There is an exit to the north. Don't wor
 
 
 There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I am in the canteen.,I should go south as the first instruction says to try to go south.,go south,,"You've just walked into a parlor. Let's see what's in here.
+2,,I went south to the canteen.,I should go south again as the next step of the task.,go south,,"You've just walked into a parlor. Let's see what's in here.
 
 
 
@@ -22,7 +22,7 @@ You need an unblocked exit? You should try going east. There is an exit to the n
 
 
 You need an unblocked exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-3,,I went south twice and arrived in the parlor with multiple unblocked exits.,I should now move east as instructed.,go east,,"This might come as a shock to you, but you've just come into a workshop. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+3,,I went south to the parlor.,I should go east next as instructed.,go east,,"This might come as a shock to you, but you've just come into a workshop. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
@@ -31,7 +31,7 @@ There is an unguarded exit to the east. There is an exit to the north. Don't wor
 
 
 There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I went south twice and arrived in the workshop with multiple unblocked exits.,I should go south as the next step in the instructions.,go south,,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
+4,,I went east to the workshop.,I should go south next as per the instructions.,go south,,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
 
 
 
@@ -40,7 +40,7 @@ There is an exit to the east. Don't worry, it is unguarded. You need an unblocke
 
 
 There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I went south twice and arrived in the cubicle with multiple unblocked exits.,I should go east as the next step in the instructions.,go east,,"You find yourself in a bedroom. An ordinary kind of place.
+5,,I went south to the cubicle.,I should go east next as per the instructions.,go east,,"You find yourself in a bedroom. An ordinary kind of place.
 
 
 
@@ -49,7 +49,12 @@ There is an exit to the west. Don't worry, it is unguarded.",Bedroom,"You find y
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I went south twice and arrived in the bedroom with an exit to the west.,I should go west as the next step to continue following the directions.,go west,,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
+6,,I went east to the bedroom.,I should go south next as per the instructions.,go south,,You can't go that way.,Bedroom,"You find yourself in a bedroom. An ordinary kind of place.
+
+
+
+There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+7,,I tried to go south from the bedroom but couldn't; the only exit is west.,"Since I cannot go south, I will try to go west as it is the only exit available.",go west,,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
 
 
 
@@ -58,125 +63,108 @@ There is an exit to the east. Don't worry, it is unguarded. You need an unblocke
 
 
 There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I went south twice and arrived in the cubicle with multiple unblocked exits.,I should go east as the next step in the instructions.,go east,,"You find yourself in a bedroom. An ordinary kind of place.
+8,,I went west from the bedroom to the cubicle.,I should now try to go south from the cubicle as per the instructions.,go south,,"You arrive in a cookery. A standard kind of place. You begin looking for stuff.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Bedroom,"You find yourself in a bedroom. An ordinary kind of place.
+There is an unblocked exit to the east. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Cookery,"You arrive in a cookery. A standard kind of place. You begin looking for stuff.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I went south twice and arrived in the bedroom with an exit to the west.,I should go east as the next step in the instructions.,go east,,You can't go that way.,Bedroom,"You find yourself in a bedroom. An ordinary kind of place.
+There is an unblocked exit to the east. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+9,,I went south from the cubicle to the cookery.,I should now try to go south again from the cookery as per the instructions.,go south,,"You find yourself in a lounge. A standard one.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I tried to go east from the bedroom but was unable to; the only exit is to the west.,"Since I cannot go east from the bedroom, I should go west instead.",go west,,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
+There is an exit to the north. Don't worry, it is unguarded.",Lounge,"You find yourself in a lounge. A standard one.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Cubicle,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I went south from the cookery to the lounge.,"Next, I should try to move east as instructed.",go east,,You can't go that way.,Lounge,"You find yourself in a lounge. A standard one.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-10,,"I went south twice to the cubicle and found multiple unblocked exits including east, north, south, and west.",I should go east from the cubicle as the exit is unguarded.,go east,,"You find yourself in a bedroom. An ordinary kind of place.
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I tried to go east from the lounge but couldn't.,"Since I cannot go east, I should follow the next instruction and go south.",go south,,You can't go that way.,Lounge,"You find yourself in a lounge. A standard one.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Bedroom,"You find yourself in a bedroom. An ordinary kind of place.
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I tried to go south from the lounge but couldn't.,"Since I cannot go south, I should try to go east again as per the instructions.",go east,,You can't go that way.,Lounge,"You find yourself in a lounge. A standard one.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I tried to go east from the bedroom but was unable to; the only exit is to the west. I am currently in the bedroom with an exit to the west.,"Since I cannot go east from the bedroom, I should go west to explore other areas and find a way to the basement.",go west,,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I tried to go east from the lounge but couldn't.,I should try going north from the lounge since that is the only available exit.,go north,,"You arrive in a cookery. A standard kind of place. You begin looking for stuff.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Cubicle,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
+There is an unblocked exit to the east. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Cookery,"You arrive in a cookery. A standard kind of place. You begin looking for stuff.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-12,,"I went south twice to the cubicle and found multiple unblocked exits including east, north, south, and west.",I should go east from the cubicle as the exit is unguarded.,go east,,"You find yourself in a bedroom. An ordinary kind of place.
+There is an unblocked exit to the east. You need an unguarded exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went north from the lounge to the cookery.,I should go east from the cookery as there is an unblocked exit in that direction.,go east,,"You are in a dish-pit. A typical kind of place.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Bedroom,"You find yourself in a bedroom. An ordinary kind of place.
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Dish-Pit,"You are in a dish-pit. A typical kind of place.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I tried to go east from the bedroom but was unable to; the only exit is to the west. I am currently in the bedroom with an exit to the west.,I should go west from the bedroom since east is not an option.,go west,,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I went east from the cookery to the dish-pit.,I should go east from the dish-pit as there is an unblocked exit in that direction.,go east,,"You arrive in a vault. An ordinary one.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Cubicle,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
+There is an unguarded exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Vault,"You arrive in a vault. An ordinary one.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-14,,"I went south twice to the cubicle and found multiple unblocked exits including east, north, south, and west.",I should go east from the cubicle as the exit is unguarded and available.,go east,,"You find yourself in a bedroom. An ordinary kind of place.
+There is an unguarded exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went east from the dish-pit to the vault.,I should go north from the vault as the entranceway is unblocked.,go north,,"You've just walked into a chamber. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Bedroom,"You find yourself in a bedroom. An ordinary kind of place.
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded. You need an unguarded exit? You should try going west.",Chamber,"You've just walked into a chamber. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I tried to go east from the bedroom but was unable to; the only exit is to the west. I am currently in the bedroom with an exit to the west.,"Since the only exit from the bedroom is to the west, I should go west.",go west,,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
+You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went north from the vault to the chamber.,I should go east from the chamber as it is an unguarded exit.,go east,,"You arrive in a bedchamber. An ordinary one.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Cubicle,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Bedchamber,"You arrive in a bedchamber. An ordinary one.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-16,,"I went south twice to the cubicle and found multiple unblocked exits including east, north, south, and west.",I should go east from the cubicle as the exit is unguarded and available.,go east,,"You find yourself in a bedroom. An ordinary kind of place.
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went east from the chamber to the bedchamber.,I should go south from the bedchamber as it is an unguarded exit.,go south,,"You arrive in a canteen. A balmy kind of place.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Bedroom,"You find yourself in a bedroom. An ordinary kind of place.
+There is an unguarded exit to the north.",Balmy Canteen,"You arrive in a canteen. A balmy kind of place.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I tried to go east from the bedroom but was unable to; the only exit is to the west.,"Since I cannot go east from the bedroom and the only exit is to the west, I should go west.",go west,,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
+There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went south from the bedchamber to the canteen.,I should go north from the canteen since it is an unguarded exit.,go north,,"You arrive in a bedchamber. An ordinary one.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Cubicle,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",Bedchamber,"You arrive in a bedchamber. An ordinary one.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-18,,"I went south twice to the cubicle and found multiple unblocked exits including east, north, south, and west.",I should go east from the cubicle since the exit is unguarded.,go east,,"You find yourself in a bedroom. An ordinary kind of place.
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went north from the canteen to the bedchamber.,I should go east from the bedchamber as suggested by the description.,go east,,"You've just shown up in a sauna.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Bedroom,"You find yourself in a bedroom. An ordinary kind of place.
+There is an exit to the west. Don't worry, it is unblocked.",Sauna,"You've just shown up in a sauna.
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I tried to go east from the bedroom but was unable to; the only exit is to the west.,"Since I cannot go east from the bedroom, I should go west instead to explore other areas.",go west,,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Cubicle,"You arrive in a cubicle. An usual kind of place. You begin looking for stuff.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-20,,"I arrived in the cubicle with multiple unblocked exits including east, north, south, and west.",I should go east from the cubicle as the exit is unguarded.,go east,,"You find yourself in a bedroom. An ordinary kind of place.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Bedroom,"You find yourself in a bedroom. An ordinary kind of place.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,True,
+There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,True,

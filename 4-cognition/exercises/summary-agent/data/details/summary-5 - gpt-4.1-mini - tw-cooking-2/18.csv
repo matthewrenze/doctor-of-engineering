@@ -2,7 +2,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
 
 Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato, a raw purple potato and a knife. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.","You are carrying: a red apple, a carrot and a raw red potato.",0 of 8,0.0,False,
-1,,I am in the kitchen with various ingredients and tools around.,I should examine the cookbook on the table to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,"I am in the kitchen with a cookbook on the table, a fridge, an oven, a stove, a counter with a red hot pepper, a raw yellow potato, a raw purple potato, and a knife. I am carrying a red apple, a carrot, and a raw red potato.",I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -23,27 +23,27 @@ slice the carrot
   prepare meal",Kitchen,"You are in a kitchen. A normal one. The room is well lit.
 
 Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato, a raw purple potato and a knife. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.","You are carrying: a red apple, a carrot and a raw red potato.",0 of 8,0.0,False,
-2,,"I examined the cookbook and found a recipe requiring carrot, red apple, and red potato with specific preparation steps.",I should follow the recipe steps by slicing the carrot first.,slice carrot with knife,,You need to take the knife first.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+2,,"I examined the cookbook and found a recipe that requires slicing and frying a carrot, red apple, and red potato, then preparing the meal.",I should slice the carrot first as per the recipe.,slice carrot with knife,,You need to take the knife first.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
 
 Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato, a raw purple potato and a knife. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.","You are carrying: a red apple, a carrot and a raw red potato.",0 of 8,0.0,False,
-3,,I tried to slice the carrot but was reminded to take the knife first.,I should take the knife from the counter before slicing the carrot.,take knife from counter,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+3,,I tried to slice the carrot but was told I need to take the knife first.,I should take the knife from the counter before slicing the carrot.,take knife from counter,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
 
 Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato, a raw purple potato and a knife. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.","You are carrying: a red apple, a carrot and a raw red potato.",0 of 8,0.0,False,
-4,,I tried to take the knife but was told I am carrying too many things already.,I should drop one item from my inventory to free up space for the knife.,drop raw red potato,,You drop the red potato on the ground.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+4,,I tried to take the knife but was told I am carrying too many things already.,I should drop one item to free up space to take the knife.,drop raw red potato,,You drop the red potato on the ground.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
 
 Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato, a raw purple potato and a knife. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
 
 
 
 There is a raw red potato on the floor.",You are carrying: a red apple and a carrot.,0 of 8,0.0,False,
-5,,I dropped the raw red potato to free up space.,I should now take the knife from the counter.,take knife from counter,,You take the knife from the counter.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+5,,I dropped the raw red potato to free up space.,Now I should take the knife from the counter.,take knife from counter,,You take the knife from the counter.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
 
 Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
 
 
 
 There is a raw red potato on the floor.","You are carrying: a knife, a red apple and a carrot.",0 of 8,0.0,False,
-6,,I took the knife from the counter.,I should slice the carrot now using the knife.,slice carrot with knife,,"You slice the carrot.
+6,,I took the knife from the counter.,I should slice the carrot with the knife as the first step of the recipe.,slice carrot with knife,,"You slice the carrot.
 
 
 
@@ -54,7 +54,14 @@ Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven 
 
 
 There is a raw red potato on the floor.","You are carrying: a knife, a red apple and a sliced carrot.",1 of 8,0.125,False,
-7,,I sliced the carrot with the knife successfully.,I should now slice the red apple with the knife.,slice red apple with knife,,"You slice the red apple.
+7,,I sliced the carrot with the knife successfully.,"Next, I should fry the sliced carrot as per the recipe.",fry sliced carrot,,That's not a verb I recognise.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+
+Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
+
+
+
+There is a raw red potato on the floor.","You are carrying: a knife, a red apple and a sliced carrot.",1 of 8,0.125,False,
+8,,I tried to fry the sliced carrot but the command was not recognized.,I should try cooking the sliced carrot with the stove instead.,cook sliced carrot with stove,,"You fried the carrot.
 
 
 
@@ -64,8 +71,8 @@ Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven 
 
 
 
-There is a raw red potato on the floor.","You are carrying: a knife, a sliced red apple and a sliced carrot.",2 of 8,0.25,False,
-8,,I sliced the red apple with the knife successfully.,I should now cook the sliced carrot and sliced red apple on the stove to prepare the meal.,cook sliced carrot with stove,,"You fried the carrot.
+There is a raw red potato on the floor.","You are carrying: a knife, a red apple and a sliced fried carrot.",2 of 8,0.25,False,
+9,,I cooked the sliced carrot with the stove and fried it successfully.,"Next, I should slice the red apple with the knife as per the recipe.",slice red apple with knife,,"You slice the red apple.
 
 
 
@@ -76,186 +83,41 @@ Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven 
 
 
 There is a raw red potato on the floor.","You are carrying: a knife, a sliced red apple and a sliced fried carrot.",3 of 8,0.375,False,
-9,,I cooked the sliced carrot on the stove.,I should now cook the sliced red apple on the stove.,cook sliced red apple with stove,,"You fried the red apple.
-
-
-
-Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+10,,I sliced the red apple with the knife successfully.,I should now slice the raw red potato on the floor with the knife.,take raw red potato from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
 
 Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
 
 
 
-There is a raw red potato on the floor.","You are carrying: a knife, a sliced fried red apple and a sliced fried carrot.",4 of 8,0.5,False,
-10,,I cooked the sliced red apple on the stove.,I should now take the raw red potato from the floor and cook it on the stove.,take raw red potato from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+There is a raw red potato on the floor.","You are carrying: a knife, a sliced red apple and a sliced fried carrot.",3 of 8,0.375,False,
+11,,I tried to take the raw red potato from the floor but was carrying too many things.,I should drop the sliced fried carrot to free up space to take the raw red potato.,drop sliced fried carrot,,You drop the carrot on the ground.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
 
 Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
 
 
 
-There is a raw red potato on the floor.","You are carrying: a knife, a sliced fried red apple and a sliced fried carrot.",4 of 8,0.5,False,
-11,,I tried to take the raw red potato from the floor but was told I am carrying too many things.,I should put down the knife to free up space before taking the raw red potato.,drop knife,,You drop the knife on the ground.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+There is a sliced fried carrot and a raw red potato on the floor.",You are carrying: a knife and a sliced red apple.,3 of 8,0.375,False,
+12,,I dropped the sliced fried carrot to free up space.,I should now take the raw red potato from the floor.,take raw red potato from floor,,You pick up the red potato from the ground.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
 
 Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
 
 
 
-There is a knife and a raw red potato on the floor.",You are carrying: a sliced fried red apple and a sliced fried carrot.,4 of 8,0.5,False,
-12,,I dropped the knife on the ground to free up space.,I should now take the raw red potato from the floor.,take raw red potato from floor,,You pick up the red potato from the ground.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
+There is a sliced fried carrot on the floor.","You are carrying: a raw red potato, a knife and a sliced red apple.",3 of 8,0.375,False,
+13,,I took the raw red potato from the floor successfully.,I should slice the raw red potato with the knife next.,slice raw red potato with knife,,"You slice the red potato.
+
+
+
+                              *** You lost! ***
+
+You scored 3 out of a possible 8, in 12 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You are in a kitchen. A normal one. The room is well lit.
 
 Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
 
 
 
-There is a knife on the floor.","You are carrying: a raw red potato, a sliced fried red apple and a sliced fried carrot.",4 of 8,0.5,False,
-13,,I took the raw red potato from the floor.,I should cook the raw red potato on the stove.,cook raw red potato with stove,,"You fried the red potato.
-
-
-
-Your score has just gone up by one point.",Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a knife on the floor.","You are carrying: a fried red potato, a sliced fried red apple and a sliced fried carrot.",5 of 8,0.625,False,
-14,,I cooked the raw red potato on the stove and fried it.,"I should now prepare the meal using the fried carrot, fried red apple, and fried red potato.",prepare meal,,Something still needs to be cut.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a knife on the floor.","You are carrying: a fried red potato, a sliced fried red apple and a sliced fried carrot.",5 of 8,0.625,False,
-15,,I tried to prepare the meal but was told something still needs to be cut.,I should take the knife from the floor and check if there is anything left to cut.,take knife from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a knife on the floor.","You are carrying: a fried red potato, a sliced fried red apple and a sliced fried carrot.",5 of 8,0.625,False,
-16,,I tried to take the knife from the floor but was told I am carrying too many things.,I should drop one of the fried items to free up space to take the knife.,drop fried red potato,,You drop the red potato on the ground.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a fried red potato and a knife on the floor.",You are carrying: a sliced fried red apple and a sliced fried carrot.,5 of 8,0.625,False,
-17,,I dropped the fried red potato to free up space.,I should take the knife from the floor now.,take knife from floor,,You pick up the knife from the ground.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a fried red potato on the floor.","You are carrying: a knife, a sliced fried red apple and a sliced fried carrot.",5 of 8,0.625,False,
-18,,I took the knife from the floor.,I should check if the fried red potato on the floor needs to be cut.,examine fried red potato,,That's a fried red potato!,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a fried red potato on the floor.","You are carrying: a knife, a sliced fried red apple and a sliced fried carrot.",5 of 8,0.625,False,
-19,,I examined the fried red potato and confirmed it is already fried.,I should check the red hot pepper on the counter to see if it needs to be cut.,examine red hot pepper,,You couldn't pay me to eat that red hot pepper.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a fried red potato on the floor.","You are carrying: a knife, a sliced fried red apple and a sliced fried carrot.",5 of 8,0.625,False,
-20,,I examined the red hot pepper and found it undesirable to eat.,I should check the raw yellow potato on the counter to see if it needs to be cut.,examine raw yellow potato,,You couldn't pay me to eat that raw yellow potato.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a fried red potato on the floor.","You are carrying: a knife, a sliced fried red apple and a sliced fried carrot.",5 of 8,0.625,False,
-21,,I examined the raw yellow potato and found it undesirable to eat.,I should check the raw purple potato on the counter to see if it needs to be cut.,examine raw purple potato,,The raw purple potato looks delectable.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a fried red potato on the floor.","You are carrying: a knife, a sliced fried red apple and a sliced fried carrot.",5 of 8,0.625,False,
-22,,I examined the raw purple potato and found it looks delectable.,I should slice the raw purple potato with the knife to prepare it.,slice raw purple potato with knife,,You need to take the purple potato first.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a fried red potato on the floor.","You are carrying: a knife, a sliced fried red apple and a sliced fried carrot.",5 of 8,0.625,False,
-23,,I tried to slice the raw purple potato but was told to take it first.,I should take the raw purple potato from the counter before slicing it.,take raw purple potato from counter,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a fried red potato on the floor.","You are carrying: a knife, a sliced fried red apple and a sliced fried carrot.",5 of 8,0.625,False,
-24,,I tried to take the raw purple potato but was told I am carrying too many things.,I should drop one of the sliced fried items I am carrying to free up space.,drop sliced fried red apple,,You drop the red apple on the ground.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper, a raw yellow potato and a raw purple potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a sliced fried red apple and a fried red potato on the floor.",You are carrying: a knife and a sliced fried carrot.,5 of 8,0.625,False,
-25,,I dropped the sliced fried red apple to free up space.,I should now take the raw purple potato from the counter.,take raw purple potato from counter,,You take the purple potato from the counter.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper and a raw yellow potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a sliced fried red apple and a fried red potato on the floor.","You are carrying: a raw purple potato, a knife and a sliced fried carrot.",5 of 8,0.625,False,
-26,,I took the raw purple potato from the counter.,I should slice the raw purple potato with the knife now.,slice raw purple potato with knife,,You slice the purple potato.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper and a raw yellow potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a sliced fried red apple and a fried red potato on the floor.","You are carrying: a sliced raw purple potato, a knife and a sliced fried carrot.",5 of 8,0.625,False,
-27,,I sliced the raw purple potato with the knife.,I should cook the sliced raw purple potato on the stove.,cook sliced raw purple potato with stove,,You fried the purple potato.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper and a raw yellow potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a sliced fried red apple and a fried red potato on the floor.","You are carrying: a sliced fried purple potato, a knife and a sliced fried carrot.",5 of 8,0.625,False,
-28,,I cooked the sliced raw purple potato on the stove and fried it.,"I should now prepare the meal with the sliced fried carrot, sliced fried purple potato, and the sliced fried red apple on the floor.",prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper and a raw yellow potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a sliced fried red apple and a fried red potato on the floor.","You are carrying: a sliced fried purple potato, a knife and a sliced fried carrot.",5 of 8,0.625,False,
-29,,I tried to prepare the meal but was told I still miss something.,I should take the sliced fried red apple from the floor to have all ingredients ready.,take sliced fried red apple from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper and a raw yellow potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a sliced fried red apple and a fried red potato on the floor.","You are carrying: a sliced fried purple potato, a knife and a sliced fried carrot.",5 of 8,0.625,False,
-30,,I tried to take the sliced fried red apple from the floor but was told I am carrying too many things.,I should drop the knife to free up space and then take the sliced fried red apple.,drop knife,,You drop the knife on the ground.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper and a raw yellow potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a knife, a sliced fried red apple and a fried red potato on the floor.",You are carrying: a sliced fried purple potato and a sliced fried carrot.,5 of 8,0.625,False,
-31,,I dropped the knife to free up space.,I should take the sliced fried red apple from the floor now.,take sliced fried red apple from floor,,You pick up the red apple from the ground.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper and a raw yellow potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a knife and a fried red potato on the floor.","You are carrying: a sliced fried red apple, a sliced fried purple potato and a sliced fried carrot.",5 of 8,0.625,False,
-32,,I took the sliced fried red apple from the floor.,I should now prepare the meal with all the sliced fried ingredients I am carrying.,prepare meal,,You still miss something.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper and a raw yellow potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a knife and a fried red potato on the floor.","You are carrying: a sliced fried red apple, a sliced fried purple potato and a sliced fried carrot.",5 of 8,0.625,False,
-33,,I tried to prepare the meal but was told I still miss something.,I should take the fried red potato from the floor to complete the ingredients.,take fried red potato from floor,,You're carrying too many things already.,Kitchen,"You are in a kitchen. A normal one. The room is well lit.
-
-Hey, want to see a fridge? Look over there, a fridge. You can see a closed oven in the corner. You rest your hand against a wall, but you miss the wall and fall onto a table. You see a cookbook on the table. You see a counter. The counter is vast. On the counter you see a red hot pepper and a raw yellow potato. Look over there! a stove. You wonder idly who left that here. The stove appears to be empty.
-
-
-
-There is a knife and a fried red potato on the floor.","You are carrying: a sliced fried red apple, a sliced fried purple potato and a sliced fried carrot.",5 of 8,0.625,True,
+There is a sliced fried carrot on the floor.","You are carrying: a raw red potato, a knife and a sliced red apple.",3 of 8,0.375,True,

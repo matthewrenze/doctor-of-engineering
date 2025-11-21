@@ -2,7 +2,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You've just shown up in a kitchen.
 
 You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a raw yellow potato, a red apple, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a red onion, a red hot pepper and a white onion.",0 of 17,0.0,False,
-1,,I am in the kitchen with various ingredients and cooking tools available.,I should examine the cookbook on the table to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,I am in the kitchen with various ingredients and tools available.,I should check the cookbook on the table to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -29,49 +29,92 @@ slice the red apple
   prepare meal",Kitchen,"You've just shown up in a kitchen.
 
 You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a raw yellow potato, a red apple, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a red onion, a red hot pepper and a white onion.",0 of 17,0.0,False,
-2,,"I opened the cookbook and read the recipe for a meal that requires red apple, yellow potato, purple potato, block of cheese, and banana, with specific slicing, roasting, frying, and chopping steps; I am in the kitchen with the ingredients on the counter and some items in my inventory.","I need to gather the required ingredients from the counter and possibly the fridge, then follow the recipe steps using the knife, oven, and stove.",take red apple from counter,,"You take the red apple from the counter.
+2,,I examined the cookbook and found a recipe requiring specific ingredients and steps.,I need to gather the required ingredients from the counter and find the block of cheese in the fridge.,take red apple from counter,,"You take the red apple from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen.
 
 You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a raw yellow potato, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a red apple, a red onion, a red hot pepper and a white onion.",1 of 17,0.058823529411764705,False,
-3,,I took the red apple from the counter; now I am carrying it along with other items.,"I need to gather all the ingredients for the recipe, so I should take the yellow potato, purple potato, block of cheese, and banana from the counter or fridge.",take banana from counter,,"You take the banana from the counter.
+3,,I took the red apple from the counter; now I am carrying it.,I should take the yellow potato and purple potato from the counter next.,take yellow potato from counter,,"You take the yellow potato from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen.
 
-You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a banana, a red apple, a red onion, a red hot pepper and a white onion.",2 of 17,0.11764705882352941,False,
-4,,I took the banana from the counter; now I am carrying it along with other items.,I need to take the yellow potato and purple potato from the counter to have all the ingredients required for the recipe.,take yellow potato from counter,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen.
+You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a raw yellow potato, a red apple, a red onion, a red hot pepper and a white onion.",2 of 17,0.11764705882352941,False,
+4,,I took the yellow potato from the counter; now I am carrying it.,I should take the raw purple potato from the counter next.,take raw purple potato from counter,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen.
 
-You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a banana, a red apple, a red onion, a red hot pepper and a white onion.",2 of 17,0.11764705882352941,False,
-5,,I tried to take more items but was told I am carrying too many things already.,I should put down some items to free up space before taking the required ingredients for the recipe.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You've just shown up in a kitchen.
+You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a raw yellow potato, a red apple, a red onion, a red hot pepper and a white onion.",2 of 17,0.11764705882352941,False,
+5,,I tried to take the raw purple potato but was carrying too many things already.,I should check the recipe in the cookbook to decide which items to keep and which to drop.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
-You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red apple
+  yellow potato
+  purple potato
+  block of cheese
+  banana
+
+Directions:
+slice the red apple
+  roast the red apple
+  slice the yellow potato
+  fry the yellow potato
+  slice the purple potato
+  roast the purple potato
+  chop the block of cheese
+  roast the block of cheese
+  chop the banana
+  fry the banana
+  prepare meal",Kitchen,"You've just shown up in a kitchen.
+
+You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a raw yellow potato, a red apple, a red onion, a red hot pepper and a white onion.",2 of 17,0.11764705882352941,False,
+6,,"I examined the cookbook and found the recipe requires red apple, yellow potato, purple potato, block of cheese, and banana.","I should drop the unnecessary items (red onion, red hot pepper, white onion) to free up space and then take the purple potato, block of cheese, and banana.",drop red onion; drop red hot pepper; drop white onion,,"Which do you mean, the red apple, the red onion, the red hot pepper or the red potato?",Kitchen,"You've just shown up in a kitchen.
+
+You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a raw yellow potato, a red apple, a red onion, a red hot pepper and a white onion.",2 of 17,0.11764705882352941,False,
+7,,"I tried to drop the red onion, red hot pepper, and white onion but was asked to specify which red item.",I should specify the exact items to drop by their full names.,drop red onion; drop red hot pepper; drop white onion,,"Which do you mean, the red apple, the red onion, the red hot pepper or the red potato?",Kitchen,"You've just shown up in a kitchen.
+
+You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a raw yellow potato, a red apple, a red onion, a red hot pepper and a white onion.",2 of 17,0.11764705882352941,False,
+8,,I tried to drop specific red items but was asked to clarify which red item.,I should drop the red onion and red hot pepper one by one to reduce inventory.,drop red onion; drop red hot pepper,,"Which do you mean, the red apple, the red onion, the red hot pepper or the red potato?",Kitchen,"You've just shown up in a kitchen.
+
+You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a raw yellow potato, a red apple, a red onion, a red hot pepper and a white onion.",2 of 17,0.11764705882352941,False,
+9,,I tried to drop the red onion and red hot pepper but was asked to specify which red item again; no items were dropped.,I should drop the red onion specifically to reduce inventory.,drop red onion,,You drop the red onion on the ground.,Kitchen,"You've just shown up in a kitchen.
+
+You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
 
 
 
-There is a red hot pepper on the floor.","You are carrying: a banana, a red apple, a red onion and a white onion.",2 of 17,0.11764705882352941,False,
-6,,I dropped the red hot pepper on the ground; I am in the kitchen with various ingredients and tools around.,"I need to free up inventory space to take the required ingredients for the recipe, so I will drop the red onion and white onion to make room.",drop red onion,,You drop the red onion on the ground.,Kitchen,"You've just shown up in a kitchen.
+There is a red onion on the floor.","You are carrying: a raw yellow potato, a red apple, a red hot pepper and a white onion.",2 of 17,0.11764705882352941,False,
+10,,I dropped the red onion on the ground; now I am carrying fewer items.,I should drop the red hot pepper next to further reduce inventory.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You've just shown up in a kitchen.
 
-You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
 
 
 
-There is a red onion and a red hot pepper on the floor.","You are carrying: a banana, a red apple and a white onion.",2 of 17,0.11764705882352941,False,
-7,,I dropped the red onion on the ground; I am in the kitchen with ingredients on the counter and some items in my inventory.,I need to take the yellow potato and purple potato from the counter to have all the ingredients required for the recipe.,take yellow potato from counter,,"You take the yellow potato from the counter.
+There is a red hot pepper and a red onion on the floor.","You are carrying: a raw yellow potato, a red apple and a white onion.",2 of 17,0.11764705882352941,False,
+11,,I dropped the red hot pepper on the ground; now I am carrying fewer items.,I should drop the white onion next to further reduce inventory.,drop white onion,,You drop the white onion on the ground.,Kitchen,"You've just shown up in a kitchen.
+
+You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a white onion, a red hot pepper and a red onion on the floor.",You are carrying: a raw yellow potato and a red apple.,2 of 17,0.11764705882352941,False,
+12,,I dropped the white onion on the ground; now I am carrying fewer items.,I should take the raw purple potato from the counter to have all required ingredients.,take raw purple potato from counter,,"You take the purple potato from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen.
 
-You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a raw purple potato, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a banana, a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
 
 
 
-There is a red onion and a red hot pepper on the floor.","You are carrying: a raw yellow potato, a banana, a red apple and a white onion.",3 of 17,0.17647058823529413,False,
-8,,I took the yellow potato from the counter; now I am carrying it along with other items.,I need to take the purple potato next to have all the main ingredients required for the recipe.,take raw purple potato from counter,,"You take the purple potato from the counter.
+There is a white onion, a red hot pepper and a red onion on the floor.","You are carrying: a raw purple potato, a raw yellow potato and a red apple.",3 of 17,0.17647058823529413,False,
+13,,I took the raw purple potato from the counter; now I am carrying it.,I should take the banana from the counter to have all ingredients for the recipe.,take banana from counter,,"You take the banana from the counter.
 
 
 
@@ -81,36 +124,15 @@ You can make out a closed fridge in the room. You see an oven. You can see a tab
 
 
 
-There is a red onion and a red hot pepper on the floor.","You are carrying: a raw purple potato, a raw yellow potato, a banana, a red apple and a white onion.",4 of 17,0.23529411764705882,False,
-9,,I took the purple potato from the counter; now I am carrying it along with other items.,I need to take the block of cheese from the kitchen to have all the ingredients required for the recipe.,take block of cheese from counter,,You can't see any such thing.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out a closed fridge in the room. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red onion and a red hot pepper on the floor.","You are carrying: a raw purple potato, a raw yellow potato, a banana, a red apple and a white onion.",4 of 17,0.23529411764705882,False,
-10,,"I tried to take more items but was carrying too many, so I dropped some and took the yellow and purple potatoes; now I am carrying the raw purple potato, raw yellow potato, banana, red apple, and white onion.",I need to take the block of cheese from the fridge to complete the ingredients for the recipe.,open fridge,,"You open the fridge, revealing a block of cheese and a raw pork chop.",Kitchen,"You've just shown up in a kitchen.
+There is a white onion, a red hot pepper and a red onion on the floor.","You are carrying: a banana, a raw purple potato, a raw yellow potato and a red apple.",4 of 17,0.23529411764705882,False,
+14,,I took the banana from the counter; now I am carrying it.,I need to get the block of cheese from the fridge to complete the ingredients for the recipe.,open fridge,,"You open the fridge, revealing a block of cheese and a raw pork chop.",Kitchen,"You've just shown up in a kitchen.
 
 You can make out an opened fridge in the room. The fridge contains a block of cheese and a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
 
 
 
-There is a red onion and a red hot pepper on the floor.","You are carrying: a raw purple potato, a raw yellow potato, a banana, a red apple and a white onion.",4 of 17,0.23529411764705882,False,
-11,,I opened the fridge and found a block of cheese and a raw pork chop inside; I am in the kitchen with various ingredients and tools around.,I need to take the block of cheese from the fridge to have all the ingredients required for the recipe.,take block of cheese from fridge,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a block of cheese and a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red onion and a red hot pepper on the floor.","You are carrying: a raw purple potato, a raw yellow potato, a banana, a red apple and a white onion.",4 of 17,0.23529411764705882,False,
-12,,I tried to take the block of cheese from the fridge but was carrying too many things.,"I need to free up some inventory space by dropping an item I don't immediately need, then take the block of cheese from the fridge.",drop banana,,You drop the banana on the ground.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a block of cheese and a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a raw purple potato, a raw yellow potato, a red apple and a white onion.",4 of 17,0.23529411764705882,False,
-13,,I dropped the banana on the ground; I am in the kitchen with the ingredients and tools around.,I should take the block of cheese from the fridge now that I have fewer items in my inventory.,take block of cheese from fridge,,"You take the block of cheese from the fridge.
+There is a white onion, a red hot pepper and a red onion on the floor.","You are carrying: a banana, a raw purple potato, a raw yellow potato and a red apple.",4 of 17,0.23529411764705882,False,
+15,,I opened the fridge and found a block of cheese and a raw pork chop.,I should take the block of cheese from the fridge to have all the ingredients needed for the recipe.,take block of cheese from fridge,,"You take the block of cheese from the fridge.
 
 
 
@@ -120,521 +142,39 @@ You can make out an opened fridge in the room. The fridge contains a raw pork ch
 
 
 
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a block of cheese, a raw purple potato, a raw yellow potato, a red apple and a white onion.",5 of 17,0.29411764705882354,False,
-14,,I took the block of cheese from the fridge; now I am carrying it along with other items.,"I should slice the red apple, yellow potato, and purple potato as per the recipe instructions before proceeding with cooking.",slice red apple with knife,,You need to take the knife first.,Kitchen,"You've just shown up in a kitchen.
+There is a white onion, a red hot pepper and a red onion on the floor.","You are carrying: a block of cheese, a banana, a raw purple potato, a raw yellow potato and a red apple.",5 of 17,0.29411764705882354,False,
+16,,I took the block of cheese from the fridge; now I am carrying it.,"I have all the ingredients required by the recipe: red apple, yellow potato, purple potato, block of cheese, and banana. I should now prepare the meal.",prepare meal,,Something still needs to be cooked.,Kitchen,"You've just shown up in a kitchen.
 
 You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
 
 
 
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a block of cheese, a raw purple potato, a raw yellow potato, a red apple and a white onion.",5 of 17,0.29411764705882354,False,
-15,,I tried to take the knife but was told I need to take it first; I am in the kitchen with the knife on the table.,I should take the knife from the table to proceed with the recipe.,take knife from table,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen.
+There is a white onion, a red hot pepper and a red onion on the floor.","You are carrying: a block of cheese, a banana, a raw purple potato, a raw yellow potato and a red apple.",5 of 17,0.29411764705882354,False,
+17,,I tried to prepare the meal but was told something still needs to be cooked.,The potatoes are raw and likely need to be cooked before preparing the meal. I should cook the raw yellow potato first on the stove.,cook raw yellow potato with stove,,"You fried the yellow potato.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen.
 
 You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
 
 
 
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a block of cheese, a raw purple potato, a raw yellow potato, a red apple and a white onion.",5 of 17,0.29411764705882354,False,
-16,,I tried to take the knife but was carrying too many things; I am still in the kitchen with the knife on the table.,I need to free up some inventory space by dropping an item before I can take the knife.,drop white onion,,You drop the white onion on the ground.,Kitchen,"You've just shown up in a kitchen.
+There is a white onion, a red hot pepper and a red onion on the floor.","You are carrying: a block of cheese, a banana, a raw purple potato, a fried yellow potato and a red apple.",6 of 17,0.35294117647058826,False,
+18,,I cooked the raw yellow potato on the stove; now I have a fried yellow potato.,I should cook the raw purple potato next to meet the recipe requirements.,cook raw purple potato with stove,,"You fried the purple potato.
+
+
+
+                              *** You lost! ***
+
+You scored 6 out of a possible 17, in 15 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You've just shown up in a kitchen.
 
 You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook and a knife. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
 
 
 
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a block of cheese, a raw purple potato, a raw yellow potato and a red apple.",5 of 17,0.29411764705882354,False,
-17,,I dropped the white onion on the ground; I am in the kitchen with ingredients on the floor and some items in my inventory.,I should take the knife from the table to prepare the ingredients for cooking.,take knife from table,,You take the knife from the table.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a knife, a block of cheese, a raw purple potato, a raw yellow potato and a red apple.",5 of 17,0.29411764705882354,False,
-18,,I took the knife from the table; now I am carrying it along with other items.,I need to take the banana from the floor to have all the ingredients required for the recipe.,take banana from floor,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a knife, a block of cheese, a raw purple potato, a raw yellow potato and a red apple.",5 of 17,0.29411764705882354,False,
-19,,I tried to take more items but was carrying too many things.,"I need to drop one item to free up space before taking the banana, which is required for the recipe.",drop red apple,,You drop the red apple on the ground.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red apple, a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a knife, a block of cheese, a raw purple potato and a raw yellow potato.",5 of 17,0.29411764705882354,False,
-20,,"I dropped the red apple on the ground; I am carrying a knife, block of cheese, raw purple potato, and raw yellow potato.",I should slice the raw yellow potato with the knife as per the recipe.,slice raw yellow potato with knife,,"You slice the yellow potato.
-
-
-
-Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red apple, a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a knife, a block of cheese, a raw purple potato and a sliced raw yellow potato.",6 of 17,0.35294117647058826,False,
-21,,I sliced the yellow potato; now I am carrying a sliced raw yellow potato.,"Next, I should slice the raw purple potato as the recipe requires both potatoes sliced.",slice raw purple potato with knife,,"You slice the purple potato.
-
-
-
-Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red apple, a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a knife, a block of cheese, a sliced raw purple potato and a sliced raw yellow potato.",7 of 17,0.4117647058823529,False,
-22,,I sliced the purple potato; now I am carrying a sliced raw purple potato.,"Next, I should slice the red potato on the counter to continue preparing the ingredients for the recipe.",slice red potato with knife,,You need to take the red potato first.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper and a raw red potato. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red apple, a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a knife, a block of cheese, a sliced raw purple potato and a sliced raw yellow potato.",7 of 17,0.4117647058823529,False,
-23,,I tried to proceed but was told I need to take the red potato first; I am in the kitchen with the red potato on the counter and other ingredients on the floor.,I should take the red potato from the counter to continue with the recipe.,take red potato from counter,,You take the red potato from the counter.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red apple, a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a raw red potato, a knife, a block of cheese, a sliced raw purple potato and a sliced raw yellow potato.",7 of 17,0.4117647058823529,False,
-24,,I took the red potato from the counter; now I am carrying it along with other items.,I should slice the red potato with the knife as the recipe requires slicing it.,slice raw red potato with knife,,You slice the red potato.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red apple, a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced raw red potato, a knife, a block of cheese, a sliced raw purple potato and a sliced raw yellow potato.",7 of 17,0.4117647058823529,False,
-25,,"I sliced the red potato; now I am carrying it along with other sliced potatoes, a knife, and a block of cheese.","According to the recipe, I need to roast the sliced potatoes. I should put the sliced raw yellow, purple, and red potatoes into the oven to roast them.",put sliced raw yellow potato into oven,,The oven is closed.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red apple, a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced raw red potato, a knife, a block of cheese, a sliced raw purple potato and a sliced raw yellow potato.",7 of 17,0.4117647058823529,False,
-26,,"I arrived in the kitchen with the oven closed and ingredients on the floor; I am carrying sliced potatoes, a knife, and cheese.",I should open the oven to prepare for roasting the sliced potatoes as per the recipe.,open oven,,You open the oven.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. The oven is empty! What a waste of a day! You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red apple, a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced raw red potato, a knife, a block of cheese, a sliced raw purple potato and a sliced raw yellow potato.",7 of 17,0.4117647058823529,False,
-27,,"I opened the oven; it is empty, and I am in the kitchen with ingredients on the floor and some items in my inventory.",I should put the sliced potatoes into the oven to roast them as per the recipe.,put sliced raw red potato into oven,,You put the red potato into the oven.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. The oven contains a sliced raw red potato. Hmm. You always thought you'd be more excited to see an oven in a room. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red apple, a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a knife, a block of cheese, a sliced raw purple potato and a sliced raw yellow potato.",7 of 17,0.4117647058823529,False,
-28,,I put the red potato into the oven; the oven now contains the sliced raw red potato.,I should put the sliced raw purple potato and sliced raw yellow potato into the oven to roast them as well.,put sliced raw purple potato into oven,,You put the purple potato into the oven.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. The oven contains a sliced raw purple potato and a sliced raw red potato. Hmm. You always thought you'd be more excited to see an oven in a room. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red apple, a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a knife, a block of cheese and a sliced raw yellow potato.",7 of 17,0.4117647058823529,False,
-29,,I put the purple potato into the oven; the oven now contains sliced raw purple and red potatoes.,I should put the sliced raw yellow potato into the oven to roast all the potatoes together.,put sliced raw yellow potato into oven,,You put the yellow potato into the oven.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. The oven contains a sliced raw yellow potato, a sliced raw purple potato and a sliced raw red potato. Hmm. You always thought you'd be more excited to see an oven in a room. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red apple, a white onion, a banana, a red onion and a red hot pepper on the floor.",You are carrying: a knife and a block of cheese.,7 of 17,0.4117647058823529,False,
-30,,"I put the yellow potato into the oven; the oven now contains sliced raw yellow, purple, and red potatoes.",I should close the oven to start roasting the potatoes.,close oven,,You close the oven.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a red apple, a white onion, a banana, a red onion and a red hot pepper on the floor.",You are carrying: a knife and a block of cheese.,7 of 17,0.4117647058823529,False,
-31,,I closed the oven; it is now ready for roasting the potatoes inside.,I should start preparing the other ingredients by slicing the red apple as per the recipe.,take red apple from floor,,You pick up the red apple from the ground.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a red apple, a knife and a block of cheese.",7 of 17,0.4117647058823529,False,
-32,,"I picked up the red apple from the ground; I am carrying a red apple, a knife, and a block of cheese.",I should check the recipe in the cookbook again to see the next step for preparing the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red apple
-  yellow potato
-  purple potato
-  block of cheese
-  banana
-
-Directions:
-slice the red apple
-  roast the red apple
-  slice the yellow potato
-  fry the yellow potato
-  slice the purple potato
-  roast the purple potato
-  chop the block of cheese
-  roast the block of cheese
-  chop the banana
-  fry the banana
-  prepare meal",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a red apple, a knife and a block of cheese.",7 of 17,0.4117647058823529,False,
-33,,"I opened the cookbook and reviewed the recipe for the meal; I am in the kitchen with the ingredients and tools around, carrying a red apple, a knife, and a block of cheese.",I need to slice the red apple first as per the recipe.,slice red apple with knife,,"You slice the red apple.
-
-
-
-Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a knife and a block of cheese.",8 of 17,0.47058823529411764,False,
-34,,"I sliced the red apple; now I am carrying the sliced red apple, a knife, and a block of cheese.","Next, I should prepare the cheese by chopping it as per the recipe instructions.",chop block of cheese with knife,,"You chop the block of cheese.
-
-
-
-Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-35,,"I chopped the block of cheese; now I am carrying chopped cheese, sliced red apple, and a knife.","I should now prepare the meal using the chopped cheese, sliced red apple, and the roasted potatoes in the oven.",prepare meal,,Something still needs to be cooked.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge contains a raw pork chop. You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-36,,"I chopped the block of cheese; I am carrying chopped cheese, sliced red apple, and a knife, but something still needs to be cooked.",I should cook the raw pork chop from the fridge on the stove to complete the cooking step.,take raw pork chop from fridge,,You take the pork chop from the fridge.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a raw pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-37,,I took the raw pork chop from the fridge; now I am carrying it along with other items.,"According to the recipe, I need to fry the pork chop. I should use the stove to cook the pork chop.",cook raw pork chop with stove,,You fried the pork chop.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-38,,"I fried the pork chop; now I am carrying a fried pork chop, sliced red apple, knife, and chopped cheese.","I should prepare the meal using the sliced red apple, chopped cheese, and fried pork chop as per the recipe.",prepare meal,,Something still needs to be cooked.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-39,,"I fried the pork chop; now I am carrying a fried pork chop, sliced red apple, knife, and chopped cheese, but something still needs to be cooked.",I should check the recipe again in the cookbook to see what else needs to be cooked.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red apple
-  yellow potato
-  purple potato
-  block of cheese
-  banana
-
-Directions:
-slice the red apple
-  roast the red apple
-  slice the yellow potato
-  fry the yellow potato
-  slice the purple potato
-  roast the purple potato
-  chop the block of cheese
-  roast the block of cheese
-  chop the banana
-  fry the banana
-  prepare meal",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-40,,"I opened the cookbook and reviewed the recipe again; I am in the kitchen with the ingredients and tools around, carrying a fried pork chop, sliced red apple, knife, and chopped cheese.",I need to roast the sliced red apple and the chopped block of cheese next according to the recipe.,put sliced red apple into oven,,The oven is closed.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-41,,"I arrived in the kitchen with the oven closed and ingredients on the floor; I am carrying a fried pork chop, sliced red apple, knife, and chopped cheese.",I should open the oven to check if the potatoes are roasted and ready to be taken out.,open oven,,"You open the oven, revealing a sliced raw yellow potato, a sliced raw purple potato and a sliced raw red potato.",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. The oven contains a sliced raw yellow potato, a sliced raw purple potato and a sliced raw red potato. Hmm. You always thought you'd be more excited to see an oven in a room. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-42,,"I opened the oven and saw the sliced raw yellow, purple, and red potatoes inside.",I should close the oven to start roasting the potatoes as per the recipe.,close oven,,You close the oven.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-43,,I closed the oven; the kitchen is now empty except for some ingredients on the floor and items in my inventory.,I should check the status of the roasted potatoes in the oven before proceeding with the next step of the recipe.,open oven,,"You open the oven, revealing a sliced raw yellow potato, a sliced raw purple potato and a sliced raw red potato.",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. The oven contains a sliced raw yellow potato, a sliced raw purple potato and a sliced raw red potato. Hmm. You always thought you'd be more excited to see an oven in a room. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-44,,"I opened the oven and saw the sliced raw yellow, purple, and red potatoes inside.",I should close the oven to start roasting the potatoes.,close oven,,You close the oven.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-45,,I closed the oven; the kitchen is now empty except for some ingredients on the floor and items in my inventory.,"I should check the stove to cook the remaining ingredients as the recipe requires frying or roasting, and the oven is currently closed.",look stove,,Useful for frying things.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a white onion, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-46,,I arrived in the kitchen and observed the environment with various ingredients on the floor and a stove available.,I should take the white onion from the floor to use it in the meal preparation.,take white onion from floor,,You pick up the white onion from the ground.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a white onion, a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-47,,I picked up the white onion from the ground; I am carrying it along with other items.,"I should now prepare the meal using the ingredients I have: white onion, fried pork chop, sliced red apple, chopped cheese, and the roasted potatoes from the oven.",prepare meal,,Something still needs to be cooked.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a white onion, a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-48,,I arrived in the kitchen with some ingredients on the floor and items in my inventory; something still needs to be cooked.,I should check the recipe in the cookbook again to see what still needs to be cooked and then use the stove to cook it.,open cookbook,,It isn't something you can open.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a white onion, a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-49,,I tried to open something but was told it isn't something I can open; I am in the kitchen with various ingredients on the floor and items in my inventory.,I should cook the white onion on the stove since it still needs to be cooked according to the recipe.,cook white onion with stove,,You fried the white onion.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried white onion, a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-50,,"I fried the white onion; I am carrying a fried white onion, fried pork chop, sliced red apple, knife, and chopped cheese.",I should now prepare the meal using the cooked and prepared ingredients I have.,prepare meal,,Something still needs to be cooked.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried white onion, a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-51,,I fried the white onion; something still needs to be cooked.,"The recipe likely requires cooking the yellow bell pepper, which is on the counter. I should take the yellow bell pepper and cook it on the stove.",take yellow bell pepper from counter,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried white onion, a fried pork chop, a sliced red apple, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-52,,I tried to take more items but was carrying too many things.,I should drop an item to free up space so I can take the yellow bell pepper from the counter.,drop sliced red apple,,You drop the red apple on the ground.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a sliced red apple, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-53,,I dropped the red apple on the ground; I am in the kitchen with various ingredients on the floor and some items in my inventory.,"I should now prepare the meal using the ingredients I have cooked and chopped, and the sliced red apple on the floor, as the recipe steps are complete.",prepare meal,,Something still needs to be cooked.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a sliced red apple, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-54,,"I arrived in the kitchen; the fridge is empty, and there are ingredients on the floor and items in my inventory. Something still needs to be cooked.",I should check the recipe in the cookbook again to identify what still needs to be cooked and then cook it using the stove or oven.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red apple
-  yellow potato
-  purple potato
-  block of cheese
-  banana
-
-Directions:
-slice the red apple
-  roast the red apple
-  slice the yellow potato
-  fry the yellow potato
-  slice the purple potato
-  roast the purple potato
-  chop the block of cheese
-  roast the block of cheese
-  chop the banana
-  fry the banana
-  prepare meal",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a sliced red apple, a banana, a red onion and a red hot pepper on the floor.","You are carrying: a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-55,,"I opened the cookbook and reviewed the recipe for a meal requiring slicing, roasting, frying, and chopping of specific ingredients; I am in the kitchen with some ingredients on the floor and items in my inventory.","I need to gather the required ingredients from the floor and inventory, then follow the recipe steps: slice the red apple, roast the red apple, slice and fry the yellow potato, slice and roast the purple potato, chop and roast the block of cheese, chop and fry the banana, and finally prepare the meal.",take sliced red apple from floor,,You pick up the red apple from the ground.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-56,,"I picked up the red apple from the ground; I am carrying sliced red apple, fried white onion, fried pork chop, knife, and chopped cheese.",I should check the recipe in the cookbook again to confirm the next cooking step for the remaining ingredients.,open cookbook,,It isn't something you can open.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-57,,I tried to open something but was told it isn't something I can open; I am in the kitchen with various ingredients on the floor and items in my inventory.,"I should cook the sliced potatoes in the oven since they need roasting, and the oven is currently empty.",open oven,,"You open the oven, revealing a sliced raw yellow potato, a sliced raw purple potato and a sliced raw red potato.",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. The oven contains a sliced raw yellow potato, a sliced raw purple potato and a sliced raw red potato. Hmm. You always thought you'd be more excited to see an oven in a room. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-58,,"I opened the oven and saw the sliced raw yellow, purple, and red potatoes inside; I am in the kitchen with various ingredients on the floor and items in my inventory.",I should close the oven to start roasting the potatoes as per the recipe.,close oven,,You close the oven.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-59,,I closed the oven; the kitchen is now empty except for some ingredients on the floor and items in my inventory.,I should check the cookbook on the table to confirm the next steps for completing the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red apple
-  yellow potato
-  purple potato
-  block of cheese
-  banana
-
-Directions:
-slice the red apple
-  roast the red apple
-  slice the yellow potato
-  fry the yellow potato
-  slice the purple potato
-  roast the purple potato
-  chop the block of cheese
-  roast the block of cheese
-  chop the banana
-  fry the banana
-  prepare meal",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-60,,"I opened the cookbook and reviewed the recipe for a meal requiring slicing, roasting, frying, and chopping of specific ingredients; I am in the kitchen with some ingredients on the floor and items in my inventory.",I need to roast the sliced red apple next according to the recipe.,roast sliced red apple,,That's not a verb I recognise.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-61,,"I attempted an unrecognized action; the kitchen is described with various items and an empty fridge, and I am carrying sliced red apple, fried white onion, fried pork chop, knife, and chopped cheese.",I should check the goal to confirm the next step in cooking and completing the meal.,goal,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-62,,I arrived in the kitchen with various ingredients on the floor and items in my inventory.,I should check the cookbook on the table to review the recipe and confirm the next steps to complete the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red apple
-  yellow potato
-  purple potato
-  block of cheese
-  banana
-
-Directions:
-slice the red apple
-  roast the red apple
-  slice the yellow potato
-  fry the yellow potato
-  slice the purple potato
-  roast the purple potato
-  chop the block of cheese
-  roast the block of cheese
-  chop the banana
-  fry the banana
-  prepare meal",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-63,,"I opened the cookbook and reviewed the recipe for a meal requiring slicing, roasting, frying, and chopping of specific ingredients; I am in the kitchen with some ingredients on the floor and items in my inventory.",I need to roast the sliced red apple next according to the recipe.,put sliced red apple into oven,,The oven is closed.,Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,False,
-64,,"I arrived in the kitchen with the oven closed and various ingredients on the floor; I am carrying sliced red apple, fried white onion, fried pork chop, knife, and chopped cheese.",I should check the cookbook on the table to confirm the next steps for cooking the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red apple
-  yellow potato
-  purple potato
-  block of cheese
-  banana
-
-Directions:
-slice the red apple
-  roast the red apple
-  slice the yellow potato
-  fry the yellow potato
-  slice the purple potato
-  roast the purple potato
-  chop the block of cheese
-  roast the block of cheese
-  chop the banana
-  fry the banana
-  prepare meal",Kitchen,"You've just shown up in a kitchen.
-
-You can make out an opened fridge in the room. The fridge is empty, what a horrible day! You see an oven. You can see a table. The table is massive. On the table you can see a cookbook. You can make out a counter. The counter is vast. On the counter you see a yellow bell pepper. Hmmm... what else, what else? Oh wow! Is that what I think it is? It is! It's a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
-
-
-
-There is a banana, a red onion and a red hot pepper on the floor.","You are carrying: a sliced red apple, a fried white onion, a fried pork chop, a knife and a chopped block of cheese.",9 of 17,0.5294117647058824,True,
+There is a white onion, a red hot pepper and a red onion on the floor.","You are carrying: a block of cheese, a banana, a raw purple potato, a fried yellow potato and a red apple.",6 of 17,0.35294117647058826,True,

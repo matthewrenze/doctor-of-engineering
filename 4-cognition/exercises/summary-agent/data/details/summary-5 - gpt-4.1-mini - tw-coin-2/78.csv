@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 You don't like doors? Why not try going south, that entranceway is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the laundromat.,I should go south as the entranceway is unguarded.,go south,,"Look at that board! What does it say? It says Welcome to the cubicle? Well that's cool. You start to take note of what's in the room.
+1,,I am in the laundromat.,I should follow the instructions and go south first.,go south,,"Look at that board! What does it say? It says Welcome to the cubicle? Well that's cool. You start to take note of what's in the room.
 
 
 
@@ -13,7 +13,7 @@ There is an unblocked exit to the east. There is an exit to the north. Don't wor
 
 
 There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I went south to the cubicle.,I should go west as the exit is unguarded.,go west,,"You are in an attic. An usual one. I guess you better just go and list everything you see here.
+2,,I went south to the cubicle.,"Next, I should go west as instructed.",go west,,"You are in an attic. An usual one. I guess you better just go and list everything you see here.
 
 
 
@@ -22,7 +22,7 @@ You don't like doors? Why not try going east, that entranceway is unblocked. You
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-3,,I went west to the attic.,I should go north as the entranceway is unguarded.,go north,,"You arrive in a spare room. An ugly kind of place.
+3,,I went west to the attic.,"Next, I should go north as instructed.",go north,,"You arrive in a spare room. An ugly kind of place.
 
 
 
@@ -31,7 +31,7 @@ There is an unblocked exit to the east. You don't like doors? Why not try going 
 
 
 There is an unblocked exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I went north to the ugly spare room.,I should go east as the exit is unblocked.,go east,,"You are in a chamber. A cozy kind of place.
+4,,I went north to the ugly spare room.,"Next, I should try going east as instructed.",go east,,"You are in a chamber. A cozy kind of place.
 
 
 
@@ -40,7 +40,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. You
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. You need an unguarded exit? You should try going north. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I went east to the cozy chamber.,I should go east as the entranceway is unguarded.,go east,,"You are in a cellar. A forgotten one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+5,,I went east to the cozy chamber.,"Next, I should go east again as instructed.",go east,,"You are in a cellar. A forgotten one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
@@ -49,7 +49,7 @@ You need an unguarded exit? You should try going east. You need an unblocked exi
 
 
 You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I went east to the forgotten cellar.,I should go east as the exit is unguarded.,go east,,"You find yourself in a parlor. An entertaining kind of place.
+6,,I went east to the forgotten cellar.,"Next, I should go east again as instructed.",go east,,"You find yourself in a parlor. An entertaining kind of place.
 
 
 
@@ -58,17 +58,17 @@ You don't like doors? Why not try going west, that entranceway is unguarded.",En
 
 
 You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I went east to the entertaining parlor.,I should go east again as the instructions say to take a trip east.,go east,,You can't go that way.,Entertaining Parlor,"You find yourself in a parlor. An entertaining kind of place.
+7,,I went east to the entertaining parlor.,"Next, I should go north as instructed.",go north,,You can't go that way.,Entertaining Parlor,"You find yourself in a parlor. An entertaining kind of place.
 
 
 
 You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I tried to go east from the entertaining parlor but couldn't.,"Since I can't go east, I will try going north as the instructions say to take a trip north.",go north,,You can't go that way.,Entertaining Parlor,"You find yourself in a parlor. An entertaining kind of place.
+8,,I tried to go north but couldn't; I am still in the entertaining parlor.,"Since north is blocked, I will try going east as the next instruction.",go east,,You can't go that way.,Entertaining Parlor,"You find yourself in a parlor. An entertaining kind of place.
 
 
 
 You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I tried to go north from the entertaining parlor but couldn't.,I will try going west since the entranceway is unguarded and the other directions are blocked.,go west,,"You are in a cellar. A forgotten one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+9,,I tried to go east but couldn't; I am still in the entertaining parlor.,I will try going west since it is unguarded and accessible.,go west,,"You are in a cellar. A forgotten one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
@@ -77,7 +77,7 @@ You need an unguarded exit? You should try going east. You need an unblocked exi
 
 
 You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I went west back to the forgotten cellar.,I should try going north as the instructions say to try to take a trip north.,go north,,"Well I'll be, you are in the place we're calling the clean bathroom.
+10,,I went west back to the forgotten cellar.,"Next, I should try going north as instructed.",go north,,"Well I'll be, you are in the place we're calling the clean bathroom.
 
 
 
@@ -86,7 +86,7 @@ You need an unguarded exit? You should try going east. You need an unguarded exi
 
 
 You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I went north to the clean bathroom.,I should go east as the instructions say to go to the east.,go east,,"You are in a scullery. It seems to be pretty hot here.
+11,,I went north to the clean bathroom.,"Next, I should go east as instructed.",go east,,"You are in a scullery. It seems to be pretty hot here.
 
 
 
@@ -95,12 +95,12 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unguard
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I went east to the hot scullery.,I should go east again as the instructions say to take a trip east.,go east,,You can't go that way.,Hot Scullery,"You are in a scullery. It seems to be pretty hot here.
+12,,I went east to the hot scullery.,"Next, I should go east again as per the instructions.",go east,,You can't go that way.,Hot Scullery,"You are in a scullery. It seems to be pretty hot here.
 
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I tried to go east from the hot scullery but couldn't.,"Since I can't go east, I will try going north as there is an unblocked exit to the north.",go north,,"You find yourself in an office. A serious one. Okay, just remember what you're here to do, and everything will go great.
+13,,I tried to go east but couldn't; I am still in the hot scullery.,I will try going north since it is unblocked.,go north,,"You find yourself in an office. A serious one. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -109,7 +109,31 @@ You need an unblocked exit? You should try going east. You don't like doors? Why
 
 
 You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I went north to the serious office.,I should go east as the instructions say to go to the east.,go east,,"You've entered a steamy cookery.
+14,,I went north to the serious office.,I should take the coin from the floor of the serious office as instructed.,take coin from floor,,You can't see any such thing.,Serious Office,"You find yourself in an office. A serious one. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I tried to take the coin from the floor but couldn't find it.,I should look around the serious office carefully to find the coin.,look,,"You find yourself in an office. A serious one. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south.",Serious Office,"You find yourself in an office. A serious one. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I looked around the serious office but still did not see the coin.,I should try to examine the floor to see if the coin is there.,examine floor,,You can't see any such thing.,Serious Office,"You find yourself in an office. A serious one. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I examined the floor but still couldn't find the coin.,I should try to look for the coin by examining other objects or areas in the serious office.,examine office,,You can't see any such thing.,Serious Office,"You find yourself in an office. A serious one. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I examined the office but still couldn't find the coin.,I should try going east as suggested by the description to see if the coin is there.,go east,,"You've entered a steamy cookery.
 
 
 
@@ -118,22 +142,16 @@ There is an unblocked exit to the west.",Steamy Cookery,"You've entered a steamy
 
 
 There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I went east to the steamy cookery.,I should go east again as the instructions say to go to the east.,go east,,You can't go that way.,Steamy Cookery,"You've entered a steamy cookery.
+19,,I went east to the steamy cookery.,I should look around the steamy cookery to find the coin.,look,,"You've entered a steamy cookery.
+
+
+
+There is an unblocked exit to the west.",Steamy Cookery,"You've entered a steamy cookery.
 
 
 
 There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I tried to go east from the steamy cookery but couldn't.,"Since I can't go east, I will try to go north as the instructions say to travel north.",go north,,You can't go that way.,Steamy Cookery,"You've entered a steamy cookery.
-
-
-
-There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I tried to go north from the steamy cookery but couldn't.,I will try to go south as the instructions say to move south.,go south,,You can't go that way.,Steamy Cookery,"You've entered a steamy cookery.
-
-
-
-There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I tried to go south from the steamy cookery but couldn't.,"The only unblocked exit is west, so I will go west.",go west,,"You find yourself in an office. A serious one. Okay, just remember what you're here to do, and everything will go great.
+20,,I looked around the steamy cookery but did not find the coin.,I should try going west to return to the serious office and then try going north as another suggested exit.,go west,,"You find yourself in an office. A serious one. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -142,7 +160,7 @@ You need an unblocked exit? You should try going east. You don't like doors? Why
 
 
 You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I went west back to the serious office.,I should go north as the instructions say to move north.,go north,,"You are in a studio. A serious kind of place.
+21,,I went west back to the serious office.,I should try going north through the unblocked entranceway to see if the coin is there.,go north,,"You are in a studio. A serious kind of place.
 
 
 
@@ -151,12 +169,16 @@ There is an exit to the east. Don't worry, it is unguarded. There is an unblocke
 
 
 There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I went north to the serious studio.,I should go north again as the instructions say to move north.,go north,,You can't go that way.,Serious Studio,"You are in a studio. A serious kind of place.
+22,,I went north to the serious studio.,I should look around the serious studio to find the coin.,look,,"You are in a studio. A serious kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Serious Studio,"You are in a studio. A serious kind of place.
 
 
 
 There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I tried to go north from the serious studio but couldn't.,I will try to go west as it is an unblocked exit.,go west,,"You arrive in a spare room. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+23,,I looked around the serious studio but did not find the coin.,I should try going west to explore another exit in the serious studio.,go west,,"You arrive in a spare room. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
@@ -165,7 +187,16 @@ You don't like doors? Why not try going east, that entranceway is unblocked. You
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I went west to the spare room.,I should go north as the instructions say to move north.,go north,,"You've just shown up in a spotless shower. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+24,,I went west to the spare room.,I should look around the spare room to find the coin.,look,,"You arrive in a spare room. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Spare Room,"You arrive in a spare room. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I looked around the spare room but did not find the coin.,I should try going north to explore another exit in the spare room.,go north,,"You've just shown up in a spotless shower. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
@@ -174,7 +205,43 @@ You don't like doors? Why not try going east, that entranceway is unblocked. The
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I went north to the spotless shower.,I should go north again as the instructions say to move north.,go north,,"You are in a closet. A spacious one. You begin to take stock of what's here.
+26,,I went north to the spotless shower.,I should look around the spotless shower to find the coin.,look,,"You've just shown up in a spotless shower. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",Spotless Shower,"You've just shown up in a spotless shower. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I looked around the spotless shower but did not find the coin.,I should try going east to explore another exit in the spotless shower.,go east,,"You've entered a balmy dish-pit. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",Balmy Dish-Pit,"You've entered a balmy dish-pit. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I went east to the balmy dish-pit.,I should look around the balmy dish-pit to find the coin.,look,,"You've entered a balmy dish-pit. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",Balmy Dish-Pit,"You've entered a balmy dish-pit. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I looked around the balmy dish-pit but did not find the coin.,I should try going west to return to the spotless shower and explore other exits.,go west,,"You've just shown up in a spotless shower. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",Spotless Shower,"You've just shown up in a spotless shower. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I went west back to the spotless shower.,I should try going north to explore the unguarded exit in the spotless shower.,go north,,"You are in a closet. A spacious one. You begin to take stock of what's here.
 
 
 
@@ -183,12 +250,16 @@ You don't like doors? Why not try going east, that entranceway is unblocked. The
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I went north to the spacious closet.,I should try to go west as the instructions say to go west.,go west,,You can't go that way.,Spacious Closet,"You are in a closet. A spacious one. You begin to take stock of what's here.
+31,,I went north to the spacious closet.,I should look around the spacious closet to find the coin.,look,,"You are in a closet. A spacious one. You begin to take stock of what's here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",Spacious Closet,"You are in a closet. A spacious one. You begin to take stock of what's here.
 
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I tried to go west from the spacious closet but couldn't.,I will try to go east since it is an unblocked exit.,go east,,"You find yourself in a parlor. A fun one.
+32,,I looked around the spacious closet but did not find the coin.,I should try going east to explore the unblocked entranceway in the spacious closet.,go east,,"You find yourself in a parlor. A fun one.
 
 
 
@@ -197,12 +268,16 @@ There is an exit to the west. Don't worry, it is unguarded.",Fun Parlor,"You fin
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I went east to the fun parlor.,I should go north as the instructions say to move north.,go north,,You can't go that way.,Fun Parlor,"You find yourself in a parlor. A fun one.
+33,,I went east to the fun parlor.,I should look around the fun parlor to find the coin.,look,,"You find yourself in a parlor. A fun one.
+
+
+
+There is an exit to the west. Don't worry, it is unguarded.",Fun Parlor,"You find yourself in a parlor. A fun one.
 
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I tried to go north from the fun parlor but couldn't.,I will go west since that is the only available exit.,go west,,"You are in a closet. A spacious one. You begin to take stock of what's here.
+34,,I looked around the fun parlor but did not find the coin.,I should go west to return to the spacious closet and try other exits.,go west,,"You are in a closet. A spacious one. You begin to take stock of what's here.
 
 
 
@@ -211,43 +286,88 @@ You don't like doors? Why not try going east, that entranceway is unblocked. The
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I went west back to the spacious closet.,I should try going north from the spacious closet as it is an unguarded exit.,go north,,"You've entered a vault.
+35,,I went west back to the spacious closet.,I should try going south to explore the unguarded exit in the spacious closet.,go south,,"You've just shown up in a spotless shower. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",Spotless Shower,"You've just shown up in a spotless shower. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I went north to the vault.,I should go north again as it is an unblocked exit.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I went south to the spotless shower.,I should look around the spotless shower to find the coin.,look,,"You've just shown up in a spotless shower. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",Spotless Shower,"You've just shown up in a spotless shower. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I went north to the shower.,I should go east as it is an unguarded exit.,go east,,"You've just shown up in a roomy garage.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I looked around the spotless shower but did not find the coin.,I should try going east to explore the unblocked entranceway in the spotless shower.,go east,,"You've entered a balmy dish-pit. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an exit to the west. Don't worry, it is unguarded.",Roomy Garage,"You've just shown up in a roomy garage.
+You don't like doors? Why not try going west, that entranceway is unblocked.",Balmy Dish-Pit,"You've entered a balmy dish-pit. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I went east to the balmy dish-pit.,I should look around the balmy dish-pit to find the coin.,look,,"You've entered a balmy dish-pit. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",Balmy Dish-Pit,"You've entered a balmy dish-pit. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I looked around the balmy dish-pit but did not find the coin.,I should go west back to the spotless shower to try another exit.,go west,,"You've just shown up in a spotless shower. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",Spotless Shower,"You've just shown up in a spotless shower. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went west back to the spotless shower.,I should try going north to explore the unguarded exit in the spotless shower.,go north,,"You are in a closet. A spacious one. You begin to take stock of what's here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",Spacious Closet,"You are in a closet. A spacious one. You begin to take stock of what's here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went north to the spacious closet.,I should try going east to explore the unblocked entranceway in the spacious closet.,go east,,"You find yourself in a parlor. A fun one.
+
+
+
+There is an exit to the west. Don't worry, it is unguarded.",Fun Parlor,"You find yourself in a parlor. A fun one.
 
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I went east to the roomy garage.,I should go west since it is the only exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+42,,I went east to the fun parlor.,I should look around the fun parlor to find the coin.,look,,"You find yourself in a parlor. A fun one.
 
 
 
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+There is an exit to the west. Don't worry, it is unguarded.",Fun Parlor,"You find yourself in a parlor. A fun one.
 
 
 
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I went west back to the shower.,I should go south as it is an unblocked exit.,go south,,"You've entered a vault.
+There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I looked around the fun parlor but did not find the coin.,I should go west back to the spacious closet to try another direction.,go west,,"You are in a closet. A spacious one. You begin to take stock of what's here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",Spacious Closet,"You are in a closet. A spacious one. You begin to take stock of what's here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I went west back to the spacious closet.,I should try going north to explore the unguarded exit in the spacious closet.,go north,,"You've entered a vault.
 
 
 
@@ -256,7 +376,7 @@ You need an unblocked exit? You should try going north. There is an exit to the 
 
 
 You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I went south back to the vault.,I should go west as it is an unblocked exit.,go west,,"I just think it's great that you've just entered a kitchenette.
+45,,I went north to the vault.,I should try going west to explore the vault further.,go west,,"I just think it's great that you've just entered a kitchenette.
 
 
 
@@ -265,7 +385,7 @@ There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just
 
 
 There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I went west to the kitchenette.,I should go east since it is an unguarded exit.,go east,,"You've entered a vault.
+46,,I went west to the kitchenette.,I should go east back to the vault to try the other exit.,go east,,"You've entered a vault.
 
 
 
@@ -274,7 +394,7 @@ You need an unblocked exit? You should try going north. There is an exit to the 
 
 
 You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I went east back to the vault.,I should go north as it is an unblocked exit.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+47,,I went east back to the vault.,I should try going north from the vault to continue exploring.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
 
 
 
@@ -283,7 +403,16 @@ You need an unguarded exit? You should try going east. There is an unblocked exi
 
 
 You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I went north to the shower.,I should go east as it is an unguarded exit.,go east,,"You've just shown up in a roomy garage.
+48,,I went north to the shower.,I should look around the shower to find the coin or any clues.,look,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I looked around the shower but did not find the coin.,I should try going east to explore the next area.,go east,,"You've just shown up in a roomy garage.
 
 
 
@@ -292,52 +421,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Roomy Garage,"You'v
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I went east to the roomy garage.,I should go west since it is an unguarded exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I went west back to the shower.,I should go south since it is an unblocked exit.,go south,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I went south back to the vault.,I should go west since it is an unblocked exit.,go west,,"I just think it's great that you've just entered a kitchenette.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just think it's great that you've just entered a kitchenette.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I went west to the kitchenette.,I should go east since it is an unguarded exit.,go east,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I went east back to the vault.,I should go north since it is an unblocked exit.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I went north to the shower.,I should go east since it is an unguarded exit.,go east,,"You've just shown up in a roomy garage.
+50,,I went east to the roomy garage.,I should look around the roomy garage to find the coin.,look,,"You've just shown up in a roomy garage.
 
 
 
@@ -346,7 +430,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Roomy Garage,"You'v
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I went east to the roomy garage.,I should go west since it is an unguarded exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+51,,I looked around the roomy garage but did not find the coin.,I should go west back to the shower to try another exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
 
 
 
@@ -355,7 +439,7 @@ You need an unguarded exit? You should try going east. There is an unblocked exi
 
 
 You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I went west back to the shower.,I should go south since it is an unblocked exit.,go south,,"You've entered a vault.
+52,,I went west back to the shower.,I should try going south from the shower to explore another area.,go south,,"You've entered a vault.
 
 
 
@@ -364,7 +448,16 @@ You need an unblocked exit? You should try going north. There is an exit to the 
 
 
 You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I went south back to the vault.,I should go west since it is an unblocked exit.,go west,,"I just think it's great that you've just entered a kitchenette.
+53,,I went south to the vault.,I should look around the vault to find the coin.,look,,"You've entered a vault.
+
+
+
+You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
+
+
+
+You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I looked around the vault but did not find the coin.,I should try going west from the vault to explore another area.,go west,,"I just think it's great that you've just entered a kitchenette.
 
 
 
@@ -373,7 +466,16 @@ There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just
 
 
 There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I went west to the kitchenette.,I should go east since it is an unguarded exit.,go east,,"You've entered a vault.
+55,,I went west to the kitchenette.,I should look around the kitchenette to find the coin.,look,,"I just think it's great that you've just entered a kitchenette.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just think it's great that you've just entered a kitchenette.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I looked around the kitchenette but did not find the coin.,I should go east back to the vault and then try going north to explore further.,go east,,"You've entered a vault.
 
 
 
@@ -382,7 +484,7 @@ You need an unblocked exit? You should try going north. There is an exit to the 
 
 
 You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I went east back to the vault.,I should go north since it is an unblocked exit.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+57,,I went east back to the vault.,I should try going north from the vault to explore another area.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
 
 
 
@@ -391,7 +493,43 @@ You need an unguarded exit? You should try going east. There is an unblocked exi
 
 
 You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I went north to the shower.,I should go east since it is an unguarded exit.,go east,,"You've just shown up in a roomy garage.
+58,,I went north to the shower.,I should look around the shower to find the coin.,look,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I looked around the shower but did not find the coin.,I should try going west from the shower to explore another area.,go west,,"You find yourself in a salon. An ordinary one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",Salon,"You find yourself in a salon. An ordinary one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went west to the salon.,I should look around the salon to find the coin.,look,,"You find yourself in a salon. An ordinary one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",Salon,"You find yourself in a salon. An ordinary one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I looked around the salon but did not find the coin.,I should try going east from the salon to explore another area.,go east,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I went east back to the shower.,I should try going east from the shower to explore another area.,go east,,"You've just shown up in a roomy garage.
 
 
 
@@ -400,52 +538,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Roomy Garage,"You'v
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I went east to the roomy garage.,I should go west since it is an unguarded exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I went west back to the shower.,I should go south since it is an unblocked exit.,go south,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I went south back to the vault.,I should go west since it is an unblocked exit.,go west,,"I just think it's great that you've just entered a kitchenette.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just think it's great that you've just entered a kitchenette.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I went west to the kitchenette.,I should go east since it is an unguarded exit.,go east,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I went east back to the vault.,I should go north since it is an unblocked exit.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I went north to the shower.,I should go east since it is an unguarded exit.,go east,,"You've just shown up in a roomy garage.
+63,,I went east to the roomy garage.,I should look around the roomy garage to find the coin.,look,,"You've just shown up in a roomy garage.
 
 
 
@@ -454,7 +547,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Roomy Garage,"You'v
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-55,,I went east to the roomy garage.,I should go west since it is an unguarded exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+64,,I looked around the roomy garage but did not find the coin.,I should go west back to the shower to explore other directions.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
 
 
 
@@ -463,7 +556,7 @@ You need an unguarded exit? You should try going east. There is an unblocked exi
 
 
 You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-56,,I went west back to the shower.,I should go south since it is an unblocked exit.,go south,,"You've entered a vault.
+65,,I went west back to the shower.,I should try going south from the shower to explore another area.,go south,,"You've entered a vault.
 
 
 
@@ -472,7 +565,7 @@ You need an unblocked exit? You should try going north. There is an exit to the 
 
 
 You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-57,,I went south back to the vault.,I should go west since it is an unblocked exit.,go west,,"I just think it's great that you've just entered a kitchenette.
+66,,I went south to the vault.,I should try going west from the vault to explore another area.,go west,,"I just think it's great that you've just entered a kitchenette.
 
 
 
@@ -481,7 +574,16 @@ There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just
 
 
 There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I went west to the kitchenette.,I should go east since it is an unguarded exit.,go east,,"You've entered a vault.
+67,,I went west to the kitchenette.,I should look around the kitchenette to find the coin.,look,,"I just think it's great that you've just entered a kitchenette.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just think it's great that you've just entered a kitchenette.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+68,,I looked around the kitchenette but did not find the coin.,I should go east back to the vault and then try going north to explore further.,go east,,"You've entered a vault.
 
 
 
@@ -490,7 +592,7 @@ You need an unblocked exit? You should try going north. There is an exit to the 
 
 
 You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-59,,I went east back to the vault.,I should go north since it is an unblocked exit.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+69,,I went east back to the vault.,I should try going north from the vault to explore another area.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
 
 
 
@@ -499,7 +601,7 @@ You need an unguarded exit? You should try going east. There is an unblocked exi
 
 
 You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I went north to the shower.,I should go east since it is an unguarded exit.,go east,,"You've just shown up in a roomy garage.
+70,,I went north to the shower.,I should try going east from the shower to explore another area.,go east,,"You've just shown up in a roomy garage.
 
 
 
@@ -508,52 +610,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Roomy Garage,"You'v
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I went east to the roomy garage.,I should go west since it is an unguarded exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-62,,I went west back to the shower.,I should go south since it is an unblocked exit.,go south,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-63,,I went south back to the vault.,I should go west since it is an unblocked exit.,go west,,"I just think it's great that you've just entered a kitchenette.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just think it's great that you've just entered a kitchenette.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I went west to the kitchenette.,I should go east since it is an unguarded exit.,go east,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-65,,I went east back to the vault.,I should go north since it is an unblocked exit.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-66,,I went north to the shower.,I should go east since it is an unguarded exit.,go east,,"You've just shown up in a roomy garage.
+71,,I went east to the roomy garage.,I should look around the roomy garage to find the coin.,look,,"You've just shown up in a roomy garage.
 
 
 
@@ -562,7 +619,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Roomy Garage,"You'v
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-67,,I went east to the roomy garage.,I should go west since it is an unguarded exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+72,,I looked around the roomy garage but did not find the coin.,I should go west back to the shower and then try going west to explore another area.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
 
 
 
@@ -571,34 +628,97 @@ You need an unguarded exit? You should try going east. There is an unblocked exi
 
 
 You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-68,,I went west back to the shower.,I should go south since it is an unblocked exit.,go south,,"You've entered a vault.
+73,,I went west back to the shower.,I should go west from the shower to explore another area.,go west,,"You find yourself in a salon. An ordinary one.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",Salon,"You find yourself in a salon. An ordinary one.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-69,,I went south back to the vault.,I should go west since it is an unblocked exit.,go west,,"I just think it's great that you've just entered a kitchenette.
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+74,,I went west to the salon.,I should look around the salon to find the coin.,look,,"You find yourself in a salon. An ordinary one.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just think it's great that you've just entered a kitchenette.
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",Salon,"You find yourself in a salon. An ordinary one.
 
 
 
-There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-70,,I went west to the kitchenette.,I should go east since it is an unguarded exit.,go east,,"You've entered a vault.
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+75,,I looked around the salon but did not find the coin.,I should try going south from the salon to explore another area.,go south,,"You are in a lounge. A well lit one.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
+There is an unblocked exit to the north.",Well Lit Lounge,"You are in a lounge. A well lit one.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-71,,I went east back to the vault.,I should go north since it is an unblocked exit.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+76,,I went south to the well lit lounge.,I should look around the well lit lounge to find the coin.,look,,"You are in a lounge. A well lit one.
+
+
+
+There is an unblocked exit to the north.",Well Lit Lounge,"You are in a lounge. A well lit one.
+
+
+
+There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+77,,I looked around the well lit lounge but did not find the coin.,I should go north back to the salon and then try going west to explore another area.,go north,,"You find yourself in a salon. An ordinary one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",Salon,"You find yourself in a salon. An ordinary one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+78,,I went north back to the salon.,I should go west from the salon to explore the unguarded exit.,go west,,"Guess what, you are in the place we're calling the launderette.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Launderette,"Guess what, you are in the place we're calling the launderette.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+79,,I went west to the launderette.,I should try going south from the launderette to find the coin.,go south,,"Look at you, bigshot, walking into a hot canteen like it isn't some huge deal.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",Hot Canteen,"Look at you, bigshot, walking into a hot canteen like it isn't some huge deal.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+80,,I went south to the hot canteen.,I should look around the hot canteen to find the coin.,look,,"Look at you, bigshot, walking into a hot canteen like it isn't some huge deal.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",Hot Canteen,"Look at you, bigshot, walking into a hot canteen like it isn't some huge deal.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+81,,I looked around the hot canteen but did not find the coin.,I should go north back to the launderette and then try going east to explore another area.,go north,,"Guess what, you are in the place we're calling the launderette.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",Launderette,"Guess what, you are in the place we're calling the launderette.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+82,,I went north back to the launderette.,I should go east from the launderette to explore the next area.,go east,,"You find yourself in a salon. An ordinary one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",Salon,"You find yourself in a salon. An ordinary one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+83,,I went east to the salon.,I should go east from the salon to explore the unguarded exit.,go east,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
 
 
 
@@ -607,7 +727,16 @@ You need an unguarded exit? You should try going east. There is an unblocked exi
 
 
 You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-72,,I went north to the shower.,I should go east since it is an unguarded exit.,go east,,"You've just shown up in a roomy garage.
+84,,I went east to the shower.,I should look around the shower to find the coin.,look,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+85,,I looked around the shower but did not find the coin.,I should go east from the shower to continue exploring.,go east,,"You've just shown up in a roomy garage.
 
 
 
@@ -616,52 +745,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Roomy Garage,"You'v
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-73,,I went east to the roomy garage.,I should go west since it is an unguarded exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-74,,I went west back to the shower.,I should go south since it is an unblocked exit.,go south,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-75,,I went south back to the vault.,I should go west since it is an unblocked exit.,go west,,"I just think it's great that you've just entered a kitchenette.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just think it's great that you've just entered a kitchenette.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-76,,I went west to the kitchenette.,I should go east since it is an unguarded exit.,go east,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-77,,I went east back to the vault.,I should go north since it is an unblocked exit.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-78,,I went north to the shower.,I should go east since it is an unguarded exit.,go east,,"You've just shown up in a roomy garage.
+86,,I went east to the roomy garage.,I should look around the roomy garage to find the coin.,look,,"You've just shown up in a roomy garage.
 
 
 
@@ -670,7 +754,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Roomy Garage,"You'v
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-79,,I went east to the roomy garage.,I should go west since it is an unguarded exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+87,,I looked around the roomy garage but did not find the coin.,I should go west back to the shower to explore other directions.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
 
 
 
@@ -679,7 +763,7 @@ You need an unguarded exit? You should try going east. There is an unblocked exi
 
 
 You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-80,,I went west back to the shower.,I should go south since it is an unblocked exit.,go south,,"You've entered a vault.
+88,,I went west back to the shower.,I should try going south from the shower to explore the unblocked exit.,go south,,"You've entered a vault.
 
 
 
@@ -688,7 +772,16 @@ You need an unblocked exit? You should try going north. There is an exit to the 
 
 
 You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-81,,I went south back to the vault.,I should go west since it is an unblocked exit.,go west,,"I just think it's great that you've just entered a kitchenette.
+89,,I went south from the shower to the vault.,I should look around the vault to find the coin.,look,,"You've entered a vault.
+
+
+
+You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
+
+
+
+You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+90,,I looked around the vault but did not find the coin.,I should try going west from the vault to explore another area.,go west,,"I just think it's great that you've just entered a kitchenette.
 
 
 
@@ -697,7 +790,16 @@ There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just
 
 
 There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-82,,I went west to the kitchenette.,I should go east since it is an unguarded exit.,go east,,"You've entered a vault.
+91,,I went west from the vault to the kitchenette.,I should look around the kitchenette to find the coin.,look,,"I just think it's great that you've just entered a kitchenette.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just think it's great that you've just entered a kitchenette.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+92,,I looked around the kitchenette but did not find the coin.,I should go east back to the vault to try another direction.,go east,,"You've entered a vault.
 
 
 
@@ -706,7 +808,7 @@ You need an unblocked exit? You should try going north. There is an exit to the 
 
 
 You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-83,,I went east back to the vault.,I should go north since it is an unblocked exit.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+93,,I went east back to the vault.,I should try going north from the vault to explore another area.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
 
 
 
@@ -715,7 +817,16 @@ You need an unguarded exit? You should try going east. There is an unblocked exi
 
 
 You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-84,,I went north to the shower.,I should go east since it is an unguarded exit.,go east,,"You've just shown up in a roomy garage.
+94,,I went north from the vault to the shower.,I should look around the shower to find the coin.,look,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+
+
+
+You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+95,,I looked around the shower but did not find the coin.,I should try going east from the shower to explore another area.,go east,,"You've just shown up in a roomy garage.
 
 
 
@@ -724,52 +835,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Roomy Garage,"You'v
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-85,,I went east to the roomy garage.,I should go west since it is an unguarded exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-86,,I went west back to the shower.,I should go south since it is an unblocked exit.,go south,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-87,,I went south back to the vault.,I should go west since it is an unblocked exit.,go west,,"I just think it's great that you've just entered a kitchenette.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just think it's great that you've just entered a kitchenette.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-88,,I went west to the kitchenette.,I should go east since it is an unguarded exit.,go east,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-89,,I went east back to the vault.,I should go north since it is an unblocked exit.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-90,,I went north to the shower.,I should go east since it is an unguarded exit.,go east,,"You've just shown up in a roomy garage.
+96,,I went east from the shower to the roomy garage.,I should look around the roomy garage to find the coin.,look,,"You've just shown up in a roomy garage.
 
 
 
@@ -778,7 +844,7 @@ There is an exit to the west. Don't worry, it is unguarded.",Roomy Garage,"You'v
 
 
 There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-91,,I went east to the roomy garage.,I should go west since it is an unguarded exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
+97,,I looked around the roomy garage but did not find the coin.,I should go west back to the shower to try another direction.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
 
 
 
@@ -787,7 +853,7 @@ You need an unguarded exit? You should try going east. There is an unblocked exi
 
 
 You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-92,,I went west back to the shower.,I should go south since it is an unblocked exit.,go south,,"You've entered a vault.
+98,,I went west back to the shower.,I should try going south from the shower to explore another area.,go south,,"You've entered a vault.
 
 
 
@@ -796,7 +862,16 @@ You need an unblocked exit? You should try going north. There is an exit to the 
 
 
 You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-93,,I went south back to the vault.,I should go west since it is an unblocked exit.,go west,,"I just think it's great that you've just entered a kitchenette.
+99,,I went south from the shower to the vault.,I should look around the vault to find the coin.,look,,"You've entered a vault.
+
+
+
+You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
+
+
+
+You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+100,,I looked around the vault but did not find the coin.,I should try going west from the vault to explore another area.,go west,,"I just think it's great that you've just entered a kitchenette.
 
 
 
@@ -804,67 +879,4 @@ There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just
 
 
 
-There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-94,,I went west to the kitchenette.,I should go east since it is an unguarded exit.,go east,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-95,,I went east back to the vault.,I should go north since it is an unblocked exit.,go north,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-96,,I went north to the shower.,I should go east since it is an unguarded exit.,go east,,"You've just shown up in a roomy garage.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",Roomy Garage,"You've just shown up in a roomy garage.
-
-
-
-There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-97,,I went east to the roomy garage.,I should go west since it is an unguarded exit.,go west,,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",Shower,"You arrive in a shower. An usual one. I guess you better just go and list everything you see here.
-
-
-
-You need an unguarded exit? You should try going east. There is an unblocked exit to the south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-98,,I went west back to the shower.,I should go south since it is an unblocked exit.,go south,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-99,,I went south back to the vault.,I should go west since it is an unblocked exit.,go west,,"I just think it's great that you've just entered a kitchenette.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded.",Kitchenette,"I just think it's great that you've just entered a kitchenette.
-
-
-
-There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-100,,I went west to the kitchenette.,I should go east since it is an unguarded exit.,go east,,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",Vault,"You've entered a vault.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,True,
+There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,True,

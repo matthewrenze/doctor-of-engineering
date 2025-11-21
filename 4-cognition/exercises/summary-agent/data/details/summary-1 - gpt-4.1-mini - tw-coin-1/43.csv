@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the bar.,I should go north as the first step.,go north,,"You've entered a laundromat. You begin looking for stuff.
+1,,I am in the bar.,I will follow the instructions and go north first.,go north,,"You've entered a laundromat. You begin looking for stuff.
 
 
 
@@ -13,7 +13,7 @@ You don't like doors? Why not try going north, that entranceway is unblocked. Th
 
 
 You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I went north from the bar and entered the laundromat.,I should go north through the unblocked entranceway as suggested.,go north,,"Well I'll be, you are in a place we're calling a restroom.
+2,,I went north and entered the laundromat.,I should go north again as the entranceway is unblocked.,go north,,"Well I'll be, you are in a place we're calling a restroom.
 
 
 
@@ -22,7 +22,7 @@ There is an unguarded exit to the east. There is an unblocked exit to the south.
 
 
 There is an unguarded exit to the east. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-3,,"I went north from the bar to the laundromat, then moved north again to the restroom.",I should go east from the restroom as there is an unguarded exit in that direction.,go east,,"You've entered a salon. You begin to take stock of what's in the room.
+3,,I went north into the restroom.,I should go east as there is an unguarded exit.,go east,,"You've entered a salon. You begin to take stock of what's in the room.
 
 
 
@@ -31,7 +31,7 @@ You don't like doors? Why not try going south, that entranceway is unblocked. Yo
 
 
 You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I went north twice from the bar and entered the salon.,I should go south as the entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+4,,I went east into the salon.,I should go south as the entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
@@ -40,7 +40,7 @@ You need an unguarded exit? You should try going north. There is an unblocked ex
 
 
 You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-5,,"I went north twice from the bar and entered the salon, then moved to the kitchenette.",I should try going north as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+5,,I went south into the kitchenette.,I should go north as there is an unblocked exit there.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
 
 
 
@@ -49,7 +49,12 @@ You don't like doors? Why not try going south, that entranceway is unblocked. Yo
 
 
 You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I entered the salon and took stock of the room; the south and west entrances are unblocked.,I should try going south since the entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+6,,I went north into the salon.,I should go east as per the original plan.,go east,,You can't go that way.,Salon,"You've entered a salon. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+7,,I tried to go east in the salon but was unable to.,"Since east is blocked, I should try going south as suggested.",go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
@@ -58,7 +63,7 @@ You need an unguarded exit? You should try going north. There is an unblocked ex
 
 
 You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I am in the kitchenette with unblocked exits to the north and west.,I should go north as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+8,,I went south into the kitchenette.,I should now try going north as suggested to continue exploring.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
 
 
 
@@ -67,7 +72,43 @@ You don't like doors? Why not try going south, that entranceway is unblocked. Yo
 
 
 You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I went north twice from the bar and entered the salon; I took stock of the room and found unblocked exits to the south and west.,I should go south from the salon as the entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+9,,I went north into the salon.,I should try going west in the salon since the entranceway is unblocked.,go west,,"Well I'll be, you are in a place we're calling a restroom.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the south.",Restroom,"Well I'll be, you are in a place we're calling a restroom.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I went west into the restroom.,I should try going south in the restroom since the exit is unblocked.,go south,,"You've entered a laundromat. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south.",Laundromat,"You've entered a laundromat. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I went south into the laundromat.,I should go north in the laundromat since the entranceway is unblocked.,go north,,"Well I'll be, you are in a place we're calling a restroom.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the south.",Restroom,"Well I'll be, you are in a place we're calling a restroom.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I went north into the restroom.,I should go east from the restroom since there is an unguarded exit.,go east,,"You've entered a salon. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I went east from the restroom into the salon.,I should go south from the salon since the entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
@@ -76,507 +117,454 @@ You need an unguarded exit? You should try going north. There is an unblocked ex
 
 
 You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I am in the kitchenette with unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+14,,I went south from the salon into the kitchenette.,I should go west from the kitchenette since the exit is unblocked.,go west,,"You're now in the serious cubicle.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked.",Serious Cubicle,"You're now in the serious cubicle.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I went north twice from the bar and entered the salon; I took stock of the room and found unblocked exits to the south and west.,I should go south from the salon as the south entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I went west from the kitchenette into the serious cubicle.,I should go north from the serious cubicle since the entranceway is unblocked.,go north,,"You've just walked into a serious studio. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an exit to the east. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unguarded.",Serious Studio,"You've just walked into a serious studio. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I am in the kitchenette with unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+There is an exit to the east. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went north from the serious cubicle into the serious studio.,I should go east from the serious studio to explore further.,go east,,"Well, here we are in an attic. You begin to take stock of what's here.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the west.",Attic,"Well, here we are in an attic. You begin to take stock of what's here.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I went north twice from the bar and entered the salon; I took stock of the room and found unblocked exits to the south and west.,I should go south from the salon as the south entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went east from the serious studio into the attic.,I should go east again from the attic to continue exploring.,go east,,"You're now in a bedroom.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an exit to the east. Don't worry, it is unguarded. There is an unguarded exit to the west.",Bedroom,"You're now in a bedroom.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I am in the kitchenette with unblocked exits to the north and west.,I should go north as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+There is an exit to the east. Don't worry, it is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went east from the attic into the bedroom.,I should go east again from the bedroom to continue moving forward.,go east,,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Bedchamber,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon since the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went east from the bedroom into the bedchamber.,I should go east again from the bedchamber to continue exploring.,go east,,"You've just sauntered into a basement.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I am in the kitchenette with unblocked exits to the north and west.,I should go north to continue exploring as suggested.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went east from the bedchamber into the basement.,I should go north from the basement as suggested to continue exploring.,go north,,"You are in an office. A typical kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon since the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I went north from the basement into the office.,I should go west from the office as suggested to continue exploring.,go west,,"You are in a workshop. A standard one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",Workshop,"You are in a workshop. A standard one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I am in the kitchenette with unblocked exits to the north and west.,I should go north to try to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I went west from the office into the workshop.,I should go east from the workshop to return to the office and then try going south from the office.,go east,,"You are in an office. A typical kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I went east from the workshop into the office.,I should go south from the office.,go south,,"You've just sauntered into a basement.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I am in the kitchenette with unblocked exits to the north and west.,I should go north to continue exploring as suggested.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went south from the office into the basement.,I should go west from the basement.,go west,,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Bedchamber,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon since the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went west from the basement into the bedchamber.,I should go east from the bedchamber.,go east,,"You've just sauntered into a basement.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I am in the kitchenette with unblocked exits to the north and west.,I should go north to try the unblocked exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I went east from the bedchamber into the basement.,I should go north from the basement.,go north,,"You are in an office. A typical kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon since the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I went north from the basement into the office.,I should go west from the office.,go west,,"You are in a workshop. A standard one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",Workshop,"You are in a workshop. A standard one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I am in the kitchenette with unblocked exits to the north and west.,I should go north to try to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I went west from the office into the workshop.,I should go north from the workshop.,go north,,You can't go that way.,Workshop,"You are in a workshop. A standard one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I tried to go north from the workshop but was unable to.,I should go east from the workshop since the entranceway is unguarded.,go east,,"You are in an office. A typical kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I went east from the workshop and entered the office.,I should go south from the office since there is an unguarded exit there.,go south,,"You've just sauntered into a basement.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I went south from the office and entered the basement.,I should go west from the basement since the entranceway is unblocked.,go west,,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon since the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Bedchamber,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I went west from the basement and arrived in the bedchamber.,I should go east from the bedchamber since the entranceway is unblocked.,go east,,"You've just sauntered into a basement.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I went east from the bedchamber and arrived in the basement.,I should go south from the basement as per the original instructions.,go south,,You can't go that way.,Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon since the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I tried to go south from the basement but was unable to.,"Since south is blocked, I will try going west as the entranceway is unblocked.",go west,,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Bedchamber,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north to try the unblocked exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I went west from the basement and arrived in the bedchamber.,I should try going east since the entranceway is unblocked.,go east,,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south since the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I went east from the bedchamber and arrived in the basement.,I should try going north to find an unguarded exit.,go north,,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north to try the unblocked exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I went north from the basement and entered the office.,I should try going west as suggested to find an unguarded exit.,go west,,"You are in a workshop. A standard one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",Workshop,"You are in a workshop. A standard one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon since the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I went west from the office and entered the workshop.,I should try going east to return to the office as the entranceway is unguarded.,go east,,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to continue exploring.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I went east from the workshop and entered the office.,I should go south from the office as there is an unguarded exit.,go south,,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon since the south entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went south from the office and entered the basement.,I should try going west from the basement since the entranceway is unblocked.,go west,,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Bedchamber,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went west from the basement and arrived in the bedchamber.,I should try going east from the bedchamber since the entranceway is unblocked.,go east,,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I went east from the bedchamber and arrived in the basement.,I should try going north from the basement to find an unguarded exit.,go north,,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north to try the unblocked exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I went north from the basement and entered the office.,I should try going west from the office as suggested to find an unguarded exit.,go west,,"You are in a workshop. A standard one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",Workshop,"You are in a workshop. A standard one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south since the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I went west from the office and entered the workshop.,I should try going east from the workshop to return to the office or explore the unguarded entranceway.,go east,,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I went east from the workshop and entered the office.,I should go south from the office through the unguarded exit.,go south,,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon since the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I went south from the office and entered the basement.,I should go west from the basement through the unblocked entranceway.,go west,,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Bedchamber,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I went west from the basement and arrived in the bedchamber.,I should go east from the bedchamber through the unblocked entranceway.,go east,,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I went east from the bedchamber and arrived in the basement.,I should go north from the basement to find an unguarded exit.,go north,,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I went north from the basement and entered the office.,I should go west from the office as suggested to continue exploring.,go west,,"You are in a workshop. A standard one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",Workshop,"You are in a workshop. A standard one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I went west from the office and entered the workshop.,I should go east from the workshop to return to the office.,go east,,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north to try the unblocked exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I went east from the workshop and entered the office.,I should go south from the office.,go south,,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I went south from the office and entered the basement.,I should go west from the basement to the bedchamber.,go west,,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Bedchamber,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I went west from the basement and arrived in the bedchamber.,I should go east from the bedchamber to the basement.,go east,,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon since the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I went east from the bedchamber and arrived in the basement.,I should go north from the basement to the office.,go north,,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to continue exploring.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I went north from the basement and entered the office.,I should go west from the office.,go west,,"You are in a workshop. A standard one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",Workshop,"You are in a workshop. A standard one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I went west from the office and entered the workshop.,I should go east from the workshop.,go east,,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north to try the unblocked exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I went east from the workshop and entered the office.,I should go south from the office.,go south,,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I went south from the office and entered the basement.,I should go west from the basement to the bedchamber.,go west,,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Bedchamber,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I went west from the basement and arrived in the bedchamber.,I should go east from the bedchamber to the basement.,go east,,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went east from the bedchamber and arrived in the basement.,I should go north from the basement to the office.,go north,,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-55,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I went north from the basement and entered the office.,I should go west from the office.,go west,,"You are in a workshop. A standard one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",Workshop,"You are in a workshop. A standard one.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-56,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south since the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I went west from the office and entered the workshop.,I should go east from the workshop.,go east,,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Office,"You are in an office. A typical kind of place.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-57,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I went east from the workshop and entered the office.,I should go south from the office.,go south,,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",Basement,"You've just sauntered into a basement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You need an unguarded exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I went south from the office and entered the basement.,I should go west from the basement to the bedchamber.,go west,,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Bedchamber,"You arrive in a bedchamber. An ordinary one.
 
 
 
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-59,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north to try the unblocked exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-62,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entrance is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-63,,I looked around in the kitchenette and found unblocked exits to the north and west.,I should go north from the kitchenette as suggested to find an unguarded exit.,go north,,"You've entered a salon. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Salon,"You've entered a salon. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I went north twice from the bar and entered the salon; the south and west entrances are unblocked.,I should go south from the salon as the south entranceway is unblocked.,go south,,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",Kitchenette,"You are in a kitchenette. An usual one. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-
-
-You need an unguarded exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,True,
+You don't like doors? Why not try going east, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,True,

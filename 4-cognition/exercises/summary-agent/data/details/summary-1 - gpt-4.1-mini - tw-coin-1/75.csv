@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the Steamy Kitchenette.,I will follow the instructions and go north first.,go north,,"You arrive in an office. A serious kind of place.
+1,,I am in the Steamy Kitchenette.,I should go north as the entranceway is unguarded.,go north,,"You arrive in an office. A serious kind of place.
 
 
 
@@ -13,7 +13,7 @@ There is an unblocked exit to the north. You need an unguarded exit? You should 
 
 
 There is an unblocked exit to the north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I went north from the Steamy Kitchenette to the Serious Office.,I should go north again as instructed.,go north,,"You've entered a restroom.
+2,,I went north to the Serious Office.,I should go north again as there is an unblocked exit to the north.,go north,,"You've entered a restroom.
 
 
 
@@ -22,7 +22,7 @@ You don't like doors? Why not try going east, that entranceway is unblocked. You
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-3,,"I went north from the Steamy Kitchenette to the Serious Office, then north again to the Restroom.",I should try to go east from the Restroom since the entranceway is unblocked.,go east,,"You are in a kitchenette. An ordinary kind of place. The room is well lit.
+3,,I went north to the Restroom.,I should try going east as the entranceway is unblocked.,go east,,"You are in a kitchenette. An ordinary kind of place. The room is well lit.
 
 
 
@@ -31,7 +31,7 @@ There is an unguarded exit to the north. There is an exit to the west. Don't wor
 
 
 There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I went north twice from the Steamy Kitchenette to the Serious Office and then to the Restroom; now I am back in the Kitchenette.,I should go north from the Kitchenette as there is an unguarded exit to the north.,go north,,"You are in an entertaining salon.
+4,,I went east to the Kitchenette.,I should go north as the exit is unguarded.,go north,,"You are in an entertaining salon.
 
 
 
@@ -40,7 +40,7 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unguard
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I went north twice from the Steamy Kitchenette to the Serious Office and then to the Restroom; now I am in the Entertaining Salon.,I should go north from the Entertaining Salon as there is an unblocked exit to the north.,go north,,"Well how about that, you are in a place we're calling a cookery.
+5,,I went north to the Entertaining Salon.,I should go north again as the exit is unblocked.,go north,,"Well how about that, you are in a place we're calling a cookery.
 
 
 
@@ -49,12 +49,408 @@ There is an exit to the south. Don't worry, it is unguarded. There is an unblock
 
 
 There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-6,,"I moved to the Cookery, which has exits to the south and west.",I should take the coin from the floor of the sweaty cookery as instructed.,take coin from floor,,You can't see any such thing.,Cookery,"Well how about that, you are in a place we're calling a cookery.
+6,,I went north to the Cookery.,I should go west as the exit to the west is unblocked.,go west,,"You are in a cellar. An ordinary kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+7,,I went west to the Cellar.,I should go west again since the entranceway to the west is unblocked.,go west,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+8,,I went west to the Pleasant Bedchamber.,I should go west again since the exit to the west is unguarded.,go west,,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+9,,I went west to the Clean Washroom.,I should go south since the exit to the south is unblocked.,go south,,"You've just sauntered into an ugly attic.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Ugly Attic,"You've just sauntered into an ugly attic.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I went south to the Ugly Attic.,I should go north since the exit to the north is unblocked.,go north,,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I went north to the Clean Washroom.,I should go east since the exit to the east is unblocked.,go east,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I went east to the Pleasant Bedchamber.,I should go west to return to the previous room.,go west,,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I went west to the Clean Washroom.,I should go south from the Clean Washroom.,go south,,"You've just sauntered into an ugly attic.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Ugly Attic,"You've just sauntered into an ugly attic.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went south to the Ugly Attic.,I should go south again from the Ugly Attic.,go south,,"You've entered a bathroom. You can barely contain your excitement.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Bathroom,"You've entered a bathroom. You can barely contain your excitement.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I went south to the Bathroom.,I should go west from the Bathroom.,go west,,"Okay, so you're in a shower, cool, but is it standard? You better believe it is. Let's see what's in here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",Shower,"Okay, so you're in a shower, cool, but is it standard? You better believe it is. Let's see what's in here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went west to the Shower.,I should go south from the Shower.,go south,,"You find yourself in a workshop. A normal one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going east. There is an unblocked exit to the north.",Workshop,"You find yourself in a workshop. A normal one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going east. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went south to the Workshop.,I should go east from the Workshop.,go east,,"You've entered a cookhouse.
+
+
+
+There is an unguarded exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",Cookhouse,"You've entered a cookhouse.
+
+
+
+There is an unguarded exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went east to the Cookhouse.,I should go north from the Cookhouse.,go north,,You can't go that way.,Cookhouse,"You've entered a cookhouse.
+
+
+
+There is an unguarded exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I tried to go north from the Cookhouse but couldn't.,"Since north is blocked, I will try going south from the Cookhouse.",go south,,"You are in a pantry. An ordinary kind of place.
+
+
+
+There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unblocked.",Pantry,"You are in a pantry. An ordinary kind of place.
+
+
+
+There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went south from the Cookhouse to the Pantry.,I will now go west from the Pantry.,go west,,"You are in a washroom. A normal kind of place. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the west.",Washroom,"You are in a washroom. A normal kind of place. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I went west from the Pantry to the Washroom.,I will now go south from the Washroom.,go south,,You can't go that way.,Washroom,"You are in a washroom. A normal kind of place. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I tried to go south from the Washroom but couldn't.,I should go east from the Washroom instead.,go east,,"You are in a pantry. An ordinary kind of place.
+
+
+
+There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unblocked.",Pantry,"You are in a pantry. An ordinary kind of place.
+
+
+
+There is an unguarded exit to the north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I went east from the Washroom to the Pantry.,I should go north from the Pantry.,go north,,"You've entered a cookhouse.
+
+
+
+There is an unguarded exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",Cookhouse,"You've entered a cookhouse.
+
+
+
+There is an unguarded exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went north from the Pantry to the Cookhouse.,I should go west from the Cookhouse.,go west,,"You find yourself in a workshop. A normal one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going east. There is an unblocked exit to the north.",Workshop,"You find yourself in a workshop. A normal one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going east. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went west from the Cookhouse to the Workshop.,I should go north from the Workshop.,go north,,"Okay, so you're in a shower, cool, but is it standard? You better believe it is. Let's see what's in here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",Shower,"Okay, so you're in a shower, cool, but is it standard? You better believe it is. Let's see what's in here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I went north from the Workshop to the Shower.,I should go east from the Shower.,go east,,"You've entered a bathroom. You can barely contain your excitement.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Bathroom,"You've entered a bathroom. You can barely contain your excitement.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I went east from the Shower to the Bathroom.,I should go north from the Bathroom.,go north,,"You've just sauntered into an ugly attic.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Ugly Attic,"You've just sauntered into an ugly attic.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I went north from the Bathroom to the Ugly Attic.,I should go north from the Ugly Attic.,go north,,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I went north from the Ugly Attic to the Clean Washroom.,I should go east from the Clean Washroom.,go east,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I went east from the Clean Washroom to the Pleasant Bedchamber.,I should go east from the Pleasant Bedchamber.,go east,,"You are in a cellar. An ordinary kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I went east from the Pleasant Bedchamber to the Cellar.,I should go west from the Cellar.,go west,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I went west from the Cellar to the Pleasant Bedchamber.,I should go west from the Pleasant Bedchamber.,go west,,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I went west from the Pleasant Bedchamber to the Clean Washroom.,I should go south from the Clean Washroom.,go south,,"You've just sauntered into an ugly attic.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Ugly Attic,"You've just sauntered into an ugly attic.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I went south from the Clean Washroom to the Ugly Attic.,I should go south from the Ugly Attic.,go south,,"You've entered a bathroom. You can barely contain your excitement.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Bathroom,"You've entered a bathroom. You can barely contain your excitement.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I went south from the Ugly Attic to the Bathroom.,I should go west from the Bathroom.,go west,,"Okay, so you're in a shower, cool, but is it standard? You better believe it is. Let's see what's in here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",Shower,"Okay, so you're in a shower, cool, but is it standard? You better believe it is. Let's see what's in here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I went west from the Bathroom to the Shower.,I should go east from the Shower.,go east,,"You've entered a bathroom. You can barely contain your excitement.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Bathroom,"You've entered a bathroom. You can barely contain your excitement.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I went east from the Shower to the Bathroom.,I should go north from the Bathroom.,go north,,"You've just sauntered into an ugly attic.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Ugly Attic,"You've just sauntered into an ugly attic.
+
+
+
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I went north from the Bathroom to the Ugly Attic.,I should go north from the Ugly Attic.,go north,,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I went north from the Ugly Attic to the Clean Washroom.,I should go east from the Clean Washroom.,go east,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went east from the Clean Washroom to the Pleasant Bedchamber.,I should go east from the Pleasant Bedchamber.,go east,,"You are in a cellar. An ordinary kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went east from the Pleasant Bedchamber to the Cellar.,I should go east from the Cellar.,go east,,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
 
 
 
 There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I tried to take the coin from the floor of the sweaty cookery but couldn't find it.,I should continue following the directions by going south from the Cookery.,go south,,"You are in an entertaining salon.
+42,,I went east from the Cellar to the Cookery.,I should take the coin from the floor of the sweaty cookery.,take coin from floor,,You can't see any such thing.,Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I tried to take the coin from the floor of the cookery but couldn't find it.,I should look around the cookery more carefully to find the coin.,look,,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I looked around the cookery but did not find the coin.,I should examine the floor in the cookery to see if the coin is there.,examine floor,,You can't see any such thing.,Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I examined the floor but couldn't find the coin.,"I should try to take the coin directly from the cookery again, maybe it is just on the floor but not explicitly described.",take coin from cookery,,You can't see any such thing.,Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I tried to take the coin from the cookery again but still couldn't find it.,"Since the coin is not visible on the floor, I should look around the cookery more carefully to find any container or object that might hold the coin.",look cookery,,You can't see any such thing.,Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I looked around the cookery but found no visible objects or containers.,"Since there are no visible objects in the cookery, I should try to move west to explore the adjacent area for the coin.",go west,,"You are in a cellar. An ordinary kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I went west to the cellar.,I should look around the cellar to see if the coin is here.,look,,"You are in a cellar. An ordinary kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I looked around the cellar but found nothing new.,I should go east back to the cookery and search carefully for the coin again.,go east,,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I went east to the cookery.,I should try to take the coin from the floor of the cookery again.,take coin from floor,,You can't see any such thing.,Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I tried to take the coin from the floor of the cookery but couldn't find it.,I should look around the cookery carefully to find the coin.,look,,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I looked around the cookery but found no visible objects or containers.,I should try to examine the floor more closely to find the coin.,examine floor,,You can't see any such thing.,Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I examined the floor but couldn't see any coin.,I should try to search the cookery more thoroughly to find the coin.,look cookery,,You can't see any such thing.,Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I looked around the cookery but still couldn't find the coin.,"Since the coin is not visible on the floor or around the cookery, I should try to search the floor more specifically.",examine floor,,You can't see any such thing.,Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I examined the floor but still couldn't find the coin.,"Since the coin is not visible in the cookery, I should try to go south to see if the coin might be in the adjacent room.",go south,,"You are in an entertaining salon.
 
 
 
@@ -63,7 +459,16 @@ There is an exit to the north. Don't worry, it is unblocked. There is an unguard
 
 
 There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I am in the Entertaining Salon with exits north and south.,I should go north to explore further.,go north,,"Well how about that, you are in a place we're calling a cookery.
+56,,I went south to the Entertaining Salon.,I should look around the Entertaining Salon to see if the coin is here.,look,,"You are in an entertaining salon.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the south.",Entertaining Salon,"You are in an entertaining salon.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I looked around the Entertaining Salon but found nothing new.,I should go north from the Entertaining Salon to continue exploring for the coin.,go north,,"Well how about that, you are in a place we're calling a cookery.
 
 
 
@@ -72,412 +477,7 @@ There is an exit to the south. Don't worry, it is unguarded. There is an unblock
 
 
 There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I am in the Cookery with exits to the south and west.,I should look around the Cookery carefully to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I am in the Cookery with exits to the south and west.,I should look around the Cookery carefully to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I am in the Cookery with exits to the south and west.,I should look around the Cookery carefully to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-21,,"I moved to the Cookery, which has exits to the south and west.",I should look around the Cookery carefully to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I am in the Cookery with exits to the south and west.,I should examine the Cookery carefully to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
+58,,I went north to the Cookery.,I should go west from the Cookery to check the adjacent area for the coin.,go west,,"You are in a cellar. An ordinary kind of place.
 
 
 
@@ -486,7 +486,52 @@ There is an exit to the east. Don't worry, it is unblocked. You don't like doors
 
 
 There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-55,,"I moved to the cellar, which has exits to the east and west.",I should look around the cellar to see if there is a coin on the floor.,look,,"You are in a cellar. An ordinary kind of place.
+59,,I went west from the Cookery to the Cellar.,I should go west from the Cellar to explore the next area for the coin.,go west,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went west from the Cellar to the Pleasant Bedchamber.,I should look around the Pleasant Bedchamber to find the coin or any clues.,look,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I looked around the Pleasant Bedchamber but found no new objects or clues.,"Since the coin was not found here, I should go west to explore further.",go west,,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I went west to the Clean Washroom.,I should look around the Clean Washroom to see if the coin is here.,look,,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
+
+
+
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I looked around the Clean Washroom but found nothing new.,I should go east from the Clean Washroom to explore the next room.,go east,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I went east from the Clean Washroom to the Pleasant Bedchamber.,I should go east from the Pleasant Bedchamber to continue exploring.,go east,,"You are in a cellar. An ordinary kind of place.
 
 
 
@@ -495,7 +540,48 @@ There is an exit to the east. Don't worry, it is unblocked. You don't like doors
 
 
 There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-56,,"I moved to the cellar, which has exits to the east and west.",I should look around the cellar to see if there is a coin on the floor or any other useful items.,look,,"You are in a cellar. An ordinary kind of place.
+65,,I went east from the Pleasant Bedchamber to the Cellar.,I should go east from the Cellar to continue exploring.,go east,,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+66,,I went east from the Cellar to the Cookery.,I should take the coin from the floor of the Cookery as instructed.,take coin from floor,,You can't see any such thing.,Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+67,,I tried to take the coin from the floor of the Cookery but couldn't find it.,"Since the coin is not visible on the floor, I should look around the Cookery more carefully to find the coin.",look,,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+68,,I looked around the Cookery but found no visible objects or the coin.,"Since the coin is not visible in the Cookery, I should try to go south or west to explore other rooms where the coin might be.",go south,,"You are in an entertaining salon.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the south.",Entertaining Salon,"You are in an entertaining salon.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+69,,I went south from the Cookery to the Entertaining Salon.,I should go back north to the Cookery and then try going west to explore the other exit mentioned.,go north,,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+70,,I went north from the Entertaining Salon to the Cookery.,I should go west from the Cookery to explore the unblocked exit.,go west,,"You are in a cellar. An ordinary kind of place.
 
 
 
@@ -504,395 +590,273 @@ There is an exit to the east. Don't worry, it is unblocked. You don't like doors
 
 
 There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-57,,"I moved to the cellar, which has exits to the east and west.",I should look around the cellar to see if there is a coin on the floor or any other items to take.,look,,"You are in a cellar. An ordinary kind of place.
+71,,I went west from the Cookery to the Cellar.,I should go west from the Cellar to explore the unblocked entranceway.,go west,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-58,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore the next area.,go east,,"Well how about that, you are in a place we're calling a cookery.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+72,,I went west from the Cellar to the Pleasant Bedchamber.,I should look around the Pleasant Bedchamber to find the coin or any clues.,look,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-59,,"I moved to the Cookery, which has exits to the south and west.",I should look around the Cookery carefully to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+73,,I looked around the Pleasant Bedchamber but found no new objects or clues.,I should try going west as suggested to explore further.,go west,,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I am in the Cookery with exits to the south and west.,I should look around the Cookery carefully to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+74,,I went west to the Clean Washroom.,I should go east to return to the Pleasant Bedchamber and then try to find the coin again.,go east,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I am in the Cookery with exits to the south and west.,I should go west to explore the area and try to find the coin on the floor.,go west,,"You are in a cellar. An ordinary kind of place.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+75,,I went east to the Pleasant Bedchamber.,I should look around the Pleasant Bedchamber to see if the coin is visible here.,look,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-62,,"I moved to the cellar, which has exits to the east and west.",I should look around the cellar to find the coin on the floor.,look,,"You are in a cellar. An ordinary kind of place.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+76,,I looked around the Pleasant Bedchamber but found no new objects or clues.,I should go west from the Pleasant Bedchamber to explore the adjacent room for the coin.,go west,,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-63,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore the next area.,go east,,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+77,,I went west to the Clean Washroom.,I should check the Clean Washroom for the coin or any clues before moving further.,look,,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+78,,I looked around the Clean Washroom but found nothing new.,I should try going east from the Clean Washroom to explore the next area.,go east,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-65,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore further.,go east,,"Well how about that, you are in a place we're calling a cookery.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+79,,I went east to the Pleasant Bedchamber.,I should look around the Pleasant Bedchamber to find the coin or any other objects.,look,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-66,,I am in the Cookery with exits to the south and west.,I should go west to explore the area and try to find the coin on the floor.,go west,,"You are in a cellar. An ordinary kind of place.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+80,,I looked around the Pleasant Bedchamber but found no new objects or clues.,I should try going west as suggested to explore other areas that might have the coin.,go west,,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-67,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore further.,go east,,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+81,,I went west to the Clean Washroom.,"I should explore the exits here to find the coin, so I will try going south.",go south,,"You've just sauntered into an ugly attic.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Ugly Attic,"You've just sauntered into an ugly attic.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-68,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+82,,I went south to the Ugly Attic.,"I should check the exits here, so I will try going south again.",go south,,"You've entered a bathroom. You can barely contain your excitement.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Bathroom,"You've entered a bathroom. You can barely contain your excitement.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-69,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore further.,go east,,"Well how about that, you are in a place we're calling a cookery.
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+83,,I went south to the Bathroom.,I should go west to explore the unblocked exit.,go west,,"Okay, so you're in a shower, cool, but is it standard? You better believe it is. Let's see what's in here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",Shower,"Okay, so you're in a shower, cool, but is it standard? You better believe it is. Let's see what's in here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-70,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+84,,I went west to the Shower.,I should go south to explore the unblocked exit.,go south,,"You find yourself in a workshop. A normal one. Let's see what's in here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+You need an unblocked exit? You should try going east. There is an unblocked exit to the north.",Workshop,"You find yourself in a workshop. A normal one. Let's see what's in here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-71,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore further.,go east,,"Well how about that, you are in a place we're calling a cookery.
+You need an unblocked exit? You should try going east. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+85,,I went south to the Workshop.,I should go east to explore the unblocked exit.,go east,,"You've entered a cookhouse.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unguarded exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",Cookhouse,"You've entered a cookhouse.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-72,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
+There is an unguarded exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+86,,I went east to the Cookhouse.,I should go west to explore the unguarded entranceway.,go west,,"You find yourself in a workshop. A normal one. Let's see what's in here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+You need an unblocked exit? You should try going east. There is an unblocked exit to the north.",Workshop,"You find yourself in a workshop. A normal one. Let's see what's in here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-73,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore further.,go east,,"Well how about that, you are in a place we're calling a cookery.
+You need an unblocked exit? You should try going east. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+87,,I went west to the Workshop.,I should go north to explore the unblocked exit.,go north,,"Okay, so you're in a shower, cool, but is it standard? You better believe it is. Let's see what's in here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",Shower,"Okay, so you're in a shower, cool, but is it standard? You better believe it is. Let's see what's in here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-74,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+88,,I went north to the Shower.,I should go east to continue exploring the unblocked exit.,go east,,"You've entered a bathroom. You can barely contain your excitement.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Bathroom,"You've entered a bathroom. You can barely contain your excitement.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-75,,"I moved to the cellar, which has exits to the east and west.",I should go east to explore the cellar further and look for the coin.,go east,,"Well how about that, you are in a place we're calling a cookery.
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+89,,I went east to the Bathroom.,I should go north to explore the unblocked exit.,go north,,"You've just sauntered into an ugly attic.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Ugly Attic,"You've just sauntered into an ugly attic.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-76,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+90,,I went north to the Ugly Attic.,I should go north again to continue exploring the unblocked exit.,go north,,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-77,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+91,,I went north to the Clean Washroom.,I should go east to explore the unblocked exit.,go east,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-78,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore the area and look for the coin.,go east,,"Well how about that, you are in a place we're calling a cookery.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+92,,I went east to the Pleasant Bedchamber.,I should look around and list everything I see here.,look,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-79,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+93,,I looked around the Pleasant Bedchamber but found no new objects or clues.,I should go west as suggested to explore further.,go west,,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-80,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore further.,go east,,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+94,,I went west to the Clean Washroom.,I should go south to explore the area further.,go south,,"You've just sauntered into an ugly attic.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Ugly Attic,"You've just sauntered into an ugly attic.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-81,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+95,,I went south to the Ugly Attic.,I should go south again to continue exploring.,go south,,"You've entered a bathroom. You can barely contain your excitement.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Bathroom,"You've entered a bathroom. You can barely contain your excitement.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-82,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore the area and look for the coin.,go east,,"Well how about that, you are in a place we're calling a cookery.
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+96,,I went south to the Bathroom.,I should go west to explore the next room.,go west,,"Okay, so you're in a shower, cool, but is it standard? You better believe it is. Let's see what's in here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",Shower,"Okay, so you're in a shower, cool, but is it standard? You better believe it is. Let's see what's in here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-83,,I am in the Cookery with exits to the south and west.,I should go west to explore the area and try to find the coin on the floor.,go west,,"You are in a cellar. An ordinary kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+97,,I went west to the Shower.,I should go east to return to the Bathroom.,go east,,"You've entered a bathroom. You can barely contain your excitement.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Bathroom,"You've entered a bathroom. You can barely contain your excitement.
 
 
 
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-84,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to continue exploring.,go east,,"Well how about that, you are in a place we're calling a cookery.
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+98,,I went east to the Bathroom.,I should go north from the Bathroom.,go north,,"You've just sauntered into an ugly attic.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",Ugly Attic,"You've just sauntered into an ugly attic.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-85,,I am in the Cookery with exits to the south and west.,I should look around the Cookery carefully to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+99,,I went north from the Bathroom to the Ugly Attic.,I should go north from the Ugly Attic.,go north,,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Clean Washroom,"You are in a washroom. A clean one.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-86,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
+There is an unblocked exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+100,,I went north from the Ugly Attic to the Clean Washroom.,I should go east from the Clean Washroom.,go east,,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You are in a bedchamber. A pleasant one. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-87,,I am in the Cookery with exits to the south and west.,I should look around the Cookery carefully to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-88,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-89,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore further.,go east,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-90,,I am in the Cookery with exits to the south and west.,I should look around the Cookery to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-91,,I am in the Cookery with exits to the south and west.,I should go west to explore the area and try to find the coin on the floor.,go west,,"You are in a cellar. An ordinary kind of place.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-92,,"I moved to the cellar, which has exits to the east and west.",I should go east to explore the cellar further and look for the coin.,go east,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-93,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-94,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore the area and try to find the coin.,go east,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-95,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-96,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to continue exploring.,go east,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-97,,I am in the Cookery with exits to the south and west.,I should go west to explore the other exit in the Cookery.,go west,,"You are in a cellar. An ordinary kind of place.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cellar,"You are in a cellar. An ordinary kind of place.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-98,,"I moved to the cellar, which has exits to the east and west.",I should go east from the cellar to explore the area and try to find the coin.,go east,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-99,,I am in the Cookery with exits to the south and west.,I should look around the Cookery carefully to find the coin on the floor.,look,,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-100,,I am in the Cookery with exits to the south and west.,I should take the coin from the floor of the sweaty cookery as instructed.,take coin from floor,,You can't see any such thing.,Cookery,"Well how about that, you are in a place we're calling a cookery.
-
-
-
-There is an exit to the south. Don't worry, it is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,True,
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,True,

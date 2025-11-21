@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the cellar.,I will go north as the entranceway is unguarded.,go north,,"You find yourself in a spare room. A normal one.
+1,,I am in the cellar.,I should go north as the entranceway is unguarded.,go north,,"You find yourself in a spare room. A normal one.
 
 
 
@@ -13,7 +13,7 @@ There is an unblocked exit to the south. There is an unblocked exit to the west.
 
 
 There is an unblocked exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I went north from the cellar and arrived in the spare room.,I should go west from the spare room as the next step.,go west,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+2,,I went north from the cellar and arrived in the spare room with exits south and west.,I should go west as per the instructions.,go west,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
@@ -22,7 +22,7 @@ You need an unblocked exit? You should try going east. You don't like doors? Why
 
 
 You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-3,,"I went north from the cellar to the spare room, then went west to the pantry.",I should continue moving west as instructed.,go west,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+3,,I went west from the spare room and arrived in the pantry with exits east and west.,I should go west again as instructed.,go west,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
 
 
 
@@ -31,7 +31,7 @@ There is an unguarded exit to the east. There is an exit to the south. Don't wor
 
 
 There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I went west from the pantry and arrived in the chamber.,I should go south from the chamber as the next step in the sequence.,go south,,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
+4,,I went west from the pantry and arrived in the chamber with exits east and south.,I should go south as the next step.,go south,,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
 
 
 
@@ -40,296 +40,223 @@ You don't like doors? Why not try going north, that entranceway is unblocked. Yo
 
 
 You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I went west from the chamber and arrived in the study.,I should go south as the next step in the sequence.,go south,,You can't go that way.,Study,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
+5,,I went south from the chamber and arrived in the study with exits north and west.,I should go west as the next step.,go west,,"You find yourself in a shower. A normal one.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I tried to go west from the study but was unable to; the exit is blocked.,I should try going north from the study since the north entranceway is unblocked.,go north,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north.",Shower,"You find yourself in a shower. A normal one.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an exit to the east. Don't worry, it is unblocked. You need an unblocked exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+6,,I went west from the study and arrived in the shower with exits east and north.,I should go north as the next step.,go north,,"Ah, the office. This is some kind of office, really great typical vibes in this place, a wonderful typical atmosphere. And now, well, you're in it.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I tried to go west from the study but was blocked; I then moved back east to the chamber.,I should go south from the chamber as the west exit is blocked and the south exit is unblocked.,go south,,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
+There is an unguarded exit to the south. You need an unblocked exit? You should try going west.",Office,"Ah, the office. This is some kind of office, really great typical vibes in this place, a wonderful typical atmosphere. And now, well, you're in it.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",Study,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
+There is an unguarded exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+7,,I went north from the shower and arrived in the office with an exit south and west.,I should go west as the next step.,go west,,"You arrive in a cookery. An usual one.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-8,,"I tried to go west from the study but was blocked, then moved back east to the chamber, and then returned to the study.",I should go north from the study since the entranceway is unblocked.,go north,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going south.",Cookery,"You arrive in a cookery. An usual one.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an exit to the east. Don't worry, it is unguarded. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+8,,I went west from the office and arrived in the cookery with exits east and south.,I should go south as the next step.,go south,,"You've entered a parlor. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I moved back east to the chamber and then returned to the study; now I am in the chamber.,I should go south from the chamber as the exit is unblocked.,go south,,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
+There is an unguarded exit to the north. There is an unguarded exit to the south.",Parlor,"You've entered a parlor. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 
 
-You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",Study,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
+There is an unguarded exit to the north. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+9,,I went south from the cookery and arrived in the parlor with exits north and south.,I should go south as the next step.,go south,,"Look at that sign! What does it say? It says Welcome to the kitchenette? Well that's cool.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-10,,"I moved to the study and took stock of the surroundings; the north entranceway is unblocked, and the west exit is available.",I should go north from the study as the entranceway is unblocked.,go north,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an unblocked exit to the north. You need an unguarded exit? You should try going south.",Kitchenette,"Look at that sign! What does it say? It says Welcome to the kitchenette? Well that's cool.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an unblocked exit to the north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I went south from the parlor and arrived in the kitchenette with exits north and south.,I should go south again as the next step.,go south,,"You've entered a studio. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I am in the chamber with exits to the east and south.,I should go east from the chamber.,go east,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+You need an unguarded exit? You should try going north. There is an unblocked exit to the south.",Studio,"You've entered a studio. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Pantry,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+You need an unguarded exit? You should try going north. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I went south from the kitchenette and arrived in the studio with exits north and south.,I should go south again as the next step.,go south,,"You are in a basement. A normal one. I guess you better just go and list everything you see here.
 
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I moved to the pantry; the room has unblocked exits east and west.,I should go west from the pantry as the west entranceway is unblocked.,go west,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked.",Basement,"You are in a basement. A normal one. I guess you better just go and list everything you see here.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I went south from the studio and arrived in the basement with exits east and north.,I should go east as the next step.,go east,,"You've just sauntered into a vault. You start to take note of what's in the room.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I moved to the chamber; the room has unblocked exits east and south.,I should go south from the chamber.,go south,,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
+You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked.",Vault,"You've just sauntered into a vault. You start to take note of what's in the room.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",Study,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
+You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I went east from the basement and arrived in the vault with exits south and west.,I should go south as the next step.,go south,,"A rusty signboard tells you that you are now in the garage.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-14,,"I moved to the study and took stock of the surroundings; the north entranceway is unblocked, and the west exit is available.",I should go north from the study as the entranceway is unblocked.,go north,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south.",Garage,"A rusty signboard tells you that you are now in the garage.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went south from the vault and arrived in the garage with exits north and south.,I should go south again as the next step.,go south,,"You are in an attic. A typical one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I am in the chamber with exits to the east and south.,I should go east from the chamber.,go east,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked.",Attic,"You are in an attic. A typical one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Pantry,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+15,,"I went south from the garage and arrived in the attic with exits north, east, and north.",I should go east as the next step.,go east,,"Fancy seeing you here. Here, by the way, being the cubicle.
 
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I am in the pantry with unblocked exits east and west.,I should go west from the pantry as per the instructions.,go west,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Cubicle,"Fancy seeing you here. Here, by the way, being the cubicle.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went east from the attic and arrived in the cubicle with exits south and west.,I should go south as the next step.,go south,,"You are in a cookhouse. A standard kind of place. You start to take note of what's in the room.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I moved to the chamber; the room has unblocked exits east and south.,I should go south from the chamber.,go south,,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
+You need an unguarded exit? You should try going north. There is an unguarded exit to the south.",Cookhouse,"You are in a cookhouse. A standard kind of place. You start to take note of what's in the room.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",Study,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
+You need an unguarded exit? You should try going north. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went south from the cubicle and arrived in the cookhouse with exits north and south.,I should go south next.,go south,,"Ah, the steam room. This is some kind of steam room, really great standard vibes in this place, a wonderful standard atmosphere. And now, well, you're in it. You begin to take stock of what's here.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-18,,"I moved to the study and took stock of the surroundings; the north entranceway is unblocked, and the west exit is available.",I should go north from the study as the entranceway is unblocked.,go north,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an unblocked exit to the north. You need an unblocked exit? You should try going south.",Steam Room,"Ah, the steam room. This is some kind of steam room, really great standard vibes in this place, a wonderful standard atmosphere. And now, well, you're in it. You begin to take stock of what's here.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an unblocked exit to the north. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went south from the cookhouse and arrived in the steam room with exits north and south.,I should go south again.,go south,,"You've entered a lounge. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I moved to the chamber; the room has unblocked exits east and south.,I should go east from the chamber.,go east,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+You don't like doors? Why not try going east, that entranceway is unguarded. You need an unguarded exit? You should try going north.",Lounge,"You've entered a lounge. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Pantry,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+You don't like doors? Why not try going east, that entranceway is unguarded. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went south from the steam room and arrived in the lounge with exits east and north.,I should go east as the entranceway is unguarded.,go east,,"You find yourself in a sauna.
 
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I am in the pantry with unblocked exits east and west.,I should go west from the pantry as the exit is unblocked.,go west,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Sauna,"You find yourself in a sauna.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went east from the lounge and arrived in the sauna with exits south and west.,I should go south as suggested for an unguarded exit.,go south,,"You are in a workshop. A normal kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I am in the chamber with exits east and south.,I should go south from the chamber as the next step in the sequence.,go south,,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
+There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",Workshop,"You are in a workshop. A normal kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",Study,"You make another one of your grand eccentric entrances into a study. You begin to take stock of what's here.
+There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I went south from the sauna and arrived in the workshop with exits north and west.,I should go west as the next step in the sequence.,go west,,"You're now in the closet.
 
 
 
-You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-22,,"I arrived in the study and took stock of the surroundings; the north entranceway is unblocked, and the west exit is available.",I should go north as the entranceway is unblocked.,go north,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Closet,"You're now in the closet.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I went west from the workshop and arrived in the closet with exits east and north.,"I should go west again, but there is no west exit here. Instead, I will go north as the next step.",go north,,"You are in a playroom. A typical kind of place.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I am in the chamber.,I should go east from the chamber as the exit is unguarded and unblocked.,go east,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Playroom,"You are in a playroom. A typical kind of place.
 
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Pantry,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I went north from the closet and arrived in the playroom with exits east and south.,"I should go west, but there is no west exit here. I will go south as the next step.",go south,,"You're now in the closet.
 
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I am in the pantry with unblocked exits east and west.,I should go west from the pantry as the exit is unblocked.,go west,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Closet,"You're now in the closet.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went south from the playroom and arrived back in the closet with exits east and north.,I should go north from the closet.,go north,,"You are in a playroom. A typical kind of place.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I am in the chamber.,I should go east from the chamber as the exit is unguarded and unblocked.,go east,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Playroom,"You are in a playroom. A typical kind of place.
 
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Pantry,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went north from the closet and arrived in the playroom with exits east and south.,I should go east from the playroom.,go east,,"You are in a dish-pit. A normal kind of place. Let's see what's in here.
 
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I am in the pantry with unblocked exits east and west.,I should go west from the pantry as the exit is unblocked.,go west,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going west.",Dish-Pit,"You are in a dish-pit. A normal kind of place. Let's see what's in here.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
+You need an unblocked exit? You should try going north. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I went east from the playroom and arrived in the dish-pit with exits north and west.,I should go north from the dish-pit.,go north,,"Well I'll be, you are in the place we're calling the scullery.
 
 
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I am in the chamber with exits east and south.,I should go east from the chamber.,go east,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+There is an unblocked exit to the south.
 
+There is a coin on the floor.",Scullery,"Well I'll be, you are in the place we're calling the scullery.
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Pantry,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
+There is an unblocked exit to the south.
 
+There is a coin on the floor.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I went north from the dish-pit and arrived in the scullery where there is a coin on the floor.,I should take the coin from the floor in the scullery.,take coin from floor,,"You pick up the coin from the ground.
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I am in the pantry with unblocked exits east and west.,I should go west from the pantry as per the instructions.,go west,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
 
 
+Your score has just gone up by one point.
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
 
+                               *** The End ***
 
+You scored 1 out of a possible 1, in 28 turns.
 
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I am in the chamber.,I should go east from the chamber as the exit is unguarded and unblocked.,go east,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Scullery,"Well I'll be, you are in the place we're calling the scullery.
 
 
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Pantry,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I am in the pantry with unblocked exits east and west.,I should go west from the pantry as per the instructions.,go west,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
-
-
-
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
-
-
-
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I am in the chamber.,I should go east from the chamber as there is an unguarded exit to the east.,go east,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Pantry,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I am in the pantry with unblocked exits east and west.,I should go west from the pantry as per the instructions.,go west,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
-
-
-
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
-
-
-
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I am in the chamber.,I should go east from the chamber as the exit is unguarded and unblocked.,go east,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Pantry,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I am in the pantry with unblocked exits east and west.,I should go west from the pantry.,go west,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
-
-
-
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
-
-
-
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I am in the chamber.,I should go east from the chamber as the exit is unguarded and unblocked.,go east,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Pantry,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I am in the pantry with unblocked exits east and west.,I should go west from the pantry as the next step in the sequence is to move west.,go west,,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
-
-
-
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",Chamber,"You've entered a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the chamber.
-
-
-
-There is an unguarded exit to the east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I am in the chamber with exits east and south.,I should go east from the chamber.,go east,,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",Pantry,"You are in a pantry. You decide to start listing off everything you see in the room, as if you were in a text adventure.
-
-
-
-You need an unblocked exit? You should try going east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,True,
+There is an unblocked exit to the south.",You are carrying: a coin.,1 of 1,1.0,True,

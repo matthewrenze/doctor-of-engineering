@@ -2,7 +2,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You're now in the kitchen.
 
 You see a fridge. You make out a closed oven. You make out a table. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table. You bend down to tie your shoe. When you stand up, you notice a counter. The counter is vast. On the counter you make out a raw red potato, a cookbook and a knife. Huh, weird. You see a gleam over in a corner, where you can see a stove. But oh no! there's nothing on this piece of garbage.","You are carrying: a red onion, a block of cheese and a red hot pepper.",0 of 8,0.0,False,
-1,,"I am in the kitchen with a red onion, a block of cheese, and a red hot pepper in my inventory. I see a raw red potato, a cookbook, and a knife on the counter.",I should check the cookbook for the recipe to know what ingredients and steps are needed to cook a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,"I am in the kitchen with a red onion, a block of cheese, and a red hot pepper in my inventory.",I should examine the cookbook on the counter to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -23,33 +23,44 @@ chop the block of cheese
   prepare meal",Kitchen,"You're now in the kitchen.
 
 You see a fridge. You make out a closed oven. You make out a table. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table. You bend down to tie your shoe. When you stand up, you notice a counter. The counter is vast. On the counter you make out a raw red potato, a cookbook and a knife. Huh, weird. You see a gleam over in a corner, where you can see a stove. But oh no! there's nothing on this piece of garbage.","You are carrying: a red onion, a block of cheese and a red hot pepper.",0 of 8,0.0,False,
-2,,"I opened the cookbook and read the recipe for a meal using the block of cheese, red hot pepper, and red onion.",I should start by chopping the block of cheese as the first step in the recipe.,chop block of cheese with knife,,You need to take the knife first.,Kitchen,"You're now in the kitchen.
+2,,"I examined the cookbook and found a recipe that uses the block of cheese, red hot pepper, and red onion with specific preparation steps.",I should start by chopping the block of cheese as the first step in the recipe.,chop block of cheese with knife,,You need to take the knife first.,Kitchen,"You're now in the kitchen.
 
 You see a fridge. You make out a closed oven. You make out a table. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table. You bend down to tie your shoe. When you stand up, you notice a counter. The counter is vast. On the counter you make out a raw red potato, a cookbook and a knife. Huh, weird. You see a gleam over in a corner, where you can see a stove. But oh no! there's nothing on this piece of garbage.","You are carrying: a red onion, a block of cheese and a red hot pepper.",0 of 8,0.0,False,
-3,,I tried to proceed without the knife; I was told I need to take the knife first.,I should take the knife from the counter to be able to prepare the meal.,take knife from counter,,You're carrying too many things already.,Kitchen,"You're now in the kitchen.
+3,,I tried to chop the block of cheese but was reminded to take the knife first.,I should take the knife from the counter before attempting to chop the block of cheese.,take knife from counter,,You're carrying too many things already.,Kitchen,"You're now in the kitchen.
 
 You see a fridge. You make out a closed oven. You make out a table. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table. You bend down to tie your shoe. When you stand up, you notice a counter. The counter is vast. On the counter you make out a raw red potato, a cookbook and a knife. Huh, weird. You see a gleam over in a corner, where you can see a stove. But oh no! there's nothing on this piece of garbage.","You are carrying: a red onion, a block of cheese and a red hot pepper.",0 of 8,0.0,False,
-4,,I tried to take the knife but was told I am carrying too many things.,I should drop one item to free up space before taking the knife.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You're now in the kitchen.
+4,,I tried to take the knife but was told I am carrying too many things already.,I should put down one of the items I am carrying to free up space before taking the knife.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You're now in the kitchen.
 
 You see a fridge. You make out a closed oven. You make out a table. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table. You bend down to tie your shoe. When you stand up, you notice a counter. The counter is vast. On the counter you make out a raw red potato, a cookbook and a knife. Huh, weird. You see a gleam over in a corner, where you can see a stove. But oh no! there's nothing on this piece of garbage.
 
 
 
 There is a red hot pepper on the floor.",You are carrying: a red onion and a block of cheese.,0 of 8,0.0,False,
-5,,I dropped the red hot pepper on the ground; now I am carrying a red onion and a block of cheese.,I should take the knife from the counter so I can prepare the meal.,take knife from counter,,You take the knife from the counter.,Kitchen,"You're now in the kitchen.
+5,,I dropped the red hot pepper to free up space.,Now I should take the knife from the counter to prepare the ingredients.,take knife from counter,,You take the knife from the counter.,Kitchen,"You're now in the kitchen.
 
 You see a fridge. You make out a closed oven. You make out a table. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table. You bend down to tie your shoe. When you stand up, you notice a counter. The counter is vast. On the counter you make out a raw red potato and a cookbook. Huh, weird. You see a gleam over in a corner, where you can see a stove. But oh no! there's nothing on this piece of garbage.
 
 
 
 There is a red hot pepper on the floor.","You are carrying: a knife, a red onion and a block of cheese.",0 of 8,0.0,False,
-6,,"I took the knife from the counter; now I am carrying a knife, a red onion, and a block of cheese.",I should now dice the red onion with the knife as part of the recipe.,dice red onion with knife,,"You dice the red onion.
+6,,I took the knife from the counter.,I should chop the block of cheese with the knife as per the recipe.,chop block of cheese with knife,,"You chop the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You're now in the kitchen.
+
+You see a fridge. You make out a closed oven. You make out a table. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table. You bend down to tie your shoe. When you stand up, you notice a counter. The counter is vast. On the counter you make out a raw red potato and a cookbook. Huh, weird. You see a gleam over in a corner, where you can see a stove. But oh no! there's nothing on this piece of garbage.
+
+
+
+There is a red hot pepper on the floor.","You are carrying: a knife, a red onion and a chopped block of cheese.",1 of 8,0.125,False,
+7,,I chopped the block of cheese with the knife; the cheese is now chopped.,I should chop the red onion next with the knife as per the recipe.,chop red onion with knife,,"You chop the red onion.
 
 
 
                               *** You lost! ***
 
-You scored 0 out of a possible 8, in 6 turns.
+You scored 1 out of a possible 8, in 7 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
@@ -59,4 +70,4 @@ You see a fridge. You make out a closed oven. You make out a table. The table is
 
 
 
-There is a red hot pepper on the floor.","You are carrying: a knife, a red onion and a block of cheese.",0 of 8,0.0,True,
+There is a red hot pepper on the floor.","You are carrying: a knife, a red onion and a chopped block of cheese.",1 of 8,0.125,True,

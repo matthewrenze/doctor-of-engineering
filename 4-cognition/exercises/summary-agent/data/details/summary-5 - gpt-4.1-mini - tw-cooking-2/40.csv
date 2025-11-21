@@ -2,7 +2,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You find yourself in a kitchen. A standard one.
 
 You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper, a cookbook and a knife. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?","You are carrying: a raw pork chop, a raw red potato, a carrot and a yellow bell pepper.",0 of 10,0.0,False,
-1,,I am in the kitchen with various ingredients and a cookbook on the counter.,I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,I am in the kitchen with various ingredients and tools available.,I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -29,24 +29,24 @@ You rest your hand against a wall, but you miss the wall and fall onto a fridge.
 2,,I examined the cookbook and found a recipe with ingredients and directions for a tasty meal.,"I should follow the recipe step-by-step, starting by chopping the carrot.",chop carrot with knife,,You need to take the knife first.,Kitchen,"You find yourself in a kitchen. A standard one.
 
 You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper, a cookbook and a knife. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?","You are carrying: a raw pork chop, a raw red potato, a carrot and a yellow bell pepper.",0 of 10,0.0,False,
-3,,I tried to chop the carrot but was told to take the knife first.,I should take the knife from the counter before chopping the carrot.,take knife from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A standard one.
+3,,I tried to chop the carrot but was told I need to take the knife first.,I should take the knife from the counter before continuing with the recipe.,take knife from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A standard one.
 
 You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper, a cookbook and a knife. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?","You are carrying: a raw pork chop, a raw red potato, a carrot and a yellow bell pepper.",0 of 10,0.0,False,
-4,,I tried to take the knife but was told I am carrying too many things.,I should drop one item from my inventory to free up space for the knife.,drop raw pork chop,,You drop the pork chop on the ground.,Kitchen,"You find yourself in a kitchen. A standard one.
+4,,I tried to take the knife but was told I am carrying too many things already.,I should drop one of the items I am carrying to free up space for the knife.,drop raw red potato,,You drop the red potato on the ground.,Kitchen,"You find yourself in a kitchen. A standard one.
 
 You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper, a cookbook and a knife. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
 
 
 
-There is a raw pork chop on the floor.","You are carrying: a raw red potato, a carrot and a yellow bell pepper.",0 of 10,0.0,False,
-5,,I dropped the raw pork chop to free up space in my inventory.,I should now take the knife from the counter.,take knife from counter,,You take the knife from the counter.,Kitchen,"You find yourself in a kitchen. A standard one.
+There is a raw red potato on the floor.","You are carrying: a raw pork chop, a carrot and a yellow bell pepper.",0 of 10,0.0,False,
+5,,I dropped the raw red potato to free up space.,I should now take the knife from the counter.,take knife from counter,,You take the knife from the counter.,Kitchen,"You find yourself in a kitchen. A standard one.
 
 You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper and a cookbook. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
 
 
 
-There is a raw pork chop on the floor.","You are carrying: a knife, a raw red potato, a carrot and a yellow bell pepper.",0 of 10,0.0,False,
-6,,I took the knife from the counter.,I should chop the carrot now using the knife.,chop carrot with knife,,"You chop the carrot.
+There is a raw red potato on the floor.","You are carrying: a knife, a raw pork chop, a carrot and a yellow bell pepper.",0 of 10,0.0,False,
+6,,I took the knife from the counter.,I should now chop the carrot as the first step of the recipe.,chop carrot with knife,,"You chop the carrot.
 
 
 
@@ -56,57 +56,15 @@ You rest your hand against a wall, but you miss the wall and fall onto a fridge.
 
 
 
-There is a raw pork chop on the floor.","You are carrying: a knife, a raw red potato, a chopped carrot and a yellow bell pepper.",1 of 10,0.1,False,
-7,,I chopped the carrot with the knife successfully.,I should now check the recipe in the cookbook to continue cooking the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-carrot
-  pork chop
-  red potato
-  yellow bell pepper
-
-Directions:
-chop the carrot
-  fry the carrot
-  slice the pork chop
-  fry the pork chop
-  chop the red potato
-  fry the red potato
-  slice the yellow bell pepper
-  fry the yellow bell pepper
-  prepare meal",Kitchen,"You find yourself in a kitchen. A standard one.
+There is a raw red potato on the floor.","You are carrying: a knife, a raw pork chop, a chopped carrot and a yellow bell pepper.",1 of 10,0.1,False,
+7,,I chopped the carrot successfully.,"Next, I should fry the chopped carrot as per the recipe.",fry chopped carrot with stove,,That's not a verb I recognise.,Kitchen,"You find yourself in a kitchen. A standard one.
 
 You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper and a cookbook. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
 
 
 
-There is a raw pork chop on the floor.","You are carrying: a knife, a raw red potato, a chopped carrot and a yellow bell pepper.",1 of 10,0.1,False,
-8,,I examined the cookbook and found the recipe with ingredients and directions.,"I should slice the pork chop next, but I need to take it from the floor first.",take raw pork chop from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A standard one.
-
-You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper and a cookbook. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
-
-
-
-There is a raw pork chop on the floor.","You are carrying: a knife, a raw red potato, a chopped carrot and a yellow bell pepper.",1 of 10,0.1,False,
-9,,I tried to take the raw pork chop but was told I am carrying too many things.,I should drop the yellow bell pepper to free up space.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You find yourself in a kitchen. A standard one.
-
-You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper and a cookbook. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
-
-
-
-There is a yellow bell pepper and a raw pork chop on the floor.","You are carrying: a knife, a raw red potato and a chopped carrot.",1 of 10,0.1,False,
-10,,I dropped the yellow bell pepper to free up space.,I should now take the raw pork chop from the floor.,take raw pork chop from floor,,You pick up the pork chop from the ground.,Kitchen,"You find yourself in a kitchen. A standard one.
-
-You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper and a cookbook. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
-
-
-
-There is a yellow bell pepper on the floor.","You are carrying: a raw pork chop, a knife, a raw red potato and a chopped carrot.",1 of 10,0.1,False,
-11,,I took the raw pork chop from the floor.,I should slice the pork chop now using the knife.,slice raw pork chop with knife,,"You slice the pork chop.
+There is a raw red potato on the floor.","You are carrying: a knife, a raw pork chop, a chopped carrot and a yellow bell pepper.",1 of 10,0.1,False,
+8,,I tried to fry the chopped carrot but the command was not recognized.,I should try to cook the chopped carrot using the stove instead.,cook chopped carrot with stove,,"You fried the carrot.
 
 
 
@@ -116,15 +74,8 @@ You rest your hand against a wall, but you miss the wall and fall onto a fridge.
 
 
 
-There is a yellow bell pepper on the floor.","You are carrying: a sliced raw pork chop, a knife, a raw red potato and a chopped carrot.",2 of 10,0.2,False,
-12,,I sliced the raw pork chop with the knife successfully.,I should fry the chopped carrot next as per the recipe.,fry chopped carrot,,That's not a verb I recognise.,Kitchen,"You find yourself in a kitchen. A standard one.
-
-You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper and a cookbook. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
-
-
-
-There is a yellow bell pepper on the floor.","You are carrying: a sliced raw pork chop, a knife, a raw red potato and a chopped carrot.",2 of 10,0.2,False,
-13,,I tried to fry the chopped carrot but the command was not recognized.,I should try to cook the chopped carrot with the stove instead.,cook chopped carrot with stove,,"You fried the carrot.
+There is a raw red potato on the floor.","You are carrying: a knife, a raw pork chop, a chopped fried carrot and a yellow bell pepper.",2 of 10,0.2,False,
+9,,I cooked the chopped carrot with the stove and fried it successfully.,I should now cook the raw pork chop using the stove.,cook raw pork chop with stove,,"You fried the pork chop.
 
 
 
@@ -134,64 +85,21 @@ You rest your hand against a wall, but you miss the wall and fall onto a fridge.
 
 
 
-There is a yellow bell pepper on the floor.","You are carrying: a sliced raw pork chop, a knife, a raw red potato and a chopped fried carrot.",3 of 10,0.3,False,
-14,,I cooked the chopped carrot with the stove and fried it successfully.,I should now cook the sliced raw pork chop with the stove.,cook sliced raw pork chop with stove,,"You fried the pork chop.
-
-
-
-Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A standard one.
+There is a raw red potato on the floor.","You are carrying: a knife, a fried pork chop, a chopped fried carrot and a yellow bell pepper.",3 of 10,0.3,False,
+10,,I cooked the raw pork chop with the stove and fried it successfully.,"I should now prepare the meal using the fried pork chop, chopped fried carrot, and yellow bell pepper.",prepare meal,,You still miss something.,Kitchen,"You find yourself in a kitchen. A standard one.
 
 You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper and a cookbook. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
 
 
 
-There is a yellow bell pepper on the floor.","You are carrying: a sliced fried pork chop, a knife, a raw red potato and a chopped fried carrot.",4 of 10,0.4,False,
-15,,I cooked the sliced raw pork chop with the stove and fried it successfully.,I should now cook the raw red potato with the stove.,cook raw red potato with stove,,"You fried the red potato.
-
-
-
-Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A standard one.
-
-You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper and a cookbook. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
-
-
-
-There is a yellow bell pepper on the floor.","You are carrying: a sliced fried pork chop, a knife, a fried red potato and a chopped fried carrot.",5 of 10,0.5,False,
-16,,I cooked the raw red potato with the stove and fried it successfully.,"I should prepare the meal now with the fried pork chop, fried carrot, and fried potato.",prepare meal,,Something still needs to be cut.,Kitchen,"You find yourself in a kitchen. A standard one.
-
-You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper and a cookbook. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
-
-
-
-There is a yellow bell pepper on the floor.","You are carrying: a sliced fried pork chop, a knife, a fried red potato and a chopped fried carrot.",5 of 10,0.5,False,
-17,,I tried to prepare the meal but was told something still needs to be cut.,I should cut the yellow bell pepper on the floor to complete the preparation.,take yellow bell pepper from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A standard one.
-
-You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper and a cookbook. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
-
-
-
-There is a yellow bell pepper on the floor.","You are carrying: a sliced fried pork chop, a knife, a fried red potato and a chopped fried carrot.",5 of 10,0.5,False,
-18,,I tried to take the yellow bell pepper from the floor but was told I am carrying too many things.,I should drop the fried carrot to free up space and then take the yellow bell pepper.,drop chopped fried carrot,,You drop the carrot on the ground.,Kitchen,"You find yourself in a kitchen. A standard one.
-
-You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper and a cookbook. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
-
-
-
-There is a chopped fried carrot and a yellow bell pepper on the floor.","You are carrying: a sliced fried pork chop, a knife and a fried red potato.",5 of 10,0.5,False,
-19,,I dropped the chopped fried carrot to free up space.,I should now take the yellow bell pepper from the floor.,take yellow bell pepper from floor,,You pick up the yellow bell pepper from the ground.,Kitchen,"You find yourself in a kitchen. A standard one.
-
-You rest your hand against a wall, but you miss the wall and fall onto a fridge. You make out a closed oven here. You hear a noise behind you and spin around, but you can't see anything other than a table. The table is massive. But oh no! there's nothing on this piece of trash. Oh, great. Here's a counter. The counter is vast. On the counter you can see a raw yellow potato, a banana, a red hot pepper and a cookbook. You scan the room, seeing a stove! The stove is conventional. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
-
-
-
-There is a chopped fried carrot on the floor.","You are carrying: a yellow bell pepper, a sliced fried pork chop, a knife and a fried red potato.",5 of 10,0.5,False,
-20,,I took the yellow bell pepper from the floor.,I should chop the yellow bell pepper with the knife to complete the preparation.,chop yellow bell pepper with knife,,"You chop the yellow bell pepper.
+There is a raw red potato on the floor.","You are carrying: a knife, a fried pork chop, a chopped fried carrot and a yellow bell pepper.",3 of 10,0.3,False,
+11,,I tried to prepare the meal but was told I am still missing something.,I should chop the yellow bell pepper before preparing the meal.,chop yellow bell pepper with knife,,"You chop the yellow bell pepper.
 
 
 
                               *** You lost! ***
 
-You scored 5 out of a possible 10, in 19 turns.
+You scored 3 out of a possible 10, in 10 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
@@ -201,4 +109,4 @@ You rest your hand against a wall, but you miss the wall and fall onto a fridge.
 
 
 
-There is a chopped fried carrot on the floor.","You are carrying: a yellow bell pepper, a sliced fried pork chop, a knife and a fried red potato.",5 of 10,0.5,True,
+There is a raw red potato on the floor.","You are carrying: a knife, a fried pork chop, a chopped fried carrot and a yellow bell pepper.",3 of 10,0.3,True,

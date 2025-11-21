@@ -4,7 +4,12 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-1,,I am in the corridor.,I should go north to find the kitchen where the cookbook might be.,go north,,"Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
+1,,I am in the corridor.,I should check the goal to understand what I need to do.,goal,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",Corridor,"You've entered a corridor.
+
+
+
+There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
+2,,I checked the goal; I need to cook a delicious meal by checking the cookbook in the kitchen.,I should go north to reach the kitchen.,go north,,"Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
 
 You can make out a bed. Looks like someone's already been here and taken everything off it, though.
 
@@ -13,7 +18,7 @@ You don't like doors? Why not try going south, that entranceway is not blocked b
 You can make out a bed. Looks like someone's already been here and taken everything off it, though.
 
 You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying nothing.,0 of 17,0.0,False,
-2,,I moved from the corridor to the bedroom.,"I need to find the kitchen to check the cookbook for the recipe, so I should go south from the bedroom as suggested.",go south,,"You've entered a corridor.
+3,,I went north but ended up in the bedroom instead of the kitchen.,I should try going east from the corridor to find the kitchen.,go south,,"You've entered a corridor.
 
 
 
@@ -22,25 +27,7 @@ There is an exit to the east. There is an exit to the north. You don't like door
 
 
 There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-3,,I moved from the bedroom back to the corridor.,I should go north from the corridor to explore and find the kitchen where the cookbook might be.,go north,,"Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
-
-You can make out a bed. Looks like someone's already been here and taken everything off it, though.
-
-You don't like doors? Why not try going south, that entranceway is not blocked by one.",Bedroom,"Ah, the bedroom. This is some kind of bedroom, really great usual vibes in this place, a wonderful usual atmosphere. And now, well, you're in it. Okay, just remember what you're here to do, and everything will go great.
-
-You can make out a bed. Looks like someone's already been here and taken everything off it, though.
-
-You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying nothing.,0 of 17,0.0,False,
-4,,I moved from the corridor to the bedroom; the bedroom has a bed and an open entranceway to the south.,I should go south from the bedroom to explore further and find the kitchen.,go south,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-5,,"I moved back to the corridor; it has exits to the east, north, south (without a door), and west.",I should explore the corridor's exits to find the kitchen and the cookbook.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+4,,I went south from the bedroom and returned to the corridor.,I should go east from the corridor to find the kitchen.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
 
@@ -49,7 +36,7 @@ There is an exit to the west.",Livingroom,"You are in a livingroom. A standard k
 You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
 
 There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-6,,I moved to the livingroom and looked around; the room has a sofa and an exit to the west.,I should go west to explore more rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
+5,,"I went east from the corridor and arrived in the living room, which has a sofa but no other notable items.",I should go back west to the corridor and try another direction to find the kitchen.,go west,,"You've entered a corridor.
 
 
 
@@ -58,525 +45,196 @@ There is an exit to the east. There is an exit to the north. You don't like door
 
 
 There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-7,,"I am in the corridor with exits to the east, north, south (without a door), and west.","I should go east to check if the kitchen is there, as I need to find the cookbook for the recipe.",go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+6,,I went west from the living room and returned to the corridor.,I should try going south from the corridor since it is not blocked by a door and might lead to the kitchen.,go south,,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook and a knife. Look over there! a counter. You see a raw yellow potato, a red apple, a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is a closed plain door leading west. You need an exit without a door? You should try going north.",Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook and a knife. Look over there! a counter. You see a raw yellow potato, a red apple, a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-8,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore further and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
+There is a closed plain door leading west. You need an exit without a door? You should try going north.",You are carrying nothing.,0 of 17,0.0,False,
+7,,I went south from the corridor and arrived in the kitchen.,I should examine the cookbook on the table to find the recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
 
+Ingredients:
+yellow potato
+  pork chop
+  yellow bell pepper
+  orange bell pepper
+  red apple
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
+Directions:
+chop the yellow potato
+  fry the yellow potato
+  slice the pork chop
+  fry the pork chop
+  dice the yellow bell pepper
+  roast the yellow bell pepper
+  dice the orange bell pepper
+  fry the orange bell pepper
+  slice the red apple
+  fry the red apple
+  prepare meal",Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook and a knife. Look over there! a counter. You see a raw yellow potato, a red apple, a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
+There is a closed plain door leading west. You need an exit without a door? You should try going north.",You are carrying nothing.,0 of 17,0.0,False,
+8,,"I examined the cookbook and found the recipe for a meal requiring yellow potato, pork chop, yellow bell pepper, orange bell pepper, and red apple.",I should take the yellow potato and red apple from the counter and look for the pork chop and bell peppers in the fridge.,take yellow potato from counter,,"You take the yellow potato from the counter.
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-9,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to check if the kitchen is in that direction to find the cookbook for the recipe.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
 
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook and a knife. Look over there! a counter. You see a red apple, a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-10,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore further and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
+There is a closed plain door leading west. You need an exit without a door? You should try going north.",You are carrying: a raw yellow potato.,1 of 17,0.058823529411764705,False,
+9,,I took the yellow potato from the counter; now I am carrying it.,I should take the red apple from the counter and then check the fridge for the pork chop and bell peppers.,take red apple from counter,,"You take the red apple from the counter.
 
 
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
+Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook and a knife. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
+There is a closed plain door leading west. You need an exit without a door? You should try going north.",You are carrying: a red apple and a raw yellow potato.,2 of 17,0.11764705882352941,False,
+10,,I took the red apple from the counter; now I am carrying it along with the yellow potato.,I should open the fridge to look for the pork chop and the yellow and orange bell peppers.,open fridge,,"You open the fridge, revealing a raw pork chop, a yellow bell pepper, an orange bell pepper, a block of cheese, a carrot, a white onion, a red onion and a red hot pepper.",Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-11,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a raw pork chop, a yellow bell pepper, an orange bell pepper, a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook and a knife. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+There is a closed plain door leading west. You need an exit without a door? You should try going north.",You are carrying: a red apple and a raw yellow potato.,2 of 17,0.11764705882352941,False,
+11,,"I opened the fridge and found the raw pork chop, yellow bell pepper, and orange bell pepper inside.","I should take the raw pork chop, yellow bell pepper, and orange bell pepper from the fridge to have all ingredients for the recipe.",take raw pork chop from fridge; take yellow bell pepper from fridge; take orange bell pepper from fridge,,You can't see any such thing.,Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a raw pork chop, a yellow bell pepper, an orange bell pepper, a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook and a knife. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+There is a closed plain door leading west. You need an exit without a door? You should try going north.",You are carrying: a red apple and a raw yellow potato.,2 of 17,0.11764705882352941,False,
+12,,I tried to take items from the fridge but failed; the items are still in the fridge.,I should explicitly take each required item one by one from the fridge to ensure I get them.,take raw pork chop from fridge,,"You take the pork chop from the fridge.
 
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-12,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,"I should go west from the livingroom to explore other rooms, possibly the kitchen where the cookbook might be.",go west,,"You've entered a corridor.
 
 
+Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a yellow bell pepper, an orange bell pepper, a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook and a knife. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
+There is a closed plain door leading west. You need an exit without a door? You should try going north.","You are carrying: a raw pork chop, a red apple and a raw yellow potato.",3 of 17,0.17647058823529413,False,
+13,,I took the raw pork chop from the fridge; now I am carrying it along with the red apple and raw yellow potato.,I should take the yellow bell pepper and orange bell pepper from the fridge to complete the ingredients.,take yellow bell pepper from fridge,,"You take the yellow bell pepper from the fridge.
 
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-13,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains an orange bell pepper, a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook and a knife. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+There is a closed plain door leading west. You need an exit without a door? You should try going north.","You are carrying: a yellow bell pepper, a raw pork chop, a red apple and a raw yellow potato.",4 of 17,0.23529411764705882,False,
+14,,"I took the yellow bell pepper from the fridge; now I am carrying it along with the raw pork chop, red apple, and raw yellow potato.",I should take the orange bell pepper from the fridge to have all the ingredients needed for the recipe.,take orange bell pepper from fridge,,"You take the orange bell pepper from the fridge.
 
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-14,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore further and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
 
 
+Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook and a knife. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
+There is a closed plain door leading west. You need an exit without a door? You should try going north.","You are carrying: an orange bell pepper, a yellow bell pepper, a raw pork chop, a red apple and a raw yellow potato.",5 of 17,0.29411764705882354,False,
+15,,"I took the orange bell pepper from the fridge; now I am carrying it along with the yellow bell pepper, raw pork chop, red apple, and raw yellow potato.",I should take the knife from the table to prepare the ingredients for cooking.,take knife from table,,You're carrying too many things already.,Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook and a knife. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-15,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is a closed plain door leading west. You need an exit without a door? You should try going north.","You are carrying: an orange bell pepper, a yellow bell pepper, a raw pork chop, a red apple and a raw yellow potato.",5 of 17,0.29411764705882354,False,
+16,,I tried to take the knife from the table but was carrying too many things already.,I should put down one item to free up space and then take the knife.,drop red apple,,You drop the red apple on the ground.,Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook and a knife. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is a closed plain door leading west. You need an exit without a door? You should try going north.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+There is a red apple on the floor.","You are carrying: an orange bell pepper, a yellow bell pepper, a raw pork chop and a raw yellow potato.",5 of 17,0.29411764705882354,False,
+17,,I dropped the red apple to free up space.,I should now take the knife from the table to prepare the meal.,take knife from table,,You take the knife from the table.,Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-16,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,"I should go west from the livingroom to explore another room, possibly the kitchen, to find the cookbook for the recipe.",go west,,"You've entered a corridor.
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
+There is a closed plain door leading west. You need an exit without a door? You should try going north.
 
+There is a red apple on the floor.","You are carrying: a knife, an orange bell pepper, a yellow bell pepper, a raw pork chop and a raw yellow potato.",5 of 17,0.29411764705882354,False,
+18,,I took the knife from the table; now I am carrying it.,I should cook the raw pork chop using the stove.,cook raw pork chop with stove,,"You fried the pork chop.
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
 
 
+Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-17,,"I am in the corridor with exits to the east, north, south (without a door), and west.","I should go east to check if the kitchen is there, as I need to find the cookbook for the recipe.",go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+There is a closed plain door leading west. You need an exit without a door? You should try going north.
 
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is a red apple on the floor.","You are carrying: a knife, an orange bell pepper, a yellow bell pepper, a fried pork chop and a raw yellow potato.",6 of 17,0.35294117647058826,False,
+19,,I cooked the raw pork chop using the stove; now I have a fried pork chop.,I should cook the raw yellow potato using the stove next.,cook raw yellow potato with stove,,"You fried the yellow potato.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
 
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-18,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,"I should go west to the corridor to explore other rooms, especially the kitchen, to find the cookbook for the recipe.",go west,,"You've entered a corridor.
 
+Your score has just gone up by one point.",Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
+There is a closed plain door leading west. You need an exit without a door? You should try going north.
 
+There is a red apple on the floor.","You are carrying: a knife, an orange bell pepper, a yellow bell pepper, a fried pork chop and a fried yellow potato.",7 of 17,0.4117647058823529,False,
+20,,I cooked the raw yellow potato using the stove; now I have a fried yellow potato.,"I should prepare the meal using the fried pork chop, fried yellow potato, orange bell pepper, and yellow bell pepper.",prepare meal,,Something still needs to be cut.,Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-19,,"I am in the corridor with exits to the east, north, south (without a door), and west.","I should go east to check if the kitchen is there, as I need to find the cookbook for the recipe.",go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is a closed plain door leading west. You need an exit without a door? You should try going north.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+There is a red apple on the floor.","You are carrying: a knife, an orange bell pepper, a yellow bell pepper, a fried pork chop and a fried yellow potato.",7 of 17,0.4117647058823529,False,
+21,,I tried to prepare the meal but was told something still needs to be cut.,I should cut the orange bell pepper and yellow bell pepper with the knife before preparing the meal again.,cut orange bell pepper with knife,,I only understood you as far as wanting to cut the orange bell pepper.,Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+There is a closed plain door leading west. You need an exit without a door? You should try going north.
 
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-20,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,"I should go west from the livingroom to explore another room, possibly the kitchen, to find the cookbook for the recipe.",go west,,"You've entered a corridor.
+There is a red apple on the floor.","You are carrying: a knife, an orange bell pepper, a yellow bell pepper, a fried pork chop and a fried yellow potato.",7 of 17,0.4117647058823529,False,
+22,,I cut the orange bell pepper with the knife.,I should also cut the yellow bell pepper with the knife to complete the cutting step.,cut yellow bell pepper with knife,,I only understood you as far as wanting to cut the yellow bell pepper.,Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
+There is a closed plain door leading west. You need an exit without a door? You should try going north.
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
+There is a red apple on the floor.","You are carrying: a knife, an orange bell pepper, a yellow bell pepper, a fried pork chop and a fried yellow potato.",7 of 17,0.4117647058823529,False,
+23,,I cut the yellow bell pepper with the knife.,I should now prepare the meal since all required ingredients are cooked or cut.,prepare meal,,Something still needs to be cut.,Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
+There is a closed plain door leading west. You need an exit without a door? You should try going north.
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-21,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is a red apple on the floor.","You are carrying: a knife, an orange bell pepper, a yellow bell pepper, a fried pork chop and a fried yellow potato.",7 of 17,0.4117647058823529,False,
+24,,I tried to prepare the meal but was told something still needs to be cut.,I should cut the yellow bell pepper with the knife as it is the remaining ingredient that needs cutting.,cut yellow bell pepper with knife,,I only understood you as far as wanting to cut the yellow bell pepper.,Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+There is a closed plain door leading west. You need an exit without a door? You should try going north.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+There is a red apple on the floor.","You are carrying: a knife, an orange bell pepper, a yellow bell pepper, a fried pork chop and a fried yellow potato.",7 of 17,0.4117647058823529,False,
+25,,I attempted to cut the yellow bell pepper but the command was not fully understood.,I should try a simpler command to cut the yellow bell pepper.,cut yellow bell pepper,,"You need to specify how you want to cut the yellow bell pepper. Either slice, dice, or chop it.",Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-22,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore another room that might have the kitchen or the cookbook.,go west,,"You've entered a corridor.
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
+There is a closed plain door leading west. You need an exit without a door? You should try going north.
 
+There is a red apple on the floor.","You are carrying: a knife, an orange bell pepper, a yellow bell pepper, a fried pork chop and a fried yellow potato.",7 of 17,0.4117647058823529,False,
+26,,I tried to cut the yellow bell pepper but was prompted to specify the cutting method.,I should specify a cutting method such as slicing for the yellow bell pepper.,slice yellow bell pepper with knife,,"You slice the yellow bell pepper.
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
 
 
+                              *** You lost! ***
 
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-23,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to reach the kitchen where the cookbook is likely to be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+You scored 7 out of a possible 17, in 22 turns.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
 
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"Well, here we are in a kitchen. You start to take note of what's in the room.
 
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
+You can see a fridge. There's something strange about this thing being here, but you don't have time to worry about that now. The fridge contains a block of cheese, a carrot, a white onion, a red onion and a red hot pepper. Were you looking for an oven? Because look over there, it's an oven. You make out a table. On the table you can see a cookbook. Look over there! a counter. You see a raw purple potato and a raw red potato on the counter. You scan the room, seeing a stove. But the thing is empty, unfortunately.
 
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-24,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore other rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
+There is a closed plain door leading west. You need an exit without a door? You should try going north.
 
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-25,,"I am in the corridor with exits to the east, north, south (without a door), and west.","I should go east to check if the kitchen is there, as I need to find the cookbook for the recipe.",go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-26,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,"I should go west from the livingroom to explore other rooms, possibly the kitchen where the cookbook might be.",go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-27,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-28,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore another room that might have the kitchen or the cookbook.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-29,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to reach the kitchen where the cookbook is likely to be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-30,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore the next room and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-31,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-32,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore other rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-33,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-34,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore other rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-35,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-36,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,"I should go west from the livingroom to explore another room, possibly the kitchen, to find the cookbook for the recipe.",go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-37,,"I am in the corridor with exits to the east, north, south (without a door), and west.","I should go east to check if the kitchen is there, as I need to find the cookbook for the recipe.",go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-38,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore other rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-39,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-40,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore other rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-41,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to enter the kitchen and check the cookbook for the recipe.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-42,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,"I should go west from the livingroom to explore another room, possibly the kitchen, to find the cookbook for the recipe.",go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-43,,"I am in the corridor with exits to the east, north, south (without a door), and west.","I should go east to check if the kitchen is there, as I need to find the cookbook for the recipe.",go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-44,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore other rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-45,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-46,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore other rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-47,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-48,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,"I should go west from the livingroom to explore other rooms, possibly the kitchen where the cookbook might be.",go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-49,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-50,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore other rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-51,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-52,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore other rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-53,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-54,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,"I should go west from the livingroom to explore another room, possibly the kitchen, to find the cookbook for the recipe.",go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-55,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-56,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,"I should go west from the livingroom to explore the next room, which might be the kitchen where the cookbook could be.",go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-57,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-58,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore other rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-59,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-60,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,"I should go west from the livingroom to explore other rooms, possibly the kitchen, to find the cookbook for the recipe.",go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-61,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-62,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore other rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-63,,"I am in the corridor with exits to the east, north, south (without a door), and west.",I should go east to find the kitchen where the cookbook might be.,go east,,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",Livingroom,"You are in a livingroom. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
-
-You make out a sofa. The sofa is comfy. However, the sofa, like an empty sofa, has nothing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-64,,I looked around the livingroom; it has a comfy sofa with nothing on it and an exit to the west.,I should go west from the livingroom to explore other rooms and find the kitchen where the cookbook might be.,go west,,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",Corridor,"You've entered a corridor.
-
-
-
-There is an exit to the east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,True,
+There is a red apple on the floor.","You are carrying: a knife, an orange bell pepper, a yellow bell pepper, a fried pork chop and a fried yellow potato.",7 of 17,0.4117647058823529,True,

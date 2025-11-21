@@ -19,7 +19,7 @@ summaries = pd.read_csv(input_file_path)
 # summaries = summaries[summaries["model_name"] == model_name]
 summaries = summaries[summaries["eval_name"].str.startswith("tw-")]
 
-# Merge curriculum sublevels by level
+# Create groups
 summaries = summaries.groupby(["agent_name", "model_name"], as_index=False).agg({
     "tasks": "sum",
     "total_steps": "sum",
@@ -38,8 +38,11 @@ summaries["avg_reward_per_token"] = summaries["total_reward"] / summaries["total
 # Order agents
 agent_order = [
     "baseline",
+    "truncate-1",
     "summary-1",
+    "truncate-5",
     "summary-5",
+    "truncate-10",
     "summary-10",
 ]
 

@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 If you haven't noticed it already, there seems to be something there by the wall, it's a bed. The bed is large. Looks like someone's already been here and taken everything off it, though.
 
 You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-1,,I am in the bedroom.,I should go west to leave the bedroom and find the kitchen.,go west,,"You find yourself in a corridor. A normal one. You begin to take stock of what's in the room.
+1,,I am in the bedroom.,I should go west to find the kitchen where the cookbook might be.,go west,,"You find yourself in a corridor. A normal one. You begin to take stock of what's in the room.
 
 
 
@@ -13,7 +13,7 @@ You need an exit without a door? You should try going east. There is an exit to 
 
 
 You need an exit without a door? You should try going east. There is an exit to the north. You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying nothing.,0 of 17,0.0,False,
-2,,I went west from the bedroom to the corridor.,I should go north to find the kitchen.,go north,,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+2,,I went west from the bedroom and arrived in a corridor.,I should go north to explore further and possibly find the kitchen.,go north,,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
 
 You see a closed fridge. You can see a closed oven. You can make out a table. On the table you make out a knife. You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
 
@@ -22,7 +22,12 @@ There is a closed frosted-glass door leading north. There is an exit to the east
 You see a closed fridge. You can see a closed oven. You can make out a table. On the table you make out a knife. You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
 
 There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying nothing.,0 of 17,0.0,False,
-3,,I went north from the corridor to the kitchen.,I should examine the cookbook on the counter to check the recipe.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+3,,I went north from the corridor and arrived in the kitchen with various items on the counter and a cookbook.,I should take the cookbook from the counter to check the recipe.,take cookbook from counter,,You take the cookbook from the counter.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see a closed fridge. You can see a closed oven. You can make out a table. On the table you make out a knife. You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying: a cookbook.,0 of 17,0.0,False,
+4,,I took the cookbook from the counter and am now carrying it.,I should examine the cookbook to find the recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -48,82 +53,239 @@ chop the block of cheese
   roast the pork chop
   prepare meal",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
 
-You see a closed fridge. You can see a closed oven. You can make out a table. On the table you make out a knife. You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+You see a closed fridge. You can see a closed oven. You can make out a table. On the table you make out a knife. You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
 
-There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying nothing.,0 of 17,0.0,False,
-4,,"I examined the cookbook and found a recipe requiring block of cheese, carrot, red onion, banana, and pork chop.",I should take the knife from the table to prepare the ingredients.,take knife from table,,You take the knife from the table.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
-
-You see a closed fridge. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
-
-There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying: a knife.,0 of 17,0.0,False,
-5,,I took the knife from the table.,I should check the fridge for the required ingredients.,open fridge,,"You open the fridge, revealing a carrot, a raw pork chop, a block of cheese, a red onion, an orange bell pepper and a white onion.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
-
-You see an opened fridge. The fridge contains a carrot, a raw pork chop, a block of cheese, a red onion, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
-
-There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying: a knife.,0 of 17,0.0,False,
-6,,"I opened the fridge and found the carrot, raw pork chop, block of cheese, and red onion inside.","I should take the block of cheese, carrot, red onion, and raw pork chop from the fridge.",take block of cheese from fridge; take carrot from fridge; take red onion from fridge; take raw pork chop from fridge,,You can't see any such thing.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
-
-You see an opened fridge. The fridge contains a carrot, a raw pork chop, a block of cheese, a red onion, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
-
-There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying: a knife.,0 of 17,0.0,False,
-7,,I tried to take multiple items at once but failed.,I should take the block of cheese first from the fridge.,take block of cheese from fridge,,"You take the block of cheese from the fridge.
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying: a cookbook.,0 of 17,0.0,False,
+5,,"I examined the cookbook and found a recipe requiring a block of cheese, carrot, red onion, banana, and pork chop with specific preparation steps.","I should look for the block of cheese, carrot, red onion, banana, and pork chop in the kitchen to start preparing the meal.",take banana from counter,,"You take the banana from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
 
-You see an opened fridge. The fridge contains a carrot, a raw pork chop, a red onion, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+You see a closed fridge. You can see a closed oven. You can make out a table. On the table you make out a knife. You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
 
-There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying: a block of cheese and a knife.,1 of 17,0.058823529411764705,False,
-8,,I took the block of cheese from the fridge.,I should take the carrot next from the fridge.,take carrot from fridge,,"You take the carrot from the fridge.
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying: a banana and a cookbook.,1 of 17,0.058823529411764705,False,
+6,,I took the banana from the counter and added it to my inventory.,I should take the knife from the table to prepare the ingredients.,take knife from table,,You take the knife from the table.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
 
+You see a closed fridge. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
 
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a knife, a banana and a cookbook.",1 of 17,0.058823529411764705,False,
+7,,I took the knife from the table and added it to my inventory.,"I should open the fridge to look for the block of cheese, carrot, red onion, and pork chop.",open fridge,,"You open the fridge, revealing a carrot, a raw pork chop, a block of cheese, a red onion, an orange bell pepper and a white onion.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
 
-Your score has just gone up by one point.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+You see an opened fridge. The fridge contains a carrot, a raw pork chop, a block of cheese, a red onion, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
 
-You see an opened fridge. The fridge contains a raw pork chop, a red onion, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
-
-There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a carrot, a block of cheese and a knife.",2 of 17,0.11764705882352941,False,
-9,,I took the carrot from the fridge.,I should take the red onion from the fridge next.,take red onion from fridge,,"You take the red onion from the fridge.
-
-
-
-Your score has just gone up by one point.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
-
-You see an opened fridge. The fridge contains a raw pork chop, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
-
-There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a red onion, a carrot, a block of cheese and a knife.",3 of 17,0.17647058823529413,False,
-10,,I took the red onion from the fridge.,I should take the raw pork chop from the fridge next.,take raw pork chop from fridge,,"You take the pork chop from the fridge.
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a knife, a banana and a cookbook.",1 of 17,0.058823529411764705,False,
+8,,"I opened the fridge and found a carrot, raw pork chop, block of cheese, red onion, orange bell pepper, and white onion inside.","I should take the block of cheese, carrot, red onion, and raw pork chop from the fridge to prepare the meal.",take block of cheese from fridge,,"You take the block of cheese from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
 
-You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+You see an opened fridge. The fridge contains a carrot, a raw pork chop, a red onion, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
 
-There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a raw pork chop, a red onion, a carrot, a block of cheese and a knife.",4 of 17,0.23529411764705882,False,
-11,,I took the raw pork chop from the fridge.,I should take the banana from the counter next.,take banana from counter,,You're carrying too many things already.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a block of cheese, a knife, a banana and a cookbook.",2 of 17,0.11764705882352941,False,
+9,,I took the block of cheese from the fridge and added it to my inventory.,I should take the carrot from the fridge next.,take carrot from fridge,,"You take the carrot from the fridge.
 
-You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
 
-There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a raw pork chop, a red onion, a carrot, a block of cheese and a knife.",4 of 17,0.23529411764705882,False,
-12,,I tried to take the banana but was carrying too many things.,I should start preparing the meal with the ingredients I have.,prepare meal,,Something still needs to be cooked.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
 
-You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+Your score has just gone up by one point.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
 
-There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a raw pork chop, a red onion, a carrot, a block of cheese and a knife.",4 of 17,0.23529411764705882,False,
-13,,I tried to prepare the meal but something still needs to be cooked.,I should cook the raw pork chop on the stove.,cook raw pork chop with stove,,"You fried the pork chop.
+You see an opened fridge. The fridge contains a raw pork chop, a red onion, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a carrot, a block of cheese, a knife, a banana and a cookbook.",3 of 17,0.17647058823529413,False,
+10,,I took the carrot from the fridge and added it to my inventory.,I should take the red onion from the fridge next.,take red onion from fridge,,You're carrying too many things already.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains a raw pork chop, a red onion, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a carrot, a block of cheese, a knife, a banana and a cookbook.",3 of 17,0.17647058823529413,False,
+11,,I tried to take the red onion but was told I am carrying too many things already.,I should put the banana down to free up space before taking the red onion.,drop banana,,You drop the banana on the ground.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains a raw pork chop, a red onion, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a banana on the floor.","You are carrying: a carrot, a block of cheese, a knife and a cookbook.",3 of 17,0.17647058823529413,False,
+12,,I dropped the banana on the floor to free up space in my inventory.,I should now take the red onion from the fridge.,take red onion from fridge,,"You take the red onion from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains a raw pork chop, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a banana on the floor.","You are carrying: a red onion, a carrot, a block of cheese, a knife and a cookbook.",4 of 17,0.23529411764705882,False,
+13,,I took the red onion from the fridge and added it to my inventory.,I should take the raw pork chop from the fridge next.,take raw pork chop from fridge,,You're carrying too many things already.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains a raw pork chop, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a banana on the floor.","You are carrying: a red onion, a carrot, a block of cheese, a knife and a cookbook.",4 of 17,0.23529411764705882,False,
+14,,I tried to take the raw pork chop but was told I am carrying too many things already.,I should drop the carrot to free up space before taking the raw pork chop.,drop carrot,,You drop the carrot on the ground.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains a raw pork chop, an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a carrot and a banana on the floor.","You are carrying: a red onion, a block of cheese, a knife and a cookbook.",4 of 17,0.23529411764705882,False,
+15,,I dropped the carrot on the floor to free up space in my inventory.,I should now take the raw pork chop from the fridge.,take raw pork chop from fridge,,"You take the pork chop from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a carrot and a banana on the floor.","You are carrying: a raw pork chop, a red onion, a block of cheese, a knife and a cookbook.",5 of 17,0.29411764705882354,False,
+16,,I took the raw pork chop from the fridge and added it to my inventory.,I have all the ingredients needed for the recipe. I should now follow the preparation steps in the cookbook to cook the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+block of cheese
+  carrot
+  red onion
+  banana
+  pork chop
+
+Directions:
+chop the block of cheese
+  roast the block of cheese
+  slice the carrot
+  roast the carrot
+  slice the red onion
+  fry the red onion
+  slice the banana
+  fry the banana
+  slice the pork chop
+  roast the pork chop
+  prepare meal",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a carrot and a banana on the floor.","You are carrying: a raw pork chop, a red onion, a block of cheese, a knife and a cookbook.",5 of 17,0.29411764705882354,False,
+17,,I examined the cookbook and reviewed the recipe and directions for preparing the meal.,I should follow the recipe steps in order: chop and roast the block of cheese first.,chop block of cheese with knife,,"You chop the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a carrot and a banana on the floor.","You are carrying: a raw pork chop, a red onion, a chopped block of cheese, a knife and a cookbook.",6 of 17,0.35294117647058826,False,
+18,,I chopped the block of cheese as the first step in the recipe.,I should now roast the chopped block of cheese as the next step.,cook chopped block of cheese with oven,,"You roasted the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a carrot and a banana on the floor.","You are carrying: a raw pork chop, a red onion, a chopped roasted block of cheese, a knife and a cookbook.",7 of 17,0.4117647058823529,False,
+19,,I roasted the chopped block of cheese as the next step in the recipe.,I should now slice the carrot to continue with the recipe.,slice carrot with knife,,You need to take the carrot first.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a carrot and a banana on the floor.","You are carrying: a raw pork chop, a red onion, a chopped roasted block of cheese, a knife and a cookbook.",7 of 17,0.4117647058823529,False,
+20,,I tried to slice the carrot but was reminded I need to take it first.,I should take the carrot from the floor before slicing it.,take carrot from floor,,You're carrying too many things already.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a carrot and a banana on the floor.","You are carrying: a raw pork chop, a red onion, a chopped roasted block of cheese, a knife and a cookbook.",7 of 17,0.4117647058823529,False,
+21,,I tried to take the carrot from the floor but was told I am carrying too many things already.,I should drop an item to free up space in my inventory before taking the carrot.,drop banana on floor,,You can't see any such thing.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a carrot and a banana on the floor.","You are carrying: a raw pork chop, a red onion, a chopped roasted block of cheese, a knife and a cookbook.",7 of 17,0.4117647058823529,False,
+22,,I tried to drop the banana but was told I can't see any such thing.,"The banana is already on the floor, so I should drop another item to free space.",drop red onion,,You drop the red onion on the ground.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a red onion, a carrot and a banana on the floor.","You are carrying: a raw pork chop, a chopped roasted block of cheese, a knife and a cookbook.",7 of 17,0.4117647058823529,False,
+23,,I dropped the red onion on the floor to free up space in my inventory.,I should now take the carrot from the floor to continue with the recipe.,take carrot from floor,,You pick up the carrot from the ground.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a red onion and a banana on the floor.","You are carrying: a carrot, a raw pork chop, a chopped roasted block of cheese, a knife and a cookbook.",7 of 17,0.4117647058823529,False,
+24,,I took the carrot from the floor and added it to my inventory.,I should slice the carrot with the knife as the next step in the recipe.,slice carrot with knife,,"You slice the carrot.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a red onion and a banana on the floor.","You are carrying: a sliced carrot, a raw pork chop, a chopped roasted block of cheese, a knife and a cookbook.",8 of 17,0.47058823529411764,False,
+25,,"I sliced the carrot with the knife, increasing my score.",I should now slice the red onion as the next step in the recipe.,take red onion from floor,,You're carrying too many things already.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a red onion and a banana on the floor.","You are carrying: a sliced carrot, a raw pork chop, a chopped roasted block of cheese, a knife and a cookbook.",8 of 17,0.47058823529411764,False,
+26,,I tried to take the red onion from the floor but was told I am carrying too many things already.,I should drop an item to free up space in my inventory before taking the red onion.,drop sliced carrot,,You drop the carrot on the ground.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a sliced carrot, a red onion and a banana on the floor.","You are carrying: a raw pork chop, a chopped roasted block of cheese, a knife and a cookbook.",8 of 17,0.47058823529411764,False,
+27,,I dropped the sliced carrot on the floor to free up space in my inventory.,I should now take the red onion from the floor to continue with the recipe.,take red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a sliced carrot and a banana on the floor.","You are carrying: a red onion, a raw pork chop, a chopped roasted block of cheese, a knife and a cookbook.",8 of 17,0.47058823529411764,False,
+28,,I took the red onion from the floor and added it to my inventory.,I should slice the red onion with the knife as the next step in the recipe.,slice red onion with knife,,"You slice the red onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
+
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a sliced carrot and a banana on the floor.","You are carrying: a sliced red onion, a raw pork chop, a chopped roasted block of cheese, a knife and a cookbook.",9 of 17,0.5294117647058824,False,
+29,,"I sliced the red onion with the knife, increasing my score.",I should now cook the raw pork chop as the next step in the recipe.,cook raw pork chop with stove,,"You fried the pork chop.
 
 
 
                               *** You lost! ***
 
-You scored 4 out of a possible 17, in 12 turns.
+You scored 9 out of a possible 17, in 28 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 >",Kitchen,"You've come into a standard room. Your mind races to think of what kind of room would be standard. And then it hits you. Of course. You're in the kitchen.
 
-You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a banana, a raw purple potato, a red apple, a raw yellow potato, a raw red potato and a cookbook. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
+You see an opened fridge. The fridge contains an orange bell pepper and a white onion. You can see a closed oven. You can make out a table. Unfortunately, there isn't a thing on it. Aw, here you were, all excited for there to be things on it! You hear a noise behind you and spin around, but you can't see anything other than a counter. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a raw red potato. You make out a stove. But oh no! there's nothing on this piece of garbage. Aw, here you were, all excited for there to be things on it!
 
-There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a raw pork chop, a red onion, a carrot, a block of cheese and a knife.",4 of 17,0.23529411764705882,True,
+There is a closed frosted-glass door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a sliced carrot and a banana on the floor.","You are carrying: a sliced red onion, a raw pork chop, a chopped roasted block of cheese, a knife and a cookbook.",9 of 17,0.5294117647058824,True,

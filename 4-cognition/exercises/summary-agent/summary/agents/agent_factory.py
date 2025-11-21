@@ -22,7 +22,8 @@ class AgentFactory:
         system_prompt = system_prompt.format(
             actions=actions,
             examples=examples,
-            max_steps=params.max_steps)
+            max_steps=params.max_steps,
+            k_pairs=params.agent_version)
 
         # Create the agent
         if params.agent_name.startswith("summary-"):

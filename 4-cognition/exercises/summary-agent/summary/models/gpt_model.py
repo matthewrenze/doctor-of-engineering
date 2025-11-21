@@ -37,7 +37,7 @@ class GptModel:
             params["temperature"] = 0.0
 
         # Set retry variables
-        retries = [10, 20, 30, 60, 180]  # wait before each retry
+        retries = [10, 20, 30, 60, 180, 300, 600, 1200, 1200]  # wait before each retry
         attempts = 0
 
         while True:

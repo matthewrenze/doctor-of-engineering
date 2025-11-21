@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 You scan the room for a sofa, and you find a sofa. The sofa is comfy. The sofa appears to be empty. It would have been so cool if there was stuff on the sofa.
 
 You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",0 of 17,0.0,False,
-1,,I am in the livingroom.,I should go east to the kitchen to check the cookbook for the recipe.,go east,,"Well, here we are in a bedroom.
+1,,I am in the livingroom.,I should go east to enter the kitchen where the cookbook is likely to be.,go east,,"Well, here we are in a bedroom.
 
 Oh wow! Is that what I think it is? It is! It's a bed. But the thing hasn't got anything on it.
 
@@ -13,7 +13,7 @@ You don't like doors? Why not try going south, that entranceway is not blocked b
 Oh wow! Is that what I think it is? It is! It's a bed. But the thing hasn't got anything on it.
 
 You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west.","You are carrying: a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",0 of 17,0.0,False,
-2,,I went east but ended up in the bedroom instead of the kitchen.,I should go south from the bedroom to find the kitchen.,go south,,"You make a grand eccentric entrance into a corridor. The room is well lit.
+2,,I went east but ended up in the bedroom instead of the kitchen.,I should go south from the bedroom to try to find the kitchen.,go south,,"You make a grand eccentric entrance into a corridor. The room is well lit.
 
 
 
@@ -22,7 +22,7 @@ There is an exit to the east. There is an exit to the north. You need an exit wi
 
 
 There is an exit to the east. There is an exit to the north. You need an exit without a door? You should try going south.","You are carrying: a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",0 of 17,0.0,False,
-3,,I went south from the bedroom and arrived in a well-lit corridor.,I should go east from the corridor to find the kitchen.,go east,,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+3,,I went south from the bedroom and entered a well-lit corridor.,I should go east from the corridor to check if the kitchen is there.,go east,,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
@@ -31,7 +31,7 @@ There is a closed screen door leading east. There is a closed plain door leading
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
 There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.","You are carrying: a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",0 of 17,0.0,False,
-4,,I went east from the corridor and arrived in the kitchen with a cookbook on the table.,I should examine the cookbook on the table to check the recipe.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+4,,I went east from the corridor and arrived in the kitchen where I found a cookbook on the table.,I should examine the cookbook to check the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -60,104 +60,653 @@ dice the red potato
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
 There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.","You are carrying: a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",0 of 17,0.0,False,
-5,,"I examined the cookbook and found a recipe requiring red potato, pork chop, white onion, banana, and red hot pepper, with detailed cooking steps.",I should check if I have the required ingredients and look for missing ones in the kitchen.,take red hot pepper from counter,,"You take the red hot pepper from the counter.
+5,,"I examined the cookbook and found a recipe requiring red potato, pork chop, white onion, banana, and red hot pepper.","I need to find the required ingredients, especially the pork chop, white onion, and banana, since I only have raw purple potato, raw yellow potato, carrot, and yellow bell pepper.",go west to explore other rooms for the missing ingredients.,,I only understood you as far as wanting to go west.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.","You are carrying: a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",0 of 17,0.0,False,
+6,,I tried to go west from the kitchen but remained in the kitchen.,I should try going north through the closed plain door to see if I can find the missing ingredients.,open plain door,,You open plain door.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is a closed screen door leading east. There is an open plain door leading north. There is an exit to the west.","You are carrying: a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",0 of 17,0.0,False,
+7,,I opened the plain door leading north but am still in the kitchen.,I should go north through the now open plain door to explore the next room for ingredients.,go north,,"You've entered a pantry.
+
+You see a shelf. The shelf is wooden. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the shelf.
+
+There is an open plain door leading south.",Pantry,"You've entered a pantry.
+
+You see a shelf. The shelf is wooden. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the shelf.
+
+There is an open plain door leading south.","You are carrying: a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",0 of 17,0.0,False,
+8,,I went north through the open plain door and entered an empty pantry.,"Since the pantry is empty, I should go back south to the kitchen and try the screen door leading east.",go south,,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is a closed screen door leading east. There is an open plain door leading north. There is an exit to the west.",Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is a closed screen door leading east. There is an open plain door leading north. There is an exit to the west.","You are carrying: a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",0 of 17,0.0,False,
+9,,I went south back to the kitchen from the empty pantry.,I should open the closed screen door leading east to see if there are ingredients there.,open screen door,,You open screen door.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.","You are carrying: a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",0 of 17,0.0,False,
+10,,I opened the screen door leading east in the kitchen.,I should go east through the open screen door to explore the next room for ingredients.,go east,,"You're now in the backyard.
+
+You make out a patio chair. But oh no! there's nothing on this piece of garbage. You smell a pungent smell, and follow it to a patio table. The patio table is stylish. But there isn't a thing on it. If you haven't noticed it already, there seems to be something there by the wall, it's a BBQ.
+
+There is a closed barn door leading south. There is an open screen door leading west. There is an exit to the north.",Backyard,"You're now in the backyard.
+
+You make out a patio chair. But oh no! there's nothing on this piece of garbage. You smell a pungent smell, and follow it to a patio table. The patio table is stylish. But there isn't a thing on it. If you haven't noticed it already, there seems to be something there by the wall, it's a BBQ.
+
+There is a closed barn door leading south. There is an open screen door leading west. There is an exit to the north.","You are carrying: a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",0 of 17,0.0,False,
+11,,I went east through the screen door and arrived in the backyard with a BBQ and patio furniture but no ingredients.,I should go north from the backyard to explore further for the missing ingredients.,go north,,"You are in a garden. A normal one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a banana, a raw red potato, a red apple and a white onion on the floor.",Garden,"You are in a garden. A normal one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a banana, a raw red potato, a red apple and a white onion on the floor.","You are carrying: a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",0 of 17,0.0,False,
+12,,"I went north from the backyard and arrived in a garden with a banana, raw red potato, red apple, and white onion on the floor.","I should take the banana, raw red potato, and white onion since they are needed for the recipe.",take banana from floor,,"You pick up the banana from the ground.
+
+
+
+Your score has just gone up by one point.",Garden,"You are in a garden. A normal one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a raw red potato, a red apple and a white onion on the floor.","You are carrying: a banana, a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
+13,,I took the banana from the garden floor and my score increased.,I should take the raw red potato next as it is required for the recipe.,take raw red potato from floor,,You're carrying too many things already.,Garden,"You are in a garden. A normal one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a raw red potato, a red apple and a white onion on the floor.","You are carrying: a banana, a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
+14,,I tried to take the raw red potato but was carrying too many items.,I should drop an unnecessary item to make space for the raw red potato; the carrot seems least needed for the recipe.,drop carrot,,You drop the carrot on the ground.,Garden,"You are in a garden. A normal one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a carrot, a raw red potato, a red apple and a white onion on the floor.","You are carrying: a banana, a raw purple potato, a raw yellow potato and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
+15,,I dropped the carrot to make space in my inventory.,I should now take the raw red potato from the floor.,take raw red potato from floor,,"You pick up the red potato from the ground.
+
+
+
+Your score has just gone up by one point.",Garden,"You are in a garden. A normal one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a carrot, a red apple and a white onion on the floor.","You are carrying: a raw red potato, a banana, a raw purple potato, a raw yellow potato and a yellow bell pepper.",2 of 17,0.11764705882352941,False,
+16,,I took the raw red potato from the floor and my score increased.,I should take the white onion next as it is required for the recipe.,take white onion from floor,,You're carrying too many things already.,Garden,"You are in a garden. A normal one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a carrot, a red apple and a white onion on the floor.","You are carrying: a raw red potato, a banana, a raw purple potato, a raw yellow potato and a yellow bell pepper.",2 of 17,0.11764705882352941,False,
+17,,I tried to take the white onion but was carrying too many items.,I should drop another unnecessary item to make space for the white onion; the yellow bell pepper is not needed for the recipe.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Garden,"You are in a garden. A normal one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a yellow bell pepper, a carrot, a red apple and a white onion on the floor.","You are carrying: a raw red potato, a banana, a raw purple potato and a raw yellow potato.",2 of 17,0.11764705882352941,False,
+18,,I dropped the yellow bell pepper to make space in my inventory.,I should now take the white onion from the floor.,take white onion from floor,,"You pick up the white onion from the ground.
+
+
+
+Your score has just gone up by one point.",Garden,"You are in a garden. A normal one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+There is a yellow bell pepper, a carrot and a red apple on the floor.","You are carrying: a white onion, a raw red potato, a banana, a raw purple potato and a raw yellow potato.",3 of 17,0.17647058823529413,False,
+19,,I took the white onion from the floor and my score increased.,I should return to the kitchen to prepare the meal now that I have the necessary ingredients.,go south,,"You're now in the backyard.
+
+You make out a patio chair. But oh no! there's nothing on this piece of garbage. You smell a pungent smell, and follow it to a patio table. The patio table is stylish. But there isn't a thing on it. If you haven't noticed it already, there seems to be something there by the wall, it's a BBQ.
+
+There is a closed barn door leading south. There is an open screen door leading west. There is an exit to the north.",Backyard,"You're now in the backyard.
+
+You make out a patio chair. But oh no! there's nothing on this piece of garbage. You smell a pungent smell, and follow it to a patio table. The patio table is stylish. But there isn't a thing on it. If you haven't noticed it already, there seems to be something there by the wall, it's a BBQ.
+
+There is a closed barn door leading south. There is an open screen door leading west. There is an exit to the north.","You are carrying: a white onion, a raw red potato, a banana, a raw purple potato and a raw yellow potato.",3 of 17,0.17647058823529413,False,
+20,,I went south from the garden and arrived in the backyard.,I should go west through the open screen door to return to the kitchen.,go west,,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.",Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.","You are carrying: a white onion, a raw red potato, a banana, a raw purple potato and a raw yellow potato.",3 of 17,0.17647058823529413,False,
+21,,"I went west from the backyard and arrived in the kitchen with a stove, knife, and ingredients on the counter.",I should take the knife from the counter to prepare the meal.,take knife from counter,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.","You are carrying: a white onion, a raw red potato, a banana, a raw purple potato and a raw yellow potato.",3 of 17,0.17647058823529413,False,
+22,,I tried to take the knife but was carrying too many items.,I should drop an unnecessary item to make space for the knife; the raw purple potato is not needed for the recipe.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a raw purple potato on the floor.","You are carrying: a white onion, a raw red potato, a banana and a raw yellow potato.",3 of 17,0.17647058823529413,False,
+23,,I dropped the raw purple potato to make space in my inventory.,I should now take the knife from the counter.,take knife from counter,,You take the knife from the counter.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a raw purple potato on the floor.","You are carrying: a knife, a white onion, a raw red potato, a banana and a raw yellow potato.",3 of 17,0.17647058823529413,False,
+24,,I took the knife from the counter and now have it in my inventory.,I should take the red hot pepper from the counter as it is required for the recipe.,take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a raw purple potato on the floor.","You are carrying: a knife, a white onion, a raw red potato, a banana and a raw yellow potato.",3 of 17,0.17647058823529413,False,
+25,,I tried to take the red hot pepper but was carrying too many items.,I should drop the banana to make space for the red hot pepper since the banana is not part of the recipe.,drop banana,,You drop the banana on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red hot pepper, a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a banana and a raw purple potato on the floor.","You are carrying: a knife, a white onion, a raw red potato and a raw yellow potato.",3 of 17,0.17647058823529413,False,
+26,,I dropped the banana to make space in my inventory.,I should now take the red hot pepper from the counter.,take red hot pepper from counter,,"You take the red hot pepper from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.","You are carrying: a red hot pepper, a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
-6,,I took the red hot pepper from the counter and added it to my inventory.,"I should take the red onion from the counter next, as it is part of the recipe.",take red onion from counter,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+There is a banana and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a white onion, a raw red potato and a raw yellow potato.",4 of 17,0.23529411764705882,False,
+27,,I took the red hot pepper from the counter and my score increased.,I should now prepare the meal using the ingredients and the knife.,prepare meal,,Something still needs to be cooked.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.","You are carrying: a red hot pepper, a raw purple potato, a raw yellow potato, a carrot and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
-7,,I tried to take the red onion but was carrying too many things already.,"I should drop an item I don't need for the recipe to free up space, then take the red onion.",drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion, an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
 
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.
+There is a banana and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a white onion, a raw red potato and a raw yellow potato.",4 of 17,0.23529411764705882,False,
+28,,I tried to prepare the meal but something still needs to be cooked.,I should cook the raw potatoes on the stove to complete the recipe.,cook raw red potato with stove,,"You fried the red potato.
 
-There is a raw purple potato on the floor.","You are carrying: a red hot pepper, a raw yellow potato, a carrot and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
-8,,I dropped the raw purple potato to free up space.,I should now take the red onion from the counter.,take red onion from counter,,You take the red onion from the counter.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-There is a raw purple potato on the floor.","You are carrying: a red onion, a red hot pepper, a raw yellow potato, a carrot and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
-9,,I took the red onion from the counter and added it to my inventory.,"I need to get a red potato for the recipe, so I should drop an unnecessary item and take the raw purple potato from the floor.",drop carrot,,You drop the carrot on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
 
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.
+There is a banana and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a white onion, a fried red potato and a raw yellow potato.",5 of 17,0.29411764705882354,False,
+29,,I cooked the raw red potato on the stove and my score increased.,I should now cook the raw yellow potato on the stove as well.,cook raw yellow potato with stove,,You fried the yellow potato.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-There is a carrot and a raw purple potato on the floor.","You are carrying: a red onion, a red hot pepper, a raw yellow potato and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
-10,,I dropped the carrot to free up space.,I should take the raw purple potato from the floor as a substitute for the red potato.,take raw purple potato from floor,,You pick up the purple potato from the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
 
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.
+There is a banana and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a white onion, a fried red potato and a fried yellow potato.",5 of 17,0.29411764705882354,False,
+30,,I cooked the raw yellow potato on the stove and my score increased.,I should now prepare the meal again with the cooked ingredients.,prepare meal,,Something still needs to be cut.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-There is a carrot on the floor.","You are carrying: a raw purple potato, a red onion, a red hot pepper, a raw yellow potato and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
-11,,I took the raw purple potato from the floor and added it to my inventory.,I should now dice the purple potato as a substitute for the red potato according to the recipe.,dice raw purple potato with knife,,You need to take the knife first.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
 
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.
+There is a banana and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a white onion, a fried red potato and a fried yellow potato.",5 of 17,0.29411764705882354,False,
+31,,I tried to prepare the meal but something still needs to be cut.,I should cut the white onion with the knife as it is part of the recipe.,cut white onion with knife,,I only understood you as far as wanting to cut the white onion.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-There is a carrot on the floor.","You are carrying: a raw purple potato, a red onion, a red hot pepper, a raw yellow potato and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
-12,,I tried to dice the purple potato but was reminded to take the knife first.,I should take the knife from the counter before dicing the purple potato.,take knife from counter,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
 
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.
+There is a banana and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a white onion, a fried red potato and a fried yellow potato.",5 of 17,0.29411764705882354,False,
+32,,I attempted to cut the white onion with the knife but the command was not fully understood.,I should try a more specific command to cut the white onion with the knife.,slice white onion with knife,,"You slice the white onion.
 
-There is a carrot on the floor.","You are carrying: a raw purple potato, a red onion, a red hot pepper, a raw yellow potato and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
-13,,I tried to take the knife but was carrying too many things already.,I should drop the raw yellow potato to free up space and then take the knife.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper and a knife. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-There is a raw yellow potato and a carrot on the floor.","You are carrying: a raw purple potato, a red onion, a red hot pepper and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
-14,,I dropped the raw yellow potato to free up space.,I should now take the knife from the counter.,take knife from counter,,You take the knife from the counter.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a banana and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+33,,I sliced the white onion with the knife and my score increased.,I should now prepare the meal again with the sliced onion and cooked ingredients.,prepare meal,,Something still needs to be cut.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a banana and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+34,,I tried to prepare the meal but something still needs to be cut.,"The recipe requires a pork chop, which I do not have; I should check if there is a pork chop in the kitchen or nearby.",look,,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a banana and a raw purple potato on the floor.",Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a banana and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+35,,I looked around the kitchen but did not find a pork chop.,I should check the floor for the pork chop or other ingredients I might have missed.,take raw purple potato from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a banana and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+36,,I tried to take the raw purple potato but was carrying too many items.,I should drop an item I do not need to make space for the raw purple potato.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a red hot pepper, a banana and a raw purple potato on the floor.","You are carrying: a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+37,,I dropped the red hot pepper to make space in my inventory.,I should now take the raw purple potato from the floor.,take raw purple potato from floor,,You pick up the purple potato from the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a red hot pepper and a banana on the floor.","You are carrying: a raw purple potato, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+38,,I took the raw purple potato from the floor.,I should cook the raw purple potato on the stove.,cook raw purple potato with stove,,You fried the purple potato.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a red hot pepper and a banana on the floor.","You are carrying: a fried purple potato, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+39,,I cooked the raw purple potato on the stove and my score increased.,I should check if the pork chop is somewhere else since I have all the potatoes cooked and onion sliced.,go north,,"You've entered a pantry.
+
+You see a shelf. The shelf is wooden. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the shelf.
+
+There is an open plain door leading south.",Pantry,"You've entered a pantry.
+
+You see a shelf. The shelf is wooden. Unfortunately, there isn't a thing on it. It would have been so cool if there was stuff on the shelf.
+
+There is an open plain door leading south.","You are carrying: a fried purple potato, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+40,,I went north to the pantry but found it empty.,I should go back to the kitchen and check other rooms for the pork chop.,go south,,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a red hot pepper and a banana on the floor.",Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a red hot pepper and a banana on the floor.","You are carrying: a fried purple potato, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+41,,I went south back to the kitchen from the pantry.,I should go west from the kitchen to check if there is a room with the pork chop.,go west,,"You make a grand eccentric entrance into a corridor. The room is well lit.
+
+
+
+There is an exit to the east. There is an exit to the north. You need an exit without a door? You should try going south.",Corridor,"You make a grand eccentric entrance into a corridor. The room is well lit.
+
+
+
+There is an exit to the east. There is an exit to the north. You need an exit without a door? You should try going south.","You are carrying: a fried purple potato, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+42,,I went west from the kitchen and arrived in a well-lit corridor.,I should explore the corridor further by going north to see if there is a room with the pork chop.,go north,,"Well, here we are in a bedroom.
+
+Oh wow! Is that what I think it is? It is! It's a bed. But the thing hasn't got anything on it.
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom.
+
+Oh wow! Is that what I think it is? It is! It's a bed. But the thing hasn't got anything on it.
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west.","You are carrying: a fried purple potato, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+43,,"I went north from the corridor and arrived in a bedroom, but found no pork chop.",I should go west from the bedroom to check if there is another room with the pork chop.,go west,,"You're now in a livingroom.
+
+You scan the room for a sofa, and you find a sofa. The sofa is comfy. The sofa appears to be empty. It would have been so cool if there was stuff on the sofa.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.",Livingroom,"You're now in a livingroom.
+
+You scan the room for a sofa, and you find a sofa. The sofa is comfy. The sofa appears to be empty. It would have been so cool if there was stuff on the sofa.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a fried purple potato, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+44,,"I went west from the bedroom and arrived in the living room, but found no pork chop.",I should go east back to the bedroom and then south to the corridor to explore other directions.,go east,,"Well, here we are in a bedroom.
+
+Oh wow! Is that what I think it is? It is! It's a bed. But the thing hasn't got anything on it.
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom.
+
+Oh wow! Is that what I think it is? It is! It's a bed. But the thing hasn't got anything on it.
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one. There is an exit to the west.","You are carrying: a fried purple potato, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+45,,I went east back to the bedroom from the living room.,I should go south from the bedroom to return to the corridor and explore the east exit.,go south,,"You make a grand eccentric entrance into a corridor. The room is well lit.
+
+
+
+There is an exit to the east. There is an exit to the north. You need an exit without a door? You should try going south.",Corridor,"You make a grand eccentric entrance into a corridor. The room is well lit.
+
+
+
+There is an exit to the east. There is an exit to the north. You need an exit without a door? You should try going south.","You are carrying: a fried purple potato, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+46,,I went south from the bedroom back to the corridor.,I should go east from the corridor to check if there is a room with the pork chop.,go east,,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a red hot pepper and a banana on the floor.",Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a red hot pepper and a banana on the floor.","You are carrying: a fried purple potato, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+47,,I went east from the corridor back to the kitchen.,I should take the red hot pepper from the floor now that I have space.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a red hot pepper and a banana on the floor.","You are carrying: a fried purple potato, a knife, a sliced white onion, a fried red potato and a fried yellow potato.",6 of 17,0.35294117647058826,False,
+48,,I tried to take the red hot pepper from the floor but was carrying too many items.,I should drop one of the cooked potatoes to make space for the red hot pepper.,drop fried yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried yellow potato, a red hot pepper and a banana on the floor.","You are carrying: a fried purple potato, a knife, a sliced white onion and a fried red potato.",6 of 17,0.35294117647058826,False,
+49,,I dropped the fried yellow potato on the floor to make space in my inventory.,I should now take the red hot pepper from the floor.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried yellow potato and a banana on the floor.","You are carrying: a red hot pepper, a fried purple potato, a knife, a sliced white onion and a fried red potato.",6 of 17,0.35294117647058826,False,
+50,,I took the red hot pepper from the floor and now have it in my inventory.,I should prepare the meal now that I have all the ingredients cooked and cut as required.,prepare meal,,Something still needs to be cut.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried yellow potato and a banana on the floor.","You are carrying: a red hot pepper, a fried purple potato, a knife, a sliced white onion and a fried red potato.",6 of 17,0.35294117647058826,False,
+51,,I tried to prepare the meal but was told something still needs to be cut.,I should slice the red hot pepper with the knife to complete the cutting step.,slice red hot pepper with knife,,"You slice the red hot pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried yellow potato and a banana on the floor.","You are carrying: a sliced red hot pepper, a fried purple potato, a knife, a sliced white onion and a fried red potato.",7 of 17,0.4117647058823529,False,
+52,,I sliced the red hot pepper with the knife and my score increased.,I should now prepare the meal since all ingredients are cooked and cut.,prepare meal,,Something still needs to be cut.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried yellow potato and a banana on the floor.","You are carrying: a sliced red hot pepper, a fried purple potato, a knife, a sliced white onion and a fried red potato.",7 of 17,0.4117647058823529,False,
+53,,I tried to prepare the meal but was told something still needs to be cut.,I should check if the red onion on the counter needs to be sliced as it might be part of the recipe.,slice red onion with knife,,You need to take the red onion first.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried yellow potato and a banana on the floor.","You are carrying: a sliced red hot pepper, a fried purple potato, a knife, a sliced white onion and a fried red potato.",7 of 17,0.4117647058823529,False,
+54,,I tried to slice the red onion but was told I need to take it first.,I should take the red onion from the counter before slicing it.,take red onion from counter,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried yellow potato and a banana on the floor.","You are carrying: a sliced red hot pepper, a fried purple potato, a knife, a sliced white onion and a fried red potato.",7 of 17,0.4117647058823529,False,
+55,,I tried to take the red onion from the counter but was carrying too many items.,I should drop the fried purple potato to make space for the red onion.,drop fried purple potato,,You drop the purple potato on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out a red onion and an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried purple potato, a fried yellow potato and a banana on the floor.","You are carrying: a sliced red hot pepper, a knife, a sliced white onion and a fried red potato.",7 of 17,0.4117647058823529,False,
+56,,I dropped the fried purple potato on the ground to make space in my inventory.,I should now take the red onion from the counter.,take red onion from counter,,You take the red onion from the counter.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
 
-There is a raw yellow potato and a carrot on the floor.","You are carrying: a knife, a raw purple potato, a red onion, a red hot pepper and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
-15,,I took the knife from the counter and added it to my inventory.,I should dice the raw purple potato with the knife as part of the recipe.,dice raw purple potato with knife,,You dice the purple potato.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
-
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.
-
-There is a raw yellow potato and a carrot on the floor.","You are carrying: a knife, a diced raw purple potato, a red onion, a red hot pepper and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
-16,,I diced the raw purple potato with the knife.,I should now dice the red onion with the knife as the next step in the recipe.,dice red onion with knife,,You dice the red onion.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is a fried purple potato, a fried yellow potato and a banana on the floor.","You are carrying: a red onion, a sliced red hot pepper, a knife, a sliced white onion and a fried red potato.",7 of 17,0.4117647058823529,False,
+57,,I took the red onion from the counter and now have it in my inventory.,I should slice the red onion with the knife to complete the cutting step.,slice red onion with knife,,You slice the red onion.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
 
-There is a raw yellow potato and a carrot on the floor.","You are carrying: a knife, a diced raw purple potato, a diced red onion, a red hot pepper and a yellow bell pepper.",1 of 17,0.058823529411764705,False,
-17,,I diced the red onion with the knife.,I should now dice the red hot pepper with the knife as the next step in the recipe.,dice red hot pepper with knife,,"You dice the red hot pepper.
+There is a fried purple potato, a fried yellow potato and a banana on the floor.","You are carrying: a sliced red onion, a sliced red hot pepper, a knife, a sliced white onion and a fried red potato.",7 of 17,0.4117647058823529,False,
+58,,I sliced the red onion with the knife.,I should try to prepare the meal now that all ingredients are cooked and cut.,prepare meal,,Something still needs to be cut.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried purple potato, a fried yellow potato and a banana on the floor.","You are carrying: a sliced red onion, a sliced red hot pepper, a knife, a sliced white onion and a fried red potato.",7 of 17,0.4117647058823529,False,
+59,,I tried to prepare the meal but was told something still needs to be cut.,I should slice the orange bell pepper on the counter as it might be the remaining ingredient to cut.,take orange bell pepper from counter,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried purple potato, a fried yellow potato and a banana on the floor.","You are carrying: a sliced red onion, a sliced red hot pepper, a knife, a sliced white onion and a fried red potato.",7 of 17,0.4117647058823529,False,
+60,,I tried to take the orange bell pepper but was carrying too many items.,I should drop the fried red potato to make space for the orange bell pepper.,drop fried red potato,,You drop the red potato on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried red potato, a fried purple potato, a fried yellow potato and a banana on the floor.","You are carrying: a sliced red onion, a sliced red hot pepper, a knife and a sliced white onion.",7 of 17,0.4117647058823529,False,
+61,,I dropped the fried red potato on the ground to make space in my inventory.,I should now take the orange bell pepper from the counter.,take orange bell pepper from counter,,You take the orange bell pepper from the counter.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried red potato, a fried purple potato, a fried yellow potato and a banana on the floor.","You are carrying: an orange bell pepper, a sliced red onion, a sliced red hot pepper, a knife and a sliced white onion.",7 of 17,0.4117647058823529,False,
+62,,I took the orange bell pepper from the counter and now have it in my inventory.,I should slice the orange bell pepper with the knife to complete the cutting step.,slice orange bell pepper with knife,,You slice the orange bell pepper.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried red potato, a fried purple potato, a fried yellow potato and a banana on the floor.","You are carrying: a sliced orange bell pepper, a sliced red onion, a sliced red hot pepper, a knife and a sliced white onion.",7 of 17,0.4117647058823529,False,
+63,,I sliced the orange bell pepper with the knife.,I should try to prepare the meal now that all ingredients are cooked and cut.,prepare meal,,You still miss something.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried red potato, a fried purple potato, a fried yellow potato and a banana on the floor.","You are carrying: a sliced orange bell pepper, a sliced red onion, a sliced red hot pepper, a knife and a sliced white onion.",7 of 17,0.4117647058823529,False,
+64,,I tried to prepare the meal but was told I still miss something.,I should check if any of the cooked potatoes need to be taken and added to the inventory for the meal.,take fried yellow potato from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a fried red potato, a fried purple potato, a fried yellow potato and a banana on the floor.","You are carrying: a sliced orange bell pepper, a sliced red onion, a sliced red hot pepper, a knife and a sliced white onion.",7 of 17,0.4117647058823529,False,
+65,,I tried to take the fried yellow potato but was carrying too many items.,I should drop the knife to make space for the fried yellow potato.,drop knife,,You drop the knife on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a knife, a fried red potato, a fried purple potato, a fried yellow potato and a banana on the floor.","You are carrying: a sliced orange bell pepper, a sliced red onion, a sliced red hot pepper and a sliced white onion.",7 of 17,0.4117647058823529,False,
+66,,I dropped the knife on the ground to make space in my inventory.,I should now take the fried yellow potato from the floor.,take fried yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a knife, a fried red potato, a fried purple potato and a banana on the floor.","You are carrying: a fried yellow potato, a sliced orange bell pepper, a sliced red onion, a sliced red hot pepper and a sliced white onion.",7 of 17,0.4117647058823529,False,
+67,,I took the fried yellow potato from the floor and now have it in my inventory.,I should try to prepare the meal now that I have all the necessary ingredients.,prepare meal,,You still miss something.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a knife, a fried red potato, a fried purple potato and a banana on the floor.","You are carrying: a fried yellow potato, a sliced orange bell pepper, a sliced red onion, a sliced red hot pepper and a sliced white onion.",7 of 17,0.4117647058823529,False,
+68,,I tried to prepare the meal but was told I still miss something.,I should take the fried red potato from the floor to check if it is needed for the meal.,take fried red potato from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a knife, a fried red potato, a fried purple potato and a banana on the floor.","You are carrying: a fried yellow potato, a sliced orange bell pepper, a sliced red onion, a sliced red hot pepper and a sliced white onion.",7 of 17,0.4117647058823529,False,
+69,,I tried to take the fried red potato but was carrying too many items.,I should drop the sliced white onion to make space for the fried red potato.,drop sliced white onion,,You drop the white onion on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced white onion, a knife, a fried red potato, a fried purple potato and a banana on the floor.","You are carrying: a fried yellow potato, a sliced orange bell pepper, a sliced red onion and a sliced red hot pepper.",7 of 17,0.4117647058823529,False,
+70,,I dropped the sliced white onion on the ground to make space in my inventory.,I should now take the fried red potato from the floor.,take fried red potato from floor,,You pick up the red potato from the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced white onion, a knife, a fried purple potato and a banana on the floor.","You are carrying: a fried red potato, a fried yellow potato, a sliced orange bell pepper, a sliced red onion and a sliced red hot pepper.",7 of 17,0.4117647058823529,False,
+71,,I took the fried red potato from the floor and now have it in my inventory.,I should try to prepare the meal again now that I have more ingredients.,prepare meal,,Something still needs to be cut.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced white onion, a knife, a fried purple potato and a banana on the floor.","You are carrying: a fried red potato, a fried yellow potato, a sliced orange bell pepper, a sliced red onion and a sliced red hot pepper.",7 of 17,0.4117647058823529,False,
+72,,I tried to prepare the meal but was told something still needs to be cut.,I should take the sliced white onion from the floor and slice it to fulfill the cutting requirement.,take sliced white onion from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced white onion, a knife, a fried purple potato and a banana on the floor.","You are carrying: a fried red potato, a fried yellow potato, a sliced orange bell pepper, a sliced red onion and a sliced red hot pepper.",7 of 17,0.4117647058823529,False,
+73,,I tried to take the sliced white onion but was carrying too many items.,I should drop the sliced red hot pepper to make space for the sliced white onion.,drop sliced red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced red hot pepper, a sliced white onion, a knife, a fried purple potato and a banana on the floor.","You are carrying: a fried red potato, a fried yellow potato, a sliced orange bell pepper and a sliced red onion.",7 of 17,0.4117647058823529,False,
+74,,I dropped the sliced red hot pepper on the ground to make space in my inventory.,I should now take the sliced white onion from the floor.,take sliced white onion from floor,,You pick up the white onion from the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced red hot pepper, a knife, a fried purple potato and a banana on the floor.","You are carrying: a sliced white onion, a fried red potato, a fried yellow potato, a sliced orange bell pepper and a sliced red onion.",7 of 17,0.4117647058823529,False,
+75,,I took the sliced white onion from the floor and now have it in my inventory.,I should try to prepare the meal again now that I have all the required ingredients sliced and cooked.,prepare meal,,Something still needs to be cut.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced red hot pepper, a knife, a fried purple potato and a banana on the floor.","You are carrying: a sliced white onion, a fried red potato, a fried yellow potato, a sliced orange bell pepper and a sliced red onion.",7 of 17,0.4117647058823529,False,
+76,,I tried to prepare the meal but was told something still needs to be cut.,I should slice the fried purple potato to see if that completes the cutting requirement.,slice fried purple potato with knife,,You need to take the purple potato first.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced red hot pepper, a knife, a fried purple potato and a banana on the floor.","You are carrying: a sliced white onion, a fried red potato, a fried yellow potato, a sliced orange bell pepper and a sliced red onion.",7 of 17,0.4117647058823529,False,
+77,,I tried to slice the fried purple potato but was told I need to take it first.,I should take the fried purple potato from the floor before slicing it.,take fried purple potato from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced red hot pepper, a knife, a fried purple potato and a banana on the floor.","You are carrying: a sliced white onion, a fried red potato, a fried yellow potato, a sliced orange bell pepper and a sliced red onion.",7 of 17,0.4117647058823529,False,
+78,,I tried to take the fried purple potato but was carrying too many items.,I should drop the sliced orange bell pepper to make space for the fried purple potato.,drop sliced orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced orange bell pepper, a sliced red hot pepper, a knife, a fried purple potato and a banana on the floor.","You are carrying: a sliced white onion, a fried red potato, a fried yellow potato and a sliced red onion.",7 of 17,0.4117647058823529,False,
+79,,I dropped the sliced orange bell pepper on the ground to make space in my inventory.,I should now take the fried purple potato from the floor.,take fried purple potato from floor,,You pick up the purple potato from the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced orange bell pepper, a sliced red hot pepper, a knife and a banana on the floor.","You are carrying: a fried purple potato, a sliced white onion, a fried red potato, a fried yellow potato and a sliced red onion.",7 of 17,0.4117647058823529,False,
+80,,I took the fried purple potato from the floor and now have it in my inventory.,I should slice the fried purple potato with the knife to fulfill the cutting requirement.,slice fried purple potato with knife,,You need to take the knife first.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced orange bell pepper, a sliced red hot pepper, a knife and a banana on the floor.","You are carrying: a fried purple potato, a sliced white onion, a fried red potato, a fried yellow potato and a sliced red onion.",7 of 17,0.4117647058823529,False,
+81,,I tried to slice the fried purple potato but was told I need to take the knife first.,I should take the knife from the floor before slicing the fried purple potato.,take knife from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced orange bell pepper, a sliced red hot pepper, a knife and a banana on the floor.","You are carrying: a fried purple potato, a sliced white onion, a fried red potato, a fried yellow potato and a sliced red onion.",7 of 17,0.4117647058823529,False,
+82,,I tried to take the knife but was carrying too many items.,I should drop the sliced red onion to make space for the knife.,drop sliced red onion,,You drop the red onion on the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced red onion, a sliced orange bell pepper, a sliced red hot pepper, a knife and a banana on the floor.","You are carrying: a fried purple potato, a sliced white onion, a fried red potato and a fried yellow potato.",7 of 17,0.4117647058823529,False,
+83,,I dropped the sliced red onion on the ground to make space in my inventory.,I should now take the knife from the floor.,take knife from floor,,You pick up the knife from the ground.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced red onion, a sliced orange bell pepper, a sliced red hot pepper and a banana on the floor.","You are carrying: a knife, a fried purple potato, a sliced white onion, a fried red potato and a fried yellow potato.",7 of 17,0.4117647058823529,False,
+84,,I took the knife from the floor and now have it in my inventory.,I should slice the fried purple potato with the knife to complete the cutting requirement.,slice fried purple potato with knife,,You slice the purple potato.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced red onion, a sliced orange bell pepper, a sliced red hot pepper and a banana on the floor.","You are carrying: a knife, a sliced fried purple potato, a sliced white onion, a fried red potato and a fried yellow potato.",7 of 17,0.4117647058823529,False,
+85,,I sliced the fried purple potato with the knife.,I should try to prepare the meal now that all ingredients are cut and cooked.,prepare meal,,Something still needs to be cut.,Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
+
+There is a sliced red onion, a sliced orange bell pepper, a sliced red hot pepper and a banana on the floor.","You are carrying: a knife, a sliced fried purple potato, a sliced white onion, a fried red potato and a fried yellow potato.",7 of 17,0.4117647058823529,False,
+86,,I tried to prepare the meal but was told something still needs to be cut.,I should check if the fried red potato and fried yellow potato need to be sliced as well.,slice fried red potato with knife,,"You slice the red potato.
 
 
 
                               *** You lost! ***
 
-You scored 1 out of a possible 17, in 17 turns.
+You scored 7 out of a possible 17, in 84 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 >",Kitchen,"You arrive in a kitchen. An ordinary one. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. On the counter you make out an orange bell pepper. You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+You hear a noise behind you and spin around, but you can't see anything other than a fridge. You see a gleam over in a corner, where you can see an oven. Oh, great. Here's a table. The table is massive. On the table you make out a cookbook. Oh wow! Is that what I think it is? It is! It's a counter. But the thing is empty. Oh! Why couldn't there just be stuff on it? You make out a stove. Why don't you take a picture of it, it'll last longer! The stove is conventional. Unfortunately, there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
 
-There is a closed screen door leading east. There is a closed plain door leading north. There is an exit to the west.
+There is an open screen door leading east. There is an open plain door leading north. There is an exit to the west.
 
-There is a raw yellow potato and a carrot on the floor.","You are carrying: a knife, a diced raw purple potato, a diced red onion, a red hot pepper and a yellow bell pepper.",1 of 17,0.058823529411764705,True,
+There is a sliced red onion, a sliced orange bell pepper, a sliced red hot pepper and a banana on the floor.","You are carrying: a knife, a sliced fried purple potato, a sliced white onion, a fried red potato and a fried yellow potato.",7 of 17,0.4117647058823529,True,

@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 There is an open gate leading south. There is an open hatch leading west. You need an unguarded exit? You should try going east.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the Vault.,I should go south as the first objective is to go south.,go south,,"Well, here we are in a cubicle.
+1,,I am in the Vault.,I need to go south first as per the objective.,go south,,"Well, here we are in a cubicle.
 
 
 
@@ -13,7 +13,7 @@ There is an open gate leading north. You need an unguarded exit? You should try 
 
 
 There is an open gate leading north. You need an unguarded exit? You should try going east. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I went south to the Cubicle.,I should venture south again as per the objective.,go south,,"You've entered a cookery. I guess you better just go and list everything you see here.
+2,,I went south to the Cubicle.,I should go south again as the objective says to venture south.,go south,,"You've entered a cookery. I guess you better just go and list everything you see here.
 
 You make out a closed cabinet right there by you.
 
@@ -31,7 +31,7 @@ You need an unblocked exit? You should try going east. There is an unblocked exi
 
 
 You need an unblocked exit? You should try going east. There is an unblocked exit to the north. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I went south to the Pantry.,I should try to go west as per the objective.,go west,,"You've entered a workshop.
+4,,I went south to the Pantry.,"I should try to go south again, but there is no south exit mentioned. I will try to go west as the next step in the objective says to try to travel west.",go west,,"You've entered a workshop.
 
 You rest your hand against a wall, but you miss the wall and fall onto a toolbox. The toolbox is empty! What a waste of a day!
 
@@ -40,7 +40,7 @@ There is a closed stone hatch leading west. You need an unblocked exit? You shou
 You rest your hand against a wall, but you miss the wall and fall onto a toolbox. The toolbox is empty! What a waste of a day!
 
 There is a closed stone hatch leading west. You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I went west to the Workshop.,I should look around to see if the stone hatch is ajar as per the objective.,look,,"You've entered a workshop.
+5,,I went west to the Workshop.,"The stone hatch is closed, but the objective says the stone hatch within the workshop is ajar. I should look around to see if the hatch is actually ajar or if I can open it.",look,,"You've entered a workshop.
 
 You rest your hand against a wall, but you miss the wall and fall onto a toolbox. The toolbox is empty! What a waste of a day!
 
@@ -49,17 +49,12 @@ There is a closed stone hatch leading west. You need an unblocked exit? You shou
 You rest your hand against a wall, but you miss the wall and fall onto a toolbox. The toolbox is empty! What a waste of a day!
 
 There is a closed stone hatch leading west. You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
-6,,"I looked around the Workshop and found the stone hatch is closed, not ajar.",I should attempt to go west through the stone hatch as per the objective.,go west,,You have to open the stone hatch first.,Workshop,"You've entered a workshop.
-
-You rest your hand against a wall, but you miss the wall and fall onto a toolbox. The toolbox is empty! What a waste of a day!
-
-There is a closed stone hatch leading west. You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I tried to go west through the stone hatch but it is closed.,I should open the stone hatch first before going west.,open stone hatch,,You open stone hatch.,Workshop,"You've entered a workshop.
+6,,"I looked around the workshop; the stone hatch is closed, not ajar.",I should try to open the stone hatch to see if it can be ajar.,open stone hatch,,You open stone hatch.,Workshop,"You've entered a workshop.
 
 You rest your hand against a wall, but you miss the wall and fall onto a toolbox. The toolbox is empty! What a waste of a day!
 
 There is an open stone hatch leading west. You need an unblocked exit? You should try going east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I opened the stone hatch; it is now open.,I should go west through the open stone hatch.,go west,,"You've just shown up in a studio.
+7,,I opened the stone hatch; it is now open.,"The objective says to attempt to head west, so I should go west through the open stone hatch.",go west,,"You've just shown up in a studio.
 
 
 
@@ -72,7 +67,7 @@ There is a printer on the floor.",Studio,"You've just shown up in a studio.
 There is an open stone hatch leading east. There is an open mahogany door leading west.
 
 There is a printer on the floor.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I went west through the open stone hatch to the Studio.,I should lift the printer from the floor as per the objective.,take printer from floor,,"You pick up the printer from the ground.
+8,,I went west through the open stone hatch to the Studio.,I should lift the printer from the floor as per the objective.,take printer from floor,,"You pick up the printer from the ground.
 
 
 
@@ -81,7 +76,7 @@ Your score has just gone up by one point.
 
                                *** The End ***
 
-You scored 1 out of a possible 1, in 10 turns.
+You scored 1 out of a possible 1, in 9 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

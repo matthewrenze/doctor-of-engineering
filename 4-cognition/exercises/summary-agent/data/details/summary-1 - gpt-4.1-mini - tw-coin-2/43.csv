@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the sauna.,I will start by going north as instructed.,go north,,"You are in a basement. An ordinary kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+1,,I am in the sauna.,I will go north as the first step.,go north,,"You are in a basement. An ordinary kind of place. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
@@ -13,7 +13,7 @@ There is an exit to the north. Don't worry, it is unblocked. You don't like door
 
 
 There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I moved from the sauna to the basement.,I should go north as the exit is unblocked.,go north,,"You find yourself in a restroom. A typical kind of place.
+2,,I went north to the basement.,I will go north again as the next step.,go north,,"You find yourself in a restroom. A typical kind of place.
 
 
 
@@ -22,12 +22,7 @@ There is an exit to the east. Don't worry, it is unblocked. There is an unguarde
 
 
 There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-3,,I moved from the basement to the restroom.,I should go north as the task instructs to attempt to go north after moving to the restroom.,go north,,You can't go that way.,Restroom,"You find yourself in a restroom. A typical kind of place.
-
-
-
-There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I tried to go north from the restroom but was blocked.,I should try going east from the restroom since the exit to the east is unblocked.,go east,,"You arrive in a bar. An usual kind of place.
+3,,I went north to the restroom.,I will go east as the next step.,go east,,"You arrive in a bar. An usual kind of place.
 
 
 
@@ -36,7 +31,7 @@ You don't like doors? Why not try going east, that entranceway is unblocked. The
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I moved north from the restroom and arrived in the bar.,I should try going east since the entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+4,,I went east to the bar.,I will go east again as the next step.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
 
 
 
@@ -45,7 +40,12 @@ You don't like doors? Why not try going west, that entranceway is unguarded.",Wa
 
 
 You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I moved north from the restroom and arrived in the bar; then I moved to the washroom.,I should go west through the unguarded entranceway as suggested.,go west,,"You arrive in a bar. An usual kind of place.
+5,,I went east to the washroom.,I should go south next as per the instructions.,go south,,You can't go that way.,Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+
+
+
+You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+6,,I tried to go south from the washroom but couldn't.,"The feedback suggests going west through the unguarded entranceway, so I will go west.",go west,,"You arrive in a bar. An usual kind of place.
 
 
 
@@ -54,525 +54,513 @@ You don't like doors? Why not try going east, that entranceway is unblocked. The
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-7,,"I arrived in the bar, which has unblocked entrances to the east, south, and west.","I should try to go north as initially instructed, but since the bar does not have a north exit, I will try going east as suggested.",go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+7,,I went west from the washroom to the bar.,I will now try to go south from the bar as there is an unguarded exit that way.,go south,,"You have entered a bedroom. Not the bedroom you'd expect. No, this is a sleepy bedroom.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an unguarded exit to the north. There is an unguarded exit to the south. There is an unblocked exit to the west.",Sleepy Bedroom,"You have entered a bedroom. Not the bedroom you'd expect. No, this is a sleepy bedroom.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-8,,"I moved to the washroom, which is well lit and has an unguarded entrance to the west.",I should go west through the unguarded entrance as suggested.,go west,,"You arrive in a bar. An usual kind of place.
+There is an unguarded exit to the north. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+8,,I went south from the bar to the sleepy bedroom.,I will now try to go west from the sleepy bedroom as the exit is unblocked.,go west,,"You are in a basement. A roomy one.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unguarded.",Roomy Basement,"You are in a basement. A roomy one.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-9,,"I moved to the bar, which has unblocked entrances to the east, south, and west.",I should go east as the entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unguarded. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+9,,I went west from the sleepy bedroom to the roomy basement.,I will now go north from the roomy basement as the exit is unguarded.,go north,,"You are in a bedchamber. A sleepy one. You begin to take stock of what's in the room.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Sleepy Bedchamber,"You are in a bedchamber. A sleepy one. You begin to take stock of what's in the room.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-10,,"I moved to the washroom, which is well lit and has an unguarded entrance to the west.",I should go west through the unguarded entrance as suggested.,go west,,"You arrive in a bar. An usual kind of place.
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I went north from the roomy basement to the sleepy bedchamber.,I will go north from the sleepy bedchamber as the exit is unblocked.,go north,,"You're now in the well lit parlor. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going south, that entranceway is unguarded.",Well Lit Parlor,"You're now in the well lit parlor. You decide to start listing off everything you see in the room, as if you were in a text adventure.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-11,,"I moved to the bar; it is an unusual kind of place with unblocked entrances east, south, and west.",I should go east as the entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I went north from the sleepy bedchamber to the well lit parlor.,I will go south from the well lit parlor as the entranceway is unguarded.,go south,,"You are in a bedchamber. A sleepy one. You begin to take stock of what's in the room.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unguarded.",Sleepy Bedchamber,"You are in a bedchamber. A sleepy one. You begin to take stock of what's in the room.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance.,go west,,"You arrive in a bar. An usual kind of place.
+There is an exit to the east. Don't worry, it is unguarded. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I went south from the well lit parlor to the sleepy bedchamber.,I will go east from the sleepy bedchamber as the exit is unguarded.,go east,,"You find yourself in a playroom. A fun one.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded.",Fun Playroom,"You find yourself in a playroom. A fun one.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I moved west from the washroom and arrived in the bar.,I should go east from the bar since the entrance is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I went east from the sleepy bedchamber to the fun playroom.,I will go east from the fun playroom as the exit is unguarded.,go east,,"You're now in the forgotten basement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Forgotten Basement,"You're now in the forgotten basement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I moved west from the washroom and arrived in the bar.,I should go west from the washroom as the entranceway is unguarded.,go west,,"You arrive in a bar. An usual kind of place.
+You need an unguarded exit? You should try going east. There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went east from the fun playroom to the forgotten basement.,I will go east from the forgotten basement as the exit is unguarded.,go east,,"You're now in a workshop. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+There is an unblocked exit to the east. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",Workshop,"You're now in a workshop. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I moved west from the washroom and arrived in the bar.,I should go east from the bar since the entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an unblocked exit to the east. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I went east from the forgotten basement to the workshop.,I will go east from the workshop since the exit is unblocked.,go east,,"Well how about that, you are in a place we're calling an office. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You need an unblocked exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Office,"Well how about that, you are in a place we're calling an office. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I moved west from the washroom and arrived in the bar.,I should go west from the washroom as the entranceway is unguarded.,go west,,"You arrive in a bar. An usual kind of place.
+You need an unblocked exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went east from the workshop to the office.,I will go north from the office since the exit is unblocked.,go north,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I moved west from the washroom and arrived in the bar.,I should go east from the bar since the entrance is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went north from the office to the studio.,I will go north from the studio since the entranceway is unguarded.,go north,,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I moved west from the washroom and arrived in the bar.,I should go west from the washroom as suggested to continue exploring.,go west,,"You arrive in a bar. An usual kind of place.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went north from the studio to the austere workshop.,I will go south from the austere workshop as it is an unblocked exit.,go south,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I moved west from the washroom and arrived in the bar.,I should go east from the bar since the entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I went south from the austere workshop to the studio.,I will go north from the studio as the entranceway is unguarded.,go north,,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I moved west from the washroom and arrived in the bar.,I should go west from the washroom as suggested to continue exploring.,go west,,"You arrive in a bar. An usual kind of place.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went north from the studio to the austere workshop.,I will go south from the austere workshop as the exit is unblocked.,go south,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I moved west from the washroom and arrived in the bar.,I should go east from the bar since the entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I went south from the austere workshop to the studio.,I will go west from the studio as it is an unguarded exit.,go west,,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Recreation Zone,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I moved west from the washroom and arrived in the bar.,I should go west from the washroom as suggested to explore the unguarded entrance.,go west,,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I went west from the studio to the recreation zone.,I will go north from the recreation zone as the exit is unblocked.,go north,,"You arrive in a chamber. A cozy kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You need an unblocked exit? You should try going south.",Cozy Chamber,"You arrive in a chamber. A cozy kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I moved west from the washroom and arrived in the bar.,I should go east from the bar since the entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I went north from the recreation zone to the cozy chamber.,I will go south from the cozy chamber as the exit is unblocked.,go south,,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Recreation Zone,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I moved west from the washroom and arrived in the bar.,I should go west from the washroom as suggested to continue exploring.,go west,,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went south from the cozy chamber to the recreation zone.,I will go east from the recreation zone as the entranceway is unguarded.,go east,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I moved west from the washroom and arrived in the bar.,I should go east from the bar since the entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went east from the recreation zone to the studio.,I will go north from the studio as the entranceway is unguarded.,go north,,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I moved west from the washroom and arrived in the bar.,I should go west from the washroom as the entranceway is unguarded.,go west,,"You arrive in a bar. An usual kind of place.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I went north from the studio to the austere workshop.,I should go south from the austere workshop as the exit is unblocked.,go south,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I moved west from the washroom and arrived in the bar.,I should go east from the bar as the entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I went south from the austere workshop to the studio.,I should go north from the studio to the austere workshop.,go north,,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I moved west from the washroom and arrived in the bar.,I should go west from the washroom as the entranceway is unguarded.,go west,,"You arrive in a bar. An usual kind of place.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I went north from the studio to the austere workshop.,I should go south from the austere workshop back to the studio.,go south,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I moved west from the washroom multiple times and kept arriving in the bar.,I should now try to go east from the bar as the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I went south from the austere workshop to the studio.,I should go west from the studio as suggested by the description.,go west,,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Recreation Zone,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the washroom again.,I should go west from the washroom to explore the unguarded entrance.,go west,,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I went west from the studio to the recreation zone.,I should go north from the recreation zone as it is unblocked.,go north,,"You arrive in a chamber. A cozy kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You need an unblocked exit? You should try going south.",Cozy Chamber,"You arrive in a chamber. A cozy kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should try going east from the bar since the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I went north from the recreation zone to the cozy chamber.,I should go south from the cozy chamber as it is the unblocked exit.,go south,,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Recreation Zone,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I am in the washroom.,I should go west through the unguarded entrance as suggested.,go west,,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I went south from the cozy chamber to the recreation zone.,I should go east from the recreation zone since the entranceway is unguarded.,go east,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar since the entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I went east from the recreation zone to the studio.,I should go north from the studio since the entranceway is unguarded.,go north,,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance as suggested.,go west,,"You arrive in a bar. An usual kind of place.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I went north from the studio to the austere workshop.,I should go south from the austere workshop since the exit is unblocked.,go south,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar since the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I went south from the austere workshop to the studio.,I should go north from the studio to the austere workshop.,go north,,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance.,go west,,"You arrive in a bar. An usual kind of place.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I went north from the studio to the austere workshop.,I should go south from the austere workshop to the studio.,go south,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar since the entrance to the east is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I went south from the austere workshop to the studio.,I should go west from the studio to the recreation zone.,go west,,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Recreation Zone,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance.,go west,,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I went west from the studio to the recreation zone.,I should go north from the recreation zone to the exciting lounge.,go north,,"You arrive in a chamber. A cozy kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You need an unblocked exit? You should try going south.",Cozy Chamber,"You arrive in a chamber. A cozy kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar since the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I went north from the recreation zone to the cozy chamber.,I should go south to return to the recreation zone and then try going east to reach the exciting lounge.,go south,,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Recreation Zone,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance as suggested.,go west,,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went south from the cozy chamber to the recreation zone.,I should go east to reach the exciting lounge where I can pick up the coin.,go east,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar since the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went east from the recreation zone to the studio.,I should go north from the studio to continue towards the exciting lounge.,go north,,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance to explore the next room.,go west,,"You arrive in a bar. An usual kind of place.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I went north from the studio to the austere workshop.,I should go south from the austere workshop to return to the studio and then try to go east to find the exciting lounge.,go south,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar since the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I went south from the austere workshop to the studio.,I should go east from the studio to try to find the exciting lounge where the coin might be.,go east,,You can't go that way.,Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I tried to go east from the studio but couldn't.,I should try going north from the studio as the entranceway is unguarded and might lead to the exciting lounge.,go north,,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance.,go west,,"You arrive in a bar. An usual kind of place.
+There is an exit to the south. Don't worry, it is unblocked.",Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I went north from the studio to the austere workshop.,I should try to go east from the austere workshop to continue exploring.,go east,,You can't go that way.,Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar as the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I tried to go east from the austere workshop but couldn't.,"Since I cannot go east, I will go south from the austere workshop.",go south,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance as suggested.,go west,,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I went south from the austere workshop to the studio.,I should try to go north from the studio.,go north,,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+There is an exit to the south. Don't worry, it is unblocked.",Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar as the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I went north from the studio to the austere workshop.,I should try to go north from the austere workshop.,go north,,You can't go that way.,Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I tried to go north from the austere workshop but couldn't; the only exit is south.,I should go south from the austere workshop.,go south,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance to explore the next room.,go west,,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I went south from the austere workshop to the studio.,I should try going west from the studio.,go west,,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar as the entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Recreation Zone,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I went west from the studio to the recreation zone.,I should go north in the recreation zone.,go north,,"You arrive in a chamber. A cozy kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance.,go west,,"You arrive in a bar. An usual kind of place.
+You need an unblocked exit? You should try going south.",Cozy Chamber,"You arrive in a chamber. A cozy kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I went north from the recreation zone to the cozy chamber.,I should go south from the cozy chamber.,go south,,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar since the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Recreation Zone,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I went south from the cozy chamber to the recreation zone.,I should go east from the recreation zone.,go east,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance.,go west,,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I went east from the recreation zone to the studio.,I should go north from the studio.,go north,,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar since the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I went north from the studio to the austere workshop.,I should go south from the austere workshop.,go south,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance to explore further.,go west,,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I went south from the austere workshop to the studio.,I should go west from the studio to the recreation zone.,go west,,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-55,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar since the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Recreation Zone,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I went west from the studio to the recreation zone.,I should go north from the recreation zone to the cozy chamber.,go north,,"You arrive in a chamber. A cozy kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-56,,I am in the washroom with an unguarded entrance to the west.,I should go west from the washroom as the entrance is unguarded.,go west,,"You arrive in a bar. An usual kind of place.
+You need an unblocked exit? You should try going south.",Cozy Chamber,"You arrive in a chamber. A cozy kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I went north from the recreation zone to the cozy chamber.,I should go south from the cozy chamber back to the recreation zone.,go south,,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-57,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar since the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Recreation Zone,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I went south from the cozy chamber to the recreation zone.,I should go east from the recreation zone to the studio.,go east,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I am in the washroom with an unguarded entrance to the west.,I should go west from the washroom as the entrance is unguarded.,go west,,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went east from the recreation zone to the studio.,I should go north from the studio to the austere workshop.,go north,,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-59,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar as the entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",Austere Workshop,"You've just walked into an austere workshop.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I went north from the studio to the austere workshop.,I should go south from the austere workshop back to the studio.,go south,,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance to explore new areas.,go west,,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",Studio,"Okay, so you're in a studio, cool, but is it standard? You better believe it is. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I went south from the austere workshop to the studio.,I should go west from the studio to the recreation zone.,go west,,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar since the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Recreation Zone,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I went west from the studio to the recreation zone.,I should go north from the recreation zone to the cozy chamber.,go north,,"You arrive in a chamber. A cozy kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-62,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance.,go west,,"You arrive in a bar. An usual kind of place.
+You need an unblocked exit? You should try going south.",Cozy Chamber,"You arrive in a chamber. A cozy kind of place. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I went north from the recreation zone to the cozy chamber.,I should go south from the cozy chamber back to the recreation zone.,go south,,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-63,,I moved west from the washroom multiple times and kept arriving in the bar; now I am in the bar again.,I should go east from the bar since the east entranceway is unblocked.,go east,,"You find yourself in a washroom. An usual kind of place. The room is well lit.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Recreation Zone,"You're now in a recreation zone.
 
 
 
-You don't like doors? Why not try going west, that entranceway is unguarded.",Washroom,"You find yourself in a washroom. An usual kind of place. The room is well lit.
-
-
-
-You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I am in the washroom with an unguarded entrance to the west.,I should go west through the unguarded entrance.,go west,,"You arrive in a bar. An usual kind of place.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Bar,"You arrive in a bar. An usual kind of place.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,True,
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,True,

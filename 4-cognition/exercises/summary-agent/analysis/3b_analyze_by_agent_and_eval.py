@@ -16,7 +16,7 @@ os.makedirs(output_folder_path, exist_ok=True)
 summaries = pd.read_csv(input_file_path)
 
 # Filter rows
-# summaries = summaries[summaries["model_name"] == model_name]
+summaries = summaries[summaries["model_name"] == model_name]
 summaries = summaries[summaries["eval_name"].str.startswith("tw-")]
 
 # Create groups
@@ -41,6 +41,9 @@ agent_order = [
     "summary-1",
     "summary-5",
     "summary-10",
+    "truncate-1",
+    "truncate-5",
+    "truncate-10"
 ]
 
 summaries["agent_name"] = pd.Categorical(

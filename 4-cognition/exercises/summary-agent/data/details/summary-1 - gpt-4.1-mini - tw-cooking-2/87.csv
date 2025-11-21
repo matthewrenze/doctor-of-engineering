@@ -2,7 +2,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red hot pepper, a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?","You are carrying: a raw yellow potato, a raw red potato, a raw purple potato and a yellow bell pepper.",0 of 15,0.0,False,
-1,,"I am in the kitchen with various items and appliances visible, including a cookbook on the table.",I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,I am in the kitchen with various items and a cookbook on the table.,I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -29,123 +29,291 @@ dice the red onion
   prepare meal",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red hot pepper, a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?","You are carrying: a raw yellow potato, a raw red potato, a raw purple potato and a yellow bell pepper.",0 of 15,0.0,False,
-2,,"I opened the cookbook and read the recipe for a meal requiring red onion, red hot pepper, red potato, yellow potato, and white onion, with detailed preparation steps; I am in the kitchen with some ingredients and appliances visible, carrying raw yellow potato, raw red potato, raw purple potato, and yellow bell pepper.","I need to gather the required ingredients from the kitchen first, especially the red onion, red hot pepper, and white onion, since I already have the red and yellow potatoes. I will look around the kitchen to find these ingredients.",look,,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red hot pepper, a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+2,,"I examined the cookbook and found a recipe requiring red onion, red hot pepper, red potato, yellow potato, and white onion.",I need to gather the missing ingredients (red onion and white onion) from the kitchen before starting the recipe.,look fridge,,The fridge looks manageable. It is closed.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
 You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red hot pepper, a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?","You are carrying: a raw yellow potato, a raw red potato, a raw purple potato and a yellow bell pepper.",0 of 15,0.0,False,
-3,,"I arrived in the kitchen and surveyed the room, noting the fridge, oven, table with a cookbook, counter with a red hot pepper, red apple, orange bell pepper, and a knife, and a stove with nothing on it; I am carrying raw yellow potato, raw red potato, raw purple potato, and yellow bell pepper.",I need to gather all the ingredients required for the recipe from the kitchen before starting to prepare the meal. I should take the red hot pepper from the counter since I already have the potatoes and yellow bell pepper.,take red hot pepper from counter,,"You take the red hot pepper from the counter.
+3,,I looked at the fridge and found it closed.,I should open the fridge to check for the missing ingredients.,open fridge,,"You open the fridge, revealing a white onion, a red onion, a block of cheese and a raw pork chop.",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a white onion, a red onion, a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red hot pepper, a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?","You are carrying: a raw yellow potato, a raw red potato, a raw purple potato and a yellow bell pepper.",0 of 15,0.0,False,
+4,,"I opened the fridge and found a white onion, a red onion, a block of cheese, and a raw pork chop inside.",I should take the white onion and red onion from the fridge to have all the ingredients needed for the recipe.,take white onion from fridge; take red onion from fridge,,You can't see any such thing.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a white onion, a red onion, a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red hot pepper, a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?","You are carrying: a raw yellow potato, a raw red potato, a raw purple potato and a yellow bell pepper.",0 of 15,0.0,False,
+5,,I tried to take the white onion and red onion from the fridge but was unable to.,"I should explicitly open the fridge again to ensure it is open, then try taking the onions one at a time.",open fridge; take white onion from fridge; take red onion from fridge,,You can't see any such thing.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a white onion, a red onion, a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red hot pepper, a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?","You are carrying: a raw yellow potato, a raw red potato, a raw purple potato and a yellow bell pepper.",0 of 15,0.0,False,
+6,,I tried to open the fridge and take the onions but was unable to.,I should try to take the white onion and red onion directly from the fridge without reopening it since it is already open.,take white onion from fridge; take red onion from fridge,,You can't see any such thing.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a white onion, a red onion, a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red hot pepper, a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?","You are carrying: a raw yellow potato, a raw red potato, a raw purple potato and a yellow bell pepper.",0 of 15,0.0,False,
+7,,I tried to take the white onion and red onion from the fridge but was unable to.,"Since I cannot take the onions from the fridge, I should try to take the red hot pepper from the counter to start preparing the meal.",take red hot pepper from counter,,"You take the red hot pepper from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?","You are carrying: a red hot pepper, a raw yellow potato, a raw red potato, a raw purple potato and a yellow bell pepper.",1 of 15,0.06666666666666667,False,
-4,,"I took the red hot pepper from the counter; now I am carrying it along with the raw yellow potato, raw red potato, raw purple potato, and yellow bell pepper.",I should prepare the ingredients by peeling and chopping the potatoes and chopping the peppers and onions as per the recipe in the cookbook.,dice raw yellow potato with knife,,You need to take the knife first.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+You scan the room for a fridge, and you find a fridge! The fridge contains a white onion, a red onion, a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?","You are carrying: a red hot pepper, a raw yellow potato, a raw red potato, a raw purple potato and a yellow bell pepper.",1 of 15,0.06666666666666667,False,
+8,,I took the red hot pepper from the counter; now I am carrying it.,I should try to take the red onion and white onion from the fridge again since I need them for the recipe.,take white onion from fridge,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?","You are carrying: a red hot pepper, a raw yellow potato, a raw red potato, a raw purple potato and a yellow bell pepper.",1 of 15,0.06666666666666667,False,
-5,,I tried to use the knife but was told I need to take it first; I am in the kitchen with a knife on the counter.,I should take the knife from the counter so I can use it for preparing the meal.,take knife from counter,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+You scan the room for a fridge, and you find a fridge! The fridge contains a white onion, a red onion, a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?","You are carrying: a red hot pepper, a raw yellow potato, a raw red potato, a raw purple potato and a yellow bell pepper.",1 of 15,0.06666666666666667,False,
+9,,I tried to take the white onion from the fridge but was carrying too many things.,I should drop some items to free up space before taking the onions.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?","You are carrying: a red hot pepper, a raw yellow potato, a raw red potato, a raw purple potato and a yellow bell pepper.",1 of 15,0.06666666666666667,False,
-6,,"I tried to take the knife but was carrying too many items already; I am in the kitchen with a red hot pepper, raw yellow potato, raw red potato, raw purple potato, and yellow bell pepper.",I should put down one or more items to free up space before taking the knife.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+You scan the room for a fridge, and you find a fridge! The fridge contains a white onion, a red onion, a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
 
 
 
 There is a raw purple potato on the floor.","You are carrying: a red hot pepper, a raw yellow potato, a raw red potato and a yellow bell pepper.",1 of 15,0.06666666666666667,False,
-7,,I dropped the purple potato on the ground to free up space in my inventory.,I should take the knife from the counter now that I have space in my inventory.,take knife from counter,,You take the knife from the counter.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
-
-
-
-There is a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a raw yellow potato, a raw red potato and a yellow bell pepper.",1 of 15,0.06666666666666667,False,
-8,,I took the knife from the counter; now I am carrying it along with other ingredients.,I should pick up the purple potato from the floor to have all the ingredients needed for the recipe.,take raw purple potato from floor,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
-
-
-
-There is a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a raw yellow potato, a raw red potato and a yellow bell pepper.",1 of 15,0.06666666666666667,False,
-9,,"I dropped the purple potato to free up space and took the knife; I am carrying a knife, red hot pepper, raw yellow potato, raw red potato, and yellow bell pepper but cannot carry more.",I should drop one more item to free space so I can take the purple potato from the floor.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
-
-
-
-There is a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a raw yellow potato and a raw red potato.",1 of 15,0.06666666666666667,False,
-10,,"I dropped the yellow bell pepper on the ground to free up space; I am now carrying a knife, red hot pepper, raw yellow potato, and raw red potato.",I should start preparing the ingredients by peeling and dicing the potatoes and chopping the red hot pepper as per the recipe.,peel raw yellow potato with knife,,That's not a verb I recognise.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
-
-
-
-There is a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a raw yellow potato and a raw red potato.",1 of 15,0.06666666666666667,False,
-11,,I attempted an unrecognized command; the environment described the kitchen and my inventory.,I should start preparing the ingredients by peeling and chopping the potatoes and peppers as per the recipe.,peel raw yellow potato with knife,,That's not a verb I recognise.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
-
-
-
-There is a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a raw yellow potato and a raw red potato.",1 of 15,0.06666666666666667,False,
-12,,I tried an unrecognized command; the environment described the kitchen and my inventory.,I should start preparing the ingredients by peeling and chopping the potatoes and chopping the red hot pepper as per the recipe.,peel raw yellow potato with knife,,That's not a verb I recognise.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
-
-
-
-There is a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a raw yellow potato and a raw red potato.",1 of 15,0.06666666666666667,False,
-13,,I attempted an unrecognized command; the environment described the kitchen and my inventory.,I should start preparing the ingredients by peeling and dicing the potatoes and chopping the red hot pepper using the knife I am carrying.,peel raw yellow potato with knife,,That's not a verb I recognise.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
-
-
-
-There is a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a raw yellow potato and a raw red potato.",1 of 15,0.06666666666666667,False,
-14,,I attempted an unrecognized command and received a description of the kitchen and my inventory.,I should start preparing the ingredients by peeling and chopping the potatoes and chopping the red hot pepper using the knife I am carrying.,peel raw yellow potato with knife,,That's not a verb I recognise.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
-
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
-
-
-
-There is a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a raw yellow potato and a raw red potato.",1 of 15,0.06666666666666667,False,
-15,,I attempted an unrecognized command and received a detailed description of the kitchen and my inventory.,I should start preparing the ingredients by peeling and chopping the potatoes and chopping the red hot pepper as per the recipe.,dice raw yellow potato with knife,,"You dice the yellow potato.
+10,,I dropped the raw purple potato to free up space.,I should now take the white onion and red onion from the fridge.,take white onion from fridge,,"You take the white onion from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+You scan the room for a fridge, and you find a fridge! The fridge contains a red onion, a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
 
 
 
-There is a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a diced raw yellow potato and a raw red potato.",2 of 15,0.13333333333333333,False,
-16,,I diced the yellow potato; it is now diced and in my inventory.,I should dice the raw red potato next to continue preparing the ingredients for the meal.,dice raw red potato with knife,,"You dice the red potato.
+There is a raw purple potato on the floor.","You are carrying: a white onion, a red hot pepper, a raw yellow potato, a raw red potato and a yellow bell pepper.",2 of 15,0.13333333333333333,False,
+11,,I took the white onion from the fridge; now I am carrying it.,I should take the red onion from the fridge next.,take red onion from fridge,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a red onion, a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a raw purple potato on the floor.","You are carrying: a white onion, a red hot pepper, a raw yellow potato, a raw red potato and a yellow bell pepper.",2 of 15,0.13333333333333333,False,
+12,,I tried to take the red onion from the fridge but was carrying too many things.,I should drop one item to free up space before taking the red onion.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a red onion, a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a white onion, a red hot pepper, a raw yellow potato and a raw red potato.",2 of 15,0.13333333333333333,False,
+13,,I dropped the yellow bell pepper to free up space.,I should now take the red onion from the fridge.,take red onion from fridge,,"You take the red onion from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
 
 
 
-There is a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a diced raw yellow potato and a diced raw red potato.",3 of 15,0.2,False,
-17,,I diced the red potato; now I am carrying a diced red potato and a diced yellow potato along with a knife and a red hot pepper.,I should dice the red hot pepper next to prepare all the ingredients needed for the recipe.,dice red hot pepper with knife,,"You dice the red hot pepper.
+There is a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a red onion, a white onion, a red hot pepper, a raw yellow potato and a raw red potato.",3 of 15,0.2,False,
+14,,I took the red onion from the fridge; now I am carrying it.,I should take the knife from the counter to prepare the ingredients.,take knife from counter,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a red onion, a white onion, a red hot pepper, a raw yellow potato and a raw red potato.",3 of 15,0.2,False,
+15,,I tried to take the knife from the counter but was carrying too many things.,I should drop one item to free up space before taking the knife.,drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple, an orange bell pepper and a knife. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a red hot pepper, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a red onion, a white onion, a raw yellow potato and a raw red potato.",3 of 15,0.2,False,
+16,,I dropped the red hot pepper to free up space.,I should take the knife from the counter to prepare the meal.,take knife from counter,,You take the knife from the counter.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a red hot pepper, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a red onion, a white onion, a raw yellow potato and a raw red potato.",3 of 15,0.2,False,
+17,,I took the knife from the counter; now I am carrying it.,"I should dice the red onion, white onion, raw yellow potato, and raw red potato with the knife to prepare the ingredients for the recipe.",dice red onion with knife,,"You dice the red onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a red hot pepper, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a diced red onion, a white onion, a raw yellow potato and a raw red potato.",4 of 15,0.26666666666666666,False,
+18,,I diced the red onion with the knife; it is now diced.,I should dice the white onion next to continue preparing the ingredients.,dice white onion with knife,,"You dice the white onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a red hot pepper, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a diced red onion, a diced white onion, a raw yellow potato and a raw red potato.",5 of 15,0.3333333333333333,False,
+19,,I diced the white onion with the knife; it is now diced.,I should dice the raw yellow potato next to prepare all the required ingredients.,dice raw yellow potato with knife,,"You dice the yellow potato.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a red hot pepper, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a diced red onion, a diced white onion, a diced raw yellow potato and a raw red potato.",6 of 15,0.4,False,
+20,,I diced the yellow potato with the knife; it is now diced.,I should dice the raw red potato next to complete the preparation of all required ingredients.,dice raw red potato with knife,,"You dice the red potato.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a red hot pepper, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a diced red onion, a diced white onion, a diced raw yellow potato and a diced raw red potato.",7 of 15,0.4666666666666667,False,
+21,,I diced the raw red potato with the knife; it is now diced.,I should check the cookbook again to see the next step in the recipe for cooking the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red onion
+  red hot pepper
+  red potato
+  yellow potato
+  white onion
+
+Directions:
+dice the red onion
+  roast the red onion
+  chop the red hot pepper
+  fry the red hot pepper
+  dice the red potato
+  roast the red potato
+  dice the yellow potato
+  fry the yellow potato
+  dice the white onion
+  fry the white onion
+  prepare meal",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a red hot pepper, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a diced red onion, a diced white onion, a diced raw yellow potato and a diced raw red potato.",7 of 15,0.4666666666666667,False,
+22,,I examined the cookbook and reviewed the recipe steps and ingredients.,"The next step is to roast the diced red onion, so I should roast it using the oven.",cook diced red onion with oven,,"You roasted the red onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a red hot pepper, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a diced roasted red onion, a diced white onion, a diced raw yellow potato and a diced raw red potato.",8 of 15,0.5333333333333333,False,
+23,,I roasted the diced red onion using the oven successfully.,"Next, I need to chop the red hot pepper and then fry it. I should take the red hot pepper from the floor first.",take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a red hot pepper, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a diced roasted red onion, a diced white onion, a diced raw yellow potato and a diced raw red potato.",8 of 15,0.5333333333333333,False,
+24,,I tried to take the red hot pepper from the floor but was carrying too many things.,I need to drop one of the diced raw potatoes to free up space before taking the red hot pepper.,drop diced raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a diced raw yellow potato, a red hot pepper, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a diced roasted red onion, a diced white onion and a diced raw red potato.",8 of 15,0.5333333333333333,False,
+25,,I dropped the diced raw yellow potato to free up space.,I should now take the red hot pepper from the floor.,take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a diced raw yellow potato, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a diced roasted red onion, a diced white onion and a diced raw red potato.",8 of 15,0.5333333333333333,False,
+26,,I took the red hot pepper from the floor; now I am carrying it.,I should now prepare the meal using the ingredients I have.,prepare meal,,Something still needs to be cooked.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a diced raw yellow potato, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a diced roasted red onion, a diced white onion and a diced raw red potato.",8 of 15,0.5333333333333333,False,
+27,,I tried to prepare the meal but was informed something still needs to be cooked.,I should cook the diced raw red potato before preparing the meal.,cook diced raw red potato with oven,,"You roasted the red potato.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a diced raw yellow potato, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a diced roasted red onion, a diced white onion and a diced roasted red potato.",9 of 15,0.6,False,
+28,,I cooked the diced raw red potato with the oven; it is now roasted.,I should now prepare the meal using the roasted ingredients I have.,prepare meal,,Something still needs to be cooked.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a diced raw yellow potato, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a diced roasted red onion, a diced white onion and a diced roasted red potato.",9 of 15,0.6,False,
+29,,I tried to prepare the meal but was informed something still needs to be cooked.,"I should check if the diced white onion or red hot pepper need cooking, as the roasted items are done.",cook diced white onion with stove,,"You fried the white onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a diced raw yellow potato, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a red hot pepper, a knife, a diced roasted red onion, a diced fried white onion and a diced roasted red potato.",10 of 15,0.6666666666666666,False,
+30,,I cooked the diced white onion with the stove; it is now fried.,"I should cook the red hot pepper next, as it is the remaining ingredient that might need cooking.",cook red hot pepper with stove,,"You fried the red hot pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a diced raw yellow potato, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a fried red hot pepper, a knife, a diced roasted red onion, a diced fried white onion and a diced roasted red potato.",11 of 15,0.7333333333333333,False,
+31,,I cooked the red hot pepper with the stove; it is now fried.,I should now prepare the meal since all required ingredients appear to be cooked or ready.,prepare meal,,Something still needs to be cut.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a diced raw yellow potato, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a fried red hot pepper, a knife, a diced roasted red onion, a diced fried white onion and a diced roasted red potato.",11 of 15,0.7333333333333333,False,
+32,,I tried to prepare the meal but was informed something still needs to be cut.,"I need to find and cut the remaining ingredient that is not yet diced, likely the yellow potato on the floor.",take diced raw yellow potato from floor,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a diced raw yellow potato, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a fried red hot pepper, a knife, a diced roasted red onion, a diced fried white onion and a diced roasted red potato.",11 of 15,0.7333333333333333,False,
+33,,I tried to take the diced raw yellow potato from the floor but was carrying too many things.,I should drop one item to free up space before taking the diced raw yellow potato to cut it.,drop fried red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a fried red hot pepper, a diced raw yellow potato, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a diced roasted red onion, a diced fried white onion and a diced roasted red potato.",11 of 15,0.7333333333333333,False,
+34,,I dropped the fried red hot pepper to free up space.,I should take the diced raw yellow potato from the floor to prepare it further.,take diced raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
+
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+
+
+
+There is a fried red hot pepper, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a diced raw yellow potato, a knife, a diced roasted red onion, a diced fried white onion and a diced roasted red potato.",11 of 15,0.7333333333333333,False,
+35,,I took the diced raw yellow potato from the floor.,I should cook the diced raw yellow potato with the oven to complete the cooking steps.,cook diced raw yellow potato with oven,,"You roasted the yellow potato.
 
 
 
                               *** You lost! ***
 
-You scored 3 out of a possible 15, in 12 turns.
+You scored 11 out of a possible 15, in 32 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 >",Kitchen,"You've just shown up in a kitchen. You decide to just list off a complete list of everything you see in the room, because hey, why not?
 
-You scan the room for a fridge, and you find a fridge! You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
+You scan the room for a fridge, and you find a fridge! The fridge contains a block of cheese and a raw pork chop. You can make out a closed oven, which looks conventional, in the room. You make out a table. You wonder idly who left that here. The table is massive. On the table you make out a cookbook. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a red apple and an orange bell pepper. Huh, weird. You can make out a stove. The stove is conventional. But oh no! there's nothing on this piece of junk. Oh! Why couldn't there just be stuff on it?
 
 
 
-There is a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a knife, a red hot pepper, a diced raw yellow potato and a diced raw red potato.",3 of 15,0.2,True,
+There is a fried red hot pepper, a yellow bell pepper and a raw purple potato on the floor.","You are carrying: a diced raw yellow potato, a knife, a diced roasted red onion, a diced fried white onion and a diced roasted red potato.",11 of 15,0.7333333333333333,True,

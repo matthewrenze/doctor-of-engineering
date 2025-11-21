@@ -4,7 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the studio.,I should start by going west as the exit is unblocked.,go west,,"You arrive in an office. A standard kind of place.
+1,,I am in the studio.,I should go west as the first step of the task.,go west,,"You arrive in an office. A standard kind of place.
 
 
 
@@ -13,7 +13,7 @@ You need an unguarded exit? You should try going east. You don't like doors? Why
 
 
 You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I went west to the office.,I should go north next as the entranceway is unguarded.,go north,,"You're now in a laundromat. You begin to take stock of what's in the room.
+2,,I went west to the office.,I should go north next as per the task instructions.,go north,,"You're now in a laundromat. You begin to take stock of what's in the room.
 
 
 
@@ -22,7 +22,7 @@ You don't like doors? Why not try going east, that entranceway is unblocked. You
 
 
 You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-3,,I went north to the laundromat.,I should go east next as the entranceway is unblocked.,go east,,"You are in a garage.
+3,,I went north to the laundromat.,I should go east next as per the task instructions.,go east,,"You are in a garage.
 
 
 
@@ -31,7 +31,7 @@ You need an unguarded exit? You should try going east. You need an unblocked exi
 
 
 You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-4,,I went east to the garage.,I should go east again as there is an unguarded exit that way.,go east,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
+4,,I went east to the garage.,I should go east again as per the task instructions.,go east,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
 
 
 
@@ -40,7 +40,7 @@ You don't like doors? Why not try going south, that entranceway is unguarded. Th
 
 
 You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I went east to the restroom.,I should go south next as the entranceway is unguarded.,go south,,"You are in a study. A silent kind of place.
+5,,I went east to the restroom.,I should go south next as per the task instructions.,go south,,"You are in a study. A silent kind of place.
 
 
 
@@ -49,7 +49,7 @@ You need an unguarded exit? You should try going north. You don't like doors? Wh
 
 
 You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I went south to the silent study.,I should go south again as the entranceway is unguarded.,go south,,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+6,,I went south to the silent study.,I should go south again as per the task instructions.,go south,,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
@@ -58,7 +58,7 @@ There is an unguarded exit to the east. There is an exit to the north. Don't wor
 
 
 There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I went south to the spacious closet.,I should go east next as there is an unguarded exit that way.,go east,,"You arrive in a cellar. A forgotten one.
+7,,I went south to the spacious closet.,I should go east next as per the task instructions.,go east,,"You arrive in a cellar. A forgotten one.
 
 
 
@@ -67,7 +67,7 @@ There is an exit to the south. Don't worry, it is unblocked. There is an unblock
 
 
 There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I went east to the forgotten cellar.,I should go south next as the exit is unblocked.,go south,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
+8,,I went east to the forgotten cellar.,I should go south next as per the task instructions.,go south,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
 
 
 
@@ -76,7 +76,17 @@ You need an unblocked exit? You should try going north. There is an unblocked ex
 
 
 You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I went south to the washroom.,I should go west next as there is an unblocked exit that way.,go west,,"You've entered a parlor.
+9,,I went south to the washroom.,I should go south again as per the task instructions.,go south,,You can't go that way.,Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+10,,I tried to go south from the washroom but couldn't.,"Since going south is not possible, I should try going east as the next step in the task.",go east,,You can't go that way.,Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
+
+
+
+You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+11,,I tried to go east from the washroom but couldn't.,"Since east is not possible, I should try going west as the next step in the task.",go west,,"You've entered a parlor.
 
 
 
@@ -85,156 +95,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. The
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I went west to the parlor.,I should go east next as the entranceway is unguarded.,go east,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I went east to the washroom.,I should go south next as the exit is unblocked.,go south,,You can't go that way.,Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I tried to go south from the washroom but couldn't.,"Since south is blocked, I should try going north as suggested.",go north,,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Forgotten Cellar,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I went north to the forgotten cellar.,I should go south next as the exit is unblocked.,go south,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I went south to the washroom.,I should go west next as there is an unblocked exit to the west.,go west,,"You've entered a parlor.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Parlor,"You've entered a parlor.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I went west to the parlor.,I should go east next as the entranceway is unguarded.,go east,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I went east to the washroom.,I should go north next as there is an unblocked exit to the north.,go north,,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Forgotten Cellar,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I went north to the forgotten cellar.,I should go west next as there is an unblocked exit to the west.,go west,,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Spacious Closet,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I went west to the spacious closet.,I should go north next as there is an unguarded exit to the north.,go north,,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I went north to the silent study.,I should go north next as there is an unguarded exit to the north.,go north,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I went north to the restroom.,I should go west next as there is an unblocked exit to the west.,go west,,"You are in a garage.
-
-
-
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",Garage,"You are in a garage.
-
-
-
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I went west to the garage.,I should go east next as there is an unguarded exit to the east.,go east,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I went east to the restroom.,I should go south next as the entranceway is unguarded.,go south,,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I went south to the silent study.,I should go south next as the entranceway is unguarded.,go south,,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Spacious Closet,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I went south to the spacious closet.,I should go east next as there is an unguarded exit to the east.,go east,,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Forgotten Cellar,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I went east to the forgotten cellar.,I should go south next as the exit is unblocked.,go south,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I went south to the washroom.,I should go west next as there is an unblocked exit to the west.,go west,,"You've entered a parlor.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Parlor,"You've entered a parlor.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-27,,I went west to the parlor.,I should go south next as the exit is unblocked.,go south,,"You are in a bar. An usual one. The room is well lit.
+12,,I went west to the parlor.,I should go south next as per the task instructions.,go south,,"You are in a bar. An usual one. The room is well lit.
 
 
 
@@ -243,543 +104,610 @@ You need an unblocked exit? You should try going north. There is an unguarded ex
 
 
 You need an unblocked exit? You should try going north. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I went south to the bar.,I should go north next as the exit is unblocked.,go north,,"You've entered a parlor.
+13,,I went south to the bar.,I should try to go south again as per the task instructions.,go south,,"A crooked board tells you that you are now in the closet. The room is well lit.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Parlor,"You've entered a parlor.
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Closet,"A crooked board tells you that you are now in the closet. The room is well lit.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I went north to the parlor.,I should go east next as the entranceway is unguarded.,go east,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went south to the closet.,I should try to go east next as per the task instructions.,go east,,You can't go that way.,Closet,"A crooked board tells you that you are now in the closet. The room is well lit.
 
 
 
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I tried to go east from the closet but couldn't.,"Since east is not possible, I should try going south as the next step in the task.",go south,,You can't go that way.,Closet,"A crooked board tells you that you are now in the closet. The room is well lit.
 
 
 
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I went east to the washroom.,I should go north next as the exit is unblocked.,go north,,"You arrive in a cellar. A forgotten one.
+There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I tried to go south from the closet but couldn't.,I should try going west as the next step in the task.,go west,,"You are in an attic. It seems to be pretty usual here.
 
 
 
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Forgotten Cellar,"You arrive in a cellar. A forgotten one.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unguarded.",Attic,"You are in an attic. It seems to be pretty usual here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went west to the attic.,I should go south next as per the task instructions.,go south,,You can't go that way.,Attic,"You are in an attic. It seems to be pretty usual here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I tried to go south from the attic but couldn't.,I should try going west as the next step in the task.,go west,,You can't go that way.,Attic,"You are in an attic. It seems to be pretty usual here.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I tried to go west from the attic but couldn't.,I should try going north as the next step in the task.,go north,,"You are in a launderette. It seems to be pretty ordinary here.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked. You need an unguarded exit? You should try going south.",Launderette,"You are in a launderette. It seems to be pretty ordinary here.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I went north to the launderette.,I should try going north again as the next step in the task.,go north,,"Ah, the workshop. This is some kind of workshop, really great ordinary vibes in this place, a wonderful ordinary atmosphere. And now, well, you're in it.
+
+
+
+You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",Workshop,"Ah, the workshop. This is some kind of workshop, really great ordinary vibes in this place, a wonderful ordinary atmosphere. And now, well, you're in it.
+
+
+
+You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I went north to the workshop.,I should try going west as the next step in the task.,go west,,"You've entered a spare room.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded.",Spare Room,"You've entered a spare room.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I went west to the spare room.,I should try going west again as the next step in the task.,go west,,"You find yourself in a cubicle.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You need an unguarded exit? You should try going north.",Cubicle,"You find yourself in a cubicle.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I went west to the cubicle.,I should try going north as the next step in the task.,go north,,"A laminated placard tells you that you are now in the dish-pit.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",Dish-Pit,"A laminated placard tells you that you are now in the dish-pit.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I went north to the dish-pit.,I should try going west as the next step in the task.,go west,,"Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the north.",Pantry,"Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I went west to the pantry.,I should try going north as the next step in the task.,go north,,"You are in a study. An usual one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",Study,"You are in a study. An usual one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+
+
+There is an exit to the south. Don't worry, it is unguarded. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I went north to the study.,I should try going west as the next step in the task.,go west,,"Well, here we are in the cookhouse.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north.",Cookhouse,"Well, here we are in the cookhouse.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I went west to the cookhouse.,I should try going north as the next step in the task.,go north,,"I am sorry to announce that you are now in the cramped launderette. You start to take note of what's in the room.
+
+
+
+There is an unguarded exit to the north. There is an unguarded exit to the south.",Cramped Launderette,"I am sorry to announce that you are now in the cramped launderette. You start to take note of what's in the room.
+
+
+
+There is an unguarded exit to the north. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I went north to the cramped launderette.,I should try going north as the next step in the task.,go north,,"You've entered a hot kitchen.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked.",Hot Kitchen,"You've entered a hot kitchen.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I went north to the hot kitchen.,I should try going west as the next step in the task.,go west,,You can't go that way.,Hot Kitchen,"You've entered a hot kitchen.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I tried to go west from the hot kitchen but couldn't.,"Since west is blocked, I will try going north as the next step in the task.",go north,,"Ah, the bedchamber. This is some kind of bedchamber, really great normal vibes in this place, a wonderful normal atmosphere.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked.",Bedchamber,"Ah, the bedchamber. This is some kind of bedchamber, really great normal vibes in this place, a wonderful normal atmosphere.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I went north to the bedchamber.,I should try going west as the next step in the task.,go west,,You can't go that way.,Bedchamber,"Ah, the bedchamber. This is some kind of bedchamber, really great normal vibes in this place, a wonderful normal atmosphere.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I tried to go west from the bedchamber but couldn't.,"Since west is blocked, I will try going west again as the next step in the task.",go west,,You can't go that way.,Bedchamber,"Ah, the bedchamber. This is some kind of bedchamber, really great normal vibes in this place, a wonderful normal atmosphere.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I tried to go west from the bedchamber again but couldn't.,I should try going north as the next step in the task.,go north,,You can't go that way.,Bedchamber,"Ah, the bedchamber. This is some kind of bedchamber, really great normal vibes in this place, a wonderful normal atmosphere.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I tried to go north from the bedchamber but couldn't.,I should try going east as the next step in the task.,go east,,"If you're wondering why everything seems so standard all of a sudden, it's because you've just walked into the scullery.
+
+
+
+There is an unblocked exit to the south. You need an unguarded exit? You should try going west.",Scullery,"If you're wondering why everything seems so standard all of a sudden, it's because you've just walked into the scullery.
+
+
+
+There is an unblocked exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I went east to the scullery.,I should try going east as the next step in the task.,go east,,You can't go that way.,Scullery,"If you're wondering why everything seems so standard all of a sudden, it's because you've just walked into the scullery.
+
+
+
+There is an unblocked exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I tried to go east from the scullery but couldn't.,I should try going east again as the next step in the task.,go east,,You can't go that way.,Scullery,"If you're wondering why everything seems so standard all of a sudden, it's because you've just walked into the scullery.
+
+
+
+There is an unblocked exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I tried to go east from the scullery again but couldn't.,I should try going south as the next step in the task.,go south,,"Well, here we are in a silent office. You start to take note of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",Silent Office,"Well, here we are in a silent office. You start to take note of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I went south to the silent office.,I should try going south as the next step in the task.,go south,,You can't go that way.,Silent Office,"Well, here we are in a silent office. You start to take note of what's in the room.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I tried to go south from the silent office but couldn't.,I should try going west as the next step in the task.,go west,,"This just in- You, in the kitchenette. The room is well lit.
+
+
+
+There is an unblocked exit to the east. There is an unblocked exit to the south.",Kitchenette,"This just in- You, in the kitchenette. The room is well lit.
+
+
+
+There is an unblocked exit to the east. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went west to the kitchenette.,I should try going south as the next step in the task.,go south,,"You've entered a vault.
+
+
+
+You need an unblocked exit? You should try going north. There is an unguarded exit to the west.",Vault,"You've entered a vault.
+
+
+
+You need an unblocked exit? You should try going north. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went south to the vault.,I should try going south as the next step in the task.,go south,,You can't go that way.,Vault,"You've entered a vault.
+
+
+
+You need an unblocked exit? You should try going north. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I tried to go south from the vault but couldn't.,I should try going west as the next step in the task.,go west,,"You've just sauntered into a still workshop.
+
+
+
+There is an unblocked exit to the east. You need an unguarded exit? You should try going north.",Still Workshop,"You've just sauntered into a still workshop.
+
+
+
+There is an unblocked exit to the east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I went west to the still workshop.,I should try going north as the next step in the task.,go north,,"You've entered a gloomy pantry. You start to take note of what's in the room.
+
+
+
+There is an unblocked exit to the north. You need an unguarded exit? You should try going south.",Gloomy Pantry,"You've entered a gloomy pantry. You start to take note of what's in the room.
+
+
+
+There is an unblocked exit to the north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I went north to the gloomy pantry.,I should try going north as the next step in the task.,go north,,"You find yourself in a studio. A still kind of place.
+
+
+
+There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked.",Still Studio,"You find yourself in a studio. A still kind of place.
+
+
+
+There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I went north to the still studio.,I should try going west as the next step in the task.,go west,,"You find yourself in a canteen. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going south.",Canteen,"You find yourself in a canteen. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+46,,I went west to the canteen.,I should try going north as the next step in the task.,go north,,You can't go that way.,Canteen,"You find yourself in a canteen. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+47,,I tried to go north from the canteen but couldn't.,I should try going east as the next step in the task.,go east,,"You find yourself in a studio. A still kind of place.
+
+
+
+There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked.",Still Studio,"You find yourself in a studio. A still kind of place.
+
+
+
+There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+48,,I went east to the still studio.,I should try going south as the next step in the task.,go south,,"You've entered a gloomy pantry. You start to take note of what's in the room.
+
+
+
+There is an unblocked exit to the north. You need an unguarded exit? You should try going south.",Gloomy Pantry,"You've entered a gloomy pantry. You start to take note of what's in the room.
+
+
+
+There is an unblocked exit to the north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+49,,I went south to the gloomy pantry.,I should try going south as the next step in the task.,go south,,"You've just sauntered into a still workshop.
+
+
+
+There is an unblocked exit to the east. You need an unguarded exit? You should try going north.",Still Workshop,"You've just sauntered into a still workshop.
+
+
+
+There is an unblocked exit to the east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+50,,I went south to the still workshop.,I should try going west as the next step in the task.,go west,,You can't go that way.,Still Workshop,"You've just sauntered into a still workshop.
+
+
+
+There is an unblocked exit to the east. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+51,,I tried to go west from the still workshop but couldn't.,I should try going north as the next step in the task.,go north,,"You've entered a gloomy pantry. You start to take note of what's in the room.
+
+
+
+There is an unblocked exit to the north. You need an unguarded exit? You should try going south.",Gloomy Pantry,"You've entered a gloomy pantry. You start to take note of what's in the room.
+
+
+
+There is an unblocked exit to the north. You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+52,,I went north to the gloomy pantry.,I should try going north as the next step in the task.,go north,,"You find yourself in a studio. A still kind of place.
+
+
+
+There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked.",Still Studio,"You find yourself in a studio. A still kind of place.
+
+
+
+There is an exit to the south. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+53,,I went north to the still studio.,I should try going west as the next step in the task.,go west,,"You find yourself in a canteen. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going south.",Canteen,"You find yourself in a canteen. A typical kind of place. I guess you better just go and list everything you see here.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+54,,I went west to the canteen.,I should try going south as the next step in the task.,go south,,"You've just walked into a basement.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",Basement,"You've just walked into a basement.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+55,,I went south to the basement.,I should try going west as the next step in the task.,go west,,"You find yourself in a steam room. A normal kind of place.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going west.",Steam Room,"You find yourself in a steam room. A normal kind of place.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+56,,I went west to the steam room.,I should try going west as the next step in the task.,go west,,"You're now in a sauna. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unguarded exit to the north.",Sauna,"You're now in a sauna. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+57,,I went west to the sauna.,I should try going north as the next step in the task.,go north,,"You've entered a laundry place.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded.",Laundry Place,"You've entered a laundry place.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+58,,I went north to the laundry place.,I should try going west as the next step in the task.,go west,,"You've entered a shower.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the north.",Shower,"You've entered a shower.
+
+
+
+There is an unguarded exit to the east. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+59,,I went west to the shower.,I should try going north as the next step in the task.,go north,,"You find yourself in a lounge. A standard one. The room is well lit.
+
+
+
+There is an unblocked exit to the east. You need an unblocked exit? You should try going south.",Lounge,"You find yourself in a lounge. A standard one. The room is well lit.
+
+
+
+There is an unblocked exit to the east. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+60,,I went north to the lounge.,I should try going east as the next step in the task.,go east,,"You find yourself in a bedroom. An ordinary one.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded.",Bedroom,"You find yourself in a bedroom. An ordinary one.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+61,,I went east to the bedroom.,I should try going east as the next step in the task.,go east,,"You've just sauntered into a chamber.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going west, that entranceway is unblocked.",Chamber,"You've just sauntered into a chamber.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+62,,I went east to the chamber.,I should try going east as the next step in the task.,go east,,"You arrive in a salon. A typical one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked.",Salon,"You arrive in a salon. A typical one.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+63,,I went east to the salon.,I should try going south as the next step in the task.,go south,,"You've just walked into a cellar. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked.",Cellar,"You've just walked into a cellar. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+64,,I went south to the cellar.,I should try going east as the next step in the task.,go east,,"You've seen better kitchens, but at least this one seems pretty usual.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",Kitchen,"You've seen better kitchens, but at least this one seems pretty usual.
+
+
+
+There is an unguarded exit to the east. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+65,,I went east to the kitchen.,I should try going east as the next step in the task.,go east,,"You arrive in a pantry. A cramped kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Cramped Pantry,"You arrive in a pantry. A cramped kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
 There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-31,,I went north to the forgotten cellar.,I should go west next as the exit is unblocked.,go west,,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+66,,I went east to the cramped pantry.,I should try going south as the next step in the task.,go south,,"You've entered a sleepy bedroom. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Spacious Closet,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the north. Don't worry, it is unguarded. There is an unblocked exit to the south.",Sleepy Bedroom,"You've entered a sleepy bedroom. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I went west to the spacious closet.,I should go north next as the exit is unguarded.,go north,,"You are in a study. A silent kind of place.
+There is an exit to the north. Don't worry, it is unguarded. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+67,,I went south to the sleepy bedroom.,I should try going west as the next step in the task.,go west,,You can't go that way.,Sleepy Bedroom,"You've entered a sleepy bedroom. You can barely contain your excitement.
 
 
 
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
+There is an exit to the north. Don't worry, it is unguarded. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+68,,I tried to go west from the sleepy bedroom but couldn't.,"Since west is blocked, I should try going south as the next step in the task.",go south,,"You've entered a cookery. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-33,,I went north to the silent study.,I should go north next as the exit is unguarded.,go north,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",Cookery,"You've entered a cookery. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+69,,I went south to the cookery.,I should try going west as the next step in the task.,go west,,"You are in a vault. An ugly kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I went north to the restroom.,I should go west next as the exit is unblocked.,go west,,"You are in a garage.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south.",Ugly Vault,"You are in a vault. An ugly kind of place.
 
 
 
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",Garage,"You are in a garage.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+70,,I went west to the ugly vault.,I should pick up the coin from the floor of the ugly spare room to complete the task.,take coin from floor,,You can't see any such thing.,Ugly Vault,"You are in a vault. An ugly kind of place.
 
 
 
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I went west to the garage.,I should go east next as the exit is unguarded.,go east,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+71,,I tried to take the coin from the floor of the ugly vault but couldn't find it.,I should explore the room more closely to find the coin.,look,,"You are in a vault. An ugly kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south.",Ugly Vault,"You are in a vault. An ugly kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I went east to the restroom.,I should go south next as the entranceway is unguarded.,go south,,"You are in a study. A silent kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+72,,I looked around the ugly vault but did not find the coin.,I should try going south to see if the coin is in the next room.,go south,,"I am obligated to announce that you are now in the balmy kitchenette. You begin looking for stuff.
 
 
 
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked.",Balmy Kitchenette,"I am obligated to announce that you are now in the balmy kitchenette. You begin looking for stuff.
 
 
 
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-37,,I went south to the silent study.,I should go north next as the exit is unguarded.,go north,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+73,,I went south to the balmy kitchenette.,"I should try going west to check if the coin is there, as the task mentioned the ugly spare room.",go west,,You can't go that way.,Balmy Kitchenette,"I am obligated to announce that you are now in the balmy kitchenette. You begin looking for stuff.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+74,,I tried to go west from the balmy kitchenette but couldn't.,I should try going north to explore further.,go north,,"You are in a vault. An ugly kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I went north to the restroom.,I should go south next as the entranceway is unguarded.,go south,,"You are in a study. A silent kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south.",Ugly Vault,"You are in a vault. An ugly kind of place.
 
 
 
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+75,,I went north back to the ugly vault.,I should try going east as the entranceway is unguarded and might lead to the coin.,go east,,"You've entered a cookery. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I went south to the silent study.,I should go north next as the exit is unguarded.,go north,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",Cookery,"You've entered a cookery. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
+There is an unblocked exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+76,,I went east to the cookery.,I should try going west to explore the unblocked entranceway mentioned.,go west,,"You are in a vault. An ugly kind of place.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I went north to the restroom.,I should go west next as there is an unblocked exit to the west.,go west,,"You are in a garage.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south.",Ugly Vault,"You are in a vault. An ugly kind of place.
 
 
 
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",Garage,"You are in a garage.
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+77,,I went west back to the ugly vault.,I should try going south to the unguarded exit to explore further.,go south,,"I am obligated to announce that you are now in the balmy kitchenette. You begin looking for stuff.
 
 
 
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I went west to the garage.,I should go east next as there is an unguarded exit to the east.,go east,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked.",Balmy Kitchenette,"I am obligated to announce that you are now in the balmy kitchenette. You begin looking for stuff.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
+There is an unblocked exit to the east. There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+78,,I went south to the balmy kitchenette.,I should try going east to explore the unblocked exit.,go east,,"You are in a playroom. A normal one. You can barely contain your excitement.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I went east to the restroom.,I should go south next as the entranceway is unguarded.,go south,,"You are in a study. A silent kind of place.
+There is an unguarded exit to the east. You don't like doors? Why not try going west, that entranceway is unblocked.",Playroom,"You are in a playroom. A normal one. You can barely contain your excitement.
 
 
 
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
+There is an unguarded exit to the east. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+79,,I went east to the playroom.,I should try going east again through the unguarded exit.,go east,,"You arrive in a recreation zone. An ordinary kind of place.
 
 
 
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I went south to the silent study.,I should go south next as the entranceway is unguarded.,go south,,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going west.",Recreation Zone,"You arrive in a recreation zone. An ordinary kind of place.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Spacious Closet,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You don't like doors? Why not try going north, that entranceway is unguarded. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+80,,I went east to the recreation zone.,I should try going north through the unguarded entranceway.,go north,,"You've entered a steamy canteen. I guess you better just go and list everything you see here.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I went south to the spacious closet.,I should go east next as there is an unguarded exit to the east.,go east,,"You arrive in a cellar. A forgotten one.
+You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going south.",Steamy Canteen,"You've entered a steamy canteen. I guess you better just go and list everything you see here.
 
 
 
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Forgotten Cellar,"You arrive in a cellar. A forgotten one.
+You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+81,,I went north to the steamy canteen.,I should try going east through the unguarded exit.,go east,,"Well, here we are in the austere workshop.
 
 
 
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-45,,I went east to the forgotten cellar.,I should go south next as the exit is unblocked.,go south,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
+There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Austere Workshop,"Well, here we are in the austere workshop.
 
 
 
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
+There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+82,,I went east to the austere workshop.,I should try going north through the unblocked exit.,go north,,"You arrive in a basement. A messy kind of place.
 
 
 
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-46,,I went south to the washroom.,I should go west next as there is an unblocked exit to the west.,go west,,"You've entered a parlor.
+There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",Messy Basement,"You arrive in a basement. A messy kind of place.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Parlor,"You've entered a parlor.
+There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+83,,I went north to the messy basement.,I should try going west through the unguarded exit.,go west,,"You find yourself in a bathroom.
 
 
 
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-47,,I went west to the parlor.,I should go east next as the entranceway is unguarded.,go east,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the south.",Bathroom,"You find yourself in a bathroom.
 
 
 
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+84,,I went west to the bathroom.,I should try going south through the unblocked exit.,go south,,"This might come as a shock to you, but you've just moved into a cramped basement. You start to take note of what's in the room.
 
 
 
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-48,,I went east to the washroom.,I should go north next as the exit is unblocked.,go north,,"You arrive in a cellar. A forgotten one.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded.",Cramped Basement,"This might come as a shock to you, but you've just moved into a cramped basement. You start to take note of what's in the room.
 
 
 
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Forgotten Cellar,"You arrive in a cellar. A forgotten one.
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+85,,I went south to the cramped basement.,I should try going north through the unguarded entranceway.,go north,,"You find yourself in a bathroom.
 
 
 
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-49,,I went north to the forgotten cellar.,I should go west next as the exit is unblocked.,go west,,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the south.",Bathroom,"You find yourself in a bathroom.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Spacious Closet,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+86,,I went north to the bathroom.,I should try going east through the unblocked exit.,go east,,"You arrive in a basement. A messy kind of place.
 
 
 
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-50,,I went west to the spacious closet.,I should go north next as the exit is unguarded.,go north,,"You are in a study. A silent kind of place.
+There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",Messy Basement,"You arrive in a basement. A messy kind of place.
 
 
 
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
+There is an exit to the south. Don't worry, it is unguarded. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+87,,I went east to the messy basement.,I should try going south through the unguarded exit.,go south,,"Well, here we are in the austere workshop.
 
 
 
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-51,,I went north to the silent study.,I should go north next as the exit is unguarded.,go north,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
+There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",Austere Workshop,"Well, here we are in the austere workshop.
 
 
 
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-52,,I went north to the restroom.,I should go west next as the exit is unblocked.,go west,,"You are in a garage.
-
-
-
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",Garage,"You are in a garage.
-
-
-
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-53,,I went west to the garage.,I should go east next as the exit is unguarded.,go east,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-54,,I went east to the restroom.,I should go south next as the entranceway is unguarded.,go south,,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-55,,I went south to the silent study.,I should go north next as the exit is unguarded.,go north,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-56,,I went north to the restroom.,I should go south next as the entranceway is unguarded.,go south,,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-57,,I went south to the silent study.,I should go north next as the exit is unguarded.,go north,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-58,,I went north to the restroom.,I should go west next as there is an unblocked exit to the west.,go west,,"You are in a garage.
-
-
-
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",Garage,"You are in a garage.
-
-
-
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-59,,I went west to the garage.,I should go east next as there is an unguarded exit.,go east,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-60,,I went east to the restroom.,I should go south next as the entranceway is unguarded.,go south,,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-61,,I went south to the silent study.,I should go south again as the entranceway is unguarded.,go south,,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Spacious Closet,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-62,,I went south to the spacious closet.,I should go east next as there is an unguarded exit.,go east,,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Forgotten Cellar,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-63,,I went east to the forgotten cellar.,I should go south next as the exit is unblocked.,go south,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-64,,I went south to the washroom.,I should go west next as there is an unblocked exit.,go west,,"You've entered a parlor.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Parlor,"You've entered a parlor.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-65,,I went west to the parlor.,I should go east next as the entranceway is unguarded.,go east,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-66,,I went east to the washroom.,I should go north next as the exit is unblocked.,go north,,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Forgotten Cellar,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-67,,I went north to the forgotten cellar.,I should go west next as the exit is unblocked.,go west,,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Spacious Closet,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-68,,I went west to the spacious closet.,I should go north next as the exit is unguarded.,go north,,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-69,,I went north to the silent study.,I should go north next as the exit is unguarded.,go north,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-70,,I went north to the restroom.,I should go west next as the exit is unblocked.,go west,,"You are in a garage.
-
-
-
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",Garage,"You are in a garage.
-
-
-
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-71,,I went west to the garage.,I should go west next as the exit is unblocked.,go west,,"You're now in a laundromat. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Laundromat,"You're now in a laundromat. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-72,,I went west to the laundromat.,I should go east next as the exit is unblocked.,go east,,"You are in a garage.
-
-
-
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",Garage,"You are in a garage.
-
-
-
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-73,,I went east to the garage.,I should go east next as the exit is unguarded.,go east,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-74,,I went east to the restroom.,I should go south next as the entranceway is unguarded.,go south,,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-75,,I went south to the silent study.,I should go south next as the entranceway is unguarded.,go south,,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Spacious Closet,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-76,,I went south to the spacious closet.,I should go east next as the exit is unguarded.,go east,,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Forgotten Cellar,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-77,,I went east to the forgotten cellar.,I should go south next as the exit is unblocked.,go south,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-78,,I went south to the washroom.,I should go west next as the exit is unblocked.,go west,,"You've entered a parlor.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",Parlor,"You've entered a parlor.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-79,,I went west to the parlor.,I should go east next as the entranceway is unguarded.,go east,,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",Washroom,"Well, here we are in a washroom. You begin to take stock of what's in the room.
-
-
-
-You need an unblocked exit? You should try going north. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-80,,I went east to the washroom.,I should go north next as the exit is unblocked.,go north,,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Forgotten Cellar,"You arrive in a cellar. A forgotten one.
-
-
-
-There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-81,,I went north to the forgotten cellar.,I should go west next as the exit is unblocked.,go west,,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",Spacious Closet,"You've entered a spacious closet. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-
-
-There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-82,,I went west to the spacious closet.,I should go north next as the exit is unguarded.,go north,,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",Silent Study,"You are in a study. A silent kind of place.
-
-
-
-You need an unguarded exit? You should try going north. You don't like doors? Why not try going south, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-83,,I went north to the silent study.,I should go north next as the exit is unguarded.,go north,,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",Restroom,"You find yourself in a restroom. An usual one. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going south, that entranceway is unguarded. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-84,,I went north to the restroom.,I should go west next as the exit is unblocked.,go west,,"You are in a garage.
-
-
-
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",Garage,"You are in a garage.
-
-
-
-You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
-85,,I went west to the garage.,I should go west next as the exit is unblocked.,go west,,"You're now in a laundromat. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Laundromat,"You're now in a laundromat. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
-86,,I went west to the laundromat.,I should go south next as the exit is unblocked.,go south,,"You arrive in an office. A standard kind of place.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded.",Office,"You arrive in an office. A standard kind of place.
-
-
-
-You need an unguarded exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-87,,I went south to the office.,I should go north next as the entranceway is unguarded.,go north,,"You're now in a laundromat. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Laundromat,"You're now in a laundromat. You begin to take stock of what's in the room.
-
-
-
-You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,True,
+There is an exit to the north. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,True,

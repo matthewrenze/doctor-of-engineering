@@ -2,7 +2,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 0,,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 You can make out a fridge. You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",You are carrying: a banana.,0 of 14,0.0,False,
-1,,I am in the kitchen with various ingredients and a cookbook on the counter.,I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+1,,I am in the kitchen with various items and a cookbook on the counter.,I should examine the cookbook to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -26,82 +26,362 @@ slice the yellow potato
   prepare meal",Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 You can make out a fridge. You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",You are carrying: a banana.,0 of 14,0.0,False,
-2,,"I opened the cookbook and read the recipe for a meal that requires yellow potato, carrot, pork chop, and block of cheese with specific preparation steps.","I need to gather the ingredients listed in the recipe: yellow potato, carrot, pork chop, and block of cheese. I see a yellow potato on the counter, but I need to find the carrot, pork chop, and block of cheese next.",take yellow potato from counter,,"You take the yellow potato from the counter.
+2,,"I examined the cookbook and found a recipe requiring yellow potato, carrot, pork chop, and block of cheese.",I should check if the required ingredients are available in the kitchen or if I need to find them elsewhere.,look fridge,,The fridge looks sturdy. You can't see inside it because the lid's in your way.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",You are carrying: a banana.,0 of 14,0.0,False,
+3,,I looked inside the fridge but couldn't see anything because the lid was in the way.,I should open the fridge to see if it contains any of the required ingredients.,open fridge,,"You open the fridge, revealing a raw pork chop, a block of cheese, a carrot, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion.",Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a raw pork chop, a block of cheese, a carrot, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",You are carrying: a banana.,0 of 14,0.0,False,
+4,,"I opened the fridge and found the raw pork chop, block of cheese, carrot, and other vegetables inside.","I should take the raw pork chop, block of cheese, and carrot from the fridge as they are needed for the recipe.",take raw pork chop from fridge; take block of cheese from fridge; take carrot from fridge,,You can't see any such thing.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a raw pork chop, a block of cheese, a carrot, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",You are carrying: a banana.,0 of 14,0.0,False,
+5,,"I tried to take the raw pork chop, block of cheese, and carrot from the fridge but was unsuccessful.",I should try taking each item individually from the fridge to see if that works.,take raw pork chop from fridge,,"You take the pork chop from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-You can make out a fridge. You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",You are carrying: a raw yellow potato and a banana.,1 of 14,0.07142857142857142,False,
-3,,I took the yellow potato from the counter; now I am carrying it.,"I should take the carrot, pork chop, and block of cheese from the counter or fridge to gather all ingredients for the recipe.",take carrot from counter,,You can't see any such thing.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a fridge. You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",You are carrying: a raw yellow potato and a banana.,1 of 14,0.07142857142857142,False,
-4,,I tried to find the pork chop but couldn't see it; I am in the kitchen with a raw yellow potato and a banana.,"I should look around the kitchen more carefully to find the pork chop, carrot, and block of cheese needed for the recipe.",look,,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a fridge. You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a fridge. You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",You are carrying: a raw yellow potato and a banana.,1 of 14,0.07142857142857142,False,
-5,,"I entered a kitchen that looks familiar with a fridge, oven, table with a knife, and a vast counter with a red apple, raw purple potato, raw red potato, and a cookbook. I am carrying a raw yellow potato and a banana.","I should look for the pork chop in the fridge or oven since it is not on the counter, and I need it for the recipe.",open fridge,,"You open the fridge, revealing a raw pork chop, a block of cheese, a carrot, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion.",Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a fridge. The fridge contains a raw pork chop, a block of cheese, a carrot, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",You are carrying: a raw yellow potato and a banana.,1 of 14,0.07142857142857142,False,
-6,,"I opened the fridge and found the raw pork chop, block of cheese, carrot, and other ingredients; I am in the kitchen carrying a raw yellow potato and a banana.","I should take the raw pork chop, block of cheese, and carrot from the fridge to have all the ingredients needed for the recipe.",take raw pork chop from fridge; take block of cheese from fridge; take carrot from fridge,,You can't see any such thing.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a fridge. The fridge contains a raw pork chop, a block of cheese, a carrot, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",You are carrying: a raw yellow potato and a banana.,1 of 14,0.07142857142857142,False,
-7,,"I tried to find the pork chop but couldn't see it; I am in the kitchen with a raw yellow potato and a banana. I opened the fridge and found the raw pork chop, block of cheese, carrot, and other ingredients; I am in the kitchen carrying a raw yellow potato and a banana. The kitchen has a fridge, oven, table with a knife, a vast counter with various ingredients, and a stove.","I should take the raw pork chop, block of cheese, and carrot from the fridge to have all the ingredients needed for the recipe.",take raw pork chop from fridge; take block of cheese from fridge; take carrot from fridge,,You can't see any such thing.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a fridge. The fridge contains a raw pork chop, a block of cheese, a carrot, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",You are carrying: a raw yellow potato and a banana.,1 of 14,0.07142857142857142,False,
-8,,"I am in the kitchen with a raw yellow potato and a banana, and I see the ingredients needed for the recipe in the fridge and on the counter.","I should take the pork chop, carrot, and block of cheese from the fridge to have all the ingredients for the meal.",take raw pork chop from fridge,,"You take the pork chop from the fridge.
+You can make out a fridge. The fridge contains a block of cheese, a carrot, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!",You are carrying: a raw pork chop and a banana.,1 of 14,0.07142857142857142,False,
+6,,I took the raw pork chop from the fridge; now I am carrying it.,I should take the block of cheese and the carrot from the fridge next.,take block of cheese from fridge,,"You take the block of cheese from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-You can make out a fridge. The fridge contains a block of cheese, a carrot, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!","You are carrying: a raw pork chop, a raw yellow potato and a banana.",2 of 14,0.14285714285714285,False,
-9,,I took the raw pork chop from the fridge; now I am carrying it along with the raw yellow potato and banana.,I should take the carrot and block of cheese from the fridge to have all the ingredients needed for the recipe.,take carrot from fridge,,"You take the carrot from the fridge.
+You can make out a fridge. The fridge contains a carrot, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!","You are carrying: a block of cheese, a raw pork chop and a banana.",2 of 14,0.14285714285714285,False,
+7,,I took the block of cheese from the fridge; now I am carrying it.,I should take the carrot from the fridge next.,take carrot from fridge,,"You take the carrot from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-You can make out a fridge. The fridge contains a block of cheese, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!","You are carrying: a carrot, a raw pork chop, a raw yellow potato and a banana.",3 of 14,0.21428571428571427,False,
-10,,"I took the carrot from the fridge; now I am carrying it along with the raw pork chop, raw yellow potato, and banana.",I should take the block of cheese from the fridge to have all the ingredients needed for the recipe.,take block of cheese from fridge,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!","You are carrying: a carrot, a block of cheese, a raw pork chop and a banana.",3 of 14,0.21428571428571427,False,
+8,,I took the carrot from the fridge; now I am carrying it.,I should take the raw yellow potato from the counter to have all ingredients for the recipe.,take raw yellow potato from counter,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-You can make out a fridge. The fridge contains a block of cheese, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!","You are carrying: a carrot, a raw pork chop, a raw yellow potato and a banana.",3 of 14,0.21428571428571427,False,
-11,,I tried to take more items but was told I am carrying too many things already.,I should put down the banana to free up space so I can take the block of cheese needed for the recipe.,drop banana,,You drop the banana on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!","You are carrying: a carrot, a block of cheese, a raw pork chop and a banana.",3 of 14,0.21428571428571427,False,
+9,,I tried to take the raw yellow potato but was carrying too many things.,I should drop the banana to free up space and then take the raw yellow potato.,drop banana,,You drop the banana on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-You can make out a fridge. The fridge contains a block of cheese, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
-
-
-
-There is a banana on the floor.","You are carrying: a carrot, a raw pork chop and a raw yellow potato.",3 of 14,0.21428571428571427,False,
-12,,"I dropped the banana on the ground; I am now carrying a carrot, raw pork chop, and raw yellow potato.","I should prepare the ingredients by peeling and dicing the yellow potato and carrot, then cook the pork chop on the stove.",dice carrot with knife,,You need to take the knife first.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a fridge. The fridge contains a block of cheese, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a raw yellow potato, a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
 
 
 
-There is a banana on the floor.","You are carrying: a carrot, a raw pork chop and a raw yellow potato.",3 of 14,0.21428571428571427,False,
-13,,"I was told I need to take the knife first; I am in the kitchen carrying a carrot, raw pork chop, and raw yellow potato.",I should take the knife from the table to be able to prepare the meal.,take knife from table,,You take the knife from the table.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a fridge. The fridge contains a block of cheese, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+There is a banana on the floor.","You are carrying: a carrot, a block of cheese and a raw pork chop.",3 of 14,0.21428571428571427,False,
+10,,I dropped the banana to free up space.,I should now take the raw yellow potato from the counter.,take raw yellow potato from counter,,"You take the yellow potato from the counter.
 
 
 
-There is a banana on the floor.","You are carrying: a knife, a carrot, a raw pork chop and a raw yellow potato.",3 of 14,0.21428571428571427,False,
-14,,"I took the knife from the table; now I am carrying it along with the carrot, raw pork chop, and raw yellow potato.","I should prepare the ingredients by peeling and dicing the yellow potato and carrot, then cook the pork chop on the stove.",dice carrot with knife,,"You dice the carrot.
+Your score has just gone up by one point.",Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
 
 
 
-                              *** You lost! ***
+There is a banana on the floor.","You are carrying: a raw yellow potato, a carrot, a block of cheese and a raw pork chop.",4 of 14,0.2857142857142857,False,
+11,,I took the raw yellow potato from the counter; now I am carrying it.,I should take the knife from the table to prepare the ingredients.,take knife from table,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-You scored 3 out of a possible 14, in 11 turns.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
->",Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a fridge. The fridge contains a block of cheese, a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
 
 
 
-There is a banana on the floor.","You are carrying: a knife, a carrot, a raw pork chop and a raw yellow potato.",3 of 14,0.21428571428571427,True,
+There is a banana on the floor.","You are carrying: a raw yellow potato, a carrot, a block of cheese and a raw pork chop.",4 of 14,0.2857142857142857,False,
+12,,I tried to take the knife from the table but was carrying too many things.,I should drop one item to free up space before taking the knife.,drop block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. On the table you can make out a knife. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a raw yellow potato, a carrot and a raw pork chop.",4 of 14,0.2857142857142857,False,
+13,,I dropped the block of cheese to free up space.,I should now take the knife from the table to prepare the meal.,take knife from table,,You take the knife from the table.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a knife, a raw yellow potato, a carrot and a raw pork chop.",4 of 14,0.2857142857142857,False,
+14,,I took the knife from the table; now I am carrying it.,I should take the block of cheese from the floor to have all ingredients for the recipe.,take block of cheese from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a knife, a raw yellow potato, a carrot and a raw pork chop.",4 of 14,0.2857142857142857,False,
+15,,I tried to take the block of cheese from the floor but was carrying too many things.,I should drop the carrot to free up space and then take the block of cheese.,drop carrot,,You drop the carrot on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot, a block of cheese and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+16,,I dropped the carrot to free up space.,I should now take the block of cheese from the floor.,take block of cheese from floor,,You pick up the block of cheese from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+17,,I took the block of cheese from the floor; now I am carrying it.,I should now take the carrot from the floor to have all ingredients for the recipe.,take carrot from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+18,,I tried to take the carrot from the floor but was carrying too many things.,I should drop an item to free up space before taking the carrot.,drop block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese, a carrot and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+19,,I dropped the block of cheese to free up space.,I should take the carrot from the floor now that I have enough space.,take carrot from floor,,You pick up the carrot from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a carrot, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+20,,I took the carrot from the floor; now I am carrying it.,I should take the block of cheese from the floor to have all ingredients for the recipe.,take block of cheese from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a carrot, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+21,,I tried to take the block of cheese from the floor but was carrying too many things.,I should drop one item to free up space before taking the block of cheese.,drop carrot,,You drop the carrot on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot, a block of cheese and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+22,,I dropped the carrot to free up space.,I should now take the block of cheese from the floor.,take block of cheese from floor,,You pick up the block of cheese from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+23,,I took the block of cheese from the floor; now I am carrying it.,I should now take the carrot from the floor to have all ingredients for the recipe.,take carrot from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+24,,I tried to take the carrot from the floor but was carrying too many things.,I should drop one item to free up space before taking the carrot.,drop block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese, a carrot and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+25,,I dropped the block of cheese to free up space.,I should now take the carrot from the floor.,take carrot from floor,,You pick up the carrot from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a carrot, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+26,,I took the carrot from the floor; now I am carrying it.,I should take the block of cheese from the floor to have all ingredients for the recipe.,take block of cheese from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a carrot, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+27,,I tried to take the block of cheese from the floor but was carrying too many things.,I should drop one item to free up space to take the block of cheese.,drop carrot,,You drop the carrot on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot, a block of cheese and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+28,,I dropped the carrot to free up space.,I should now take the block of cheese from the floor.,take block of cheese from floor,,You pick up the block of cheese from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+29,,I took the block of cheese from the floor; now I am carrying it.,I should take the carrot from the floor to have all ingredients for the recipe.,take carrot from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+30,,I tried to take the carrot from the floor but was carrying too many things.,I should drop one item to free up space before taking the carrot.,drop block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese, a carrot and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+31,,I dropped the block of cheese to free up space.,I should now take the carrot from the floor.,take carrot from floor,,You pick up the carrot from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a carrot, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+32,,I took the carrot from the floor; now I am carrying it.,I should take the block of cheese from the floor to have all ingredients.,take block of cheese from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a carrot, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+33,,I tried to take the block of cheese from the floor but was carrying too many things.,I should drop one item to free up space to take the block of cheese.,drop carrot,,You drop the carrot on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot, a block of cheese and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+34,,I dropped the carrot to free up space.,I should now take the block of cheese from the floor.,take block of cheese from floor,,You pick up the block of cheese from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+35,,I took the block of cheese from the floor; now I am carrying it.,I should take the carrot from the floor to have all ingredients for the recipe.,take carrot from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+36,,I tried to take the carrot from the floor but was carrying too many things.,I should drop one item to free up space to take the carrot.,drop block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese, a carrot and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+37,,I dropped the block of cheese to free up space.,I should take the carrot from the floor now that I have space.,take carrot from floor,,You pick up the carrot from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a carrot, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+38,,I took the carrot from the floor; now I am carrying it.,I should take the block of cheese from the floor to have all ingredients for the recipe.,take block of cheese from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a carrot, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+39,,I tried to take the block of cheese from the floor but was carrying too many things.,I should drop one item to free up space to take the block of cheese.,drop carrot,,You drop the carrot on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot, a block of cheese and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+40,,I dropped the carrot to free up space.,I should now take the block of cheese from the floor.,take block of cheese from floor,,You pick up the block of cheese from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+41,,I took the block of cheese from the floor; now I am carrying it.,I should take the carrot from the floor to have all ingredients for the recipe.,take carrot from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+42,,I tried to take the carrot from the floor but was carrying too many things.,I should drop one item to free up space to take the carrot.,drop block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese, a carrot and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+43,,I dropped the block of cheese to free up space.,I should take the carrot from the floor now that I have space.,take carrot from floor,,You pick up the carrot from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a carrot, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+44,,I took the carrot from the floor; now I am carrying it.,I should take the block of cheese from the floor to have all ingredients for the recipe.,take block of cheese from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a carrot, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+45,,I tried to take the block of cheese from the floor but was carrying too many things.,I should drop one item to free up space before taking the block of cheese.,drop carrot,,You drop the carrot on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot, a block of cheese and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+46,,I dropped the carrot to free up space.,Now I should take the block of cheese from the floor.,take block of cheese from floor,,You pick up the block of cheese from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+47,,I took the block of cheese from the floor; now I am carrying it.,I should take the carrot from the floor to have all ingredients for the recipe.,take carrot from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+48,,I tried to take the carrot from the floor but was carrying too many things.,I should drop one item to free up space to take the carrot.,drop block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese, a carrot and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+49,,I dropped the block of cheese to free up space.,I should take the carrot from the floor now that I have space.,take carrot from floor,,You pick up the carrot from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a carrot, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+50,,I took the carrot from the floor; now I am carrying it.,I should take the block of cheese from the floor now that I have space.,take block of cheese from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese and a banana on the floor.","You are carrying: a carrot, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+51,,I tried to take the block of cheese from the floor but was carrying too many things.,I should drop the carrot to free up space before taking the block of cheese.,drop carrot,,You drop the carrot on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot, a block of cheese and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+52,,I dropped the carrot to free up space.,I should now take the block of cheese from the floor.,take block of cheese from floor,,You pick up the block of cheese from the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+53,,I took the block of cheese from the floor; now I am carrying it.,I should take the carrot from the floor to have all ingredients for the recipe.,take carrot from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a carrot and a banana on the floor.","You are carrying: a block of cheese, a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,False,
+54,,I tried to take the carrot from the floor but was carrying too many things.,I should drop one item to free up space to take the carrot.,drop block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You've entered a kitchen. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. The fridge contains a red onion, an orange bell pepper, a yellow bell pepper, a red hot pepper and a white onion. Now that's what I call TextWorld! You can see an oven. You can see a table. Looks like someone's already been here and taken everything off it, though. You can make out a counter. The counter is vast. On the counter you see a red apple, a raw purple potato, a raw red potato and a cookbook. Were you looking for a stove? Because look over there, it's a stove. The stove is conventional. But the thing hasn't got anything on it. This always happens, here in TextWorld!
+
+
+
+There is a block of cheese, a carrot and a banana on the floor.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",4 of 14,0.2857142857142857,True,

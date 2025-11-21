@@ -6,7 +6,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 There is an exit to the west. Don't worry, there is no door.
 
 There is a raw red potato, a red onion, a raw yellow potato and a carrot on the floor.",You are carrying: a raw pork chop.,0 of 16,0.0,False,
-1,,I am in the garden with a raw pork chop and some vegetables on the floor.,I should go west to find the kitchen where the cookbook is likely to be.,go west,,"You've entered a backyard.
+1,,I am in the garden.,I should go west to find the kitchen where the cookbook might be.,go west,,"You've entered a backyard.
 
 You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
 
@@ -15,7 +15,35 @@ There is a closed wooden door leading north. There is a closed sliding patio doo
 You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
 
 There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying: a raw pork chop.,0 of 16,0.0,False,
-2,,"I moved to the backyard; I see a patio chair, a patio table, a BBQ, a closed wooden door to the north, a closed sliding patio door to the south, and an open path to the east. I am carrying a raw pork chop.",I should go east to explore further and possibly find the kitchen or the cookbook.,go east,,"Of every garden you could have shown up in, you had to show up in a standard one.
+2,,I went west to the backyard; there is a closed wooden door north and a closed sliding patio door south.,I should try going north through the wooden door to find the kitchen.,open wooden door and go north,,You can't use multiple objects with that verb.,Backyard,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying: a raw pork chop.,0 of 16,0.0,False,
+3,,I tried to open the wooden door and go north but was told I can't use multiple objects with that verb.,"I should first open the wooden door, then go north in two separate actions.",open wooden door,,You open wooden door.,Backyard,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying: a raw pork chop.,0 of 16,0.0,False,
+4,,I opened the wooden door successfully.,Now I should go north through the open wooden door to enter the kitchen.,go north,,"You make a grand eccentric entrance into a shed.
+
+You make out a closed toolbox, which looks metallic, right there by you. You make out a workbench. The workbench is wooden. However, the workbench, like an empty workbench, has nothing on it. Hm. Oh well
+
+There is an open wooden door leading south.",Shed,"You make a grand eccentric entrance into a shed.
+
+You make out a closed toolbox, which looks metallic, right there by you. You make out a workbench. The workbench is wooden. However, the workbench, like an empty workbench, has nothing on it. Hm. Oh well
+
+There is an open wooden door leading south.",You are carrying: a raw pork chop.,0 of 16,0.0,False,
+5,,I went north through the open wooden door and entered the shed.,I should go back south to the backyard and then try going east to find the kitchen.,go south,,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",Backyard,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying: a raw pork chop.,0 of 16,0.0,False,
+6,,I went south from the shed to the backyard.,I should go east from the backyard to find the kitchen.,go east,,"Of every garden you could have shown up in, you had to show up in a standard one.
 
 
 
@@ -28,98 +56,496 @@ There is a raw red potato, a red onion, a raw yellow potato and a carrot on the 
 There is an exit to the west. Don't worry, there is no door.
 
 There is a raw red potato, a red onion, a raw yellow potato and a carrot on the floor.",You are carrying: a raw pork chop.,0 of 16,0.0,False,
-3,,I moved back to the garden; I see raw vegetables on the floor and I am carrying a raw pork chop.,I should take the raw vegetables from the floor to prepare the meal.,"take raw red potato, red onion, raw yellow potato, carrot from floor",,"red potato: You pick up the red potato from the ground.
-red onion: You pick up the red onion from the ground.
-yellow potato: You pick up the yellow potato from the ground.
-carrot: You pick up the carrot from the ground.
+7,,I went east from the backyard and arrived in the garden with vegetables on the floor.,I should take the carrot from the floor to use it for cooking.,take carrot from floor,,You pick up the carrot from the ground.,Garden,"Of every garden you could have shown up in, you had to show up in a standard one.
+
+
+
+There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato, a red onion and a raw yellow potato on the floor.",You are carrying: a carrot and a raw pork chop.,0 of 16,0.0,False,
+8,,I took the carrot from the floor; now I am carrying it along with the raw pork chop.,I should take the red onion from the floor to have more ingredients for cooking.,take red onion from floor,,You pick up the red onion from the ground.,Garden,"Of every garden you could have shown up in, you had to show up in a standard one.
+
+
+
+There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw yellow potato on the floor.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+9,,I took the red onion from the floor; now I am carrying it along with the carrot and raw pork chop.,I should go west to leave the garden and find the kitchen to check the cookbook for the recipe.,go west,,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",Backyard,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+10,,I went west from the garden to the backyard.,I should go east from the backyard to return to the garden and then find the kitchen to check the cookbook for the recipe.,go east,,"Of every garden you could have shown up in, you had to show up in a standard one.
+
+
+
+There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw yellow potato on the floor.",Garden,"Of every garden you could have shown up in, you had to show up in a standard one.
+
+
+
+There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw yellow potato on the floor.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+11,,I went east from the backyard to the garden.,"I should go west from the garden to the backyard and then north through the open wooden door to enter the shed, then find the kitchen.",go west,,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",Backyard,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+12,,I went west from the garden to the backyard.,I should go north through the open wooden door to enter the shed.,go north,,"You make a grand eccentric entrance into a shed.
+
+You make out a closed toolbox, which looks metallic, right there by you. You make out a workbench. The workbench is wooden. However, the workbench, like an empty workbench, has nothing on it. Hm. Oh well
+
+There is an open wooden door leading south.",Shed,"You make a grand eccentric entrance into a shed.
+
+You make out a closed toolbox, which looks metallic, right there by you. You make out a workbench. The workbench is wooden. However, the workbench, like an empty workbench, has nothing on it. Hm. Oh well
+
+There is an open wooden door leading south.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+13,,I went north into the shed.,I should open the metallic toolbox to see if there is anything useful for cooking.,open toolbox,,You open the toolbox.,Shed,"You make a grand eccentric entrance into a shed.
+
+You make out an opened toolbox, which looks metallic, right there by you. The toolbox is empty! What a waste of a day! You make out a workbench. The workbench is wooden. However, the workbench, like an empty workbench, has nothing on it. Hm. Oh well
+
+There is an open wooden door leading south.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+14,,I opened the toolbox; it is empty.,I should go south back to the backyard and then head north to the kitchen to check the cookbook for the recipe.,go south,,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",Backyard,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+15,,I went south to the backyard.,I should go east from the backyard to enter the kitchen and look for the cookbook.,go east,,"Of every garden you could have shown up in, you had to show up in a standard one.
+
+
+
+There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw yellow potato on the floor.",Garden,"Of every garden you could have shown up in, you had to show up in a standard one.
+
+
+
+There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw yellow potato on the floor.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+16,,I went east to the garden.,I need to find the kitchen to check the cookbook for the recipe.,go west,,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",Backyard,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+17,,I went west to the backyard.,I should go north through the open wooden door to enter the shed and look for the kitchen or cookbook.,go north,,"You make a grand eccentric entrance into a shed.
+
+You make out an opened toolbox, which looks metallic, right there by you. The toolbox is empty! What a waste of a day! You make out a workbench. The workbench is wooden. However, the workbench, like an empty workbench, has nothing on it. Hm. Oh well
+
+There is an open wooden door leading south.",Shed,"You make a grand eccentric entrance into a shed.
+
+You make out an opened toolbox, which looks metallic, right there by you. The toolbox is empty! What a waste of a day! You make out a workbench. The workbench is wooden. However, the workbench, like an empty workbench, has nothing on it. Hm. Oh well
+
+There is an open wooden door leading south.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+18,,I went north into the shed; the shed has an empty toolbox and an empty workbench.,I should go south back to the backyard and then try going east to find the kitchen or cookbook.,go south,,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",Backyard,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+19,,"I went south to the backyard; the backyard has a patio chair, a patio table, and a BBQ, with a closed sliding patio door south and an open wooden door north.",I should go east to find the kitchen or the cookbook.,go east,,"Of every garden you could have shown up in, you had to show up in a standard one.
+
+
+
+There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw yellow potato on the floor.",Garden,"Of every garden you could have shown up in, you had to show up in a standard one.
+
+
+
+There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw yellow potato on the floor.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+20,,I went east to the garden; the garden has raw red and yellow potatoes on the floor and an exit west.,I should go west to return to the backyard and then try the sliding patio door south to reach the kitchen.,go west,,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",Backyard,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+21,,"I went west to the backyard; the backyard has a patio chair, patio table, BBQ, an open wooden door north, and a closed sliding patio door south.",I should open the sliding patio door to the south to access the kitchen.,open sliding patio door,,You open sliding patio door.,Backyard,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is an open sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+22,,I opened the sliding patio door in the backyard.,I should go south through the open sliding patio door to enter the kitchen.,go south,,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a red apple, a raw purple potato, a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a red apple, a raw purple potato, a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+23,,I went south through the sliding patio door and arrived in the kitchen.,I should examine the cookbook on the table to check the recipe for cooking a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+yellow bell pepper
+  pork chop
+  red potato
+  block of cheese
+  red apple
+
+Directions:
+slice the yellow bell pepper
+  grill the yellow bell pepper
+  slice the pork chop
+  fry the pork chop
+  dice the red potato
+  fry the red potato
+  dice the block of cheese
+  fry the block of cheese
+  dice the red apple
+  fry the red apple
+  prepare meal",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a red apple, a raw purple potato, a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+24,,"I examined the cookbook and found a recipe requiring yellow bell pepper, pork chop, red potato, block of cheese, and red apple with detailed cooking steps.","I should gather the required ingredients from the kitchen and my inventory, starting with taking the yellow bell pepper, red potato, and block of cheese if available.",take yellow bell pepper from counter,,You can't see any such thing.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a red apple, a raw purple potato, a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.","You are carrying: a red onion, a carrot and a raw pork chop.",0 of 16,0.0,False,
+25,,I tried to take a yellow bell pepper from the counter but it is not there.,"I should take the red apple and the raw purple potato from the counter since they are present and part of the recipe, then look for the block of cheese and yellow bell pepper elsewhere.",take red apple from counter,,"You take the red apple from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a raw purple potato, a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.","You are carrying: a red apple, a red onion, a carrot and a raw pork chop.",1 of 16,0.0625,False,
+26,,I took the red apple from the counter; now I am carrying it.,"I should take the raw purple potato from the counter next, then search for the yellow bell pepper and block of cheese.",take raw purple potato from counter,,You take the purple potato from the counter.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.","You are carrying: a raw purple potato, a red apple, a red onion, a carrot and a raw pork chop.",1 of 16,0.0625,False,
+27,,I took the raw purple potato from the counter; now I am carrying it.,I should check the fridge for the yellow bell pepper and block of cheese.,open fridge,,"You open the fridge, revealing a yellow bell pepper, a block of cheese, a white onion and an orange bell pepper.",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a yellow bell pepper, a block of cheese, a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.","You are carrying: a raw purple potato, a red apple, a red onion, a carrot and a raw pork chop.",1 of 16,0.0625,False,
+28,,I opened the fridge and found a yellow bell pepper and a block of cheese inside.,I should take the yellow bell pepper and the block of cheese from the fridge.,take yellow bell pepper from fridge,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a yellow bell pepper, a block of cheese, a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.","You are carrying: a raw purple potato, a red apple, a red onion, a carrot and a raw pork chop.",1 of 16,0.0625,False,
+29,,I tried to take the yellow bell pepper but was told I am carrying too many things.,I should drop an item I don't need to free up space before taking the yellow bell pepper and block of cheese.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a yellow bell pepper, a block of cheese, a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a raw purple potato on the floor.","You are carrying: a red apple, a red onion, a carrot and a raw pork chop.",1 of 16,0.0625,False,
+30,,I dropped the raw purple potato to free up space.,I should now take the yellow bell pepper and the block of cheese from the fridge.,take yellow bell pepper from fridge,,"You take the yellow bell pepper from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a block of cheese, a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a raw purple potato on the floor.","You are carrying: a yellow bell pepper, a red apple, a red onion, a carrot and a raw pork chop.",2 of 16,0.125,False,
+31,,I took the yellow bell pepper from the fridge; now I am carrying it.,I should take the block of cheese from the fridge next.,take block of cheese from fridge,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a block of cheese, a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a raw purple potato on the floor.","You are carrying: a yellow bell pepper, a red apple, a red onion, a carrot and a raw pork chop.",2 of 16,0.125,False,
+32,,I tried to take the block of cheese from the fridge but was told I am carrying too many things.,"I should drop an item I don't need for the recipe to free up space, then take the block of cheese.",drop carrot,,You drop the carrot on the ground.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a block of cheese, a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a carrot and a raw purple potato on the floor.","You are carrying: a yellow bell pepper, a red apple, a red onion and a raw pork chop.",2 of 16,0.125,False,
+33,,I dropped the carrot to free up space.,I should now take the block of cheese from the fridge.,take block of cheese from fridge,,"You take the block of cheese from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a carrot and a raw purple potato on the floor.","You are carrying: a block of cheese, a yellow bell pepper, a red apple, a red onion and a raw pork chop.",3 of 16,0.1875,False,
+34,,I took the block of cheese from the fridge; now I am carrying it along with other ingredients.,I should now prepare the meal using the ingredients I have.,prepare meal,,You still miss something.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a carrot and a raw purple potato on the floor.","You are carrying: a block of cheese, a yellow bell pepper, a red apple, a red onion and a raw pork chop.",3 of 16,0.1875,False,
+35,,I tried to prepare the meal but was told I still miss something.,I need to check the recipe again to see what ingredient I am missing.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+yellow bell pepper
+  pork chop
+  red potato
+  block of cheese
+  red apple
+
+Directions:
+slice the yellow bell pepper
+  grill the yellow bell pepper
+  slice the pork chop
+  fry the pork chop
+  dice the red potato
+  fry the red potato
+  dice the block of cheese
+  fry the block of cheese
+  dice the red apple
+  fry the red apple
+  prepare meal",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a carrot and a raw purple potato on the floor.","You are carrying: a block of cheese, a yellow bell pepper, a red apple, a red onion and a raw pork chop.",3 of 16,0.1875,False,
+36,,I examined the cookbook and reviewed the recipe and directions for the meal.,"I need to get a red potato since I don't have one yet, and then follow the recipe steps to prepare the meal.",take red potato from garden,,You can't see any such thing.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a carrot and a raw purple potato on the floor.","You are carrying: a block of cheese, a yellow bell pepper, a red apple, a red onion and a raw pork chop.",3 of 16,0.1875,False,
+37,,I tried to take a red potato from the kitchen but it is not there.,I should go back to the garden where I saw red potatoes on the floor to take one.,go north through the sliding patio door to the backyard,,I only understood you as far as wanting to go north.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a carrot and a raw purple potato on the floor.","You are carrying: a block of cheese, a yellow bell pepper, a red apple, a red onion and a raw pork chop.",3 of 16,0.1875,False,
+38,,I tried to go north through the sliding patio door but was only understood as wanting to go north.,I should explicitly go north through the sliding patio door to reach the backyard.,go north through sliding patio door,,I only understood you as far as wanting to go north.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a carrot and a raw purple potato on the floor.","You are carrying: a block of cheese, a yellow bell pepper, a red apple, a red onion and a raw pork chop.",3 of 16,0.1875,False,
+39,,I tried to go north through the sliding patio door but was only understood as wanting to go north; I am still in the kitchen.,I should go north without specifying the door to move to the backyard.,go north,,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is an open sliding patio door leading south. You need an exit without a door? You should try going east.",Backyard,"You've entered a backyard.
+
+You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+
+There is an open wooden door leading north. There is an open sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a block of cheese, a yellow bell pepper, a red apple, a red onion and a raw pork chop.",3 of 16,0.1875,False,
+40,,I went north from the kitchen to the backyard.,I should go east from the backyard to the garden to find the red potato needed for the recipe.,go east,,"Of every garden you could have shown up in, you had to show up in a standard one.
+
+
+
+There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw yellow potato on the floor.",Garden,"Of every garden you could have shown up in, you had to show up in a standard one.
+
+
+
+There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw yellow potato on the floor.","You are carrying: a block of cheese, a yellow bell pepper, a red apple, a red onion and a raw pork chop.",3 of 16,0.1875,False,
+41,,I went east from the backyard to the garden and found raw red and yellow potatoes on the floor.,I should take the raw red potato from the floor to complete the ingredients for the recipe.,take raw red potato from floor,,You're carrying too many things already.,Garden,"Of every garden you could have shown up in, you had to show up in a standard one.
+
+
+
+There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw yellow potato on the floor.","You are carrying: a block of cheese, a yellow bell pepper, a red apple, a red onion and a raw pork chop.",3 of 16,0.1875,False,
+42,,I tried to take the raw red potato but was told I am carrying too many things.,I should drop an item I can pick up later to free space for the raw red potato.,drop red onion,,You drop the red onion on the ground.,Garden,"Of every garden you could have shown up in, you had to show up in a standard one.
+
+
+
+There is an exit to the west. Don't worry, there is no door.
+
+There is a red onion, a raw red potato and a raw yellow potato on the floor.","You are carrying: a block of cheese, a yellow bell pepper, a red apple and a raw pork chop.",3 of 16,0.1875,False,
+43,,I dropped the red onion to free up space.,I should take the raw red potato now that I have space.,take raw red potato from floor,,"You pick up the red potato from the ground.
+
 
 
 Your score has just gone up by one point.",Garden,"Of every garden you could have shown up in, you had to show up in a standard one.
 
 
 
-There is an exit to the west. Don't worry, there is no door.","You are carrying: a carrot, a raw yellow potato, a red onion, a raw red potato and a raw pork chop.",1 of 16,0.0625,False,
-4,,"I picked up a carrot, a raw yellow potato, a red onion, and a raw red potato; now I am carrying them along with a raw pork chop.",I should go west to the backyard where the BBQ is to cook the meal.,go west,,"You've entered a backyard.
+There is an exit to the west. Don't worry, there is no door.
+
+There is a red onion and a raw yellow potato on the floor.","You are carrying: a raw red potato, a block of cheese, a yellow bell pepper, a red apple and a raw pork chop.",4 of 16,0.25,False,
+44,,I took the raw red potato from the floor; now I am carrying it.,I should go back to the kitchen to prepare the meal with all the ingredients.,go west,,"You've entered a backyard.
 
 You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",Backyard,"You've entered a backyard.
+There is an open wooden door leading north. There is an open sliding patio door leading south. You need an exit without a door? You should try going east.",Backyard,"You've entered a backyard.
 
 You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a carrot, a raw yellow potato, a red onion, a raw red potato and a raw pork chop.",1 of 16,0.0625,False,
-5,,"I moved to the backyard; I see a patio chair, patio table, BBQ, closed wooden door north, closed sliding door south, and an open path east. I am carrying raw pork chop, carrot, raw yellow potato, red onion, and raw red potato.",I should check the BBQ in the backyard to see if I can cook the raw pork chop and vegetables there.,examine BBQ,,Useful for grilling things.,Backyard,"You've entered a backyard.
+There is an open wooden door leading north. There is an open sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a raw red potato, a block of cheese, a yellow bell pepper, a red apple and a raw pork chop.",4 of 16,0.25,False,
+45,,I went west from the garden to the backyard.,I should go south through the sliding patio door to enter the kitchen.,go south,,"You've just shown up in a kitchen. You start to take note of what's in the room.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ.
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a carrot, a raw yellow potato, a red onion, a raw red potato and a raw pork chop.",1 of 16,0.0625,False,
-6,,"I examined the backyard and found a BBQ, patio chair, and patio table; I am carrying raw ingredients.",I should open the BBQ to prepare for cooking the raw pork chop and vegetables.,open BBQ,,You open the BBQ.,Backyard,"You've entered a backyard.
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ. The BBQ is empty! What a waste of a day!
+There is a carrot and a raw purple potato on the floor.",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a carrot, a raw yellow potato, a red onion, a raw red potato and a raw pork chop.",1 of 16,0.0625,False,
-7,,I opened the BBQ; it is empty.,I should put the raw pork chop and vegetables into the BBQ to cook them.,insert raw pork chop into BBQ,,You put the pork chop into the BBQ.,Backyard,"You've entered a backyard.
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ. The BBQ contains a raw pork chop, so there's that.
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a carrot, a raw yellow potato, a red onion and a raw red potato.",1 of 16,0.0625,False,
-8,,I put the raw pork chop into the BBQ; the BBQ now contains the raw pork chop.,I should put the vegetables into the BBQ to cook them together with the pork chop.,insert carrot into BBQ,,You put the carrot into the BBQ.,Backyard,"You've entered a backyard.
+There is a carrot and a raw purple potato on the floor.","You are carrying: a raw red potato, a block of cheese, a yellow bell pepper, a red apple and a raw pork chop.",4 of 16,0.25,False,
+46,,I went south from the backyard to the kitchen.,I should prepare the meal now that I have all the required ingredients.,prepare meal,,Something still needs to be cooked.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ. The BBQ contains a carrot and a raw pork chop, so there's that.
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.","You are carrying: a raw yellow potato, a red onion and a raw red potato.",1 of 16,0.0625,False,
-9,,I put the carrot into the BBQ; the BBQ now contains a carrot and a raw pork chop.,"I should put the remaining vegetables, the raw yellow potato, red onion, and raw red potato, into the BBQ to cook all ingredients together.",put raw yellow potato into BBQ,,You put the yellow potato into the BBQ.,Backyard,"You've entered a backyard.
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ. The BBQ contains a raw yellow potato, a carrot and a raw pork chop, so there's that.
+There is a carrot and a raw purple potato on the floor.","You are carrying: a raw red potato, a block of cheese, a yellow bell pepper, a red apple and a raw pork chop.",4 of 16,0.25,False,
+47,,I tried to prepare the meal but was told something still needs to be cooked.,I should cook the raw pork chop on the stove before preparing the meal.,cook raw pork chop with stove,,"You fried the pork chop.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying: a red onion and a raw red potato.,1 of 16,0.0625,False,
-10,,"I put the yellow potato into the BBQ; the BBQ now contains a raw yellow potato, a carrot, and a raw pork chop.",I should put the remaining raw red potato and red onion into the BBQ to cook all the ingredients together.,put raw red potato into BBQ,,You put the red potato into the BBQ.,Backyard,"You've entered a backyard.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ. The BBQ contains a raw red potato, a raw yellow potato, a carrot and a raw pork chop, so there's that.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying: a red onion.,1 of 16,0.0625,False,
-11,,"I put the red potato into the BBQ; the BBQ now contains a raw red potato, a raw yellow potato, a carrot, and a raw pork chop.",I should now cook the ingredients in the BBQ to prepare the meal.,cook raw pork chop with BBQ,,You need to take the pork chop first.,Backyard,"You've entered a backyard.
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ. The BBQ contains a raw red potato, a raw yellow potato, a carrot and a raw pork chop, so there's that.
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying: a red onion.,1 of 16,0.0625,False,
-12,,I tried to put the pork chop into the BBQ but was told I need to take it first; I am in the backyard with the BBQ containing raw ingredients and carrying a red onion.,I should take the raw pork chop from the BBQ before proceeding to cook it.,take raw pork chop from BBQ,,You take the pork chop from the BBQ.,Backyard,"You've entered a backyard.
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ. The BBQ contains a raw red potato, a raw yellow potato and a carrot, so there's that.
+There is a carrot and a raw purple potato on the floor.","You are carrying: a raw red potato, a block of cheese, a yellow bell pepper, a red apple and a fried pork chop.",5 of 16,0.3125,False,
+48,,I cooked the raw pork chop on the stove; it is now fried.,I should now prepare the meal using the fried pork chop and other ingredients I am carrying.,prepare meal,,Something still needs to be cooked.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying: a raw pork chop and a red onion.,1 of 16,0.0625,False,
-13,,I took the pork chop from the BBQ; now I am carrying the pork chop and a red onion.,I should put the pork chop back into the BBQ and then cook the ingredients in the BBQ to prepare the meal.,put raw pork chop into BBQ,,You put the pork chop into the BBQ.,Backyard,"You've entered a backyard.
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ. The BBQ contains a raw pork chop, a raw red potato, a raw yellow potato and a carrot, so there's that.
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying: a red onion.,1 of 16,0.0625,False,
-14,,"I put the pork chop back into the BBQ; the BBQ now contains the raw pork chop, raw red potato, raw yellow potato, and carrot. I am carrying a red onion.",I should put the red onion into the BBQ to cook all the raw ingredients together.,put red onion into BBQ,,You put the red onion into the BBQ.,Backyard,"You've entered a backyard.
+There is a carrot and a raw purple potato on the floor.","You are carrying: a raw red potato, a block of cheese, a yellow bell pepper, a red apple and a fried pork chop.",5 of 16,0.3125,False,
+49,,I tried to prepare the meal but was told something still needs to be cooked.,"The raw red potato still needs to be cooked, so I should cook the raw red potato on the stove.",cook raw red potato with stove,,"You fried the red potato.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ. The BBQ contains a red onion, a raw pork chop, a raw red potato, a raw yellow potato and a carrot, so there's that.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying nothing.,1 of 16,0.0625,False,
-15,,I put the red onion into the BBQ; the BBQ now contains all raw ingredients.,I should cook the ingredients in the BBQ to prepare the meal.,cook raw pork chop with BBQ,,You need to take the pork chop first.,Backyard,"You've entered a backyard.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ. The BBQ contains a red onion, a raw pork chop, a raw red potato, a raw yellow potato and a carrot, so there's that.
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying nothing.,1 of 16,0.0625,False,
-16,,I tried to take the pork chop but was told to take it first; I am now in the backyard with all raw ingredients in the BBQ and carrying nothing.,I should take the raw pork chop from the BBQ first to proceed with cooking.,take raw pork chop from BBQ,,You take the pork chop from the BBQ.,Backyard,"You've entered a backyard.
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ. The BBQ contains a red onion, a raw red potato, a raw yellow potato and a carrot, so there's that.
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying: a raw pork chop.,1 of 16,0.0625,False,
-17,,I took the pork chop from the BBQ; now I am carrying it.,I should cook the raw pork chop using the BBQ to prepare the meal.,cook raw pork chop with BBQ,,"You grilled the pork chop.
+There is a carrot and a raw purple potato on the floor.","You are carrying: a fried red potato, a block of cheese, a yellow bell pepper, a red apple and a fried pork chop.",6 of 16,0.375,False,
+50,,I cooked the raw red potato on the stove; it is now fried.,"I have all the ingredients cooked or ready, so I should prepare the meal now.",prepare meal,,Something still needs to be cut.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a carrot and a raw purple potato on the floor.","You are carrying: a fried red potato, a block of cheese, a yellow bell pepper, a red apple and a fried pork chop.",6 of 16,0.375,False,
+51,,I tried to prepare the meal but was told something still needs to be cut.,"I need to cut one of the ingredients before preparing the meal. I have a knife on the counter, so I should cut the yellow bell pepper.",cut yellow bell pepper with knife,,I only understood you as far as wanting to cut the yellow bell pepper.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a carrot and a raw purple potato on the floor.","You are carrying: a fried red potato, a block of cheese, a yellow bell pepper, a red apple and a fried pork chop.",6 of 16,0.375,False,
+52,,I tried to cut the yellow bell pepper with the knife but was only understood as wanting to cut it.,"I should try a simpler command to cut the yellow bell pepper without specifying the tool, as the knife is likely the default cutting tool.",cut yellow bell pepper,,"You need to specify how you want to cut the yellow bell pepper. Either slice, dice, or chop it.",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a carrot and a raw purple potato on the floor.","You are carrying: a fried red potato, a block of cheese, a yellow bell pepper, a red apple and a fried pork chop.",6 of 16,0.375,False,
+53,,"I tried to cut the yellow bell pepper but was told to specify how to cut it (slice, dice, or chop).",I will slice the yellow bell pepper as the next step in preparing the meal.,slice yellow bell pepper with knife,,You need to take the knife first.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a carrot and a raw purple potato on the floor.","You are carrying: a fried red potato, a block of cheese, a yellow bell pepper, a red apple and a fried pork chop.",6 of 16,0.375,False,
+54,,I tried to slice the yellow bell pepper but was told to take the knife first.,I should take the knife from the counter before slicing the yellow bell pepper.,take knife from counter,,You're carrying too many things already.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a carrot and a raw purple potato on the floor.","You are carrying: a fried red potato, a block of cheese, a yellow bell pepper, a red apple and a fried pork chop.",6 of 16,0.375,False,
+55,,I tried to take the knife but was told I am carrying too many things.,I should drop an item to free up space before taking the knife.,drop red apple,,You drop the red apple on the ground.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana, a red hot pepper and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a red apple, a carrot and a raw purple potato on the floor.","You are carrying: a fried red potato, a block of cheese, a yellow bell pepper and a fried pork chop.",6 of 16,0.375,False,
+56,,I dropped the red apple to free up space.,I should take the knife from the counter to be able to cut the yellow bell pepper.,take knife from counter,,You take the knife from the counter.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana and a red hot pepper. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a red apple, a carrot and a raw purple potato on the floor.","You are carrying: a knife, a fried red potato, a block of cheese, a yellow bell pepper and a fried pork chop.",6 of 16,0.375,False,
+57,,I took the knife from the counter.,I should slice the yellow bell pepper with the knife as the recipe requires it to be cut.,slice yellow bell pepper with knife,,"You slice the yellow bell pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana and a red hot pepper. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a red apple, a carrot and a raw purple potato on the floor.","You are carrying: a knife, a fried red potato, a block of cheese, a sliced yellow bell pepper and a fried pork chop.",7 of 16,0.4375,False,
+58,,I sliced the yellow bell pepper with the knife; my score increased.,I should now prepare the meal since all ingredients are ready and cut as required.,prepare meal,,Something still needs to be cut.,Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
+
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana and a red hot pepper. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
+
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a red apple, a carrot and a raw purple potato on the floor.","You are carrying: a knife, a fried red potato, a block of cheese, a sliced yellow bell pepper and a fried pork chop.",7 of 16,0.4375,False,
+59,,I tried to prepare the meal but was told something still needs to be cut.,I should check if the block of cheese needs to be cut since it is the only ingredient left uncut.,slice block of cheese with knife,,"You slice the block of cheese.
 
 
 
                               *** You lost! ***
 
-You scored 1 out of a possible 16, in 17 turns.
+You scored 7 out of a possible 16, in 53 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
->",Backyard,"You've entered a backyard.
+>",Kitchen,"You've just shown up in a kitchen. You start to take note of what's in the room.
 
-You scan the room for a patio chair, and you find a patio chair. But the thing is empty. As if things weren't amazing enough already, you can even see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hey, want to see a BBQ? Look over there, a BBQ. The BBQ contains a red onion, a raw red potato, a raw yellow potato and a carrot, so there's that.
+Oh wow! Is that what I think it is? It is! It's a fridge. The fridge contains a white onion and an orange bell pepper. A closed oven is nearby. Oh, great. Here's a table. On the table you can make out a cookbook. Oh, great. Here's a counter. On the counter you see a banana and a red hot pepper. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. The stove is conventional. The stove appears to be empty. It would have been so cool if there was stuff on the stove.
 
-There is a closed wooden door leading north. There is a closed sliding patio door leading south. You need an exit without a door? You should try going east.",You are carrying: a raw pork chop.,1 of 16,0.0625,True,
+There is an open sliding patio door leading north. There is a closed frosted-glass door leading west. There is an exit to the south.
+
+There is a red apple, a carrot and a raw purple potato on the floor.","You are carrying: a knife, a fried red potato, a block of cheese, a sliced yellow bell pepper and a fried pork chop.",7 of 16,0.4375,True,

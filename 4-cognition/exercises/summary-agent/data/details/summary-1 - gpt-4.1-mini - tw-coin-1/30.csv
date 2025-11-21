@@ -4,13 +4,7 @@ step_id,plan,summary,thought,action,task,feedback,location,description,inventory
 
 
 There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-1,,I am in the Still Workshop.,"I will follow the sequence of directions given: south, east, south, east, north, north, west, south, east, east, south, east, south, east, south, west, west, north, north, west, north, north, west, west, west, south, south, west, north, and then look for the coin in the cookery.","go south
-State:",,You can't see any such thing.,Still Workshop,"You arrive in a workshop. A still one.
-
-
-
-There is an unblocked exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
-2,,I tried to go south but couldn't see anything.,I should go south since there is an unblocked exit to the south.,go south,,"You find yourself in a dish-pit. An ordinary one. Okay, just remember what you're here to do, and everything will go great.
+1,,I am in the Still Workshop.,"I will follow the instructions step-by-step, starting by going south.",go south,,"You find yourself in a dish-pit. An ordinary one. Okay, just remember what you're here to do, and everything will go great.
 
 
 
@@ -19,7 +13,7 @@ You don't like doors? Why not try going east, that entranceway is unguarded. The
 
 
 You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-3,,I tried to go south but ended up in the dish-pit.,I should now go east as suggested to continue following the directions.,go east,,"You've just sauntered into a laundromat.
+2,,I went south to the Dish-Pit.,"Next, I should go east as instructed.",go east,,"You've just sauntered into a laundromat.
 
 
 
@@ -28,12 +22,7 @@ There is an unblocked exit to the south. There is an unguarded exit to the west.
 
 
 There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-4,,"I tried to go south twice and ended up in the dish-pit, then I went south again and arrived at the laundromat.",I should now go east as the next step in the instructions.,go east,,You can't go that way.,Laundromat,"You've just sauntered into a laundromat.
-
-
-
-There is an unblocked exit to the south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
-5,,I tried to go east from the laundromat but couldn't; I am still in the laundromat.,I should try to go south from the laundromat since that exit is unblocked.,go south,,"This might come as a shock to you, but you've just walked into a shower.
+3,,I went east to the Laundromat.,"Next, I should go south as instructed.",go south,,"This might come as a shock to you, but you've just walked into a shower.
 
 
 
@@ -42,7 +31,7 @@ You need an unguarded exit? You should try going east. There is an unguarded exi
 
 
 You need an unguarded exit? You should try going east. There is an unguarded exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
-6,,I went south from the laundromat and arrived at the shower.,I should go east from the shower as suggested to find an unguarded exit.,go east,,"You're now in a spare room.
+4,,I went south to the Shower.,Now I should go east as the next step.,go east,,"You're now in a spare room.
 
 
 
@@ -51,7 +40,27 @@ You need an unblocked exit? You should try going north. You don't like doors? Wh
 
 
 You need an unblocked exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-7,,I went south to the spare room.,I should go north from the spare room as suggested.,go north,,"You are in a study. A serious kind of place.
+5,,I went east to the Spare Room.,"Next, I should go south as instructed.",go south,,You can't go that way.,Spare Room,"You're now in a spare room.
+
+
+
+You need an unblocked exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+6,,I tried to go south from the Spare Room but the way was blocked.,"Since south is blocked, I will try going east as the next step.",go east,,You can't go that way.,Spare Room,"You're now in a spare room.
+
+
+
+You need an unblocked exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+7,,I tried to go east from the Spare Room but the way was blocked.,I will try going south as the next step.,go south,,You can't go that way.,Spare Room,"You're now in a spare room.
+
+
+
+You need an unblocked exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+8,,I tried to go south from the Spare Room but the way was blocked.,I will try going east again as the next step.,go east,,You can't go that way.,Spare Room,"You're now in a spare room.
+
+
+
+You need an unblocked exit? You should try going north. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+9,,I tried to go east from the Spare Room but the way was blocked.,I will try going north from the Spare Room as suggested.,go north,,"You are in a study. A serious kind of place.
 
 
 
@@ -60,7 +69,7 @@ You need an unblocked exit? You should try going north. There is an exit to the 
 
 
 You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-8,,I went south to the study.,I should go north from the study as suggested to continue following the directions.,go north,,"You find yourself in a sauna. An usual one.
+10,,I went north from the Spare Room to the Serious Study.,I will go north again from the Serious Study as suggested.,go north,,"You find yourself in a sauna. An usual one.
 
 
 
@@ -69,332 +78,278 @@ There is an unguarded exit to the south. There is an exit to the west. Don't wor
 
 
 There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-9,,I went south to the sauna.,I should go north from the sauna as instructed.,go north,,You can't go that way.,Sauna,"You find yourself in a sauna. An usual one.
+11,,I went north from the Serious Study to the Sauna.,I should go west from the Sauna to continue exploring.,go west,,"You are in a bar. A typical kind of place. Let's see what's in here.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-10,,I tried to go east from the sauna but couldn't; I am still in the sauna.,I should go south from the sauna since there is an unguarded exit there.,go south,,"You are in a study. A serious kind of place.
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked.",Bar,"You are in a bar. A typical kind of place. Let's see what's in here.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+12,,I went west from the Sauna to the Bar.,I should go south from the Bar to continue following the path.,go south,,"You've just walked into a steam room.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-11,,I tried to go east from the sauna but couldn't; I am still in the sauna. Then I moved to the study.,I should go north from the study as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
+There is an unguarded exit to the east. There is an unblocked exit to the north.",Steam Room,"You've just walked into a steam room.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an unguarded exit to the east. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,False,
+13,,I went south from the Bar to the Steam Room.,I should go east from the Steam Room as the exit is unguarded and unblocked.,go east,,"You've entered a cubicle.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-12,,I moved to the sauna; there is an unguarded exit to the south and an exit to the west.,I should go south from the sauna as the exit is unguarded.,go south,,"You are in a study. A serious kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cubicle,"You've entered a cubicle.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+14,,I went east from the Steam Room to the Cubicle.,I should go south from the Cubicle as per the instructions.,go south,,You can't go that way.,Cubicle,"You've entered a cubicle.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-13,,I moved to the study; it is a serious kind of place with an unguarded exit to the south.,I should try to go north from the study as suggested.,go north,,"You find yourself in a sauna. An usual one.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+15,,I tried to go south from the Cubicle but the way was blocked.,"Since south is blocked, I should try going east from the Cubicle as suggested.",go east,,"You arrive in a closet. An usual kind of place. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Closet,"You arrive in a closet. An usual kind of place. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-14,,I moved to the sauna; there is an unguarded exit to the south and an exit to the west.,I should go south from the sauna.,go south,,"You are in a study. A serious kind of place.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+16,,I went east from the Cubicle to the Closet.,I should try going south from the Closet since there is an unguarded exit there.,go south,,"You're now in a chamber.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north.",Chamber,"You're now in a chamber.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-15,,I moved to the study; it is a serious kind of place.,I should try to go north from the study as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+17,,I went south from the Closet to the Chamber.,I should go east from the Chamber as the exit is unblocked.,go east,,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-16,,I am in the sauna with exits to the south and west.,I should go south from the sauna as the next step in the sequence.,go south,,"You are in a study. A serious kind of place.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+18,,I went east from the Chamber to the Cookhouse.,I should look around the Cookhouse to find the coin on the floor.,look,,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-17,,I moved to the study; it is a serious kind of place.,I should try to go north from the study as suggested.,go north,,"You find yourself in a sauna. An usual one.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+19,,I looked around the Cookhouse but did not find any specific mention of a coin on the floor.,I should try to take the coin from the floor in the Cookhouse.,take coin from floor,,You can't see any such thing.,Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+20,,I tried to take the coin from the floor in the Cookhouse but was told there is no coin visible.,I should look more carefully around the Cookhouse to find the coin or any other clues.,look around the Cookhouse carefully,,You can't see any such thing.,Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-18,,I am in the sauna with exits to the south and west.,I should go south from the sauna as the exit is unguarded.,go south,,"You are in a study. A serious kind of place.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+21,,I looked carefully around the Cookhouse but still could not find any coin.,"Since the coin is not visible on the floor, I should try to examine the floor or other objects in the Cookhouse more closely to find the coin.",examine floor,,You can't see any such thing.,Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+22,,I examined the floor in the Cookhouse but still could not find any coin.,"Since the coin is not visible on the floor, I should try to look around the Cookhouse again to see if there is any container or object that might be hiding the coin.",look,,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-19,,I moved to the study; it is a serious kind of place.,I should try to go north from the study as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+23,,I looked around the Cookhouse again but found no new information or objects.,"Since the coin is not visible on the floor or in plain sight, I should examine the Cookhouse more closely to see if there is any container or object that might contain the coin.",examine cookhouse,,You can't see any such thing.,Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-20,,I moved to the sauna; there is an unguarded exit to the south and an exit to the west.,I should go south from the sauna.,go south,,"You are in a study. A serious kind of place.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+24,,I tried to examine the cookhouse more closely but found no additional details or objects.,"Since examining the cookhouse itself yielded no results, I should try to look around the floor specifically to see if the coin is there.",look floor,,You can't see any such thing.,Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+25,,I looked specifically at the floor in the cookhouse but still could not see any coin.,"Since the coin is not visible on the floor, I should try to look around the cookhouse more thoroughly or check any containers or furniture that might hold the coin.",look around cookhouse carefully,,You can't see any such thing.,Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-21,,I moved to the study; it is a serious kind of place.,I should try to go north as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+26,,I looked around the cookhouse carefully but still could not find any coin.,"I should try to examine specific objects or areas in the cookhouse, such as the floor, counters, or any containers, to find the coin.",examine floor,,You can't see any such thing.,Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+27,,I examined the floor in the cookhouse but still could not find any coin.,"Since the coin is not visible on the floor, I should try to look around the cookhouse again to see if there is any container or object that might be hiding the coin.",look,,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-22,,I am in the sauna with exits to the south and west.,I should go south from the sauna.,go south,,"You are in a study. A serious kind of place.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+28,,I looked around the cookhouse again but found no new information or objects.,"Since there is no visible coin on the floor or in the room, I should try to check the floor more closely by examining it again or try to take the coin from the floor once more.",examine floor,,You can't see any such thing.,Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-23,,I am in the study with an unguarded exit to the south.,I should try to go north as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+29,,I examined the floor in the cookhouse but was told I can't see any coin.,"Since the coin is not visible on the floor, I should try to look around the cookhouse once more to see if there is any container or object that might hold the coin.",look,,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-24,,I moved to the sauna; there is an unguarded exit to the south and an exit to the west.,I should go south from the sauna.,go south,,"You are in a study. A serious kind of place.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+30,,I looked around the cookhouse again but found no new information or objects.,I should try to go west or south to explore adjacent rooms where the coin might be located.,go west,,"You're now in a chamber.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north.",Chamber,"You're now in a chamber.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-25,,I moved to the study; it is a serious kind of place.,I should try to go north as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+31,,I went west from the cookhouse to the chamber.,"I should go north from the chamber to explore the unguarded exit mentioned, which might lead to the coin.",go north,,"You arrive in a closet. An usual kind of place. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Closet,"You arrive in a closet. An usual kind of place. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-26,,I am in the sauna with exits to the south and west.,I should go south from the sauna.,go south,,"You are in a study. A serious kind of place.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+32,,I went north from the chamber to the closet.,I should go west from the closet as suggested to continue exploring for the coin.,go west,,"You've entered a cubicle.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cubicle,"You've entered a cubicle.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-27,,"I am in the study, a serious kind of place, with an unguarded exit to the south.",I should try to go north as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+33,,I went west from the closet to the cubicle.,I should try going east from the cubicle to continue exploring.,go east,,"You arrive in a closet. An usual kind of place. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Closet,"You arrive in a closet. An usual kind of place. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-28,,I am in the sauna with exits to the south and west.,I should go south from the sauna.,go south,,"You are in a study. A serious kind of place.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+34,,I went east from the cubicle to the closet.,I should go south from the closet to continue following the path.,go south,,"You're now in a chamber.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north.",Chamber,"You're now in a chamber.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-29,,I am in the study with an unguarded exit to the south.,I should try to go north as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+35,,I went south from the closet to the chamber.,I should go east from the chamber to reach the cookhouse where the coin might be.,go east,,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-30,,I am in the sauna with exits to the south and west.,I should go south from the sauna.,go south,,"You are in a study. A serious kind of place.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+36,,I went east from the chamber to the cookhouse.,I should look around the cookhouse carefully again to try to find the coin on the floor.,look,,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-31,,"I am in the study, a serious kind of place, with an unguarded exit to the south.",I should try to go north as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+37,,I looked around the cookhouse but did not find any coin.,"Since the coin is not visible on the floor, I should try to take the coin from the floor in the cookhouse again to confirm if it is there or not.",take coin from floor,,You can't see any such thing.,Cookhouse,"You arrive in a cookhouse. An usual kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+38,,I tried to take the coin from the floor in the cookhouse but was told I can't see any such thing.,"Since the coin is not visible or accessible on the floor in the cookhouse, I should explore the adjacent rooms to see if the coin might be located there.",go west,,"You're now in a chamber.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-32,,I am in the sauna with exits to the south and west.,I should go south from the sauna.,go south,,"You are in a study. A serious kind of place.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north.",Chamber,"You're now in a chamber.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+There is an exit to the east. Don't worry, it is unblocked. You need an unguarded exit? You should try going north.",You are carrying nothing.,0 of 1,0.0,False,
+39,,I went west from the cookhouse to the chamber.,I should go north from the chamber as suggested to explore further for the coin.,go north,,"You arrive in a closet. An usual kind of place. You can barely contain your excitement.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-33,,"I am in the study, a serious kind of place, with an unguarded exit to the south.",I should try to go north as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Closet,"You arrive in a closet. An usual kind of place. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+40,,I went north from the chamber to the closet.,I should go west from the closet to continue exploring for the coin.,go west,,"You've entered a cubicle.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-34,,I am in the sauna with exits to the south and west.,I should go south from the sauna.,go south,,"You are in a study. A serious kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cubicle,"You've entered a cubicle.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+41,,I went west from the closet to the cubicle.,I should go east from the cubicle to return to the closet and then try another direction to find the coin.,go east,,"You arrive in a closet. An usual kind of place. You can barely contain your excitement.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-35,,I am in the study with an unguarded exit to the south.,I should try to go north as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Closet,"You arrive in a closet. An usual kind of place. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+42,,I went east from the cubicle to the closet.,I should go west from the closet as suggested to explore further.,go west,,"You've entered a cubicle.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-36,,I am in the sauna with exits to the south and west.,I should go south from the sauna.,go south,,"You are in a study. A serious kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cubicle,"You've entered a cubicle.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+43,,I went west from the closet to the cubicle.,I should go east from the cubicle to return to the closet.,go east,,"You arrive in a closet. An usual kind of place. You can barely contain your excitement.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-37,,"I am in the study, a serious kind of place, with an unguarded exit to the south.",I should try to go north as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",Closet,"You arrive in a closet. An usual kind of place. You can barely contain your excitement.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
+There is an unguarded exit to the south. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+44,,I went east from the cubicle to the closet.,I should go west from the closet as suggested.,go west,,"You've entered a cubicle.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-38,,I am in the sauna with exits to the south and west.,I should go south from the sauna.,go south,,"You are in a study. A serious kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",Cubicle,"You've entered a cubicle.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
+You don't like doors? Why not try going east, that entranceway is unblocked. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+45,,I went west from the closet to the cubicle.,I should go west from the cubicle as the entranceway is unblocked.,go west,,"You've just walked into a steam room.
 
 
 
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-39,,I am in the study with an unguarded exit to the south.,I should try going north to find an unblocked exit as suggested.,go north,,"You find yourself in a sauna. An usual one.
+There is an unguarded exit to the east. There is an unblocked exit to the north.",Steam Room,"You've just walked into a steam room.
 
 
 
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
-
-
-
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-40,,I am in the sauna with exits to the south and west.,I should go south from the sauna to continue following the directions.,go south,,"You are in a study. A serious kind of place.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-41,,I am in the study with an unguarded exit to the south.,I should try to go north to find an unblocked exit as suggested.,go north,,"You find yourself in a sauna. An usual one.
-
-
-
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
-
-
-
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-42,,I am in the sauna with exits to the south and west.,I should go south from the sauna to continue following the instructions.,go south,,"You are in a study. A serious kind of place.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-43,,I am in the study with an unguarded exit to the south.,I should try to go north as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
-
-
-
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
-
-
-
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-44,,I am in the sauna with exits to the south and west.,I should go south from the sauna to continue following the path.,go south,,"You are in a study. A serious kind of place.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",Serious Study,"You are in a study. A serious kind of place.
-
-
-
-You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
-45,,"I am in the study, a serious kind of place, with an unguarded exit to the south.",I should go north as suggested to find an unblocked exit.,go north,,"You find yourself in a sauna. An usual one.
-
-
-
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",Sauna,"You find yourself in a sauna. An usual one.
-
-
-
-There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,True,
+There is an unguarded exit to the east. There is an unblocked exit to the north.",You are carrying nothing.,0 of 1,0.0,True,
