@@ -24,11 +24,10 @@ summaries = summaries[~summaries["eval_name"].str.startswith("debug-")]
 # Group by agent
 groups = summaries.groupby("agent_name")
 
-# Verify that all agents have the same number of tasks
-num_episodes_per_agent = groups["tasks"].sum()
-if len(num_episodes_per_agent.unique()) != 1:
+# Verify all groups have same number of episodes
+if groups["tasks"].sum().nunique() != 1:
     raise ValueError("Not all agents have the same number of tasks")
-episodes = num_episodes_per_agent.unique()[0]
+episodes = groups["tasks"].sum().unique()[0]
 
 # Summarize by agent
 groups = groups["total_steps"].sum().reset_index()

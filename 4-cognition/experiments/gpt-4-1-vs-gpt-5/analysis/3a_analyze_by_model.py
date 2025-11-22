@@ -36,6 +36,10 @@ summaries["avg_reward_per_task"] = summaries["total_reward"] / summaries["tasks"
 summaries["avg_reward_per_step"] = summaries["total_reward"] / summaries["total_steps"]
 summaries["avg_reward_per_token"] = summaries["total_reward"] / summaries["total_tokens"]
 
+# Verify all groups have same number of episodes
+if summaries["tasks"].nunique() != 1:
+    raise ValueError("Not all groups have the same number of tasks")
+
 # Order models
 # [FINISH]
 
