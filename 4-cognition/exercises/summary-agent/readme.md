@@ -3,7 +3,8 @@ An exercise to create an agent that summarizes it's previous action-state pairs 
 
 # Treatments
 - baseline - a standard react agent with full action-state history
-- summary-k1 - an agent with full k(n) action-state pairs but all others are summarized
+- summary-k(n) - an agent with full k(n) action-state pairs but all others are summarized
+- truncate-k(n) - an agent with full k(n) action-state pairs but all other are truncated
 
 # Results
 [FINISH]

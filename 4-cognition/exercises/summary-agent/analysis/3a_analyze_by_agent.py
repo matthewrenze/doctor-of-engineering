@@ -22,18 +22,23 @@ summaries = summaries[summaries["eval_name"].str.startswith("tw-")]
 # Create groups
 summaries = summaries.groupby(["agent_name", "model_name"], as_index=False).agg({
     "tasks": "sum",
+    "successes": "sum",
     "total_steps": "sum",
     "total_tokens": "sum",
     "total_reward": "sum",
-    "accuracy": "mean"
 })
 
 # Compute averages
+summaries["accuracy"] = summaries["successes"] / summaries["tasks"]
 summaries["avg_steps_per_task"] = summaries["total_steps"] / summaries["tasks"]
 summaries["avg_tokens_per_task"] = summaries["total_tokens"] / summaries["tasks"]
 summaries["avg_reward_per_task"] = summaries["total_reward"] / summaries["tasks"]
 summaries["avg_reward_per_step"] = summaries["total_reward"] / summaries["total_steps"]
 summaries["avg_reward_per_token"] = summaries["total_reward"] / summaries["total_tokens"]
+
+# Verify all groups have same number of episodes
+if summaries["tasks"].nunique() != 1:
+    raise ValueError("Not all groups have the same number of tasks")
 
 # Order agents
 agent_order = [
