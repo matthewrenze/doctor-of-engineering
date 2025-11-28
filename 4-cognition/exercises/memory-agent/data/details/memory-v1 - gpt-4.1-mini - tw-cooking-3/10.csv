@@ -1,0 +1,352 @@
+step_id,memory,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a banana, a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.","You are carrying: a yellow bell pepper, a red apple, a raw purple potato, a raw red potato and an orange bell pepper.",0 of 16,0.0,False,
+1,"- I am in the kitchen.
+- On the counter: banana, raw yellow potato, cookbook, knife.
+- I have a yellow bell pepper, red apple, raw purple potato, raw red potato, and orange bell pepper in my inventory.
+- There is a fridge, oven, stove, table (empty), counter (vast).
+- There is a closed frosted-glass door to the south, exits east and west without doors.
+- Task: Check the cookbook for a recipe, cook a meal, and eat it.",I should examine the cookbook on the counter to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+banana
+  red onion
+  carrot
+  pork chop
+  yellow bell pepper
+
+Directions:
+chop the banana
+  fry the banana
+  slice the red onion
+  fry the red onion
+  chop the carrot
+  fry the carrot
+  dice the pork chop
+  roast the pork chop
+  chop the yellow bell pepper
+  roast the yellow bell pepper
+  prepare meal",Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a banana, a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.","You are carrying: a yellow bell pepper, a red apple, a raw purple potato, a raw red potato and an orange bell pepper.",0 of 16,0.0,False,
+2,"- Recipe #1 requires banana, red onion, carrot, pork chop, yellow bell pepper.
+- Steps: chop and fry banana, slice and fry red onion, chop and fry carrot, dice and roast pork chop, chop and roast yellow bell pepper, then prepare meal.
+- I have banana and yellow bell pepper on the counter.
+- I have yellow bell pepper, red apple, raw purple potato, raw red potato, and orange bell pepper in inventory.
+- No red onion, carrot, or pork chop visible yet.","I need to find red onion, carrot, and pork chop to complete the recipe. I should check the fridge for these ingredients.",open fridge,,"You open the fridge, revealing a red onion, a raw pork chop, a carrot, a block of cheese, a red hot pepper and a white onion.",Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a red onion, a raw pork chop, a carrot, a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a banana, a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.","You are carrying: a yellow bell pepper, a red apple, a raw purple potato, a raw red potato and an orange bell pepper.",0 of 16,0.0,False,
+3,"- Fridge contains red onion, raw pork chop, carrot, block of cheese, red hot pepper, white onion.
+- Recipe requires banana, red onion, carrot, pork chop, yellow bell pepper.
+- I have banana and yellow bell pepper on the counter.
+- I have yellow bell pepper, red apple, raw purple potato, raw red potato, orange bell pepper in inventory.","I should take the banana, red onion, carrot, pork chop, and yellow bell pepper to prepare the meal.",take banana from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a red onion, a raw pork chop, a carrot, a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a banana, a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.","You are carrying: a yellow bell pepper, a red apple, a raw purple potato, a raw red potato and an orange bell pepper.",0 of 16,0.0,False,
+4,"- I am carrying yellow bell pepper, red apple, raw purple potato, raw red potato, orange bell pepper.
+- I need to free inventory space to take banana, red onion, carrot, pork chop, and yellow bell pepper for the recipe.",I should drop unnecessary items from my inventory to make space for the recipe ingredients.,drop red apple,,You drop the red apple on the ground.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a red onion, a raw pork chop, a carrot, a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a banana, a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a red apple on the floor.","You are carrying: a yellow bell pepper, a raw purple potato, a raw red potato and an orange bell pepper.",0 of 16,0.0,False,
+5,"- I dropped the red apple to free inventory space.
+- I am carrying yellow bell pepper, raw purple potato, raw red potato, orange bell pepper.
+- I need to take banana, red onion, carrot, pork chop, and yellow bell pepper for the recipe.",I should now take the banana from the counter.,take banana from counter,,"You take the banana from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a red onion, a raw pork chop, a carrot, a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a red apple on the floor.","You are carrying: a banana, a yellow bell pepper, a raw purple potato, a raw red potato and an orange bell pepper.",1 of 16,0.0625,False,
+6,"- I am carrying banana, yellow bell pepper, raw purple potato, raw red potato, orange bell pepper.
+- I still need red onion, carrot, and pork chop for the recipe.
+- I need to free inventory space to take these ingredients.",I should drop one more item to make space for the remaining ingredients.,drop raw purple potato,,You drop the purple potato on the ground.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a red onion, a raw pork chop, a carrot, a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw purple potato and a red apple on the floor.","You are carrying: a banana, a yellow bell pepper, a raw red potato and an orange bell pepper.",1 of 16,0.0625,False,
+7,"- I dropped the raw purple potato to free inventory space.
+- I am carrying banana, yellow bell pepper, raw red potato, orange bell pepper.
+- I need to take red onion, carrot, and pork chop from the fridge.",I should take the red onion from the fridge next.,take red onion from fridge,,"You take the red onion from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a raw pork chop, a carrot, a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw purple potato and a red apple on the floor.","You are carrying: a red onion, a banana, a yellow bell pepper, a raw red potato and an orange bell pepper.",2 of 16,0.125,False,
+8,"- I am carrying red onion, banana, yellow bell pepper, raw red potato, orange bell pepper.
+- I still need to take carrot and raw pork chop from the fridge.
+- I need to free inventory space to take these ingredients.",I should drop the raw red potato to make space for the remaining ingredients.,drop raw red potato,,You drop the red potato on the ground.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a raw pork chop, a carrot, a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a red onion, a banana, a yellow bell pepper and an orange bell pepper.",2 of 16,0.125,False,
+9,"- I dropped the raw red potato to free inventory space.
+- I am carrying red onion, banana, yellow bell pepper, orange bell pepper.
+- I need to take carrot and raw pork chop from the fridge.",I should take the carrot from the fridge next.,take carrot from fridge,,"You take the carrot from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a raw pork chop, a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a carrot, a red onion, a banana, a yellow bell pepper and an orange bell pepper.",3 of 16,0.1875,False,
+10,"- I am carrying carrot, red onion, banana, yellow bell pepper, orange bell pepper.
+- I need to take raw pork chop from the fridge.
+- I need to free inventory space to take the pork chop.",I should drop the banana to make space for the pork chop.,drop banana,,You drop the banana on the ground.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a raw pork chop, a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a carrot, a red onion, a yellow bell pepper and an orange bell pepper.",3 of 16,0.1875,False,
+11,"- I dropped the banana to free inventory space.
+- I am carrying carrot, red onion, yellow bell pepper, orange bell pepper.
+- I need to take raw pork chop from the fridge.",I should take the raw pork chop from the fridge now.,take raw pork chop from fridge,,"You take the pork chop from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a raw pork chop, a carrot, a red onion, a yellow bell pepper and an orange bell pepper.",4 of 16,0.25,False,
+12,"- I am carrying raw pork chop, carrot, red onion, yellow bell pepper, orange bell pepper.
+- There is a cookbook on the counter.
+- I need to check the cookbook for the recipe.",I should examine the cookbook on the counter to find the recipe.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+banana
+  red onion
+  carrot
+  pork chop
+  yellow bell pepper
+
+Directions:
+chop the banana
+  fry the banana
+  slice the red onion
+  fry the red onion
+  chop the carrot
+  fry the carrot
+  dice the pork chop
+  roast the pork chop
+  chop the yellow bell pepper
+  roast the yellow bell pepper
+  prepare meal",Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a raw pork chop, a carrot, a red onion, a yellow bell pepper and an orange bell pepper.",4 of 16,0.25,False,
+13,"- Recipe requires banana, red onion, carrot, pork chop, yellow bell pepper.
+- I am missing the banana, which is on the floor.
+- I have raw pork chop, carrot, red onion, yellow bell pepper, orange bell pepper (extra).
+- Steps: chop and fry banana, slice and fry red onion, chop and fry carrot, dice and roast pork chop, chop and roast yellow bell pepper, then prepare meal.",I should take the banana from the floor to have all ingredients.,take banana from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a raw pork chop, a carrot, a red onion, a yellow bell pepper and an orange bell pepper.",4 of 16,0.25,False,
+14,"- I am carrying raw pork chop, carrot, red onion, yellow bell pepper, orange bell pepper.
+- I need to drop one item to pick up the banana.
+- The orange bell pepper is not needed for the recipe.",I should drop the orange bell pepper to free space for the banana.,drop orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is an orange bell pepper, a banana, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a raw pork chop, a carrot, a red onion and a yellow bell pepper.",4 of 16,0.25,False,
+15,"- I dropped the orange bell pepper.
+- I am carrying raw pork chop, carrot, red onion, yellow bell pepper.
+- Banana is on the floor.
+- I need to take the banana.",I should take the banana from the floor now.,take banana from floor,,You pick up the banana from the ground.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a banana, a raw pork chop, a carrot, a red onion and a yellow bell pepper.",4 of 16,0.25,False,
+16,"- I am carrying banana, raw pork chop, carrot, red onion, yellow bell pepper.
+- The recipe requires chopping and frying banana, slicing and frying red onion, chopping and frying carrot, dicing and roasting pork chop, chopping and roasting yellow bell pepper, then preparing the meal.
+- There is a knife on the counter.",I should take the knife from the counter to prepare the ingredients.,take knife from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a banana, a raw pork chop, a carrot, a red onion and a yellow bell pepper.",4 of 16,0.25,False,
+17,"- I am carrying banana, raw pork chop, carrot, red onion, yellow bell pepper.
+- I need the knife to prepare the meal.
+- I am carrying too many items to pick up the knife.
+- I can drop the banana temporarily since it needs to be chopped and fried later.",I should drop the banana to free space for the knife.,drop banana,,You drop the banana on the ground.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato, a cookbook and a knife. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a raw pork chop, a carrot, a red onion and a yellow bell pepper.",4 of 16,0.25,False,
+18,"- I dropped the banana on the ground.
+- I am carrying raw pork chop, carrot, red onion, yellow bell pepper.
+- Knife is on the counter.
+- I need to take the knife now.",I should take the knife from the counter.,take knife from counter,,You take the knife from the counter.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato and a cookbook. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a knife, a raw pork chop, a carrot, a red onion and a yellow bell pepper.",4 of 16,0.25,False,
+19,"- I am carrying knife, raw pork chop, carrot, red onion, yellow bell pepper.
+- Banana is on the floor.
+- I need to chop and fry banana, slice and fry red onion, chop and fry carrot, dice and roast pork chop, chop and roast yellow bell pepper, then prepare meal.
+- I need to take the banana next.",I should take the banana from the floor.,take banana from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato and a cookbook. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a knife, a raw pork chop, a carrot, a red onion and a yellow bell pepper.",4 of 16,0.25,False,
+20,"- I am carrying knife, raw pork chop, carrot, red onion, yellow bell pepper.
+- Banana is on the floor.
+- I cannot carry more items.
+- I can drop an item to pick up the banana.",I should drop the carrot to free space for the banana.,drop carrot,,You drop the carrot on the ground.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato and a cookbook. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a carrot, a banana, an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a knife, a raw pork chop, a red onion and a yellow bell pepper.",4 of 16,0.25,False,
+21,"- I dropped the carrot on the ground.
+- I am carrying knife, raw pork chop, red onion, yellow bell pepper.
+- Banana is on the floor.
+- I should take the banana now.",I should take the banana from the floor.,take banana from floor,,You pick up the banana from the ground.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato and a cookbook. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a carrot, an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a banana, a knife, a raw pork chop, a red onion and a yellow bell pepper.",4 of 16,0.25,False,
+22,"- I am carrying banana, knife, raw pork chop, red onion, yellow bell pepper.
+- Carrot is on the floor.
+- I need to chop and fry carrot, slice and fry red onion, chop and fry banana, dice and roast pork chop, chop and roast yellow bell pepper, then prepare meal.
+- I have the knife to chop and slice.",I should chop the carrot first.,chop carrot with knife,,You need to take the carrot first.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato and a cookbook. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a carrot, an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a banana, a knife, a raw pork chop, a red onion and a yellow bell pepper.",4 of 16,0.25,False,
+23,"- Carrot is on the floor.
+- I am carrying banana, knife, raw pork chop, red onion, yellow bell pepper.
+- I need to take the carrot before chopping it.",I should take the carrot from the floor.,take carrot from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato and a cookbook. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a carrot, an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a banana, a knife, a raw pork chop, a red onion and a yellow bell pepper.",4 of 16,0.25,False,
+24,"- I am carrying banana, knife, raw pork chop, red onion, yellow bell pepper.
+- Carrot is on the floor.
+- I cannot carry more items.
+- I can drop an item to pick up the carrot.",I should drop the banana to free space for the carrot.,drop banana,,You drop the banana on the ground.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato and a cookbook. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, a carrot, an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a knife, a raw pork chop, a red onion and a yellow bell pepper.",4 of 16,0.25,False,
+25,"- I dropped the banana on the floor.
+- I am carrying knife, raw pork chop, red onion, yellow bell pepper.
+- Carrot is on the floor.
+- I should take the carrot now.",I should take the carrot from the floor.,take carrot from floor,,You pick up the carrot from the ground.,Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato and a cookbook. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a carrot, a knife, a raw pork chop, a red onion and a yellow bell pepper.",4 of 16,0.25,False,
+26,"- I am carrying carrot, knife, raw pork chop, red onion, yellow bell pepper.
+- Banana, orange bell pepper, raw red potato, raw purple potato, red apple are on the floor.
+- I need to cook a meal using the ingredients I have.
+- I should start by chopping the carrot.",I should chop the carrot with the knife.,chop carrot with knife,,"You chop the carrot.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato and a cookbook. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a chopped carrot, a knife, a raw pork chop, a red onion and a yellow bell pepper.",5 of 16,0.3125,False,
+27,"- I am carrying chopped carrot, knife, raw pork chop, red onion, yellow bell pepper.
+- Banana, orange bell pepper, raw red potato, raw purple potato, red apple are on the floor.
+- I need to cook the meal.
+- Next, I should slice the red onion.",I should slice the red onion with the knife.,slice red onion with knife,,"You slice the red onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato and a cookbook. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a chopped carrot, a knife, a raw pork chop, a sliced red onion and a yellow bell pepper.",6 of 16,0.375,False,
+28,"- I am carrying chopped carrot, knife, raw pork chop, sliced red onion, yellow bell pepper.
+- Banana, orange bell pepper, raw red potato, raw purple potato, red apple are on the floor.
+- I have chopped and sliced some ingredients.
+- Next, I should slice the yellow bell pepper.",I should slice the yellow bell pepper with the knife.,slice yellow bell pepper with knife,,"You slice the yellow bell pepper.
+
+
+
+                              *** You lost! ***
+
+You scored 6 out of a possible 16, in 28 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You find yourself in a kitchen. An ordinary kind of place.
+
+You see a fridge. The fridge contains a block of cheese, a red hot pepper and a white onion, so there's that. You see an oven. Hey, want to see a table? Look over there, a table. But there isn't a thing on it. You can see a counter. The counter is vast. On the counter you make out a raw yellow potato and a cookbook. Wow! Just like in the movies! You make out a stove. But oh no! there's nothing on this piece of trash.
+
+There is a closed frosted-glass door leading south. There is an exit to the east. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, an orange bell pepper, a raw red potato, a raw purple potato and a red apple on the floor.","You are carrying: a chopped carrot, a knife, a raw pork chop, a sliced red onion and a yellow bell pepper.",6 of 16,0.375,True,

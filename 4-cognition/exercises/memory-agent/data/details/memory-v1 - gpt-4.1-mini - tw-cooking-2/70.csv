@@ -1,0 +1,230 @@
+step_id,memory,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato and a knife. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well","You are carrying: a block of cheese, a red apple, a raw red potato, a yellow bell pepper and a raw pork chop.",0 of 12,0.0,False,
+1,"- I am in the kitchen.
+- There is a closed fridge, a closed oven, a table with a cookbook, a counter with a raw yellow potato and a knife, and a stove.
+- I am carrying a block of cheese, a red apple, a raw red potato, a yellow bell pepper, and a raw pork chop.
+- The goal is to check the cookbook for a recipe and cook a delicious meal.",I should examine the cookbook on the table to find a recipe for cooking a meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+block of cheese
+  pork chop
+  red apple
+  red potato
+  yellow bell pepper
+
+Directions:
+dice the block of cheese
+  fry the block of cheese
+  slice the pork chop
+  roast the pork chop
+  dice the red apple
+  fry the red apple
+  dice the red potato
+  roast the red potato
+  slice the yellow bell pepper
+  fry the yellow bell pepper
+  prepare meal",Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato and a knife. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well","You are carrying: a block of cheese, a red apple, a raw red potato, a yellow bell pepper and a raw pork chop.",0 of 12,0.0,False,
+2,"- I am in the kitchen.
+- The cookbook recipe requires: block of cheese, pork chop, red apple, red potato, yellow bell pepper.
+- Steps: dice and fry block of cheese, slice and roast pork chop, dice and fry red apple, dice and roast red potato, slice and fry yellow bell pepper, then prepare meal.
+- I have all required ingredients in inventory.",I should start by dicing the block of cheese as the first step in the recipe.,dice block of cheese,,What do you want to dice the block of cheese with?,Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato and a knife. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well","You are carrying: a block of cheese, a red apple, a raw red potato, a yellow bell pepper and a raw pork chop.",0 of 12,0.0,False,
+3,"- I am in the kitchen.
+- I need to dice the block of cheese using a tool.
+- There is a knife on the counter that can be used to dice the cheese.
+- I have all ingredients required for the recipe.",I should use the knife on the counter to dice the block of cheese.,dice block of cheese with knife,,You need to take the knife first.,Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato and a knife. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well","You are carrying: a block of cheese, a red apple, a raw red potato, a yellow bell pepper and a raw pork chop.",0 of 12,0.0,False,
+4,"- I am in the kitchen.
+- There is a knife on the counter.
+- I need the knife to dice the block of cheese.
+- I am carrying all ingredients but not the knife.",I should take the knife from the counter before dicing the block of cheese.,take knife from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato and a knife. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well","You are carrying: a block of cheese, a red apple, a raw red potato, a yellow bell pepper and a raw pork chop.",0 of 12,0.0,False,
+5,"- I am in the kitchen.
+- I am carrying a block of cheese, a red apple, a raw red potato, a yellow bell pepper, and a raw pork chop.
+- I cannot carry more items, so I need to drop something to take the knife.
+- The knife is on the counter.",I should drop one item to free up space to take the knife; the red apple is likely the easiest to drop temporarily.,drop red apple,,You drop the red apple on the ground.,Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato and a knife. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well
+
+
+
+There is a red apple on the floor.","You are carrying: a block of cheese, a raw red potato, a yellow bell pepper and a raw pork chop.",0 of 12,0.0,False,
+6,"- I am in the kitchen.
+- I dropped the red apple on the floor to free up space.
+- The knife is on the counter.
+- I am carrying a block of cheese, a raw red potato, a yellow bell pepper, and a raw pork chop.",I should now take the knife from the counter.,take knife from counter,,You take the knife from the counter.,Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well
+
+
+
+There is a red apple on the floor.","You are carrying: a knife, a block of cheese, a raw red potato, a yellow bell pepper and a raw pork chop.",0 of 12,0.0,False,
+7,"- I am in the kitchen.
+- I am carrying a knife, block of cheese, raw red potato, yellow bell pepper, and raw pork chop.
+- The red apple is on the floor.
+- Next step is to dice the block of cheese with the knife.",I should dice the block of cheese with the knife now.,dice block of cheese with knife,,"You dice the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well
+
+
+
+There is a red apple on the floor.","You are carrying: a knife, a diced block of cheese, a raw red potato, a yellow bell pepper and a raw pork chop.",1 of 12,0.08333333333333333,False,
+8,"- I am in the kitchen.
+- I have diced the block of cheese.
+- I am carrying a knife, diced block of cheese, raw red potato, yellow bell pepper, and raw pork chop.
+- The red apple is on the floor.
+- There is a cookbook on the table that likely contains the recipe.",I should examine the cookbook on the table to check the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+block of cheese
+  pork chop
+  red apple
+  red potato
+  yellow bell pepper
+
+Directions:
+dice the block of cheese
+  fry the block of cheese
+  slice the pork chop
+  roast the pork chop
+  dice the red apple
+  fry the red apple
+  dice the red potato
+  roast the red potato
+  slice the yellow bell pepper
+  fry the yellow bell pepper
+  prepare meal",Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well
+
+
+
+There is a red apple on the floor.","You are carrying: a knife, a diced block of cheese, a raw red potato, a yellow bell pepper and a raw pork chop.",1 of 12,0.08333333333333333,False,
+9,"- I am in the kitchen.
+- I have diced the block of cheese.
+- The recipe requires: dice block of cheese, fry block of cheese, slice pork chop, roast pork chop, dice red apple, fry red apple, dice red potato, roast red potato, slice yellow bell pepper, fry yellow bell pepper, then prepare meal.
+- I am carrying a knife, diced block of cheese, raw red potato, yellow bell pepper, and raw pork chop.
+- The red apple is on the floor.","I should dice the red apple next, so I need to take it from the floor first.",take red apple from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well
+
+
+
+There is a red apple on the floor.","You are carrying: a knife, a diced block of cheese, a raw red potato, a yellow bell pepper and a raw pork chop.",1 of 12,0.08333333333333333,False,
+10,"- I am in the kitchen.
+- I am carrying a knife, diced block of cheese, raw red potato, yellow bell pepper, and raw pork chop.
+- The red apple is on the floor.
+- I need to free space to take the red apple.",I should drop one item to free space; dropping the yellow bell pepper seems reasonable.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well
+
+
+
+There is a yellow bell pepper and a red apple on the floor.","You are carrying: a knife, a diced block of cheese, a raw red potato and a raw pork chop.",1 of 12,0.08333333333333333,False,
+11,"- I am in the kitchen.
+- I dropped the yellow bell pepper on the floor.
+- The red apple and yellow bell pepper are on the floor.
+- I am carrying a knife, diced block of cheese, raw red potato, and raw pork chop.
+- Next step is to take the red apple from the floor.",I should take the red apple from the floor now.,take red apple from floor,,You pick up the red apple from the ground.,Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well
+
+
+
+There is a yellow bell pepper on the floor.","You are carrying: a red apple, a knife, a diced block of cheese, a raw red potato and a raw pork chop.",1 of 12,0.08333333333333333,False,
+12,"- I am in the kitchen.
+- I am carrying a red apple, knife, diced block of cheese, raw red potato, and raw pork chop.
+- The yellow bell pepper is on the floor.
+- Next step is to dice the red apple.",I should dice the red apple with the knife now.,dice red apple with knife,,"You dice the red apple.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well
+
+
+
+There is a yellow bell pepper on the floor.","You are carrying: a diced red apple, a knife, a diced block of cheese, a raw red potato and a raw pork chop.",2 of 12,0.16666666666666666,False,
+13,"- I am in the kitchen.
+- I have diced the red apple and the block of cheese.
+- I am carrying a knife, diced red apple, diced block of cheese, raw red potato, and raw pork chop.
+- The yellow bell pepper is on the floor.
+- Next step is to fry the block of cheese.",I should fry the diced block of cheese on the stove.,fry diced block of cheese with stove,,That's not a verb I recognise.,Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well
+
+
+
+There is a yellow bell pepper on the floor.","You are carrying: a diced red apple, a knife, a diced block of cheese, a raw red potato and a raw pork chop.",2 of 12,0.16666666666666666,False,
+14,"- I am in the kitchen.
+- I have diced the red apple and the block of cheese.
+- I am carrying a knife, diced red apple, diced block of cheese, raw red potato, and raw pork chop.
+- The yellow bell pepper is on the floor.
+- The command ""fry diced block of cheese with stove"" was not recognized.
+- The recipe says to ""fry the block of cheese.""","I should try ""cook diced block of cheese with stove"" to fry it.",cook diced block of cheese with stove,,"You fried the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well
+
+
+
+There is a yellow bell pepper on the floor.","You are carrying: a diced red apple, a knife, a diced fried block of cheese, a raw red potato and a raw pork chop.",3 of 12,0.25,False,
+15,"- I am in the kitchen.
+- I have fried the diced block of cheese.
+- I am carrying a knife, diced red apple, diced fried block of cheese, raw red potato, and raw pork chop.
+- The yellow bell pepper is on the floor.
+- Next step is to dice the raw red potato.",I should dice the raw red potato with the knife.,dice raw red potato with knife,,"You dice the red potato.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well
+
+
+
+There is a yellow bell pepper on the floor.","You are carrying: a diced red apple, a knife, a diced fried block of cheese, a diced raw red potato and a raw pork chop.",4 of 12,0.3333333333333333,False,
+16,"- I am in the kitchen.
+- I have diced the raw red potato.
+- I am carrying a knife, diced red apple, diced fried block of cheese, diced raw red potato, and raw pork chop.
+- The yellow bell pepper is on the floor.
+- Next step is to cook the diced raw red potato.",I should cook the diced raw red potato with the stove.,cook diced raw red potato with stove,,"You fried the red potato.
+
+
+
+                              *** You lost! ***
+
+You scored 4 out of a possible 12, in 14 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You find yourself in a kitchen. A standard kind of place. You begin to take stock of what's in the room.
+
+You make out a closed fridge. You can see a closed oven. You make out a table. You see a cookbook on the table. You can make out a counter. On the counter you can see a raw yellow potato. Hmmm... what else, what else? You see a stove! The stove is conventional. Looks like someone's already been here and taken everything off it, though. Hm. Oh well
+
+
+
+There is a yellow bell pepper on the floor.","You are carrying: a diced red apple, a knife, a diced fried block of cheese, a diced raw red potato and a raw pork chop.",4 of 12,0.3333333333333333,True,

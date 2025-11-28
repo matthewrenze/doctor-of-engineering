@@ -1,0 +1,601 @@
+step_id,memory,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"Welcome to another life changing round of TextWorld! Here is your task for today. First step, make an attempt to move west. If you can accomplish that, travel west. Okay, and then, go north. With that accomplished, make an attempt to travel west. With that done, go to the south. And then, take a trip south. With that over with, attempt to go to the west. Then, venture west. Following that, make an effort to travel north. After that, attempt to go to the west. And then, venture north. And then, travel east. And then, make an effort to go to the east. After that, venture east. And then, travel north. After that, make an effort to go to the east. With that accomplished, try to venture east. With that over with, venture east. Next, head east. If you can accomplish that, lift the coin from the floor of the spare room. That's it!",,Study,"You've just shown up in a study.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+1,"- Starting location is the Study.
+- Exits from Study: north (unblocked), south (unblocked), west (unguarded).","The task instructs to first attempt to move west, then go west if possible. Since west is unguarded, I will go west.",go west,,"You arrive in a parlor. An ordinary kind of place. I guess you better just go and list everything you see here.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Parlor,"You arrive in a parlor. An ordinary kind of place. I guess you better just go and list everything you see here.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+2,"- Starting location was the Study.
+- Moved west to the Parlor.
+- Parlor exits: east (unblocked), north (unguarded), south (unblocked), west (unblocked).","The task says after moving west, go north. I will go north from the Parlor.",go north,,"You're now in the serious office.
+
+
+
+You need an unguarded exit? You should try going south.",Serious Office,"You're now in the serious office.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+3,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Serious Office exit: south (unguarded).","The task says after going north, attempt to go west. There is no mention of a west exit here, so I will try to go west to see if it is possible.",go west,,You can't go that way.,Serious Office,"You're now in the serious office.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+4,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted to go west from Serious Office but failed.
+- Serious Office exit: south (unguarded).","Since west is not possible, the task says after attempting west, go south. I will go south.",go south,,"You arrive in a parlor. An ordinary kind of place. I guess you better just go and list everything you see here.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Parlor,"You arrive in a parlor. An ordinary kind of place. I guess you better just go and list everything you see here.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+5,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- Parlor exits: east (unblocked), north (unguarded), south (unblocked), west (unblocked).","The task says after going south, attempt to go south again. I will try to go south from Parlor.",go south,,"You've just walked into a laundry place.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked.",Laundry Place,"You've just walked into a laundry place.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+6,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Laundry Place exit: north (unblocked).","The task says after going south, attempt to go west. I will try to go west from Laundry Place.",go west,,You can't go that way.,Laundry Place,"You've just walked into a laundry place.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+7,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Laundry Place exit: north (unblocked).","The task says after attempting west, go west. Since west is not possible, I will try to go north as the next best option.",go north,,"You arrive in a parlor. An ordinary kind of place. I guess you better just go and list everything you see here.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",Parlor,"You arrive in a parlor. An ordinary kind of place. I guess you better just go and list everything you see here.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. There is an exit to the south. Don't worry, it is unblocked. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+8,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- Parlor exits: east (unblocked), north (unguarded), south (unblocked), west (unblocked).","The task says after going north, attempt to go west. I will try to go west from Parlor.",go west,,"You've entered a shower.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",Shower,"You've entered a shower.
+
+
+
+You need an unblocked exit? You should try going east. You need an unblocked exit? You should try going north. There is an exit to the south. Don't worry, it is unblocked. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+9,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- Shower exits: east (unblocked), north (unguarded), south (unblocked), west (unguarded).","The task says after going west, go north. I will go north from Shower.",go north,,"You're now in the steam room. You begin to take stock of what's here.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",Steam Room,"You're now in the steam room. You begin to take stock of what's here.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+10,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- Steam Room exits: east (unblocked), north (unblocked), south (unblocked), west (unguarded).","The task says after going north, attempt to go west. I will try to go west from Steam Room.",go west,,"You arrive in a bathroom. A standard one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",Bathroom,"You arrive in a bathroom. A standard one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+11,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- Bathroom exits: east (unguarded), north (unguarded), south (unguarded), west (unguarded).","The task says after going west, go north. I will go north from Bathroom.",go north,,"You find yourself in a dish-pit. A hot kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",Hot Dish-Pit,"You find yourself in a dish-pit. A hot kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+12,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Hot Dish-Pit exit: south (unguarded).","The task says after going north, attempt to go east. There is no east exit here, so I will try to go east anyway to follow instructions.",go east,,You can't go that way.,Hot Dish-Pit,"You find yourself in a dish-pit. A hot kind of place. You start to take note of what's in the room.
+
+
+
+You need an unguarded exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+13,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Hot Dish-Pit exit: south (unguarded).
+- Attempted to go east from Hot Dish-Pit but failed.","Since east is blocked, I will go south from Hot Dish-Pit as it is unguarded.",go south,,"You arrive in a bathroom. A standard one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",Bathroom,"You arrive in a bathroom. A standard one. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unguarded exit to the north. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+14,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- Bathroom exits: east (unguarded), north (unguarded), south (unguarded), west (unguarded).","The task says after attempting east, venture east, then travel north, then attempt east, then venture east, then venture east, then head east. I will go east from Bathroom.",go east,,"You're now in the steam room. You begin to take stock of what's here.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",Steam Room,"You're now in the steam room. You begin to take stock of what's here.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+15,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- Steam Room exits: east (unblocked), north (unblocked), south (unblocked), west (unguarded).","The task says after venturing east, travel north. I will go north from Steam Room.",go north,,"You've entered a pleasant chamber. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked.",Pleasant Chamber,"You've entered a pleasant chamber. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+16,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Pleasant Chamber exit: south (unblocked).","The task says after traveling north, attempt to go east. There is no east exit here, so I will try to go east anyway.",go east,,You can't go that way.,Pleasant Chamber,"You've entered a pleasant chamber. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+17,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Attempted to go east from Pleasant Chamber and failed.","Since east is blocked, I will go south from Pleasant Chamber.",go south,,"You're now in the steam room. You begin to take stock of what's here.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",Steam Room,"You're now in the steam room. You begin to take stock of what's here.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+18,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- Steam Room exits: east (unblocked), north (unblocked), south (unblocked), west (unguarded).","The task says after attempting east, venture east, then venture east, then head east, then lift the coin from the floor of the spare room. I will go east from Steam Room.",go east,,"You arrive in a workshop. A serious one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going west.",Serious Workshop,"You arrive in a workshop. A serious one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+19,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- From Steam Room, moved east to Serious Workshop.
+- Serious Workshop exit: west.",The task says to lift the coin from the floor of the spare room. I will look around to find the coin.,look,,"You arrive in a workshop. A serious one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going west.",Serious Workshop,"You arrive in a workshop. A serious one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+20,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- From Steam Room, moved east to Serious Workshop.
+- Serious Workshop exit: west.
+- No coin seen yet.",I should examine the floor or the room carefully to find the coin.,examine floor,,You can't see any such thing.,Serious Workshop,"You arrive in a workshop. A serious one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+21,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- From Steam Room, moved east to Serious Workshop.
+- Serious Workshop exit: west.
+- No coin found on floor.",The coin might be in a container or on a supporter in the Serious Workshop. I will look around more carefully.,look,,"You arrive in a workshop. A serious one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going west.",Serious Workshop,"You arrive in a workshop. A serious one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+22,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- From Steam Room, moved east to Serious Workshop.
+- Serious Workshop exit: west.
+- No coin found on floor or in room description.",I should try to search or examine any objects or furniture in the Serious Workshop to find the coin.,examine workshop,,You can't see any such thing.,Serious Workshop,"You arrive in a workshop. A serious one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+23,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- From Steam Room, moved east to Serious Workshop.
+- Serious Workshop exit: west.
+- No coin found on floor or in room or on examining workshop.",The coin might be in a different room. I will go west back to Steam Room and then try going north to Pleasant Chamber to check for the coin.,go west,,"You're now in the steam room. You begin to take stock of what's here.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",Steam Room,"You're now in the steam room. You begin to take stock of what's here.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+24,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- From Steam Room, moved east to Serious Workshop.
+- Returned west to Steam Room.
+- Steam Room exits: east, north, south, west.",I should go north to Pleasant Chamber to look for the coin.,go north,,"You've entered a pleasant chamber. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked.",Pleasant Chamber,"You've entered a pleasant chamber. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+25,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- From Steam Room, moved east to Serious Workshop.
+- Returned west to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Pleasant Chamber exit: south.
+- No coin seen here yet.",I should look around the Pleasant Chamber carefully for the coin.,look,,"You've entered a pleasant chamber. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked.",Pleasant Chamber,"You've entered a pleasant chamber. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+26,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- From Steam Room, moved east to Serious Workshop.
+- Returned west to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Pleasant Chamber exit: south.
+- No coin found on looking around.",I should go south back to Steam Room and then try going east to Serious Workshop again to search for the coin.,go south,,"You're now in the steam room. You begin to take stock of what's here.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",Steam Room,"You're now in the steam room. You begin to take stock of what's here.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+27,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- From Steam Room, moved east to Serious Workshop.
+- Returned west to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- No coin found in Pleasant Chamber or Serious Workshop.",I should go east to Serious Workshop again and try to take the coin from the floor.,go east,,"You arrive in a workshop. A serious one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going west.",Serious Workshop,"You arrive in a workshop. A serious one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+28,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- From Steam Room, moved east to Serious Workshop.
+- No coin found in Serious Workshop yet.",I should try to take the coin from the floor in the Serious Workshop.,take coin from floor,,You can't see any such thing.,Serious Workshop,"You arrive in a workshop. A serious one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+29,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- From Steam Room, moved east to Serious Workshop.
+- No coin found in Serious Workshop.
+- Coin not on floor in Serious Workshop.",I should try going south from Steam Room to check if the coin is in that direction.,go south,,You can't go that way.,Serious Workshop,"You arrive in a workshop. A serious one. Let's see what's in here.
+
+
+
+You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+30,"- Started in Study, moved west to Parlor.
+- From Parlor, moved north to Serious Office.
+- Attempted west from Serious Office and failed.
+- Returned south to Parlor.
+- From Parlor, moved south to Laundry Place.
+- Attempted west from Laundry Place and failed.
+- Returned north to Parlor.
+- From Parlor, moved west to Shower.
+- From Shower, moved north to Steam Room.
+- From Steam Room, moved west to Bathroom.
+- From Bathroom, moved north to Hot Dish-Pit.
+- Returned south to Bathroom.
+- From Bathroom, moved east to Steam Room.
+- From Steam Room, moved north to Pleasant Chamber.
+- Returned south to Steam Room.
+- From Steam Room, moved east to Serious Workshop.
+- No coin found in Serious Workshop.
+- Coin not on floor in Serious Workshop.
+- Cannot go south from Serious Workshop.",I should go west back to Steam Room and then try going south from there.,go west,,"You're now in the steam room. You begin to take stock of what's here.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",Steam Room,"You're now in the steam room. You begin to take stock of what's here.
+
+
+
+You need an unblocked exit? You should try going east. You don't like doors? Why not try going north, that entranceway is unblocked. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,True,

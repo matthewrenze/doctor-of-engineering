@@ -1,0 +1,328 @@
+step_id,memory,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook and a knife. You make out a stove. The stove is conventional. But there isn't a thing on it.","You are carrying: a yellow bell pepper, a raw yellow potato and an orange bell pepper.",0 of 7,0.0,False,
+1,"- I am in the kitchen.
+- On the counter, there is a cookbook and a knife.
+- I have a yellow bell pepper, a raw yellow potato, and an orange bell pepper in my inventory.
+- There is a fridge, oven, table, counter, and stove in the kitchen.",I should examine the cookbook on the counter to find a recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red onion
+  yellow bell pepper
+
+Directions:
+slice the red onion
+  fry the red onion
+  chop the yellow bell pepper
+  roast the yellow bell pepper
+  prepare meal",Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook and a knife. You make out a stove. The stove is conventional. But there isn't a thing on it.","You are carrying: a yellow bell pepper, a raw yellow potato and an orange bell pepper.",0 of 7,0.0,False,
+2,"- The recipe requires a red onion and a yellow bell pepper.
+- The steps are: slice the red onion, fry the red onion, chop the yellow bell pepper, roast the yellow bell pepper, then prepare the meal.
+- I have a yellow bell pepper, a raw yellow potato, and an orange bell pepper, but no red onion.
+- There is a fridge in the kitchen which might contain the red onion.
+- There is a knife on the counter.","I need to find a red onion, likely in the fridge, before I can start following the recipe.",open fridge,,"You open the fridge, revealing a red onion, a raw red potato and a white onion.",Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a red onion, a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook and a knife. You make out a stove. The stove is conventional. But there isn't a thing on it.","You are carrying: a yellow bell pepper, a raw yellow potato and an orange bell pepper.",0 of 7,0.0,False,
+3,"- The fridge contains a red onion, a raw red potato, and a white onion.
+- The recipe requires a red onion and a yellow bell pepper.
+- I have a yellow bell pepper, a raw yellow potato, and an orange bell pepper in my inventory.
+- There is a knife on the counter.",I should take the red onion from the fridge to use it in the recipe.,take red onion from fridge,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a red onion, a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook and a knife. You make out a stove. The stove is conventional. But there isn't a thing on it.","You are carrying: a yellow bell pepper, a raw yellow potato and an orange bell pepper.",0 of 7,0.0,False,
+4,"- I am carrying a yellow bell pepper, a raw yellow potato, and an orange bell pepper.
+- The recipe requires a red onion and a yellow bell pepper.
+- The fridge contains a red onion, a raw red potato, and a white onion.
+- I cannot carry more items without dropping something.",I should drop the raw yellow potato to free up space and then take the red onion from the fridge.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a red onion, a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook and a knife. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a raw yellow potato on the floor.",You are carrying: a yellow bell pepper and an orange bell pepper.,0 of 7,0.0,False,
+5,"- I dropped the raw yellow potato on the floor.
+- I am carrying a yellow bell pepper and an orange bell pepper.
+- The fridge contains a red onion, a raw red potato, and a white onion.
+- The recipe requires a red onion and a yellow bell pepper.",I should take the red onion from the fridge now that I have space.,take red onion from fridge,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a red onion, a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook and a knife. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a raw yellow potato on the floor.",You are carrying: a yellow bell pepper and an orange bell pepper.,0 of 7,0.0,False,
+6,"- I am carrying a yellow bell pepper and an orange bell pepper.
+- The fridge contains a red onion, a raw red potato, and a white onion.
+- The recipe requires a red onion and a yellow bell pepper.
+- I cannot carry more items without dropping something.",I should drop the orange bell pepper to free up space and then take the red onion from the fridge.,drop orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a red onion, a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook and a knife. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is an orange bell pepper and a raw yellow potato on the floor.",You are carrying: a yellow bell pepper.,0 of 7,0.0,False,
+7,"- I dropped the orange bell pepper on the floor.
+- I am carrying a yellow bell pepper.
+- The fridge contains a red onion, a raw red potato, and a white onion.
+- The recipe requires a red onion and a yellow bell pepper.",I should take the red onion from the fridge now that I have space.,take red onion from fridge,,"You take the red onion from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook and a knife. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is an orange bell pepper and a raw yellow potato on the floor.",You are carrying: a red onion and a yellow bell pepper.,1 of 7,0.14285714285714285,False,
+8,"- I am carrying a red onion and a yellow bell pepper.
+- There is a knife on the counter.
+- The recipe is in the cookbook on the counter.",I should examine the cookbook to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red onion
+  yellow bell pepper
+
+Directions:
+slice the red onion
+  fry the red onion
+  chop the yellow bell pepper
+  roast the yellow bell pepper
+  prepare meal",Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook and a knife. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is an orange bell pepper and a raw yellow potato on the floor.",You are carrying: a red onion and a yellow bell pepper.,1 of 7,0.14285714285714285,False,
+9,"- The recipe requires slicing and frying the red onion, chopping and roasting the yellow bell pepper, then preparing the meal.
+- I have a knife on the counter.
+- I am carrying a red onion and a yellow bell pepper.",I should slice the red onion first using the knife.,slice red onion with knife,,You need to take the knife first.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook and a knife. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is an orange bell pepper and a raw yellow potato on the floor.",You are carrying: a red onion and a yellow bell pepper.,1 of 7,0.14285714285714285,False,
+10,"- I need to take the knife before slicing the red onion.
+- The knife is on the counter.
+- I am carrying a red onion and a yellow bell pepper.",I should take the knife from the counter first.,take knife from counter,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook and a knife. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is an orange bell pepper and a raw yellow potato on the floor.",You are carrying: a red onion and a yellow bell pepper.,1 of 7,0.14285714285714285,False,
+11,"- I am carrying a red onion and a yellow bell pepper.
+- I need to drop one item to take the knife.
+- The knife is on the counter.",I should drop the yellow bell pepper to free space and then take the knife.,drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook and a knife. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a yellow bell pepper, an orange bell pepper and a raw yellow potato on the floor.",You are carrying: a red onion.,1 of 7,0.14285714285714285,False,
+12,"- I am carrying a red onion.
+- The knife is on the counter.
+- There are yellow and orange bell peppers on the floor.",I should take the knife from the counter now.,take knife from counter,,You take the knife from the counter.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a yellow bell pepper, an orange bell pepper and a raw yellow potato on the floor.",You are carrying: a knife and a red onion.,1 of 7,0.14285714285714285,False,
+13,"- I am carrying a knife and a red onion.
+- The recipe says to slice and fry the red onion first.",I should slice the red onion with the knife.,slice red onion with knife,,"You slice the red onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a yellow bell pepper, an orange bell pepper and a raw yellow potato on the floor.",You are carrying: a knife and a sliced red onion.,2 of 7,0.2857142857142857,False,
+14,"- I am carrying a knife and a sliced red onion.
+- The recipe says to fry the sliced red onion next.
+- There is a stove in the kitchen.",I should fry the sliced red onion on the stove.,cook sliced red onion with stove,,"You fried the red onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a yellow bell pepper, an orange bell pepper and a raw yellow potato on the floor.",You are carrying: a knife and a sliced fried red onion.,3 of 7,0.42857142857142855,False,
+15,"- I am carrying a knife and a sliced fried red onion.
+- There are yellow and orange bell peppers on the floor.
+- The recipe likely involves using bell peppers next.",I should take the orange bell pepper from the floor.,take orange bell pepper from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a yellow bell pepper, an orange bell pepper and a raw yellow potato on the floor.",You are carrying: a knife and a sliced fried red onion.,3 of 7,0.42857142857142855,False,
+16,"- I am carrying a knife and a sliced fried red onion.
+- I need to free space to take the orange bell pepper.",I should drop the knife to free space and then take the orange bell pepper.,drop knife,,You drop the knife on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a knife, a yellow bell pepper, an orange bell pepper and a raw yellow potato on the floor.",You are carrying: a sliced fried red onion.,3 of 7,0.42857142857142855,False,
+17,"- I am carrying a sliced fried red onion.
+- The knife, yellow bell pepper, orange bell pepper, and raw yellow potato are on the floor.",I should take the orange bell pepper from the floor.,take orange bell pepper from floor,,You pick up the orange bell pepper from the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a knife, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: an orange bell pepper and a sliced fried red onion.,3 of 7,0.42857142857142855,False,
+18,"- I am carrying an orange bell pepper and a sliced fried red onion.
+- The knife, yellow bell pepper, and raw yellow potato are on the floor.
+- The recipe likely requires slicing the bell pepper next.",I should slice the orange bell pepper with the knife.,take knife from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a knife, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: an orange bell pepper and a sliced fried red onion.,3 of 7,0.42857142857142855,False,
+19,"- I am carrying an orange bell pepper and a sliced fried red onion.
+- The knife is on the floor.
+- I need to free space to take the knife.",I should drop the orange bell pepper to free space and then take the knife.,drop orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is an orange bell pepper, a knife, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: a sliced fried red onion.,3 of 7,0.42857142857142855,False,
+20,"- I am carrying a sliced fried red onion.
+- The knife and orange bell pepper are on the floor.
+- I need the knife to slice the orange bell pepper.",I should take the knife from the floor.,take knife from floor,,You pick up the knife from the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is an orange bell pepper, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: a knife and a sliced fried red onion.,3 of 7,0.42857142857142855,False,
+21,"- I am carrying a knife and a sliced fried red onion.
+- The orange bell pepper is on the floor.
+- I want to slice the orange bell pepper with the knife.",I should take the orange bell pepper from the floor.,take orange bell pepper from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is an orange bell pepper, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: a knife and a sliced fried red onion.,3 of 7,0.42857142857142855,False,
+22,"- I am carrying a knife and a sliced fried red onion.
+- The orange bell pepper is on the floor.
+- I cannot carry more items.
+- I need to slice the orange bell pepper but must free space first.",I should drop the sliced fried red onion to free space.,drop sliced fried red onion,,You drop the red onion on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a sliced fried red onion, an orange bell pepper, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: a knife.,3 of 7,0.42857142857142855,False,
+23,"- I am carrying a knife.
+- The orange bell pepper and sliced fried red onion are on the floor.
+- I want to slice the orange bell pepper.",I should take the orange bell pepper from the floor.,take orange bell pepper from floor,,You pick up the orange bell pepper from the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a sliced fried red onion, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: an orange bell pepper and a knife.,3 of 7,0.42857142857142855,False,
+24,"- I am carrying an orange bell pepper and a knife.
+- The sliced fried red onion is on the floor.
+- I want to slice the orange bell pepper.",I should slice the orange bell pepper with the knife.,slice orange bell pepper with knife,,You slice the orange bell pepper.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a sliced fried red onion, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: a sliced orange bell pepper and a knife.,3 of 7,0.42857142857142855,False,
+25,"- I am carrying a sliced orange bell pepper and a knife.
+- The sliced fried red onion, yellow bell pepper, and raw yellow potato are on the floor.
+- There is a cookbook on the counter.
+- The goal is to cook a delicious meal using the cookbook.",I should examine the cookbook on the counter to find the recipe.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red onion
+  yellow bell pepper
+
+Directions:
+slice the red onion
+  fry the red onion
+  chop the yellow bell pepper
+  roast the yellow bell pepper
+  prepare meal",Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a sliced fried red onion, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: a sliced orange bell pepper and a knife.,3 of 7,0.42857142857142855,False,
+26,"- The recipe requires a red onion and a yellow bell pepper.
+- The steps are: slice the red onion, fry the red onion, chop the yellow bell pepper, roast the yellow bell pepper, prepare meal.
+- I have a sliced orange bell pepper, but need a yellow bell pepper and a red onion.
+- There is a sliced fried red onion on the floor.
+- There is a yellow bell pepper on the floor.",I should take the sliced fried red onion from the floor.,take sliced fried red onion from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a sliced fried red onion, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: a sliced orange bell pepper and a knife.,3 of 7,0.42857142857142855,False,
+27,"- I am carrying a sliced orange bell pepper and a knife.
+- The sliced fried red onion and yellow bell pepper are on the floor.
+- I need to carry the sliced fried red onion and yellow bell pepper for the recipe.",I should drop the sliced orange bell pepper to free space.,drop sliced orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a sliced orange bell pepper, a sliced fried red onion, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: a knife.,3 of 7,0.42857142857142855,False,
+28,"- I am carrying a knife.
+- The sliced fried red onion and yellow bell pepper are on the floor.
+- I need to take the sliced fried red onion and yellow bell pepper for the recipe.",I should take the sliced fried red onion from the floor.,take sliced fried red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a sliced orange bell pepper, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: a sliced fried red onion and a knife.,3 of 7,0.42857142857142855,False,
+29,"- I am carrying a sliced fried red onion and a knife.
+- The yellow bell pepper is on the floor.
+- The recipe requires chopping and roasting the yellow bell pepper.",I should take the yellow bell pepper from the floor.,take yellow bell pepper from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a sliced orange bell pepper, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: a sliced fried red onion and a knife.,3 of 7,0.42857142857142855,False,
+30,"- I am carrying a sliced fried red onion and a knife.
+- The yellow bell pepper is on the floor.
+- I need to carry the yellow bell pepper for the recipe.",I should drop the knife to free space for the yellow bell pepper.,drop knife,,You drop the knife on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place. You begin looking for stuff.
+
+You bend down to tie your shoe. When you stand up, you notice a fridge. The fridge contains a raw red potato and a white onion. Something scurries by right in the corner of your eye. Probably nothing. You see an oven. Oh, great. Here's a table. But there isn't a thing on it. You make out a counter. The counter is vast. On the counter you can make out a cookbook. You make out a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a knife, a sliced orange bell pepper, a yellow bell pepper and a raw yellow potato on the floor.",You are carrying: a sliced fried red onion.,3 of 7,0.42857142857142855,True,

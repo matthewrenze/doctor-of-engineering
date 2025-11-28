@@ -1,0 +1,498 @@
+step_id,memory,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First step, try to go to the south. That done, make an effort to travel east. Then, travel south. And then, make an effort to head east. Okay, and then, make an attempt to venture north. After that, take a trip north. Then, take a trip west. Then, make an attempt to travel south. And then, make an effort to venture east. After that, make an effort to venture east. Next, attempt to go to the south. And then, attempt to head east. Then, attempt to move south. Okay, and then, try to go to the east. With that done, venture south. Okay, and then, make an effort to take a trip west. And then, go to the west. Then, try to travel north. Following that, try to go north. Then, try to travel west. With that accomplished, venture north. Once you accomplish that, make an effort to venture north. After that, try to move west. After that, make an effort to move west. Then, make an effort to travel west. And then, try to move south. Then, venture south. And then, move west. And then, venture north. And then, retrieve the coin from the floor of the serious studio. Got that? Good!",,Closet,"Guess what, you are in the place we're calling the closet.
+
+
+
+You need an unguarded exit? You should try going east. You need an unblocked exit? You should try going south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+1,"- Starting location is the Closet.
+- Possible exits from Closet: east, south, west.
+- Final goal: retrieve the coin from the floor of the serious studio.
+- Follow the sequence of directions given in the task.","I will start by going south as instructed, then continue following the sequence of directions step-by-step.",go south,,"You find yourself in a cookhouse. A normal kind of place.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",Cookhouse,"You find yourself in a cookhouse. A normal kind of place.
+
+
+
+There is an unguarded exit to the east. There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+2,"- Starting location was Closet.
+- Moved south to Cookhouse.
+- Cookhouse has unguarded exits east, south, west, and an unblocked exit north.
+- Next direction in sequence is east.",I will go east from the Cookhouse as the next step in the sequence.,go east,,"You arrive in a shower. A typical kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",Shower,"You arrive in a shower. A typical kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+3,"- Started in Closet, moved south to Cookhouse, then east to Shower.
+- Shower has unblocked exits east, north, south, and west.
+- Next direction in sequence is south.",I will go south from the Shower as the next step in the sequence.,go south,,"Well, here we are in the silent studio.
+
+
+
+You need an unblocked exit? You should try going east. There is an unblocked exit to the north. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",Silent Studio,"Well, here we are in the silent studio.
+
+
+
+You need an unblocked exit? You should try going east. There is an unblocked exit to the north. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+4,"- Moved from Closet to Cookhouse (south), then to Shower (east), then to Silent Studio (south).
+- Silent Studio has unblocked exits east, north, south, and west.
+- Next direction in sequence is east.",I will go east from the Silent Studio as the next step in the sequence.,go east,,"Well, here we are in the hot cookhouse.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Hot Cookhouse,"Well, here we are in the hot cookhouse.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+5,"- Path so far: Closet -> Cookhouse (south) -> Shower (east) -> Silent Studio (south) -> Hot Cookhouse (east).
+- Hot Cookhouse has unblocked exits east, north, south, and west.
+- Next direction in sequence is south.",I will go south from the Hot Cookhouse as the next step in the sequence.,go south,,"You arrive in a canteen. A super hot one.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded.",Super Hot Canteen,"You arrive in a canteen. A super hot one.
+
+
+
+You don't like doors? Why not try going north, that entranceway is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+6,"- Path so far: Closet -> Cookhouse (south) -> Shower (east) -> Silent Studio (south) -> Hot Cookhouse (east) -> Super Hot Canteen (south).
+- Super Hot Canteen has an unguarded exit north.
+- Next direction in sequence is east.","There is no east exit from here, so I will check if I made a mistake or if I should try another direction. The task says to go east next, but it's not available. I will try going north to backtrack and find an east exit.",go north,,"Well, here we are in the hot cookhouse.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Hot Cookhouse,"Well, here we are in the hot cookhouse.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+7,"- Returned to Hot Cookhouse from Super Hot Canteen by going north.
+- Hot Cookhouse has exits east, north, south, and west.
+- Next direction in sequence is east.",I will go east from Hot Cookhouse as the next step in the sequence.,go east,,"You find yourself in a steam room. A steamy one. I guess you better just go and list everything you see here.
+
+
+
+There is an unblocked exit to the west.",Steamy Steam Room,"You find yourself in a steam room. A steamy one. I guess you better just go and list everything you see here.
+
+
+
+There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+8,"- Moved from Hot Cookhouse east to Steamy Steam Room.
+- Steamy Steam Room has an unblocked exit west.
+- Next direction in sequence is north.","There is no north exit here, so I will try to go west to backtrack and find a north exit.",go west,,"Well, here we are in the hot cookhouse.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",Hot Cookhouse,"Well, here we are in the hot cookhouse.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You need an unblocked exit? You should try going north. You need an unblocked exit? You should try going south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+9,"- Returned to Hot Cookhouse from Steamy Steam Room by going west.
+- Hot Cookhouse has exits east, north, south, and west.
+- Next direction in sequence is north.",I will go north from Hot Cookhouse as the next step in the sequence.,go north,,"I am sorry to announce that you are now in the bathroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west.",Bathroom,"I am sorry to announce that you are now in the bathroom. You begin to take stock of what's in the room.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. You don't like doors? Why not try going north, that entranceway is unguarded. You don't like doors? Why not try going south, that entranceway is unguarded. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+10,"- Moved north from Hot Cookhouse to Bathroom.
+- Bathroom has exits east, north, south, and west.
+- Next direction in sequence is north.",I will go north from the Bathroom as the next step in the sequence.,go north,,"You find yourself in a typical kind of place. That is to say, you're in a basement. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",Basement,"You find yourself in a typical kind of place. That is to say, you're in a basement. Okay, just remember what you're here to do, and everything will go great.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an exit to the south. Don't worry, it is unblocked. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+11,"- Moved north from Bathroom to Basement.
+- Basement has exits east, north, south, and west.
+- Next direction in sequence is west.",I will go west from the Basement as the next step in the sequence.,go west,,"You find yourself in a cellar. A messy kind of place.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",Messy Cellar,"You find yourself in a cellar. A messy kind of place.
+
+
+
+There is an unguarded exit to the east. You don't like doors? Why not try going north, that entranceway is unblocked. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+12,"- Moved west from Basement to Messy Cellar.
+- Messy Cellar has exits east, north, south, and west.
+- Next direction in sequence is south.",I will go south from Messy Cellar as the next step in the sequence.,go south,,"You've entered a pleasant bedchamber.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Pleasant Bedchamber,"You've entered a pleasant bedchamber.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. There is an unguarded exit to the north. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+13,"- Moved south from Messy Cellar to Pleasant Bedchamber.
+- Pleasant Bedchamber has exits east, north, south, and west.
+- Next direction in sequence is east.",I will go east from Pleasant Bedchamber as the next step in the sequence.,go east,,"You've just shown up in an office.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the north. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Office,"You've just shown up in an office.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the north. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+14,"- Moved east from Pleasant Bedchamber to Office.
+- Office has exits east, north, south, and west.
+- Next direction in sequence is east.",I will go east from the Office as the next step in the sequence.,go east,,"You find yourself in a cellar. A normal one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",Cellar,"You find yourself in a cellar. A normal one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+15,"- Moved east from Office to Cellar.
+- Cellar has exits east, north, south, and west.
+- Next direction in sequence is south.",I will go south from the Cellar as the next step in the sequence.,go south,,"You find yourself in a study. An usual kind of place. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked.",Study,"You find yourself in a study. An usual kind of place. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+16,"- Moved south from Cellar to Study.
+- Study has exits east, north, south, and west.
+- Next direction in sequence is east.",I will go east from the Study as the next step in the sequence.,go east,,"You've entered a lounge.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Lounge,"You've entered a lounge.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+17,"- Moved east from Study to Lounge.
+- Lounge has exits east, north, south, and west.
+- Next direction in sequence is east.",I will go east from the Lounge as the next step in the sequence.,go east,,"You find yourself in an ordinary kind of place. That is to say, you're in a parlor.
+
+
+
+There is an exit to the west. Don't worry, it is unguarded.",Parlor,"You find yourself in an ordinary kind of place. That is to say, you're in a parlor.
+
+
+
+There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+18,"- Moved east from Lounge to Parlor.
+- Parlor has an exit west.
+- Next direction in sequence is south.","I will go south from the Parlor, but there is no south exit. I need to backtrack west to Lounge to find a south exit.",go west,,"You've entered a lounge.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Lounge,"You've entered a lounge.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+19,"- Returned west from Parlor to Lounge.
+- Lounge has exits east, north, south, and west.
+- Next direction in sequence is south.",I will go south from the Lounge as the next step in the sequence.,go south,,"You arrive in a studio. A typical kind of place.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",Studio,"You arrive in a studio. A typical kind of place.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+20,"- Moved south from Lounge to Studio.
+- Studio has exits east, north, south, and west.
+- Next direction in sequence is west.",I will go west from the Studio as the next step in the sequence.,go west,,"You find yourself in a kitchen. A typical kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+21,"- Moved west from Studio to Kitchen.
+- Kitchen has an exit east.
+- Next direction in sequence is west.","I will try to go west from the Kitchen, but there is no west exit mentioned. I should check for the coin here before moving.",look,,"You find yourself in a kitchen. A typical kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+22,"- In Kitchen, no west exit, only east exit.
+- Need to find and retrieve the coin in the Serious Studio.
+- Serious Studio likely different from current Kitchen.
+- Next direction in sequence is west, but no west exit here.","Since no west exit here, I should go back east to the Studio to continue navigation and find the coin.",go east,,"You arrive in a studio. A typical kind of place.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",Studio,"You arrive in a studio. A typical kind of place.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+23,"- Returned east from Kitchen to Studio.
+- Studio has exits east, north, south, and west.
+- Next direction in sequence is west.",I will go west from the Studio to continue following the directions.,go west,,"You find yourself in a kitchen. A typical kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+24,"- Moved west from Studio to Kitchen again.
+- Kitchen has only east exit.
+- Need to find coin in Serious Studio.",I should try going east back to Studio to explore other directions to find the coin.,go east,,"You arrive in a studio. A typical kind of place.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",Studio,"You arrive in a studio. A typical kind of place.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+25,"- Back in Studio with exits east, north, south, and west.
+- Need to find coin in Serious Studio.
+- Next direction in sequence is north.",I will go north from the Studio to continue exploring and find the coin.,go north,,"You've entered a lounge.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Lounge,"You've entered a lounge.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+26,"- Moved north from Studio to Lounge.
+- Lounge has exits east, north, south, and west.
+- Next direction in sequence is north.",I will go north from the Lounge to continue following the directions.,go north,,"You've just shown up in an unreasonably hot scullery.
+
+
+
+You need an unblocked exit? You should try going south.",Unreasonably Hot Scullery,"You've just shown up in an unreasonably hot scullery.
+
+
+
+You need an unblocked exit? You should try going south.",You are carrying nothing.,0 of 1,0.0,False,
+27,"- Moved north from Lounge to Unreasonably Hot Scullery.
+- Only exit is south.
+- Next direction in sequence is west.",I should go south back to the Lounge since no west exit here.,go south,,"You've entered a lounge.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Lounge,"You've entered a lounge.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+28,"- Returned south from Unreasonably Hot Scullery to Lounge.
+- Lounge has exits east, north, south, and west.
+- Next direction in sequence is west.",I will go west from the Lounge to continue following the directions.,go west,,"You find yourself in a study. An usual kind of place. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked.",Study,"You find yourself in a study. An usual kind of place. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+29,"- Moved west from Lounge to Study.
+- Study has exits east, north, south, and west.
+- Next direction in sequence is south.",I will go south from the Study to continue following the directions.,go south,,"You find yourself in a cookhouse. A balmy kind of place. The room is well lit.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",Balmy Cookhouse,"You find yourself in a cookhouse. A balmy kind of place. The room is well lit.
+
+
+
+There is an exit to the north. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+30,"- Moved south from Study to Balmy Cookhouse.
+- Balmy Cookhouse has an exit north.
+- Next direction in sequence is west.",I should go north back to the Study since no west exit here.,go north,,"You find yourself in a study. An usual kind of place. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked.",Study,"You find yourself in a study. An usual kind of place. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+31,"- Returned north from Balmy Cookhouse to Study.
+- Study has exits east, north, south, and west.
+- Next direction in sequence is west.",I will go west from the Study to continue following the directions.,go west,,"Well, here we are in a playroom.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",Playroom,"Well, here we are in a playroom.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+32,"- Moved west from Study to Playroom.
+- Playroom has an exit east.
+- Next direction in sequence is north.","I should try to go north, but no north exit mentioned, so I will try going north anyway.",go north,,You can't go that way.,Playroom,"Well, here we are in a playroom.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+33,"- Tried to go north from Playroom but no exit that way.
+- Playroom has an exit east.
+- Next direction in sequence is north, but blocked.
+- Next direction after north is north again.","Since north is blocked, I will try going east from the Playroom.",go east,,"You find yourself in a study. An usual kind of place. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked.",Study,"You find yourself in a study. An usual kind of place. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+34,"- Moved east from Playroom to Study.
+- Study has exits east, north, south, and west.
+- Next direction in sequence is north.",I will go north from the Study.,go north,,"You find yourself in a cellar. A normal one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",Cellar,"You find yourself in a cellar. A normal one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+35,"- Moved north from Study to Cellar.
+- Cellar has exits east, north, south, and west.
+- Next direction in sequence is west.",I will go west from the Cellar.,go west,,"You've just shown up in an office.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the north. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Office,"You've just shown up in an office.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the north. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+36,"- Moved west from Cellar to Office.
+- Office has exits east, north, south, and west.
+- Next direction in sequence is south.",I will go south from the Office.,go south,,"You are in a parlor. An exciting kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",Exciting Parlor,"You are in a parlor. An exciting kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+37,"- Moved south from Office to Exciting Parlor.
+- Exciting Parlor has an exit north.
+- Next direction in sequence is east.","I will try to go east from the Exciting Parlor, but no east exit mentioned, so I will try anyway.",go east,,You can't go that way.,Exciting Parlor,"You are in a parlor. An exciting kind of place.
+
+
+
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+38,"- Tried to go east from Exciting Parlor but no exit that way.
+- Exciting Parlor has an exit north.
+- Next direction in sequence is east again.","Since east is blocked, I will go north from the Exciting Parlor.",go north,,"You've just shown up in an office.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the north. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",Office,"You've just shown up in an office.
+
+
+
+There is an exit to the east. Don't worry, it is unblocked. There is an unblocked exit to the north. You need an unguarded exit? You should try going south. There is an exit to the west. Don't worry, it is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+39,"- Moved north from Exciting Parlor to Office.
+- Office has exits east, north, south, and west.
+- Next direction in sequence is east.",I will go east from the Office.,go east,,"You find yourself in a cellar. A normal one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",Cellar,"You find yourself in a cellar. A normal one.
+
+
+
+You need an unguarded exit? You should try going east. There is an exit to the north. Don't worry, it is unblocked. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+40,"- Moved east from Office to Cellar.
+- Cellar has exits east, north, south, and west.
+- Next direction in sequence is south.",I will go south from the Cellar.,go south,,"You find yourself in a study. An usual kind of place. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked.",Study,"You find yourself in a study. An usual kind of place. You begin looking for stuff.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+41,"- Moved south from Cellar to Study.
+- Study has exits east, north, south, and west.
+- Next direction in sequence is east.",I will go east from the Study.,go east,,"You've entered a lounge.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Lounge,"You've entered a lounge.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+42,"- Moved east from Study to Lounge.
+- Lounge has exits east, north, south, and west.
+- Next direction in sequence is east.",I will try to go east from the Lounge.,go east,,"You find yourself in an ordinary kind of place. That is to say, you're in a parlor.
+
+
+
+There is an exit to the west. Don't worry, it is unguarded.",Parlor,"You find yourself in an ordinary kind of place. That is to say, you're in a parlor.
+
+
+
+There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+43,"- Moved east from Lounge to Parlor.
+- Parlor has an exit west.
+- Next direction in sequence is south.","I will try to go south from the Parlor, but since no south exit is mentioned, I will check the room first.",look,,"You find yourself in an ordinary kind of place. That is to say, you're in a parlor.
+
+
+
+There is an exit to the west. Don't worry, it is unguarded.",Parlor,"You find yourself in an ordinary kind of place. That is to say, you're in a parlor.
+
+
+
+There is an exit to the west. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+44,"- Parlor has only a west exit.
+- Next direction in sequence is south, but no south exit in Parlor.
+- Need to adjust plan due to lack of south exit.
+- Next directions after south are east, east, south, east, south, west, west, north, north, west, north, north, west, west, west, south, south, west, north.","Since there is no south exit, I will go west from the Parlor to continue exploring.",go west,,"You've entered a lounge.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",Lounge,"You've entered a lounge.
+
+
+
+You don't like doors? Why not try going east, that entranceway is unguarded. There is an unblocked exit to the north. There is an unblocked exit to the south. You need an unblocked exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+45,"- Returned to Lounge from Parlor by going west.
+- Lounge has exits east, north, south, and west.
+- Next direction in sequence is south.",I will go south from the Lounge.,go south,,"You arrive in a studio. A typical kind of place.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",Studio,"You arrive in a studio. A typical kind of place.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going north, that entranceway is unguarded. You need an unguarded exit? You should try going south. There is an unblocked exit to the west.",You are carrying nothing.,0 of 1,0.0,True,

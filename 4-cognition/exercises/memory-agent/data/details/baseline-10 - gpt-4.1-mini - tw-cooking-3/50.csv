@@ -1,0 +1,706 @@
+step_id,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Pantry,"You arrive in a pantry. A standard one.
+
+You see a gleam over in a corner, where you can see a shelf. The shelf is wooden. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf.
+
+There is a closed plain door leading west.","You are carrying: a raw pork chop, a raw red potato and a raw yellow potato.",0 of 17,0.0,False,
+1,"I should go west through the closed plain door to explore the next room, likely the kitchen, where the cookbook might be.",open door west,,I only understood you as far as wanting to open plain door.,Pantry,"You arrive in a pantry. A standard one.
+
+You see a gleam over in a corner, where you can see a shelf. The shelf is wooden. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf.
+
+There is a closed plain door leading west.","You are carrying: a raw pork chop, a raw red potato and a raw yellow potato.",0 of 17,0.0,False,
+2,I need to explicitly open the plain door leading west before going through it.,open plain door west,,I only understood you as far as wanting to open plain door.,Pantry,"You arrive in a pantry. A standard one.
+
+You see a gleam over in a corner, where you can see a shelf. The shelf is wooden. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf.
+
+There is a closed plain door leading west.","You are carrying: a raw pork chop, a raw red potato and a raw yellow potato.",0 of 17,0.0,False,
+3,"The door is closed and I need to open it, so I will try just ""open door"" to see if that works.",open door,,You open plain door.,Pantry,"You arrive in a pantry. A standard one.
+
+You see a gleam over in a corner, where you can see a shelf. The shelf is wooden. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf.
+
+There is an open plain door leading west.","You are carrying: a raw pork chop, a raw red potato and a raw yellow potato.",0 of 17,0.0,False,
+4,"Now that the door is open, I should go west through the open plain door to reach the next room.",go west,,"You've entered a kitchen.
+
+You see a closed fridge nearby. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a banana, a red apple, a red onion, a cookbook and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.",Kitchen,"You've entered a kitchen.
+
+You see a closed fridge nearby. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a banana, a red apple, a red onion, a cookbook and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.","You are carrying: a raw pork chop, a raw red potato and a raw yellow potato.",0 of 17,0.0,False,
+5,I should examine the cookbook on the counter to check the recipe for cooking a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+carrot
+  purple potato
+  banana
+  red hot pepper
+  yellow bell pepper
+
+Directions:
+slice the carrot
+  grill the carrot
+  dice the purple potato
+  fry the purple potato
+  dice the banana
+  roast the banana
+  slice the red hot pepper
+  fry the red hot pepper
+  slice the yellow bell pepper
+  fry the yellow bell pepper
+  prepare meal",Kitchen,"You've entered a kitchen.
+
+You see a closed fridge nearby. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a banana, a red apple, a red onion, a cookbook and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.","You are carrying: a raw pork chop, a raw red potato and a raw yellow potato.",0 of 17,0.0,False,
+6,"The recipe requires ingredients I don't have, so I should take the banana from the counter to start gathering the needed items.",take banana from counter,,"You take the banana from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've entered a kitchen.
+
+You see a closed fridge nearby. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion, a cookbook and a knife. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.","You are carrying: a banana, a raw pork chop, a raw red potato and a raw yellow potato.",1 of 17,0.058823529411764705,False,
+7,I should take the knife from the counter to prepare the ingredients as per the recipe.,take knife from counter,,You take the knife from the counter.,Kitchen,"You've entered a kitchen.
+
+You see a closed fridge nearby. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.","You are carrying: a knife, a banana, a raw pork chop, a raw red potato and a raw yellow potato.",1 of 17,0.058823529411764705,False,
+8,"I need to find the purple potato, carrot, red hot pepper, and yellow bell pepper to follow the recipe. I will check the fridge for these ingredients.",open fridge,,"You open the fridge, revealing a yellow bell pepper, a white onion and a block of cheese.",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a yellow bell pepper, a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.","You are carrying: a knife, a banana, a raw pork chop, a raw red potato and a raw yellow potato.",1 of 17,0.058823529411764705,False,
+9,I should take the yellow bell pepper from the fridge to have one of the required ingredients.,take yellow bell pepper from fridge,,You're carrying too many things already.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a yellow bell pepper, a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.","You are carrying: a knife, a banana, a raw pork chop, a raw red potato and a raw yellow potato.",1 of 17,0.058823529411764705,False,
+10,"I am carrying too many items, so I should drop the raw pork chop to free up space for the yellow bell pepper.",drop raw pork chop,,You drop the pork chop on the ground.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a yellow bell pepper, a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw pork chop on the floor.","You are carrying: a knife, a banana, a raw red potato and a raw yellow potato.",1 of 17,0.058823529411764705,False,
+11,"Now that I have space, I should take the yellow bell pepper from the fridge.",take yellow bell pepper from fridge,,"You take the yellow bell pepper from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a knife, a banana, a raw red potato and a raw yellow potato.",2 of 17,0.11764705882352941,False,
+12,I should check the cookbook on the counter to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+carrot
+  purple potato
+  banana
+  red hot pepper
+  yellow bell pepper
+
+Directions:
+slice the carrot
+  grill the carrot
+  dice the purple potato
+  fry the purple potato
+  dice the banana
+  roast the banana
+  slice the red hot pepper
+  fry the red hot pepper
+  slice the yellow bell pepper
+  fry the yellow bell pepper
+  prepare meal",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a knife, a banana, a raw red potato and a raw yellow potato.",2 of 17,0.11764705882352941,False,
+13,"I need to find the carrot, purple potato, and red hot pepper to complete the recipe. I will look around the kitchen to find these ingredients.",look,,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw pork chop on the floor.",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a knife, a banana, a raw red potato and a raw yellow potato.",2 of 17,0.11764705882352941,False,
+14,I should drop the raw red potato and raw yellow potato to free space for the required ingredients.,drop raw red potato,,You drop the red potato on the ground.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a knife, a banana and a raw yellow potato.",2 of 17,0.11764705882352941,False,
+15,I should drop the raw yellow potato as well to free more space for the needed ingredients.,drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw yellow potato, a raw red potato and a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+16,"I need to find and take the carrot and red hot pepper, which are required for the recipe.",take carrot from counter,,You can't see any such thing.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw yellow potato, a raw red potato and a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+17,"Since the carrot and red hot pepper are not visible in the kitchen, I should check the fridge for any of the missing ingredients.",open fridge,,That's already open.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw yellow potato, a raw red potato and a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+18,"Since the carrot and red hot pepper are not in the kitchen or fridge, I should check the area to the east through the open plain door for these ingredients.",go east,,"You arrive in a pantry. A standard one.
+
+You see a gleam over in a corner, where you can see a shelf. The shelf is wooden. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf.
+
+There is an open plain door leading west.",Pantry,"You arrive in a pantry. A standard one.
+
+You see a gleam over in a corner, where you can see a shelf. The shelf is wooden. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf.
+
+There is an open plain door leading west.","You are carrying: a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+19,"Since the pantry shelf is empty, I should return to the kitchen and examine the cookbook for the recipe and ingredient list.",go west,,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw yellow potato, a raw red potato and a raw pork chop on the floor.",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw yellow potato, a raw red potato and a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+20,I should examine the cookbook on the counter to find the recipe and ingredient list for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+carrot
+  purple potato
+  banana
+  red hot pepper
+  yellow bell pepper
+
+Directions:
+slice the carrot
+  grill the carrot
+  dice the purple potato
+  fry the purple potato
+  dice the banana
+  roast the banana
+  slice the red hot pepper
+  fry the red hot pepper
+  slice the yellow bell pepper
+  fry the yellow bell pepper
+  prepare meal",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple, a red onion and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw yellow potato, a raw red potato and a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+21,"I need to gather the carrot, purple potato, and red hot pepper which I currently do not have. I will take the red onion from the counter and check if it is the red hot pepper.",take red onion from counter,,You take the red onion from the counter.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw yellow potato, a raw red potato and a raw pork chop on the floor.","You are carrying: a red onion, a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+22,I should examine the red onion to confirm if it is the red hot pepper needed for the recipe.,examine red onion,,That's a red onion!,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw yellow potato, a raw red potato and a raw pork chop on the floor.","You are carrying: a red onion, a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+23,"I still need to find the carrot, purple potato, and red hot pepper. I will take the raw yellow potato and raw red potato from the floor to check if one is a purple potato.",take raw yellow potato from floor,,You pick up the yellow potato from the ground.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw pork chop on the floor.","You are carrying: a raw yellow potato, a red onion, a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+24,I should take the raw red potato from the floor to check if it is the purple potato needed for the recipe.,take raw red potato from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw pork chop on the floor.","You are carrying: a raw yellow potato, a red onion, a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+25,I need to free up inventory space to take the raw red potato. I will drop the red onion since it is not needed for the recipe.,drop red onion,,You drop the red onion on the ground.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a red onion, a raw red potato and a raw pork chop on the floor.","You are carrying: a raw yellow potato, a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+26,"Now that I have freed up space, I will take the raw red potato from the floor.",take raw red potato from floor,,You pick up the red potato from the ground.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a red onion and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw yellow potato, a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+27,I should examine the cookbook on the counter to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+carrot
+  purple potato
+  banana
+  red hot pepper
+  yellow bell pepper
+
+Directions:
+slice the carrot
+  grill the carrot
+  dice the purple potato
+  fry the purple potato
+  dice the banana
+  roast the banana
+  slice the red hot pepper
+  fry the red hot pepper
+  slice the yellow bell pepper
+  fry the yellow bell pepper
+  prepare meal",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a red onion and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw yellow potato, a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+28,"I need to find the carrot, purple potato, and red hot pepper to complete the recipe. I will go east to explore for these ingredients.",go east,,"You arrive in a pantry. A standard one.
+
+You see a gleam over in a corner, where you can see a shelf. The shelf is wooden. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf.
+
+There is an open plain door leading west.",Pantry,"You arrive in a pantry. A standard one.
+
+You see a gleam over in a corner, where you can see a shelf. The shelf is wooden. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf.
+
+There is an open plain door leading west.","You are carrying: a raw red potato, a raw yellow potato, a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+29,"Since the pantry is empty, I should go back west to the kitchen and check the fridge for the white onion and block of cheese, which might be useful.",go west,,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a red onion and a raw pork chop on the floor.",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a red onion and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw yellow potato, a yellow bell pepper, a knife and a banana.",2 of 17,0.11764705882352941,False,
+30,"I should take the banana from my inventory and drop it to free space, then take the carrot and purple potato if available.",drop banana,,You drop the banana on the ground.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana, a red onion and a raw pork chop on the floor.","You are carrying: a raw red potato, a raw yellow potato, a yellow bell pepper and a knife.",2 of 17,0.11764705882352941,False,
+31,I should take the red onion from the floor as it might be useful for cooking.,take red onion from floor,,You pick up the red onion from the ground.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a red onion, a raw red potato, a raw yellow potato, a yellow bell pepper and a knife.",2 of 17,0.11764705882352941,False,
+32,"I need to find the carrot, purple potato, and red hot pepper for the recipe. Since they are not here, I will check the closed screen door to the north to see if those ingredients are there.",go north,,You have to open the screen door first.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is a closed screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a red onion, a raw red potato, a raw yellow potato, a yellow bell pepper and a knife.",2 of 17,0.11764705882352941,False,
+33,I need to open the closed screen door to the north before going through it.,open screen door,,You open screen door.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a red onion, a raw red potato, a raw yellow potato, a yellow bell pepper and a knife.",2 of 17,0.11764705882352941,False,
+34,"Now that the screen door is open, I should go north through it to explore the next area for the missing ingredients.",go north,,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Backyard,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a raw red potato, a raw yellow potato, a yellow bell pepper and a knife.",2 of 17,0.11764705882352941,False,
+35,I should examine the patio table and the BBQ to see if there are any ingredients or useful items for cooking.,examine patio table,,The patio table is undependable.,Backyard,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a raw red potato, a raw yellow potato, a yellow bell pepper and a knife.",2 of 17,0.11764705882352941,False,
+36,"Since the patio table is empty, I should examine the BBQ to check if there are any ingredients or useful items there.",examine BBQ,,Useful for grilling things.,Backyard,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a raw red potato, a raw yellow potato, a yellow bell pepper and a knife.",2 of 17,0.11764705882352941,False,
+37,"The BBQ is useful for grilling, but I still need to find the carrot, purple potato, and red hot pepper. I will go east through the entranceway to explore further.",go east,,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a carrot, a raw purple potato, a red hot pepper and an orange bell pepper on the floor.",Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a carrot, a raw purple potato, a red hot pepper and an orange bell pepper on the floor.","You are carrying: a red onion, a raw red potato, a raw yellow potato, a yellow bell pepper and a knife.",2 of 17,0.11764705882352941,False,
+38,"I should take the carrot, raw purple potato, and red hot pepper from the floor to have all the ingredients needed for cooking.",take carrot from floor,,You're carrying too many things already.,Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a carrot, a raw purple potato, a red hot pepper and an orange bell pepper on the floor.","You are carrying: a red onion, a raw red potato, a raw yellow potato, a yellow bell pepper and a knife.",2 of 17,0.11764705882352941,False,
+39,"I am carrying too many items, so I should drop the yellow bell pepper to free up space for the carrot.",drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a yellow bell pepper, a carrot, a raw purple potato, a red hot pepper and an orange bell pepper on the floor.","You are carrying: a red onion, a raw red potato, a raw yellow potato and a knife.",2 of 17,0.11764705882352941,False,
+40,"Now that I have space, I should take the carrot from the floor.",take carrot from floor,,"You pick up the carrot from the ground.
+
+
+
+Your score has just gone up by one point.",Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a yellow bell pepper, a raw purple potato, a red hot pepper and an orange bell pepper on the floor.","You are carrying: a carrot, a red onion, a raw red potato, a raw yellow potato and a knife.",3 of 17,0.17647058823529413,False,
+41,I should drop the raw yellow potato to make room for the raw purple potato.,drop raw yellow potato,,You drop the yellow potato on the ground.,Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a raw yellow potato, a yellow bell pepper, a raw purple potato, a red hot pepper and an orange bell pepper on the floor.","You are carrying: a carrot, a red onion, a raw red potato and a knife.",3 of 17,0.17647058823529413,False,
+42,I should take the raw purple potato from the floor now that I have space.,take raw purple potato from floor,,"You pick up the purple potato from the ground.
+
+
+
+Your score has just gone up by one point.",Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a raw yellow potato, a yellow bell pepper, a red hot pepper and an orange bell pepper on the floor.","You are carrying: a raw purple potato, a carrot, a red onion, a raw red potato and a knife.",4 of 17,0.23529411764705882,False,
+43,I should drop the red onion to free up space for the red hot pepper.,drop red onion,,You drop the red onion on the ground.,Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a red onion, a raw yellow potato, a yellow bell pepper, a red hot pepper and an orange bell pepper on the floor.","You are carrying: a raw purple potato, a carrot, a raw red potato and a knife.",4 of 17,0.23529411764705882,False,
+44,I should take the red hot pepper from the floor now that I have space.,take red hot pepper from floor,,"You pick up the red hot pepper from the ground.
+
+
+
+Your score has just gone up by one point.",Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a red onion, a raw yellow potato, a yellow bell pepper and an orange bell pepper on the floor.","You are carrying: a red hot pepper, a raw purple potato, a carrot, a raw red potato and a knife.",5 of 17,0.29411764705882354,False,
+45,I should go west to exit the garden and head back to the kitchen to check the cookbook for the recipe.,go west,,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Backyard,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red hot pepper, a raw purple potato, a carrot, a raw red potato and a knife.",5 of 17,0.29411764705882354,False,
+46,I should go east through the entranceway without a door to continue towards the kitchen.,go east,,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a red onion, a raw yellow potato, a yellow bell pepper and an orange bell pepper on the floor.",Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a red onion, a raw yellow potato, a yellow bell pepper and an orange bell pepper on the floor.","You are carrying: a red hot pepper, a raw purple potato, a carrot, a raw red potato and a knife.",5 of 17,0.29411764705882354,False,
+47,I should go west to exit the garden and continue towards the kitchen.,go west,,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Backyard,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red hot pepper, a raw purple potato, a carrot, a raw red potato and a knife.",5 of 17,0.29411764705882354,False,
+48,I should go south through the open screen door to explore another exit from the backyard.,go south,,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana and a raw pork chop on the floor.",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a red hot pepper, a raw purple potato, a carrot, a raw red potato and a knife.",5 of 17,0.29411764705882354,False,
+49,I should examine the cookbook on the counter to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+carrot
+  purple potato
+  banana
+  red hot pepper
+  yellow bell pepper
+
+Directions:
+slice the carrot
+  grill the carrot
+  dice the purple potato
+  fry the purple potato
+  dice the banana
+  roast the banana
+  slice the red hot pepper
+  fry the red hot pepper
+  slice the yellow bell pepper
+  fry the yellow bell pepper
+  prepare meal",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a red hot pepper, a raw purple potato, a carrot, a raw red potato and a knife.",5 of 17,0.29411764705882354,False,
+50,"I need to gather the banana and yellow bell pepper from the floor and garden, then slice and cook the ingredients as per the recipe.",take banana from floor,,You're carrying too many things already.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a banana and a raw pork chop on the floor.","You are carrying: a red hot pepper, a raw purple potato, a carrot, a raw red potato and a knife.",5 of 17,0.29411764705882354,False,
+51,I need to drop the raw red potato to free up space for the banana.,drop raw red potato,,You drop the red potato on the ground.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato, a banana and a raw pork chop on the floor.","You are carrying: a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+52,"Now that I have space, I should take the banana from the floor.",take banana from floor,,You pick up the banana from the ground.,Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw pork chop on the floor.","You are carrying: a banana, a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+53,I need to find and take the yellow bell pepper to complete the ingredients for the recipe.,go east,,"You arrive in a pantry. A standard one.
+
+You see a gleam over in a corner, where you can see a shelf. The shelf is wooden. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf.
+
+There is an open plain door leading west.",Pantry,"You arrive in a pantry. A standard one.
+
+You see a gleam over in a corner, where you can see a shelf. The shelf is wooden. But the thing hasn't got anything on it. It would have been so cool if there was stuff on the shelf.
+
+There is an open plain door leading west.","You are carrying: a banana, a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+54,"The pantry does not have the yellow bell pepper, so I should go north through the screen door to check the garden for the yellow bell pepper.",go west,,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw pork chop on the floor.",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw pork chop on the floor.","You are carrying: a banana, a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+55,I should go north through the screen door to check the garden for the yellow bell pepper.,go north,,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Backyard,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a banana, a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+56,I should go east through the entranceway to explore further for the yellow bell pepper.,go east,,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a red onion, a raw yellow potato, a yellow bell pepper and an orange bell pepper on the floor.",Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a red onion, a raw yellow potato, a yellow bell pepper and an orange bell pepper on the floor.","You are carrying: a banana, a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+57,I should take the yellow bell pepper from the floor to have all the ingredients needed for the recipe.,take yellow bell pepper from floor,,You're carrying too many things already.,Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a red onion, a raw yellow potato, a yellow bell pepper and an orange bell pepper on the floor.","You are carrying: a banana, a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+58,"I am carrying too many items, so I should drop the banana to free up space for the yellow bell pepper.",drop banana,,You drop the banana on the ground.,Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a banana, a red onion, a raw yellow potato, a yellow bell pepper and an orange bell pepper on the floor.","You are carrying: a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+59,"Now that I have space, I should take the yellow bell pepper from the floor.",take yellow bell pepper from floor,,You pick up the yellow bell pepper from the ground.,Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a banana, a red onion, a raw yellow potato and an orange bell pepper on the floor.","You are carrying: a yellow bell pepper, a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+60,I should go west to return to the kitchen with the yellow bell pepper.,go west,,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Backyard,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+61,I should go east through the entranceway to return to the kitchen.,go east,,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a banana, a red onion, a raw yellow potato and an orange bell pepper on the floor.",Garden,"You're now in the garden.
+
+
+
+You need an exit without a door? You should try going west.
+
+There is a banana, a red onion, a raw yellow potato and an orange bell pepper on the floor.","You are carrying: a yellow bell pepper, a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+62,I should go west to enter the kitchen from the garden.,go west,,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Backyard,"Look around you. Take it all in. It's not every day someone gets to be in a backyard. Okay, just remember what you're here to do, and everything will go great.
+
+You can make out a patio table. But the thing is empty. Oh wow! Is that what I think it is? It is! It's a patio chair. However, the patio chair, like an empty patio chair, has nothing on it. You make a mental note to not get your hopes up the next time you see a patio chair in a room. You hear a noise behind you and spin around, but you can't see anything other than a BBQ. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things.
+
+There is a closed wooden door leading north. There is an open screen door leading south. There is a closed sliding patio door leading west. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a yellow bell pepper, a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+63,"The description and location haven't changed, so I must have been mistaken about the direction to the kitchen. I should try going south through the open screen door instead.",go south,,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw pork chop on the floor.",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+64,I should examine the cookbook on the counter to check the recipe for cooking a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+carrot
+  purple potato
+  banana
+  red hot pepper
+  yellow bell pepper
+
+Directions:
+slice the carrot
+  grill the carrot
+  dice the purple potato
+  fry the purple potato
+  dice the banana
+  roast the banana
+  slice the red hot pepper
+  fry the red hot pepper
+  slice the yellow bell pepper
+  fry the yellow bell pepper
+  prepare meal",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a red hot pepper, a raw purple potato, a carrot and a knife.",5 of 17,0.29411764705882354,False,
+65,"I will follow the recipe step-by-step, starting by slicing the carrot.",slice carrot with knife,,"You slice the carrot.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a red hot pepper, a raw purple potato, a sliced carrot and a knife.",6 of 17,0.35294117647058826,False,
+66,"Next, I will grill the sliced carrot as per the recipe.",cook sliced carrot with stove,,"You fried the carrot.
+
+
+
+                              *** You lost! ***
+
+You scored 6 out of a possible 17, in 63 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You've entered a kitchen.
+
+You see an opened fridge nearby. The fridge contains a white onion and a block of cheese. There's something strange about this being here, but you can't put your finger on it. You bend down to tie your shoe. When you stand up, you notice an oven. You see a table. But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a counter. On the counter you can make out a red apple and a cookbook. If you haven't noticed it already, there seems to be something there by the wall, it's a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading east. There is an open screen door leading north. There is an exit to the west. Don't worry, there is no door.
+
+There is a raw red potato and a raw pork chop on the floor.","You are carrying: a yellow bell pepper, a red hot pepper, a raw purple potato, a sliced carrot and a knife.",6 of 17,0.35294117647058826,True,
