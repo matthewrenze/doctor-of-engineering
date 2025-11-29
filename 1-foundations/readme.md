@@ -29,9 +29,9 @@ Paper summaries can be found in the [summaries folder](summaries/).
 
 ## Prototypes
  - [ask_confidence](https://github.com/matthewrenze/doctor-of-engineering/tree/main/1-foundations/prototypes/ask_confidence) - asks the LLM to predict its confidence for each answer option
- - [ensemble_analysis](https://github.com/matthewrenze/doctor-of-engineering/tree/main/1-foundations/prototypes/ensemble_analysis) - an analysis my previous LLM temperature data for ensemble answer disagreement at various temperatures
- - [get_ensemble](https://github.com/matthewrenze/doctor-of-engineering/tree/main/1-foundations/prototypes/get_ensemble) - gets the answer agreement (certianty) of LLM by answering 10 times with temp 0.7
- - [get_log_probs](https://github.com/matthewrenze/doctor-of-engineering/tree/main/1-foundations/prototypes/get_log_probs) - gets the log probablity of an LLMs answer to a multiple-choice question
+ - [ensemble_analysis](https://github.com/matthewrenze/doctor-of-engineering/tree/main/1-foundations/prototypes/ensemble_analysis) - an analysis of my previous LLM temperature data for ensemble answer disagreement at various temperatures
+ - [get_ensemble](https://github.com/matthewrenze/doctor-of-engineering/tree/main/1-foundations/prototypes/get_ensemble) - gets the answer agreement (certainty) of LLM by answering 10 times with temp 0.7
+ - [get_log_probs](https://github.com/matthewrenze/doctor-of-engineering/tree/main/1-foundations/prototypes/get_log_probs) - gets the log probability of an LLM's answer to a multiple-choice question
  - [reasoning_tokens](https://github.com/matthewrenze/doctor-of-engineering/tree/main/1-foundations/prototypes/reasoning_tokens) - gets the number of reasoning tokens for reasoning models like o3
  - [responses_api](https://github.com/matthewrenze/doctor-of-engineering/tree/main/1-foundations/prototypes/responses_api) - compares OpenAI's chat completions API with the new responses API
 
