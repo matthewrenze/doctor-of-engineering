@@ -1,7 +1,7 @@
 # Module 4 - Cognitive Enhancements (Oct)
 
 ## Goals
-- Learn how to create agents that can plan, remember, and reflect
+- Learn how to create agents that can observe, plan, and remember
 
 ## Readings
 - [Understanding the planning of LLM agents: A survey](https://arxiv.org/abs/2402.02716)
@@ -16,14 +16,13 @@
 ## Summaries
 - Paper summaries can be found in the [summaries](summaries/) folder.
 
-## Prototypes
-
-
 ## Exercises
 - Summarize the [best practices](exercises/best-practices/best-practices-for-cognitive-enhancements.md) for implementing cognititive enhancements
 - Summarize the [benchmarks](exercises/best-practices/benchmarks-for-cognitive-enhancements.md) used for evaluating cognitive enhancements
 - Create an [observation agent](exercises/observation-agent/)
 - Create a [planning agent](exercises/planning-agent/)
+- Create a [summary agent](exercises/summary-agent/)
+- Create a [memory agent](exercises/memory-agent/)
 
 ## Experiments
 - Compare [plain-text vs JSON agent](experiments/json-agent/)
@@ -31,6 +30,6 @@
 - Create a [new textworld curriculum](experiments/textworld-v2/) with a smooth learning curve for evaluating cognitive enhancements
 - Optimize the number of accessible [previous k states](experiments/previous-k-states/) for an observation agent
 - Create an [oracle agent](experiments/oracle-agent/)
-
-## Projects
+- Optimize the number of [truncated steps](experiments/optimize-truncate/) (i.e., states-action pairs)
+- Compare the current [top models](experiments/top-models/) to see if they solve long-horizon decoherence
 

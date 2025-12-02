@@ -20,7 +20,11 @@
 - [beep-beep](prototypes/beep-beep/) - prototypes for an audible alert for long running experiments
 - [cache-hash](prototypes/cache-hash/) - prototypes for file-name hashing for a file cache
 - [debug-evals](prototypes/debug-evals/) - prototypes for creating evals to debug tools
+- [download-file](prototypes/download_file/) - prototypes for downloading files from the web
 - [execute-code](prototypes/execute-code/) - prototypes for a Python code interpreter tool
+- [find-in-file](prototypes/find-in-file/) - prototypes for finding a text match in a file
+- [find-in-html](prototypes/find-in-html) - prototypes for finding a text match in HTML
+- [mcp-client-server](prototypes/mcp-client-server/) - prototypes for MCP client and server
 - [read-html](prototypes/read-html/) - prototypes for an HTML-to-markdown tool
 - [search-web](prototypes/search-web/) - prototypes for a web search tool
 - [simple-qa](prototypes/simple-qa/) - prototypes for the simple-qa benchmark
@@ -30,10 +34,7 @@
 - Create an agent with a [search engine tool](projects/agent-eval/code/tools/search_web_tool.py)
 - Create an agent with a [web browser tool](projects/agent-eval/code/tools/read_html_tool.py)
 - Create an agent with a [python interpreter tool](projects/agent-eval/code/tools/execute_code_tool.py)
-- Create an MCP client/server agent
 - Create a [simple-qa eval](projects/create-evals/code/create_simple_qa_evals.py)
-- Create an m&ms eval
-- Create a τ-bench evaluation
 
 ## Experiments
 - Determine optimal [top-k search results](experiments/top-k-search-results/)
