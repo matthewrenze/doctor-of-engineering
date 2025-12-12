@@ -1,0 +1,80 @@
+step_id,reflection,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw pork chop.,0 of 10,0.0,False,
+1,"- Outcome: success  
+- Cause: I have successfully arrived in the kitchen and identified the items available.  
+- Rule: I must check the cookbook first to find the recipe before starting to cook.",I need to examine the cookbook on the counter to find the recipe for the meal I am going to cook.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+carrot
+  pork chop
+  yellow potato
+
+Directions:
+chop the carrot
+  fry the carrot
+  dice the pork chop
+  roast the pork chop
+  chop the yellow potato
+  roast the yellow potato
+  prepare meal",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw pork chop.,0 of 10,0.0,False,
+2,"- Outcome: success  
+- Cause: I successfully read the recipe and know the required ingredients and steps.  
+- Rule: I must gather all the required ingredients before starting the preparation steps.",I need to take the carrot and the yellow potato from the counter to have all the ingredients required for the recipe.,take carrot from counter,,You can't see any such thing.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw pork chop.,0 of 10,0.0,False,
+3,"- Outcome: failure  
+- Cause: I tried to take a carrot, but there is no carrot on the counter.  
+- Rule: I must only take items that are actually present in the environment.","Since there is no carrot, I should take the yellow potato from the counter as it is required and available.",take raw yellow potato from counter,,"You take the yellow potato from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw yellow potato and a raw pork chop.,1 of 10,0.1,False,
+4,"- Outcome: success  
+- Cause: I successfully took the yellow potato from the counter.  
+- Rule: I must continue to gather all required ingredients before starting preparation.","I still need to take the carrot, but since it is not available, I should check if the purple potato can be used as a substitute or if I should proceed with the available ingredients.",examine raw purple potato,,The raw purple potato looks delectable.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw yellow potato and a raw pork chop.,1 of 10,0.1,False,
+5,"- Outcome: success  
+- Cause: I successfully examined the raw purple potato and confirmed it is present.  
+- Rule: I must verify if the purple potato can substitute the carrot or if I should proceed without it.","Since the recipe specifically calls for a carrot and there is none, I will proceed with the available ingredients and start by chopping the yellow potato as per the recipe.",chop raw yellow potato with knife,,You need to take the knife first.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw yellow potato and a raw pork chop.,1 of 10,0.1,False,
+6,"- Outcome: failure  
+- Cause: I tried to chop the yellow potato without having the knife in my inventory.  
+- Rule: I must pick up the knife before attempting to chop any ingredients.",I need to take the knife from the counter before chopping the yellow potato.,take knife from counter,,You take the knife from the counter.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a knife, a raw yellow potato and a raw pork chop.",1 of 10,0.1,False,
+7,"- Outcome: success  
+- Cause: I successfully took the knife from the counter.  
+- Rule: I must now proceed to chop the yellow potato as per the recipe.",I will chop the raw yellow potato with the knife.,chop raw yellow potato with knife,,"You chop the yellow potato.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a knife, a chopped raw yellow potato and a raw pork chop.",2 of 10,0.2,False,
+8,"- Outcome: success  
+- Cause: I successfully chopped the raw yellow potato.  
+- Rule: I must continue preparing the other ingredients needed for the meal.",I should now chop the raw pork chop to continue with the meal preparation.,chop raw pork chop with knife,,"You chop the pork chop.
+
+
+
+                              *** You lost! ***
+
+You scored 2 out of a possible 10, in 7 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a yellow bell pepper, a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a knife, a chopped raw yellow potato and a raw pork chop.",2 of 10,0.2,True,

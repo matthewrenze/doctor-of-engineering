@@ -1,0 +1,55 @@
+step_id,reflection,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"I hope you're ready to go into rooms and interact with objects, because you've just entered TextWorld! Here is your task for today. First, it would be good if you could make sure that the door in the laundromat is wide open. After opening the door, venture north. If you can accomplish that, pick-up the key from the floor of the workshop. That's it!",,Laundromat,"You've just shown up in a laundromat. Let's see what's in here.
+
+
+
+There is a closed door leading north. There is an open gateway leading east.",You are carrying nothing.,0 of 1,0.0,False,
+1,"- Outcome: N/A  
+- Cause: This is the first step, so no previous action to evaluate.  
+- Rule: I must start by examining the environment to understand what actions are possible.",I need to check the door leading north to see if it is indeed closed and if I can open it.,examine door,,"it is what it is, a door It is closed.",Laundromat,"You've just shown up in a laundromat. Let's see what's in here.
+
+
+
+There is a closed door leading north. There is an open gateway leading east.",You are carrying nothing.,0 of 1,0.0,False,
+2,"- Outcome: success  
+- Cause: I successfully confirmed the door is closed.  
+- Rule: I must open the door before moving north through it.","Since the door is closed, I need to open it to proceed north.",open door,,You open door.,Laundromat,"You've just shown up in a laundromat. Let's see what's in here.
+
+
+
+There is an open door leading north. There is an open gateway leading east.",You are carrying nothing.,0 of 1,0.0,False,
+3,"- Outcome: success  
+- Cause: I successfully opened the door leading north.  
+- Rule: I must move north through the open door as the next step.","The door is now open, so I should go north through it.",go north,,"Welcome to the workshop. I guess you better just go and list everything you see here.
+
+
+
+There is an open door leading south. There is an open gate leading north.
+
+There is a key on the floor.",Workshop,"Welcome to the workshop. I guess you better just go and list everything you see here.
+
+
+
+There is an open door leading south. There is an open gate leading north.
+
+There is a key on the floor.",You are carrying nothing.,0 of 1,0.0,False,
+4,"- Outcome: success  
+- Cause: I successfully moved north into the workshop and observed the environment.  
+- Rule: I must pick up the key from the floor as instructed.","I see a key on the floor in the workshop, so I should take it.",take key from floor,,"You pick up the key from the ground.
+
+
+
+Your score has just gone up by one point.
+
+
+                               *** The End ***
+
+You scored 1 out of a possible 1, in 5 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Workshop,"Welcome to the workshop. I guess you better just go and list everything you see here.
+
+
+
+There is an open door leading south. There is an open gate leading north.",You are carrying: a key.,1 of 1,1.0,True,

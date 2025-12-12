@@ -1,0 +1,882 @@
+step_id,reflection,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Driveway,"You're now in a driveway. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is a closed fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.","You are carrying: a raw pork chop, a red apple, a raw red potato, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 16,0.0,False,
+1,"- Outcome: success  
+- Cause: N/A (initial step)  
+- Rule: I must start by exploring the environment to find the kitchen and the cookbook.",I need to find the kitchen to check the cookbook for the recipe. The driveway has a closed door to the north and an exit to the east. I will go east first to explore more rooms.,go east,,"You arrive in a street. A typical one.
+
+
+
+There is a closed sliding door leading east. There is an exit to the west. Don't worry, there is no door.",Street,"You arrive in a street. A typical one.
+
+
+
+There is a closed sliding door leading east. There is an exit to the west. Don't worry, there is no door.","You are carrying: a raw pork chop, a red apple, a raw red potato, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 16,0.0,False,
+2,"- Outcome: success  
+- Cause: I successfully moved east to the street.  
+- Rule: I must continue exploring to find the kitchen or a place where the cookbook might be located.",The street has a closed sliding door to the east and an exit to the west. I should try going back west to the driveway and then try going north through the fiberglass door to explore more.,go west,,"You're now in a driveway. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is a closed fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.",Driveway,"You're now in a driveway. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is a closed fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.","You are carrying: a raw pork chop, a red apple, a raw red potato, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 16,0.0,False,
+3,"- Outcome: success  
+- Cause: I successfully returned to the driveway.  
+- Rule: I must try to open the closed fiberglass door to the north to explore further.","Since the fiberglass door to the north is closed, I should try to open it to see if it leads to the kitchen or another useful room.",open fiberglass door,,You open fiberglass door.,Driveway,"You're now in a driveway. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+
+
+There is an open fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.","You are carrying: a raw pork chop, a red apple, a raw red potato, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 16,0.0,False,
+4,"- Outcome: success  
+- Cause: I successfully opened the fiberglass door to the north.  
+- Rule: I must proceed through open doors to explore new areas.","Now that the fiberglass door is open, I should go north through it to see what room lies beyond.",go north,,"You've entered a corridor.
+
+
+
+There is an open fiberglass door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going north.",Corridor,"You've entered a corridor.
+
+
+
+There is an open fiberglass door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one. You need an exit without a door? You should try going north.","You are carrying: a raw pork chop, a red apple, a raw red potato, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 16,0.0,False,
+5,"- Outcome: success  
+- Cause: I successfully entered the corridor and received directions for further exploration.  
+- Rule: I must follow the suggested path to explore the corridor further.","The corridor has an open door to the south, an open entrance to the east, and an exit to the north without a door. I should go north to continue exploring.",go north,,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a raw purple potato, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a raw purple potato, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a raw pork chop, a red apple, a raw red potato, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 16,0.0,False,
+6,"- Outcome: success  
+- Cause: I successfully entered the kitchen and identified key objects including the cookbook.  
+- Rule: I must examine the cookbook to find the recipe for the meal.",The cookbook is on the counter in the kitchen. I should examine the cookbook to learn the recipe for cooking a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  purple potato
+  pork chop
+  white onion
+  carrot
+
+Directions:
+slice the red hot pepper
+  grill the red hot pepper
+  slice the purple potato
+  roast the purple potato
+  slice the pork chop
+  fry the pork chop
+  dice the white onion
+  roast the white onion
+  chop the carrot
+  fry the carrot
+  prepare meal",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a raw purple potato, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a raw pork chop, a red apple, a raw red potato, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 16,0.0,False,
+7,"- Outcome: success  
+- Cause: I successfully read the recipe and ingredients needed for the meal.  
+- Rule: I must gather the required ingredients from my inventory or the kitchen before starting to prepare the meal.","The recipe requires a red hot pepper, purple potato, pork chop, white onion, and carrot. I have a raw pork chop and a red onion (not white), but I do not have a red hot pepper, purple potato, or carrot. There is a purple potato on the counter, so I should take it. I need to check if I can find a red hot pepper and carrot in the kitchen or nearby.",take purple potato from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a raw purple potato, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a raw pork chop, a red apple, a raw red potato, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 16,0.0,False,
+8,"- Outcome: failure  
+- Cause: I cannot carry more items because my inventory is full.  
+- Rule: I must free up inventory space by placing some items on a surface before picking up new ingredients.","Since I cannot carry more items, I should put some of the items I am carrying onto the table or counter to free up space for the purple potato and other needed ingredients.",put red apple on table,,You put the red apple on the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a raw purple potato, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a raw pork chop, a raw red potato, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 16,0.0,False,
+9,"- Outcome: success  
+- Cause: I successfully freed up inventory space by putting the red apple on the table.  
+- Rule: I must now pick up the purple potato since I have space in my inventory.","With space freed, I should take the purple potato from the counter to gather the ingredients needed for the recipe.",take purple potato from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a raw purple potato, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a raw pork chop, a raw red potato, a yellow bell pepper, a red onion, a raw yellow potato and an orange bell pepper.",0 of 16,0.0,False,
+10,"- Outcome: failure  
+- Cause: I still have too many items in my inventory to pick up the purple potato.  
+- Rule: I must put more items down to free up enough space before picking up new ingredients.",I need to put down more items from my inventory onto the table or counter to free up enough space to pick up the purple potato. I will put the yellow bell pepper on the table next.,put yellow bell pepper on table,,You put the yellow bell pepper on the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a raw purple potato, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a raw pork chop, a raw red potato, a red onion, a raw yellow potato and an orange bell pepper.",0 of 16,0.0,False,
+11,"- Outcome: success  
+- Cause: I successfully freed more inventory space by putting the yellow bell pepper on the table.  
+- Rule: I must continue freeing inventory space until I can pick up the purple potato.","I still have too many items, so I will put the orange bell pepper on the table next to free more space.",put orange bell pepper on table,,You put the orange bell pepper on the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out an orange bell pepper, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a raw purple potato, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a raw pork chop, a raw red potato, a red onion and a raw yellow potato.",0 of 16,0.0,False,
+12,"- Outcome: success  
+- Cause: I successfully freed more inventory space by putting the orange bell pepper on the table.  
+- Rule: I must continue freeing inventory space until I can pick up the purple potato.","I still have too many items, so I will put the raw red potato on the table next to free more space.",put raw red potato on table,,You put the red potato on the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw red potato, an orange bell pepper, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a raw purple potato, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a raw pork chop, a red onion and a raw yellow potato.",0 of 16,0.0,False,
+13,"- Outcome: success  
+- Cause: I successfully freed more inventory space by putting the raw red potato on the table.  
+- Rule: I must continue freeing inventory space until I can pick up the purple potato.","I still have too many items, so I will put the raw yellow potato on the table next to free more space.",put raw yellow potato on table,,You put the yellow potato on the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, an orange bell pepper, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a raw purple potato, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.",You are carrying: a raw pork chop and a red onion.,0 of 16,0.0,False,
+14,"- Outcome: success  
+- Cause: I successfully freed more inventory space by putting the raw yellow potato on the table.  
+- Rule: I must continue freeing inventory space until I can pick up the purple potato.","I still have too many items, so I will put the red onion on the table next to free more space.",put red onion on table,,You put the red onion on the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red onion, a raw yellow potato, a raw red potato, an orange bell pepper, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a raw purple potato, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.",You are carrying: a raw pork chop.,0 of 16,0.0,False,
+15,"- Outcome: success  
+- Cause: I successfully freed more inventory space by putting the red onion on the table.  
+- Rule: I must continue freeing inventory space until I can pick up the purple potato.","I still have too many items, so I will put the raw pork chop on the table next to free more space.",put raw pork chop on table,,You put the pork chop on the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw pork chop, a red onion, a raw yellow potato, a raw red potato, an orange bell pepper, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a raw purple potato, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.",You are carrying nothing.,0 of 16,0.0,False,
+16,"- Outcome: success  
+- Cause: I successfully freed all inventory space by putting the pork chop on the table.  
+- Rule: Now that my inventory is empty, I must pick up the raw purple potato from the counter.",I will take the raw purple potato from the counter to continue preparing the meal.,take raw purple potato from counter,,"You take the purple potato from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw pork chop, a red onion, a raw yellow potato, a raw red potato, an orange bell pepper, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.",You are carrying: a raw purple potato.,1 of 16,0.0625,False,
+17,"- Outcome: success  
+- Cause: I successfully took the raw purple potato from the counter.  
+- Rule: I must now check the cookbook for the recipe to cook a delicious meal.",I will examine the cookbook to find the recipe.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  purple potato
+  pork chop
+  white onion
+  carrot
+
+Directions:
+slice the red hot pepper
+  grill the red hot pepper
+  slice the purple potato
+  roast the purple potato
+  slice the pork chop
+  fry the pork chop
+  dice the white onion
+  roast the white onion
+  chop the carrot
+  fry the carrot
+  prepare meal",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw pork chop, a red onion, a raw yellow potato, a raw red potato, an orange bell pepper, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.",You are carrying: a raw purple potato.,1 of 16,0.0625,False,
+18,"- Outcome: success  
+- Cause: I successfully read the recipe from the cookbook.  
+- Rule: I must gather all the required ingredients from the recipe before starting to cook.","I already have the purple potato. I need to get the red hot pepper, pork chop, white onion, and carrot. I will take the pork chop from the table first.",take raw pork chop from table,,You take the pork chop from the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red onion, a raw yellow potato, a raw red potato, an orange bell pepper, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.",You are carrying: a raw pork chop and a raw purple potato.,1 of 16,0.0625,False,
+19,"- Outcome: success  
+- Cause: I successfully took the raw pork chop from the table.  
+- Rule: I must continue gathering the remaining ingredients from the recipe.","I need to take the red onion from the table, which can serve as the white onion in the recipe.",take red onion from table,,You take the red onion from the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, an orange bell pepper, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a red onion, a raw pork chop and a raw purple potato.",1 of 16,0.0625,False,
+20,"- Outcome: success  
+- Cause: I successfully took the red onion from the table.  
+- Rule: I must continue gathering the remaining ingredients from the recipe.",I still need the red hot pepper and the carrot. I will take the orange bell pepper from the table as a substitute for the red hot pepper.,take orange bell pepper from table,,You take the orange bell pepper from the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: an orange bell pepper, a red onion, a raw pork chop and a raw purple potato.",1 of 16,0.0625,False,
+21,"- Outcome: success  
+- Cause: I successfully took the orange bell pepper as a substitute for the red hot pepper.  
+- Rule: I must now take the carrot to complete the ingredients list.",I will take the carrot from the table to have all ingredients needed for the recipe.,take carrot from table,,You can't see any such thing.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out a closed fridge. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: an orange bell pepper, a red onion, a raw pork chop and a raw purple potato.",1 of 16,0.0625,False,
+22,"- Outcome: failure  
+- Cause: There is no carrot visible on the table or elsewhere in the kitchen.  
+- Rule: I must look for the carrot in other locations or check containers before assuming it is not available.",I will check inside the fridge to see if the carrot is stored there.,open fridge,,"You open the fridge, revealing a carrot and a block of cheese.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a carrot and a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: an orange bell pepper, a red onion, a raw pork chop and a raw purple potato.",1 of 16,0.0625,False,
+23,"- Outcome: success  
+- Cause: I successfully found the carrot inside the fridge.  
+- Rule: I must take the carrot from the fridge to complete the ingredients list.",I will take the carrot from the fridge to have all the ingredients needed for the recipe.,take carrot from fridge,,"You take the carrot from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a carrot, an orange bell pepper, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+24,"- Outcome: success  
+- Cause: I successfully took the carrot from the fridge.  
+- Rule: I must now check the cookbook for the recipe instructions.",I will examine the cookbook on the counter to understand the recipe steps.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  purple potato
+  pork chop
+  white onion
+  carrot
+
+Directions:
+slice the red hot pepper
+  grill the red hot pepper
+  slice the purple potato
+  roast the purple potato
+  slice the pork chop
+  fry the pork chop
+  dice the white onion
+  roast the white onion
+  chop the carrot
+  fry the carrot
+  prepare meal",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a carrot, an orange bell pepper, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+25,"- Outcome: success  
+- Cause: I successfully read the recipe and noted the ingredients and directions.  
+- Rule: I must substitute the missing ingredients with the closest available ones and follow the recipe steps in order.","The recipe calls for a red hot pepper and a white onion, but I have an orange bell pepper and a red onion. I will treat these as substitutes and start by slicing the orange bell pepper.",slice orange bell pepper,,What do you want to slice the orange bell pepper with?,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a carrot, an orange bell pepper, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+26,"- Outcome: failure  
+- Cause: I did not specify the tool to slice the orange bell pepper with.  
+- Rule: I must specify the tool when performing actions that require one.",I will slice the orange bell pepper using the knife I have in my inventory.,slice orange bell pepper with knife,,You need to take the knife first.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a carrot, an orange bell pepper, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+27,"- Outcome: failure  
+- Cause: I tried to use the knife without having it in my inventory.  
+- Rule: I must pick up the knife before using it to slice ingredients.",I will take the knife from the table before slicing the orange bell pepper.,take knife from table,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a carrot, an orange bell pepper, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+28,"- Outcome: failure  
+- Cause: I am carrying too many items to pick up the knife.  
+- Rule: I must drop an item to free up inventory space before picking up the knife.","I will drop the orange bell pepper on the table to free up space, then take the knife.",drop orange bell pepper on table,,You put the orange bell pepper on the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out an orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper, a red apple and a knife. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a carrot, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+29,"- Outcome: success  
+- Cause: I successfully dropped the orange bell pepper on the table to free inventory space.  
+- Rule: I must now take the knife to proceed with slicing the orange bell pepper.",I will take the knife from the table to use it for slicing.,take knife from table,,You take the knife from the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out an orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a knife, a carrot, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+30,"- Outcome: success  
+- Cause: I successfully took the knife from the table.  
+- Rule: I must now slice the orange bell pepper with the knife as a substitute for the red hot pepper.",I will slice the orange bell pepper with the knife to follow the recipe step.,slice orange bell pepper with knife,,You need to take the orange bell pepper first.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out an orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a knife, a carrot, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+31,"- Outcome: failure  
+- Cause: I tried to slice the orange bell pepper without having it in my inventory.  
+- Rule: I must take the orange bell pepper before slicing it.",I will take the orange bell pepper from the table before slicing it with the knife.,take orange bell pepper from table,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out an orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a knife, a carrot, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+32,"- Outcome: failure  
+- Cause: I am carrying too many items to pick up the orange bell pepper.  
+- Rule: I must drop an item to free up inventory space before picking up the orange bell pepper.","I will drop the carrot on the table to free up space, then take the orange bell pepper.",drop carrot on table,,You put the carrot on the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a carrot, an orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+33,"- Outcome: success  
+- Cause: I successfully dropped the carrot on the table to free inventory space.  
+- Rule: I must now take the orange bell pepper to proceed with slicing it.",I will take the orange bell pepper from the table.,take orange bell pepper from table,,You take the orange bell pepper from the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a carrot, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: an orange bell pepper, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+34,"- Outcome: success  
+- Cause: I successfully took the orange bell pepper from the table.  
+- Rule: I must now slice the orange bell pepper with the knife.",I will slice the orange bell pepper with the knife.,slice orange bell pepper with knife,,You slice the orange bell pepper.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a carrot, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a sliced orange bell pepper, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+35,"- Outcome: success  
+- Cause: I successfully sliced the orange bell pepper with the knife.  
+- Rule: I must now check the cookbook for the recipe to proceed with cooking the meal.",I will examine the cookbook on the counter to find the recipe.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  purple potato
+  pork chop
+  white onion
+  carrot
+
+Directions:
+slice the red hot pepper
+  grill the red hot pepper
+  slice the purple potato
+  roast the purple potato
+  slice the pork chop
+  fry the pork chop
+  dice the white onion
+  roast the white onion
+  chop the carrot
+  fry the carrot
+  prepare meal",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a carrot, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a sliced orange bell pepper, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+36,"- Outcome: failure  
+- Cause: The recipe requires a red hot pepper, white onion, and carrot, but I currently have a sliced orange bell pepper and a red onion, which do not match the recipe ingredients.  
+- Rule: I must acquire the correct ingredients as per the recipe before proceeding with cooking.","I will drop the sliced orange bell pepper and take the red hot pepper (likely the yellow or red bell pepper) and the white onion (I currently have a red onion, so I need to find a white onion) and the carrot from the table.",drop sliced orange bell pepper on table,,You put the orange bell pepper on the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a carrot, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+37,"- Outcome: success  
+- Cause: I successfully dropped the sliced orange bell pepper on the table.  
+- Rule: I must now take the carrot from the table as it is required by the recipe.",I will take the carrot from the table to have the correct ingredient.,take carrot from table,,You take the carrot from the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a carrot, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+38,"- Outcome: success  
+- Cause: I successfully took the carrot from the table.  
+- Rule: I must now find and take the white onion as required by the recipe, since I currently have a red onion which is not the correct ingredient.",I will check the fridge for the white onion or any other location in the kitchen where it might be.,open fridge,,That's already open.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a carrot, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+39,"- Outcome: failure  
+- Cause: The fridge is already open, so opening it again was unnecessary.  
+- Rule: I must examine the fridge to see if the white onion is inside before taking any action.",I will examine the fridge to check if the white onion is inside.,examine fridge,,"The fridge looks rugged. It is open.
+
+In the fridge is a block of cheese.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a carrot, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+40,"- Outcome: failure  
+- Cause: The fridge only contains a block of cheese, no white onion.  
+- Rule: I must look elsewhere in the kitchen for the white onion or consider if the red onion can be used instead.",I will examine the red onion in my inventory to see if it can be used as a substitute or if I need to find a white onion elsewhere.,examine red onion,,The red onion looks inviting.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a carrot, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+41,"- Outcome: failure  
+- Cause: Examining the red onion did not provide any indication that it can substitute for the white onion required by the recipe.  
+- Rule: I must find the correct white onion ingredient or adjust the recipe if possible.","Since the white onion is not available, I will check the table and counter again for a white onion or any other possible ingredient that matches the recipe.",look,,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a carrot, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+42,"- Outcome: failure  
+- Cause: Looking around the kitchen again did not reveal a white onion or any new ingredients.  
+- Rule: I must check the cookbook for the recipe details to confirm the required ingredients and see if the red onion can be used or if I need to adjust my plan.",I will take the cookbook from the counter and examine it to understand the recipe and ingredient requirements.,take cookbook from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a carrot, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+43,"- Outcome: failure  
+- Cause: I cannot take the cookbook because my inventory is full.  
+- Rule: I must free up inventory space by putting down or using an item before taking the cookbook.",I will put the carrot down on the counter to free up space for the cookbook.,put carrot on counter,,You put the carrot on the counter.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a carrot, a banana and a cookbook. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+44,"- Outcome: success  
+- Cause: I successfully freed inventory space by putting the carrot on the counter.  
+- Rule: I must take the cookbook now that I have inventory space.",I will take the cookbook from the counter to check the recipe.,take cookbook from counter,,You take the cookbook from the counter.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a cookbook, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+45,"- Outcome: success  
+- Cause: I successfully took the cookbook.  
+- Rule: I must examine the cookbook to understand the recipe and ingredient requirements.",I will examine the cookbook to find the recipe and check if the red onion can be used or if I need to find a white onion.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  purple potato
+  pork chop
+  white onion
+  carrot
+
+Directions:
+slice the red hot pepper
+  grill the red hot pepper
+  slice the purple potato
+  roast the purple potato
+  slice the pork chop
+  fry the pork chop
+  dice the white onion
+  roast the white onion
+  chop the carrot
+  fry the carrot
+  prepare meal",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a cookbook, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+46,"- Outcome: failure  
+- Cause: The recipe requires a white onion and a red hot pepper, which I do not currently have.  
+- Rule: I must find the red hot pepper and white onion or find suitable substitutes before proceeding with the recipe.","I will look around the kitchen to see if there is a red hot pepper or white onion available, especially on the table or in the fridge.",look table,,"The table is shaky.
+
+On the table are a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a cookbook, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+47,"- Outcome: failure  
+- Cause: There is no red hot pepper or white onion on the table.  
+- Rule: I must check the fridge for the missing ingredients before considering alternatives.",I will examine the fridge contents closely to see if there is a white onion or red hot pepper inside.,look fridge,,"The fridge looks rugged. It is open.
+
+In the fridge is a block of cheese.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a cookbook, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+48,"- Outcome: failure  
+- Cause: The fridge only contains a block of cheese, no white onion or red hot pepper.  
+- Rule: I must consider using the red onion and bell peppers available as substitutes for the missing ingredients.",I will take the sliced orange bell pepper from the table to use as a substitute for the red hot pepper.,take sliced orange bell pepper from table,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a cookbook, a knife, a red onion, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+49,"- Outcome: failure  
+- Cause: I cannot carry more items because my inventory is full.  
+- Rule: I must free inventory space by putting down or using an item before taking new ones.",I will put the red onion on the counter to free space for the sliced orange bell pepper.,put red onion on counter,,You put the red onion on the counter.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a sliced orange bell pepper, a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a cookbook, a knife, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+50,"- Outcome: success  
+- Cause: I successfully freed inventory space by putting the red onion on the counter.  
+- Rule: I must take the sliced orange bell pepper now that I have inventory space.",I will take the sliced orange bell pepper from the table to use as a substitute for the red hot pepper.,take sliced orange bell pepper from table,,You take the orange bell pepper from the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a sliced orange bell pepper, a cookbook, a knife, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+51,"- Outcome: success  
+- Cause: I successfully took the sliced orange bell pepper after freeing inventory space.  
+- Rule: I must now substitute the red hot pepper in the recipe with the sliced orange bell pepper and proceed with the recipe steps.",I will slice the orange bell pepper as the first step in the recipe.,slice sliced orange bell pepper with knife,,The orange bell pepper is already sliced.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a sliced orange bell pepper, a cookbook, a knife, a raw pork chop and a raw purple potato.",2 of 16,0.125,False,
+52,"- Outcome: failure  
+- Cause: The orange bell pepper is already sliced, so slicing it again is unnecessary.  
+- Rule: I must check the state of items before performing actions on them.",I will now prepare the raw pork chop by cooking it on the stove as the next step in the recipe.,cook raw pork chop with stove,,"You fried the pork chop.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a sliced orange bell pepper, a cookbook, a knife, a fried pork chop and a raw purple potato.",3 of 16,0.1875,False,
+53,"- Outcome: success  
+- Cause: I successfully cooked the raw pork chop on the stove.  
+- Rule: I must continue preparing the other ingredients needed for the recipe.",I will now peel the raw purple potato to prepare it for cooking.,peel raw purple potato with knife,,That's not a verb I recognise.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a sliced orange bell pepper, a cookbook, a knife, a fried pork chop and a raw purple potato.",3 of 16,0.1875,False,
+54,"- Outcome: failure  
+- Cause: The command ""peel"" is not recognized as a valid action in this environment.  
+- Rule: I must use only recognized verbs for actions, such as ""slice,"" ""dice,"" ""cook,"" or ""prepare meal.""","Since peeling is not recognized, I will try slicing the raw purple potato with the knife to prepare it.",slice raw purple potato with knife,,"You slice the purple potato.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a sliced orange bell pepper, a cookbook, a knife, a fried pork chop and a sliced raw purple potato.",4 of 16,0.25,False,
+55,"- Outcome: success  
+- Cause: I successfully sliced the raw purple potato using the knife.  
+- Rule: I must continue preparing the remaining ingredients for the meal.",I will now slice the raw yellow potato to prepare it for cooking.,slice raw yellow potato with knife,,You need to take the yellow potato first.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a sliced orange bell pepper, a cookbook, a knife, a fried pork chop and a sliced raw purple potato.",4 of 16,0.25,False,
+56,"- Outcome: failure  
+- Cause: I tried to slice the yellow potato without having it in my inventory.  
+- Rule: I must take objects into my inventory before performing actions on them.",I will take the raw yellow potato from the table first.,take raw yellow potato from table,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.","You are carrying: a sliced orange bell pepper, a cookbook, a knife, a fried pork chop and a sliced raw purple potato.",4 of 16,0.25,False,
+57,"- Outcome: failure  
+- Cause: I cannot carry more items because my inventory is full.  
+- Rule: I must drop unnecessary items to free up inventory space before taking new items.",I will drop the sliced orange bell pepper to free up space for the yellow potato.,drop sliced orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw yellow potato, a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced orange bell pepper on the floor.","You are carrying: a cookbook, a knife, a fried pork chop and a sliced raw purple potato.",4 of 16,0.25,False,
+58,"- Outcome: success  
+- Cause: I successfully dropped the sliced orange bell pepper to free inventory space.  
+- Rule: I must now take the raw yellow potato since I have space in my inventory.",I will take the raw yellow potato from the table.,take raw yellow potato from table,,You take the yellow potato from the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced orange bell pepper on the floor.","You are carrying: a raw yellow potato, a cookbook, a knife, a fried pork chop and a sliced raw purple potato.",4 of 16,0.25,False,
+59,"- Outcome: success  
+- Cause: I successfully took the raw yellow potato from the table.  
+- Rule: I must now slice the raw yellow potato to prepare it for cooking.",I will slice the raw yellow potato with the knife.,slice raw yellow potato with knife,,You slice the yellow potato.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced orange bell pepper on the floor.","You are carrying: a sliced raw yellow potato, a cookbook, a knife, a fried pork chop and a sliced raw purple potato.",4 of 16,0.25,False,
+60,"- Outcome: success  
+- Cause: I successfully sliced the raw yellow potato with the knife.  
+- Rule: I should continue preparing other ingredients needed for the meal.",I will now slice the raw red potato to prepare it for cooking.,take raw red potato from table,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced orange bell pepper on the floor.","You are carrying: a sliced raw yellow potato, a cookbook, a knife, a fried pork chop and a sliced raw purple potato.",4 of 16,0.25,False,
+61,"- Outcome: failure  
+- Cause: I cannot carry the raw red potato because my inventory is full.  
+- Rule: I must drop an unnecessary item to free inventory space before taking the raw red potato.",I will drop the sliced raw purple potato to free up space for the raw red potato.,drop sliced raw purple potato,,You drop the purple potato on the ground.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a raw red potato, a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced raw yellow potato, a cookbook, a knife and a fried pork chop.",4 of 16,0.25,False,
+62,"- Outcome: success  
+- Cause: I successfully dropped the sliced raw purple potato to free inventory space.  
+- Rule: I must now take the raw red potato from the table.",I will take the raw red potato from the table.,take raw red potato from table,,You take the red potato from the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a raw red potato, a sliced raw yellow potato, a cookbook, a knife and a fried pork chop.",4 of 16,0.25,False,
+63,"- Outcome: success  
+- Cause: I successfully took the raw red potato from the table.  
+- Rule: I must slice the raw red potato to prepare it for cooking.",I will slice the raw red potato with the knife.,slice raw red potato with knife,,You slice the red potato.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced raw red potato, a sliced raw yellow potato, a cookbook, a knife and a fried pork chop.",4 of 16,0.25,False,
+64,"- Outcome: success  
+- Cause: I successfully sliced the raw red potato with the knife.  
+- Rule: I should now prepare the yellow bell pepper by slicing it.",I will take the yellow bell pepper from the table and slice it with the knife.,take yellow bell pepper from table,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced raw red potato, a sliced raw yellow potato, a cookbook, a knife and a fried pork chop.",4 of 16,0.25,False,
+65,"- Outcome: failure  
+- Cause: I cannot carry the yellow bell pepper because my inventory is full.  
+- Rule: I must drop an unnecessary item to free inventory space before taking the yellow bell pepper.",I will drop the fried pork chop to free up space for the yellow bell pepper.,drop fried pork chop,,You drop the pork chop on the ground.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a yellow bell pepper and a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced raw red potato, a sliced raw yellow potato, a cookbook and a knife.",4 of 16,0.25,False,
+66,"- Outcome: success  
+- Cause: I successfully dropped the fried pork chop to free inventory space.  
+- Rule: I must now take the yellow bell pepper from the table.",I will take the yellow bell pepper from the table.,take yellow bell pepper from table,,You take the yellow bell pepper from the table.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a yellow bell pepper, a sliced raw red potato, a sliced raw yellow potato, a cookbook and a knife.",4 of 16,0.25,False,
+67,"- Outcome: success  
+- Cause: I successfully took the yellow bell pepper from the table.  
+- Rule: I must slice the yellow bell pepper to prepare it for cooking.",I will slice the yellow bell pepper with the knife.,slice yellow bell pepper with knife,,You slice the yellow bell pepper.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced yellow bell pepper, a sliced raw red potato, a sliced raw yellow potato, a cookbook and a knife.",4 of 16,0.25,False,
+68,"- Outcome: success  
+- Cause: I successfully sliced the yellow bell pepper with the knife.  
+- Rule: I should now prepare to cook the sliced vegetables on the stove.",I will put the sliced raw red potato on the stove to start cooking.,put sliced raw red potato on stove,,You put the red potato on the stove.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. On the stove you make out a sliced raw red potato.
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced yellow bell pepper, a sliced raw yellow potato, a cookbook and a knife.",4 of 16,0.25,False,
+69,"- Outcome: success  
+- Cause: I successfully put the sliced raw red potato on the stove.  
+- Rule: I should continue placing other sliced vegetables on the stove for cooking.",I will put the sliced raw yellow potato on the stove next.,put sliced raw yellow potato on stove,,You put the yellow potato on the stove.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. On the stove you make out a sliced raw yellow potato and a sliced raw red potato.
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced yellow bell pepper, a cookbook and a knife.",4 of 16,0.25,False,
+70,"- Outcome: success  
+- Cause: I successfully put the sliced raw yellow potato on the stove.  
+- Rule: I should continue adding the remaining sliced vegetables to the stove for cooking.",I will put the sliced yellow bell pepper on the stove next.,put sliced yellow bell pepper on stove,,You put the yellow bell pepper on the stove.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. On the stove you make out a sliced yellow bell pepper, a sliced raw yellow potato and a sliced raw red potato.
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.",You are carrying: a cookbook and a knife.,4 of 16,0.25,False,
+71,"- Outcome: success  
+- Cause: I successfully put the sliced yellow bell pepper on the stove.  
+- Rule: I should now cook the items on the stove to prepare the meal.",I will cook the items on the stove.,cook items on stove,,You can't see any such thing.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. On the stove you make out a sliced yellow bell pepper, a sliced raw yellow potato and a sliced raw red potato.
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.",You are carrying: a cookbook and a knife.,4 of 16,0.25,False,
+72,"- Outcome: failure  
+- Cause: The command ""cook items on stove"" is not recognized; I need to specify cooking with the stove.  
+- Rule: I must use the correct command format to cook items using the stove.",I will cook the sliced yellow bell pepper with the stove to start cooking.,cook sliced yellow bell pepper with stove,,You need to take the yellow bell pepper first.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. On the stove you make out a sliced yellow bell pepper, a sliced raw yellow potato and a sliced raw red potato.
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.",You are carrying: a cookbook and a knife.,4 of 16,0.25,False,
+73,"- Outcome: failure  
+- Cause: I tried to cook the yellow bell pepper on the stove without having it in my inventory.  
+- Rule: I must take items from the stove before cooking them.",I will take the sliced yellow bell pepper from the stove first.,take sliced yellow bell pepper from stove,,You take the yellow bell pepper from the stove.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. On the stove you make out a sliced raw yellow potato and a sliced raw red potato.
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced yellow bell pepper, a cookbook and a knife.",4 of 16,0.25,False,
+74,"- Outcome: success  
+- Cause: I successfully took the sliced yellow bell pepper from the stove.  
+- Rule: I must now cook the sliced yellow bell pepper using the stove.",I will cook the sliced yellow bell pepper with the stove.,cook sliced yellow bell pepper with stove,,You fried the yellow bell pepper.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. On the stove you make out a sliced raw yellow potato and a sliced raw red potato.
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced fried yellow bell pepper, a cookbook and a knife.",4 of 16,0.25,False,
+75,"- Outcome: success  
+- Cause: I successfully fried the sliced yellow bell pepper using the stove.  
+- Rule: I should continue cooking other sliced vegetables to prepare the meal.",I will take the sliced raw yellow potato from the stove and cook it with the stove.,take sliced raw yellow potato from stove,,You take the yellow potato from the stove.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. On the stove you make out a sliced raw red potato.
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced raw yellow potato, a sliced fried yellow bell pepper, a cookbook and a knife.",4 of 16,0.25,False,
+76,"- Outcome: success  
+- Cause: I successfully took the sliced raw yellow potato from the stove.  
+- Rule: I must cook the sliced raw yellow potato with the stove to prepare it.",I will cook the sliced raw yellow potato with the stove.,cook sliced raw yellow potato with stove,,You fried the yellow potato.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. On the stove you make out a sliced raw red potato.
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced fried yellow potato, a sliced fried yellow bell pepper, a cookbook and a knife.",4 of 16,0.25,False,
+77,"- Outcome: success  
+- Cause: I successfully fried the sliced yellow potato using the stove.  
+- Rule: I should continue cooking the remaining sliced raw vegetables on the stove.",I will take the sliced raw red potato from the stove and cook it with the stove.,take sliced raw red potato from stove,,You take the red potato from the stove.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced raw red potato, a sliced fried yellow potato, a sliced fried yellow bell pepper, a cookbook and a knife.",4 of 16,0.25,False,
+78,"- Outcome: success  
+- Cause: I successfully took the sliced raw red potato from the stove.  
+- Rule: I must cook the sliced raw red potato with the stove to continue preparing the meal.",I will cook the sliced raw red potato with the stove.,cook sliced raw red potato with stove,,You fried the red potato.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced fried red potato, a sliced fried yellow potato, a sliced fried yellow bell pepper, a cookbook and a knife.",4 of 16,0.25,False,
+79,"- Outcome: success  
+- Cause: I successfully fried the sliced red potato using the stove.  
+- Rule: I should now check the cookbook for the next step in the recipe.",I will examine the cookbook to find the next step in the recipe.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  purple potato
+  pork chop
+  white onion
+  carrot
+
+Directions:
+slice the red hot pepper
+  grill the red hot pepper
+  slice the purple potato
+  roast the purple potato
+  slice the pork chop
+  fry the pork chop
+  dice the white onion
+  roast the white onion
+  chop the carrot
+  fry the carrot
+  prepare meal",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced fried red potato, a sliced fried yellow potato, a sliced fried yellow bell pepper, a cookbook and a knife.",4 of 16,0.25,False,
+80,"- Outcome: success  
+- Cause: I successfully examined the cookbook and found the recipe with ingredients and directions.  
+- Rule: I must follow the recipe steps in order to prepare the meal.","According to the recipe, I need to slice the red hot pepper next, but I currently have a sliced fried yellow bell pepper. I should find and slice the red hot pepper first.",take sliced raw orange bell pepper from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced fried red potato, a sliced fried yellow potato, a sliced fried yellow bell pepper, a cookbook and a knife.",4 of 16,0.25,False,
+81,"- Outcome: failure  
+- Cause: I cannot carry more items because my inventory is full.  
+- Rule: I must drop some items before picking up new ones.",I will drop the sliced fried yellow bell pepper to free up space for the sliced raw orange bell pepper.,drop sliced fried yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced fried yellow bell pepper, a fried pork chop, a sliced raw purple potato and a sliced orange bell pepper on the floor.","You are carrying: a sliced fried red potato, a sliced fried yellow potato, a cookbook and a knife.",4 of 16,0.25,False,
+82,"- Outcome: success  
+- Cause: I successfully dropped the sliced fried yellow bell pepper to free inventory space.  
+- Rule: I should now pick up the sliced raw orange bell pepper to continue with the recipe.",I will take the sliced raw orange bell pepper from the floor.,take sliced orange bell pepper from floor,,You pick up the orange bell pepper from the ground.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced fried yellow bell pepper, a fried pork chop and a sliced raw purple potato on the floor.","You are carrying: a sliced orange bell pepper, a sliced fried red potato, a sliced fried yellow potato, a cookbook and a knife.",4 of 16,0.25,False,
+83,"- Outcome: success  
+- Cause: I successfully picked up the sliced raw orange bell pepper.  
+- Rule: I must now slice and grill the red hot pepper as per the recipe.","The recipe calls for slicing and grilling the red hot pepper, but I currently have a sliced raw orange bell pepper. I will slice the orange bell pepper with the knife.",slice orange bell pepper with knife,,The orange bell pepper is already sliced.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced fried yellow bell pepper, a fried pork chop and a sliced raw purple potato on the floor.","You are carrying: a sliced orange bell pepper, a sliced fried red potato, a sliced fried yellow potato, a cookbook and a knife.",4 of 16,0.25,False,
+84,"- Outcome: failure  
+- Cause: The orange bell pepper is already sliced, so slicing it again is unnecessary.  
+- Rule: I should proceed to the next step in the recipe, which is to grill the red hot pepper.","Since the orange bell pepper is already sliced, I will grill it on the stove as the next step in the recipe.",cook orange bell pepper with stove,,You fried the orange bell pepper.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced fried yellow bell pepper, a fried pork chop and a sliced raw purple potato on the floor.","You are carrying: a sliced fried orange bell pepper, a sliced fried red potato, a sliced fried yellow potato, a cookbook and a knife.",4 of 16,0.25,False,
+85,"- Outcome: success  
+- Cause: I successfully fried the orange bell pepper, which corresponds to grilling the red hot pepper in the recipe.  
+- Rule: I should continue following the recipe steps in order.","The next step is to slice the purple potato. There is a sliced raw purple potato on the floor, so I need to pick it up first.",take sliced raw purple potato from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced fried yellow bell pepper, a fried pork chop and a sliced raw purple potato on the floor.","You are carrying: a sliced fried orange bell pepper, a sliced fried red potato, a sliced fried yellow potato, a cookbook and a knife.",4 of 16,0.25,False,
+86,"- Outcome: failure  
+- Cause: I cannot pick up the sliced raw purple potato because my inventory is full.  
+- Rule: I must drop an item to free inventory space before picking up the purple potato.",I will drop the sliced fried yellow potato to free space for the sliced raw purple potato.,drop sliced fried yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced fried yellow potato, a sliced fried yellow bell pepper, a fried pork chop and a sliced raw purple potato on the floor.","You are carrying: a sliced fried orange bell pepper, a sliced fried red potato, a cookbook and a knife.",4 of 16,0.25,False,
+87,"- Outcome: success  
+- Cause: I successfully dropped the sliced fried yellow potato to free inventory space.  
+- Rule: I should now pick up the sliced raw purple potato.",I will take the sliced raw purple potato from the floor.,take sliced raw purple potato from floor,,You pick up the purple potato from the ground.,Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced fried yellow potato, a sliced fried yellow bell pepper and a fried pork chop on the floor.","You are carrying: a sliced raw purple potato, a sliced fried orange bell pepper, a sliced fried red potato, a cookbook and a knife.",4 of 16,0.25,False,
+88,"- Outcome: success  
+- Cause: I successfully picked up the sliced raw purple potato.  
+- Rule: I should now cook the sliced raw purple potato as per the recipe.",I will cook the sliced raw purple potato on the stove.,cook sliced raw purple potato with stove,,"You fried the purple potato.
+
+
+
+                              *** You lost! ***
+
+You scored 4 out of a possible 16, in 84 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You find yourself in a kitchen. A typical kind of place.
+
+You make out an opened fridge. The fridge contains a block of cheese. You see an oven. You can make out a table. What a coincidence, weren't you just thinking about a table? The table is massive. On the table you can make out a red apple. You can see a counter. Make a note of this, you might have to put stuff on or in it later on. The counter is vast. On the counter you make out a red onion, a carrot and a banana. You make out a stove. The stove appears to be empty. This always happens, here in TextWorld!
+
+There is a closed plain door leading north. There is a closed patio door leading west. There is an exit to the east. You need an exit without a door? You should try going south.
+
+There is a sliced fried yellow potato, a sliced fried yellow bell pepper and a fried pork chop on the floor.","You are carrying: a sliced raw purple potato, a sliced fried orange bell pepper, a sliced fried red potato, a cookbook and a knife.",4 of 16,0.25,True,

@@ -1,0 +1,280 @@
+step_id,reflection,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"Welcome to another life changing round of TextWorld! Here is your task for today. First step, make an attempt to move west. If you can accomplish that, travel west. Okay, and then, go north. With that accomplished, make an attempt to travel west. With that done, go to the south. And then, take a trip south. With that over with, attempt to go to the west. Then, venture west. Following that, make an effort to travel north. After that, attempt to go to the west. And then, venture north. And then, travel east. And then, make an effort to go to the east. After that, venture east. And then, travel north. After that, make an effort to go to the east. With that accomplished, try to venture east. With that over with, venture east. Next, head east. If you can accomplish that, lift the coin from the floor of the canteen. That's it!",,Study,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+1,"- Outcome: success  
+- Cause: The environment suggests that going west is possible and unblocked.  
+- Rule: I must follow the task instructions to attempt moving west first and then move west if possible.","According to the task, I need to first attempt to move west and then move west if successful. Since the environment indicates the west entranceway is unblocked, I will attempt to go west.",go west,,"You find yourself in a parlor. A normal one.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Parlor,"You find yourself in a parlor. A normal one.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+2,"- Outcome: success  
+- Cause: I successfully moved west from the study to the parlor.  
+- Rule: I must continue following the task instructions, which now say to go north.","I have moved west successfully, so next I need to go north as per the task instructions. I will attempt to go north now.",go north,,You can't go that way.,Parlor,"You find yourself in a parlor. A normal one.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+3,"- Outcome: failure  
+- Cause: The environment indicates there is no exit to the north from the parlor.  
+- Rule: I must change strategies if repeating a failed action and follow the next possible direction in the task instructions.","Since I cannot go north from the parlor, I will follow the next instruction in the task, which is to attempt to go west. The environment also suggests there is an exit to the west.",go west,,"You find yourself in a shower. A typical kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Shower,"You find yourself in a shower. A typical kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+4,"- Outcome: success  
+- Cause: I successfully moved west from the parlor to the shower.  
+- Rule: I must continue following the task instructions, which now say to go south.","I have moved west successfully, so next I need to go south as per the task instructions. The environment does not mention a south exit here, so I should check available exits first. I will look around to confirm exits.",look,,"You find yourself in a shower. A typical kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Shower,"You find yourself in a shower. A typical kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+5,"- Outcome: failure  
+- Cause: The environment description did not reveal a south exit from the shower.  
+- Rule: I must not repeat invalid actions and should try a different direction if the instructed one is not available.","Since there is no south exit from the shower, I will try the next instruction which is to go south again. If that fails, I will try other available exits. I will attempt to go south now.",go south,,You can't go that way.,Shower,"You find yourself in a shower. A typical kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+6,"- Outcome: failure  
+- Cause: There is no exit to the south from the shower.  
+- Rule: I must not repeat invalid actions and should try the next direction in the task instructions.","Since I cannot go south from the shower, I will try the next instruction which is to attempt to go west. The environment indicates there is an unguarded exit to the west, so I will try going west.",go west,,"You find yourself in a spare room. A normal kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",Spare Room,"You find yourself in a spare room. A normal kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+7,"- Outcome: success  
+- Cause: I successfully moved west from the shower to the spare room.  
+- Rule: I must continue following the task instructions, which now say to go west again.","I have moved west successfully, so next I need to attempt to go west again as per the task instructions. I will try going west now.",go west,,You can't go that way.,Spare Room,"You find yourself in a spare room. A normal kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+8,"- Outcome: failure  
+- Cause: There is no exit to the west from the spare room.  
+- Rule: I must not repeat invalid actions and should try the next direction in the task instructions.","Since I cannot go west from the spare room, I will try the next instruction which is to go north. The environment does not mention a north exit, but I will attempt it as per the task instructions.",go north,,You can't go that way.,Spare Room,"You find yourself in a spare room. A normal kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded.",You are carrying nothing.,0 of 1,0.0,False,
+9,"- Outcome: failure  
+- Cause: There is no exit to the north from the spare room.  
+- Rule: I must not repeat invalid actions and should try the next direction in the task instructions.","Since I cannot go north from the spare room, I will try the next instruction which is to attempt to go west. I already tried west and failed, so I will try the next direction after that, which is to go north again. Since north is also not possible, I will try going east as the next instruction.",go east,,"You find yourself in a shower. A typical kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Shower,"You find yourself in a shower. A typical kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+10,"- Outcome: success  
+- Cause: I successfully moved east from the spare room back to the shower.  
+- Rule: I must continue following the task instructions and try the next direction, which is to go east again.","I have returned to the shower by going east. The next instruction is to make an effort to go east again, so I will try going east now.",go east,,"You find yourself in a parlor. A normal one.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Parlor,"You find yourself in a parlor. A normal one.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+11,"- Outcome: success  
+- Cause: I successfully moved east from the shower to the parlor.  
+- Rule: I must continue following the task instructions and try the next direction, which is to venture east again.","I have moved east successfully to the parlor. The next instruction is to venture east again, so I will try going east now.",go east,,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",Study,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+12,"- Outcome: success  
+- Cause: I successfully moved east from the parlor to the study.  
+- Rule: I must continue following the task instructions and try the next direction, which is to travel north.","I have moved east successfully to the study. The next instruction is to travel north, so I will try going north now.",go north,,"Ah, the restroom. This is some kind of restroom, really great normal vibes in this place, a wonderful normal atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the south.",Restroom,"Ah, the restroom. This is some kind of restroom, really great normal vibes in this place, a wonderful normal atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+13,"- Outcome: success  
+- Cause: I successfully moved north from the study to the restroom.  
+- Rule: I must continue following the task instructions and try the next direction, which is to make an effort to go east.","I have moved north successfully to the restroom. The next instruction is to make an effort to go east, so I will try going east now.",go east,,You can't go that way.,Restroom,"Ah, the restroom. This is some kind of restroom, really great normal vibes in this place, a wonderful normal atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+14,"- Outcome: failure  
+- Cause: There is no exit to the east from the restroom.  
+- Rule: I must not repeat invalid actions and should try the next direction in the task instructions.","Since I cannot go east from the restroom, I will try the next instruction, which is to try to venture east again. Since that is the same direction and also invalid, I will try the next instruction after that, which is to venture east once more. If all east attempts fail, I will try the next direction in the task, which is to head east.",go south,,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",Study,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+15,"- Outcome: success  
+- Cause: I successfully moved south from the restroom back to the study.  
+- Rule: I must continue following the task instructions and try the next direction, which is to attempt to go east again.","I have returned to the study. Since going east from the restroom was not possible, I will try going west from the study as the next logical step in the task instructions.",go west,,"You find yourself in a parlor. A normal one.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Parlor,"You find yourself in a parlor. A normal one.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+16,"- Outcome: success  
+- Cause: I successfully moved west from the study to the parlor.  
+- Rule: I must continue following the task instructions and try the next direction, which is to venture north.","I have moved west successfully to the parlor. The next instruction is to venture north, so I will try going north now.",go north,,You can't go that way.,Parlor,"You find yourself in a parlor. A normal one.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+17,"- Outcome: failure  
+- Cause: There is no exit to the north from the parlor.  
+- Rule: I must not repeat invalid actions and should try the next direction in the task instructions.","Since I cannot go north from the parlor, I will try the next instruction, which is to travel east.",go east,,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",Study,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+18,"- Outcome: success  
+- Cause: I successfully moved east from the parlor back to the study.  
+- Rule: I must continue following the task instructions and try the next direction, which is to make an effort to go east again.","I have returned to the study. The next instruction is to make an effort to go east again, so I will try going east now.",go east,,You can't go that way.,Study,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+19,"- Outcome: failure  
+- Cause: There is no exit to the east from the study.  
+- Rule: I must not repeat invalid actions and should try the next direction in the task instructions.","Since I cannot go east from the study, I will try the next instruction, which is to venture east again. If that also fails, I will try the next direction after that.",go east,,You can't go that way.,Study,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+20,"- Outcome: failure  
+- Cause: There is still no exit to the east from the study.  
+- Rule: I must change strategies if repeating a failed action and try the next direction in the task instructions.","Since going east repeatedly from the study is not possible, I will try the next instruction, which is to travel north.",go north,,"Ah, the restroom. This is some kind of restroom, really great normal vibes in this place, a wonderful normal atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the south.",Restroom,"Ah, the restroom. This is some kind of restroom, really great normal vibes in this place, a wonderful normal atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+21,"- Outcome: success  
+- Cause: I successfully moved north from the study to the restroom.  
+- Rule: I must continue following the task instructions and try the next direction, which is to make an effort to go to the east.","I have moved north to the restroom. The next instruction is to try going east, so I will attempt to go east now.",go east,,You can't go that way.,Restroom,"Ah, the restroom. This is some kind of restroom, really great normal vibes in this place, a wonderful normal atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+22,"- Outcome: failure  
+- Cause: There is no exit to the east from the restroom.  
+- Rule: I must not repeat invalid actions and should try the next direction in the task instructions.","Since I cannot go east from the restroom, I will try the next instruction, which is to try to venture east again.",go east,,You can't go that way.,Restroom,"Ah, the restroom. This is some kind of restroom, really great normal vibes in this place, a wonderful normal atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+23,"- Outcome: failure  
+- Cause: There is still no exit to the east from the restroom.  
+- Rule: I must change strategies if repeating a failed action and try the next direction in the task instructions.","Since going east repeatedly from the restroom is not possible, I will try the next instruction, which is to venture east again. If that fails, I will try the next direction after that.",go east,,You can't go that way.,Restroom,"Ah, the restroom. This is some kind of restroom, really great normal vibes in this place, a wonderful normal atmosphere. And now, well, you're in it.
+
+
+
+There is an unguarded exit to the south.",You are carrying nothing.,0 of 1,0.0,False,
+24,"- Outcome: failure  
+- Cause: There is no exit to the east from the restroom, repeated attempts failed.  
+- Rule: I must try the next direction in the task instructions instead of repeating failed actions.","Since I cannot go east from the restroom, I will try the next instruction, which is to venture east again. If that fails, I will try the next direction after that.",go south,,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",Study,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+25,"- Outcome: success  
+- Cause: I successfully moved south back to the study.  
+- Rule: I must continue following the task instructions and try the next direction, which is to venture east again.","I am back in the study. The next instruction is to venture east, so I will try going east from here.",go east,,You can't go that way.,Study,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+26,"- Outcome: failure  
+- Cause: There is no exit to the east from the study.  
+- Rule: I must try the next direction in the task instructions instead of repeating failed actions.","Since I cannot go east from the study, I will try the next instruction, which is to venture east again. If that fails, I will try the next direction after that.",go east,,You can't go that way.,Study,"You are in a study. A standard one.
+
+
+
+There is an unguarded exit to the north. You don't like doors? Why not try going west, that entranceway is unblocked.",You are carrying nothing.,0 of 1,0.0,False,
+27,"- Outcome: failure  
+- Cause: Repeated attempts to go east from the study are not possible.  
+- Rule: I must change strategy and try a different direction that is available.","Since I cannot go east from the study, I will try going west, which is an unblocked entranceway mentioned in the description.",go west,,"You find yourself in a parlor. A normal one.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",Parlor,"You find yourself in a parlor. A normal one.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+28,"- Outcome: success  
+- Cause: I successfully moved west to the parlor.  
+- Rule: I must continue following the task instructions and try the next direction, which is to venture north.","I am now in the parlor. The next instruction is to venture north, so I will try going north from here.",go north,,You can't go that way.,Parlor,"You find yourself in a parlor. A normal one.
+
+
+
+You need an unblocked exit? You should try going east. There is an exit to the south. Don't worry, it is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,False,
+29,"- Outcome: failure  
+- Cause: There is no exit to the north from the parlor.  
+- Rule: I must try the next direction in the task instructions instead of repeating failed actions.","Since I cannot go north from the parlor, I will try the next instruction, which is to attempt to go west.",go west,,"You find yourself in a shower. A typical kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",Shower,"You find yourself in a shower. A typical kind of place.
+
+
+
+There is an exit to the east. Don't worry, it is unguarded. You don't like doors? Why not try going north, that entranceway is unguarded. There is an unguarded exit to the west.",You are carrying nothing.,0 of 1,0.0,False,
+30,"- Outcome: success  
+- Cause: I successfully moved west to the shower.  
+- Rule: I must continue following the task instructions and try the next direction, which is to venture north.","I am now in the shower. The next instruction is to venture north, so I will try going north from here.",go north,,"Well, here we are in the serious workshop.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unguarded exit? You should try going west.",Serious Workshop,"Well, here we are in the serious workshop.
+
+
+
+There is an unblocked exit to the east. You don't like doors? Why not try going south, that entranceway is unblocked. You need an unguarded exit? You should try going west.",You are carrying nothing.,0 of 1,0.0,True,

@@ -1,0 +1,367 @@
+step_id,reflection,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Bathroom,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+1,N/A,"I need to get to the kitchen to check the cookbook for the recipe. The bathroom has an entranceway to the east, so I should go east.",go east,,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.",Corridor,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+2,I successfully moved to the corridor from the bathroom.,"To reach the kitchen, I should try going west as suggested by the environment.",go west,,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.",Bathroom,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+3,"Failure; I went west from the corridor and ended up back in the bathroom, indicating that west is not the correct direction to reach the kitchen.","According to the corridor description, the other exit without a door is south, so I should try going south instead of west.",go south,,You can't go that way.,Bathroom,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+4,"Failure; I tried to go south from the corridor but was blocked, so south is not a valid direction.","Since west leads back to the bathroom and south is blocked, I should try going east from the corridor to find another path.",go east,,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.",Corridor,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+5,"Failure; going east from the corridor leads back to the corridor, indicating a loop.","I must avoid repeating the same moves that lead to loops. Since west and east lead to the bathroom or corridor, and south is blocked, I should try going north from the corridor if possible. I will try going north.",go north,,You can't go that way.,Corridor,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+6,Failure; going north from the corridor is not possible.,"The corridor only has exits to the south and west without doors, but south is blocked and west leads back to the bathroom. I must have missed something. I will look around the corridor carefully to see if there is anything I can interact with or any other clues.",look,,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.",Corridor,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+7,Failure; looking around the corridor did not reveal any new information or exits beyond what was already known.,"Since the corridor only has exits south and west without doors, and south is blocked, I should try going west again to the bathroom and then try going east from the bathroom as the bathroom suggests an exit east without a door. This might lead to a new area.",go west,,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.",Bathroom,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+8,Success; I returned to the bathroom by going west from the corridor.,"The bathroom suggests going east through an entranceway without a door, so I should go east from the bathroom to explore new areas.",go east,,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.",Corridor,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+9,"Failure; going east from the bathroom leads back to the corridor, creating a loop.","I must avoid repeating the loop between the bathroom and corridor. Since the corridor only has exits south and west, and south is blocked, I should try going south from the corridor again to confirm if it is truly blocked or if I missed something.",go south,,"You find yourself in a bedroom. A normal kind of place.
+
+Oh wow! Is that what I think it is? It is! It's a bed. The bed is large. However, the bed, like an empty bed, has nothing on it.
+
+There is an exit to the north. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.",Bedroom,"You find yourself in a bedroom. A normal kind of place.
+
+Oh wow! Is that what I think it is? It is! It's a bed. The bed is large. However, the bed, like an empty bed, has nothing on it.
+
+There is an exit to the north. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+10,Success; going south from the corridor led me to the bedroom with new exits to the north and west.,I should explore the bedroom further by going north to see what is there.,go north,,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.",Corridor,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+11,"Failure; going north from the bedroom leads back to the corridor, creating a loop.","To avoid the loop, I should try going west from the bedroom to explore a new area.",go west,,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.",Bathroom,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+12,"Failure; going west from the bedroom leads back to the bathroom, which leads back to the corridor, creating a loop.","I must avoid this loop and try the other exit from the bedroom, which is north, but I already tried that. I should now examine the bedroom more closely to see if there is anything useful for cooking or any clues in the room.",look,,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.",Bathroom,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+13,"Failure; the look action did not provide new information and I am still in the bathroom, indicating I might have misinterpreted the command or the environment's response.","I must change strategy and return to the corridor to try the other exit west from there, as I have explored south and east already.",go east,,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.",Corridor,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+14,Success; I returned to the corridor from the bathroom.,"I have already tried going south from the corridor, so now I should try going west to explore a new area.",go west,,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.",Bathroom,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+15,"Failure; going west from the corridor leads back to the bathroom, which I have already explored and does not contain anything useful for cooking.",I must avoid repeating the same path and instead go south from the corridor to explore a new area.,go south,,You can't go that way.,Bathroom,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+16,"Failure; I attempted to go south from the bathroom, but the environment does not allow that direction.","I must follow the environment's hint and go east from the bathroom to return to the corridor and then try the other exit from the corridor, which is south.",go east,,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.",Corridor,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+17,Success; I returned to the corridor from the bathroom.,I should now try going south from the corridor as it is a new direction I haven't successfully explored yet.,go south,,"You find yourself in a bedroom. A normal kind of place.
+
+Oh wow! Is that what I think it is? It is! It's a bed. The bed is large. However, the bed, like an empty bed, has nothing on it.
+
+There is an exit to the north. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.",Bedroom,"You find yourself in a bedroom. A normal kind of place.
+
+Oh wow! Is that what I think it is? It is! It's a bed. The bed is large. However, the bed, like an empty bed, has nothing on it.
+
+There is an exit to the north. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+18,"Success; I have entered the bedroom, which is a new area to explore.",I should explore the bedroom further by going west to see if there are any useful items or the kitchen for cooking.,go west,,"You've just shown up in a livingroom.
+
+You make out a sofa. The sofa is comfy. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
+
+You need an exit without a door? You should try going east. You don't like doors? Why not try going west, that entranceway is not blocked by one.",Livingroom,"You've just shown up in a livingroom.
+
+You make out a sofa. The sofa is comfy. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
+
+You need an exit without a door? You should try going east. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+19,"Success; I have entered the living room, but it does not contain any useful items for cooking.",I should try going west from the living room to explore further and possibly find the kitchen or cookbook.,go west,,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a red hot pepper, a banana, a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a red hot pepper, a banana, a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+20,Success; I have found the kitchen with a cookbook and various ingredients on the counter.,I should examine the cookbook to find the recipe for the meal I need to cook.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  red apple
+  block of cheese
+  orange bell pepper
+  banana
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  chop the red apple
+  roast the red apple
+  dice the block of cheese
+  fry the block of cheese
+  dice the orange bell pepper
+  roast the orange bell pepper
+  chop the banana
+  fry the banana
+  prepare meal",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a red hot pepper, a banana, a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+21,Success; I have read the recipe and know the ingredients and steps needed to prepare the meal.,"I need to gather the missing ingredients from the counter: red hot pepper, red apple, banana, and orange bell pepper (which I haven't seen yet, so I should check the counter carefully). I already have the block of cheese. I will start by taking the red hot pepper from the counter.",take red hot pepper from counter,,"You take the red hot pepper from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a banana, a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a red hot pepper, a block of cheese, a red onion and a raw red potato.",1 of 16,0.0625,False,
+22,Success; I took the red hot pepper from the counter.,"Next, I need to take the red apple from the counter to continue gathering ingredients for the recipe.",take red apple from counter,,"You take the red apple from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a red apple, a red hot pepper, a block of cheese, a red onion and a raw red potato.",2 of 16,0.125,False,
+23,Success; I took the red apple from the counter.,I need to take the banana next from the counter to continue gathering ingredients for the recipe.,take banana from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a red apple, a red hot pepper, a block of cheese, a red onion and a raw red potato.",2 of 16,0.125,False,
+24,Failure; I cannot carry more items because my inventory is full.,"I must drop an unnecessary item to free up space for the banana. The red onion and raw red potato are not part of the recipe, so I should drop one of them. I will drop the red onion first.",drop red onion,,You drop the red onion on the ground.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion on the floor.","You are carrying: a red apple, a red hot pepper, a block of cheese and a raw red potato.",2 of 16,0.125,False,
+25,Success; I dropped the red onion to free up inventory space.,"Now that I have space, I should take the banana from the counter to continue gathering ingredients for the recipe.",take banana from counter,,"You take the banana from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion on the floor.","You are carrying: a banana, a red apple, a red hot pepper, a block of cheese and a raw red potato.",3 of 16,0.1875,False,
+26,Success; I took the banana from the counter.,"I still need the orange bell pepper for the recipe, but it is not visible on the counter. I should look around the kitchen to find it. I will look around the kitchen to locate the orange bell pepper.",look,,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion on the floor.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion on the floor.","You are carrying: a banana, a red apple, a red hot pepper, a block of cheese and a raw red potato.",3 of 16,0.1875,False,
+27,Failure; looking around the kitchen did not reveal the orange bell pepper or any new items.,I should examine the cookbook on the table to confirm the recipe and check if the orange bell pepper is required or if I can proceed with the ingredients I have.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  red apple
+  block of cheese
+  orange bell pepper
+  banana
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  chop the red apple
+  roast the red apple
+  dice the block of cheese
+  fry the block of cheese
+  dice the orange bell pepper
+  roast the orange bell pepper
+  chop the banana
+  fry the banana
+  prepare meal",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion on the floor.","You are carrying: a banana, a red apple, a red hot pepper, a block of cheese and a raw red potato.",3 of 16,0.1875,False,
+28,"Success; I confirmed the recipe and the required ingredients, including the orange bell pepper which I do not have yet.","I need to find and take the orange bell pepper. Since it is not on the counter, I should check the fridge for it.",open fridge,,"You open the fridge, revealing an orange bell pepper, a white onion and a yellow bell pepper.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains an orange bell pepper, a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion on the floor.","You are carrying: a banana, a red apple, a red hot pepper, a block of cheese and a raw red potato.",3 of 16,0.1875,False,
+29,Success; I found the orange bell pepper in the fridge.,I need to take the orange bell pepper from the fridge to complete the ingredients for the recipe.,take orange bell pepper from fridge,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains an orange bell pepper, a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion on the floor.","You are carrying: a banana, a red apple, a red hot pepper, a block of cheese and a raw red potato.",3 of 16,0.1875,False,
+30,Failure; I cannot take the orange bell pepper because I am carrying too many items.,"I must drop an item to free up space. The raw red potato is not needed for the recipe, so I will drop it to make room for the orange bell pepper.",drop raw red potato,,You drop the red potato on the ground.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains an orange bell pepper, a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a raw red potato and a red onion on the floor.","You are carrying: a banana, a red apple, a red hot pepper and a block of cheese.",3 of 16,0.1875,False,
+31,Success; I dropped the raw red potato to free up inventory space.,"Now that I have space, I should take the orange bell pepper from the fridge to complete the ingredients for the recipe.",take orange bell pepper from fridge,,"You take the orange bell pepper from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a raw red potato and a red onion on the floor.","You are carrying: an orange bell pepper, a banana, a red apple, a red hot pepper and a block of cheese.",4 of 16,0.25,False,
+32,Success; I took the orange bell pepper and now have all the ingredients needed for the recipe.,"I should start preparing the ingredients by following the recipe steps, beginning with slicing the red hot pepper.",slice red hot pepper,,What do you want to slice the red hot pepper with?,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a raw red potato and a red onion on the floor.","You are carrying: an orange bell pepper, a banana, a red apple, a red hot pepper and a block of cheese.",4 of 16,0.25,False,
+33,"Failure; I did not specify the tool to slice the red hot pepper, so the action was not completed.","I must specify the tool to slice the red hot pepper, and the knife on the counter is the appropriate tool.",take knife from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a raw red potato and a red onion on the floor.","You are carrying: an orange bell pepper, a banana, a red apple, a red hot pepper and a block of cheese.",4 of 16,0.25,False,
+34,Failure; I cannot take the knife because my inventory is full.,"I need to drop another item to free up space; the banana is likely the least useful for cooking, so I will drop it.",drop banana,,You drop the banana on the ground.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a banana, a raw red potato and a red onion on the floor.","You are carrying: an orange bell pepper, a red apple, a red hot pepper and a block of cheese.",4 of 16,0.25,False,
+35,Success; I dropped the banana to free up inventory space.,Now I can take the knife from the counter to slice the red hot pepper.,take knife from counter,,You take the knife from the counter.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a banana, a raw red potato and a red onion on the floor.","You are carrying: a knife, an orange bell pepper, a red apple, a red hot pepper and a block of cheese.",4 of 16,0.25,False,
+36,"Success; I took the knife from the counter, which is necessary for slicing ingredients.",I will now slice the red hot pepper with the knife to start preparing the meal.,slice red hot pepper with knife,,"You slice the red hot pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a banana, a raw red potato and a red onion on the floor.","You are carrying: a knife, an orange bell pepper, a red apple, a sliced red hot pepper and a block of cheese.",5 of 16,0.3125,False,
+37,"Success; I sliced the red hot pepper, progressing with the meal preparation.","Next, I should slice the orange bell pepper with the knife to continue following the recipe.",slice orange bell pepper with knife,,"You slice the orange bell pepper.
+
+
+
+                              *** You lost! ***
+
+You scored 5 out of a possible 16, in 36 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a banana, a raw red potato and a red onion on the floor.","You are carrying: a knife, an orange bell pepper, a red apple, a sliced red hot pepper and a block of cheese.",5 of 16,0.3125,True,
