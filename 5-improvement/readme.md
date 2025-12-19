@@ -19,10 +19,10 @@
 - [FINISH]
 
 ## Exercises
+- Summarize [best practices](exercises/best-practices/benchmarks-for-self-improvement.md) for self-improvement
+- Summarize the [benchmarks](exercises/best-practices/benchmarks-for-cognitive-enhancements.md) for self-improvement
 - Create a [step-reflection agent](exercises/step-reflection-agent/)
 - Create a [task-reflection agent](exercises/task-reflection-agent/)
-- Create a meta-prompting agent
-- Create a supervised-fine-tuning agent
 
 
 
