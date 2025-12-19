@@ -2,14 +2,27 @@
 An exercise to create an LLM agent that reflects on it's own prior trajectory in a task to identify mistakes in reasoning or actions
 
 # Treatments
-- baseline-10 - a standard react agent that truncates after 5 steps (10 evals x 10 tasks = 100 episodes)
-- reflect-v1 - a react agent with with task-reflection capabilities (reason, advice)
 - reflect-v2 - a task-reflection agent instructed to reflect on it's failure first before providing advice
 - reflect-v3a - a task-reflection agent where all reflections in each eval from v2 are merged (line-by-line)
-- reflect-v3b - a task-reflection agent where all reflections in each eval from v2 are merged by GPT-4.1-mini
-- reflect-v3c - a task-reflection agent where all reflections across all evals are merged by GPT-4.1-mini
+- reflect-v3b - a task-reflection agent where all reflections in each eval from v2 are merged by GPT
+- reflect-v3c - a task-reflection agent where all reflections across all evals are merged by GPT
 
-# Results
+# Results (GPT-5.2)
+- For accuracy:
+  - reflect-v2-test (65%) outperformed v2-train (60%) indicating v2 was learning
+  - reflect-v3b-test (67%) > v3c (66%) > v3a (63%) indicating that more reflection info helped
+- For reward:
+  - reflect-v2-test (0.75) outperformed v2-train (0.69) indicating v2 was learning
+  - reflect-v3b-test (0.76) > v3c (0.74) > (0.73) indicating v3 only helped slightly compared to v2
+- For avg steps:
+  - reflect-v2-test (30) and train (30) were similar
+  - reflect-v3a,b,c (32) were all similar but higher than v2
+- For avg tokens:
+  - reflect-v2-test (100k) was more than v2-train (95k)
+  - reflect-v3-test (108k) was better than v3a (113k) which was better than v3c (122)
+- Overall, reflect v3b performed best by multiple measures
+
+# Results (GPT-4.1-mini)
 - For accuracy, 
   - baseline-10 is 45%
   - reflect-v1-test (42%) perform worse than reflect-v1-train (46%)
@@ -32,10 +45,11 @@ An exercise to create an LLM agent that reflects on it's own prior trajectory in
  - reflect-v3a-test (120k), reflect-v3b-test (110k), and reflect-v3c-test (121k) are all worse
 
 # Notes
-- The first iteration of v2 and v3 performed poorly so removed generalization instructions and re-ran v2 and v3 
+- The first iteration performed poorly so I removed generalization instructions and re-ran v2 and v3 
 - reflect-v1 didn't reflect on why it failed the task, so I create v2 to explicitly reflect on the failure step
 - reflect-v2 still didn't produce a significant improvement in performance, so I created v3a, v3b, and v3c
 - reflect-v3 (a, b, c) all performed worse than v2
+- So, I tried again with GPT-5.2 and finally saw positive results
 
 ## Resources
 - [Code](reflect-v1/) - the source code for the v1 agent
