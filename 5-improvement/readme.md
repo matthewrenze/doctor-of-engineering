@@ -15,12 +15,9 @@
 ## Summaries (to-do)
 - Paper summaries can be found in the [summaries folder](summaries/).
 
-## Prototypes
-- [FINISH]
-
 ## Exercises
-- Summarize [best practices](exercises/best-practices/benchmarks-for-self-improvement.md) for self-improvement
-- Summarize the [benchmarks](exercises/best-practices/benchmarks-for-cognitive-enhancements.md) for self-improvement
+- Summarize [best practices](exercises/best-practices/best-practices-for-self-improvement.md) for self-improvement
+- Summarize the [benchmarks](exercises/best-practices/benchmarks-for-self-improvement.md) for self-improvement
 - Create a [step-reflection agent](exercises/step-reflection-agent/)
 - Create a [task-reflection agent](exercises/task-reflection-agent/)
 
