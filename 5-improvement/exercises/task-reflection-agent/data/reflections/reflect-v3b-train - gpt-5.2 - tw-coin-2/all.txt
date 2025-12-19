@@ -1,0 +1,5 @@
+When given a long, explicit move-by-move route (including expected failures), then track it as an indexed checklist and execute commands verbatim in order, only deviating when the next command is impossible from the current location.
+
+When a scripted movement command is impossible from the current room, then backtrack to the most recent junction where that direction was available and resume the sequence rather than exploring or repeatedly retrying the blocked move.
+
+When pursuing an objective tied to a specific room item and it is not visible or cannot be taken, then continue along the scripted route until reaching a location where the item is explicitly present instead of spending steps on repeated attempts or exploration.

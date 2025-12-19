@@ -13,7 +13,7 @@ import seaborn as sns
 # agent_name = "reflect-v3b-test"
 agent_name = "reflect-v3c-test"
 
-model_name = "gpt-4.1-mini"
+model_name = "gpt-5.2"
 input_folder_path = "../data/results"
 output_folder_path = f"../data/plots/by-episode/{model_name}"
 

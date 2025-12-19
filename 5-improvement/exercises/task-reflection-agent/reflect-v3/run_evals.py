@@ -19,28 +19,29 @@ from reflections.reflection_reader import ReflectionReader
 # Set agents
 agent_names = [
     "reflect-v3a-test",
-    # "reflect-v3b-test",
-    # "reflect-v3c-test",
+    "reflect-v3b-test",
+    "reflect-v3c-test",
 ]
 
 # Set models
 model_names = [
-    "gpt-4.1-mini",
+    # "gpt-4.1-mini",
+    "gpt-5.2",
 ]
 
 # Set evals
 eval_size = 10
 eval_env_names = [
-    # ("tw-simple-1", "textworld"),
-    # ("tw-treasure-1", "textworld"),
-    # ("tw-treasure-2", "textworld"),
-    # ("tw-treasure-3", "textworld"),
-    # ("tw-coin-1", "textworld"),
+    ("tw-simple-1", "textworld"),
+    ("tw-treasure-1", "textworld"),
+    ("tw-treasure-2", "textworld"),
+    ("tw-treasure-3", "textworld"),
+    ("tw-coin-1", "textworld"),
     ("tw-coin-2", "textworld"),
-    # ("tw-coin-3", "textworld"),
-    # ("tw-cooking-1", "textworld"),
-    # ("tw-cooking-2", "textworld"),
-    # ("tw-cooking-3", "textworld"),
+    ("tw-coin-3", "textworld"),
+    ("tw-cooking-1", "textworld"),
+    ("tw-cooking-2", "textworld"),
+    ("tw-cooking-3", "textworld"),
 ]
 
 # Set parameters

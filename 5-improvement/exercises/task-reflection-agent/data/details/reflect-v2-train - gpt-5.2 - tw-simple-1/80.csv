@@ -1,0 +1,155 @@
+step_id,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,,Bedroom,"You arrive in a bedroom. An usual kind of place.
+
+You make out a closed chest drawer here. You make out a closed antique trunk. You see a king-size bed. The king-size bed is normal. But the thing hasn't got anything on it.
+
+There is a closed wooden door leading east.",You are carrying nothing.,0 of 4,0.0,False,
+1,I should determine the task goal first.,"goal
+Thought: I should determine the task goal first.  
+Action: goal",,That's not a verb I recognise.,Bedroom,"You arrive in a bedroom. An usual kind of place.
+
+You make out a closed chest drawer here. You make out a closed antique trunk. You see a king-size bed. The king-size bed is normal. But the thing hasn't got anything on it.
+
+There is a closed wooden door leading east.",You are carrying nothing.,0 of 4,0.0,False,
+2,"The goal command seems unsupported here, so I should explore by opening containers to find what to do.",open chest drawer,,"You open the chest drawer, revealing an old key.",Bedroom,"You arrive in a bedroom. An usual kind of place.
+
+You make out an opened chest drawer here. The chest drawer contains an old key. You make out a closed antique trunk. You see a king-size bed. The king-size bed is normal. But the thing hasn't got anything on it.
+
+There is a closed wooden door leading east.",You are carrying nothing.,0 of 4,0.0,False,
+3,I should take the old key in case it unlocks the trunk or door.,take old key from chest drawer,,You take the old key from the chest drawer.,Bedroom,"You arrive in a bedroom. An usual kind of place.
+
+You make out an opened chest drawer here. What a letdown! The chest drawer is empty! You make out a closed antique trunk. You see a king-size bed. The king-size bed is normal. But the thing hasn't got anything on it.
+
+There is a closed wooden door leading east.",You are carrying: an old key.,0 of 4,0.0,False,
+4,I should try using the old key to unlock the antique trunk.,unlock antique trunk with old key,,That's unlocked at the moment.,Bedroom,"You arrive in a bedroom. An usual kind of place.
+
+You make out an opened chest drawer here. What a letdown! The chest drawer is empty! You make out a closed antique trunk. You see a king-size bed. The king-size bed is normal. But the thing hasn't got anything on it.
+
+There is a closed wooden door leading east.",You are carrying: an old key.,0 of 4,0.0,False,
+5,"Since the trunk is already unlocked, I should open it to see what's inside.",open antique trunk,,You open the antique trunk.,Bedroom,"You arrive in a bedroom. An usual kind of place.
+
+You make out an opened chest drawer here. What a letdown! The chest drawer is empty! You make out an opened antique trunk. The antique trunk is empty! What a waste of a day! You see a king-size bed. The king-size bed is normal. But the thing hasn't got anything on it.
+
+There is a closed wooden door leading east.",You are carrying: an old key.,0 of 4,0.0,False,
+6,"The only unexplored path is through the wooden door to the east, so I should go there.",open wooden door,,You have to unlock the wooden door with the old key first.,Bedroom,"You arrive in a bedroom. An usual kind of place.
+
+You make out an opened chest drawer here. What a letdown! The chest drawer is empty! You make out an opened antique trunk. The antique trunk is empty! What a waste of a day! You see a king-size bed. The king-size bed is normal. But the thing hasn't got anything on it.
+
+There is a closed wooden door leading east.",You are carrying: an old key.,0 of 4,0.0,False,
+7,I need to unlock the wooden door using the old key.,unlock wooden door with old key,,You unlock wooden door.,Bedroom,"You arrive in a bedroom. An usual kind of place.
+
+You make out an opened chest drawer here. What a letdown! The chest drawer is empty! You make out an opened antique trunk. The antique trunk is empty! What a waste of a day! You see a king-size bed. The king-size bed is normal. But the thing hasn't got anything on it.
+
+There is a closed wooden door leading east.",You are carrying: an old key.,0 of 4,0.0,False,
+8,"Now that the wooden door is unlocked, I should open it to proceed east.",open wooden door,,You open wooden door.,Bedroom,"You arrive in a bedroom. An usual kind of place.
+
+You make out an opened chest drawer here. What a letdown! The chest drawer is empty! You make out an opened antique trunk. The antique trunk is empty! What a waste of a day! You see a king-size bed. The king-size bed is normal. But the thing hasn't got anything on it.
+
+There is an open wooden door leading east.",You are carrying: an old key.,0 of 4,0.0,False,
+9,I should go east through the open wooden door to explore the next area.,go east,,"You have moved into the most standard of all possible kitchens. You can barely contain your excitement.
+
+You see a refrigerator. You shudder, but continue examining the room. Oh, great. Here's a counter. What a coincidence, weren't you just thinking about a counter? But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You rest your hand against a wall, but you miss the wall and fall onto a stove. But the thing is empty, unfortunately. Silly stove, silly, empty, good for nothing stove. You can see a kitchen island. You shudder, but continue examining the kitchen island. The kitchen island is normal. On the kitchen island you can make out a note. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You have moved into the most standard of all possible kitchens. You can barely contain your excitement.
+
+You see a refrigerator. You shudder, but continue examining the room. Oh, great. Here's a counter. What a coincidence, weren't you just thinking about a counter? But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You rest your hand against a wall, but you miss the wall and fall onto a stove. But the thing is empty, unfortunately. Silly stove, silly, empty, good for nothing stove. You can see a kitchen island. You shudder, but continue examining the kitchen island. The kitchen island is normal. On the kitchen island you can make out a note. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying: an old key.,1 of 4,0.25,False,
+10,"The note on the kitchen island may contain instructions or hints for the task, so I should examine it.",examine note,,The dinner is almost ready! It's only missing a grilled half of a bag of chips.,Kitchen,"You have moved into the most standard of all possible kitchens. You can barely contain your excitement.
+
+You see a refrigerator. You shudder, but continue examining the room. Oh, great. Here's a counter. What a coincidence, weren't you just thinking about a counter? But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You rest your hand against a wall, but you miss the wall and fall onto a stove. But the thing is empty, unfortunately. Silly stove, silly, empty, good for nothing stove. You can see a kitchen island. You shudder, but continue examining the kitchen island. The kitchen island is normal. On the kitchen island you can make out a note. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying: an old key.,1 of 4,0.25,False,
+11,"I need to find a bag of chips, cut it in half if needed, and grill it using the stove; first I'll check the refrigerator for chips.",open refrigerator,,"You open the refrigerator, revealing an apple and a milk.",Kitchen,"You have moved into the most standard of all possible kitchens. You can barely contain your excitement.
+
+You see a refrigerator. You shudder, but continue examining the room. The refrigerator contains an apple and a milk. Oh, great. Here's a counter. What a coincidence, weren't you just thinking about a counter? But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You rest your hand against a wall, but you miss the wall and fall onto a stove. But the thing is empty, unfortunately. Silly stove, silly, empty, good for nothing stove. You can see a kitchen island. You shudder, but continue examining the kitchen island. The kitchen island is normal. On the kitchen island you can make out a note. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying: an old key.,1 of 4,0.25,False,
+12,"The chips aren't in the refrigerator, so I should explore adjacent rooms to locate a bag of chips, starting north.",go north,,"I am sorry to announce that you are now in the bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+Were you looking for a toilet? Because look over there, it's a toilet. You can see a closed bath. You can see a sink. The sink is normal. On the sink you can see a toothbrush. Something scurries by right in the corner of your eye. Probably nothing.
+
+There is an exit to the south. Don't worry, it is unguarded.",Bathroom,"I am sorry to announce that you are now in the bathroom. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+Were you looking for a toilet? Because look over there, it's a toilet. You can see a closed bath. You can see a sink. The sink is normal. On the sink you can see a toothbrush. Something scurries by right in the corner of your eye. Probably nothing.
+
+There is an exit to the south. Don't worry, it is unguarded.",You are carrying: an old key.,1 of 4,0.25,False,
+13,"There are no chips visible here, so I should go back south and try another direction from the kitchen.",go south,,"You have moved into the most standard of all possible kitchens. You can barely contain your excitement.
+
+You see a refrigerator. You shudder, but continue examining the room. The refrigerator contains an apple and a milk. Oh, great. Here's a counter. What a coincidence, weren't you just thinking about a counter? But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You rest your hand against a wall, but you miss the wall and fall onto a stove. But the thing is empty, unfortunately. Silly stove, silly, empty, good for nothing stove. You can see a kitchen island. You shudder, but continue examining the kitchen island. The kitchen island is normal. On the kitchen island you can make out a note. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Kitchen,"You have moved into the most standard of all possible kitchens. You can barely contain your excitement.
+
+You see a refrigerator. You shudder, but continue examining the room. The refrigerator contains an apple and a milk. Oh, great. Here's a counter. What a coincidence, weren't you just thinking about a counter? But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You rest your hand against a wall, but you miss the wall and fall onto a stove. But the thing is empty, unfortunately. Silly stove, silly, empty, good for nothing stove. You can see a kitchen island. You shudder, but continue examining the kitchen island. The kitchen island is normal. On the kitchen island you can make out a note. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying: an old key.,1 of 4,0.25,False,
+14,I should go south from the kitchen to search for the bag of chips.,go south,,"Well I'll be, you are in the place we're calling the living room.
+
+You rest your hand against a wall, but you miss the wall and fall onto a couch. Does this look like anything mentioned in the instructions? The couch is usual. On the couch you make out a lettuce. You can make out a low table. The low table is usual. On the low table you make out a remote. Oh wow! Is that what I think it is? It is! It's a tv. The tv is standard. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the tv.
+
+You need an unguarded exit? You should try going north.",Living Room,"Well I'll be, you are in the place we're calling the living room.
+
+You rest your hand against a wall, but you miss the wall and fall onto a couch. Does this look like anything mentioned in the instructions? The couch is usual. On the couch you make out a lettuce. You can make out a low table. The low table is usual. On the low table you make out a remote. Oh wow! Is that what I think it is? It is! It's a tv. The tv is standard. But the thing is empty, unfortunately. It would have been so cool if there was stuff on the tv.
+
+You need an unguarded exit? You should try going north.",You are carrying: an old key.,1 of 4,0.25,False,
+15,"No chips here either, so I'll return north to the kitchen and then try going west through the open wooden door.",go north,,"You have moved into the most standard of all possible kitchens. You can barely contain your excitement.
+
+You see a refrigerator. You shudder, but continue examining the room. The refrigerator contains an apple and a milk. Oh, great. Here's a counter. What a coincidence, weren't you just thinking about a counter? But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You rest your hand against a wall, but you miss the wall and fall onto a stove. But the thing is empty, unfortunately. Silly stove, silly, empty, good for nothing stove. You can see a kitchen island. You shudder, but continue examining the kitchen island. The kitchen island is normal. On the kitchen island you can make out a note. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Kitchen,"You have moved into the most standard of all possible kitchens. You can barely contain your excitement.
+
+You see a refrigerator. You shudder, but continue examining the room. The refrigerator contains an apple and a milk. Oh, great. Here's a counter. What a coincidence, weren't you just thinking about a counter? But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You rest your hand against a wall, but you miss the wall and fall onto a stove. But the thing is empty, unfortunately. Silly stove, silly, empty, good for nothing stove. You can see a kitchen island. You shudder, but continue examining the kitchen island. The kitchen island is normal. On the kitchen island you can make out a note. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying: an old key.,1 of 4,0.25,False,
+16,I'll explore west through the open wooden door to look for a bag of chips.,go west,,"You arrive in a bedroom. An usual kind of place.
+
+You make out an opened chest drawer here. What a letdown! The chest drawer is empty! You make out an opened antique trunk. The antique trunk is empty! What a waste of a day! You see a king-size bed. The king-size bed is normal. But the thing hasn't got anything on it.
+
+There is an open wooden door leading east.",Bedroom,"You arrive in a bedroom. An usual kind of place.
+
+You make out an opened chest drawer here. What a letdown! The chest drawer is empty! You make out an opened antique trunk. The antique trunk is empty! What a waste of a day! You see a king-size bed. The king-size bed is normal. But the thing hasn't got anything on it.
+
+There is an open wooden door leading east.",You are carrying: an old key.,1 of 4,0.25,False,
+17,"The bedroom is empty, so I should go back east and try the closed screen door to the east of the kitchen.",go east,,"You have moved into the most standard of all possible kitchens. You can barely contain your excitement.
+
+You see a refrigerator. You shudder, but continue examining the room. The refrigerator contains an apple and a milk. Oh, great. Here's a counter. What a coincidence, weren't you just thinking about a counter? But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You rest your hand against a wall, but you miss the wall and fall onto a stove. But the thing is empty, unfortunately. Silly stove, silly, empty, good for nothing stove. You can see a kitchen island. You shudder, but continue examining the kitchen island. The kitchen island is normal. On the kitchen island you can make out a note. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",Kitchen,"You have moved into the most standard of all possible kitchens. You can barely contain your excitement.
+
+You see a refrigerator. You shudder, but continue examining the room. The refrigerator contains an apple and a milk. Oh, great. Here's a counter. What a coincidence, weren't you just thinking about a counter? But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You rest your hand against a wall, but you miss the wall and fall onto a stove. But the thing is empty, unfortunately. Silly stove, silly, empty, good for nothing stove. You can see a kitchen island. You shudder, but continue examining the kitchen island. The kitchen island is normal. On the kitchen island you can make out a note. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying: an old key.,1 of 4,0.25,False,
+18,I need to open the closed screen door to access whatever is east of the kitchen.,open screen door,,"You open screen door.
+
+
+Your score has just gone up by one point.",Kitchen,"You have moved into the most standard of all possible kitchens. You can barely contain your excitement.
+
+You see a refrigerator. You shudder, but continue examining the room. The refrigerator contains an apple and a milk. Oh, great. Here's a counter. What a coincidence, weren't you just thinking about a counter? But there isn't a thing on it. Oh! Why couldn't there just be stuff on it? You rest your hand against a wall, but you miss the wall and fall onto a stove. But the thing is empty, unfortunately. Silly stove, silly, empty, good for nothing stove. You can see a kitchen island. You shudder, but continue examining the kitchen island. The kitchen island is normal. On the kitchen island you can make out a note. You idly wonder how they came up with the name TextWorld for this place. It's pretty fitting.
+
+There is an open screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unblocked. You don't like doors? Why not try going south, that entranceway is unblocked.",You are carrying: an old key.,2 of 4,0.5,False,
+19,Now I should go east through the open screen door to find the bag of chips.,go east,,"You are in a backyard. An usual one.
+
+You rest your hand against a wall, but you miss the wall and fall onto a set of chairs. The set of chairs is standard. However, the set of chairs, like an empty set of chairs, has nothing on it. You move on, clearly upset with TextWorld. You can see a bbq. But there isn't a thing on it. You can see a patio table. The patio table is usual. However, the patio table, like an empty patio table, has nothing on it.
+
+There is an open screen door leading west. You need an unguarded exit? You should try going south.",Backyard,"You are in a backyard. An usual one.
+
+You rest your hand against a wall, but you miss the wall and fall onto a set of chairs. The set of chairs is standard. However, the set of chairs, like an empty set of chairs, has nothing on it. You move on, clearly upset with TextWorld. You can see a bbq. But there isn't a thing on it. You can see a patio table. The patio table is usual. However, the patio table, like an empty patio table, has nothing on it.
+
+There is an open screen door leading west. You need an unguarded exit? You should try going south.",You are carrying: an old key.,2 of 4,0.5,False,
+20,"With one step left, the only new area to check is south from the backyard.",go south,,"You find yourself in a garden. A normal kind of place.
+
+
+
+You need an unblocked exit? You should try going north.
+
+There is a half of a bag of chips, a tomato plant, a bell pepper and a shovel on the floor.",Garden,"You find yourself in a garden. A normal kind of place.
+
+
+
+You need an unblocked exit? You should try going north.
+
+There is a half of a bag of chips, a tomato plant, a bell pepper and a shovel on the floor.",You are carrying: an old key.,2 of 4,0.5,True,

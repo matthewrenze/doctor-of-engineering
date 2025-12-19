@@ -1,0 +1,126 @@
+step_id,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,,,Bedroom,"You arrive in a bedroom. A standard one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+You can make out a closed chest drawer in the room. You see an antique trunk. You can see a king-size bed. But the thing is empty.
+
+There is a closed wooden door leading east.",You are carrying nothing.,0 of 1,0.0,False,
+1,I need to determine the objective for this game.,goal,,,Bedroom,"You arrive in a bedroom. A standard one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+You can make out a closed chest drawer in the room. You see an antique trunk. You can see a king-size bed. But the thing is empty.
+
+There is a closed wooden door leading east.",You are carrying nothing.,0 of 1,0.0,False,
+2,"The goal didn’t display, so I’ll inspect the containers to find what needs to be done.",examine antique trunk,,"The antique trunk looks strong, and impossible to break. It is closed.",Bedroom,"You arrive in a bedroom. A standard one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+You can make out a closed chest drawer in the room. You see an antique trunk. You can see a king-size bed. But the thing is empty.
+
+There is a closed wooden door leading east.",You are carrying nothing.,0 of 1,0.0,False,
+3,I should open the trunk to see if it contains the target item.,open antique trunk,,"You open the antique trunk, revealing an old key.",Bedroom,"You arrive in a bedroom. A standard one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+You can make out a closed chest drawer in the room. You see an antique trunk. The antique trunk contains an old key. You can see a king-size bed. But the thing is empty.
+
+There is a closed wooden door leading east.",You are carrying nothing.,0 of 1,0.0,False,
+4,Taking the old key is likely the single-point objective.,take old key from antique trunk,,You take the old key from the antique trunk.,Bedroom,"You arrive in a bedroom. A standard one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+You can make out a closed chest drawer in the room. You see an antique trunk. Empty! What kind of nightmare TextWorld is this? You can see a king-size bed. But the thing is empty.
+
+There is a closed wooden door leading east.",You are carrying: an old key.,0 of 1,0.0,False,
+5,"The point may require using the key on the wooden door, so I’ll try unlocking it.",unlock wooden door with old key,,You unlock wooden door.,Bedroom,"You arrive in a bedroom. A standard one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+You can make out a closed chest drawer in the room. You see an antique trunk. Empty! What kind of nightmare TextWorld is this? You can see a king-size bed. But the thing is empty.
+
+There is a closed wooden door leading east.",You are carrying: an old key.,0 of 1,0.0,False,
+6,Now I should open the unlocked door to complete the objective.,open wooden door,,You open wooden door.,Bedroom,"You arrive in a bedroom. A standard one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+You can make out a closed chest drawer in the room. You see an antique trunk. Empty! What kind of nightmare TextWorld is this? You can see a king-size bed. But the thing is empty.
+
+There is an open wooden door leading east.",You are carrying: an old key.,0 of 1,0.0,False,
+7,The score hasn’t changed; I should check the stated goal to see what single action grants the point.,goal,,,Bedroom,"You arrive in a bedroom. A standard one. You decide to start listing off everything you see in the room, as if you were in a text adventure.
+
+You can make out a closed chest drawer in the room. You see an antique trunk. Empty! What kind of nightmare TextWorld is this? You can see a king-size bed. But the thing is empty.
+
+There is an open wooden door leading east.",You are carrying: an old key.,0 of 1,0.0,False,
+8,The goal text didn’t display; I’ll try moving east through the open door to trigger completion.,go east,,"I am pleased to announce that you are now in the kitchen.
+
+You can see a closed refrigerator. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",Kitchen,"I am pleased to announce that you are now in the kitchen.
+
+You can see a closed refrigerator. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying: an old key.,0 of 1,0.0,False,
+9,The note likely reveals the actual objective; I should examine it.,examine note,,The dinner is almost ready! It's only missing a grilled apple.,Kitchen,"I am pleased to announce that you are now in the kitchen.
+
+You can see a closed refrigerator. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying: an old key.,0 of 1,0.0,False,
+10,I need to grill an apple; first I should look in the refrigerator for an apple.,open refrigerator,,"You open the refrigerator, revealing a milk and a bell pepper.",Kitchen,"I am pleased to announce that you are now in the kitchen.
+
+You can see an opened refrigerator. The refrigerator contains a milk and a bell pepper. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying: an old key.,0 of 1,0.0,False,
+11,No apple here; I should search other rooms via the north exit.,go north,,"You find yourself in a bathroom. A typical one. The room is well lit.
+
+You see a toilet. If you haven't noticed it already, there seems to be something there by the wall, it's a bath. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. You bend down to tie your shoe. When you stand up, you notice a sink. You see a toothbrush on the sink.
+
+There is an exit to the south. Don't worry, it is unguarded.",Bathroom,"You find yourself in a bathroom. A typical one. The room is well lit.
+
+You see a toilet. If you haven't noticed it already, there seems to be something there by the wall, it's a bath. Suddenly, you bump your head on the ceiling, but it's not such a bad bump that it's going to prevent you from looking at objects and even things. You bend down to tie your shoe. When you stand up, you notice a sink. You see a toothbrush on the sink.
+
+There is an exit to the south. Don't worry, it is unguarded.",You are carrying: an old key.,0 of 1,0.0,False,
+12,No apple in the bathroom; go back south and try the south exit from the kitchen to look elsewhere.,go south,,"I am pleased to announce that you are now in the kitchen.
+
+You can see an opened refrigerator. The refrigerator contains a milk and a bell pepper. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",Kitchen,"I am pleased to announce that you are now in the kitchen.
+
+You can see an opened refrigerator. The refrigerator contains a milk and a bell pepper. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying: an old key.,0 of 1,0.0,False,
+13,Explore the unguarded south exit to find an apple.,go south,,"You find yourself in a living room. A typical one. You begin to take stock of what's here.
+
+You smell an awful smell, and follow it to a couch. What a coincidence, weren't you just thinking about a couch? You see an apple on the couch. It doesn't get more TextWorld than this! If you haven't noticed it already, there seems to be something there by the wall, it's a low table. The low table is typical. On the low table you make out a remote. You make out a tv. The tv is typical. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the north. Don't worry, it is unguarded.",Living Room,"You find yourself in a living room. A typical one. You begin to take stock of what's here.
+
+You smell an awful smell, and follow it to a couch. What a coincidence, weren't you just thinking about a couch? You see an apple on the couch. It doesn't get more TextWorld than this! If you haven't noticed it already, there seems to be something there by the wall, it's a low table. The low table is typical. On the low table you make out a remote. You make out a tv. The tv is typical. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying: an old key.,0 of 1,0.0,False,
+14,Take the apple so I can bring it to the kitchen and grill it.,take apple from couch,,You take the apple from the couch.,Living Room,"You find yourself in a living room. A typical one. You begin to take stock of what's here.
+
+You smell an awful smell, and follow it to a couch. What a coincidence, weren't you just thinking about a couch? But the thing is empty, unfortunately. If you haven't noticed it already, there seems to be something there by the wall, it's a low table. The low table is typical. On the low table you make out a remote. You make out a tv. The tv is typical. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the north. Don't worry, it is unguarded.",You are carrying: an apple and an old key.,0 of 1,0.0,False,
+15,Return to the kitchen to grill the apple on the stove.,go north,,"I am pleased to announce that you are now in the kitchen.
+
+You can see an opened refrigerator. The refrigerator contains a milk and a bell pepper. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",Kitchen,"I am pleased to announce that you are now in the kitchen.
+
+You can see an opened refrigerator. The refrigerator contains a milk and a bell pepper. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying: an apple and an old key.,0 of 1,0.0,False,
+16,Grill (cook) the apple using the stove.,cook apple with stove,,That's not a verb I recognise.,Kitchen,"I am pleased to announce that you are now in the kitchen.
+
+You can see an opened refrigerator. The refrigerator contains a milk and a bell pepper. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying: an apple and an old key.,0 of 1,0.0,False,
+17,Use the supported cooking command format to grill the apple on the stove.,cook apple with stove,,That's not a verb I recognise.,Kitchen,"I am pleased to announce that you are now in the kitchen.
+
+You can see an opened refrigerator. The refrigerator contains a milk and a bell pepper. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying: an apple and an old key.,0 of 1,0.0,False,
+18,Check the game goal to see the required verb (likely grill) and exact objective.,goal,,,Kitchen,"I am pleased to announce that you are now in the kitchen.
+
+You can see an opened refrigerator. The refrigerator contains a milk and a bell pepper. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying: an apple and an old key.,0 of 1,0.0,False,
+19,"Since cook isn't recognized, try the specific cooking verb for a stove: grill the apple with the stove.",grill apple with stove,,That's not a verb I recognise.,Kitchen,"I am pleased to announce that you are now in the kitchen.
+
+You can see an opened refrigerator. The refrigerator contains a milk and a bell pepper. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying: an apple and an old key.,0 of 1,0.0,False,
+20,Read the note on the kitchen island for instructions about the correct verb/objective.,examine note,,The dinner is almost ready! It's only missing a grilled apple.,Kitchen,"I am pleased to announce that you are now in the kitchen.
+
+You can see an opened refrigerator. The refrigerator contains a milk and a bell pepper. You can make out a counter. But the thing hasn't got anything on it. Hm. Oh well You see a stove. However, the stove, like an empty stove, has nothing on it. Oh! Why couldn't there just be stuff on it? You see a kitchen island. Wow, isn't TextWorld just the best? The kitchen island is ordinary. On the kitchen island you can make out a note.
+
+There is a closed screen door leading east. There is an open wooden door leading west. There is an exit to the north. Don't worry, it is unguarded. There is an unguarded exit to the south.",You are carrying: an apple and an old key.,0 of 1,0.0,True,

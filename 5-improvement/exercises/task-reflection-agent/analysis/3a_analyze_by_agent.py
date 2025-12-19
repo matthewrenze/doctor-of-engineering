@@ -5,7 +5,7 @@ import seaborn as sns
 from matplotlib.ticker import FuncFormatter
 
 # Set parameters
-model_name = "gpt-4.1-mini"
+model_name = "gpt-5.2"
 input_file_path = "../data/summaries.csv"
 output_folder_path = "../data/plots/by-agent"
 
@@ -43,9 +43,9 @@ if summaries["tasks"].nunique() != 1:
 
 # Order agents
 agent_order = [
-    "baseline-10",
-    "reflect-v1-train",
-    "reflect-v1-test",
+    # "baseline-10",
+    # "reflect-v1-train",
+    # "reflect-v1-test",
     "reflect-v2-train",
     "reflect-v2-test",
     "reflect-v3a-test",

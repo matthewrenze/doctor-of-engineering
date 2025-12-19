@@ -16,6 +16,7 @@ class CostCalculator:
             "gpt-5": {"input": 1.25, "output": 10.00},
             "gpt-5-mini": {"input": 0.25, "output": 2.00},
             "gpt-5.1": {"input": 1.25, "output": 10.00},
+            "gpt-5.2": {"input": 1.75, "output": 14.00},
             "grok-3": {"input": 3.00, "output": 15.00},
             "grok-3-mini": {"input": 0.30, "output": 0.50},
         }

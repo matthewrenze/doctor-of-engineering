@@ -1,0 +1,113 @@
+step_id,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw pork chop.,0 of 10,0.0,False,
+1,I should examine the cookbook to learn the recipe.,"examine cookbook
+Thought: I need to check the goal/recipe details; the cookbook examination might not show enough, so I'll use the goal command to see required meal.  
+Action: goal
+Thought: I need to look again for recipe details from the cookbook since that's required.  
+Action: examine cookbook
+Thought: I'll take the cookbook to read it fully if needed.  
+Action: take cookbook from counter
+Thought: Now examine the cookbook while it's in my inventory to see the recipe steps.  
+Action: examine cookbook
+Thought: To cook a meal I likely need to prepare ingredients; I'll take knife and required produce plus pork chop already.  
+Action: take knife from counter
+Thought: I'll gather likely recipe ingredients (potatoes/pepper) to prepare meal later.  
+Action: take raw yellow potato from counter
+Thought: Take the bell pepper too.  
+Action: take yellow bell pepper from counter
+Thought: Take the raw purple potato as well in case needed.  
+Action: take raw purple potato from counter
+Thought: Now I should follow cookbook recipe: probably chop/dice veggies and cook pork chop with oven/stove, then prepare meal. I'll start by slicing/dicing potatoes with knife.  
+Action: dice raw yellow potato with knife
+Thought: Dice the other potato too.  
+Action: dice raw purple potato with knife
+Thought: Prep the bell pepper (slice/dice) with knife.  
+Action: dice yellow bell pepper with knife
+Thought: Now cook the pork chop using stove or oven; I'll try cook with stove first.  
+Action: cook raw pork chop with stove
+Thought: If stove didn't work, use oven.  
+Action: cook raw pork chop with oven
+Thought: Cook the diced potatoes/pepper as required; try cooking diced yellow potato with stove.  
+Action: cook diced raw yellow potato with stove
+Thought: Cook diced purple potato too.  
+Action: cook diced raw purple potato with stove
+Thought: Cook diced bell pepper.  
+Action: cook diced yellow bell pepper with stove
+Thought: Now attempt to prepare meal from cooked items and maybe cooked pork chop.  
+Action: prepare meal
+Thought: Finally, eat the prepared meal.  
+Action: eat meal
+Thought: Finally, eat the prepared meal.  
+Action: eat meal",,,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw pork chop.,0 of 10,0.0,False,
+2,I need to examine the cookbook on the counter to learn the recipe.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+carrot
+  pork chop
+  yellow potato
+
+Directions:
+chop the carrot
+  fry the carrot
+  dice the pork chop
+  roast the pork chop
+  chop the yellow potato
+  roast the yellow potato
+  prepare meal",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana, a cookbook and a knife on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a raw pork chop.,0 of 10,0.0,False,
+3,I need the knife first to chop/dice ingredients per the recipe.,take knife from counter,,You take the knife from the counter.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a knife and a raw pork chop.,0 of 10,0.0,False,
+4,"The recipe needs a carrot; since none is visible, I should check the fridge for it.",open fridge,,"You open the fridge, revealing a carrot, an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. The fridge contains a carrot, an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.",You are carrying: a knife and a raw pork chop.,0 of 10,0.0,False,
+5,I should take the carrot from the fridge so I can chop and fry it.,take carrot from fridge,,"You take the carrot from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a carrot, a knife and a raw pork chop.",1 of 10,0.1,False,
+6,Next I need to chop the carrot with the knife.,chop carrot with knife,,"You chop the carrot.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a chopped carrot, a knife and a raw pork chop.",2 of 10,0.2,False,
+7,I must fry the chopped carrot using the stove.,cook chopped carrot with stove,,"You fried the carrot.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a chopped fried carrot, a knife and a raw pork chop.",3 of 10,0.3,False,
+8,Next step is to dice the pork chop with the knife.,dice pork chop with knife,,"You dice the pork chop.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a chopped fried carrot, a knife and a diced raw pork chop.",4 of 10,0.4,False,
+9,I should fry the diced pork chop on the stove as in the recipe.,cook diced raw pork chop with stove,,"You fried the pork chop.
+
+
+
+                              *** You lost! ***
+
+You scored 4 out of a possible 10, in 8 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You make out a fridge. The fridge contains an orange bell pepper, a red onion, a block of cheese, a red hot pepper and a white onion. You make out an oven. You can see a table. What a coincidence, weren't you just thinking about a table? The table is massive. But the thing hasn't got anything on it. Look over there! a counter. You see a raw yellow potato, a yellow bell pepper, a raw purple potato, a red apple, a banana and a cookbook on the counter. You see a stove! Looks like someone's already been here and taken everything off it, though.","You are carrying: a chopped fried carrot, a knife and a diced raw pork chop.",4 of 10,0.4,True,

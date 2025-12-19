@@ -1,0 +1,529 @@
+step_id,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Bathroom,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+1,I need to reach the kitchen and read the cookbook for the recipe.,"go east
+Thought: Keep moving until I find the kitchen.  
+Action: look
+Thought: I should explore exits to locate the kitchen.  
+Action: go north
+Thought: Continue navigating toward the kitchen.  
+Action: go east
+Thought: I need to confirm location and find kitchen/cookbook.  
+Action: look
+Thought: I must find the kitchen and check the cookbook for the exact recipe.  
+Action: go east",,,Bathroom,"You've entered a bathroom.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty.
+
+You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+2,"The only clear exit is east, so I should go east to leave the bathroom.",go east,,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.",Corridor,"Well how about that, you are in the place we're calling the corridor. You can barely contain your excitement.
+
+
+
+You need an exit without a door? You should try going south. You need an exit without a door? You should try going west.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+3,I need to locate the kitchen; from the corridor I'll try going south first.,go south,,"You find yourself in a bedroom. A normal kind of place.
+
+Oh wow! Is that what I think it is? It is! It's a bed. The bed is large. However, the bed, like an empty bed, has nothing on it.
+
+There is an exit to the north. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.",Bedroom,"You find yourself in a bedroom. A normal kind of place.
+
+Oh wow! Is that what I think it is? It is! It's a bed. The bed is large. However, the bed, like an empty bed, has nothing on it.
+
+There is an exit to the north. Don't worry, there is no door. There is an exit to the west. Don't worry, there is no door.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+4,The kitchen likely isn't here; I'll go west to continue exploring.,go west,,"You've just shown up in a livingroom.
+
+You make out a sofa. The sofa is comfy. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
+
+You need an exit without a door? You should try going east. You don't like doors? Why not try going west, that entranceway is not blocked by one.",Livingroom,"You've just shown up in a livingroom.
+
+You make out a sofa. The sofa is comfy. But the thing hasn't got anything on it. What, you think everything in TextWorld should have stuff on it?
+
+You need an exit without a door? You should try going east. You don't like doors? Why not try going west, that entranceway is not blocked by one.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+5,I still need the kitchen; I'll try going west from the livingroom.,go west,,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a red hot pepper, a banana, a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a red hot pepper, a banana, a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+6,I must check the cookbook to learn the exact recipe steps and required actions.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  red apple
+  block of cheese
+  orange bell pepper
+  banana
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  chop the red apple
+  roast the red apple
+  dice the block of cheese
+  fry the block of cheese
+  dice the orange bell pepper
+  roast the orange bell pepper
+  chop the banana
+  fry the banana
+  prepare meal",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a red hot pepper, a banana, a raw yellow potato, a raw purple potato and a knife. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+7,"I need the knife to do the recipe’s slicing/chopping/dicing, so I should take it from the counter.",take knife from counter,,You take the knife from the counter.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a red hot pepper, a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a knife, a block of cheese, a red onion and a raw red potato.",0 of 16,0.0,False,
+8,"Next I must slice the red hot pepper, but I need to be holding it first.",take red hot pepper from counter,,"You take the red hot pepper from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a red hot pepper, a knife, a block of cheese, a red onion and a raw red potato.",1 of 16,0.0625,False,
+9,Follow the recipe exactly by slicing the red hot pepper with the knife.,slice red hot pepper with knife,,"You slice the red hot pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a sliced red hot pepper, a knife, a block of cheese, a red onion and a raw red potato.",2 of 16,0.125,False,
+10,"The recipe says to fry the red hot pepper next, so I should fry it using the stove.",fry sliced red hot pepper with stove,,That's not a verb I recognise.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a sliced red hot pepper, a knife, a block of cheese, a red onion and a raw red potato.",2 of 16,0.125,False,
+11,"The game likely expects the generic cook action even though the recipe says fry, so I will cook the sliced red hot pepper with the stove.",cook sliced red hot pepper with stove,,"You fried the red hot pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a sliced fried red hot pepper, a knife, a block of cheese, a red onion and a raw red potato.",3 of 16,0.1875,False,
+12,"Next I must chop the red apple, so I should take the red apple from the counter first.",take red apple from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.","You are carrying: a sliced fried red hot pepper, a knife, a block of cheese, a red onion and a raw red potato.",3 of 16,0.1875,False,
+13,"To free an inventory slot so I can take the apple, I should drop something I likely won’t need immediately, like the block of cheese.",drop block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a red apple, a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a block of cheese on the floor.","You are carrying: a sliced fried red hot pepper, a knife, a red onion and a raw red potato.",3 of 16,0.1875,False,
+14,Now I have space to take the red apple from the counter for chopping.,take red apple from counter,,"You take the red apple from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a block of cheese on the floor.","You are carrying: a red apple, a sliced fried red hot pepper, a knife, a red onion and a raw red potato.",4 of 16,0.25,False,
+15,I need to chop the red apple using the knife.,chop red apple with knife,,"You chop the red apple.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a block of cheese on the floor.","You are carrying: a chopped red apple, a sliced fried red hot pepper, a knife, a red onion and a raw red potato.",5 of 16,0.3125,False,
+16,"To follow the recipe precisely, I should read the cookbook to confirm the remaining required prep and cooking steps.",examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  red apple
+  block of cheese
+  orange bell pepper
+  banana
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  chop the red apple
+  roast the red apple
+  dice the block of cheese
+  fry the block of cheese
+  dice the orange bell pepper
+  roast the orange bell pepper
+  chop the banana
+  fry the banana
+  prepare meal",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a block of cheese on the floor.","You are carrying: a chopped red apple, a sliced fried red hot pepper, a knife, a red onion and a raw red potato.",5 of 16,0.3125,False,
+17,"Next step is to roast the chopped red apple, so I should use the oven.",cook chopped red apple with oven,,"You roasted the red apple.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a block of cheese on the floor.","You are carrying: a chopped roasted red apple, a sliced fried red hot pepper, a knife, a red onion and a raw red potato.",6 of 16,0.375,False,
+18,"I need the block of cheese again to dice it per the recipe, so I should pick it up from the floor.",take block of cheese from floor,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a block of cheese on the floor.","You are carrying: a chopped roasted red apple, a sliced fried red hot pepper, a knife, a red onion and a raw red potato.",6 of 16,0.375,False,
+19,"To free inventory space for the cheese, I should drop an unneeded item (the raw red potato isn’t in the recipe).",drop raw red potato,,You drop the red potato on the ground.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a raw red potato and a block of cheese on the floor.","You are carrying: a chopped roasted red apple, a sliced fried red hot pepper, a knife and a red onion.",6 of 16,0.375,False,
+20,Now I can pick up the block of cheese to dice it as required.,take block of cheese from floor,,You pick up the block of cheese from the ground.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a raw red potato on the floor.","You are carrying: a block of cheese, a chopped roasted red apple, a sliced fried red hot pepper, a knife and a red onion.",6 of 16,0.375,False,
+21,"The recipe requires dicing the block of cheese next, using the knife.",dice block of cheese with knife,,"You dice the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a raw red potato on the floor.","You are carrying: a diced block of cheese, a chopped roasted red apple, a sliced fried red hot pepper, a knife and a red onion.",7 of 16,0.4375,False,
+22,"Next I must fry the diced block of cheese, so I should use the stove to fry it.",cook diced block of cheese with stove,,"You fried the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a raw red potato on the floor.","You are carrying: a diced fried block of cheese, a chopped roasted red apple, a sliced fried red hot pepper, a knife and a red onion.",8 of 16,0.5,False,
+23,I should check the cookbook again to confirm the remaining required ingredient prep/cooking steps before preparing the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  red apple
+  block of cheese
+  orange bell pepper
+  banana
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  chop the red apple
+  roast the red apple
+  dice the block of cheese
+  fry the block of cheese
+  dice the orange bell pepper
+  roast the orange bell pepper
+  chop the banana
+  fry the banana
+  prepare meal",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a raw red potato on the floor.","You are carrying: a diced fried block of cheese, a chopped roasted red apple, a sliced fried red hot pepper, a knife and a red onion.",8 of 16,0.5,False,
+24,"Next required ingredient is the orange bell pepper, which I need to locate (likely in the fridge).",open fridge,,"You open the fridge, revealing an orange bell pepper, a white onion and a yellow bell pepper.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains an orange bell pepper, a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a raw red potato on the floor.","You are carrying: a diced fried block of cheese, a chopped roasted red apple, a sliced fried red hot pepper, a knife and a red onion.",8 of 16,0.5,False,
+25,"I need the orange bell pepper to dice it, so I should take it from the fridge.",take orange bell pepper from fridge,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains an orange bell pepper, a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a raw red potato on the floor.","You are carrying: a diced fried block of cheese, a chopped roasted red apple, a sliced fried red hot pepper, a knife and a red onion.",8 of 16,0.5,False,
+26,"To free inventory space to pick up the orange bell pepper, I should drop the unnecessary red onion.",drop red onion,,You drop the red onion on the ground.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains an orange bell pepper, a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion and a raw red potato on the floor.","You are carrying: a diced fried block of cheese, a chopped roasted red apple, a sliced fried red hot pepper and a knife.",8 of 16,0.5,False,
+27,Now I can take the orange bell pepper from the fridge to begin its required prep.,take orange bell pepper from fridge,,"You take the orange bell pepper from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion and a raw red potato on the floor.","You are carrying: an orange bell pepper, a diced fried block of cheese, a chopped roasted red apple, a sliced fried red hot pepper and a knife.",9 of 16,0.5625,False,
+28,"The recipe says to dice the orange bell pepper, so I should dice it with the knife.",dice orange bell pepper with knife,,"You dice the orange bell pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion and a raw red potato on the floor.","You are carrying: a diced orange bell pepper, a diced fried block of cheese, a chopped roasted red apple, a sliced fried red hot pepper and a knife.",10 of 16,0.625,False,
+29,"Next the recipe requires roasting the diced orange bell pepper, so I should use the oven to roast it.",roast diced orange bell pepper with oven,,That's not a verb I recognise.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion and a raw red potato on the floor.","You are carrying: a diced orange bell pepper, a diced fried block of cheese, a chopped roasted red apple, a sliced fried red hot pepper and a knife.",10 of 16,0.625,False,
+30,"Since “roast” isn’t a supported command verb, I should use the available cook action with the oven to roast the diced orange bell pepper.",cook diced orange bell pepper with oven,,"You roasted the orange bell pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion and a raw red potato on the floor.","You are carrying: a diced roasted orange bell pepper, a diced fried block of cheese, a chopped roasted red apple, a sliced fried red hot pepper and a knife.",11 of 16,0.6875,False,
+31,I need to confirm the remaining required steps/ingredients from the recipe before doing more prep or cooking.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  red apple
+  block of cheese
+  orange bell pepper
+  banana
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  chop the red apple
+  roast the red apple
+  dice the block of cheese
+  fry the block of cheese
+  dice the orange bell pepper
+  roast the orange bell pepper
+  chop the banana
+  fry the banana
+  prepare meal",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion and a raw red potato on the floor.","You are carrying: a diced roasted orange bell pepper, a diced fried block of cheese, a chopped roasted red apple, a sliced fried red hot pepper and a knife.",11 of 16,0.6875,False,
+32,"The remaining recipe steps are to chop then fry the banana, then prepare the meal, so I should take the banana from the counter first.",take banana from counter,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a red onion and a raw red potato on the floor.","You are carrying: a diced roasted orange bell pepper, a diced fried block of cheese, a chopped roasted red apple, a sliced fried red hot pepper and a knife.",11 of 16,0.6875,False,
+33,"I need to free an inventory slot to pick up the banana; the knife is no longer needed after prep, so I’ll drop it.",drop knife,,You drop the knife on the ground.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a banana, a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a knife, a red onion and a raw red potato on the floor.","You are carrying: a diced roasted orange bell pepper, a diced fried block of cheese, a chopped roasted red apple and a sliced fried red hot pepper.",11 of 16,0.6875,False,
+34,Now I can pick up the banana to complete the remaining prep and cooking steps.,take banana from counter,,"You take the banana from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a knife, a red onion and a raw red potato on the floor.","You are carrying: a banana, a diced roasted orange bell pepper, a diced fried block of cheese, a chopped roasted red apple and a sliced fried red hot pepper.",12 of 16,0.75,False,
+35,"The recipe says to chop the banana next, so I need the knife again to chop it.",take knife,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a knife, a red onion and a raw red potato on the floor.","You are carrying: a banana, a diced roasted orange bell pepper, a diced fried block of cheese, a chopped roasted red apple and a sliced fried red hot pepper.",12 of 16,0.75,False,
+36,I must make room to pick up the knife; I can temporarily drop one prepared ingredient since I can pick it back up before preparing the meal.,drop sliced fried red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a sliced fried red hot pepper, a knife, a red onion and a raw red potato on the floor.","You are carrying: a banana, a diced roasted orange bell pepper, a diced fried block of cheese and a chopped roasted red apple.",12 of 16,0.75,False,
+37,"With an open slot, I can now take the knife to chop the banana.",take knife,,You pick up the knife from the ground.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a sliced fried red hot pepper, a red onion and a raw red potato on the floor.","You are carrying: a knife, a banana, a diced roasted orange bell pepper, a diced fried block of cheese and a chopped roasted red apple.",12 of 16,0.75,False,
+38,Now I should chop the banana with the knife as required.,chop banana with knife,,"You chop the banana.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a sliced fried red hot pepper, a red onion and a raw red potato on the floor.","You are carrying: a knife, a chopped banana, a diced roasted orange bell pepper, a diced fried block of cheese and a chopped roasted red apple.",13 of 16,0.8125,False,
+39,"I need all recipe components in inventory to prepare meal, so I should pick up the sliced fried red hot pepper I dropped.",take sliced fried red hot pepper,,You're carrying too many things already.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a sliced fried red hot pepper, a red onion and a raw red potato on the floor.","You are carrying: a knife, a chopped banana, a diced roasted orange bell pepper, a diced fried block of cheese and a chopped roasted red apple.",13 of 16,0.8125,False,
+40,"To make room for the pepper, I can drop the knife since prep is done and I can pick it up later if needed.",drop knife,,You drop the knife on the ground.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a knife, a sliced fried red hot pepper, a red onion and a raw red potato on the floor.","You are carrying: a chopped banana, a diced roasted orange bell pepper, a diced fried block of cheese and a chopped roasted red apple.",13 of 16,0.8125,False,
+41,"With space freed, I should take the sliced fried red hot pepper back to have all needed ingredients for the meal.",take sliced fried red hot pepper,,You pick up the red hot pepper from the ground.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a knife, a red onion and a raw red potato on the floor.","You are carrying: a sliced fried red hot pepper, a chopped banana, a diced roasted orange bell pepper, a diced fried block of cheese and a chopped roasted red apple.",13 of 16,0.8125,False,
+42,"All prepared ingredients are in my inventory, so I should prepare the meal now.",prepare meal,,Something still needs to be cooked.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a knife, a red onion and a raw red potato on the floor.","You are carrying: a sliced fried red hot pepper, a chopped banana, a diced roasted orange bell pepper, a diced fried block of cheese and a chopped roasted red apple.",13 of 16,0.8125,False,
+43,I should consult the cookbook to see which ingredient still needs cooking and how.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  red apple
+  block of cheese
+  orange bell pepper
+  banana
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  chop the red apple
+  roast the red apple
+  dice the block of cheese
+  fry the block of cheese
+  dice the orange bell pepper
+  roast the orange bell pepper
+  chop the banana
+  fry the banana
+  prepare meal",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a knife, a red onion and a raw red potato on the floor.","You are carrying: a sliced fried red hot pepper, a chopped banana, a diced roasted orange bell pepper, a diced fried block of cheese and a chopped roasted red apple.",13 of 16,0.8125,False,
+44,"The recipe requires the banana to be fried, but it's only chopped, so I need to fry the chopped banana using the stove.",fry chopped banana with stove,,That's not a verb I recognise.,Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a knife, a red onion and a raw red potato on the floor.","You are carrying: a sliced fried red hot pepper, a chopped banana, a diced roasted orange bell pepper, a diced fried block of cheese and a chopped roasted red apple.",13 of 16,0.8125,False,
+45,"Frying is done via the generic cook action, so I should cook the chopped banana with the stove.",cook chopped banana with stove,,"You fried the banana.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a knife, a red onion and a raw red potato on the floor.","You are carrying: a sliced fried red hot pepper, a chopped fried banana, a diced roasted orange bell pepper, a diced fried block of cheese and a chopped roasted red apple.",14 of 16,0.875,False,
+46,"Now that all ingredients match the recipe steps, I should prepare the meal again.",prepare meal,,"Adding the meal to your inventory.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a knife, a red onion and a raw red potato on the floor.",You are carrying: a meal.,15 of 16,0.9375,False,
+47,"The task says to enjoy the meal, so I should eat it.",eat meal,,"You eat the meal. Not bad.
+
+
+Your score has just gone up by one point.
+
+
+                               *** The End ***
+
+You scored 16 out of a possible 16, in 44 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You find yourself in a kitchen. A normal kind of place.
+
+Oh, great. Here's a fridge. The light flickers for a second, but nothing else happens. The fridge contains a white onion and a yellow bell pepper. You make out a closed conventional looking oven close by. You rest your hand against a wall, but you miss the wall and fall onto a table. The table is massive. On the table you make out a cookbook. Look over there! a counter. On the counter you make out a raw yellow potato and a raw purple potato. You can see a stove. The stove is conventional. But the thing is empty.
+
+There is a closed frosted-glass door leading west. You need an exit without a door? You should try going east.
+
+There is a knife, a red onion and a raw red potato on the floor.",You are carrying nothing.,16 of 16,1.0,True,

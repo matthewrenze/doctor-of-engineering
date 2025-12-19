@@ -6,7 +6,7 @@ from common.console import warn
 class GptModel:
     def __init__(self, model_name):
         # HACK: Use EAST US 2 for gpt-5.1 until EAST US is enabled
-        if model_name == "gpt-5.1":
+        if model_name == "gpt-5.1" or model_name == "gpt-5.2":
             self.api_url = os.environ["AZURE_OPENAI_URL_EASTUS2"]
             self.api_key = os.environ["AZURE_OPENAI_KEY_EASTUS2"]
         else:
@@ -40,7 +40,8 @@ class GptModel:
         # Don't set temperature on reasoning models
         if "o3" not in self.model_name \
                 and "gpt-5" not in self.model_name \
-                and "gpt-5.1" not in self.model_name:
+                and "gpt-5.1" not in self.model_name \
+                and "gpt-5.2" not in self.model_name:
             params["temperature"] = 0.0
 
         # Set retry variables

@@ -1,0 +1,411 @@
+step_id,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see a closed fridge. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a red apple, a raw yellow potato, a raw purple potato, a raw red potato and a knife. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.",You are carrying: an orange bell pepper and a yellow bell pepper.,0 of 16,0.0,False,
+1,"To know what meal to cook and the exact prep/cook verbs, I should read the cookbook on the table.",examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red apple
+  block of cheese
+  red onion
+  orange bell pepper
+  red hot pepper
+
+Directions:
+dice the red apple
+  fry the red apple
+  chop the block of cheese
+  roast the block of cheese
+  dice the red onion
+  fry the red onion
+  dice the orange bell pepper
+  roast the orange bell pepper
+  slice the red hot pepper
+  fry the red hot pepper
+  prepare meal",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see a closed fridge. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a red apple, a raw yellow potato, a raw purple potato, a raw red potato and a knife. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.",You are carrying: an orange bell pepper and a yellow bell pepper.,0 of 16,0.0,False,
+2,Recipe needs tools; first I should pick up the knife from the counter to do the required cuts/dice/slice/chop.,take knife from counter,,You take the knife from the counter.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see a closed fridge. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a red apple, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a knife, an orange bell pepper and a yellow bell pepper.",0 of 16,0.0,False,
+3,"I should start with the first ingredient step: dice the red apple, but I need to pick it up first.",take red apple from counter,,"You take the red apple from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see a closed fridge. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a red apple, a knife, an orange bell pepper and a yellow bell pepper.",1 of 16,0.0625,False,
+4,Now I can dice the red apple with the knife as the recipe directs.,dice red apple with knife,,"You dice the red apple.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see a closed fridge. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a diced red apple, a knife, an orange bell pepper and a yellow bell pepper.",2 of 16,0.125,False,
+5,"Next is to fry the diced red apple, so I should use the stove to fry it.",fry diced red apple with stove,,That's not a verb I recognise.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see a closed fridge. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a diced red apple, a knife, an orange bell pepper and a yellow bell pepper.",2 of 16,0.125,False,
+6,"The correct cooking command is ""cook <object> with <tool>"", so I should cook the diced red apple with the stove to fry it.",cook diced red apple with stove,,"You fried the red apple.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see a closed fridge. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a diced fried red apple, a knife, an orange bell pepper and a yellow bell pepper.",3 of 16,0.1875,False,
+7,"Next ingredients (cheese, red onion) are likely in the fridge, so I should open the fridge to access them.",open fridge,,"You open the fridge, revealing a block of cheese, a red onion, a raw pork chop and a carrot.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a block of cheese, a red onion, a raw pork chop and a carrot. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a diced fried red apple, a knife, an orange bell pepper and a yellow bell pepper.",3 of 16,0.1875,False,
+8,I should consult the cookbook for the exact remaining prep and cooking steps.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red apple
+  block of cheese
+  red onion
+  orange bell pepper
+  red hot pepper
+
+Directions:
+dice the red apple
+  fry the red apple
+  chop the block of cheese
+  roast the block of cheese
+  dice the red onion
+  fry the red onion
+  dice the orange bell pepper
+  roast the orange bell pepper
+  slice the red hot pepper
+  fry the red hot pepper
+  prepare meal",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a block of cheese, a red onion, a raw pork chop and a carrot. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a diced fried red apple, a knife, an orange bell pepper and a yellow bell pepper.",3 of 16,0.1875,False,
+9,"Next I need the block of cheese to chop and then roast, so I should take it from the fridge.",take block of cheese from fridge,,"You take the block of cheese from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a red onion, a raw pork chop and a carrot. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a block of cheese, a diced fried red apple, a knife, an orange bell pepper and a yellow bell pepper.",4 of 16,0.25,False,
+10,I must chop the block of cheese with the knife before roasting it.,chop block of cheese with knife,,"You chop the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a red onion, a raw pork chop and a carrot. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a chopped block of cheese, a diced fried red apple, a knife, an orange bell pepper and a yellow bell pepper.",5 of 16,0.3125,False,
+11,"Roasting uses the oven, so I should roast the chopped block of cheese with the oven.",cook chopped block of cheese with oven,,"You roasted the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a red onion, a raw pork chop and a carrot. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a chopped roasted block of cheese, a diced fried red apple, a knife, an orange bell pepper and a yellow bell pepper.",6 of 16,0.375,False,
+12,"Next ingredient is the red onion which must be diced then fried, so I should take the red onion from the fridge.",take red onion from fridge,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a red onion, a raw pork chop and a carrot. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.","You are carrying: a chopped roasted block of cheese, a diced fried red apple, a knife, an orange bell pepper and a yellow bell pepper.",6 of 16,0.375,False,
+13,"I need inventory space; the yellow bell pepper is not part of the recipe, so I should drop it.",drop yellow bell pepper,,You drop the yellow bell pepper on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a red onion, a raw pork chop and a carrot. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a yellow bell pepper on the floor.","You are carrying: a chopped roasted block of cheese, a diced fried red apple, a knife and an orange bell pepper.",6 of 16,0.375,False,
+14,"With space freed, I can take the red onion from the fridge to dice and fry it.",take red onion from fridge,,"You take the red onion from the fridge.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop and a carrot. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a yellow bell pepper on the floor.","You are carrying: a red onion, a chopped roasted block of cheese, a diced fried red apple, a knife and an orange bell pepper.",7 of 16,0.4375,False,
+15,"The red onion needs to be diced, so I should dice it with the knife.",dice red onion with knife,,"You dice the red onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop and a carrot. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a yellow bell pepper on the floor.","You are carrying: a diced red onion, a chopped roasted block of cheese, a diced fried red apple, a knife and an orange bell pepper.",8 of 16,0.5,False,
+16,"The diced red onion must be fried using the stove, so I should cook it with the stove.",cook diced red onion with stove,,"You fried the red onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop and a carrot. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a yellow bell pepper on the floor.","You are carrying: a diced fried red onion, a chopped roasted block of cheese, a diced fried red apple, a knife and an orange bell pepper.",9 of 16,0.5625,False,
+17,"I need the carrot next and may be at carry limit, so I should drop the orange bell pepper (not needed) to free space.",drop orange bell pepper,,You drop the orange bell pepper on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop and a carrot. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is an orange bell pepper and a yellow bell pepper on the floor.","You are carrying: a diced fried red onion, a chopped roasted block of cheese, a diced fried red apple and a knife.",9 of 16,0.5625,False,
+18,Now I can pick up the carrot from the fridge for chopping and roasting.,take carrot from fridge,,You take the carrot from the fridge.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is an orange bell pepper and a yellow bell pepper on the floor.","You are carrying: a carrot, a diced fried red onion, a chopped roasted block of cheese, a diced fried red apple and a knife.",9 of 16,0.5625,False,
+19,"The carrot should be chopped as per the recipe steps, so I will chop it with the knife.",chop carrot with knife,,You chop the carrot.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is an orange bell pepper and a yellow bell pepper on the floor.","You are carrying: a chopped carrot, a diced fried red onion, a chopped roasted block of cheese, a diced fried red apple and a knife.",9 of 16,0.5625,False,
+20,"The chopped carrot needs to be roasted using the oven, so I should cook it with the oven.",cook chopped carrot with oven,,You roasted the carrot.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is an orange bell pepper and a yellow bell pepper on the floor.","You are carrying: a chopped roasted carrot, a diced fried red onion, a chopped roasted block of cheese, a diced fried red apple and a knife.",9 of 16,0.5625,False,
+21,Next I should consult the cookbook to confirm the remaining recipe steps and ingredients.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red apple
+  block of cheese
+  red onion
+  orange bell pepper
+  red hot pepper
+
+Directions:
+dice the red apple
+  fry the red apple
+  chop the block of cheese
+  roast the block of cheese
+  dice the red onion
+  fry the red onion
+  dice the orange bell pepper
+  roast the orange bell pepper
+  slice the red hot pepper
+  fry the red hot pepper
+  prepare meal",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is an orange bell pepper and a yellow bell pepper on the floor.","You are carrying: a chopped roasted carrot, a diced fried red onion, a chopped roasted block of cheese, a diced fried red apple and a knife.",9 of 16,0.5625,False,
+22,"I must follow the recipe next by dicing the orange bell pepper, so I should pick it up from the floor first.",take orange bell pepper from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is an orange bell pepper and a yellow bell pepper on the floor.","You are carrying: a chopped roasted carrot, a diced fried red onion, a chopped roasted block of cheese, a diced fried red apple and a knife.",9 of 16,0.5625,False,
+23,"I need to free inventory space, and the chopped roasted carrot is not part of the recipe, so I will drop it.",drop chopped roasted carrot,,You drop the carrot on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a chopped roasted carrot, an orange bell pepper and a yellow bell pepper on the floor.","You are carrying: a diced fried red onion, a chopped roasted block of cheese, a diced fried red apple and a knife.",9 of 16,0.5625,False,
+24,"With space freed, I should take the orange bell pepper to dice it as the recipe requires.",take orange bell pepper from floor,,You pick up the orange bell pepper from the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: an orange bell pepper, a diced fried red onion, a chopped roasted block of cheese, a diced fried red apple and a knife.",9 of 16,0.5625,False,
+25,Now I need to dice the orange bell pepper using the knife.,dice orange bell pepper with knife,,"You dice the orange bell pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a diced orange bell pepper, a diced fried red onion, a chopped roasted block of cheese, a diced fried red apple and a knife.",10 of 16,0.625,False,
+26,"Next the recipe says to roast the orange bell pepper, so I will roast it in the oven.",cook diced orange bell pepper with oven,,"You roasted the orange bell pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a diced roasted orange bell pepper, a diced fried red onion, a chopped roasted block of cheese, a diced fried red apple and a knife.",11 of 16,0.6875,False,
+27,"The remaining recipe steps are to slice the red hot pepper and fry it, so I should pick up the red hot pepper from the counter.",take red hot pepper from counter,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a diced roasted orange bell pepper, a diced fried red onion, a chopped roasted block of cheese, a diced fried red apple and a knife.",11 of 16,0.6875,False,
+28,"I need one free slot to take the red hot pepper, so I’ll drop the chopped roasted block of cheese since it’s not needed for the visible remaining steps.",drop chopped roasted block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a red hot pepper, a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a chopped roasted block of cheese, a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a diced roasted orange bell pepper, a diced fried red onion, a diced fried red apple and a knife.",11 of 16,0.6875,False,
+29,"With inventory space available, I can now take the red hot pepper from the counter.",take red hot pepper from counter,,"You take the red hot pepper from the counter.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a chopped roasted block of cheese, a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a red hot pepper, a diced roasted orange bell pepper, a diced fried red onion, a diced fried red apple and a knife.",12 of 16,0.75,False,
+30,Next I need to slice the red hot pepper using the knife.,slice red hot pepper with knife,,"You slice the red hot pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a chopped roasted block of cheese, a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a sliced red hot pepper, a diced roasted orange bell pepper, a diced fried red onion, a diced fried red apple and a knife.",13 of 16,0.8125,False,
+31,Now I should fry the sliced red hot pepper on the stove per the recipe.,cook sliced red hot pepper with stove,,"You fried the red hot pepper.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a chopped roasted block of cheese, a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a sliced fried red hot pepper, a diced roasted orange bell pepper, a diced fried red onion, a diced fried red apple and a knife.",14 of 16,0.875,False,
+32,"All ingredients seem prepared, so I should prepare the meal using the prepared items in my inventory.",prepare meal,,You still miss something.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a chopped roasted block of cheese, a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a sliced fried red hot pepper, a diced roasted orange bell pepper, a diced fried red onion, a diced fried red apple and a knife.",14 of 16,0.875,False,
+33,I need to consult the cookbook to identify the missing ingredient/step.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red apple
+  block of cheese
+  red onion
+  orange bell pepper
+  red hot pepper
+
+Directions:
+dice the red apple
+  fry the red apple
+  chop the block of cheese
+  roast the block of cheese
+  dice the red onion
+  fry the red onion
+  dice the orange bell pepper
+  roast the orange bell pepper
+  slice the red hot pepper
+  fry the red hot pepper
+  prepare meal",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a chopped roasted block of cheese, a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a sliced fried red hot pepper, a diced roasted orange bell pepper, a diced fried red onion, a diced fried red apple and a knife.",14 of 16,0.875,False,
+34,"The missing required ingredient is the roasted chopped block of cheese, which is on the floor, so I should pick it up.",take chopped roasted block of cheese,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a chopped roasted block of cheese, a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a sliced fried red hot pepper, a diced roasted orange bell pepper, a diced fried red onion, a diced fried red apple and a knife.",14 of 16,0.875,False,
+35,"I need to free one inventory slot while keeping the knife, so I’ll drop a finished ingredient (fried red apple) temporarily.",drop diced fried red apple,,You drop the red apple on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a diced fried red apple, a chopped roasted block of cheese, a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a sliced fried red hot pepper, a diced roasted orange bell pepper, a diced fried red onion and a knife.",14 of 16,0.875,False,
+36,Now I can pick up the chopped roasted block of cheese needed for the meal.,take chopped roasted block of cheese,,You pick up the block of cheese from the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a diced fried red apple, a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a chopped roasted block of cheese, a sliced fried red hot pepper, a diced roasted orange bell pepper, a diced fried red onion and a knife.",14 of 16,0.875,False,
+37,"I still need the fried diced red apple in my inventory to prepare the meal, so I should pick it back up (dropping the knife if necessary).",take diced fried red apple,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a diced fried red apple, a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a chopped roasted block of cheese, a sliced fried red hot pepper, a diced roasted orange bell pepper, a diced fried red onion and a knife.",14 of 16,0.875,False,
+38,"Inventory is full and I no longer need the knife, so I’ll drop it to make space for the diced fried red apple.",drop knife,,You drop the knife on the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a knife, a diced fried red apple, a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a chopped roasted block of cheese, a sliced fried red hot pepper, a diced roasted orange bell pepper and a diced fried red onion.",14 of 16,0.875,False,
+39,"With space free, I should pick up the diced fried red apple so all recipe components are in my inventory for preparing the meal.",take diced fried red apple,,You pick up the red apple from the ground.,Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a knife, a chopped roasted carrot and a yellow bell pepper on the floor.","You are carrying: a diced fried red apple, a chopped roasted block of cheese, a sliced fried red hot pepper, a diced roasted orange bell pepper and a diced fried red onion.",14 of 16,0.875,False,
+40,"Now that all required prepared ingredients are carried, I should prepare the meal.",prepare meal,,"Adding the meal to your inventory.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a knife, a chopped roasted carrot and a yellow bell pepper on the floor.",You are carrying: a meal.,15 of 16,0.9375,False,
+41,"To finish the task and satisfy my hunger, I should eat the meal.",eat meal,,"You eat the meal. Not bad.
+
+
+Your score has just gone up by one point.
+
+
+                               *** The End ***
+
+You scored 16 out of a possible 16, in 41 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You arrive in a kitchen. A normal kind of place.
+
+You see an opened fridge. The fridge contains a raw pork chop. Huh, weird. You rest your hand against a wall, but you miss the wall and fall onto an oven. I mean, just wow! Isn't TextWorld just the best? You see a table. The table is massive. On the table you can see a cookbook. You see a gleam over in a corner, where you can see a counter. On the counter you can see a raw yellow potato, a raw purple potato and a raw red potato. You see a stove. The stove is conventional. Unfortunately, there isn't a thing on it.
+
+
+
+There is a knife, a chopped roasted carrot and a yellow bell pepper on the floor.",You are carrying nothing.,16 of 16,1.0,True,

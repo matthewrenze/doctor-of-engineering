@@ -24,7 +24,8 @@ agent_names = [
 
 # Set models
 model_names = [
-    "gpt-4.1-mini",
+    # "gpt-4.1-mini",
+    "gpt-5.2"
 ]
 
 # Set evals
@@ -35,11 +36,11 @@ eval_env_names = [
     ("tw-treasure-2", "textworld"),
     ("tw-treasure-3", "textworld"),
     ("tw-coin-1", "textworld"),
-    # ("tw-coin-2", "textworld"),
-    # ("tw-coin-3", "textworld"),
+    ("tw-coin-2", "textworld"),
+    ("tw-coin-3", "textworld"),
     ("tw-cooking-1", "textworld"),
     ("tw-cooking-2", "textworld"),
-    # ("tw-cooking-3", "textworld"),
+    ("tw-cooking-3", "textworld"),
 ]
 
 # Set parameters

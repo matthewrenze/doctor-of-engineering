@@ -32,6 +32,7 @@ An exercise to create an LLM agent that reflects on it's own prior trajectory in
  - reflect-v3a-test (120k), reflect-v3b-test (110k), and reflect-v3c-test (121k) are all worse
 
 # Notes
+- The first iteration of v2 and v3 performed poorly so removed generalization instructions and re-ran v2 and v3 
 - reflect-v1 didn't reflect on why it failed the task, so I create v2 to explicitly reflect on the failure step
 - reflect-v2 still didn't produce a significant improvement in performance, so I created v3a, v3b, and v3c
 - reflect-v3 (a, b, c) all performed worse than v2

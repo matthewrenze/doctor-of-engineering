@@ -6,7 +6,7 @@ base_folder_path = "../data/reflections"
 file_name = "all.txt"
 source_agent_name = "reflect-v3a-train"
 target_agent_name = "reflect-v3b-train"
-model_name = "gpt-4.1-mini"
+model_name = "gpt-5.2"
 eval_names = [
     "tw-simple-1",
     "tw-treasure-1",

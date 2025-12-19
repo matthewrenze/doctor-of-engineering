@@ -1,0 +1,4 @@
+When the task is an exact long sequence of moves, then keep a numbered checklist of remaining commands and execute them strictly in order instead of exploring when unsure.
+When a commanded direction returns “You can’t go that way” and the room description shows that exit doesn’t exist, then stop repeating that command and instead backtrack via an available exit to rejoin the route while conserving steps.
+When a required move fails (e.g., “You can’t go that way”), then immediately backtrack to the last known “on-script” location and re-derive the remaining route from the instruction list rather than continuing exploratory moves.
+When a requested move direction is not available, then still issue that exact movement command (accepting “You can’t go that way”) and only proceed to the next instruction after recording the failed attempt.

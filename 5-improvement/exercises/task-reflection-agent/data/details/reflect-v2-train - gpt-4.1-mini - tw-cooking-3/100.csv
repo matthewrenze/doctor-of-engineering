@@ -4,7 +4,7 @@ step_id,thought,action,task,feedback,location,description,inventory,score,reward
 
 
 There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-1,"I need to go to the kitchen to find the cookbook and check the recipe for a delicious meal. The kitchen is likely to be east or north, so I will start by going east.",go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+1,"I need to find the kitchen to check the cookbook for the recipe, so I will explore the corridor exits to find the kitchen.",go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
 
@@ -13,7 +13,7 @@ There is an exit to the south. There is an exit to the west.",Bedroom,"Well, her
 You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
 
 There is an exit to the south. There is an exit to the west.",You are carrying nothing.,0 of 17,0.0,False,
-2,The kitchen is not in this bedroom. I should try going west to explore further and find the kitchen.,go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
+2,"The kitchen is not here, so I will try going west to explore more rooms.",go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
 
 
 
@@ -22,7 +22,7 @@ There is an exit to the east. Don't worry, there is no door. There is an exit to
 
 
 There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-3,"I have returned to the corridor. Since I have already tried east, I will now try going north to find the kitchen.",go north,,"You find yourself in a bathroom. A typical kind of place.
+3,"I have returned to the corridor, so I will try going north to see if that leads to the kitchen.",go north,,"You find yourself in a bathroom. A typical kind of place.
 
 You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
 
@@ -31,7 +31,7 @@ You don't like doors? Why not try going south, that entranceway is not blocked b
 You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
 
 You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying nothing.,0 of 17,0.0,False,
-4,The bathroom is not the kitchen. I should go back south to the corridor and try going west as suggested to find the kitchen.,go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
+4,"The bathroom is not the kitchen, so I will go back south to the corridor and try going west as suggested.",go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
 
 
 
@@ -40,7 +40,7 @@ There is an exit to the east. Don't worry, there is no door. There is an exit to
 
 
 There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",You are carrying nothing.,0 of 17,0.0,False,
-5,I will try going west from the corridor to explore new rooms and find the kitchen.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+5,I will try going west from the corridor to explore new rooms that might include the kitchen.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
 You see a fridge. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red hot pepper, a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
@@ -49,12 +49,7 @@ There is a closed plain door leading north. There is a closed screen door leadin
 You see a fridge. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red hot pepper, a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying nothing.,0 of 17,0.0,False,
-6,I need to check the cookbook on the table to find the recipe for a delicious meal.,take cookbook from table,,You take the cookbook from the table.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red hot pepper, a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a cookbook.,0 of 17,0.0,False,
-7,I should examine the cookbook to find the recipe for a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+6,I need to check the cookbook on the table to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -80,90 +75,43 @@ slice the red hot pepper
   roast the white onion
   prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-You see a fridge. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red hot pepper, a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+You see a fridge. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red hot pepper, a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a cookbook.,0 of 17,0.0,False,
-8,"I need to gather the ingredients listed in the recipe. I see a red hot pepper on the counter, so I will take it first.",take red hot pepper from counter,,"You take the red hot pepper from the counter.
-
-
-
-Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a red hot pepper and a cookbook.,1 of 17,0.058823529411764705,False,
-9,"I need to find the other ingredients from the recipe. The recipe calls for an orange bell pepper, which I haven't seen yet. I will check the fridge for more ingredients.",open fridge,,"You open the fridge, revealing a white onion, a carrot and a red onion.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. The fridge contains a white onion, a carrot and a red onion. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a red hot pepper and a cookbook.,1 of 17,0.058823529411764705,False,
-10,I will take the white onion and the carrot from the fridge as they are part of the recipe.,take white onion from fridge,,"You take the white onion from the fridge.
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying nothing.,0 of 17,0.0,False,
+7,"I need to gather the ingredients listed in the recipe. I see a red hot pepper on the counter, so I will take it first.",take red hot pepper from counter,,"You take the red hot pepper from the counter.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-You see a fridge. The fridge contains a carrot and a red onion. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+You see a fridge. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a white onion, a red hot pepper and a cookbook.",2 of 17,0.11764705882352941,False,
-11,I still need the carrot from the fridge and the block of cheese and orange bell pepper which I haven't found yet. I will take the carrot from the fridge now.,take carrot from fridge,,"You take the carrot from the fridge.
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+8,"I need to find the orange bell pepper next, which is not visible on the counter. I will check inside the fridge.",open fridge,,"You open the fridge, revealing a white onion, a carrot and a red onion.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
+You see a fridge. The fridge contains a white onion, a carrot and a red onion. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+9,The fridge does not contain the orange bell pepper or the block of cheese needed for the recipe. I will check the table for the block of cheese.,examine table,,"The table is solidly built.
 
-Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+On the table are a cookbook and a knife.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-You see a fridge. The fridge contains a red onion. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+You see a fridge. The fridge contains a white onion, a carrot and a red onion. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a carrot, a white onion, a red hot pepper and a cookbook.",3 of 17,0.17647058823529413,False,
-12,I still need to find the orange bell pepper and the block of cheese. I will check the table for these items.,look table,,"The table is solidly built.
-
-On the table is a knife.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. The fridge contains a red onion. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a carrot, a white onion, a red hot pepper and a cookbook.",3 of 17,0.17647058823529413,False,
-13,"The table only has a knife, no orange bell pepper or block of cheese. I will check the counter again for these missing ingredients.",look counter,,"The counter is wobbly.
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+10,The block of cheese is not on the table or in the fridge. I will check the counter again for the orange bell pepper or block of cheese.,examine counter,,"The counter is wobbly.
 
 On the counter are a red apple and a raw yellow potato.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-You see a fridge. The fridge contains a red onion. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+You see a fridge. The fridge contains a white onion, a carrot and a red onion. A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a carrot, a white onion, a red hot pepper and a cookbook.",3 of 17,0.17647058823529413,False,
-14,The orange bell pepper and block of cheese are not on the table or counter. I will check the red onion in the fridge to see if it can be taken.,take red onion from fridge,,You take the red onion from the fridge.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+11,I still need to find the orange bell pepper and block of cheese. I will check the oven to see if anything is inside.,open oven,,You open the oven.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+You see a fridge. The fridge contains a white onion, a carrot and a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a carrot, a white onion, a red hot pepper and a cookbook.",3 of 17,0.17647058823529413,False,
-15,I have taken all the vegetables from the fridge. I will now check the cookbook for the recipe details to see if I need to find the block of cheese and orange bell pepper or if I can proceed with what I have.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red hot pepper
-  orange bell pepper
-  block of cheese
-  carrot
-  white onion
-
-Directions:
-slice the red hot pepper
-  fry the red hot pepper
-  slice the orange bell pepper
-  roast the orange bell pepper
-  chop the block of cheese
-  grill the block of cheese
-  slice the carrot
-  roast the carrot
-  slice the white onion
-  roast the white onion
-  prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a carrot, a white onion, a red hot pepper and a cookbook.",3 of 17,0.17647058823529413,False,
-16,"The recipe requires an orange bell pepper and a block of cheese, which I have not found yet. I will explore the kitchen further by going east to look for these missing ingredients.",go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+12,I still need to find the orange bell pepper and block of cheese. I will go east to explore the next area for these ingredients.,go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
 
 
 
@@ -171,8 +119,8 @@ There is an exit to the east. Don't worry, there is no door. There is an exit to
 
 
 
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a carrot, a white onion, a red hot pepper and a cookbook.",3 of 17,0.17647058823529413,False,
-17,I will explore the corridor by going north to see if I can find the orange bell pepper and block of cheese.,go north,,"You find yourself in a bathroom. A typical kind of place.
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+13,I will check the room to the north from the corridor to see if it contains the orange bell pepper or block of cheese.,go north,,"You find yourself in a bathroom. A typical kind of place.
 
 You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
 
@@ -180,8 +128,8 @@ You don't like doors? Why not try going south, that entranceway is not blocked b
 
 You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
 
-You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a red onion, a carrot, a white onion, a red hot pepper and a cookbook.",3 of 17,0.17647058823529413,False,
-18,The bathroom does not have the ingredients I need. I will go back south to the corridor and then try going east to explore further.,go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
+You don't like doors? Why not try going south, that entranceway is not blocked by one.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+14,The bathroom does not have the ingredients I need. I will go back south to the corridor and then try going east to explore further.,go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
 
 
 
@@ -189,8 +137,8 @@ There is an exit to the east. Don't worry, there is no door. There is an exit to
 
 
 
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a carrot, a white onion, a red hot pepper and a cookbook.",3 of 17,0.17647058823529413,False,
-19,I will now go east from the corridor to continue searching for the orange bell pepper and block of cheese.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+15,I will go east from the corridor to check the next room for the orange bell pepper or block of cheese.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
 You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
 
@@ -198,8 +146,8 @@ There is an exit to the south. There is an exit to the west.",Bedroom,"Well, her
 
 You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
 
-There is an exit to the south. There is an exit to the west.","You are carrying: a red onion, a carrot, a white onion, a red hot pepper and a cookbook.",3 of 17,0.17647058823529413,False,
-20,The bedroom does not have the ingredients I need. I will go west to return to the corridor and then try going west from there to explore more.,go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
+There is an exit to the south. There is an exit to the west.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+16,The bedroom does not have the ingredients I need. I will go back west to the corridor and then try going west from there to return to the kitchen.,go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
 
 
 
@@ -207,36 +155,17 @@ There is an exit to the east. Don't worry, there is no door. There is an exit to
 
 
 
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a carrot, a white onion, a red hot pepper and a cookbook.",3 of 17,0.17647058823529413,False,
-21,I will go west from the corridor to see if there are any ingredients in that direction.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+17,I will go west to return to the kitchen and check the cookbook for the recipe.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+You see a fridge. The fridge contains a white onion, a carrot and a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
 There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+You see a fridge. The fridge contains a white onion, a carrot and a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a carrot, a white onion, a red hot pepper and a cookbook.",3 of 17,0.17647058823529413,False,
-22,I need to take the knife from the table to prepare the meal.,take knife from table,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a carrot, a white onion, a red hot pepper and a cookbook.",3 of 17,0.17647058823529413,False,
-23,"I am carrying too many items, so I will drop the red hot pepper to free up space for the knife.",drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a red hot pepper on the floor.","You are carrying: a red onion, a carrot, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-24,"Now that I have space, I will take the knife from the table.",take knife from table,,You take the knife from the table.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a red hot pepper on the floor.","You are carrying: a knife, a red onion, a carrot, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-25,I should check the cookbook to find the recipe for the meal I want to cook.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+18,I will examine the cookbook on the table to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
 
 Recipe #1
 ---------
@@ -262,445 +191,862 @@ slice the red hot pepper
   roast the white onion
   prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+You see a fridge. The fridge contains a white onion, a carrot and a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+19,I need to find the orange bell pepper and the block of cheese to proceed with the recipe. I will look around the kitchen to see if they are present.,look,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-There is a red hot pepper on the floor.","You are carrying: a knife, a red onion, a carrot, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-26,"I need to get the red hot pepper, orange bell pepper, and block of cheese to follow the recipe. I will pick up the red hot pepper first.",take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+You see a fridge. The fridge contains a white onion, a carrot and a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
+You see a fridge. The fridge contains a white onion, a carrot and a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a red hot pepper on the floor.","You are carrying: a knife, a red onion, a carrot, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-27,I need to drop an item to free space for the red hot pepper. I will drop the carrot as it is part of the recipe but I can pick it up again later if needed.,drop carrot,,You drop the carrot on the ground.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot and a red hot pepper on the floor.","You are carrying: a knife, a red onion, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-28,"Now that I have space, I will take the red hot pepper from the floor.",take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot on the floor.","You are carrying: a red hot pepper, a knife, a red onion, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-29,I need to find the orange bell pepper and block of cheese to complete the recipe. I will look around the kitchen to see if they are present.,look,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot on the floor.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot on the floor.","You are carrying: a red hot pepper, a knife, a red onion, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-30,The orange bell pepper and block of cheese are not visible in the kitchen. I should check the room to the east to see if they are there.,go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red hot pepper, a knife, a red onion, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-31,I will explore the corridor by going north to see if the orange bell pepper or block of cheese are there.,go north,,"You find yourself in a bathroom. A typical kind of place.
-
-You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
-
-You don't like doors? Why not try going south, that entranceway is not blocked by one.",Bathroom,"You find yourself in a bathroom. A typical kind of place.
-
-You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
-
-You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a red hot pepper, a knife, a red onion, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-32,The bathroom does not have the items I need. I will go back south to the corridor and then try going east to explore further.,go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red hot pepper, a knife, a red onion, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-33,I will go east from the corridor to check if the orange bell pepper or block of cheese are there.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the south. There is an exit to the west.","You are carrying: a red hot pepper, a knife, a red onion, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-34,The bedroom does not have the ingredients I need. I will go west to return to the corridor and then try going west from there to explore more.,go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red hot pepper, a knife, a red onion, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-35,I will go west from the corridor to check if the orange bell pepper or block of cheese are there.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot on the floor.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot on the floor.","You are carrying: a red hot pepper, a knife, a red onion, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-36,I will take the carrot from the floor to have more ingredients for cooking.,take carrot from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot on the floor.","You are carrying: a red hot pepper, a knife, a red onion, a white onion and a cookbook.",3 of 17,0.17647058823529413,False,
-37,"I am carrying too many items, so I will drop the white onion to free up space for the carrot.",drop white onion,,You drop the white onion on the ground.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a white onion and a carrot on the floor.","You are carrying: a red hot pepper, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-38,"Now that I have space, I will take the carrot from the floor.",take carrot from floor,,You pick up the carrot from the ground.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a white onion on the floor.","You are carrying: a carrot, a red hot pepper, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-39,I have the ingredients and the cookbook; I should check the cookbook for the recipe to cook a delicious meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red hot pepper
-  orange bell pepper
-  block of cheese
-  carrot
-  white onion
-
-Directions:
-slice the red hot pepper
-  fry the red hot pepper
-  slice the orange bell pepper
-  roast the orange bell pepper
-  chop the block of cheese
-  grill the block of cheese
-  slice the carrot
-  roast the carrot
-  slice the white onion
-  roast the white onion
-  prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a white onion on the floor.","You are carrying: a carrot, a red hot pepper, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-40,I need to get the orange bell pepper and block of cheese to complete the recipe ingredients.,go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a carrot, a red hot pepper, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-41,I will explore the corridor by going east to look for the orange bell pepper and block of cheese.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the south. There is an exit to the west.","You are carrying: a carrot, a red hot pepper, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-42,"The bedroom has no useful items, so I will go west to explore further for the orange bell pepper and block of cheese.",go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a carrot, a red hot pepper, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-43,I will go north from the corridor to continue searching for the orange bell pepper and block of cheese.,go north,,"You find yourself in a bathroom. A typical kind of place.
-
-You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
-
-You don't like doors? Why not try going south, that entranceway is not blocked by one.",Bathroom,"You find yourself in a bathroom. A typical kind of place.
-
-You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
-
-You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a carrot, a red hot pepper, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-44,"The bathroom has no useful items, so I will go back south to the corridor and try going west to explore other areas.",go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a carrot, a red hot pepper, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-45,I will go west from the corridor to check if there are any useful items in that direction.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a white onion on the floor.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a white onion on the floor.","You are carrying: a carrot, a red hot pepper, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-46,I will take the white onion from the floor to have more ingredients for cooking.,take white onion from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a white onion on the floor.","You are carrying: a carrot, a red hot pepper, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-47,"I am carrying too many items, so I will drop the red hot pepper to free up space for the white onion.",drop red hot pepper,,You drop the red hot pepper on the ground.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a red hot pepper and a white onion on the floor.","You are carrying: a carrot, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-48,"Now that I have space, I will take the white onion from the floor.",take white onion from floor,,You pick up the white onion from the ground.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a red hot pepper on the floor.","You are carrying: a white onion, a carrot, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-49,I should check the cookbook for a recipe to cook a delicious meal with the ingredients I have.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red hot pepper
-  orange bell pepper
-  block of cheese
-  carrot
-  white onion
-
-Directions:
-slice the red hot pepper
-  fry the red hot pepper
-  slice the orange bell pepper
-  roast the orange bell pepper
-  chop the block of cheese
-  grill the block of cheese
-  slice the carrot
-  roast the carrot
-  slice the white onion
-  roast the white onion
-  prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a red hot pepper on the floor.","You are carrying: a white onion, a carrot, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-50,"I need a red hot pepper, orange bell pepper, and block of cheese to complete the recipe, but I currently only have a carrot, white onion, red onion, and knife. I will go east to explore and look for the missing ingredients.",go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a white onion, a carrot, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-51,I will explore the corridor further by going east to look for the missing ingredients.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
-
-You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
-
-There is an exit to the south. There is an exit to the west.","You are carrying: a white onion, a carrot, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-52,"There are no ingredients in the bedroom, so I will go west to return to the corridor and then try going north to explore more.",go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a white onion, a carrot, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-53,I will go north from the corridor to explore further for the missing ingredients.,go north,,"You find yourself in a bathroom. A typical kind of place.
-
-You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
-
-You don't like doors? Why not try going south, that entranceway is not blocked by one.",Bathroom,"You find yourself in a bathroom. A typical kind of place.
-
-You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
-
-You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a white onion, a carrot, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-54,"The bathroom has no ingredients, so I will go back south to the corridor and then try going west to explore other areas.",go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
-
-
-
-There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a white onion, a carrot, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-55,I will go west from the corridor to return to the kitchen and check if I missed any ingredients there.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a red hot pepper on the floor.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a red hot pepper on the floor.","You are carrying: a white onion, a carrot, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-56,I will take the red hot pepper from the floor to have more ingredients for the meal.,take red hot pepper from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a red hot pepper on the floor.","You are carrying: a white onion, a carrot, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-57,"I am carrying too many items, so I will drop the carrot to free up space for the red hot pepper.",drop carrot,,You drop the carrot on the ground.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot and a red hot pepper on the floor.","You are carrying: a white onion, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-58,"Now that I have space, I will take the red hot pepper from the floor.",take red hot pepper from floor,,You pick up the red hot pepper from the ground.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot on the floor.","You are carrying: a red hot pepper, a white onion, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-59,I will check the cookbook for a recipe to cook a meal with the ingredients I have.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
-
-Recipe #1
----------
-Gather all following ingredients and follow the directions to prepare this tasty meal.
-
-Ingredients:
-red hot pepper
-  orange bell pepper
-  block of cheese
-  carrot
-  white onion
-
-Directions:
-slice the red hot pepper
-  fry the red hot pepper
-  slice the orange bell pepper
-  roast the orange bell pepper
-  chop the block of cheese
-  grill the block of cheese
-  slice the carrot
-  roast the carrot
-  slice the white onion
-  roast the white onion
-  prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot on the floor.","You are carrying: a red hot pepper, a white onion, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-60,I need an orange bell pepper and a block of cheese to complete the recipe. I will look around the kitchen to see if they are available.,look,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot on the floor.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot on the floor.","You are carrying: a red hot pepper, a white onion, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-61,"Since the kitchen does not have the orange bell pepper or block of cheese, I will take the carrot from the floor to use it for the recipe.",take carrot from floor,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a carrot on the floor.","You are carrying: a red hot pepper, a white onion, a knife, a red onion and a cookbook.",3 of 17,0.17647058823529413,False,
-62,I need to drop an item to free up space before taking the carrot. I will drop the red onion.,drop red onion,,You drop the red onion on the ground.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a red onion and a carrot on the floor.","You are carrying: a red hot pepper, a white onion, a knife and a cookbook.",3 of 17,0.17647058823529413,False,
-63,"Now that I have space, I will take the carrot from the floor.",take carrot from floor,,You pick up the carrot from the ground.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
-
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
-
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a red onion on the floor.","You are carrying: a carrot, a red hot pepper, a white onion, a knife and a cookbook.",3 of 17,0.17647058823529413,False,
-64,I will slice the red hot pepper as the first step in the recipe.,slice red hot pepper with knife,,"You slice the red hot pepper.
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a red hot pepper.,1 of 17,0.058823529411764705,False,
+20,"Since the orange bell pepper and block of cheese are not visible in the kitchen, I will check the fridge for the white onion and carrot and take them. Then I will explore other rooms to find the missing ingredients.",take white onion from fridge,,"You take the white onion from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+You see a fridge. The fridge contains a carrot and a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a red onion on the floor.","You are carrying: a carrot, a sliced red hot pepper, a white onion, a knife and a cookbook.",4 of 17,0.23529411764705882,False,
-65,"Next, I need to fry the sliced red hot pepper.",cook sliced red hot pepper with stove,,"You fried the red hot pepper.
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",You are carrying: a white onion and a red hot pepper.,2 of 17,0.11764705882352941,False,
+21,"I will take the carrot from the fridge as well, then search other rooms for the orange bell pepper and block of cheese.",take carrot from fridge,,"You take the carrot from the fridge.
 
 
 
 Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+You see a fridge. The fridge contains a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
 
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
-
-There is a red onion on the floor.","You are carrying: a carrot, a sliced fried red hot pepper, a white onion, a knife and a cookbook.",5 of 17,0.29411764705882354,False,
-66,I will now dice the white onion as the next step in the recipe.,dice white onion with knife,,"You dice the white onion.
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+22,I will go east to explore the next room for the orange bell pepper and block of cheese.,go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
 
 
 
-                              *** You lost! ***
-
-You scored 5 out of a possible 17, in 66 turns.
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
 
 
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
->",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
 
-You see a fridge. What a letdown! The fridge is empty! A closed oven, which looks conventional, is right there by you. You see a table. You wonder idly who left that here. The table is massive. However, the table, like an empty table, has nothing on it. It would have been so cool if there was stuff on the table! oh well. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+23,I will go east to continue exploring for the orange bell pepper and block of cheese.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
 
-There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
 
-There is a red onion on the floor.","You are carrying: a carrot, a sliced fried red hot pepper, a white onion, a knife and a cookbook.",5 of 17,0.29411764705882354,True,
+There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.","You are carrying: a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+24,The bedroom does not have the ingredients I need. I will go south to check the next room.,go south,,"You find yourself in a livingroom. An usual one.
+
+You see a sofa. The sofa is comfy. But there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is a closed front door leading east. You need an exit without a door? You should try going north.",Livingroom,"You find yourself in a livingroom. An usual one.
+
+You see a sofa. The sofa is comfy. But there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is a closed front door leading east. You need an exit without a door? You should try going north.","You are carrying: a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+25,I will go north to return to the corridor and then explore the other exits to find the orange bell pepper and block of cheese.,go north,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.","You are carrying: a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+26,I will go west to return to the corridor and explore the north exit from there.,go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+27,I will go north to check the room in that direction for the orange bell pepper and block of cheese.,go north,,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.",Bathroom,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+28,The bathroom does not have the ingredients I need. I will go south back to the corridor and then try going west to find the kitchen.,go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+29,I will go west to enter the kitchen where I can find the cookbook and possibly the remaining ingredients.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. The fridge contains a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. The fridge contains a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+30,I will examine the cookbook on the table to find the recipe for the meal I want to cook.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  orange bell pepper
+  block of cheese
+  carrot
+  white onion
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  slice the orange bell pepper
+  roast the orange bell pepper
+  chop the block of cheese
+  grill the block of cheese
+  slice the carrot
+  roast the carrot
+  slice the white onion
+  roast the white onion
+  prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. The fridge contains a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+31,I need to find the orange bell pepper and the block of cheese to complete the ingredients for the recipe.,open fridge,,That's already open.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. The fridge contains a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook and a knife. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+32,"The fridge contains a red onion, not the orange bell pepper or block of cheese. I will check the table for the knife and take it to prepare the ingredients.",take knife from table,,You take the knife from the table.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. The fridge contains a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+33,I need to find the orange bell pepper and block of cheese. I will check the counter for the orange bell pepper.,examine counter,,"The counter is wobbly.
+
+On the counter are a red apple and a raw yellow potato.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. The fridge contains a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+34,The orange bell pepper and block of cheese are not on the counter or in the fridge. I will go east to explore the next room for these ingredients.,go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+35,I will go north in the corridor to check if the orange bell pepper or block of cheese is in that direction.,go north,,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.",Bathroom,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+36,The bathroom does not have the ingredients I need. I will go back south to the corridor and then try going east to explore further.,go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+37,I will go east from the corridor to explore the next area for the ingredients.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.","You are carrying: a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+38,The bedroom does not have the ingredients I need. I will go west to return to the corridor and then try going west from there to explore other areas.,go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+39,I will go west from the corridor to check the room in that direction for the ingredients.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. The fridge contains a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. The fridge contains a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+40,I will examine the cookbook on the table to check the recipe for the meal I need to cook.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  orange bell pepper
+  block of cheese
+  carrot
+  white onion
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  slice the orange bell pepper
+  roast the orange bell pepper
+  chop the block of cheese
+  grill the block of cheese
+  slice the carrot
+  roast the carrot
+  slice the white onion
+  roast the white onion
+  prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. The fridge contains a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+41,I need to find the orange bell pepper and block of cheese to complete the ingredients. I will check the fridge for the red onion and possibly other items.,open fridge,,That's already open.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. The fridge contains a red onion. An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+42,I will take the red onion from the fridge to have all onions needed for the recipe.,take red onion from fridge,,You take the red onion from the fridge.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+43,I still need the orange bell pepper and block of cheese. I will check the counter for the orange bell pepper.,examine counter,,"The counter is wobbly.
+
+On the counter are a red apple and a raw yellow potato.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+44,The orange bell pepper and block of cheese are not on the counter. I will check the table for these items.,examine table,,"The table is solidly built.
+
+On the table is a cookbook.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+45,The table only has the cookbook. I will explore the kitchen further by going east to see if I can find the orange bell pepper and block of cheese.,go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+46,I will explore the corridor by going north to see if I can find the orange bell pepper and block of cheese.,go north,,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.",Bathroom,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+47,The bathroom does not have the ingredients I need. I will go back south to the corridor and then try going east to explore further.,go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+48,I will go east from the corridor to explore more rooms for the ingredients.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+49,The bedroom does not have the ingredients I need. I will go west to return to the corridor and then go west again to return to the kitchen.,go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+50,I will go west to return to the kitchen and check the counter for the orange bell pepper and block of cheese.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+51,I will examine the cookbook on the table to check the recipe for the meal I need to cook.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  orange bell pepper
+  block of cheese
+  carrot
+  white onion
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  slice the orange bell pepper
+  roast the orange bell pepper
+  chop the block of cheese
+  grill the block of cheese
+  slice the carrot
+  roast the carrot
+  slice the white onion
+  roast the white onion
+  prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+52,I need to find the orange bell pepper and block of cheese to complete the ingredients for the recipe.,go north,,You have to open the plain door first.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+53,I need to open the plain door leading north before I can go through it.,open door,,"Which do you mean, plain door or screen door?",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is a closed plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+54,I will open the plain door leading north as it is the door I want to go through.,open plain door,,You open plain door.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+55,"Now that the plain door is open, I will go north to look for the orange bell pepper and block of cheese.",go north,,"You've just walked into a pantry.
+
+You see a shelf. But the thing hasn't got anything on it.
+
+There is an open plain door leading south.",Pantry,"You've just walked into a pantry.
+
+You see a shelf. But the thing hasn't got anything on it.
+
+There is an open plain door leading south.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+56,"The pantry is empty, so I will go back to the kitchen and check the counter for the missing ingredients.",go south,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+57,I will check the table to see if the orange bell pepper or block of cheese is there.,look at table,,"The table is solidly built.
+
+On the table is a cookbook.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+58,I will examine the cookbook on the table to find the recipe and check for the missing ingredients.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  orange bell pepper
+  block of cheese
+  carrot
+  white onion
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  slice the orange bell pepper
+  roast the orange bell pepper
+  chop the block of cheese
+  grill the block of cheese
+  slice the carrot
+  roast the carrot
+  slice the white onion
+  roast the white onion
+  prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+59,I need to find the orange bell pepper and block of cheese to complete the recipe.,go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+60,I will go east to explore further for the missing ingredients.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+61,"The bedroom has no useful items, so I will go west to explore other areas.",go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+62,I will go north from the corridor to check for the missing ingredients.,go north,,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.",Bathroom,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+63,"The bathroom has no useful items, so I will go back south to the corridor and then try west to explore other areas.",go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+64,I will go west from the corridor to check for the missing ingredients.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+65,I will examine the cookbook on the table to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  orange bell pepper
+  block of cheese
+  carrot
+  white onion
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  slice the orange bell pepper
+  roast the orange bell pepper
+  chop the block of cheese
+  grill the block of cheese
+  slice the carrot
+  roast the carrot
+  slice the white onion
+  roast the white onion
+  prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+66,I need to find the orange bell pepper and block of cheese to complete the recipe.,go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+67,I will go east from the corridor to search for the orange bell pepper and block of cheese.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+68,"The bedroom has no useful items, so I will go south to check if there are any items there.",go south,,"You find yourself in a livingroom. An usual one.
+
+You see a sofa. The sofa is comfy. But there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is a closed front door leading east. You need an exit without a door? You should try going north.",Livingroom,"You find yourself in a livingroom. An usual one.
+
+You see a sofa. The sofa is comfy. But there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is a closed front door leading east. You need an exit without a door? You should try going north.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+69,"The livingroom has no useful items, so I will go north to explore further for the orange bell pepper and block of cheese.",go north,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+70,I have returned to the bedroom with no items. I will go west to explore another area for the orange bell pepper and block of cheese.,go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+71,I have returned to the corridor. I will go north to explore for the orange bell pepper and block of cheese.,go north,,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.",Bathroom,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+72,"The bathroom has no useful items, so I will go south to return to the corridor and try going west to find the kitchen.",go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+73,I will go west from the corridor to check if it leads to the kitchen where I can find the cookbook and other ingredients.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+74,I need to examine the cookbook on the table to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  orange bell pepper
+  block of cheese
+  carrot
+  white onion
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  slice the orange bell pepper
+  roast the orange bell pepper
+  chop the block of cheese
+  grill the block of cheese
+  slice the carrot
+  roast the carrot
+  slice the white onion
+  roast the white onion
+  prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+75,I need to find the orange bell pepper and block of cheese to complete the recipe.,go north,,"You've just walked into a pantry.
+
+You see a shelf. But the thing hasn't got anything on it.
+
+There is an open plain door leading south.",Pantry,"You've just walked into a pantry.
+
+You see a shelf. But the thing hasn't got anything on it.
+
+There is an open plain door leading south.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+76,"The pantry is empty, so I will go back south to the kitchen and then try going east to find the orange bell pepper and block of cheese.",go south,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+77,I will go east from the kitchen to explore and look for the orange bell pepper and block of cheese.,go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+78,"I have returned to the corridor, so I will go north to explore if I can find the orange bell pepper and block of cheese.",go north,,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.",Bathroom,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+79,"The bathroom does not have the ingredients I need, so I will go back south to the corridor and then try going east to explore further.",go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+80,I will go east from the corridor to explore the exit there for the ingredients.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+81,"The bedroom does not have the ingredients I need, so I will go west to return to the corridor and then try going north to explore further.",go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+82,I will go north from the corridor to explore if there are any other rooms with ingredients.,go north,,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.",Bathroom,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+83,"The bathroom does not have the ingredients I need, so I will go back south to the corridor and then try going west to explore further.",go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+84,I will go west from the corridor to explore the exit there for the cookbook or ingredients.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+85,I will examine the cookbook on the table to check the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  orange bell pepper
+  block of cheese
+  carrot
+  white onion
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  slice the orange bell pepper
+  roast the orange bell pepper
+  chop the block of cheese
+  grill the block of cheese
+  slice the carrot
+  roast the carrot
+  slice the white onion
+  roast the white onion
+  prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+86,I need an orange bell pepper and a block of cheese to complete the recipe. I will check the fridge and the counter for these ingredients.,examine fridge,,The fridge looks sturdy. You can see inside it.,Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+87,"The fridge is empty, so I will check the counter for the orange bell pepper and block of cheese.",examine counter,,"The counter is wobbly.
+
+On the counter are a red apple and a raw yellow potato.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+88,The orange bell pepper and block of cheese are not in the kitchen. I will go east to explore the next room for these ingredients.,go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+89,I will go east from the corridor to check the next room for the orange bell pepper and block of cheese.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+90,The bedroom has no items. I will go south to check the next room for the ingredients.,go south,,"You find yourself in a livingroom. An usual one.
+
+You see a sofa. The sofa is comfy. But there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is a closed front door leading east. You need an exit without a door? You should try going north.",Livingroom,"You find yourself in a livingroom. An usual one.
+
+You see a sofa. The sofa is comfy. But there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is a closed front door leading east. You need an exit without a door? You should try going north.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+91,The living room has no ingredients. I will go north to continue searching for the orange bell pepper and block of cheese.,go north,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+92,I have returned to the bedroom with no items. I will go west to return to the corridor and explore the north exit there.,go west,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+93,I will go north from the corridor to check the next room for the orange bell pepper and block of cheese.,go north,,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.",Bathroom,"You find yourself in a bathroom. A typical kind of place.
+
+You can see a toilet. The toilet is white. The toilet appears to be empty. Aw, here you were, all excited for there to be things on it!
+
+You don't like doors? Why not try going south, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+94,The bathroom has no ingredients. I will go south to return to the corridor and try going west to find the kitchen.,go south,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+95,I will go west from the corridor to enter the kitchen and look for the cookbook.,go west,,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+96,I will examine the cookbook on the table to find the recipe for the meal.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+red hot pepper
+  orange bell pepper
+  block of cheese
+  carrot
+  white onion
+
+Directions:
+slice the red hot pepper
+  fry the red hot pepper
+  slice the orange bell pepper
+  roast the orange bell pepper
+  chop the block of cheese
+  grill the block of cheese
+  slice the carrot
+  roast the carrot
+  slice the white onion
+  roast the white onion
+  prepare meal",Kitchen,"You arrive in a kitchen. An usual kind of place. You begin to take stock of what's in the room.
+
+You see a fridge. What a letdown! The fridge is empty! An open oven, which looks conventional, is right there by you. What a letdown! The oven is empty! You see a table. You wonder idly who left that here. The table is massive. On the table you can make out a cookbook. As if things weren't amazing enough already, you can even see a counter. On the counter you can see a red apple and a raw yellow potato, so there's that. You lean against the wall, inadvertently pressing a secret button. The wall opens up to reveal a stove. However, the stove, like an empty stove, has nothing on it.
+
+There is an open plain door leading north. There is a closed screen door leading south. You don't like doors? Why not try going east, that entranceway is not blocked by one.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+97,I need to find the orange bell pepper and block of cheese to complete the recipe.,go east,,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.",Corridor,"You've just sauntered into a corridor. You can barely contain your excitement.
+
+
+
+There is an exit to the east. Don't worry, there is no door. There is an exit to the north. You need an exit without a door? You should try going west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+98,I will go east from the corridor to search for the orange bell pepper and block of cheese.,go east,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+99,The bedroom has no ingredients. I will go south to check if there is anything useful there.,go south,,"You find yourself in a livingroom. An usual one.
+
+You see a sofa. The sofa is comfy. But there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is a closed front door leading east. You need an exit without a door? You should try going north.",Livingroom,"You find yourself in a livingroom. An usual one.
+
+You see a sofa. The sofa is comfy. But there isn't a thing on it. Oh! Why couldn't there just be stuff on it?
+
+There is a closed front door leading east. You need an exit without a door? You should try going north.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,False,
+100,I will go north from the livingroom to continue searching for the orange bell pepper and block of cheese.,go north,,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.",Bedroom,"Well, here we are in a bedroom. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a bed. Unfortunately, there isn't a thing on it. What, you think everything in TextWorld should have stuff on it?
+
+There is an exit to the south. There is an exit to the west.","You are carrying: a red onion, a knife, a carrot, a white onion and a red hot pepper.",3 of 17,0.17647058823529413,True,

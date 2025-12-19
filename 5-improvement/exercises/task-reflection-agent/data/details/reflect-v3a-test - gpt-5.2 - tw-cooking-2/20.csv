@@ -1,0 +1,167 @@
+step_id,thought,action,task,feedback,location,description,inventory,score,reward,is_done,error
+0,,,"You are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!",,Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper, a raw red potato and a knife. You see a stove. The stove is conventional. But there isn't a thing on it.","You are carrying: a red onion, a block of cheese and a raw yellow potato.",0 of 8,0.0,False,
+1,I should read the cookbook to learn the recipe steps.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+block of cheese
+  red onion
+  yellow potato
+
+Directions:
+chop the block of cheese
+  roast the block of cheese
+  dice the red onion
+  roast the red onion
+  slice the yellow potato
+  fry the yellow potato
+  prepare meal",Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper, a raw red potato and a knife. You see a stove. The stove is conventional. But there isn't a thing on it.","You are carrying: a red onion, a block of cheese and a raw yellow potato.",0 of 8,0.0,False,
+2,"I need the knife to chop, dice, and slice the ingredients.",take knife from counter,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper, a raw red potato and a knife. You see a stove. The stove is conventional. But there isn't a thing on it.","You are carrying: a red onion, a block of cheese and a raw yellow potato.",0 of 8,0.0,False,
+3,"I'm at carry limit, so I should drop a non-tool ingredient temporarily to pick up the knife.",drop raw yellow potato,,You drop the yellow potato on the ground.,Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper, a raw red potato and a knife. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a raw yellow potato on the floor.",You are carrying: a red onion and a block of cheese.,0 of 8,0.0,False,
+4,Now I can pick up the knife to do all required cutting actions.,take knife from counter,,You take the knife from the counter.,Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper and a raw red potato. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a raw yellow potato on the floor.","You are carrying: a knife, a red onion and a block of cheese.",0 of 8,0.0,False,
+5,First recipe step is to chop the block of cheese using the knife.,chop block of cheese with knife,,"You chop the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper and a raw red potato. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a raw yellow potato on the floor.","You are carrying: a knife, a red onion and a chopped block of cheese.",1 of 8,0.125,False,
+6,Next I must roast the chopped block of cheese using the oven.,roast chopped block of cheese with oven,,That's not a verb I recognise.,Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper and a raw red potato. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a raw yellow potato on the floor.","You are carrying: a knife, a red onion and a chopped block of cheese.",1 of 8,0.125,False,
+7,The game likely uses the generic cook command with the oven to achieve roasting.,cook chopped block of cheese with oven,,"You roasted the block of cheese.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper and a raw red potato. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a raw yellow potato on the floor.","You are carrying: a knife, a red onion and a chopped roasted block of cheese.",2 of 8,0.25,False,
+8,I should consult the cookbook to follow the remaining recipe steps precisely.,examine cookbook,,"You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+block of cheese
+  red onion
+  yellow potato
+
+Directions:
+chop the block of cheese
+  roast the block of cheese
+  dice the red onion
+  roast the red onion
+  slice the yellow potato
+  fry the yellow potato
+  prepare meal",Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper and a raw red potato. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a raw yellow potato on the floor.","You are carrying: a knife, a red onion and a chopped roasted block of cheese.",2 of 8,0.25,False,
+9,Next step is to dice the red onion using the knife while I’m holding both.,dice red onion with knife,,"You dice the red onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper and a raw red potato. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a raw yellow potato on the floor.","You are carrying: a knife, a diced red onion and a chopped roasted block of cheese.",3 of 8,0.375,False,
+10,Now I need to roast the diced red onion using the oven via the cook command.,cook diced red onion with oven,,"You roasted the red onion.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper and a raw red potato. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a raw yellow potato on the floor.","You are carrying: a knife, a diced roasted red onion and a chopped roasted block of cheese.",4 of 8,0.5,False,
+11,Next I must pick up the yellow potato from the floor so I can slice it.,take raw yellow potato,,You're carrying too many things already.,Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper and a raw red potato. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a raw yellow potato on the floor.","You are carrying: a knife, a diced roasted red onion and a chopped roasted block of cheese.",4 of 8,0.5,False,
+12,"I need inventory space to pick up the yellow potato, so I’ll drop a finished ingredient (the roasted cheese) while keeping the knife.",drop chopped roasted block of cheese,,You drop the block of cheese on the ground.,Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper and a raw red potato. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a chopped roasted block of cheese and a raw yellow potato on the floor.",You are carrying: a knife and a diced roasted red onion.,4 of 8,0.5,False,
+13,"With space freed, I can now pick up the raw yellow potato.",take raw yellow potato,,You pick up the yellow potato from the ground.,Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper and a raw red potato. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a chopped roasted block of cheese on the floor.","You are carrying: a raw yellow potato, a knife and a diced roasted red onion.",4 of 8,0.5,False,
+14,Next I must slice the yellow potato using the knife.,slice raw yellow potato with knife,,"You slice the yellow potato.
+
+
+
+Your score has just gone up by one point.",Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper and a raw red potato. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a chopped roasted block of cheese on the floor.","You are carrying: a sliced raw yellow potato, a knife and a diced roasted red onion.",5 of 8,0.625,False,
+15,Now I need to roast the sliced yellow potato in the oven.,cook sliced raw yellow potato with oven,,"You roasted the yellow potato.
+
+
+
+                              *** You lost! ***
+
+You scored 5 out of a possible 8, in 14 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+>",Kitchen,"You arrive in a kitchen. A typical one. I guess you better just go and list everything you see here.
+
+You can see a fridge. Classic TextWorld. You see an oven. You bend down to tie your shoe. When you stand up, you notice a table! The table is massive. On the table you make out a cookbook. Classic TextWorld. You rest your hand against a wall, but you miss the wall and fall onto a counter. The counter is vast. On the counter you can see a banana, a red hot pepper and a raw red potato. You see a stove. The stove is conventional. But there isn't a thing on it.
+
+
+
+There is a chopped roasted block of cheese on the floor.","You are carrying: a sliced raw yellow potato, a knife and a diced roasted red onion.",5 of 8,0.625,True,
