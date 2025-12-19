@@ -1,0 +1,25 @@
+# Benchmarks for Self-Improvement in LLM Agents
+
+- MLR-Bench: Benchmark for evaluating LLM agents as research assistants across the research workflow (literature review, experiment planning/execution, analysis, writing); evaluates end-to-end research-process cognition and multi-stage workflow competence
+- GAIA: Real-world, multi-step question answering with web and tool use; evaluates planning, tool use, and grounded reasoning over heterogeneous sources
+- MathVista: Vision-language math problems grounded in diagrams and images; evaluates visual perception combined with mathematical reasoning
+- PathVQA: Visual question answering in a medical/pathology domain; evaluates visual understanding and domain-grounded reasoning
+- Abstraction and Reasoning Corpus (ARC): Pattern induction from few examples; evaluates abstract reasoning, generalization, and compositional rule learning
+- DROP: Reading comprehension requiring discrete and numerical reasoning over passages; evaluates grounded multi-step reasoning and symbolic/numeric manipulation
+- MGSM: Grade-school math word problems (multilingual); evaluates arithmetic reasoning and language-to-math translation
+- MMLU: Broad multiple-choice knowledge benchmark across subjects; evaluates factual knowledge and general reasoning breadth
+- GPQA: Graduate-level, Google-proof science questions; evaluates deep scientific reasoning and resistance to shallow pattern matching
+- SWE-bench: Real-world GitHub issue resolution with tests; evaluates code reasoning, tool-using software engineering, and iterative debugging
+- Polyglot: Multi-language programming benchmark; evaluates code synthesis, translation, and generalization across programming languages
+- Game of 24: Arithmetic puzzle reaching a target number via operations; evaluates search, planning, and exact symbolic manipulation
+- Checkmate-in-One (Chess): Identify immediate checkmates; evaluates constrained combinational reasoning and solution verification
+- Python programming problems: General algorithmic coding tasks; evaluates algorithmic reasoning, code generation, and correctness-by-execution
+- ICLR 2022 OpenReview Dataset: Peer review texts and metadata; evaluates automated scientific reviewing, critique quality, and evaluative reasoning
+- NeurIPS 2021 Reviewer Consistency Dataset: Reviewer agreement and variance data; evaluates reliability and consistency of evaluative judgment
+- Shakespeare character-level language modeling: Next-character prediction task; evaluates sequential prediction and learned linguistic regularities
+- Enwik8: Wikipedia-based character-level language modeling benchmark; evaluates long-context sequence modeling and compression-like prediction
+- Text8: Cleaned Wikipedia subset for language modeling; evaluates general language modeling and predictive skill
+- Minecraft open-ended exploration environment: Embodied, open-ended task world; evaluates long-horizon exploration, skill acquisition, and continual learning
+- Unique items collected (Minecraft metric): Measure of exploration diversity; evaluates breadth of discovery-driven behavior
+- Distance traveled (Minecraft metric): Measure of environment coverage; evaluates exploratory drive and spatial coverage
+- Tech tree milestone completion speed (Minecraft metric): Measure of progression efficiency; evaluates planning, skill reuse, and long-horizon competence
