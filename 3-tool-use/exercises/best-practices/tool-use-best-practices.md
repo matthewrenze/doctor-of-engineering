@@ -1,4 +1,4 @@
-# LLM Agent Tool-Use Best Practices (2025)
+# LLM Agent Tool-Use Best Practices
 
 ## 1. Tool specification and interfaces
 
