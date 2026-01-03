@@ -1,4 +1,4 @@
-# Module 6 - Alignment
+# Module 6 - Alignment (Dec)
 
 ## Goals
 - Learn how to align agents to human goals and values
@@ -23,6 +23,16 @@
 - Summarize the [benchmarks](exercises/best-practices/benchmarks-for-uncertainty.md) for uncertainty
 - Create an agent that measures its own uncertainty
 - Create an agent that learns to defer (L2D) unsafe tasks to humans
+
+## Experiments
+- Create a [modular agent](experiments/modular-agent/) by decomposing thoughts and actions
+
+## Prototypes
+- [token-level-uncertainty](prototypes/token-level-uncertainty/) - quick tests for estimating uncertainty using log probability, probability, entropy, and margin on a single token
+- [sequence-level-uncertainty](prototypes/sequence-level-uncertainty/) - quick tests for estimating uncertainty using min probability, mean entropy, and min margin over a sequence of tokens
+- [sample-based-uncertainty](prototypes/sample-based-uncertainty/) - quick tests for estimating uncertainty using self-consistency, centroid similarity, and pairwise similarity over multiple rollouts (samples)
+- [distribution-based-uncertainty] - quick tests for estimating uncertainty using predictive entropy, expected entropy, and mutual information over a token distribution
+- [verbalized-uncertainty](prototypes/verbalized-uncertainty/) - quick tests for estimating probability by asking the LLM for its confidence using qualitative and quantitative scales
 
 
 

@@ -1,4 +1,4 @@
-# Module 5 - Self-Improvement (Dec)
+# Module 5 - Self-Improvement (Nov)
 
 ## Goals
 - Learn how to create agents that can self-improve
