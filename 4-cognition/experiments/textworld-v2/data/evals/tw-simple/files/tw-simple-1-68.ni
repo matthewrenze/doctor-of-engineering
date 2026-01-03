@@ -313,142 +313,25 @@ The player is in r_0.
 The quest0 completed is a truth state that varies.
 The quest0 completed is usually false.
 
-Test quest0_0 with "open chest drawer"
+Test quest0_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take bell pepper / go north / go west / put bell pepper on stove"
 
 Every turn:
 	if quest0 completed is true:
 		do nothing;
-	else if The c_0 is open:
+	else if The f_4 is on the s_2:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest0 completed is true;
 
 The quest1 completed is a truth state that varies.
 The quest1 completed is usually false.
-
-Test quest1_0 with "open chest drawer / take old key from chest drawer"
-
 Every turn:
 	if quest1 completed is true:
-		do nothing;
-	else if The player carries the k_0:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest1 completed is true;
-
-The quest2 completed is a truth state that varies.
-The quest2 completed is usually false.
-
-Test quest2_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key"
-
-Every turn:
-	if quest2 completed is true:
-		do nothing;
-	else if The d_0 is closed and the d_0 is unlocked:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest2 completed is true;
-
-The quest3 completed is a truth state that varies.
-The quest3 completed is usually false.
-
-Test quest3_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door"
-
-Every turn:
-	if quest3 completed is true:
-		do nothing;
-	else if The d_0 is open:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest3 completed is true;
-
-The quest4 completed is a truth state that varies.
-The quest4 completed is usually false.
-
-Test quest4_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east"
-
-Every turn:
-	if quest4 completed is true:
-		do nothing;
-	else if The player is in r_1:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest4 completed is true;
-
-The quest5 completed is a truth state that varies.
-The quest5 completed is usually false.
-
-Test quest5_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east / open screen door"
-
-Every turn:
-	if quest5 completed is true:
-		do nothing;
-	else if The d_1 is open:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest5 completed is true;
-
-The quest6 completed is a truth state that varies.
-The quest6 completed is usually false.
-
-Test quest6_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east / open screen door / go east"
-
-Every turn:
-	if quest6 completed is true:
-		do nothing;
-	else if The player is in r_4:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest6 completed is true;
-
-The quest7 completed is a truth state that varies.
-The quest7 completed is usually false.
-
-Test quest7_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south"
-
-Every turn:
-	if quest7 completed is true:
-		do nothing;
-	else if The player is in r_5:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest7 completed is true;
-
-The quest8 completed is a truth state that varies.
-The quest8 completed is usually false.
-
-Test quest8_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take bell pepper"
-
-Every turn:
-	if quest8 completed is true:
-		do nothing;
-	else if The player carries the f_4:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest8 completed is true;
-
-The quest9 completed is a truth state that varies.
-The quest9 completed is usually false.
-
-Test quest9_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east / open screen door / go east / go south / take bell pepper / go north / go west / put bell pepper on stove"
-
-Every turn:
-	if quest9 completed is true:
-		do nothing;
-	else if The f_4 is on the s_2:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest9 completed is true;
-
-The quest10 completed is a truth state that varies.
-The quest10 completed is usually false.
-Every turn:
-	if quest10 completed is true:
 		do nothing;
 	else if The f_4 is nowhere:
 		end the story; [Lost]
 
-Use scoring. The maximum score is 10.
+Use scoring. The maximum score is 1.
 This is the simpler notify score changes rule:
 	If the score is not the last notified score:
 		let V be the score - the last notified score;
@@ -461,7 +344,7 @@ This is the simpler notify score changes rule:
 		else:
 			say "points.";
 		Now the last notified score is the score;
-	if quest0 completed is true and quest1 completed is true and quest2 completed is true and quest3 completed is true and quest4 completed is true and quest5 completed is true and quest6 completed is true and quest7 completed is true and quest8 completed is true and quest9 completed is true:
+	if quest0 completed is true:
 		end the story finally; [Win]
 
 The simpler notify score changes rule substitutes for the notify score changes rule.
@@ -626,8 +509,12 @@ The last property-aggregation rule (this is the print aggregated properties rule
 		rule succeeds;
 	rule fails;
 
+The objective part 0 is some text that varies. The objective part 0 is "Get ready to pick stuff up and put it in places, because you've just entered TextWorld! Here is your task for today. Your first objective is to open the chest drawer. And then, take the old key from t".
+The objective part 1 is some text that varies. The objective part 1 is "he chest drawer inside the bedroom. And then, doublecheck that the wooden door is unlocked. Then, ensure that the wooden door inside the bedroom is open. And then, move east. Next, ensure that the scr".
+The objective part 2 is some text that varies. The objective part 2 is "een door is open. Then, take a trip east. And then, try to move south. Then, recover the bell pepper from the floor of the garden. And then, make an attempt to take a trip north. After that, head west".
+The objective part 3 is some text that varies. The objective part 3 is ". Then, rest the bell pepper on the stove. And once you've done that, you win!".
 
-An objective is some text that varies. The objective is "".
+An objective is some text that varies. The objective is "[objective part 0][objective part 1][objective part 2][objective part 3]".
 Printing the objective is an action applying to nothing.
 Carry out printing the objective:
 	say "[objective]".

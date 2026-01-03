@@ -310,25 +310,51 @@ The player is in r_0.
 The quest0 completed is a truth state that varies.
 The quest0 completed is usually false.
 
-Test quest0_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open refrigerator / take tomato plant from refrigerator / put tomato plant on stove"
+Test quest0_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east"
 
 Every turn:
 	if quest0 completed is true:
 		do nothing;
-	else if The f_1 is on the s_2:
+	else if The player is in r_1:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest0 completed is true;
 
 The quest1 completed is a truth state that varies.
 The quest1 completed is usually false.
+
+Test quest1_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open refrigerator / take tomato plant from refrigerator"
+
 Every turn:
 	if quest1 completed is true:
+		do nothing;
+	else if The player carries the f_1:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest1 completed is true;
+
+The quest2 completed is a truth state that varies.
+The quest2 completed is usually false.
+
+Test quest2_0 with "open antique trunk / take old key from antique trunk / unlock wooden door with old key / open wooden door / go east / open refrigerator / take tomato plant from refrigerator / put tomato plant on stove"
+
+Every turn:
+	if quest2 completed is true:
+		do nothing;
+	else if The f_1 is on the s_2:
+		increase the score by 1; [Quest completed]
+		if 1 is 1 [always true]:
+			Now the quest2 completed is true;
+
+The quest3 completed is a truth state that varies.
+The quest3 completed is usually false.
+Every turn:
+	if quest3 completed is true:
 		do nothing;
 	else if The f_1 is nowhere:
 		end the story; [Lost]
 
-Use scoring. The maximum score is 1.
+Use scoring. The maximum score is 3.
 This is the simpler notify score changes rule:
 	If the score is not the last notified score:
 		let V be the score - the last notified score;
@@ -341,7 +367,7 @@ This is the simpler notify score changes rule:
 		else:
 			say "points.";
 		Now the last notified score is the score;
-	if quest0 completed is true:
+	if quest0 completed is true and quest1 completed is true and quest2 completed is true:
 		end the story finally; [Win]
 
 The simpler notify score changes rule substitutes for the notify score changes rule.
@@ -506,9 +532,11 @@ The last property-aggregation rule (this is the print aggregated properties rule
 		rule succeeds;
 	rule fails;
 
-The objective part 0 is some text that varies. The objective part 0 is "The dinner is almost ready! It's only missing a grilled tomato plant.".
+The objective part 0 is some text that varies. The objective part 0 is "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First off, if it's not too much trouble, I need you to open the antique trunk in the bedroom. And then, ".
+The objective part 1 is some text that varies. The objective part 1 is "retrieve the old key from the antique trunk. Then, unlock the wooden door. After unlocking the wooden door, make sure that the wooden door is wide open. And then, move east. And then, open the refrige".
+The objective part 2 is some text that varies. The objective part 2 is "rator. Then, recover the tomato plant from the refrigerator. If you can get your hands on the tomato plant, rest the tomato plant on the stove. That's it!".
 
-An objective is some text that varies. The objective is "[objective part 0]".
+An objective is some text that varies. The objective is "[objective part 0][objective part 1][objective part 2]".
 Printing the objective is an action applying to nothing.
 Carry out printing the objective:
 	say "[objective]".

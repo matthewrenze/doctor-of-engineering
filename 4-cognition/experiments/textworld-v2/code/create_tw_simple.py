@@ -2,11 +2,15 @@ import os
 import json
 import textworld.challenges.tw_simple.simple
 
+# NOTE: There is a bug when using goal verbosity of "brief" or "none"
+#       It says the goal is to "grill" an item instead of putting it on the stove
+#       Do not use "brief" or "none" goal verbosity -- only use "detailed".
+
 # Set parameters
 num_tasks = 100
-goal_verbosity = ["detailed", "brief", "none"]
+goal_verbosity = "detailed"
 reward_densities = ["dense", "balanced", "sparse"]
-num_sublevels = len(goal_verbosity) * len(reward_densities)
+num_sublevels = len(reward_densities)
 eval_folder_path = "../data/evals/tw-simple"
 game_folder_path = "../data/evals/tw-simple/files"
 
@@ -19,7 +23,7 @@ for task_id in range(1, num_tasks + 1):
 
     # Set level and sublevel
     level_id = 1
-    sublevel_id = min((task_id - 1) * num_sublevels // num_tasks + 1, num_sublevels)
+    sublevel_id = min((task_id - 1) // (num_tasks // num_sublevels) + 1, num_sublevels)
 
     print(f"Creating tw-simple-{level_id} task-{task_id} ...")
 
@@ -35,8 +39,8 @@ for task_id in range(1, num_tasks + 1):
         os.remove(game_file_path)
 
     # Get the reward density and goal verbosity
-    goal_verbosity_text = goal_verbosity[((sublevel_id - 1) // len(reward_densities)) % len(goal_verbosity)]
-    reward_density_text = reward_densities[(sublevel_id - 1) % len(reward_densities)]
+    goal_verbosity_text = goal_verbosity
+    reward_density_text = reward_densities[sublevel_id - 1]
 
 
     # Set the settings

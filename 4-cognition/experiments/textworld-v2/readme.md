@@ -8,10 +8,11 @@ An experiment to design a incremental-learning curriculum for LLM agents using t
   - Parameters:
     - goal verbosity
       - detailed - provides a predefined path to the object
-      - brief - provides the name of the object
-      - None - need to read note in kitchen for name / preparation of object
+      - brief - provides the name of the object (**see bug below**)
+      - None - need to read note in kitchen for name / preparation of object (**see bug below**)
     - reward density = [dense, balanced, sparse]
   - Levels 1 - 9 sublevels of decreasing goal verbosity and reward density
+  - Bug: There is a bug with goal verbosity of "brief" and "none". It specifies the goal is to grill and item but the actual goal is to put an item on a stove. **Only use "detailed" for goal verbosity.**
 
 - Coin 
   - Task: follow a pre-defined path to pick up a coin

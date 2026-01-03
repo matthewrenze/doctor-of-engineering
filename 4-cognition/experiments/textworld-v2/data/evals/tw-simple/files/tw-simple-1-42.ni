@@ -310,12 +310,12 @@ The player is in r_0.
 The quest0 completed is a truth state that varies.
 The quest0 completed is usually false.
 
-Test quest0_0 with "open chest drawer"
+Test quest0_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east"
 
 Every turn:
 	if quest0 completed is true:
 		do nothing;
-	else if The c_0 is open:
+	else if The player is in r_1:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest0 completed is true;
@@ -323,12 +323,12 @@ Every turn:
 The quest1 completed is a truth state that varies.
 The quest1 completed is usually false.
 
-Test quest1_0 with "open chest drawer / take old key from chest drawer"
+Test quest1_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east / open refrigerator / take milk from refrigerator"
 
 Every turn:
 	if quest1 completed is true:
 		do nothing;
-	else if The player carries the k_0:
+	else if The player carries the f_1:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest1 completed is true;
@@ -336,77 +336,25 @@ Every turn:
 The quest2 completed is a truth state that varies.
 The quest2 completed is usually false.
 
-Test quest2_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key"
+Test quest2_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east / open refrigerator / take milk from refrigerator / put milk on stove"
 
 Every turn:
 	if quest2 completed is true:
 		do nothing;
-	else if The d_0 is closed and the d_0 is unlocked:
+	else if The f_1 is on the s_2:
 		increase the score by 1; [Quest completed]
 		if 1 is 1 [always true]:
 			Now the quest2 completed is true;
 
 The quest3 completed is a truth state that varies.
 The quest3 completed is usually false.
-
-Test quest3_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door"
-
 Every turn:
 	if quest3 completed is true:
-		do nothing;
-	else if The d_0 is open:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest3 completed is true;
-
-The quest4 completed is a truth state that varies.
-The quest4 completed is usually false.
-
-Test quest4_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east"
-
-Every turn:
-	if quest4 completed is true:
-		do nothing;
-	else if The player is in r_1:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest4 completed is true;
-
-The quest5 completed is a truth state that varies.
-The quest5 completed is usually false.
-
-Test quest5_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east / open refrigerator / take milk from refrigerator"
-
-Every turn:
-	if quest5 completed is true:
-		do nothing;
-	else if The player carries the f_1:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest5 completed is true;
-
-The quest6 completed is a truth state that varies.
-The quest6 completed is usually false.
-
-Test quest6_0 with "open chest drawer / take old key from chest drawer / unlock wooden door with old key / open wooden door / go east / open refrigerator / take milk from refrigerator / put milk on stove"
-
-Every turn:
-	if quest6 completed is true:
-		do nothing;
-	else if The f_1 is on the s_2:
-		increase the score by 1; [Quest completed]
-		if 1 is 1 [always true]:
-			Now the quest6 completed is true;
-
-The quest7 completed is a truth state that varies.
-The quest7 completed is usually false.
-Every turn:
-	if quest7 completed is true:
 		do nothing;
 	else if The f_1 is nowhere:
 		end the story; [Lost]
 
-Use scoring. The maximum score is 7.
+Use scoring. The maximum score is 3.
 This is the simpler notify score changes rule:
 	If the score is not the last notified score:
 		let V be the score - the last notified score;
@@ -419,7 +367,7 @@ This is the simpler notify score changes rule:
 		else:
 			say "points.";
 		Now the last notified score is the score;
-	if quest0 completed is true and quest1 completed is true and quest2 completed is true and quest3 completed is true and quest4 completed is true and quest5 completed is true and quest6 completed is true:
+	if quest0 completed is true and quest1 completed is true and quest2 completed is true:
 		end the story finally; [Win]
 
 The simpler notify score changes rule substitutes for the notify score changes rule.
@@ -584,9 +532,11 @@ The last property-aggregation rule (this is the print aggregated properties rule
 		rule succeeds;
 	rule fails;
 
-The objective part 0 is some text that varies. The objective part 0 is "The dinner is almost ready! It's only missing a grilled milk.".
+The objective part 0 is some text that varies. The objective part 0 is "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First, it would be fantastic if you could open the chest drawer. After that, take the old key from the c".
+The objective part 1 is some text that varies. The objective part 1 is "hest drawer inside the bedroom. And then, insert the old key into the wooden door's lock to unlock it. And then, make absolutely sure that the wooden door is ajar. Then, try to travel east. That done,".
+The objective part 2 is some text that varies. The objective part 2 is " open the refrigerator. If you have pulled open the refrigerator, pick up the milk from the refrigerator. And then, place the milk on the stove inside the kitchen. That's it!".
 
-An objective is some text that varies. The objective is "[objective part 0]".
+An objective is some text that varies. The objective is "[objective part 0][objective part 1][objective part 2]".
 Printing the objective is an action applying to nothing.
 Carry out printing the objective:
 	say "[objective]".

@@ -532,9 +532,12 @@ The last property-aggregation rule (this is the print aggregated properties rule
 		rule succeeds;
 	rule fails;
 
-The objective part 0 is some text that varies. The objective part 0 is "The dinner is almost ready! It's only missing a grilled half of a bag of chips.".
+The objective part 0 is some text that varies. The objective part 0 is "Who's got a virtual machine and is about to play through an life changing round of TextWorld? You do! Here is how to play! First off, open the antique trunk inside the bedroom. And then, pick up the o".
+The objective part 1 is some text that varies. The objective part 1 is "ld key from the antique trunk. After that, check that the wooden door in the bedroom is unlocked with the old key. After that, assure that the wooden door is opened. And then, make an effort to go to ".
+The objective part 2 is some text that varies. The objective part 2 is "the east. And then, open the refrigerator within the kitchen. And then, retrieve the half of a bag of chips from the refrigerator. Then, put the half of a bag of chips on the stove. Once that's all ha".
+The objective part 3 is some text that varies. The objective part 3 is "ndled, you can stop!".
 
-An objective is some text that varies. The objective is "[objective part 0]".
+An objective is some text that varies. The objective is "[objective part 0][objective part 1][objective part 2][objective part 3]".
 Printing the objective is an action applying to nothing.
 Carry out printing the objective:
 	say "[objective]".
