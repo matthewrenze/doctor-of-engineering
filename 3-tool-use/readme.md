@@ -17,7 +17,7 @@
 
 ## Prototypes
 - [action-parser](prototypes/action-parser/) - prototypes for a multi-argument action parser
-- [beep-beep](prototypes/beep-beep/) - prototypes for an audible alert for long running experiments
+- [beep-beep](prototypes/beep-beep/) - prototypes for an audible alert for long-running experiments
 - [cache-hash](prototypes/cache-hash/) - prototypes for file-name hashing for a file cache
 - [debug-evals](prototypes/debug-evals/) - prototypes for creating evals to debug tools
 - [download-file](prototypes/download_file/) - prototypes for downloading files from the web
@@ -42,4 +42,4 @@
 
 ## Projects
 - Create a [set of tool-use evals](projects/create-evals/)
-- Create an [tool-use eval framework](projects/agent-eval/)
+- Create a [tool-use eval framework](projects/agent-eval/)
