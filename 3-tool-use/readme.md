@@ -39,6 +39,8 @@
 ## Experiments
 - Determine optimal [top-k search results](experiments/top-k-search-results/)
 - Determine optimal [HTML page chunk size](experiments/read-html-chunk-size/)
+- Determine optimal [tool-card format](experiments/tool-card-formats/)
+- Determine how to [execute code safely](experiments/execute-code-safety/)
 
 ## Projects
 - Create a [set of tool-use evals](projects/create-evals/)
